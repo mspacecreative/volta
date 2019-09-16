@@ -1891,12 +1891,13 @@ input, select, textarea {
 	}
 
 		ul li {
-			margin-bottom: 0.5em;
 			list-style: none;
 		}
 		
 		.post-content-container ul li {
 			text-indent: -16px;
+			margin-bottom: 0.5em;
+			list-style: none;
 		}
 		
 		.post-content-container ul li:before {
