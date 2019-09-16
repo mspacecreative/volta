@@ -23,7 +23,7 @@ echo '<div class="post-header container" style="background-image: url('. $url.')
 endif; ?>
 <!-- /post thumbnail -->
 
-<div class="post-content-container container shadow white-bg clear">
+<div class="post-content-container container white-bg clear">
 <main role="main">
 	<!-- section -->
 	<section>

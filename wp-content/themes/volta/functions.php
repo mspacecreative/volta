@@ -567,6 +567,19 @@ function my_acf_init() {
 			'supports'			=> array( 'mode' => false ),
 		));
 		
+		// register two third one third block
+		acf_register_block(array(
+			'name'				=> 'two-third-one-third',
+			'title'				=> __('2/3 1/3 Section'),
+			'description'		=> __('Displays a two third one third layout'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'images-alt',
+			'keywords'			=> array( 'layout', 'grid' ),
+			'mode'				=> 'edit',
+			'supports'			=> array( 'mode' => false ),
+		));
+		
 	}
 }
 

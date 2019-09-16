@@ -2986,7 +2986,7 @@ input, select, textarea {
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
-				padding-bottom: 1px;
+				padding-bottom: 1px;;
 			}
 
 			#navButton {
@@ -3679,6 +3679,32 @@ aside h3 {
 #footer h3 {
 	margin: 0 0 15px;
 }
+#page-wrapper {
+	position: relative
+}
+.width-1080 {
+	width: 90%;
+	max-width: 1080px;
+	margin: auto;
+}
+.inner-padding {
+	padding: 2em;
+}
+.page .post-title-container {
+	display: inline-block;
+	padding-bottom: 0;
+}
+.page h2 {
+	font-size: 1.5em;
+}
+.page h3 {
+	font-size: 1em;
+	font-weight: bold;
+	margin: 1em 0 0.5em;
+}
+.page .one_third_col h3:first-of-type {
+	margin-top: 0;
+}
 @media (min-width: 1600px) {
 	#header {
 		max-height: 1000px;
@@ -3855,14 +3881,14 @@ aside h3 {
 }
 
 @media (min-width: 981px) {
-	main, aside {
+	main, aside, .two_third_col, .one_third_col {
 		float: left;
 	}
-	main {
+	main, .two_third_col {
 		width: 60%;
 		margin-right: 5%;
 	}
-	aside {
+	aside, .one_third_col {
 		width: 35%;
 		padding-right: 2em;
 	}
