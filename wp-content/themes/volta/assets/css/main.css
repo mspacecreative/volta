@@ -1892,6 +1892,17 @@ input, select, textarea {
 
 		ul li {
 			margin-bottom: 0.5em;
+			list-style: none;
+		}
+		
+		.post-content-container ul li {
+			text-indent: -16px;
+		}
+		
+		.post-content-container ul li:before {
+			content: '\f0da';
+			font-family: fontAwesome;
+			padding-right: 10px;
 		}
 
 	ol {
