@@ -3713,6 +3713,13 @@ aside h3 {
 	display: inline-block;
 	padding-bottom: 0;
 }
+.blog main {
+	width: 100%;
+}
+.blog .inner {
+	max-width: none;
+	padding: 0 2em;
+}
 .page h2 {
 	font-size: 1.5em;
 }
