@@ -1,3 +1,6 @@
+<?php if ( get_field('section_heading') ): ?>
+<h2><?php the_field('section_heading'); ?></h2>
+<?php endif; ?>
 <?php if( have_rows('flexbox') ): ?>
 <div class="display-flex clear">
 	<?php while( have_rows('flexbox') ): the_row(); ?>
