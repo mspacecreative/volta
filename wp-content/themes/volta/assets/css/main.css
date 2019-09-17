@@ -3717,6 +3717,14 @@ aside h3 {
 .page .one_third_col h3:first-of-type {
 	margin-top: 0;
 }
+.flexbox-5 {
+	flex-basis: 18.4%;
+	border: 1px solid #c9c9c9;
+	margin-right: 2%;
+}
+.flexbox-5 > div {
+	padding: 0 1em 1em;
+}
 @media (min-width: 1600px) {
 	#header {
 		max-height: 1000px;
