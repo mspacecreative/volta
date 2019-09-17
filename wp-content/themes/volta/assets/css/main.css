@@ -3908,6 +3908,9 @@ aside h3 {
 	main, aside, .two_third_col, .one_third_col {
 		float: left;
 	}
+	.one_third_col {
+		margin-top: 8px;
+	}
 	main, .two_third_col {
 		width: 60%;
 		margin-right: 5%;
