@@ -3690,7 +3690,6 @@ aside h3 {
 }
 .post-content-container {
 	position: relative;
-	padding: 0 4em;
 }
 #footer header {
 	margin-bottom: 5px;
@@ -3759,6 +3758,9 @@ aside h3 {
 }
 .flex-box > div {
 	padding: 0 1em 1em;
+}
+.full-padding {
+	padding: 4em 6em;
 }
 @media (min-width: 1600px) {
 	#header {
@@ -3866,9 +3868,9 @@ aside h3 {
 	.flexbox-5:last-child {
 		margin-bottom: 0;
 	}
-	.post-content-container {
+	/*.post-content-container {
 		padding: 0 1em;
-	}
+	}*/
 	.post-title-container {
 		padding: 1em 1em 2em;
 	}
@@ -3972,9 +3974,9 @@ aside h3 {
 	.flexbox-5:last-child {
 		margin-bottom: 0;
 	}
-	.post-content-container {
+	/*.post-content-container {
 		padding: 0 1em;
-	}
+	}*/
 	.post-title-container {
 		padding: 1em 1em 2em;
 	}
