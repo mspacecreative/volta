@@ -3715,9 +3715,10 @@ aside h3 {
 }
 .blog main {
 	width: 100%;
+	margin-right: 0;
 }
 .blog .inner {
-	max-width: none;
+	width: 100%;
 	padding: 0 2em;
 }
 .page h2 {
