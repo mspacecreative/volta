@@ -187,9 +187,10 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left: solid 0.5em #ddd;
-		padding: 1em 0 1em 2em;
+		border-left: solid 0.25em #ddd;
+		padding: 0 0 0 1em;
 		font-style: italic;
+		margin: 0 0 1em;
 	}
 
 	p, ul, ol, dl, table {
@@ -3658,7 +3659,7 @@ img {
 .post-title-container {
 	position: relative;
 	z-index: 2;
-	padding: 2em;
+	padding: 1em 2em 2em;
 	background-color: #fff;
 	margin: -50px auto 0;
 }
