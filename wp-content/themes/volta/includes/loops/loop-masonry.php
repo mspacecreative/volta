@@ -23,11 +23,13 @@
 			</div>
 			<!-- /post details -->
 			
-			<!-- post title -->
-			<h3><?php the_title(); ?></h3>
-			<!-- /post details -->
-			
-			<p><?php html5wp_excerpt('html5wp_index'); ?></p>
+			<div class="masonry-block-content">
+				<!-- post title -->
+				<h3><?php the_title(); ?></h3>
+				<!-- /post details -->
+				
+				<p><?php html5wp_excerpt('html5wp_index'); ?></p>
+			</div>
 			
 		</div>
 	</div>

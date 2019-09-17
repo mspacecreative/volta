@@ -7,7 +7,7 @@
 	});
 	
     var $grid = $('.iso-grid').isotope( {
-        itemSelector: ".resource-item",
+        itemSelector: ".grid-item",
     	percentPosition: true,
     	masonry: {
             columnWidth: '.grid-sizer',

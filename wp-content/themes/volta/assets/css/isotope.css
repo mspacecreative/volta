@@ -30,6 +30,10 @@ button {
 	top: 40px;
 }
 
+.masonry-block-content {
+	padding: 2em;
+}
+
 #instafeed .normal-image img {
     width: 100%;
     padding: 25px;
