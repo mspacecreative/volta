@@ -14,7 +14,14 @@
 		
 		<?php elseif ( get_sub_field('content_type') == 'image' ): ?>
 		<div class="one_third_col">
-			<?php the_sub_field('image_upload'); ?>
+			<?php 
+			$image = get_sub_field('image_upload');
+			$size = 'large';
+			
+			if( $image ) {
+				echo wp_get_attachment_image( $image, $size );
+			}
+			?>
 		</div>
 		
 		<?php elseif ( get_sub_field('content_type') == 'video' ): ?>
@@ -43,7 +50,14 @@
 		
 		<?php elseif ( get_sub_field('content_type') == 'image' ): ?>
 		<div class="one_third_col">
-			<?php the_sub_field('image_upload'); ?>
+			<?php 
+			$image = get_sub_field('image_upload');
+			$size = 'large';
+			
+			if( $image ) {
+				echo wp_get_attachment_image( $image, $size );
+			}
+			?>
 		</div>
 		
 		<?php elseif ( get_sub_field('content_type') == 'video' ): ?>
@@ -72,7 +86,14 @@
 		
 		<?php elseif ( get_sub_field('content_type') == 'image' ): ?>
 		<div class="one_third_col">
-			<?php the_sub_field('image_upload'); ?>
+			<?php 
+			$image = get_sub_field('image_upload');
+			$size = 'large';
+			
+			if( $image ) {
+				echo wp_get_attachment_image( $image, $size );
+			}
+			?>
 		</div>
 		
 		<?php elseif ( get_sub_field('content_type') == 'video' ): ?>
@@ -101,7 +122,14 @@
 		
 		<?php elseif ( get_sub_field('content_type') == 'image' ): ?>
 		<div class="one_third_col">
-			<?php the_sub_field('image_upload'); ?>
+			<?php 
+			$image = get_sub_field('image_upload');
+			$size = 'large';
+			
+			if( $image ) {
+				echo wp_get_attachment_image( $image, $size );
+			}
+			?>
 		</div>
 		
 		<?php elseif ( get_sub_field('content_type') == 'video' ): ?>
