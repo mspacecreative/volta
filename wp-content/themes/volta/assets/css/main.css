@@ -3722,6 +3722,9 @@ aside h3 {
 	border: 1px solid #c9c9c9;
 	margin-right: 2%;
 }
+.flexbox-5:last-child {
+	margin-right: 0;
+}
 .flexbox-5 > div {
 	padding: 0 1em 1em;
 }
