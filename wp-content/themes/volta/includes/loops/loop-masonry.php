@@ -29,7 +29,7 @@
 				<h3><?php the_title(); ?></h3>
 				<!-- /post details -->
 				
-				<p><?php html5wp_excerpt('html5wp_index'); ?></p>
+				<?php html5wp_excerpt('html5wp_index'); ?>
 				
 			</div>
 			
