@@ -23,4 +23,4 @@
         </script>
 
 	</head>
-	<body <?php body_class('homepage', 'is-preload'); ?>>
+	<body <?php body_class(); ?>>
