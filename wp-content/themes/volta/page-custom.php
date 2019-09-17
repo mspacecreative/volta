@@ -1,5 +1,5 @@
 <?php
-/* Template Name: One Column */
+/* Template Name: Custom Layout */
 get_header(); ?>
 
 <!-- Background image -->
