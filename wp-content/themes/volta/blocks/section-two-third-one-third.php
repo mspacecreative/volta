@@ -9,17 +9,17 @@
 	
 		<?php if ( get_sub_field('content_type') == 'text' ): ?>
 		<div class="one_third_col">
-			<?php the_field('text_editor'); ?>
+			<?php the_sub_field('text_editor'); ?>
 		</div>
 		
 		<?php elseif ( get_sub_field('content_type') == 'image' ): ?>
 		<div class="one_third_col">
-			<?php the_field('image_upload'); ?>
+			<?php the_sub_field('image_upload'); ?>
 		</div>
 		
 		<?php elseif ( get_sub_field('content_type') == 'video' ): ?>
 		<div class="one_third_col">
-			<?php the_field('image_upload'); ?>
+			<?php the_sub_field('image_upload'); ?>
 		</div>
 		<?php endif; ?>
 	
@@ -38,17 +38,17 @@
 	
 		<?php if ( get_sub_field('content_type') == 'text' ): ?>
 		<div class="one_third_col">
-			<?php the_field('text_editor'); ?>
+			<?php the_sub_field('text_editor'); ?>
 		</div>
 		
 		<?php elseif ( get_sub_field('content_type') == 'image' ): ?>
 		<div class="one_third_col">
-			<?php the_field('image_upload'); ?>
+			<?php the_sub_field('image_upload'); ?>
 		</div>
 		
 		<?php elseif ( get_sub_field('content_type') == 'video' ): ?>
 		<div class="one_third_col">
-			<?php the_field('image_upload'); ?>
+			<?php the_sub_field('image_upload'); ?>
 		</div>
 		<?php endif; ?>
 	
@@ -67,17 +67,17 @@
 	
 		<?php if ( get_sub_field('content_type') == 'text' ): ?>
 		<div class="one_third_col">
-			<?php the_field('text_editor'); ?>
+			<?php the_sub_field('text_editor'); ?>
 		</div>
 		
 		<?php elseif ( get_sub_field('content_type') == 'image' ): ?>
 		<div class="one_third_col">
-			<?php the_field('image_upload'); ?>
+			<?php the_sub_field('image_upload'); ?>
 		</div>
 		
 		<?php elseif ( get_sub_field('content_type') == 'video' ): ?>
 		<div class="one_third_col">
-			<?php the_field('image_upload'); ?>
+			<?php the_sub_field('image_upload'); ?>
 		</div>
 		<?php endif; ?>
 	
@@ -96,17 +96,17 @@
 	
 		<?php if ( get_sub_field('content_type') == 'text' ): ?>
 		<div class="one_third_col">
-			<?php the_field('text_editor'); ?>
+			<?php the_sub_field('text_editor'); ?>
 		</div>
 		
 		<?php elseif ( get_sub_field('content_type') == 'image' ): ?>
 		<div class="one_third_col">
-			<?php the_field('image_upload'); ?>
+			<?php the_sub_field('image_upload'); ?>
 		</div>
 		
 		<?php elseif ( get_sub_field('content_type') == 'video' ): ?>
 		<div class="one_third_col">
-			<?php the_field('image_upload'); ?>
+			<?php the_sub_field('image_upload'); ?>
 		</div>
 		<?php endif; ?>
 	
