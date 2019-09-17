@@ -161,7 +161,7 @@ function footerScripts() {
 	wp_enqueue_script('isotope-cdn');
 	
 	wp_register_script( 'isotope-images', 'https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js', array( 'jquery' ), null, true );
-	wp_enqueue_script('isotope-image');
+	wp_enqueue_script('isotope-images');
 	
 	wp_register_script( 'isotope-script', get_template_directory_uri() . '/assets/js/isotope.js', array( 'jquery' ), null, true );
 	wp_enqueue_script('isotope-script');
