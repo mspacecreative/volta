@@ -580,6 +580,19 @@ function my_acf_init() {
 			'supports'			=> array( 'mode' => false ),
 		));
 		
+		// register flexbox block
+		acf_register_block(array(
+			'name'				=> 'flexbox',
+			'title'				=> __('Flexbox Section'),
+			'description'		=> __('Displays a custom grid layout'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'images-alt',
+			'keywords'			=> array( 'layout', 'grid' ),
+			'mode'				=> 'edit',
+			'supports'			=> array( 'mode' => false ),
+		));
+		
 	}
 }
 
