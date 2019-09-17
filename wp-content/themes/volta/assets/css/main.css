@@ -3818,6 +3818,23 @@ aside h3 {
 	.features .row.inline-icons {
 		margin-top: 0!important;
 	}
+	.flexbox-5 {
+		flex-basis: 100%;
+		margin-right: 0;
+		margin-bottom: 1em;
+	}
+	.flexbox-5:last-child {
+		margin-bottom: 0;
+	}
+	.post-content-container {
+		padding: 0 1em;
+	}
+	.post-title-container {
+		padding: 1em 1em 2em;
+	}
+	.one_third_col {
+		margin-top: 1em;
+	}
 	.left-side .full-span-content, .right-side .full-span-content {
 		padding: 2em 4em 2em 2em;
 	}
@@ -3902,6 +3919,23 @@ aside h3 {
 	}
 	#programs article, #insights article {
 		overflow: hidden;
+	}
+	.flexbox-5 {
+		flex-basis: 100%;
+		margin-right: 0;
+		margin-bottom: 1em;
+	}
+	.flexbox-5:last-child {
+		margin-bottom: 0;
+	}
+	.post-content-container {
+		padding: 0 1em;
+	}
+	.post-title-container {
+		padding: 1em 1em 2em;
+	}
+	.one_third_col {
+		margin-top: 1em;
 	}
 }
 
