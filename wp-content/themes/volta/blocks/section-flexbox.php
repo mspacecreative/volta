@@ -213,6 +213,7 @@
 	<?php endif; ?>
 	<?php endif; ?>
 </div>
+
 <?php elseif ( get_field('section_padding') == 'both' ): ?>
 <div class="top-bottom-padding">
 	<?php if ( get_field('section_heading') ): ?>
@@ -320,6 +321,7 @@
 	<?php endif; ?>
 	<?php endif; ?>
 </div>
+
 <?php else : ?>
 <?php if ( get_field('section_heading') ): ?>
 <h2><?php the_field('section_heading'); ?></h2>
@@ -423,5 +425,6 @@
 	</div>
 	<?php endwhile; ?>
 </div>
+<?php endif; ?>
 <?php endif; ?>
 <?php endif; ?>
