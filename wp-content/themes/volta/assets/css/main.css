@@ -3670,6 +3670,12 @@ img {
 .one-third img {
 	margin-top: 5px;
 }
+.blog article {
+	margin: 0 0 4em;
+}
+.blog article:last-child {
+	margin-bottom: 0;
+}
 .sidebar-widget .two-third {
 	width: 75%;
 }
