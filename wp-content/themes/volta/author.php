@@ -15,8 +15,7 @@
 	<?php $url = get_field('featured_image_blog', 'options' ); ?>
 	<?php echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: center;"></div>'; ?>
 	<?php else : ?>
-	<?php $url = echo get_template_directory_uri() . '/img/header.jpg'; ?>
-	<?php echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: center;"></div>';
+	<div class="post-header container" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/header.jpg'); background-position: center;"></div>';
 	endif; ?>
 	<!-- /post thumbnail -->
 	
