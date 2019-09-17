@@ -11,24 +11,26 @@
 			<!-- post thumbnail -->
 			<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<?php the_post_thumbnail(array(120,120)); // Declare pixel size you need inside the array ?>
+					<?php the_post_thumbnail('medium'); // Declare pixel size you need inside the array ?>
 				</a>
 			<?php endif; ?>
 			<!-- /post thumbnail -->
 			
-			<!-- post details -->
-			<div class="post-meta-container">
-				<span class="date"><?php the_time('F j, Y'); ?></span>
-				<span class="author"><?php _e( 'By', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-			</div>
-			<!-- /post details -->
-			
 			<div class="masonry-block-content">
+				
+				<!-- post details -->
+				<div class="post-meta-container">
+					<span class="date"><?php the_time('F j, Y'); ?></span>
+					<span class="author"><?php _e( 'By', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
+				</div>
+				<!-- /post details -->
+				
 				<!-- post title -->
 				<h3><?php the_title(); ?></h3>
 				<!-- /post details -->
 				
 				<p><?php html5wp_excerpt('html5wp_index'); ?></p>
+				
 			</div>
 			
 		</div>
