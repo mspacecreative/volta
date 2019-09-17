@@ -3738,18 +3738,22 @@ aside h3 {
 .flexbox-3 {
 	flex-basis: 49%;
 }
+.flexbox-4 {
+	flex-basis: 23.5%;
+}
 .flexbox-5 {
 	flex-basis: 18.4%;
 }
 .flex-box {
 	border: 1px solid #c9c9c9;
 	margin-right: 2%;
+	margin-bottom: 2%;
 	border-top: 5px solid #000;
 }
 .flexbox-2:nth-child(2n), .flexbox-3:nth-child(3n), .flexbox-4:nth-child(4n), .flexbox-5:nth-child(5n) {
 	margin-right: 0;
 }
-.flexbox-box > div {
+.flex-box > div {
 	padding: 0 1em 1em;
 }
 @media (min-width: 1600px) {
@@ -3840,7 +3844,7 @@ aside h3 {
 	.features .row.inline-icons {
 		margin-top: 0!important;
 	}
-	.flexbox-5 {
+	.flex-box {
 		flex-basis: 100%;
 		margin-right: 0;
 		margin-bottom: 1em;
@@ -3942,7 +3946,7 @@ aside h3 {
 	#programs article, #insights article {
 		overflow: hidden;
 	}
-	.flexbox-5 {
+	.flex-box {
 		flex-basis: 100%;
 		margin-right: 0;
 		margin-bottom: 1em;

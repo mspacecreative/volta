@@ -351,6 +351,7 @@
 	<?php endwhile; ?>
 </div>
 <?php endif; ?>
+
 <?php elseif ( get_field('column_count') == 'three' ): ?>
 <?php if( have_rows('flexbox') ): ?>
 <div class="display-flex clear">
@@ -376,6 +377,7 @@
 	<?php endwhile; ?>
 </div>
 <?php endif; ?>
+
 <?php elseif ( get_field('column_count') == 'four' ): ?>
 <?php if( have_rows('flexbox') ): ?>
 <div class="display-flex clear">
@@ -401,6 +403,7 @@
 	<?php endwhile; ?>
 </div>
 <?php endif; ?>
+
 <?php elseif ( get_field('column_count') == 'five' ): ?>
 <?php if( have_rows('flexbox') ): ?>
 <div class="display-flex clear">
