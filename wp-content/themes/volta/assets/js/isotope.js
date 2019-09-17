@@ -1,12 +1,12 @@
 (function ($) {
 	
 	$(window).load(function() {
-	    $grid.imagesLoaded().progress( function() {
+	    grid.imagesLoaded().progress( function() {
             $grid.isotope('layout');
         });
 	});
 	
-    var $grid = $('.iso-grid').isotope( {
+    var grid = $('.iso-grid').isotope( {
         itemSelector: ".grid-item",
     	percentPosition: true,
     	masonry: {
