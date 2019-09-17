@@ -1,7 +1,7 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 	<!-- article -->
-	<article id="post-<?php the_ID(); ?>" <?php post_class('clear'); ?>>
+	<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'clear', 'display-flex' )); ?>>
 	
 		<!-- post thumbnail -->
 		<div class="one-third">
