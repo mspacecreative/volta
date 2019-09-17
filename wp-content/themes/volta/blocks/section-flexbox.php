@@ -9,6 +9,8 @@
 		<?php if( have_rows('button') ): ?>
 		<?php while( have_rows('button') ): the_row(); ?>
 		<a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('label'); ?></a>
+		<?php endwhile; ?>
+		<?php endif; ?>
 		<?php endif; ?>
 	</div>
 	<?php endwhile; ?>
