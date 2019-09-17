@@ -8,25 +8,25 @@ get_header(); ?>
 </div>
 <!-- /Background image -->
 
-<!-- post thumbnail -->
-<?php
-if ( get_field('featured_image_alignment') == 'top' ): ?>
-<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: top center;"></div>'; ?>
-<?php elseif ( get_field('featured_image_alignment') == 'bottom' ): ?>
-<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-<?php echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: bottom center;"></div>'; ?>
-<?php elseif ( get_field('featured_image_alignment') == 'center' ): ?>
-<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: center;"></div>'; ?>
-<?php else : ?>
-<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: center;"></div>';
-endif; ?>
-<!-- /post thumbnail -->
-
 <!-- Page wrapper -->
 <div id="page-wrapper">
+	
+	<!-- post thumbnail -->
+	<?php
+	if ( get_field('featured_image_alignment') == 'top' ): ?>
+	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+	echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: top center;"></div>'; ?>
+	<?php elseif ( get_field('featured_image_alignment') == 'bottom' ): ?>
+	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+	<?php echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: bottom center;"></div>'; ?>
+	<?php elseif ( get_field('featured_image_alignment') == 'center' ): ?>
+	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+	echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: center;"></div>'; ?>
+	<?php else : ?>
+	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+	echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: center;"></div>';
+	endif; ?>
+	<!-- /post thumbnail -->
 	
 	<!-- Nav -->
 	<nav id="nav">
