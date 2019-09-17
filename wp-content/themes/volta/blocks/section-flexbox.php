@@ -7,7 +7,7 @@
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
 		<?php while( have_rows('flexbox') ): the_row(); ?>
-		<div class="flexbox-2">
+		<div class="flex-box flexbox-2">
 			<div>
 				<?php if( have_rows('flexbox_content') ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
@@ -32,7 +32,7 @@
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
 		<?php while( have_rows('flexbox') ): the_row(); ?>
-		<div class="flexbox-3">
+		<div class="flex-box flexbox-3">
 			<div>
 				<?php if( have_rows('flexbox_content') ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
@@ -57,7 +57,7 @@
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
 		<?php while( have_rows('flexbox') ): the_row(); ?>
-		<div class="flexbox-4">
+		<div class="flex-box flexbox-4">
 			<div>
 				<?php if( have_rows('flexbox_content') ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
@@ -82,7 +82,7 @@
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
 		<?php while( have_rows('flexbox') ): the_row(); ?>
-		<div class="flexbox-5">
+		<div class="flex-box flexbox-5">
 			<div>
 				<?php if( have_rows('flexbox_content') ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
@@ -115,7 +115,7 @@
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
 		<?php while( have_rows('flexbox') ): the_row(); ?>
-		<div class="flexbox-2">
+		<div class="flex-box flexbox-2">
 			<div>
 				<?php if( have_rows('flexbox_content') ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
@@ -140,7 +140,7 @@
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
 		<?php while( have_rows('flexbox') ): the_row(); ?>
-		<div class="flexbox-3">
+		<div class="flex-box flexbox-3">
 			<div>
 				<?php if( have_rows('flexbox_content') ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
@@ -165,7 +165,7 @@
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
 		<?php while( have_rows('flexbox') ): the_row(); ?>
-		<div class="flexbox-4">
+		<div class="flex-box flexbox-4">
 			<div>
 				<?php if( have_rows('flexbox_content') ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
@@ -190,7 +190,7 @@
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
 		<?php while( have_rows('flexbox') ): the_row(); ?>
-		<div class="flexbox-5">
+		<div class="flex-box flexbox-5">
 			<div>
 				<?php if( have_rows('flexbox_content') ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
@@ -223,7 +223,7 @@
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
 		<?php while( have_rows('flexbox') ): the_row(); ?>
-		<div class="flexbox-2">
+		<div class="flex-box flexbox-2">
 			<div>
 				<?php if( have_rows('flexbox_content') ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
@@ -248,7 +248,7 @@
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
 		<?php while( have_rows('flexbox') ): the_row(); ?>
-		<div class="flexbox-3">
+		<div class="flex-box flexbox-3">
 			<div>
 				<?php if( have_rows('flexbox_content') ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
@@ -273,7 +273,7 @@
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
 		<?php while( have_rows('flexbox') ): the_row(); ?>
-		<div class="flexbox-4">
+		<div class="flex-box flexbox-4">
 			<div>
 				<?php if( have_rows('flexbox_content') ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
@@ -298,7 +298,7 @@
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
 		<?php while( have_rows('flexbox') ): the_row(); ?>
-		<div class="flexbox-5">
+		<div class="flex-box flexbox-5">
 			<div>
 				<?php if( have_rows('flexbox_content') ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
@@ -330,7 +330,7 @@
 <?php if( have_rows('flexbox') ): ?>
 <div class="display-flex clear">
 	<?php while( have_rows('flexbox') ): the_row(); ?>
-	<div class="flexbox-2">
+	<div class="flex-box flexbox-2">
 		<div>
 			<?php if( have_rows('flexbox_content') ): ?>
 			<?php while( have_rows('flexbox_content') ): the_row(); ?>
@@ -355,7 +355,7 @@
 <?php if( have_rows('flexbox') ): ?>
 <div class="display-flex clear">
 	<?php while( have_rows('flexbox') ): the_row(); ?>
-	<div class="flexbox-3">
+	<div class="flex-box flexbox-3">
 		<div>
 			<?php if( have_rows('flexbox_content') ): ?>
 			<?php while( have_rows('flexbox_content') ): the_row(); ?>
@@ -380,7 +380,7 @@
 <?php if( have_rows('flexbox') ): ?>
 <div class="display-flex clear">
 	<?php while( have_rows('flexbox') ): the_row(); ?>
-	<div class="flexbox-4">
+	<div class="flex-box flexbox-4">
 		<div>
 			<?php if( have_rows('flexbox_content') ): ?>
 			<?php while( have_rows('flexbox_content') ): the_row(); ?>
@@ -405,7 +405,7 @@
 <?php if( have_rows('flexbox') ): ?>
 <div class="display-flex clear">
 	<?php while( have_rows('flexbox') ): the_row(); ?>
-	<div class="flexbox-5">
+	<div class="flex-box flexbox-5">
 		<div>
 			<?php if( have_rows('flexbox_content') ): ?>
 			<?php while( have_rows('flexbox_content') ): the_row(); ?>
