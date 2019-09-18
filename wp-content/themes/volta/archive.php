@@ -1,5 +1,11 @@
 <?php get_header(); ?>
 
+<!-- Background image -->
+<div class="background">
+	<div class="gradient-overlay"></div>
+</div>
+<!-- /Background image -->
+
 <!-- Page wrapper -->
 <div id="page-wrapper">
 	
