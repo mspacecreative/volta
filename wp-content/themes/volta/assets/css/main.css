@@ -4062,6 +4062,9 @@ aside {
 	main, aside, .two_third_col, .one_third_col {
 		float: left;
 	}
+	.post-title-container  {
+		max-width: 60%;
+	}
 	.one_third_col {
 		margin-top: 8px;
 	}
