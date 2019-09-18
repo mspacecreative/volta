@@ -3800,7 +3800,7 @@ aside h3 {
 	padding: 2em 6em;
 }
 .textwidget {
-	margin: 0 0 2em;
+	margin: 2em 0 0;
 }
 @media (min-width: 1600px) {
 	#header {
