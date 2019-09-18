@@ -1,5 +1,9 @@
 <!-- Banner -->
+<?php if ( get_field('background_image') ): ?>
+<section id="banner" class="container" style="background-image: url((<?php the_field('background_image'); ?>);">
+<?php else : ?>
 <section id="banner" class="container">
+<?php endif; ?>
 	<header class="light">
 		<h2><?php the_field('heading'); ?></h2>
 		<?php if ( get_field('content') ): ?>
