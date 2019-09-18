@@ -32,13 +32,13 @@
 		if ( $bodysize == 'large' ): ?>
 		
 			<?php if ( get_field('content') ): ?>
-			<p class="large"><?php the_field('content'); ?></p>
+			<div class="large"><?php the_field('content'); ?></div>
 			<?php endif; ?>
 			
 		<?php elseif ( $bodysize == 'small' ): ?>
 		
 			<?php if ( get_field('content') ): ?>
-			<p><?php the_field('content'); ?></p>
+			<?php the_field('content'); ?>
 			<?php endif; ?>
 			
 		<?php endif; ?>
@@ -84,13 +84,13 @@
 		if ( $bodysize == 'large' ): ?>
 		
 			<?php if ( get_field('content') ): ?>
-			<p class="large"><?php the_field('content'); ?></p>
+			<div class="large"><?php the_field('content'); ?></div>
 			<?php endif; ?>
 			
 		<?php elseif ( $bodysize == 'small' ): ?>
 		
 			<?php if ( get_field('content') ): ?>
-			<p><?php the_field('content'); ?></p>
+			<?php the_field('content'); ?>
 			<?php endif; ?>
 			
 		<?php endif; ?>
