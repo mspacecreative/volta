@@ -3819,6 +3819,9 @@ aside {
 	#header {
 		max-height: 1000px;
 	}
+	.banner {
+		margin: auto;
+	}
 }
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
