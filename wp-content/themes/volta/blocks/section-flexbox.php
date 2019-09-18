@@ -346,10 +346,10 @@
 	
 </div>
 
-<?php else : ?>
 <?php elseif ( get_field('section_padding') == 'full' ): ?>
+<?php elseif ( get_field('section_margin') == 'marginfull' ): ?>
 
-<div class="full-padding">
+<div class="full-padding full-margin">
 	
 	<?php if ( get_field('section_heading') ): ?>
 	<h2><?php the_field('section_heading'); ?></h2>
@@ -462,6 +462,7 @@
 	
 </div>
 
+<?php else : ?>
 <?php else : ?>
 
 <div>
