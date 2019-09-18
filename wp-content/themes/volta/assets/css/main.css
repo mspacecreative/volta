@@ -132,6 +132,7 @@ input, select, textarea {
 	}
 	.post-meta-container {
 		font-size: 15px;
+		margin: 1em 0 0;
 	}
 
 	h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
@@ -3797,6 +3798,9 @@ aside h3 {
 }
 .full-padding {
 	padding: 2em 6em;
+}
+.textwidget {
+	margin: 0 0 2em;
 }
 @media (min-width: 1600px) {
 	#header {
