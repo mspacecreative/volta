@@ -1,9 +1,12 @@
 <?php if ( get_field('section_padding') == 'top' ): ?>
 <?php if ( get_field('section_margin') == 'margintop' ): ?>
+
 <div class="top-padding top-margin">
+	
 	<?php if ( get_field('section_heading') ): ?>
 	<h2><?php the_field('section_heading'); ?></h2>
 	<?php endif; ?>
+	
 	<?php if ( get_field('column_count') == 'two' ): ?>
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
@@ -29,6 +32,7 @@
 		<?php endwhile; ?>
 	</div>
 	<?php endif; ?>
+	
 	<?php elseif ( get_field('column_count') == 'three' ): ?>
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
@@ -54,6 +58,7 @@
 		<?php endwhile; ?>
 	</div>
 	<?php endif; ?>
+	
 	<?php elseif ( get_field('column_count') == 'four' ): ?>
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
@@ -79,6 +84,7 @@
 		<?php endwhile; ?>
 	</div>
 	<?php endif; ?>
+	
 	<?php elseif ( get_field('column_count') == 'five' ): ?>
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
@@ -105,14 +111,18 @@
 	</div>
 	<?php endif; ?>
 	<?php endif; ?>
+	
 </div>
 
 <?php elseif ( get_field('section_padding') == 'bottom' ): ?>
 <?php elseif ( get_field('section_margin') == 'marginbottom' ): ?>
+
 <div class="bottom-padding bottom-margin">
+	
 	<?php if ( get_field('section_heading') ): ?>
 	<h2><?php the_field('section_heading'); ?></h2>
 	<?php endif; ?>
+	
 	<?php if ( get_field('column_count') == 'two' ): ?>
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
@@ -138,6 +148,7 @@
 		<?php endwhile; ?>
 	</div>
 	<?php endif; ?>
+	
 	<?php elseif ( get_field('column_count') == 'three' ): ?>
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
@@ -163,6 +174,7 @@
 		<?php endwhile; ?>
 	</div>
 	<?php endif; ?>
+	
 	<?php elseif ( get_field('column_count') == 'four' ): ?>
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
@@ -188,6 +200,7 @@
 		<?php endwhile; ?>
 	</div>
 	<?php endif; ?>
+	
 	<?php elseif ( get_field('column_count') == 'five' ): ?>
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
@@ -214,14 +227,18 @@
 	</div>
 	<?php endif; ?>
 	<?php endif; ?>
+	
 </div>
 
 <?php elseif ( get_field('section_padding') == 'both' ): ?>
 <?php elseif ( get_field('section_margin') == 'marginboth' ): ?>
+
 <div class="top-bottom-padding">
+	
 	<?php if ( get_field('section_heading') ): ?>
 	<h2><?php the_field('section_heading'); ?></h2>
 	<?php endif; ?>
+	
 	<?php if ( get_field('column_count') == 'two' ): ?>
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
@@ -247,6 +264,7 @@
 		<?php endwhile; ?>
 	</div>
 	<?php endif; ?>
+	
 	<?php elseif ( get_field('column_count') == 'three' ): ?>
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
@@ -272,6 +290,7 @@
 		<?php endwhile; ?>
 	</div>
 	<?php endif; ?>
+	
 	<?php elseif ( get_field('column_count') == 'four' ): ?>
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
@@ -297,6 +316,7 @@
 		<?php endwhile; ?>
 	</div>
 	<?php endif; ?>
+	
 	<?php elseif ( get_field('column_count') == 'five' ): ?>
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
@@ -323,13 +343,18 @@
 	</div>
 	<?php endif; ?>
 	<?php endif; ?>
+	
 </div>
+<?php endif; ?>
 
 <?php elseif ( get_field('section_padding') == 'full' ): ?>
+
 <div class="full-padding">
+	
 	<?php if ( get_field('section_heading') ): ?>
 	<h2><?php the_field('section_heading'); ?></h2>
 	<?php endif; ?>
+	
 	<?php if ( get_field('column_count') == 'two' ): ?>
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
@@ -355,6 +380,7 @@
 		<?php endwhile; ?>
 	</div>
 	<?php endif; ?>
+	
 	<?php elseif ( get_field('column_count') == 'three' ): ?>
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
@@ -380,6 +406,7 @@
 		<?php endwhile; ?>
 	</div>
 	<?php endif; ?>
+	
 	<?php elseif ( get_field('column_count') == 'four' ): ?>
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
@@ -405,6 +432,7 @@
 		<?php endwhile; ?>
 	</div>
 	<?php endif; ?>
+	
 	<?php elseif ( get_field('column_count') == 'five' ): ?>
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
@@ -431,13 +459,17 @@
 	</div>
 	<?php endif; ?>
 	<?php endif; ?>
+	
 </div>
 
 <?php else : ?>
+
 <div>
+	
 	<?php if ( get_field('section_heading') ): ?>
 	<h2><?php the_field('section_heading'); ?></h2>
 	<?php endif; ?>
+	
 	<?php if ( get_field('column_count') == 'two' ): ?>
 	<?php if( have_rows('flexbox') ): ?>
 	<div class="display-flex clear">
@@ -541,7 +573,8 @@
 		<?php endwhile; ?>
 	</div>
 	<?php endif; ?>
+	<?php endif; ?>
+	
 </div>
 
-<?php endif; ?>
 <?php endif; ?>
