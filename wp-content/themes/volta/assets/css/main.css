@@ -1906,6 +1906,10 @@ input, select, textarea {
 			font-family: fontAwesome;
 			padding-right: 10px;
 		}
+		.post-container ul.actions li:before {
+			display: none;
+			padding-right: 0;
+		}
 
 	ol {
 		list-style: decimal;
@@ -3612,6 +3616,11 @@ img {
 	max-width: 800px;
 	margin: auto;
 	padding: 4em 2em;
+}
+.max-width-800 {
+	max-width: 800px;
+	margin: auto;
+	width: 90%;
 }
 
 #insights {
