@@ -2542,6 +2542,9 @@ input, select, textarea {
 		padding: 4.5em 0 4.5em 0;
 		margin-bottom: 0;
 		position: relative;
+		background-size: cover;
+		background-position: center;
+		background-repeat: repeat;
 	}
 
 		#banner header > p {

@@ -1,10 +1,10 @@
 <!-- Banner -->
 <?php if ( get_field('background_image') ): ?>
-<section id="banner" class="container" style="background-image: url((<?php the_field('background_image'); ?>);">
+<section id="banner" class="container" style="background-image: url(<?php the_field('background_image'); ?>);">
 <?php else : ?>
 <section id="banner" class="container">
 <?php endif; ?>
-	<header class="light">
+	<header class="light width-800">
 		<h2><?php the_field('heading'); ?></h2>
 		<?php if ( get_field('content') ): ?>
 		<p><?php the_field('content'); ?></p>
