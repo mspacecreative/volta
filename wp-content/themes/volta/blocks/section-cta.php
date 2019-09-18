@@ -15,7 +15,6 @@
 			
 			<?php while( have_rows('cta_button') ): the_row(); ?>
 			<ul class="actions center-items">
-				<?php while( have_rows('cta_button') ): the_row(); ?>
 				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
 			</ul>
 			<?php endwhile; ?>
