@@ -3678,7 +3678,7 @@ img {
 .post-container {
 	background-color: #fff;
 	position: relative;
-	padding: 0 4em;
+	padding: 0 4em 2em;
 }
 .post-container .inner {
 	max-width: none;
@@ -3776,7 +3776,7 @@ aside {
 .post-content-container h3 {
 	font-size: 1em;
 	font-weight: bold;
-	margin: 1em 0 0.5em;
+	margin: 1em 0;
 }
 .page .one_third_col h3:first-of-type {
 	margin-top: 0;
