@@ -19,7 +19,7 @@
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -63,7 +63,7 @@
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
