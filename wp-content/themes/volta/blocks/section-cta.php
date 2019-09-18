@@ -1,10 +1,10 @@
 <!-- Banner -->
 <?php if ( get_field('background_image') ): ?>
-<section class="banner container" style="background-image: url(<?php the_field('background_image'); ?>);">
+<section class="banner" style="background-image: url(<?php the_field('background_image'); ?>);">
 <?php elseif ( get_field('background_color') ): ?>
-<section class="banner container" style="background-color: <?php the_field('background_color'); ?>;">
+<section class="banner" style="background-color: <?php the_field('background_color'); ?>;">
 <?php else : ?>
-<section class="banner container">
+<section class="banner">
 <?php endif; ?>
 	<?php if ( get_field('text_color') == 'dark' ): ?>
 	<header class="max-width-800">
