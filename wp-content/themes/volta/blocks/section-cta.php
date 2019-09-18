@@ -71,12 +71,6 @@
 	<?php elseif ( get_field('text_color') == 'light' ): ?>
 	<header class="light max-width-800">
 		
-		<?php if ( get_field('heading_size') == 'large' ): ?>
-		<h1><?php the_field('heading'); ?></h1>
-		<?php elseif ( get_field('heading_size') == 'small' ): ?>
-		<h2><?php the_field('heading'); ?></h2>
-		<?php endif; ?>
-		
 		<?php
 		$headersize = get_field('heading_size');
 		$bodysize = get_field('paragraph_size');
@@ -138,12 +132,6 @@
 	</header>
 	<?php else : ?>
 	<header class="max-width-800">
-		
-		<?php if ( get_field('heading_size') == 'large' ): ?>
-		<h1><?php the_field('heading'); ?></h1>
-		<?php elseif ( get_field('heading_size') == 'small' ): ?>
-		<h2><?php the_field('heading'); ?></h2>
-		<?php endif; ?>
 		
 		<?php
 		$headersize = get_field('heading_size');
