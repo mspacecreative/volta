@@ -3422,6 +3422,9 @@ input, select, textarea {
 .bottom-padding {
 	padding: 0 0 4em;
 }
+.top-padding {
+	padding: 4em 0 0;
+}
 .bottom-margin {
 	margin-bottom: 2em;
 }
