@@ -345,7 +345,6 @@
 	<?php endif; ?>
 	
 </div>
-<?php endif; ?>
 
 <?php elseif ( get_field('section_padding') == 'full' ): ?>
 
@@ -577,4 +576,5 @@
 	
 </div>
 
+<?php endif; ?>
 <?php endif; ?>
