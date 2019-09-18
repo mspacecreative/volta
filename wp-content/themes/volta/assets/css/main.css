@@ -127,7 +127,7 @@ input, select, textarea {
 	}
 	
 	.post-title-container h1 {
-		margin-bottom: 25px;
+		margin-bottom: 0;
 		letter-spacing: -0.03em;
 	}
 	.post-meta-container {
@@ -3774,6 +3774,12 @@ aside h3 {
 	.tiles .tall-image {
 		min-height: 400px;
 	}
+	.post-title-outer {
+	    padding: 0 1em;
+	}
+	.full-padding {
+	    padding: 2em;
+	}
 	.inner-padding {
 		padding: 1em;
 	}
@@ -3855,6 +3861,12 @@ aside h3 {
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
+	}
+	.post-title-outer {
+	    padding: 0 1em;
+	}
+	.full-padding {
+	    padding: 2em;
 	}
 	.post-title-outer {
 		padding: 0 2em;
@@ -3954,6 +3966,9 @@ aside h3 {
 	.tiles article, .tiles .width-70, .tiles .width-30, .tiles > .width-50, .tiles > .width-50:nth-child(4n - 1), .tiles .width-50:nth-child(4n - 2) {
 		flex-basis: 100%;
 		width: 100%;
+	}
+	.full-padding {
+	    padding: 3em;
 	}
 	.post-title-outer {
 		padding: 0 2em;
