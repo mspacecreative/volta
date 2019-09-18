@@ -1,6 +1,8 @@
 <!-- Banner -->
 <?php if ( get_field('background_image') ): ?>
 <section id="banner" class="container" style="background-image: url(<?php the_field('background_image'); ?>);">
+<?php elseif ( get_field('background_color') ): ?>
+<section id="banner" class="container" style="background-color: <?php the_field('background-color'); ?>;">
 <?php else : ?>
 <section id="banner" class="container">
 <?php endif; ?>
