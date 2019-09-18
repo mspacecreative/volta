@@ -10,48 +10,17 @@
 	<header class="max-width-800">
 		
 		<?php
-		$headersize = get_field('heading_size');
-		$bodysize = get_field('paragraph_size');
-		$heading = get_field('heading');
-		$body = get_field('content');
+		if ( get_field('heading_size') == 'large' ): ?>
+		<h1><?php the_field('heading'); ?></h1>
+		<?php elseif ( get_field('heading_size') == 'small' ): ?>
+		<h2><?php the_field('heading'); ?></h2>
+		<?php endif; ?>
 		
-		if ( $headersize == 'small' && $bodysize == 'bodysmall' ):
-			if ( $heading ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif;
-			
-			if ( $body ): ?>
-			<p><?php the_field('content'); ?></p>
-			<?php endif;
-		
-		elseif ( $headersize == 'large' && $bodysize == 'bodylarge' ):
-			if ( $heading ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif;
-			
-			if ( $body ): ?>
-			<p class="large"><?php the_field('content'); ?></p>
-			<?php endif;
-			
-		elseif ( $headersize == 'small' && $bodysize == 'bodylarge' ):
-			if ( $heading ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif;
-			
-			if ( $body ): ?>
-			<p class="large"><?php the_field('content'); ?></p>
-			<?php endif;
-			
-		elseif ( $headersize == 'large' && $bodysize == 'bodysmall' ):
-			if ( $heading ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif;
-			
-			if ( $body ): ?>
-			<p><?php the_field('content'); ?></p>
-			<?php endif;
-		
-		endif; ?>
+		<?php if ( get_field('paragraph_size') == 'large' ): ?>
+		<p class="large"><?php the_field('content'); ?></p>
+		<?php elseif ( get_field('paragraph_size') == 'small' ): ?>
+		<p><?php the_field('content'); ?></p>
+		<?php endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
 		<?php while( have_rows('cta_button') ): the_row(); ?>
@@ -71,49 +40,17 @@
 	<?php elseif ( get_field('text_color') == 'light' ): ?>
 	<header class="light max-width-800">
 		
-		<?php
-		$headersize = get_field('heading_size');
-		$bodysize = get_field('paragraph_size');
-		$heading = get_field('heading');
-		$body = get_field('content');
+		<?php if ( get_field('heading_size') == 'large' ): ?>
+		<h1><?php the_field('heading'); ?></h1>
+		<?php elseif ( get_field('heading_size') == 'small' ): ?>
+		<h2><?php the_field('heading'); ?></h2>
+		<?php endif; ?>
 		
-		if ( $headersize == 'small' && $bodysize == 'bodysmall' ):
-			if ( $heading ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif;
-			
-			if ( $body ): ?>
-			<p><?php the_field('content'); ?></p>
-			<?php endif;
-		
-		elseif ( $headersize == 'large' && $bodysize == 'bodylarge' ):
-			if ( $heading ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif;
-			
-			if ( $body ): ?>
-			<p class="large"><?php the_field('content'); ?></p>
-			<?php endif;
-			
-		elseif ( $headersize == 'small' && $bodysize == 'bodylarge' ):
-			if ( $heading ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif;
-			
-			if ( $body ): ?>
-			<p class="large"><?php the_field('content'); ?></p>
-			<?php endif;
-			
-		elseif ( $headersize == 'large' && $bodysize == 'bodysmall' ):
-			if ( $heading ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif;
-			
-			if ( $body ): ?>
-			<p><?php the_field('content'); ?></p>
-			<?php endif;
-		
-		endif; ?>
+		<?php if ( get_field('paragraph_size') == 'large' ): ?>
+		<p class="large"><?php the_field('content'); ?></p>
+		<?php elseif ( get_field('paragraph_size') == 'small' ): ?>
+		<p><?php the_field('content'); ?></p>
+		<?php endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
 		<?php while( have_rows('cta_button') ): the_row(); ?>
@@ -133,49 +70,17 @@
 	<?php else : ?>
 	<header class="max-width-800">
 		
-		<?php
-		$headersize = get_field('heading_size');
-		$bodysize = get_field('paragraph_size');
-		$heading = get_field('heading');
-		$body = get_field('content');
+		<?php if ( get_field('heading_size') == 'large' ): ?>
+		<h1><?php the_field('heading'); ?></h1>
+		<?php elseif ( get_field('heading_size') == 'small' ): ?>
+		<h2><?php the_field('heading'); ?></h2>
+		<?php endif; ?>
 		
-		if ( $headersize == 'small' && $bodysize == 'bodysmall' ):
-			if ( $heading ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif;
-			
-			if ( $body ): ?>
-			<p><?php the_field('content'); ?></p>
-			<?php endif;
-		
-		elseif ( $headersize == 'large' && $bodysize == 'bodylarge' ):
-			if ( $heading ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif;
-			
-			if ( $body ): ?>
-			<p class="large"><?php the_field('content'); ?></p>
-			<?php endif;
-			
-		elseif ( $headersize == 'small' && $bodysize == 'bodylarge' ):
-			if ( $heading ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif;
-			
-			if ( $body ): ?>
-			<p class="large"><?php the_field('content'); ?></p>
-			<?php endif;
-			
-		elseif ( $headersize == 'large' && $bodysize == 'bodysmall' ):
-			if ( $heading ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif;
-			
-			if ( $body ): ?>
-			<p><?php the_field('content'); ?></p>
-			<?php endif;
-		
-		endif; ?>
+		<?php if ( get_field('paragraph_size') == 'large' ): ?>
+		<p class="large"><?php the_field('content'); ?></p>
+		<?php elseif ( get_field('paragraph_size') == 'small' ): ?>
+		<p><?php the_field('content'); ?></p>
+		<?php endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
 		<?php while( have_rows('cta_button') ): the_row(); ?>
