@@ -16,9 +16,9 @@
 		<h2><?php the_field('heading'); ?></h2>
 		<?php endif; ?>
 		
-		<?php if ( get_field('paragraph_size') == 'large' ): ?>
+		<?php if ( get_field('paragraph_size') == 'bodylarge' ): ?>
 		<p class="large"><?php the_field('content'); ?></p>
-		<?php elseif ( get_field('paragraph_size') == 'small' ): ?>
+		<?php elseif ( get_field('paragraph_size') == 'bodysmall' ): ?>
 		<p><?php the_field('content'); ?></p>
 		<?php endif; ?>
 		
@@ -46,9 +46,9 @@
 		<h2><?php the_field('heading'); ?></h2>
 		<?php endif; ?>
 		
-		<?php if ( get_field('paragraph_size') == 'large' ): ?>
+		<?php if ( get_field('paragraph_size') == 'bodylarge' ): ?>
 		<p class="large"><?php the_field('content'); ?></p>
-		<?php elseif ( get_field('paragraph_size') == 'small' ): ?>
+		<?php elseif ( get_field('paragraph_size') == 'bodysmall' ): ?>
 		<p><?php the_field('content'); ?></p>
 		<?php endif; ?>
 		
