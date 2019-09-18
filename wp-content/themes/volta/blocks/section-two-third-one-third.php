@@ -3,6 +3,11 @@ $padding = get_field('section_padding');
 $margin = get_field('section_margin');
 if ( $padding == 'top' && $margin == 'top' ): ?>
 <div class="clear top-padding top-margin">
+	
+	<?php if ( get_field('heading') ): ?>
+	<h2><?php the_field('heading'); ?></h2>
+	<?php endif; ?>
+	
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
 	</div>
@@ -40,6 +45,11 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 
 <?php elseif ( $padding == 'bottom' && $margin == 'bottom' ): ?>
 <div class="clear bottom-padding bottom-margin">
+	
+	<?php if ( get_field('heading') ): ?>
+	<h2><?php the_field('heading'); ?></h2>
+	<?php endif; ?>
+	
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
 	</div>
@@ -77,6 +87,11 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 
 <?php elseif ( $padding == 'both' && $margin == 'both' ): ?>
 <div class="clear top-bottom-padding top-bottom-margin">
+	
+	<?php if ( get_field('heading') ): ?>
+	<h2><?php the_field('heading'); ?></h2>
+	<?php endif; ?>
+	
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
 	</div>
@@ -114,6 +129,11 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 
 <?php elseif ( $padding == 'top' && $margin == 'bottom' ): ?>
 <div class="clear top-padding bottom-margin">
+	
+	<?php if ( get_field('heading') ): ?>
+	<h2><?php the_field('heading'); ?></h2>
+	<?php endif; ?>
+	
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
 	</div>
@@ -151,6 +171,11 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 
 <?php elseif ( $padding == 'top' && $margin == 'both' ): ?>
 <div class="clear top-padding top-bottom-margin">
+	
+	<?php if ( get_field('heading') ): ?>
+	<h2><?php the_field('heading'); ?></h2>
+	<?php endif; ?>
+	
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
 	</div>
@@ -188,6 +213,11 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 
 <?php elseif ( $padding == 'bottom' && $margin == 'top' ): ?>
 <div class="clear bottom-padding top-margin">
+	
+	<?php if ( get_field('heading') ): ?>
+	<h2><?php the_field('heading'); ?></h2>
+	<?php endif; ?>
+	
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
 	</div>
@@ -225,6 +255,11 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 
 <?php elseif ( $padding == 'bottom' && $margin == 'both' ): ?>
 <div class="clear bottom-padding top-bottom-margin">
+	
+	<?php if ( get_field('heading') ): ?>
+	<h2><?php the_field('heading'); ?></h2>
+	<?php endif; ?>
+	
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
 	</div>
@@ -262,6 +297,11 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 
 <?php elseif ( $padding == 'full' && $margin == 'top' ): ?>
 <div class="clear full-padding top-margin">
+	
+	<?php if ( get_field('heading') ): ?>
+	<h2><?php the_field('heading'); ?></h2>
+	<?php endif; ?>
+	
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
 	</div>
@@ -299,6 +339,11 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 
 <?php elseif ( $padding == 'full' && $margin == 'bottom' ): ?>
 <div class="clear full-padding bottom-margin">
+	
+	<?php if ( get_field('heading') ): ?>
+	<h2><?php the_field('heading'); ?></h2>
+	<?php endif; ?>
+	
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
 	</div>
@@ -336,6 +381,11 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 
 <?php elseif ( $padding == 'full' && $margin == 'both' ): ?>
 <div class="clear full-padding top-bottom-margin">
+	
+	<?php if ( get_field('heading') ): ?>
+	<h2><?php the_field('heading'); ?></h2>
+	<?php endif; ?>
+	
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
 	</div>
@@ -373,6 +423,11 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 
 <?php elseif ( $padding == 'both' && $margin == 'top' ): ?>
 <div class="clear top-bottom-padding top-margin">
+	
+	<?php if ( get_field('heading') ): ?>
+	<h2><?php the_field('heading'); ?></h2>
+	<?php endif; ?>
+	
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
 	</div>
@@ -410,6 +465,11 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 
 <?php elseif ( $padding == 'both' && $margin == 'bottom' ): ?>
 <div class="clear top-bottom-padding bottom-margin">
+	
+	<?php if ( get_field('heading') ): ?>
+	<h2><?php the_field('heading'); ?></h2>
+	<?php endif; ?>
+	
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
 	</div>
@@ -447,6 +507,11 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 
 <?php else : ?>
 <div class="clear full-padding">
+	
+	<?php if ( get_field('heading') ): ?>
+	<h2><?php the_field('heading'); ?></h2>
+	<?php endif; ?>
+	
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
 	</div>
