@@ -29,8 +29,12 @@ endif; ?>
 	<h1><?php the_title(); ?></h1>
 	<!-- post details -->
 	<div class="post-meta-container">
+		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 		<span class="date"><?php the_time('F j, Y'); ?></span>
 		<span class="author"><?php _e( 'By', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
+		<?php endwhile;
+		endif;
+		rewind_posts(); ?>
 	</div>
 	<!-- /post details -->
 </div>
