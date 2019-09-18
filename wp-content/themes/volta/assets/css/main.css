@@ -2545,20 +2545,20 @@ input, select, textarea {
 
 /* Banner */
 
-	#banner {
+	.banner {
 		text-align: center;
 		padding: 4.5em 0 4.5em 0;
-		margin-bottom: 0;
+		margin: 0 -4em;
 		position: relative;
 		background-size: cover;
 		background-position: center;
 		background-repeat: repeat;
 	}
 
-		#banner header > p {
+		.banner header > p {
 			margin-bottom: 0;
 		}
-		#banner h1 {
+		.banner h1 {
 			margin-bottom: 0.5em;
 		}
 
@@ -2843,7 +2843,7 @@ input, select, textarea {
 
 		/* Banner */
 
-			#banner {
+			.banner {
 				padding-left: 2em;
 				padding-right: 2em;
 			}
@@ -3228,7 +3228,7 @@ input, select, textarea {
 
 		/* Banner */
 
-			#banner {
+			.banner {
 				padding: 3em 2em 3em 2em;
 			}
 
@@ -3505,7 +3505,7 @@ h2 {
 .pagination {
 	text-align: center;
 }
-.pagination span {
+.pagination .page-numbers {
 	margin: 0 3px;
 }
 img {
@@ -3678,6 +3678,7 @@ img {
 .post-container {
 	background-color: #fff;
 	position: relative;
+	padding: 0 4em;
 }
 .post-container .inner {
 	max-width: none;
@@ -3754,9 +3755,9 @@ aside {
 .inner-padding {
 	padding: 2em;
 }
-.post-title-outer {
+/*.post-title-outer {
 	padding: 0 4em;
-}
+}*/
 .post-title-container {
 	display: inline-block;
 	padding-bottom: 0;
@@ -3823,14 +3824,11 @@ aside {
 	.features .row.inline-icons {
 		margin-top: 0!important;
 	}
-	.post-title-outer {
+	/*.post-title-outer {
 	    padding: 0 1em;
-	}
+	}*/
 	.full-padding {
 	    padding: 2em;
-	}
-	.post-title-outer {
-		padding: 0 2em;
 	}
 	.inner-padding {
 		padding: 1em;
@@ -3931,9 +3929,6 @@ aside {
 	.full-padding {
 	    padding: 3em;
 	}
-	.post-title-outer {
-		padding: 0 2em;
-	}
 	#intro article:first-child {
 		border-right: none;
 		border-bottom: 5px solid #fff;
@@ -3972,9 +3967,6 @@ aside {
 @media (max-width: 450px) {
 	.tiles .tall-image {
 		min-height: 400px;
-	}
-	.post-title-outer {
-	    padding: 0 1em;
 	}
 	.full-padding {
 	    padding: 2em;
