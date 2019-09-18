@@ -3496,6 +3496,12 @@ footer {
 h2 {
 	margin: 0 0 30px;
 }
+.pagination {
+	text-align: center;
+}
+.pagination span {
+	margin: 0 3px;
+}
 img {
 	max-width: 100%;
 	height: auto;
