@@ -1,5 +1,6 @@
 <?php if ( get_field('section_padding') == 'top' ): ?>
-<div class="clear top-padding">
+<?php if ( get_field('section_margin') == 'top' ): ?>
+<div class="clear top-padding top-margin">
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
 	</div>
@@ -35,7 +36,8 @@
 	
 </div>
 <?php elseif ( get_field('section_padding') == 'bottom' ): ?>
-<div class="clear bottom-padding">
+<?php elseif ( get_field('section_margin') == 'bottom' ): ?>
+<div class="clear bottom-padding bottom-margin">
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
 	</div>
@@ -72,7 +74,8 @@
 </div>
 
 <?php elseif ( get_field('section_padding') == 'both' ): ?>
-<div class="clear top-bottom-padding">
+<?php elseif ( get_field('section_margin') == 'both' ): ?>
+<div class="clear top-bottom-padding top-bottom-margin">
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
 	</div>
@@ -181,4 +184,5 @@
 	<?php endif; ?>
 	
 </div>
+<?php endif; ?>
 <?php endif; ?>

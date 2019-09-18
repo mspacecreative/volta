@@ -3422,6 +3422,15 @@ input, select, textarea {
 .bottom-padding {
 	padding: 0 0 4em;
 }
+.bottom-margin {
+	margin-bottom: 2em;
+}
+.top-margin {
+	margin-top: 2em;
+}
+.top-bottom-margin {
+	margin: 2em 0;
+}
 .dark {
 	color: #000;
 }
