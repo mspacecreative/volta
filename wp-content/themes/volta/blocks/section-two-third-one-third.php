@@ -446,7 +446,7 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 </div>
 
 <?php else : ?>
-<div class="clear">
+<div class="clear full-padding">
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
 	</div>
