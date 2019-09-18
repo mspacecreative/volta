@@ -79,13 +79,11 @@
 		<h2><?php the_field('heading'); ?></h2>
 		<?php endif; ?>
 		
-		<?php if ( get_field('paragraph_size') == 'small' ): ?>
-			<?php if ( get_field('content') ): ?>
+		<?php if ( get_field('content') ): ?>
+			<?php if ( get_field('paragraph_size') == 'small' ): ?>
 			<p><?php the_field('content'); ?></p>
-			<?php endif; ?>
 		
-		<?php elseif ( get_field('paragraph_size') == 'large' ): ?>
-			<?php if ( get_field('content') ): ?>
+			<?php elseif ( get_field('paragraph_size') == 'large' ): ?>
 			<p class="large"><?php the_field('content'); ?></p>
 			<?php endif; ?>
 		<?php endif; ?>
