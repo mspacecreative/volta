@@ -5,7 +5,7 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 <div class="clear top-padding top-margin">
 	
 	<?php if ( get_field('heading') ): ?>
-	<h2><?php the_field('heading'); ?></h2>
+	<h2 class="max-width-60"><?php the_field('heading'); ?></h2>
 	<?php endif; ?>
 	
 	<div class="two_third_col">
@@ -47,7 +47,7 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 <div class="clear bottom-padding bottom-margin">
 	
 	<?php if ( get_field('heading') ): ?>
-	<h2><?php the_field('heading'); ?></h2>
+	<h2 class="max-width-60"><?php the_field('heading'); ?></h2>
 	<?php endif; ?>
 	
 	<div class="two_third_col">
@@ -89,7 +89,7 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 <div class="clear top-bottom-padding top-bottom-margin">
 	
 	<?php if ( get_field('heading') ): ?>
-	<h2><?php the_field('heading'); ?></h2>
+	<h2 class="max-width-60"><?php the_field('heading'); ?></h2>
 	<?php endif; ?>
 	
 	<div class="two_third_col">
@@ -131,7 +131,7 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 <div class="clear top-padding bottom-margin">
 	
 	<?php if ( get_field('heading') ): ?>
-	<h2><?php the_field('heading'); ?></h2>
+	<h2 class="max-width-60"><?php the_field('heading'); ?></h2>
 	<?php endif; ?>
 	
 	<div class="two_third_col">
@@ -173,7 +173,7 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 <div class="clear top-padding top-bottom-margin">
 	
 	<?php if ( get_field('heading') ): ?>
-	<h2><?php the_field('heading'); ?></h2>
+	<h2 class="max-width-60"><?php the_field('heading'); ?></h2>
 	<?php endif; ?>
 	
 	<div class="two_third_col">
@@ -215,7 +215,7 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 <div class="clear bottom-padding top-margin">
 	
 	<?php if ( get_field('heading') ): ?>
-	<h2><?php the_field('heading'); ?></h2>
+	<h2 class="max-width-60"><?php the_field('heading'); ?></h2>
 	<?php endif; ?>
 	
 	<div class="two_third_col">
@@ -257,7 +257,7 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 <div class="clear bottom-padding top-bottom-margin">
 	
 	<?php if ( get_field('heading') ): ?>
-	<h2><?php the_field('heading'); ?></h2>
+	<h2 class="max-width-60"><?php the_field('heading'); ?></h2>
 	<?php endif; ?>
 	
 	<div class="two_third_col">
@@ -299,7 +299,7 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 <div class="clear full-padding top-margin">
 	
 	<?php if ( get_field('heading') ): ?>
-	<h2><?php the_field('heading'); ?></h2>
+	<h2 class="max-width-60"><?php the_field('heading'); ?></h2>
 	<?php endif; ?>
 	
 	<div class="two_third_col">
@@ -341,7 +341,7 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 <div class="clear full-padding bottom-margin">
 	
 	<?php if ( get_field('heading') ): ?>
-	<h2><?php the_field('heading'); ?></h2>
+	<h2 class="max-width-60"><?php the_field('heading'); ?></h2>
 	<?php endif; ?>
 	
 	<div class="two_third_col">
@@ -383,7 +383,7 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 <div class="clear full-padding top-bottom-margin">
 	
 	<?php if ( get_field('heading') ): ?>
-	<h2><?php the_field('heading'); ?></h2>
+	<h2 class="max-width-60"><?php the_field('heading'); ?></h2>
 	<?php endif; ?>
 	
 	<div class="two_third_col">
@@ -425,7 +425,7 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 <div class="clear top-bottom-padding top-margin">
 	
 	<?php if ( get_field('heading') ): ?>
-	<h2><?php the_field('heading'); ?></h2>
+	<h2 class="max-width-60"><?php the_field('heading'); ?></h2>
 	<?php endif; ?>
 	
 	<div class="two_third_col">
@@ -467,7 +467,7 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 <div class="clear top-bottom-padding bottom-margin">
 	
 	<?php if ( get_field('heading') ): ?>
-	<h2><?php the_field('heading'); ?></h2>
+	<h2 class="max-width-60"><?php the_field('heading'); ?></h2>
 	<?php endif; ?>
 	
 	<div class="two_third_col">
@@ -509,7 +509,7 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 <div class="clear full-padding">
 	
 	<?php if ( get_field('heading') ): ?>
-	<h2><?php the_field('heading'); ?></h2>
+	<h2 class="max-width-60"><?php the_field('heading'); ?></h2>
 	<?php endif; ?>
 	
 	<div class="two_third_col">
