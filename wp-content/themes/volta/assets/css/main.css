@@ -3703,7 +3703,7 @@ img {
 .blog article {
 	margin: 0 0 4em;
 }
-.blog .post-content-container {
+.blog .post-content-container, .single .post-content-container {
 	padding: 0 4em;
 }
 .blog article:last-child {
@@ -3713,7 +3713,7 @@ img {
 	width: 75%;
 }
 aside {
-	padding: 6em 0 4em;
+	padding: 6em 2em 4em 0;
 }
 aside h3 {
 	margin: 0 0 25px;
