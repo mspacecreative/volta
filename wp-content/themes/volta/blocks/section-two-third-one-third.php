@@ -1,7 +1,7 @@
 <?php
 $padding = get_field('section_padding');
 $margin = get_field('section_margin');
-if ( $padding == 'top' && $margin == 'margintop' ): ?>
+if ( $padding == 'top' && $margin == 'top' ): ?>
 <div class="clear top-padding top-margin">
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
@@ -38,7 +38,7 @@ if ( $padding == 'top' && $margin == 'margintop' ): ?>
 	
 </div>
 
-<?php elseif ( $padding == 'bottom' && $margin == 'marginbottom' ): ?>
+<?php elseif ( $padding == 'bottom' && $margin == 'bottom' ): ?>
 <div class="clear bottom-padding bottom-margin">
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
@@ -75,7 +75,7 @@ if ( $padding == 'top' && $margin == 'margintop' ): ?>
 	
 </div>
 
-<?php elseif ( $padding == 'both' && $margin == 'marginboth' ): ?>
+<?php elseif ( $padding == 'both' && $margin == 'both' ): ?>
 <div class="clear top-bottom-padding top-bottom-margin">
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
@@ -112,8 +112,8 @@ if ( $padding == 'top' && $margin == 'margintop' ): ?>
 	
 </div>
 
-<?php elseif ( $padding == 'full' && $margin == 'marginfull' ): ?>
-<div class="clear full-padding full-margin">
+<?php elseif ( $padding == 'full' ): ?>
+<div class="clear full-padding">
 	<div class="two_third_col">
 		<?php the_field('two_third_column'); ?>
 	</div>
