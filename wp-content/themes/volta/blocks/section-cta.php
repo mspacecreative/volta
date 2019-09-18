@@ -4,7 +4,7 @@
 <?php elseif ( get_field('background_color') ): ?>
 <section id="banner" class="container" style="background-color: <?php the_field('background_color'); ?>;">
 <?php else : ?>
-<section id="banner" class="container">
+<section class="banner container">
 <?php endif; ?>
 	<?php if ( get_field('text_color') == 'dark' ): ?>
 	<header class="max-width-800">
