@@ -37,8 +37,10 @@ get_header(); ?>
 	<div class="post-content-container container white-bg clear">
 		<div class="post-container">
 			<!-- post title -->
-			<div class="post-title-container">
-				<h1><?php the_title(); ?></h1>
+			<div class="post-title-outer">
+				<div class="post-title-container">
+					<h1><?php the_title(); ?></h1>
+				</div>
 			</div>
 			<!-- /post title -->
 			<div class="inner-padding">

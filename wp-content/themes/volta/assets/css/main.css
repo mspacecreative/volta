@@ -3708,7 +3708,10 @@ aside h3 {
 .inner-padding {
 	padding: 2em;
 }
-.page .post-title-container {
+.post-title-outer {
+	padding: 0 4em;
+}
+.post-title-container {
 	display: inline-block;
 	padding-bottom: 0;
 }
@@ -3853,6 +3856,9 @@ aside h3 {
 	.features .row.inline-icons {
 		margin-top: 0!important;
 	}
+	.post-title-outer {
+		padding: 0 2em;
+	}
 	.inner-padding {
 		padding: 1em;
 	}
@@ -3948,6 +3954,9 @@ aside h3 {
 	.tiles article, .tiles .width-70, .tiles .width-30, .tiles > .width-50, .tiles > .width-50:nth-child(4n - 1), .tiles .width-50:nth-child(4n - 2) {
 		flex-basis: 100%;
 		width: 100%;
+	}
+	.post-title-outer {
+		padding: 0 2em;
 	}
 	#intro article:first-child {
 		border-right: none;
