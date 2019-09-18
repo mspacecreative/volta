@@ -79,13 +79,16 @@
 		<h2><?php the_field('heading'); ?></h2>
 		<?php endif; ?>
 		
-		<?php if ( get_field('content') ): ?>
-			<?php if ( get_field('paragraph_size') == 'small' ): ?>
-			<p><?php the_field('content'); ?></p>
+		<?php
+		$content = get_field('content');
+		$size = get_field('paragraph_size');
 		
-			<?php elseif ( get_field('paragraph_size') == 'large' ): ?>
-			<p class="large"><?php the_field('content'); ?></p>
-			<?php endif; ?>
+		if ( $content && $size == 'small' ): ?>
+		<p><?php echo $content; ?></p>
+		
+		<?php elseif ( $content && $size == 'large' ) ?>
+		<p class="large"><?php echo $content; ?></p>
+		
 		<?php endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
