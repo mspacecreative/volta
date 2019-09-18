@@ -11,17 +11,15 @@
 		<?php endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
+		<?php while( have_rows('cta_button') ): the_row(); ?>
 		<footer>
 			
-			<?php while( have_rows('cta_button') ): the_row(); ?>
 			<ul class="actions center-items">
-				<?php if ( get_sub_field('button_link') ): ?>
 				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
-				<?php endif; ?>
 			</ul>
-			<?php endwhile; ?>
 			
 		</footer>
+		<?php endwhile; ?>
 		<?php endif; ?>
 		
 	</header>
