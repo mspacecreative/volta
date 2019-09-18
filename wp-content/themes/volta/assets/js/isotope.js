@@ -9,8 +9,10 @@
 		}
 	});
 		
-	grid.imagesLoaded().progress( function() {
-		grid.isotope('layout');
-    });
+	$(window).load(function () {
+		grid.imagesLoaded().progress( function() {
+			grid.isotope('layout');
+		});
+	});
 	
 })(jQuery);

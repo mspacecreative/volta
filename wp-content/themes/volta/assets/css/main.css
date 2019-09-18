@@ -3673,6 +3673,9 @@ img {
 	padding: 0 2em;
 	background-color: #fff;
 }
+.single .post-container .inner {
+	padding: 4em 2em;
+}
 .post-header {
 	width: 100%;
 	background-size: cover;
@@ -3710,7 +3713,7 @@ img {
 	width: 75%;
 }
 aside {
-	padding: 4em 0;
+	padding: 6em 0 4em;
 }
 aside h3 {
 	margin: 0 0 25px;
@@ -3751,7 +3754,7 @@ aside h3 {
 }
 .blog .inner {
 	width: 100%;
-	padding: 2em;
+	padding: 4em 2em;
 }
 .page h2 {
 	font-size: 1.5em;
