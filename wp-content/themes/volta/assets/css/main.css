@@ -1900,6 +1900,10 @@ input, select, textarea {
 			list-style: none;
 		}
 		
+		.post-content-container ul.actions li {
+			text-indent: 0;
+		}
+		
 		.post-content-container ul li:before {
 			content: '\f0da';
 			font-family: fontAwesome;
