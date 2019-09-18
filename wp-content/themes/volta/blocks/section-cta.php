@@ -15,7 +15,7 @@
 		$heading = get_field('heading');
 		$body = get_field('content');
 		
-		if ( $headersize == 'small' && $bodysize == 'small' ):
+		if ( $headersize == 'small' && $bodysize == 'bodysmall' ):
 			if ( $heading ): ?>
 			<h2><?php the_field('heading'); ?></h2>
 			<?php endif;
@@ -24,7 +24,7 @@
 			<p><?php the_field('content'); ?></p>
 			<?php endif;
 		
-		elseif ( $headersize == 'large' && $bodysize == 'large' ):
+		elseif ( $headersize == 'large' && $bodysize == 'bodylarge' ):
 			if ( $heading ): ?>
 			<h1><?php the_field('heading'); ?></h1>
 			<?php endif;
@@ -33,7 +33,7 @@
 			<p class="large"><?php the_field('content'); ?></p>
 			<?php endif;
 			
-		elseif ( $headersize == 'small' && $bodysize == 'large' ):
+		elseif ( $headersize == 'small' && $bodysize == 'bodylarge' ):
 			if ( $heading ): ?>
 			<h2><?php the_field('heading'); ?></h2>
 			<?php endif;
@@ -42,7 +42,7 @@
 			<p class="large"><?php the_field('content'); ?></p>
 			<?php endif;
 			
-		elseif ( $headersize == 'large' && $bodysize == 'small' ):
+		elseif ( $headersize == 'large' && $bodysize == 'bodysmall' ):
 			if ( $heading ): ?>
 			<h1><?php the_field('heading'); ?></h1>
 			<?php endif;
@@ -77,7 +77,7 @@
 		$heading = get_field('heading');
 		$body = get_field('content');
 		
-		if ( $headersize == 'small' && $bodysize == 'small' ):
+		if ( $headersize == 'small' && $bodysize == 'bodysmall' ):
 			if ( $heading ): ?>
 			<h2><?php the_field('heading'); ?></h2>
 			<?php endif;
@@ -86,7 +86,7 @@
 			<p><?php the_field('content'); ?></p>
 			<?php endif;
 		
-		elseif ( $headersize == 'large' && $bodysize == 'large' ):
+		elseif ( $headersize == 'large' && $bodysize == 'bodylarge' ):
 			if ( $heading ): ?>
 			<h1><?php the_field('heading'); ?></h1>
 			<?php endif;
@@ -95,7 +95,7 @@
 			<p class="large"><?php the_field('content'); ?></p>
 			<?php endif;
 			
-		elseif ( $headersize == 'small' && $bodysize == 'large' ):
+		elseif ( $headersize == 'small' && $bodysize == 'bodylarge' ):
 			if ( $heading ): ?>
 			<h2><?php the_field('heading'); ?></h2>
 			<?php endif;
@@ -104,7 +104,7 @@
 			<p class="large"><?php the_field('content'); ?></p>
 			<?php endif;
 			
-		elseif ( $headersize == 'large' && $bodysize == 'small' ):
+		elseif ( $headersize == 'large' && $bodysize == 'bodysmall' ):
 			if ( $heading ): ?>
 			<h1><?php the_field('heading'); ?></h1>
 			<?php endif;
@@ -139,7 +139,7 @@
 		$heading = get_field('heading');
 		$body = get_field('content');
 		
-		if ( $headersize == 'small' && $bodysize == 'small' ):
+		if ( $headersize == 'small' && $bodysize == 'bodysmall' ):
 			if ( $heading ): ?>
 			<h2><?php the_field('heading'); ?></h2>
 			<?php endif;
@@ -148,7 +148,7 @@
 			<p><?php the_field('content'); ?></p>
 			<?php endif;
 		
-		elseif ( $headersize == 'large' && $bodysize == 'large' ):
+		elseif ( $headersize == 'large' && $bodysize == 'bodylarge' ):
 			if ( $heading ): ?>
 			<h1><?php the_field('heading'); ?></h1>
 			<?php endif;
@@ -157,7 +157,7 @@
 			<p class="large"><?php the_field('content'); ?></p>
 			<?php endif;
 			
-		elseif ( $headersize == 'small' && $bodysize == 'large' ):
+		elseif ( $headersize == 'small' && $bodysize == 'bodylarge' ):
 			if ( $heading ): ?>
 			<h2><?php the_field('heading'); ?></h2>
 			<?php endif;
@@ -166,7 +166,7 @@
 			<p class="large"><?php the_field('content'); ?></p>
 			<?php endif;
 			
-		elseif ( $headersize == 'large' && $bodysize == 'small' ):
+		elseif ( $headersize == 'large' && $bodysize == 'bodysmall' ):
 			if ( $heading ): ?>
 			<h1><?php the_field('heading'); ?></h1>
 			<?php endif;
