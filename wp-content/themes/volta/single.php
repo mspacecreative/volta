@@ -24,6 +24,17 @@ endif; ?>
 <!-- /post thumbnail -->
 
 <div class="post-content-container container white-bg clear">
+<!-- post title -->
+<div class="post-title-container">
+	<h1><?php the_title(); ?></h1>
+	<!-- post details -->
+	<div class="post-meta-container">
+		<span class="date"><?php the_time('F j, Y'); ?></span>
+		<span class="author"><?php _e( 'By', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
+	</div>
+	<!-- /post details -->
+</div>
+<!-- /post title -->
 <main role="main">
 	<!-- section -->
 	<section>
@@ -34,17 +45,6 @@ endif; ?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		
 			<div class="post-container">
-				<!-- post title -->
-				<div class="post-title-container">
-					<h1><?php the_title(); ?></h1>
-					<!-- post details -->
-					<div class="post-meta-container">
-						<span class="date"><?php the_time('F j, Y'); ?></span>
-						<span class="author"><?php _e( 'By', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-					</div>
-					<!-- /post details -->
-				</div>
-				<!-- /post title -->
 				<div class="inner">
 					<?php the_content(); // Dynamic Content ?>
 					
