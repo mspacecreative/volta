@@ -12,6 +12,7 @@
 		
 		<?php if( have_rows('cta_button') ): ?>
 		<?php while( have_rows('cta_button') ): the_row(); ?>
+		<?php if ( get_sub_field('button_link') ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
@@ -19,6 +20,7 @@
 			</ul>
 			
 		</footer>
+		<?php endif; ?>
 		<?php endwhile; ?>
 		<?php endif; ?>
 		
