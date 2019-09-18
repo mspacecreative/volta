@@ -346,6 +346,7 @@
 	
 </div>
 
+<?php else : ?>
 <?php elseif ( get_field('section_padding') == 'full' ): ?>
 
 <div class="full-padding">
