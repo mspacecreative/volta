@@ -9,7 +9,12 @@
 		<div class="grid-inner">
 			
 			<!-- post thumbnail -->
-			<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
+			<?php if ( get_field('featured_video') ): ?>
+				<div class="video-container">
+					<?php the_field('featured_video'); ?>
+				</div>
+			
+			<?php else : ?>
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 					<?php the_post_thumbnail('medium'); // Declare pixel size you need inside the array ?>
 				</a>
