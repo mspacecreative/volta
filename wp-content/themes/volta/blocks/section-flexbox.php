@@ -233,7 +233,7 @@
 <?php elseif ( get_field('section_padding') == 'both' ): ?>
 <?php elseif ( get_field('section_margin') == 'marginboth' ): ?>
 
-<div class="top-bottom-padding">
+<div class="top-bottom-padding top-bottom-margin">
 	
 	<?php if ( get_field('section_heading') ): ?>
 	<h2><?php the_field('section_heading'); ?></h2>
