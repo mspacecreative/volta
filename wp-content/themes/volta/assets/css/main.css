@@ -3700,6 +3700,9 @@ img {
 .blog article {
 	margin: 0 0 4em;
 }
+.blog .post-content-container {
+	padding: 0 4em;
+}
 .blog article:last-child {
 	margin-bottom: 0;
 }
@@ -3748,7 +3751,7 @@ aside h3 {
 }
 .blog .inner {
 	width: 100%;
-	padding: 0 2em;
+	padding: 2em;
 }
 .page h2 {
 	font-size: 1.5em;
