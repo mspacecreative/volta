@@ -1,5 +1,4 @@
 <?php
-/* Template Name: Custom Layout */
 get_header(); ?>
 
 <!-- Background image -->
