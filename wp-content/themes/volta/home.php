@@ -1,6 +1,4 @@
-<?php
-/* Template Name: Custom Layout */
-get_header(); ?>
+<?php get_header(); ?>
 
 <!-- Background image -->
 <div class="background">
@@ -12,6 +10,9 @@ get_header(); ?>
 <div id="page-wrapper">
 	
 	<!-- post thumbnail -->
+	<?php if ( get_field('hide_featured_image_in_header') ): ?>
+	
+	<?php else : ?>
 	<?php
 	if ( get_field('featured_image_alignment') == 'top' ): ?>
 	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
@@ -26,6 +27,8 @@ get_header(); ?>
 	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 	echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: center;"></div>';
 	endif; ?>
+	
+	<?php endif; ?>
 	<!-- /post thumbnail -->
 	
 	<!-- Nav -->
@@ -34,26 +37,15 @@ get_header(); ?>
 	</nav>
 	<!-- /Nav -->
 	
-	<div class="post-content-container container white-bg clear">
-		<div class="post-container">
-			<!-- post title -->
-			<div class="post-title-outer">
-				<div class="post-title-container">
-					<h1><?php the_title(); ?></h1>
-				</div>
-			</div>
-			<!-- /post title -->
-			<?php 
-			if ( have_posts() ) {
-				while ( have_posts() ) {
-					the_post(); 
-					//
-					the_content();
-					//
-				} // end while
-			} // end if
-			?>
-		</div>
-	</div>
+	<?php 
+	if ( have_posts() ) {
+		while ( have_posts() ) {
+			the_post(); 
+			//
+			the_content();
+			//
+		} // end while
+	} // end if
+	?>
 
 	<?php get_footer(); ?>
