@@ -70,15 +70,11 @@
 	<?php else : ?>
 	<header class="max-width-800">
 		
-		<?php if ( get_field('heading_size') == 'large' ): ?>
+		<?php if ( get_field('heading') ): ?>
 		<h1><?php the_field('heading'); ?></h1>
-		<?php elseif ( get_field('heading_size') == 'small' ): ?>
-		<h2><?php the_field('heading'); ?></h2>
 		<?php endif; ?>
 		
-		<?php if ( get_field('paragraph_size') == 'large' ): ?>
-		<p class="large"><?php the_field('content'); ?></p>
-		<?php elseif ( get_field('paragraph_size') == 'small' ): ?>
+		<?php if ( get_field('content') ): ?>
 		<p><?php the_field('content'); ?></p>
 		<?php endif; ?>
 		
