@@ -7,7 +7,7 @@
 <!-- /Background image -->
 
 <!-- Page wrapper -->
-<div id="page-wrapper">
+<div id="page-wrapper" class="blog">
 	
 	<!-- post thumbnail -->
 	<?php
@@ -43,18 +43,20 @@
 		<main role="main">
 			<!-- section -->
 			<section>
+				
+				<!-- post title -->
+				<div class="post-title-container">
+					<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
+				</div>
+				<!-- /post title -->
 	
-				<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
-	
-				<?php get_template_part('loop'); ?>
+				<?php get_template_part('loop-masonry'); ?>
 	
 				<?php get_template_part('pagination'); ?>
 	
 			</section>
 			<!-- /section -->
 		</main>
-
-		<?php get_sidebar(); ?>
 
 	</div>
 	
