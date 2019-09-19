@@ -45,7 +45,7 @@
 				
 				<!-- post title -->
 				<div class="post-title-container">
-					<h1><?php _e( 'Author Archives for ', 'html5blank' ); echo get_the_author(); ?></h1>
+					<h1><?php _e( 'Articles written by ', 'html5blank' ); echo get_the_author(); ?></h1>
 				</div>
 				
 				<?php if ( get_the_author_meta('description')) : ?>
