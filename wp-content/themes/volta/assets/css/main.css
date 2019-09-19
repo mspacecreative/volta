@@ -3850,6 +3850,9 @@ aside {
 	left: 0;
 	width: 100%;
 }
+.post-content-container ul {
+	margin: 1em 0;
+}
 @media (min-width: 1600px) {
 	#header {
 		max-height: 1000px;
