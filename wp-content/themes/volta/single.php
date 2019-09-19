@@ -49,6 +49,13 @@ endif; ?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		
 			<div class="post-container">
+				
+				<?php if ( get_field('video_embed') ): ?>
+				<div class="video-container">
+					<?php the_field('video_embed'); ?>
+				</div>
+				<?php endif; ?>
+				
 				<?php the_content(); // Dynamic Content ?>
 				
 				<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
