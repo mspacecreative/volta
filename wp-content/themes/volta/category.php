@@ -46,11 +46,11 @@
 				
 				<!-- post title -->
 				<div class="post-title-container">
-					<h1><?php _e( 'Categories for ', 'html5blank' ); single_cat_title(); ?></h1>
+					<h1><?php _e( 'Categorized under ', 'html5blank' ); single_cat_title(); ?></h1>
 				</div>
 				<!-- /post title -->
 	
-				<?php get_template_part('loop-masonry'); ?>
+				<?php get_template_part('includes/loops/loop-masonry'); ?>
 	
 				<?php get_template_part('pagination'); ?>
 	

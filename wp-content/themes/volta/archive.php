@@ -50,7 +50,7 @@
 				</div>
 				<!-- /post title -->
 	
-				<?php get_template_part('loop-masonry'); ?>
+				<?php get_template_part('includes/loops/loop-masonry'); ?>
 	
 				<?php get_template_part('pagination'); ?>
 	
