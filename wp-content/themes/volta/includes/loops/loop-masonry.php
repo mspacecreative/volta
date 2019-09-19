@@ -9,9 +9,9 @@
 		<div class="grid-inner">
 			
 			<!-- post thumbnail -->
-			<?php if ( get_field('featured_video') ): ?>
+			<?php if ( get_field('video_embed') ): ?>
 				<div class="video-container">
-					<?php the_field('featured_video'); ?>
+					<?php the_field('video_embed'); ?>
 				</div>
 			
 			<?php else : ?>
