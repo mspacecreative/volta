@@ -3752,7 +3752,8 @@ aside {
 	margin: 0 0 15px;
 }
 #page-wrapper {
-	position: relative
+	position: relative;
+	overflow-x: hidden;
 }
 .width-1080 {
 	width: 90%;
