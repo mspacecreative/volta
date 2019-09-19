@@ -3843,11 +3843,20 @@ aside {
 	.features .row.inline-icons {
 		margin-top: 0!important;
 	}
+	.post-container {
+		padding: 0 1em 2em;
+	}
+	.blog .inner {
+		padding: 1em;
+	}
+	.blog .post-content-container, .single .post-content-container {
+	    padding: 0 1em;
+	}
 	/*.post-title-outer {
 	    padding: 0 1em;
 	}*/
 	.full-padding {
-	    padding: 2em;
+	    padding: 1em;
 	}
 	.inner-padding {
 		padding: 1em;
@@ -3987,11 +3996,17 @@ aside {
 	.tiles .tall-image {
 		min-height: 400px;
 	}
+	.blog .post-content-container, .single .post-content-container {
+	    padding: 0 1em;
+	}
+	.blog .inner {
+		padding: 1em;
+	}
 	.post-container {
 		padding: 0 1em 2em;
 	}
 	.full-padding {
-	    padding: 2em;
+	    padding: 1em;
 	}
 	.inner-padding {
 		padding: 1em;
