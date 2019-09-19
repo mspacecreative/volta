@@ -21,9 +21,8 @@
 	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 	echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: center;"></div>'; ?>
 	<?php else : ?>
-	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-	echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: center;"></div>';
-	endif; ?>
+	<div class="post-header container" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/header.jpg'); background-position: center;"></div>
+	<?php endif; ?>
 	<!-- /post thumbnail -->
 	
 	<!-- post thumbnail on mobile -->
@@ -50,9 +49,11 @@
 				</div>
 				<!-- /post title -->
 	
-				<?php get_template_part('includes/loops/loop-masonry'); ?>
-	
-				<?php get_template_part('pagination'); ?>
+				<div class="inner">
+					<?php get_template_part('includes/loops/loop-masonry'); ?>
+					
+					<?php get_template_part('pagination'); ?>
+				</div>
 	
 			</section>
 			<!-- /section -->
