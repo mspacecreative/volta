@@ -3849,6 +3849,9 @@ aside {
 	.blog .inner {
 		padding: 1em;
 	}
+	.single .post-container {
+		padding: 1em;
+	}
 	.blog .post-content-container, .single .post-content-container {
 	    padding: 0 1em;
 	}
@@ -4013,6 +4016,9 @@ aside {
 	}
 	.left-side .full-span-content, .right-side .full-span-content {
 		padding: 2em;
+	}
+	.single .post-container {
+		padding: 1em;
 	}
 	.content-bottom .left, .content-bottom .right {
 		width: 100%;
