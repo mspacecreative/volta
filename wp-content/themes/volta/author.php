@@ -25,6 +25,12 @@
 	<?php endif; ?>
 	<!-- /post thumbnail -->
 	
+	<!-- Nav -->
+	<nav id="nav">
+		<?php html5blank_nav(); ?>
+	</nav>
+	<!-- /Nav -->
+	
 	<div class="post-content-container container white-bg clear">
 
 		<main role="main">
