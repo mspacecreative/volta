@@ -3839,11 +3839,13 @@ aside {
 	height: 0;
 	position: relative;
 	padding-bottom: 56.25%;
+	background-color: #00DBB3;
 }
 .featured-image-mobile img {
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 100%;
 }
 @media (min-width: 1600px) {
 	#header {

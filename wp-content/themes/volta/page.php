@@ -27,6 +27,13 @@ get_header(); ?>
 	endif; ?>
 	<!-- /post thumbnail -->
 	
+	<!-- post thumbnail on mobile -->
+	<div class="featured-image-mobile">
+		<?php if ( has_post_thumbnail() ): ?>
+			<?php the_post_thumbnail('featured-mobile'); ?>
+		<?php endif; ?>
+	</div>
+	
 	<!-- Nav -->
 	<nav id="nav">
 		<?php html5blank_nav(); ?>
