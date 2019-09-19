@@ -166,6 +166,9 @@ function footerScripts() {
 	
 	wp_register_script( 'isotope-script', get_template_directory_uri() . '/assets/js/isotope.js', array( 'jquery' ), null, true );
 	wp_enqueue_script('isotope-script');
+	
+	wp_register_script('fontawesome', 'https://use.fontawesome.com/6ccd600e51.js', array('jquery'), null, true);
+	wp_enqueue_script('fontawesome');
 }
 
 // Register HTML5 Blank Navigation
