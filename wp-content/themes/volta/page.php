@@ -32,7 +32,7 @@ get_header(); ?>
 		<?php if ( has_post_thumbnail() ): ?>
 			<?php the_post_thumbnail('featured-mobile'); ?>
 		<?php else : ?>
-			<img src="<?php echo get_template_directory_uri(); ?>/img/header.jpg">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/header-mobile.jpg">
 		<?php endif; ?>
 	</div>
 	<!-- /post thumbnail on mobile -->
