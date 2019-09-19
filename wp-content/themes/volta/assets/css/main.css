@@ -3834,6 +3834,19 @@ aside {
 	width: 100%;
 	height: 100%;
 }
+.featured-image-mobile {
+	display: none;
+	height: 0;
+	position: relative;
+	padding-bottom: 56.25%;
+}
+.featured-image-mobile img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
 @media (min-width: 1600px) {
 	#header {
 		max-height: 1000px;
@@ -3842,6 +3855,12 @@ aside {
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
+	}
+	.featured-image-mobile {
+		display: block;
+	}
+	.post-header {
+		display: none;
 	}
 	.post-container {
 		padding: 0 1em 2em;
@@ -3998,6 +4017,12 @@ aside {
 @media (max-width: 450px) {
 	.tiles .tall-image {
 		min-height: 400px;
+	}
+	.featured-image-mobile {
+		display: block;
+	}
+	.post-header {
+		display: none;
 	}
 	.blog .post-content-container, .single .post-content-container {
 	    padding: 0 1em;
