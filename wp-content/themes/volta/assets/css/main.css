@@ -3654,6 +3654,9 @@ img {
 	margin: auto;
 	width: 90%;
 }
+.banner .max-width-800 {
+	width: 80%;
+}
 
 #insights {
 	background-image: url(../../img/VoltaGrandOpening-150-rs-1024x683.png);
