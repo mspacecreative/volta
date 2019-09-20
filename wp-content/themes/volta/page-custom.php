@@ -12,18 +12,17 @@ get_header(); ?>
 <div id="page-wrapper">
 	
 	<!-- post thumbnail -->
-	<?php
-	if ( get_field('featured_image_alignment') == 'top' ): ?>
+	<?php if ( get_field('featured_image_alignment') == 'top' ): ?>
 	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-	echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: top center;"></div>'; ?>
+	echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: top center;"><div class="post-header-overlay"></div></div>'; ?>
 	<?php elseif ( get_field('featured_image_alignment') == 'bottom' ): ?>
 	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-	<?php echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: bottom center;"></div>'; ?>
+	<?php echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: bottom center;"><div class="post-header-overlay"></div></div>'; ?>
 	<?php elseif ( get_field('featured_image_alignment') == 'center' ): ?>
 	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-	echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: center;"></div>'; ?>
+	echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: center;"><div class="post-header-overlay"></div></div>'; ?>
 	<?php else : ?>
-	<div class="post-header container" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/header.jpg'); background-position: center;"></div>
+	<div class="post-header container" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/header.jpg'); background-position: center;"><div class="post-header-overlay"></div></div>
 	<?php endif; ?>
 	<!-- /post thumbnail -->
 	
