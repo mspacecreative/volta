@@ -3866,6 +3866,8 @@ aside {
 .search-submit {
 	background-color: #000;
 	color: #fff;
+	padding-left: 2%;
+	padding-right: 2%;
 }
 .search-window .search-submit {
 	background: none;
@@ -3880,9 +3882,10 @@ aside {
 }
 .search-input {
 	border: none;
+	background: none;
 	font-size: 20px;
 	border-bottom: 1px solid rgba(255, 255, 255, .75);
-	width: 75%;
+	width: 71%;
 	margin-right: 5%;
 	
 }
