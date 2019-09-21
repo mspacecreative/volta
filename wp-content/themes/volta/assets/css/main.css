@@ -199,7 +199,7 @@ input, select, textarea {
 
 	p, ul, ol, dl, table {
 		margin-bottom: 1em;
-		font-size: 17px;
+		font-size: 18px;
 		line-height: 1.75em;
 		color: #000;
 	}
@@ -1843,7 +1843,7 @@ input, select, textarea {
 		header > p {
 			display: block;
 			margin: 1em 0 2em 0;
-			line-height: 1.5em;
+			line-height: 1.75em;
 			text-align: inherit;
 		}
 
@@ -3296,7 +3296,7 @@ input, select, textarea {
 		}
 		
 		.tiles p {
-			font-size: 17px;
+			font-size: 18px;
 		}
 	
 			.tiles + * {
