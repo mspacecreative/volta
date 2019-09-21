@@ -3863,6 +3863,29 @@ aside {
 	left: 0;
 	width: 100%;
 }
+.search-submit {
+	background-color: #000;
+	color: #fff;
+}
+.search-window .search-submit {
+	background: none;
+	color: #fff;
+	border: 1px solid #fff;
+	width: 20%;
+}
+.search-form-container {
+	width: 80%;
+	max-width: 600px;
+	text-align: center;
+}
+.search-input {
+	border: none;
+	font-size: 20px;
+	border-bottom: 1px solid rgba(255, 255, 255, .75);
+	width: 75%;
+	margin-right: 5%;
+	
+}
 .post-content-container ul {
 	margin: 1em 0;
 }
