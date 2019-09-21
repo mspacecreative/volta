@@ -148,7 +148,11 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 1.25em;
+		font-size: 1.15em;
+	}
+	
+	.flex-box h3 {
+		font-size: 1em;
 	}
 
 	h4 {
