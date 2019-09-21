@@ -84,7 +84,7 @@ input, select, textarea {
 
 	body {
 		background: #fff;
-		color: #5b5b5b;
+		color: #000;
 		font-size: 15pt;
 		line-height: 1.85em;
 		font-family: neue-haas-grotesk-display, sans-serif;
@@ -133,7 +133,6 @@ input, select, textarea {
 	
 	.post-title-container h1 {
 		margin-bottom: 0;
-		letter-spacing: -0.03em;
 	}
 	.post-meta-container, .post-meta-container p {
 		font-size: 15px;
