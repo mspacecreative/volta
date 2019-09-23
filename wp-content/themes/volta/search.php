@@ -27,6 +27,7 @@
 	
 	<!-- post thumbnail on mobile -->
 	<div class="featured-image-mobile">
+		<div class="post-header-overlay"></div>
 		<img src="<?php echo get_template_directory_uri(); ?>/img/header-mobile.jpg">
 	</div>
 	<!-- /post thumbnail on mobile -->
