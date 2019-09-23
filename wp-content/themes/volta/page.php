@@ -39,6 +39,7 @@ get_header(); ?>
 	
 	<!-- post thumbnail on mobile -->
 	<div class="featured-image-mobile">
+		<div class="post-header-overlay"></div>
 		<?php if ( has_post_thumbnail() ): ?>
 			<?php the_post_thumbnail('featured-mobile'); ?>
 		<?php else : ?>
