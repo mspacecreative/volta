@@ -210,6 +210,10 @@ input, select, textarea {
 		letter-spacing: 0.015em;
 	}
 	
+	span {
+		letter-spacing: 0.015em;
+	}
+	
 	.light p {
 		color: #fff;
 	}
