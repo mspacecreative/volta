@@ -3862,6 +3862,21 @@ form input.keyword-search-input[type="text"] {
 .sidebar-widget > div {
 	margin-bottom: 4em;
 }
+.widget_categories ul {
+	font-size: 0;
+	padding: 0;
+}
+.widget_categories li {
+	border: 1px solid #333;
+	border-radius: 3px;
+	font-size: 14px;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+.widget_categories a {
+	display: block;
+	padding: 15px 10px;
+}
 @media (min-width: 1600px) {
 	#header {
 		max-height: 1000px;
