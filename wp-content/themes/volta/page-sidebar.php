@@ -55,8 +55,8 @@ get_header(); ?>
 	</nav>
 	<!-- /Nav -->
 	
-	<div class="post-content-container container white-bg clear">
-		<div class="post-container">
+	<div class="post-content-container container white-bg">
+		<div class="post-container clear">
 			<!-- post title -->
 			<div class="post-title-outer">
 				<div class="post-title-container">
@@ -78,17 +78,6 @@ get_header(); ?>
 							
 							<?php the_content(); // Dynamic Content ?>
 							
-							<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
-							
-							<div class="post-meta-container">
-								<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
-								
-								<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
-							</div>
-							
-							<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
-							
-							<?php comments_template(); ?>
 						</div>
 								
 					</article>
