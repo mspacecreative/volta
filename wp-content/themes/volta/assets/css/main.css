@@ -3855,7 +3855,7 @@ form input.search-submit[type=submit]:hover {
 .mobile-nav .sub-menu {
 	display: none;
 }
-.keyword-search-input {
+form input.keyword-search-input[type="text"] {
 	max-width: 200px;
 }
 @media (min-width: 1600px) {
