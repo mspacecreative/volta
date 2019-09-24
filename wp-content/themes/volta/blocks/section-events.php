@@ -19,7 +19,7 @@
 					<?php
 					if ( has_post_thumbnail() ): ?>
 					<span class="event-thumb one-third">
-						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('blog-thumb'); ?></a>
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('small-blog-thumb'); ?></a>
 					</span>
 					<?php else : ?>
 					<span class="event-thumb one-third">

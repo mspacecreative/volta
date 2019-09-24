@@ -31,6 +31,7 @@ if (function_exists('add_theme_support'))
     add_image_size('medium', 300, '', true); // Medium Thumbnail
     add_image_size('small', 150, '', true); // Small Thumbnail
     add_image_size('blog-thumb', 400, 400, array( 'center', 'center' ));
+    add_image_size('small-blog-thumb', 200, 200, array( 'center', 'center' ));
     add_image_size('featured-mobile', 600, 338, array( 'center', 'center' ));
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
