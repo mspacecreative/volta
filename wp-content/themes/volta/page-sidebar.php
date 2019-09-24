@@ -74,7 +74,9 @@ get_header(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			
 				<div class="post-container">
+					
 					<?php the_content(); // Dynamic Content ?>
+					
 				</div>
 						
 			</article>
