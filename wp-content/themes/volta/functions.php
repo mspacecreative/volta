@@ -221,7 +221,7 @@ function add_slug_to_body_class($classes)
 // If Dynamic Sidebar Exists
 if (function_exists('register_sidebar'))
 {
-    // Define Sidebar Widget Area 1
+    // Define Blog Sidebar
     register_sidebar(array(
         'name' => __('Blog Sidebar', 'html5blank'),
         'description' => __('Items to be display in Blog sidebar', 'html5blank'),
@@ -232,11 +232,11 @@ if (function_exists('register_sidebar'))
         'after_title' => '</h3>'
     ));
 
-    // Define Sidebar Widget Area 2
+    // Define Blog Search Form
     register_sidebar(array(
-        'name' => __('Widget Area 2', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-2',
+        'name' => __('Blog Search Form', 'html5blank'),
+        'description' => __('Blog Specific Search form', 'html5blank'),
+        'id' => 'blog-search-form',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',

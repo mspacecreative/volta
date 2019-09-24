@@ -3814,6 +3814,12 @@ aside {
 .search-submit {
 	background-color: #000;
 	color: #fff;
+	padding: 5px 10px;
+	font-size: 15px;
+	border-radius: 3px;
+}
+.search-submit:hover {
+	background-color: #999;
 }
 .search-window .search-submit {
 	padding-left: 2%;
