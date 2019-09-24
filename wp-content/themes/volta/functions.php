@@ -224,7 +224,7 @@ if (function_exists('register_sidebar'))
     // Define Blog Sidebar
     register_sidebar(array(
         'name' => __('Blog Sidebar', 'html5blank'),
-        'description' => __('Items to be display in Blog sidebar', 'html5blank'),
+        'description' => __('Items to be displayed in Blog sidebar', 'html5blank'),
         'id' => 'blog-sidebar',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
@@ -232,11 +232,11 @@ if (function_exists('register_sidebar'))
         'after_title' => '</h3>'
     ));
 
-    // Define Blog Search Form
+    // Define Sidebar
     register_sidebar(array(
-        'name' => __('Blog Search Form', 'html5blank'),
-        'description' => __('Blog Specific Search form', 'html5blank'),
-        'id' => 'blog-search-form',
+        'name' => __('Page Sidebar', 'html5blank'),
+        'description' => __('Items to be displayed in Pages sidebar', 'html5blank'),
+        'id' => 'sidebar',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
