@@ -3642,7 +3642,7 @@ img {
 	padding: 0 2em;
 	background-color: #fff;
 }
-.single .post-container {
+.single .post-container, .page-template-page-sidebar .post-container {
 	padding: 4em 2em;
 }
 .post-header {
@@ -3672,7 +3672,7 @@ img {
 .blog article {
 	margin: 0 0 4em;
 }
-.blog .post-content-container, .single .post-content-container {
+.blog .post-content-container, .single .post-content-container, .page-template-page-sidebar .post-content-container {
 	padding: 0 4em;
 }
 .blog article:last-child {
@@ -3882,10 +3882,10 @@ form input.search-submit[type=submit]:hover {
 	.blog .inner {
 		padding: 1em;
 	}
-	.single .post-container {
+	.single .post-container, .page-template-page-sidebar .post-container {
 		padding: 1em;
 	}
-	.blog .post-content-container, .single .post-content-container {
+	.blog .post-content-container, .single .post-content-container, .page-template-page-sidebar .post-content-container {
 	    padding: 0 1em;
 	}
 	/*.post-title-outer {
@@ -3909,9 +3909,6 @@ form input.search-submit[type=submit]:hover {
 	.flexbox-5:last-child {
 		margin-bottom: 0;
 	}
-	/*.post-content-container {
-		padding: 0 1em;
-	}*/
 	.post-title-container {
 		padding: 1em 1em 2em;
 	}
@@ -4018,9 +4015,6 @@ form input.search-submit[type=submit]:hover {
 	.flexbox-5:last-child {
 		margin-bottom: 0;
 	}
-	/*.post-content-container {
-		padding: 0 1em;
-	}*/
 	.post-title-container {
 		padding: 1em 1em 2em;
 	}
@@ -4044,7 +4038,7 @@ form input.search-submit[type=submit]:hover {
 	.post-header {
 		display: none;
 	}
-	.blog .post-content-container, .single .post-content-container {
+	.blog .post-content-container, .single .post-content-container, .page-template-page-sidebar .post-content-container {
 	    padding: 0 1em;
 	}
 	.blog .inner {
@@ -4062,7 +4056,7 @@ form input.search-submit[type=submit]:hover {
 	.left-side .full-span-content, .right-side .full-span-content {
 		padding: 2em;
 	}
-	.single .post-container {
+	.single .post-container, .page-template-page-sidebar .post-container {
 		padding: 1em;
 	}
 	.content-bottom .left, .content-bottom .right {
