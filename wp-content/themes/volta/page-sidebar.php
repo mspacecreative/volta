@@ -58,46 +58,57 @@ get_header(); ?>
 	</nav>
 	<!-- /Nav -->
 	
-	<div class="post-content-container container white-bg clear">
-	<!-- post title -->
-	<div class="post-title-container">
-		<h1><?php the_title(); ?></h1>
-	</div>
-	<!-- /post title -->
-	<main role="main">
-		<!-- section -->
-		<section>
-						
-		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-						
-			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<!-- post-content-container -->
+	<div class="post-content-container container white-bg">
+	
+		<!-- post title -->
+		<div class="post-title-container">
+			<h1><?php the_title(); ?></h1>
+		</div>
+		<!-- /post title -->
+		
+		<!-- clear -->
+		<div class="clear">
 			
-				<div class="post-container">
+			<main role="main">
+				<!-- section -->
+				<section>
+								
+				<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+								
+					<!-- article -->
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					
-					<?php the_content(); // Dynamic Content ?>
-					
-				</div>
-						
-			</article>
-			<!-- /article -->
-						
-			<?php endwhile; ?>
+						<div class="post-container">
 							
-			<?php else: ?>
+							<?php the_content(); // Dynamic Content ?>
 							
-			<!-- article -->
-			<article>
-				<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
-			</article>
-			<!-- /article -->
-		
-		<?php endif; ?>
-		
-		</section>
-		<!-- /section -->
-	</main>
-	<?php get_sidebar('sidebar'); ?>
+						</div>
+								
+					</article>
+					<!-- /article -->
+								
+					<?php endwhile; ?>
+									
+					<?php else: ?>
+									
+					<!-- article -->
+					<article>
+						<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
+					</article>
+					<!-- /article -->
+				
+				<?php endif; ?>
+				
+				</section>
+				<!-- /section -->
+			</main>
+			<?php get_sidebar('sidebar'); ?>
+			
+		</div>
+		<!-- /clear -->
+	
 	</div>
+	<!-- /post-content-container -->
 	
 	<?php get_footer(); ?>
