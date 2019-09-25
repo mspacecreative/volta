@@ -16,10 +16,10 @@
 		$('.simcal-close-2').click(function() {
 			$(this).parent().parent().parent().hide();
 		});
-		
-		// Google Calendar
-		$('.simcal-tooltip-content').prepend('<i class="fa fa-times simcal-close-2"></i>');
 	});
+	
+	// Google Calendar
+	$('.simcal-tooltip-content').prepend('<i class="fa fa-times simcal-close-2"></i>');
 	
 	// Google Calendar
 	$(document).ajaxSuccess(function() {
