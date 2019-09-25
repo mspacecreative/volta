@@ -6,6 +6,22 @@
 
 (function($) {
 	
+	function splashHeight() {
+		$('#header').height($(window).height());
+	}
+	
+	$(document).ready(function () {
+		splashHeight();
+		
+		$('.simcal-close').click(function() {
+			$(this).parent().parent().parent().hide();
+		});
+		
+		$('.simcal-close-2').click(function() {
+			$(this).parent().parent().parent().hide();
+		});
+	});
+	
 	// Google Calendar
 	$(document).ajaxSuccess(function() {
 		$('.simcal-close').click(function() {
@@ -37,22 +53,6 @@
 	
 	$('.partner-slider').slick({
 	    dots: false, arrows: false, centerMode: true, slidesToShow: 3, centerPadding: '20px', autoplay: true, autoplaySpeed: 0, speed: 7000, cssEase: 'linear'
-	});
-	
-	function splashHeight() {
-		$('#header').height($(window).height());
-	}
-	
-	$(document).ready(function () {
-		splashHeight();
-		
-		$('.simcal-close').click(function() {
-			$(this).parent().parent().parent().hide();
-		});
-		
-		$('.simcal-close-2').click(function() {
-			$(this).parent().parent().parent().hide();
-		});
 	});
 	
 	$(window).resize(function () {
