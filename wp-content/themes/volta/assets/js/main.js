@@ -10,18 +10,6 @@
 		$('#header').height($(window).height());
 	}
 	
-	$(document).ready(function () {
-		splashHeight();
-		
-		$('.simcal-close').click(function() {
-			$(this).parent().parent().parent().hide();
-		});
-		
-		$('.simcal-close-2').click(function() {
-			$(this).parent().parent().parent().hide();
-		});
-	});
-	
 	// Google Calendar
 	$(document).ajaxSuccess(function() {
 		$('.simcal-close').click(function() {
@@ -41,16 +29,29 @@
 		});
 	});
 	
+	$(document).ready(function () {
+		splashHeight();
+		
+		$('.simcal-close').click(function() {
+			$(this).parent().parent().parent().hide();
+		});
+		
+		$('.simcal-close-2').click(function() {
+			$(this).parent().parent().parent().hide();
+		});
+	});
+	
+	// Google Calendar
 	$('.simcal-events').each(function() {
 		$('.simcal-events').prepend('<i class="fa fa-times simcal-close"></i>');
 	});
 	
+	// Google Calendar
 	$('.simcal-tooltip-content').each(function() {
 		$('.simcal-tooltip-content').prepend('<i class="fa fa-times simcal-close-2"></i>');
 	});
 	
 	// Nav.
-	
 	$('.partner-slider').slick({
 	    dots: false, arrows: false, centerMode: true, slidesToShow: 3, centerPadding: '20px', autoplay: true, autoplaySpeed: 0, speed: 7000, cssEase: 'linear'
 	});
