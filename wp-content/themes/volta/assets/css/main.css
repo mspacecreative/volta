@@ -4107,9 +4107,6 @@ form input.keyword-search-input[type="text"] {
 	.tiles .tall-image {
 		min-height: 400px;
 	}
-	.simcal-events, .simcal-default-calendar .qtip-content {
-		padding: 2em;
-	}
 	.search-window .search-submit {
 		width: 70%;
 		margin: 25px 0 0;
@@ -4296,5 +4293,8 @@ form input.keyword-search-input[type="text"] {
 		position: relative;
 		margin: auto;
 		background-color: #fff;
+	}
+	.simcal-events, .simcal-default-calendar .qtip-content {
+		padding: 5%;
 	}
 }
