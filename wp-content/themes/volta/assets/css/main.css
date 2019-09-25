@@ -3914,6 +3914,8 @@ form input.keyword-search-input[type="text"] {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+	width: 90%;
+	font-size: 1em;
 }
 .simcal-default-calendar .qtip-content {
     padding: 5em;
@@ -4107,6 +4109,9 @@ form input.keyword-search-input[type="text"] {
 @media (max-width: 450px) {
 	.tiles .tall-image {
 		min-height: 400px;
+	}
+	.simcal-default-calendar .qtip-content .simcal-tooltip-content {
+	    padding: 2em;
 	}
 	.search-window .search-submit {
 		width: 70%;

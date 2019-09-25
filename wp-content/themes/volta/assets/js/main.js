@@ -10,7 +10,7 @@
 	var qtip = $('.qtip-content');
 	qtip.foreach(function() {
 		.tip.click(function() {
-			qtip.fadeOut();
+			qtip.parent().fadeOut();
 		});
 	});
 	
