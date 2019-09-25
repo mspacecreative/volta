@@ -2006,10 +2006,7 @@ input, select, textarea {
 
 	ul.icons {
 		position: relative;
-		background: rgba(128, 128, 128, 0.05);
-		border-radius: 4em;
 		display: inline-block;
-		padding: 0.35em 0.75em 0.35em 0.75em;
 		font-size: 1.25em;
 		cursor: default;
 		list-style: none;
@@ -2223,7 +2220,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
+			font-family: 'fontAwesome';
 			font-weight: 400;
 		}
 
@@ -2241,7 +2238,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+			font-family: 'fontAwesome';
 		}
 
 		.icon.circled {
