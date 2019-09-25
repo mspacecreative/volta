@@ -122,6 +122,36 @@ if ( get_field('content_editor') ): ?>
 </div>
 <?php endif;
 
+elseif ( $padding == 'both' ):
+
+if ( get_field('content_editor') ): ?>
+<div class="white-bg">
+	<div class="top-bottom-padding">
+		<?php the_field('content_editor'); ?>
+	</div>
+</div>
+<?php endif;
+
+elseif ( $padding == 'top' ):
+
+if ( get_field('content_editor') ): ?>
+<div class="white-bg">
+	<div class="top-padding">
+		<?php the_field('content_editor'); ?>
+	</div>
+</div>
+<?php endif;
+
+elseif ( $padding == 'bottom' ):
+
+if ( get_field('content_editor') ): ?>
+<div class="white-bg">
+	<div class="bottom-padding">
+		<?php the_field('content_editor'); ?>
+	</div>
+</div>
+<?php endif;
+
 else :
 
 if ( get_field('content_editor') ): ?>
