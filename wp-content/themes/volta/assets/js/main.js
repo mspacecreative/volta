@@ -10,15 +10,16 @@
 	$('.simcal-close-2').each(function() {
 		$('.simcal-close-2').click(function() {
 			$(this).parent().parent().parent().fadeOut();
-			$('body').addClass('add');
 		});
 	});
 	
 	$(document).ajaxSuccess(function() {
-		$('.simcal-close').each(function() {
-			$('.simcal-close').click(function() {
-				$(this).parent().parent().parent().fadeOut();
-			});
+		$('.simcal-close').click(function() {
+			$(this).parent().parent().parent().fadeOut();
+		});
+		
+		$('.simcal-close-2').click(function() {
+			$(this).parent().parent().parent().fadeOut();
 		});
 		
 		$('.simcal-events').each(function() {
@@ -53,12 +54,10 @@
 		
 		$('.simcal-close').click(function() {
 			$(this).parent().parent().parent().fadeOut();
-			$('body').addClass('add');
 		});
 		
 		$('.simcal-close-2').click(function() {
 			$(this).parent().parent().parent().fadeOut();
-			$('body').addClass('add');
 		});
 	});
 	
