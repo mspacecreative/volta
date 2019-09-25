@@ -18,7 +18,7 @@
 	});
 	
 	$('.simcal-tooltip-content').each(function() {
-		$(this).prepend('<i class="fa fa-times"></i>');
+		$(this).prepend('<i class="fa fa-times simcal-close"></i>');
 	});
 	
 	// Nav.

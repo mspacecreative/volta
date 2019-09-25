@@ -4281,3 +4281,20 @@ form input.keyword-search-input[type="text"] {
 		box-shadow: 0 20px 20px #666;
 	}
 }
+
+@media (min-width: 648px) {
+	.simcal-events .simcal-close {
+		display: none;
+	}
+	.simcal-tooltip-content {
+		background-color: #fff;
+		padding: 4em;
+		max-width: 600px;
+		margin: auto;
+	}
+}
+@media (max-width: 648px) {
+	.simcal-tooltip-content .simcal-close {
+		display: none;
+	}
+}
