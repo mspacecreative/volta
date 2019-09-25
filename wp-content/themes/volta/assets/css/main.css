@@ -4292,9 +4292,8 @@ form input.keyword-search-input[type="text"] {
 		display: none;
 	}
 	.qtip-content .simcal-events {
-		padding: 4em;
+		padding: 2em;
 		position: relative;
-		max-width: 600px;
 		margin: auto;
 		background-color: #fff;
 	}
