@@ -17,7 +17,7 @@
 		});
 	});
 	
-	$('.simcal-tooltip-content').each(function() {
+	$('.simcal-tooltip-content, .simcal-events').each(function() {
 		$(this).prepend('<i class="fa fa-times simcal-close"></i>');
 	});
 	
