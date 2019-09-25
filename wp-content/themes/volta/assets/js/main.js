@@ -7,10 +7,12 @@
 (function($) {
 	
 	// Google Calendar
-	$('.simcal-close').each(function() {
-		$('.simcal-close').click(function() {
-			$(this).parent().parent().parent().fadeOut();
-		});
+	$('.simcal-close').click(function() {
+		$(this).parent().parent().parent().fadeOut();
+	});
+	
+	$('.simcal-close-2').click(function() {
+		$(this).parent().parent().parent().fadeOut();
 	});
 	
 	$(document).ajaxSuccess(function() {
@@ -19,10 +21,17 @@
 				$(this).parent().parent().parent().fadeOut();
 			});
 		});
+		$('.simcal-close-2').click(function() {
+			$(this).parent().parent().parent().fadeOut();
+		});
 	});
 	
-	$('.simcal-tooltip-content, .simcal-events').each(function() {
+	$('.simcal-events').each(function() {
 		$(this).prepend('<i class="fa fa-times simcal-close"></i>');
+	});
+	
+	$('.simcal-tooltip-content').each(function() {
+		$(this).prepend('<i class="fa fa-times simcal-close-2"></i>');
 	});
 	
 	// Nav.
