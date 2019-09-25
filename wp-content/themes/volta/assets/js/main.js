@@ -6,14 +6,9 @@
 
 (function($) {
 	
-	$('.simcal-tooltip-content').prepend('<i class="fa fa-times"></i>');
-	
 	// Google Calendar
-	var qtip = $('.qtip-content');
-	qtip.foreach(function() {
-		.tip.click(function() {
-			qtip.parent().fadeOut();
-		});
+	$('.qtip-content').click(function() {
+		$(this).parent().fadeOut();
 	});
 	
 	// Nav.
