@@ -3855,6 +3855,21 @@ form input.search-submit[type=submit]:hover {
 	margin-right: 5%;
 	color: #fff;
 }
+.simcal-events {
+	padding: 4em;
+	position: relative;
+	max-width: 600px;
+	margin: auto;
+	width: 90%;
+}
+.simcal-events > i {
+	position: absolute;
+	font-size: 25px;
+	top: 15px;
+	right: 15px;
+	color: #000;
+	cursor: pointer;
+}
 .post-content-container ul {
 	margin: 1em 0;
 }
@@ -3903,28 +3918,6 @@ form input.keyword-search-input[type="text"] {
 }
 .simcal-default-calendar-list .simcal-event-details p, simcal-calendar-grid .qtip-tip p, .post-content-container .simcal-events li, .simcal-event-bubble .simcal-event-details .simcal-event-description, .simcal-event-bubble .simcal-event-details p {
 	font-size: 1em;
-}
-
-.simcal-default-calendar .qtip-content .simcal-tooltip-content {
-    background-color: #fff;
-    max-width: 600px;
-    margin: auto;
-    padding: 4em;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-	width: 90%;
-	font-size: 1em;
-}
-.simcal-tooltip-content:before {
-	content: '\f00d';
-	font-family: fontAwesome;
-	color: #000;
-	font-size: 25px;
-	top: 10px;
-	right: 20px;
-	position: absolute;
 }
 .simcal-default-calendar .qtip-content {
     padding: 5em;

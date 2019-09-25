@@ -7,8 +7,8 @@
 (function($) {
 	
 	// Google Calendar
-	$('.qtip-content').click(function() {
-		$(this).parent().fadeOut();
+	$('.simcal-events > i').click(function() {
+		$(this).parent().parent().parent().fadeOut();
 	});
 	
 	$('.simcal-tooltip-content').foreach(function() {
