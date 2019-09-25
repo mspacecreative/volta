@@ -1,5 +1,5 @@
 <?php if ( get_field('background_image_background_image') ): ?>
-<div class="white-bg" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
+<div class="white-bg bg-img-cover" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
 
 	<?php 
 	$padding = get_field('section_padding_section_padding');
