@@ -7,17 +7,9 @@
 (function($) {
 	
 	// Google Calendar
-	$('.simcal-close').each(function(i, obj) {
-		$(this).click(function() {
-			$(this).parent().parent().parent().fadeOut();
-		});
-	});
-	
-	$(document).on('change', '.simcal-calendar', function() {
-		$('.simcal-close').each(function(i, obj) {
-			$(this).click(function() {
-				$(this).parent().parent().parent().fadeOut();
-			});
+	$('.simcal-events').on('click', '.simcal-close', function(e) {
+		e.preventDefault();
+		$(this).parent().parent().parent().fadeOut();
 		});
 	});
 	
