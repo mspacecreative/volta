@@ -7,7 +7,11 @@
 (function($) {
 	
 	// Google Calendar
-	$('.simcal-calendar').load(link.attr('href'),function(responseText, textStatus, XMLHttpRequest){
+	$('.simcal-close').click(function() {
+		$(this).parent().parent().parent().fadeOut();
+	});
+	
+	$(document).ajaxSuccess(function() {
 		$('.simcal-close').click(function() {
 			$(this).parent().parent().parent().fadeOut();
 		});
