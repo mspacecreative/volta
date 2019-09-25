@@ -3901,7 +3901,7 @@ form input.keyword-search-input[type="text"] {
 	font-size: 1.25em;
 	margin-top: 20px;
 }
-.simcal-default-calendar-list .simcal-event-details p, simcal-calendar-grid .qtip-tip p, .post-content-container .simcal-events li {
+.simcal-default-calendar-list .simcal-event-details p, simcal-calendar-grid .qtip-tip p, .post-content-container .simcal-events li, .simcal-event-bubble .simcal-event-details .simcal-event-description, .simcal-event-bubble .simcal-event-details p {
 	font-size: 1em;
 }
 .post-content-container .simcal-events li {
