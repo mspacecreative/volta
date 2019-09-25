@@ -7,11 +7,13 @@
 (function($) {
 	
 	// Google Calendar
-	$('.simcal-close').each(function(i, obj) {
-		$('.simcal-close').click(function() {
-			$(this).parent().parent().parent().fadeOut();
+	function calendarToolTip() {
+		$('.simcal-close').each(function(i, obj) {
+			$('.simcal-close').click(function() {
+				$(this).parent().parent().parent().fadeOut();
+			});
 		});
-	});
+	}
 	
 	$('.simcal-tooltip-content').foreach(function() {
 		$(this).prepend('<i class="fa fa-times"></i>');
@@ -29,10 +31,12 @@
 	
 	$(document).ready(function () {
 		splashHeight();
+		calendarToolTip();
 	});
 	
 	$(window).resize(function () {
 		splashHeight();
+		calendarToolTip();
 	});
 	
 	var	$window = $(window),
