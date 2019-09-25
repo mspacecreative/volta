@@ -8,7 +8,9 @@
 	
 	// Google Calendar
 	$('.simcal-close').click(function() {
-		$(this).parent().parent().parent().fadeOut();
+		$('.simcal-close').foreach(function() {
+			$(this).parent().parent().parent().fadeOut();
+		});
 	});
 	
 	$('.simcal-tooltip-content').foreach(function() {
