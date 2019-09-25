@@ -13,52 +13,25 @@
 	$(document).ready(function () {
 		splashHeight();
 		
-		$('.simcal-close').click(function() {
-			$(this).parent().parent().parent().hide();
-		});
-		
-		$('.simcal-close-2').click(function() {
-			$(this).parent().parent().parent().hide();
-		});
-	});
-	
-	$(window).load(function() {
-		$('.simcal-close').click(function() {
-			$(this).parent().parent().parent().hide();
-		});
-		
-		$('.simcal-close-2').click(function() {
-			$(this).parent().parent().parent().hide();
-		});
-	});
-	
-	// Google Calendar
-	$(document).ajaxSuccess(function() {
-		$('.simcal-close').click(function() {
-			$(this).parent().parent().parent().hide();
-		});
-		
 		$('.simcal-close-2').click(function() {
 			$(this).parent().parent().parent().hide();
 		});
 		
-		$('.simcal-events').each(function() {
-			$('.simcal-events').prepend('<i class="fa fa-times simcal-close"></i>');
-		});
-		
+		// Google Calendar
 		$('.simcal-tooltip-content').each(function() {
 			$('.simcal-tooltip-content').prepend('<i class="fa fa-times simcal-close-2"></i>');
 		});
 	});
 	
 	// Google Calendar
-	$('.simcal-events').each(function() {
-		$('.simcal-events').prepend('<i class="fa fa-times simcal-close"></i>');
-	});
-	
-	// Google Calendar
-	$('.simcal-tooltip-content').each(function() {
-		$('.simcal-tooltip-content').prepend('<i class="fa fa-times simcal-close-2"></i>');
+	$(document).ajaxSuccess(function() {
+		$('.simcal-close-2').click(function() {
+			$(this).parent().parent().parent().hide();
+		});
+		
+		$('.simcal-tooltip-content').each(function() {
+			$('.simcal-tooltip-content').prepend('<i class="fa fa-times simcal-close-2"></i>');
+		});
 	});
 	
 	// Nav.
