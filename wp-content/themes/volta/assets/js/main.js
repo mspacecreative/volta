@@ -45,7 +45,7 @@
 	// Google Calendar
 	$('.simcal-tooltip-content').prepend('<i class="fa fa-times simcal-close-2"></i>');
 	$('.simcal-events').prepend('<i class="fa fa-times simcal-close"></i>');
-	$('.simcal-events').wrap('<div class="window-wrap"></div>');
+	$('.qtip-content').wrap('<div class="window-wrap"></div>');
 	
 	// Google Calendar
 	
