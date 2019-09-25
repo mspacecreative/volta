@@ -11,12 +11,6 @@
 		$(this).parent().parent().parent().fadeOut();
 	});
 	
-	$(document).ajaxSuccess(function() {
-		$('.simcal-close').click(function() {
-			$(this).parent().parent().parent().fadeOut();
-		});
-	});
-	
 	$('.simcal-events').prepend('<i class="fa fa-times simcal-close"></i>');
 	
 	// Nav.
