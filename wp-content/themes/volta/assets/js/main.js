@@ -7,13 +7,13 @@
 (function($) {
 	
 	// Google Calendar
-	$('.simcal-events').on('click', '.simcal-close', function(e) {
-		e.preventDefault();
-		$(this).parent().parent().parent().fadeOut();
+	$('.simcal-calendar').load(link.attr('href'),function(responseText, textStatus, XMLHttpRequest){
+		$('.simcal-close').click(function() {
+			$(this).parent().parent().parent().fadeOut();
 		});
 	});
 	
-	$('.simcal-tooltip-content').foreach(function() {
+	$('.simcal-tooltip-content').each(function() {
 		$(this).prepend('<i class="fa fa-times"></i>');
 	});
 	
