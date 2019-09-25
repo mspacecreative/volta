@@ -11,26 +11,14 @@
 		$(this).parent().parent().parent().fadeOut();
 	});
 	
-	$('.simcal-close-2').click(function() {
-		$(this).parent().parent().parent().fadeOut();
-	});
-	
 	$(document).ajaxSuccess(function() {
 		$('.simcal-close').click(function() {
 			$(this).parent().parent().parent().fadeOut();
 		});
-		
-		$('.simcal-close-2').click(function() {
-			$(this).parent().parent().parent().fadeOut();
-		});
-	});
-	
-	$('.simcal-events').each(function() {
-		$(this).prepend('<i class="fa fa-times simcal-close"></i>');
 	});
 	
 	$('.simcal-tooltip-content').each(function() {
-		$(this).prepend('<i class="fa fa-times simcal-close-2"></i>');
+		$(this).prepend('<i class="fa fa-times simcal-close"></i>');
 	});
 	
 	// Nav.
