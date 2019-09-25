@@ -1,8 +1,8 @@
 <!-- Banner -->
-<?php if ( get_field('background_image_background_image') ): ?>
-<section class="banner" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
-<?php elseif ( get_field('background_color_background_color') ): ?>
-<section class="banner" style="background-color: <?php the_field('background_color_background_color'); ?>;">
+<?php if ( get_field('background_image') ): ?>
+<section class="banner" style="background-image: url(<?php the_field('background_image'); ?>);">
+<?php elseif ( get_field('background_color') ): ?>
+<section class="banner" style="background-color: <?php the_field('background_color'); ?>;">
 <?php else : ?>
 <section class="banner">
 <?php endif; ?>

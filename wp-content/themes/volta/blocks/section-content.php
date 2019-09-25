@@ -1,8 +1,8 @@
-<?php if ( get_field('background_image') ): ?>
-<div class="white-bg" style="background-image: url(<?php the_field('background_image'); ?>);">
+<?php if ( get_field('background_image_background_image') ): ?>
+<div class="white-bg" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
 
-<?php elseif ( get_field('background_color') ): ?>
-<div class="white-bg" style="background-image: url(<?php the_field('background_color'); ?>);">
+<?php elseif ( get_field('background_color_background_color') ): ?>
+<div class="white-bg" style="background-image: url(<?php the_field('background_color_background_color'); ?>);">
 	
 <?php else : ?>
 <div class="white-bg">
