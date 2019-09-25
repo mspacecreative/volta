@@ -11,6 +11,10 @@
 		$(this).parent().fadeOut();
 	});
 	
+	$('.simcal-tooltip-content').foreach(function() {
+		$(this).prepend('<i class="fa fa-times"></i>');
+	});
+	
 	// Nav.
 	
 	$('.partner-slider').slick({

@@ -3921,6 +3921,10 @@ form input.keyword-search-input[type="text"] {
 	content: '\f00d';
 	font-family: fontAwesome;
 	color: #000;
+	font-size: 25px;
+	top: 10px;
+	right: 20px;
+	position: absolute;
 }
 .simcal-default-calendar .qtip-content {
     padding: 5em;
