@@ -4286,15 +4286,16 @@ form input.keyword-search-input[type="text"] {
 	.simcal-events .simcal-close {
 		display: none;
 	}
-	.simcal-tooltip-content {
+	.simcal-default-calendar .simcal-tooltip-content {
 		background-color: #fff;
 		padding: 4em;
 		max-width: 600px;
 		margin: auto;
+		position: relative;
 	}
 }
 @media (max-width: 648px) {
-	.simcal-tooltip-content .simcal-close {
+	.simcal-default-calendar .simcal-tooltip-content .simcal-close {
 		display: none;
 	}
 }
