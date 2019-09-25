@@ -3855,13 +3855,6 @@ form input.search-submit[type=submit]:hover {
 	margin-right: 5%;
 	color: #fff;
 }
-.simcal-default-calendar-grid .simcal-events {
-	padding: 4em;
-	position: relative;
-	max-width: 600px;
-	margin: auto;
-	background-color: #fff;
-}
 .post-content-container ul {
 	margin: 1em 0;
 }
@@ -4297,5 +4290,12 @@ form input.keyword-search-input[type="text"] {
 @media (max-width: 648px) {
 	.simcal-default-calendar .simcal-tooltip-content .simcal-close-2 {
 		display: none;
+	}
+	.qtip-content .simcal-events {
+		padding: 4em;
+		position: relative;
+		max-width: 600px;
+		margin: auto;
+		background-color: #fff;
 	}
 }
