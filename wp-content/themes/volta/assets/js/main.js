@@ -7,11 +7,22 @@
 (function($) {
 	
 	// Google Calendar
-	$('.simcal-close').click(function() {
-		$(this).parent().parent().parent().fadeOut();
+	$('.simcal-close').each(function() {
+		$('.simcal-close').click(function() {
+			$(this).parent().parent().parent().fadeOut();
+		});
+	});
+	
+	$(document).ajaxSuccess(function() {
+		$('.simcal-close').each(function() {
+			$('.simcal-close').click(function() {
+				$(this).parent().parent().parent().fadeOut();
+			});
+		});
 	});
 	
 	$('.simcal-events').prepend('<i class="fa fa-times simcal-close"></i>');
+	$('.simcal-tooltip-content').prepend('<i class="fa fa-times simcal-close-2"></i>');
 	
 	// Nav.
 	
