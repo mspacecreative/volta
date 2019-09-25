@@ -6,6 +6,11 @@
 
 (function($) {
 	
+	// Google Calendar
+	$('.qtip-content').click(function() {
+		$(this).fadeOut();
+	});
+	
 	// Nav.
 	
 	$('.partner-slider').slick({
