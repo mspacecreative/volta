@@ -147,7 +147,7 @@
 </div>
 
 <?php elseif ( get_field('background_color_background_color') ): ?>
-<div class="white-bg" style="background-color: url(<?php the_field('background_color_background_color'); ?>);">
+<div class="white-bg" style="background-color: <?php the_field('background_color_background_color'); ?>;">
 	
 	<?php 
 	$padding = get_field('section_padding_section_padding');
