@@ -3610,7 +3610,7 @@ img {
 	background-color: rgba(255, 255, 255, .85);
 	background-image: radial-gradient(circle, rgba(255,255,255,.65) 30%, transparent);
 }
-.light-overlay, .dark-overlay {
+.light-overlay, .dark-overlay, .light-overlay > div, .dark-overlay > div {
 	position: relative;
 }
 .light-overlay:before, .dark-overlay:before {
