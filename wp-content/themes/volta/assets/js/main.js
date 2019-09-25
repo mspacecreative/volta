@@ -10,6 +10,10 @@
 		$('#header').height($(window).height());
 	}
 	
+	$(document).ready(function () {
+		splashHeight();
+	});
+	
 	// Google Calendar
 	$(document).ajaxSuccess(function() {
 		$('.simcal-close').click(function() {
@@ -29,16 +33,12 @@
 		});
 	});
 	
-	$(document).ready(function () {
-		splashHeight();
-		
-		$('.simcal-close').click(function() {
-			$(this).parent().parent().parent().hide();
-		});
-		
-		$('.simcal-close-2').click(function() {
-			$(this).parent().parent().parent().hide();
-		});
+	$('.simcal-close').click(function() {
+		$(this).parent().parent().parent().hide();
+	});
+	
+	$('.simcal-close-2').click(function() {
+		$(this).parent().parent().parent().hide();
 	});
 	
 	// Google Calendar
