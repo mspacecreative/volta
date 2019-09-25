@@ -1,6 +1,6 @@
 <?php 
-$padding = get_field('section_padding');
-$margin = get_field('section_margin');
+$padding = get_field('section_padding_section_padding');
+$margin = get_field('section_margin_section_margin');
 
 if ( $padding == 'top' && $margin == 'top' ):
 
