@@ -19,7 +19,9 @@
 	});
 	
 	$(document).ajaxSuccess(function() {
-		$('.simcal-tooltip-content').prepend('<i class="fa fa-times simcal-close-2"></i>');
+		$('.simcal-close-2').click(function() {
+			$(this).parent().parent().parent().hide();
+		});
 	});
 	
 	// Google Calendar
