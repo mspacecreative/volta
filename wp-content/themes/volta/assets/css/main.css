@@ -3871,7 +3871,7 @@ form input.search-submit[type=submit]:hover {
 	cursor: pointer;
 }
 .qtip-tip {
-	display: none;
+	display: none!important;
 }
 .post-content-container ul {
 	margin: 1em 0;
