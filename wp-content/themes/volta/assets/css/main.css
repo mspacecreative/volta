@@ -3779,6 +3779,9 @@ aside {
 .full-padding {
 	padding: 2em;
 }
+.home .full-padding {
+	padding: 4em;
+}
 .textwidget {
 	margin: 2em 0 0;
 }
@@ -3917,6 +3920,9 @@ form input.keyword-search-input[type="text"] {
 	}*/
 	.full-padding {
 	    padding: 1em;
+	}
+	.home .full-padding {
+	    padding: 2em;
 	}
 	.inner-padding {
 		padding: 1em;
@@ -4073,6 +4079,9 @@ form input.keyword-search-input[type="text"] {
 	}
 	.full-padding {
 	    padding: 1em;
+	}
+	.home .full-padding {
+	    padding: 2em;
 	}
 	.inner-padding {
 		padding: 1em;
