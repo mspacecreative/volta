@@ -19,6 +19,14 @@
 				$(this).parent().parent().parent().fadeOut();
 			});
 		});
+		
+		$('.simcal-events').each(function() {
+			$('.simcal-events').prepend('<i class="fa fa-times simcal-close"></i>');
+		});
+		
+		$('.simcal-tooltip-content').each(function() {
+			$('.simcal-tooltip-content').prepend('<i class="fa fa-times simcal-close-2"></i>');
+		});
 	});
 	
 	$('.simcal-events').each(function() {
