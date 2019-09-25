@@ -7,8 +7,8 @@
 (function($) {
 	
 	// Google Calendar
-	$('.simcal-close').each(function() {
-		$('.simcal-close').click(function() {
+	$('.simcal-close').click(function() {
+		$('.simcal-close').each(function() {
 			$(this).parent().parent().parent().fadeOut();
 		});
 	});
