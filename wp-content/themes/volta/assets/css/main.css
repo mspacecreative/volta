@@ -4112,11 +4112,8 @@ form input.keyword-search-input[type="text"] {
 	.tiles .tall-image {
 		min-height: 400px;
 	}
-	.simcal-events {
+	.simcal-events, .qtip-content {
 		padding: 2em;
-	}
-	.simcal-default-calendar .qtip-content .simcal-tooltip-content {
-	    padding: 2em;
 	}
 	.search-window .search-submit {
 		width: 70%;
