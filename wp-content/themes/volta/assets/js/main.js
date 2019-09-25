@@ -7,7 +7,7 @@
 (function($) {
 	
 	// Google Calendar
-	$('.simcal-events > i').click(function() {
+	$('.simcal-close').click(function() {
 		$(this).parent().parent().parent().fadeOut();
 	});
 	

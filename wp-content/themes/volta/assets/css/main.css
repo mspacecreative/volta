@@ -3860,9 +3860,9 @@ form input.search-submit[type=submit]:hover {
 	position: relative;
 	max-width: 600px;
 	margin: auto;
-	width: 90%;
+	background-color: #fff;
 }
-.simcal-events > i {
+.simcal-close {
 	position: absolute;
 	font-size: 25px;
 	top: 15px;
@@ -4111,6 +4111,9 @@ form input.keyword-search-input[type="text"] {
 @media (max-width: 450px) {
 	.tiles .tall-image {
 		min-height: 400px;
+	}
+	.simcal-events {
+		padding: 2em;
 	}
 	.simcal-default-calendar .qtip-content .simcal-tooltip-content {
 	    padding: 2em;
