@@ -3914,6 +3914,7 @@ form input.keyword-search-input[type="text"] {
     top: 0;
     left: 0;
     overflow: scroll;
+	-webkit-overflow-scrolling: touch;
     background: rgba(0,0,0,.75);
 }
 .fa.simcal-close, .fa.simcal-close-2 {
