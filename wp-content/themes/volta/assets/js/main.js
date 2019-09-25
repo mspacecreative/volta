@@ -27,7 +27,7 @@
 	});
 	
 	$(document).ajaxSuccess(function() {
-		$('.simcal-events').prepend('<i class="fa fa-times simcal-close"></i>').wrap('<div class="window-wrap"></div>');
+		$('.simcal-events').prepend('<i class="fa fa-times simcal-close"></i>');
 	});
 	
 	$(document).ajaxSuccess(function() {
@@ -45,7 +45,6 @@
 	// Google Calendar
 	$('.simcal-tooltip-content').prepend('<i class="fa fa-times simcal-close-2"></i>');
 	$('.simcal-events').prepend('<i class="fa fa-times simcal-close"></i>');
-	$('.qtip-content').wrap('<div class="window-wrap"></div>');
 	
 	// Google Calendar
 	
