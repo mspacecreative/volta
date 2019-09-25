@@ -1,6 +1,7 @@
 <?php 
 $padding = get_field('section_padding_section_padding');
 $margin = get_field('section_margin_section_margin');
+$width = get_field('content_width');
 
 if ( $padding == 'top' && $margin == 'top' ):
 
@@ -147,6 +148,16 @@ elseif ( $padding == 'bottom' ):
 if ( get_field('content_editor') ): ?>
 <div class="white-bg">
 	<div class="bottom-padding">
+		<?php the_field('content_editor'); ?>
+	</div>
+</div>
+<?php endif;
+
+elseif ( $width ):
+
+if ( get_field('content_editor') ): ?>
+<div class="white-bg">
+	<div class="width-800">
 		<?php the_field('content_editor'); ?>
 	</div>
 </div>
