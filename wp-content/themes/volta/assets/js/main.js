@@ -16,10 +16,18 @@
 		$('.simcal-close-2').click(function() {
 			$(this).parent().parent().parent().hide();
 		});
+		
+		$('.simcal-close').click(function() {
+			$(this).parent().parent().parent().hide();
+		});
 	});
 	
 	$(document).ajaxSuccess(function() {
 		$('.simcal-tooltip-content').prepend('<i class="fa fa-times simcal-close-2"></i>');
+	});
+	
+	$(document).ajaxSuccess(function() {
+		$('.simcal-events').prepend('<i class="fa fa-times simcal-close"></i>');
 	});
 	
 	$(document).ajaxSuccess(function() {
@@ -28,8 +36,15 @@
 		});
 	});
 	
+	$(document).ajaxSuccess(function() {
+		$('.simcal-close').click(function() {
+			$(this).parent().parent().parent().hide();
+		});
+	});
+	
 	// Google Calendar
 	$('.simcal-tooltip-content').prepend('<i class="fa fa-times simcal-close-2"></i>');
+	$('.simcal-events').prepend('<i class="fa fa-times simcal-close"></i>');
 	
 	// Google Calendar
 	
