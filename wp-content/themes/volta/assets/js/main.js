@@ -7,10 +7,16 @@
 (function($) {
 	
 	// Google Calendar
-	$('.simcal-close').each(function(i, obj) {
-		$(this).click(function() {
-			$(this).parent().parent().parent().fadeOut();
+	function toolTipScreen() {
+		$('.simcal-close').each(function(i, obj) {
+			$(this).click(function() {
+				$(this).parent().parent().parent().fadeOut();
+			});
 		});
+	}
+	
+	$(document).on('change', '.simcal-calendar', function() {
+		toolTipScreen();
 	});
 	
 	$('.simcal-tooltip-content').foreach(function() {
@@ -29,6 +35,7 @@
 	
 	$(document).ready(function () {
 		splashHeight();
+		toolTipScreen();
 	});
 	
 	$(window).resize(function () {

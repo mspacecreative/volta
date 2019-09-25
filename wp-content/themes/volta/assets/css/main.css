@@ -3862,17 +3862,6 @@ form input.search-submit[type=submit]:hover {
 	margin: auto;
 	background-color: #fff;
 }
-.simcal-close {
-	position: absolute;
-	font-size: 25px;
-	top: 15px;
-	right: 15px;
-	color: #000;
-	cursor: pointer;
-}
-.qtip-tip {
-	display: none!important;
-}
 .post-content-container ul {
 	margin: 1em 0;
 }
@@ -3933,7 +3922,17 @@ form input.keyword-search-input[type="text"] {
     left: 0;
     overflow: scroll;
     background: rgba(0,0,0,.75);
-    cursor: pointer;
+}
+.fa.simcal-close {
+	position: absolute;
+	font-size: 25px;
+	top: 15px;
+	right: 15px;
+	color: #000;
+	cursor: pointer;
+}
+.qtip-tip {
+	display: none!important;
 }
 .post-content-container .simcal-events li {
 	text-indent: inherit;
