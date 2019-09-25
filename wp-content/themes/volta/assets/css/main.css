@@ -3896,15 +3896,15 @@ form input.keyword-search-input[type="text"] {
 	background-position: center;
 	background-repeat: no-repeat;
 }
-.simcal-event-title {
+.simcal-calendar-list .simcal-event-title {
 	display: block;
 	font-size: 1.25em;
 	margin-top: 20px;
 }
-.simcal-default-calendar-list .simcal-event-details p, .qtip-tip p, .simcal-events li {
+.simcal-default-calendar-list .simcal-event-details p, simcal-calendar-grid .qtip-tip p, .post-content-container .simcal-events li {
 	font-size: 1em;
 }
-.simcal-events li {
+.post-content-container .simcal-events li {
 	text-indent: inherit;
 }
 .simcal-events li:before {
