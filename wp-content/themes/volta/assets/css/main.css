@@ -3855,7 +3855,7 @@ form input.search-submit[type=submit]:hover {
 	margin-right: 5%;
 	color: #fff;
 }
-.simcal-events {
+.simcal-default-calendar-grid .simcal-events {
 	padding: 4em;
 	position: relative;
 	max-width: 600px;
