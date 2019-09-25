@@ -7,19 +7,13 @@
 (function($) {
 	
 	// Google Calendar
-	$('.simcal-close-2').each(function() {
-		$('.simcal-close-2').click(function() {
-			$(this).parent().parent().parent().fadeOut();
-		});
-	});
-	
 	$(document).ajaxSuccess(function() {
 		$('.simcal-close').click(function() {
-			$(this).parent().parent().parent().fadeOut();
+			$(this).parent().parent().parent().hide();
 		});
 		
 		$('.simcal-close-2').click(function() {
-			$(this).parent().parent().parent().fadeOut();
+			$(this).parent().parent().parent().hide();
 		});
 		
 		$('.simcal-events').each(function() {
@@ -53,11 +47,11 @@
 		splashHeight();
 		
 		$('.simcal-close').click(function() {
-			$(this).parent().parent().parent().fadeOut();
+			$(this).parent().parent().parent().hide();
 		});
 		
 		$('.simcal-close-2').click(function() {
-			$(this).parent().parent().parent().fadeOut();
+			$(this).parent().parent().parent().hide();
 		});
 	});
 	
