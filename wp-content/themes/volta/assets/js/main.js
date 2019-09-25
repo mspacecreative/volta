@@ -7,8 +7,11 @@
 (function($) {
 	
 	// Google Calendar
-	$('.qtip-content').click(function() {
-		$(this).fadeOut();
+	var qtip = $('.qtip-content');
+	qtip.foreach(function() {
+		.tip.click(function() {
+			qtip.fadeOut();
+		});
 	});
 	
 	// Nav.
