@@ -10,6 +10,14 @@
 	$('.simcal-close').each(function() {
 		$('.simcal-close').click(function() {
 			$(this).parent().parent().parent().fadeOut();
+			$('body').addClass('add');
+		});
+	});
+	
+	$('.simcal-close-2').each(function() {
+		$('.simcal-close-2').click(function() {
+			$(this).parent().parent().parent().fadeOut();
+			$('body').addClass('add');
 		});
 	});
 	
