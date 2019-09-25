@@ -4286,7 +4286,7 @@ form input.keyword-search-input[type="text"] {
 	.simcal-events .simcal-close {
 		display: none;
 	}
-	.simcal-default-calendar .simcal-tooltip-content {
+	.simcal-event-bubble.simcal-default-calendar .simcal-tooltip-content {
 		background-color: #fff;
 		padding: 4em;
 		max-width: 600px;
