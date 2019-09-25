@@ -3923,7 +3923,7 @@ form input.keyword-search-input[type="text"] {
     overflow: scroll;
     background: rgba(0,0,0,.75);
 }
-.fa.simcal-close {
+.fa.simcal-close, .fa.simcal-close-2 {
 	position: absolute;
 	font-size: 25px;
 	top: 15px;
@@ -4295,7 +4295,7 @@ form input.keyword-search-input[type="text"] {
 	}
 }
 @media (max-width: 648px) {
-	.simcal-default-calendar .simcal-tooltip-content .simcal-close {
+	.simcal-default-calendar .simcal-tooltip-content .simcal-close-2 {
 		display: none;
 	}
 }
