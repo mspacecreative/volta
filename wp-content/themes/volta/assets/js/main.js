@@ -6,6 +6,8 @@
 
 (function($) {
 	
+	$('.simcal-tooltip-content').prepend('<i class="fa fa-times"></i>');
+	
 	// Google Calendar
 	var qtip = $('.qtip-content');
 	qtip.foreach(function() {
