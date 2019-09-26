@@ -34,7 +34,7 @@
 		});
 	});
 	
-	$('.simcal-event-title').click(function() {
+	$('.simcal-event-title, .simcal-events-dots').click(function() {
 		$('body').addClass('fixed');
 	});
 	
