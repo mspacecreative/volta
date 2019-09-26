@@ -14,7 +14,7 @@
 		splashHeight();
 		
 		$('.window-close-button').click(function() {
-			$(this).parent().parent().parent().hide();
+			$(this).closest('.qtip').hide();
 		});
 	});
 	
@@ -28,7 +28,7 @@
 	
 	$(document).ajaxSuccess(function() {
 		$('.window-close-button').click(function() {
-			$(this).parent().parent().parent().hide();
+			$(this).closest('.qtip').hide();
 		});
 	});
 	
