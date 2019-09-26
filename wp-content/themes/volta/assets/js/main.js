@@ -13,7 +13,7 @@
 	$(document).ready(function () {
 		splashHeight();
 		
-		$('.simcal-close-2').click(function() {
+		$('.window-close-button').click(function() {
 			$(this).parent().parent().parent().hide();
 		});
 		
@@ -23,7 +23,7 @@
 	});
 	
 	$(document).ajaxSuccess(function() {
-		$('.simcal-tooltip-content').prepend('<i class="fa fa-times simcal-close-2"></i>');
+		$('.simcal-tooltip-content').prepend('<span class="window-close-button"></span>');
 	});
 	
 	$(document).ajaxSuccess(function() {
@@ -31,7 +31,7 @@
 	});
 	
 	$(document).ajaxSuccess(function() {
-		$('.simcal-close-2').click(function() {
+		$('.window-close-button').click(function() {
 			$(this).parent().parent().parent().hide();
 		});
 	});
