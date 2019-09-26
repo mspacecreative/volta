@@ -3910,8 +3910,7 @@ form input.keyword-search-input[type="text"] {
 	border-bottom: 2px solid #000;
 	display: block;
 }
-.window-close-button {
-	background-image: url(../../img/icons/close.png);
+.window-close-button, .close-search-window {
 	background-size: cover;
 	width: 15px;
 	height: 15px;
@@ -3921,6 +3920,12 @@ form input.keyword-search-input[type="text"] {
 	top: 15px;
 	right: 15px;
 	cursor: pointer;
+}
+.window-close-button {
+	background-image: url(../../img/icons/close.png);
+}
+.close-search-button {
+	background-image: url(../../img/icons/close-white.png);
 }
 .qtip-content .simcal-event-description p:last-child {
 	margin-bottom: 0;
