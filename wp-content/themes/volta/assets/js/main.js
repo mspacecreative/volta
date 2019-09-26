@@ -32,16 +32,18 @@
 		});
 	});
 	
+	$('.simcal-event-title').click(function() {
+		if ( $('.qtip').css('display') == 'block' ) {
+			$('body').addClass('fixed');
+		} else {
+			$('body').removeClass('fixed');
+		}
+	});
+	
 	// Google Calendar
 	//$('.simcal-tooltip-content').prepend('<i class="fa fa-times simcal-close-2"></i>');
 	$('.simcal-tooltip-content').prepend('<span class="window-close-button"></span>');
 	$('.qtip-content .simcal-events').prepend('<span class="window-close-button"></span>');
-	
-	if ( $('.qtip').css('display') == 'block' ) {
-		$('body').addClass('fixed');
-	} else {
-		$('body').removeClass('fixed');
-	}
 	
 	// Google Calendar
 	
