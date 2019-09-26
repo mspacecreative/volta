@@ -43,7 +43,8 @@
 	});
 	
 	// Google Calendar
-	$('.simcal-tooltip-content').prepend('<i class="fa fa-times simcal-close-2"></i>');
+	//$('.simcal-tooltip-content').prepend('<i class="fa fa-times simcal-close-2"></i>');
+	$('.simcal-tooltip-content').prepend('<span class="window-close-button"></span>');
 	$('.simcal-events').prepend('<i class="fa fa-times simcal-close"></i>');
 	
 	// Google Calendar
