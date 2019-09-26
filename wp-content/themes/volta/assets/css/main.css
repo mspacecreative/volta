@@ -3912,20 +3912,24 @@ form input.keyword-search-input[type="text"] {
 }
 .window-close-button, .close-search-window {
 	background-size: cover;
-	width: 15px;
-	height: 15px;
 	background-position: center;
 	background-repeat: no-repeat;
 	position: absolute;
-	top: 15px;
-	right: 15px;
 	cursor: pointer;
 }
 .window-close-button {
 	background-image: url(../../img/icons/close.png);
+	width: 15px;
+	height: 15px;
+	top: 15px;
+	right: 15px;
 }
-.close-search-button {
+.close-search-window {
 	background-image: url(../../img/icons/close-white.png);
+	width: 20px;
+	height: 20px;
+	top: 25px;
+	right: 25px;
 }
 .qtip-content .simcal-event-description p:last-child {
 	margin-bottom: 0;
