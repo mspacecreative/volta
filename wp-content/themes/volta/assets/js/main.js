@@ -15,7 +15,7 @@
 		
 		$('.window-close-button').click(function() {
 			$(this).closest('.qtip').hide();
-			$('body').removeClass('fixed');
+			$('html').removeClass('fixed');
 		});
 	});
 	
@@ -30,12 +30,12 @@
 	$(document).ajaxSuccess(function() {
 		$('.window-close-button').click(function() {
 			$(this).closest('.qtip').hide();
-			$('body').removeClass('fixed');
+			$('html').removeClass('fixed');
 		});
 	});
 	
 	$('.simcal-event-title, .simcal-events-dots').click(function() {
-		$('body').addClass('fixed');
+		$('html').addClass('fixed');
 	});
 	
 	// Google Calendar

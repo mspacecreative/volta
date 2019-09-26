@@ -3924,7 +3924,7 @@ form input.keyword-search-input[type="text"] {
 	top: 15px;
 	right: 15px;
 }
-body.fixed {
+html.fixed {
 	overflow: hidden;
 }
 .close-search-window {
