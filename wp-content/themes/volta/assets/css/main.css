@@ -3922,10 +3922,13 @@ form input.keyword-search-input[type="text"] {
 	right: 15px;
 	cursor: pointer;
 }
+.qtip-content .simcal-event-description p:last-child {
+	margin-bottom: 0;
+}
 .simcal-event-description p {
 	font-size: 15px;
 }
-.simcal-event-description {
+.qtip-content .simcal-event-description {
 	padding: 2em;
 	border: 1px solid #999;
 }
