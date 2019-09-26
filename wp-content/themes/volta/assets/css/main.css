@@ -3904,7 +3904,7 @@ form input.keyword-search-input[type="text"] {
 .simcal-default-calendar-list .simcal-event-details p, simcal-calendar-grid .qtip-tip p, .post-content-container .simcal-events li, .simcal-event-bubble .simcal-event-details .simcal-event-description, .simcal-event-bubble .simcal-event-details p {
 	font-size: 15px;
 }
-.simcal-event-title {
+.qtip-content .simcal-event-title {
 	font-size: 20px;
 	padding-bottom: 8px;
 	border-bottom: 2px solid #000;
@@ -3920,6 +3920,7 @@ form input.keyword-search-input[type="text"] {
 	position: absolute;
 	top: 15px;
 	right: 15px;
+	cursor: pointer;
 }
 .simcal-event-description p {
 	font-size: 15px;
