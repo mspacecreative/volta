@@ -3924,6 +3924,9 @@ form input.keyword-search-input[type="text"] {
 	top: 15px;
 	right: 15px;
 }
+body.fixed {
+	overflow: hidden;
+}
 .close-search-window {
 	background-image: url(../../img/icons/close-white.png);
 	width: 20px;
