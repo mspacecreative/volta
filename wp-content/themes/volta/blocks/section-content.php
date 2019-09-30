@@ -20,7 +20,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -44,7 +44,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -68,7 +68,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -92,7 +92,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -116,7 +116,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -140,7 +140,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -164,7 +164,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -188,7 +188,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -212,7 +212,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -236,7 +236,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -260,7 +260,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -284,7 +284,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -308,7 +308,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -332,7 +332,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -356,7 +356,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -380,7 +380,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -404,7 +404,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -440,7 +440,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -464,7 +464,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -488,7 +488,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -512,7 +512,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -536,7 +536,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -560,7 +560,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -584,7 +584,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -608,7 +608,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -632,7 +632,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -664,7 +664,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -688,7 +688,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -712,7 +712,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -736,7 +736,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -760,7 +760,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -784,7 +784,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -808,7 +808,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -844,7 +844,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -868,7 +868,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -892,7 +892,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -916,7 +916,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -940,7 +940,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -964,7 +964,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -988,7 +988,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1012,7 +1012,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1036,7 +1036,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1060,7 +1060,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1084,7 +1084,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1108,7 +1108,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1132,7 +1132,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1156,7 +1156,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1180,7 +1180,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1204,7 +1204,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1228,7 +1228,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1268,7 +1268,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1292,7 +1292,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1316,7 +1316,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1340,7 +1340,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1364,7 +1364,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1388,7 +1388,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1412,7 +1412,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1436,7 +1436,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1460,7 +1460,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1484,7 +1484,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1508,7 +1508,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1532,7 +1532,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1556,7 +1556,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1580,7 +1580,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1604,7 +1604,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1628,7 +1628,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1652,7 +1652,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1688,7 +1688,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1712,7 +1712,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1736,7 +1736,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1760,7 +1760,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1784,7 +1784,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1808,7 +1808,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1832,7 +1832,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1855,7 +1855,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1879,7 +1879,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1903,7 +1903,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1927,7 +1927,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1951,7 +1951,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1975,7 +1975,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -1999,7 +1999,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2023,7 +2023,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2047,7 +2047,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2071,7 +2071,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2107,7 +2107,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2131,7 +2131,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2155,7 +2155,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2179,7 +2179,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2203,7 +2203,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2227,7 +2227,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2251,7 +2251,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2275,7 +2275,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2299,7 +2299,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2323,7 +2323,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2347,7 +2347,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2371,7 +2371,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2395,7 +2395,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2419,7 +2419,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2443,7 +2443,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2467,7 +2467,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2491,7 +2491,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2531,7 +2531,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2555,7 +2555,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2579,7 +2579,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2603,7 +2603,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2627,7 +2627,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2651,7 +2651,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2675,7 +2675,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2699,7 +2699,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2723,7 +2723,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2747,7 +2747,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2771,7 +2771,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2795,7 +2795,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2819,7 +2819,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2843,7 +2843,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2867,7 +2867,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2891,7 +2891,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2915,7 +2915,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2951,7 +2951,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2975,7 +2975,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -2999,7 +2999,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3023,7 +3023,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3047,7 +3047,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3071,7 +3071,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3095,7 +3095,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3119,7 +3119,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3143,7 +3143,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3167,7 +3167,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3191,7 +3191,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3215,7 +3215,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3239,7 +3239,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3263,7 +3263,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3287,7 +3287,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3311,7 +3311,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3335,7 +3335,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3371,7 +3371,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3395,7 +3395,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3427,7 +3427,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3451,7 +3451,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3475,7 +3475,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3499,7 +3499,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3523,7 +3523,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3547,7 +3547,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3571,7 +3571,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3595,7 +3595,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3619,7 +3619,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3643,7 +3643,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3667,7 +3667,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3691,7 +3691,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3715,7 +3715,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
@@ -3739,7 +3739,7 @@
 				<?php if ( get_sub_field('content_button_link') ): ?>
 				<footer>
 					
-					<ul class="actions center-items">
+					<ul class="actions">
 						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 					</ul>
 					
