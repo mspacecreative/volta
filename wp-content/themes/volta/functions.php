@@ -625,7 +625,7 @@ function my_acf_init() {
 		
 		// register image grid
 		acf_register_block(array(
-			'name'				=> 'image-grd',
+			'name'				=> 'image-grid',
 			'title'				=> __('Image Grid Section'),
 			'description'		=> __('Displays a series of images'),
 			'render_callback'	=> 'my_acf_block_render_callback',
