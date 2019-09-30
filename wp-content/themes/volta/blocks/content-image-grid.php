@@ -17,7 +17,6 @@ if( $images ): ?>
 </ul>
 <?php endif;
 
-$imagerowcount = get_field('image_row_count');
 elseif ( $imagerowcount == 'two' ):
 
 $images = get_field('image_grid');
@@ -35,7 +34,6 @@ if( $images ): ?>
 </ul>
 <?php endif;
 
-$imagerowcount = get_field('image_row_count');
 elseif ( $imagerowcount == 'three' ):
 
 $images = get_field('image_grid');
@@ -53,7 +51,6 @@ if( $images ): ?>
 </ul>
 <?php endif;
 
-$imagerowcount = get_field('image_row_count');
 elseif ( $imagerowcount == 'four' ):
 
 $images = get_field('image_grid');
@@ -71,7 +68,6 @@ if( $images ): ?>
 </ul>
 <?php endif;
 
-$imagerowcount = get_field('image_row_count');
 elseif ( $imagerowcount == 'five' ):
 
 $images = get_field('image_grid');
