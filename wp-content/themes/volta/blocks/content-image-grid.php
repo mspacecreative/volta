@@ -15,11 +15,7 @@ if( $images ): ?>
 	<?php endforeach; ?>
 	
 </ul>
-<?php endif; ?>
-
-<?php 
-endwhile;
-endif;
+<?php endif;
 
 $imagerowcount = get_field('image_row_count');
 elseif ( $imagerowcount == 'two' ):
@@ -37,11 +33,7 @@ if( $images ): ?>
 	<?php endforeach; ?>
 	
 </ul>
-<?php endif; ?>
-
-<?php 
-endwhile;
-endif;
+<?php endif;
 
 $imagerowcount = get_field('image_row_count');
 elseif ( $imagerowcount == 'three' ):
@@ -59,11 +51,7 @@ if( $images ): ?>
 	<?php endforeach; ?>
 	
 </ul>
-<?php endif; ?>
-
-<?php 
-endwhile;
-endif;
+<?php endif;
 
 $imagerowcount = get_field('image_row_count');
 elseif ( $imagerowcount == 'four' ):
@@ -81,11 +69,7 @@ if( $images ): ?>
 	<?php endforeach; ?>
 	
 </ul>
-<?php endif; ?>
-
-<?php 
-endwhile;
-endif;
+<?php endif;
 
 $imagerowcount = get_field('image_row_count');
 elseif ( $imagerowcount == 'five' ):
@@ -103,11 +87,7 @@ if( $images ): ?>
 	<?php endforeach; ?>
 	
 </ul>
-<?php endif; ?>
-
-<?php 
-endwhile;
-endif;
+<?php endif;
 
 $imagerowcount = get_field('image_row_count');
 else :
@@ -125,10 +105,6 @@ if( $images ): ?>
 	<?php endforeach; ?>
 	
 </ul>
-<?php endif; ?>
-
-<?php 
-endwhile;
-endif;
+<?php endif;
 
 endif; ?>
