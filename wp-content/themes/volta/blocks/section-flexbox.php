@@ -16,7 +16,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -41,7 +41,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -66,7 +66,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -91,7 +91,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -124,7 +124,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -149,7 +149,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -174,7 +174,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -199,7 +199,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -232,7 +232,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -257,7 +257,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -282,7 +282,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -307,7 +307,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -340,7 +340,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -365,7 +365,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -390,7 +390,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -415,7 +415,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -448,7 +448,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -473,7 +473,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -498,7 +498,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -523,7 +523,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -556,7 +556,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -581,7 +581,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -606,7 +606,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -631,7 +631,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -664,7 +664,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -689,7 +689,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -714,7 +714,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -739,7 +739,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -772,7 +772,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -797,7 +797,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -822,7 +822,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -847,7 +847,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -880,7 +880,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -906,7 +906,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -932,7 +932,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
@@ -958,7 +958,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				<?php while( have_rows('flexbox_content') ): the_row(); ?>
 				
 				<h3><?php the_sub_field('heading'); ?></h3>
-				<p><?php the_sub_field('body'); ?></p>
+				<?php the_sub_field('body'); ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
