@@ -89,7 +89,6 @@ if( $images ): ?>
 </ul>
 <?php endif;
 
-$imagerowcount = get_field('image_row_count');
 else :
 
 $images = get_field('image_grid');
