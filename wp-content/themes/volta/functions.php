@@ -623,6 +623,19 @@ function my_acf_init() {
 			'supports'			=> array( 'mode' => false ),
 		));
 		
+		// register image grid
+		acf_register_block(array(
+			'name'				=> 'image-grd',
+			'title'				=> __('Image Grid Section'),
+			'description'		=> __('Displays a series of images'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'images-alt',
+			'keywords'			=> array( 'grid', 'images' ),
+			'mode'				=> 'edit',
+			'supports'			=> array( 'mode' => false ),
+		));
+		
 	}
 }
 
