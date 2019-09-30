@@ -776,7 +776,23 @@
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800">
+				
 				<?php the_field('content_editor'); ?>
+				
+				<?php if( have_rows('content_cta_button') ): ?>
+				<?php while( have_rows('content_cta_button') ): the_row(); ?>
+				<?php if ( get_sub_field('content_button_link') ): ?>
+				<footer>
+					
+					<ul class="actions center-items">
+						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+					</ul>
+					
+				</footer>
+				<?php endif; ?>
+				<?php endwhile; ?>
+				<?php endif; ?>
+				
 			</div>
 			<?php endif;
 			
