@@ -9,10 +9,10 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 <?php elseif ( $imageoverlay == 'light' && $backgroundimage ): ?>
 <section class="banner light-overlay" style="background-image: url(<?php the_field('background_image'); ?>);">
 
-<?php elseif ( $backgroundimage) ): ?>
+<?php elseif ( $backgroundimage ): ?>
 <section class="banner" style="background-image: <?php the_field('background_image'); ?>;">
 
-<?php elseif ( $backgroundcolour) ): ?>
+<?php elseif ( $backgroundcolour ): ?>
 <section class="banner" style="background-color: <?php the_field('background_color'); ?>;">
 
 <?php else : ?>
