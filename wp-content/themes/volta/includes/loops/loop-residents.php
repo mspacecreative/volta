@@ -12,18 +12,18 @@
 		<div class="resident-container three_column">
 			<div class="grid-inner">
 				<?php
-				if ( get_field('logo_width') ) {
-					if ( has_post_thumbnail() ) {
-						echo '<span class="wider">' . the_post_thumbnail() . '</span>';
-					}
-				}
-					
-				else {
+				if ( get_field('logo_width') ):
+					echo '<span class="wider">'
 					if ( has_post_thumbnail() ) {
 						echo the_post_thumbnail();
 					}
-				}
-				?>
+					echo '</span>';
+					
+				else :
+					if ( has_post_thumbnail() ) {
+						echo the_post_thumbnail();
+					}
+				endif;
 				<div class="resident-card-content">
 					<h3><?php the_title(); ?></h3>
 					<p><?php echo esc_html_e('Focus: '); the_field('focus'); ?></p>
