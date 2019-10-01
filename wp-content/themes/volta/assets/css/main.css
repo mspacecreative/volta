@@ -3489,8 +3489,8 @@ img {
 }
 .residents-container .grid-inner img {
 	max-height: 100px;
-	margin: auto;
 	display: block;
+	max-width: 200px;
 }
 .display-flex-50 {
 	display: flex;
