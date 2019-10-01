@@ -113,18 +113,18 @@ elseif ( get_field('layout_type') == 'three' ):
 			<?php endwhile;
 			endif; ?>
 			
-			<?php if( have_rows('center_column_center_column') ): ?>
-			<?php while( have_rows('center_column_center_column') ): the_row(); ?>
+			<?php if( have_rows('center_column') ): ?>
+			<?php while( have_rows('center_column') ): the_row(); ?>
 			
 			<div class="column-container three_column">
 				<?php
-				$contenttype = get_sub_field('center_column_column_left_content_type' ); 
+				$contenttype = get_sub_field('column_center_content_type' ); 
 					
 				if ( $contenttype == 'text' ):
-				the_sub_field('center_column_left_column_text');
+				the_sub_field('center_column_text');
 					
 				elseif ( $contenttype == 'image' ):
-				$image = get_sub_field('center_column_left_column_image');
+				$image = get_sub_field('center_column_image');
 				$size = 'large';
 				
 				if ( $image ): ?>
