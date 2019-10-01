@@ -3981,6 +3981,10 @@ html.fixed {
 .post-content-container ul li.image-container:before {
 	display: none;
 }
+.image-grid-container {
+	padding: 0;
+	text-align: center;
+}
 @media (min-width: 1600px) {
 	#header {
 		max-height: 1000px;
@@ -4314,6 +4318,11 @@ html.fixed {
 	}
 	.image-container {
 		flex-basis: 33.333%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.image-container img {
+		padding: 20px;
 	}
 }
 
