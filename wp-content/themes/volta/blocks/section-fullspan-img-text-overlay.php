@@ -23,7 +23,7 @@
 						<header>
 							<h3><?php the_sub_field('heading'); ?></h3>
 						</header>
-						<p><?php the_sub_field('copy'); ?></p>
+						<?php the_sub_field('copy'); ?>
 					</div>
 					
 				</div>
@@ -37,7 +37,7 @@
 						<header>
 							<h3><?php the_sub_field('heading'); ?></h3>
 						</header>
-						<p><?php the_sub_field('copy'); ?></p>
+						<?php the_sub_field('copy'); ?>
 					</div>
 				
 				</div>
