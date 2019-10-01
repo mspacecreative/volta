@@ -3635,9 +3635,9 @@ img {
 #insights .tiles article {
 	width: 100%;
 }
-.light-overlay {
+/*.light-overlay {
 	background: rgba(255, 255, 255, .8);
-}
+}*/
 
 #more-programs {
 	position: relative;
