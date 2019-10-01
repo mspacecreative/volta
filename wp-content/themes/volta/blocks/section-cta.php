@@ -165,6 +165,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<?php endif; ?>
 		
 	</header>
+	<?php endif; ?>
 	
 </section>
 
@@ -329,6 +330,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<?php endif; ?>
 		
 	</header>
+	<?php endif; ?>
 	
 </section>
 
@@ -493,6 +495,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<?php endif; ?>
 		
 	</header>
+	<?php endif; ?>
 	
 </section>
 
@@ -657,6 +660,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<?php endif; ?>
 		
 	</header>
+	<?php endif; ?>
 	
 </section>
 
