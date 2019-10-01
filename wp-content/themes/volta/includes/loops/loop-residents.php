@@ -16,6 +16,7 @@
 				<?php } ?>
 					<div class="resident-card-content">
 						<h3><?php the_title(); ?></h3>
+						<p><?php echo esc_html_e('Focus: '); the_field('focus'); ?></p>
 						<p>
 							<?php
 							if( has_excerpt() ) { 

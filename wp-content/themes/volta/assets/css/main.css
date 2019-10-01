@@ -3480,6 +3480,9 @@ img {
 	border: none;
 	padding: 2em;
 }
+.residents-container {
+	padding: 4em 0;
+}
 .resident-container {
 	border: 1px solid #e9e9e9;
 }
