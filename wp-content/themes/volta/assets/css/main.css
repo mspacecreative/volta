@@ -2567,6 +2567,9 @@ input, select, textarea {
 		.banner header > p {
 			margin-bottom: 2em;
 		}
+		.banner header > p:last-child {
+			margin-bottom: 0;
+		}
 		.banner h1 {
 			margin-bottom: 0.5em;
 		}
