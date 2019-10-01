@@ -35,7 +35,7 @@ elseif ( get_field('layout_type') == 'two' ):
 				the_sub_field('left_column_text');
 				
 				elseif ( $contenttype == 'image' ):
-				$image = get_field('left_column_image');
+				$image = get_sub_field('left_column_image');
 				$size = 'full';
 				
 				if ( $image ) {
@@ -60,7 +60,7 @@ elseif ( get_field('layout_type') == 'two' ):
 				the_sub_field('right_column_text');
 					
 				elseif ( $contenttype == 'image' ):
-				$image = get_field('right_column_image');
+				$image = get_sub_field('right_column_image');
 				
 				if ( $image ): ?>
 					<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
