@@ -4285,6 +4285,9 @@ header {
 	.home #nav {
 		display: none;
 	}
+	.columns-container .column-container:first-child > img {
+		margin-bottom: 20px;
+	}
 	.stickymenu-inner {
 		padding: 0 2em;
 	}
