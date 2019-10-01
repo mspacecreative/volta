@@ -3995,6 +3995,9 @@ html.fixed {
 header {
 	position: relative;
 }
+.column-container img {
+	display: block;
+}
 @media (min-width: 1600px) {
 	#header {
 		max-height: 1000px;
