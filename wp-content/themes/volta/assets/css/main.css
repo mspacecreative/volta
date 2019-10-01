@@ -3495,7 +3495,7 @@ img {
 	top: 2em;
 	left: 2em;
 }
-.residents-container .grid-inner img.wider {
+.residents-container .grid-inner .wider img {
 	max-width: 150px;
 }
 .display-flex-50 {
