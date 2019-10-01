@@ -12,13 +12,13 @@
 		<div class="resident-container three_column">
 			<div class="grid-inner">
 				<?php
-				if ( get_field('logo_width') ):
+				if ( get_field('logo_width') ) {
 					if ( has_post_thumbnail() ) {
 						echo the_post_thumbnail( array('class' => 'wider') );
 					}
 				}
 					
-				else : {
+				else {
 					if ( has_post_thumbnail() ) {
 						echo the_post_thumbnail();
 					}
