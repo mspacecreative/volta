@@ -4288,6 +4288,9 @@ header {
 	.columns-container .column-container:first-child > img {
 		margin-bottom: 20px;
 	}
+	.columns-container .column-container:last-child > img {
+		margin-top: 20px;
+	}
 	.stickymenu-inner {
 		padding: 0 2em;
 	}
