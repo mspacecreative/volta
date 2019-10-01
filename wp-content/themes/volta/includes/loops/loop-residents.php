@@ -11,8 +11,15 @@
         while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		<div class="resident-container three_column">
 			<div class="grid-inner">
+				<?php if ( get_field('logo_width') ): ?>
+				
+			} ?>
 				<?php if ( has_post_thumbnail() ) { ?>
-				    <?php echo the_post_thumbnail(); ?>
+					<?php if ( get_field('logo_width', $image['ID']) ):
+					echo the_post_thumbnail( array('class' => 'wider') );
+					else :
+					echo the_post_thumbnail();
+					endif; ?>
 				<?php } ?>
 					<div class="resident-card-content">
 						<h3><?php the_title(); ?></h3>

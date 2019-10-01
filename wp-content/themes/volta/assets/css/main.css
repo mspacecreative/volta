@@ -3490,10 +3490,13 @@ img {
 .residents-container .grid-inner img {
 	max-height: 100px;
 	display: block;
-	max-width: 200px;
+	max-width: 120px;
 	position: absolute;
 	top: 2em;
 	left: 2em;
+}
+.residents-container .grid-inner img.wider {
+	max-width: 150px;
 }
 .display-flex-50 {
 	display: flex;
