@@ -3435,8 +3435,8 @@ input, select, textarea {
 .light-grey-bg {
 	background-color: #f0f4f4;
 }
-.large {
-	font-size: 1.5em;
+.large p {
+	font-size: 22px;
 }
 
 #intro-buckets.wrapper {
