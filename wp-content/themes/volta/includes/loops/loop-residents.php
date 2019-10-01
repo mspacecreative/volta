@@ -14,7 +14,7 @@
 				<?php
 				if ( get_field('logo_width') ) {
 					if ( has_post_thumbnail() ) {
-						echo the_post_thumbnail( array('class' => 'wider') );
+						echo '<span class="wider">' . the_post_thumbnail() . '</span>';
 					}
 				}
 					
