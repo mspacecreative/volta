@@ -12,37 +12,79 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		
 		<?php
 		$headingsize = get_field('heading_size');
-		
-		if ( $headingsize == 'large' ): ?>
-			
-			<?php if ( get_field('heading') ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif; ?>
-		
-		<?php elseif ( $headingsize == 'small' ): ?>
-		
-			<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif; ?>
-			
-		<?php endif; ?>
-		
-		<?php 
 		$bodysize = get_field('paragraph_size');
 		
-		if ( $bodysize == 'large' ): ?>
+		if ( $headingsize == 'large' && $bodysize == 'large' ):
 		
-			<?php if ( get_field('content') ): ?>
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif;
+			
+			if ( get_field('content') ): ?>
 			<div class="large"><?php the_field('content'); ?></div>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php elseif ( $bodysize == 'small' ): ?>
-		
-			<?php if ( get_field('content') ): ?>
+		elseif ( $headingsize == 'large' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
 			<?php the_field('content'); ?>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php endif; ?>
+		elseif ( $headingsize == 'small' && $bodysize == 'large' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		elseif ( $headingsize == 'small' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $headingsize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $bodysize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		else :
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+		
+		endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
 		<?php while( have_rows('cta_button') ): the_row(); ?>
@@ -65,37 +107,79 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		
 		<?php
 		$headingsize = get_field('heading_size');
-		
-		if ( $headingsize == 'large' ): ?>
-			
-			<?php if ( get_field('heading') ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif; ?>
-		
-		<?php elseif ( $headingsize == 'small' ): ?>
-		
-			<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif; ?>
-			
-		<?php endif; ?>
-		
-		<?php 
 		$bodysize = get_field('paragraph_size');
 		
-		if ( $bodysize == 'large' ): ?>
+		if ( $headingsize == 'large' && $bodysize == 'large' ):
 		
-			<?php if ( get_field('content') ): ?>
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif;
+			
+			if ( get_field('content') ): ?>
 			<div class="large"><?php the_field('content'); ?></div>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php elseif ( $bodysize == 'small' ): ?>
-		
-			<?php if ( get_field('content') ): ?>
+		elseif ( $headingsize == 'large' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
 			<?php the_field('content'); ?>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php endif; ?>
+		elseif ( $headingsize == 'small' && $bodysize == 'large' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		elseif ( $headingsize == 'small' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $headingsize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $bodysize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		else :
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+		
+		endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
 		<?php while( have_rows('cta_button') ): the_row(); ?>
@@ -103,7 +187,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -118,37 +202,79 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		
 		<?php
 		$headingsize = get_field('heading_size');
-		
-		if ( $headingsize == 'large' ): ?>
-			
-			<?php if ( get_field('heading') ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif; ?>
-		
-		<?php elseif ( $headingsize == 'small' ): ?>
-		
-			<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif; ?>
-			
-		<?php endif; ?>
-		
-		<?php 
 		$bodysize = get_field('paragraph_size');
 		
-		if ( $bodysize == 'large' ): ?>
+		if ( $headingsize == 'large' && $bodysize == 'large' ):
 		
-			<?php if ( get_field('content') ): ?>
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif;
+			
+			if ( get_field('content') ): ?>
 			<div class="large"><?php the_field('content'); ?></div>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php elseif ( $bodysize == 'small' ): ?>
-		
-			<?php if ( get_field('content') ): ?>
+		elseif ( $headingsize == 'large' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
 			<?php the_field('content'); ?>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php endif; ?>
+		elseif ( $headingsize == 'small' && $bodysize == 'large' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		elseif ( $headingsize == 'small' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $headingsize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $bodysize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		else :
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+		
+		endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
 		<?php while( have_rows('cta_button') ): the_row(); ?>
@@ -156,7 +282,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -177,37 +303,79 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		
 		<?php
 		$headingsize = get_field('heading_size');
-		
-		if ( $headingsize == 'large' ): ?>
-			
-			<?php if ( get_field('heading') ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif; ?>
-		
-		<?php elseif ( $headingsize == 'small' ): ?>
-		
-			<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif; ?>
-			
-		<?php endif; ?>
-		
-		<?php 
 		$bodysize = get_field('paragraph_size');
 		
-		if ( $bodysize == 'large' ): ?>
+		if ( $headingsize == 'large' && $bodysize == 'large' ):
 		
-			<?php if ( get_field('content') ): ?>
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif;
+			
+			if ( get_field('content') ): ?>
 			<div class="large"><?php the_field('content'); ?></div>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php elseif ( $bodysize == 'small' ): ?>
-		
-			<?php if ( get_field('content') ): ?>
+		elseif ( $headingsize == 'large' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
 			<?php the_field('content'); ?>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php endif; ?>
+		elseif ( $headingsize == 'small' && $bodysize == 'large' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		elseif ( $headingsize == 'small' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $headingsize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $bodysize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		else :
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+		
+		endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
 		<?php while( have_rows('cta_button') ): the_row(); ?>
@@ -230,37 +398,79 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		
 		<?php
 		$headingsize = get_field('heading_size');
-		
-		if ( $headingsize == 'large' ): ?>
-			
-			<?php if ( get_field('heading') ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif; ?>
-		
-		<?php elseif ( $headingsize == 'small' ): ?>
-		
-			<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif; ?>
-			
-		<?php endif; ?>
-		
-		<?php 
 		$bodysize = get_field('paragraph_size');
 		
-		if ( $bodysize == 'large' ): ?>
+		if ( $headingsize == 'large' && $bodysize == 'large' ):
 		
-			<?php if ( get_field('content') ): ?>
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif;
+			
+			if ( get_field('content') ): ?>
 			<div class="large"><?php the_field('content'); ?></div>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php elseif ( $bodysize == 'small' ): ?>
-		
-			<?php if ( get_field('content') ): ?>
+		elseif ( $headingsize == 'large' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
 			<?php the_field('content'); ?>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php endif; ?>
+		elseif ( $headingsize == 'small' && $bodysize == 'large' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		elseif ( $headingsize == 'small' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $headingsize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $bodysize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		else :
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+		
+		endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
 		<?php while( have_rows('cta_button') ): the_row(); ?>
@@ -268,7 +478,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -283,37 +493,79 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		
 		<?php
 		$headingsize = get_field('heading_size');
-		
-		if ( $headingsize == 'large' ): ?>
-			
-			<?php if ( get_field('heading') ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif; ?>
-		
-		<?php elseif ( $headingsize == 'small' ): ?>
-		
-			<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif; ?>
-			
-		<?php endif; ?>
-		
-		<?php 
 		$bodysize = get_field('paragraph_size');
 		
-		if ( $bodysize == 'large' ): ?>
+		if ( $headingsize == 'large' && $bodysize == 'large' ):
 		
-			<?php if ( get_field('content') ): ?>
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif;
+			
+			if ( get_field('content') ): ?>
 			<div class="large"><?php the_field('content'); ?></div>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php elseif ( $bodysize == 'small' ): ?>
-		
-			<?php if ( get_field('content') ): ?>
+		elseif ( $headingsize == 'large' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
 			<?php the_field('content'); ?>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php endif; ?>
+		elseif ( $headingsize == 'small' && $bodysize == 'large' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		elseif ( $headingsize == 'small' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $headingsize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $bodysize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		else :
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+		
+		endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
 		<?php while( have_rows('cta_button') ): the_row(); ?>
@@ -321,7 +573,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -342,37 +594,79 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		
 		<?php
 		$headingsize = get_field('heading_size');
-		
-		if ( $headingsize == 'large' ): ?>
-			
-			<?php if ( get_field('heading') ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif; ?>
-		
-		<?php elseif ( $headingsize == 'small' ): ?>
-		
-			<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif; ?>
-			
-		<?php endif; ?>
-		
-		<?php 
 		$bodysize = get_field('paragraph_size');
 		
-		if ( $bodysize == 'large' ): ?>
+		if ( $headingsize == 'large' && $bodysize == 'large' ):
 		
-			<?php if ( get_field('content') ): ?>
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif;
+			
+			if ( get_field('content') ): ?>
 			<div class="large"><?php the_field('content'); ?></div>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php elseif ( $bodysize == 'small' ): ?>
-		
-			<?php if ( get_field('content') ): ?>
+		elseif ( $headingsize == 'large' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
 			<?php the_field('content'); ?>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php endif; ?>
+		elseif ( $headingsize == 'small' && $bodysize == 'large' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		elseif ( $headingsize == 'small' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $headingsize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $bodysize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		else :
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+		
+		endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
 		<?php while( have_rows('cta_button') ): the_row(); ?>
@@ -395,37 +689,79 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		
 		<?php
 		$headingsize = get_field('heading_size');
-		
-		if ( $headingsize == 'large' ): ?>
-			
-			<?php if ( get_field('heading') ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif; ?>
-		
-		<?php elseif ( $headingsize == 'small' ): ?>
-		
-			<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif; ?>
-			
-		<?php endif; ?>
-		
-		<?php 
 		$bodysize = get_field('paragraph_size');
 		
-		if ( $bodysize == 'large' ): ?>
+		if ( $headingsize == 'large' && $bodysize == 'large' ):
 		
-			<?php if ( get_field('content') ): ?>
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif;
+			
+			if ( get_field('content') ): ?>
 			<div class="large"><?php the_field('content'); ?></div>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php elseif ( $bodysize == 'small' ): ?>
-		
-			<?php if ( get_field('content') ): ?>
+		elseif ( $headingsize == 'large' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
 			<?php the_field('content'); ?>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php endif; ?>
+		elseif ( $headingsize == 'small' && $bodysize == 'large' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		elseif ( $headingsize == 'small' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $headingsize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $bodysize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		else :
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+		
+		endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
 		<?php while( have_rows('cta_button') ): the_row(); ?>
@@ -433,7 +769,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -448,37 +784,79 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		
 		<?php
 		$headingsize = get_field('heading_size');
-		
-		if ( $headingsize == 'large' ): ?>
-			
-			<?php if ( get_field('heading') ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif; ?>
-		
-		<?php elseif ( $headingsize == 'small' ): ?>
-		
-			<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif; ?>
-			
-		<?php endif; ?>
-		
-		<?php 
 		$bodysize = get_field('paragraph_size');
 		
-		if ( $bodysize == 'large' ): ?>
+		if ( $headingsize == 'large' && $bodysize == 'large' ):
 		
-			<?php if ( get_field('content') ): ?>
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif;
+			
+			if ( get_field('content') ): ?>
 			<div class="large"><?php the_field('content'); ?></div>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php elseif ( $bodysize == 'small' ): ?>
-		
-			<?php if ( get_field('content') ): ?>
+		elseif ( $headingsize == 'large' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
 			<?php the_field('content'); ?>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php endif; ?>
+		elseif ( $headingsize == 'small' && $bodysize == 'large' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		elseif ( $headingsize == 'small' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $headingsize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $bodysize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		else :
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+		
+		endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
 		<?php while( have_rows('cta_button') ): the_row(); ?>
@@ -486,7 +864,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -507,37 +885,79 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		
 		<?php
 		$headingsize = get_field('heading_size');
-		
-		if ( $headingsize == 'large' ): ?>
-			
-			<?php if ( get_field('heading') ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif; ?>
-		
-		<?php elseif ( $headingsize == 'small' ): ?>
-		
-			<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif; ?>
-			
-		<?php endif; ?>
-		
-		<?php 
 		$bodysize = get_field('paragraph_size');
 		
-		if ( $bodysize == 'large' ): ?>
+		if ( $headingsize == 'large' && $bodysize == 'large' ):
 		
-			<?php if ( get_field('content') ): ?>
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif;
+			
+			if ( get_field('content') ): ?>
 			<div class="large"><?php the_field('content'); ?></div>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php elseif ( $bodysize == 'small' ): ?>
-		
-			<?php if ( get_field('content') ): ?>
+		elseif ( $headingsize == 'large' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
 			<?php the_field('content'); ?>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php endif; ?>
+		elseif ( $headingsize == 'small' && $bodysize == 'large' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		elseif ( $headingsize == 'small' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $headingsize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $bodysize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		else :
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+		
+		endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
 		<?php while( have_rows('cta_button') ): the_row(); ?>
@@ -560,37 +980,79 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		
 		<?php
 		$headingsize = get_field('heading_size');
-		
-		if ( $headingsize == 'large' ): ?>
-			
-			<?php if ( get_field('heading') ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif; ?>
-		
-		<?php elseif ( $headingsize == 'small' ): ?>
-		
-			<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif; ?>
-			
-		<?php endif; ?>
-		
-		<?php 
 		$bodysize = get_field('paragraph_size');
 		
-		if ( $bodysize == 'large' ): ?>
+		if ( $headingsize == 'large' && $bodysize == 'large' ):
 		
-			<?php if ( get_field('content') ): ?>
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif;
+			
+			if ( get_field('content') ): ?>
 			<div class="large"><?php the_field('content'); ?></div>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php elseif ( $bodysize == 'small' ): ?>
-		
-			<?php if ( get_field('content') ): ?>
+		elseif ( $headingsize == 'large' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
 			<?php the_field('content'); ?>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php endif; ?>
+		elseif ( $headingsize == 'small' && $bodysize == 'large' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		elseif ( $headingsize == 'small' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $headingsize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $bodysize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		else :
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+		
+		endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
 		<?php while( have_rows('cta_button') ): the_row(); ?>
@@ -598,7 +1060,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -613,37 +1075,79 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		
 		<?php
 		$headingsize = get_field('heading_size');
-		
-		if ( $headingsize == 'large' ): ?>
-			
-			<?php if ( get_field('heading') ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif; ?>
-		
-		<?php elseif ( $headingsize == 'small' ): ?>
-		
-			<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif; ?>
-			
-		<?php endif; ?>
-		
-		<?php 
 		$bodysize = get_field('paragraph_size');
 		
-		if ( $bodysize == 'large' ): ?>
+		if ( $headingsize == 'large' && $bodysize == 'large' ):
 		
-			<?php if ( get_field('content') ): ?>
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif;
+			
+			if ( get_field('content') ): ?>
 			<div class="large"><?php the_field('content'); ?></div>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php elseif ( $bodysize == 'small' ): ?>
-		
-			<?php if ( get_field('content') ): ?>
+		elseif ( $headingsize == 'large' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
 			<?php the_field('content'); ?>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php endif; ?>
+		elseif ( $headingsize == 'small' && $bodysize == 'large' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		elseif ( $headingsize == 'small' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $headingsize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $bodysize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		else :
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+		
+		endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
 		<?php while( have_rows('cta_button') ): the_row(); ?>
@@ -651,7 +1155,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -672,37 +1176,79 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		
 		<?php
 		$headingsize = get_field('heading_size');
-		
-		if ( $headingsize == 'large' ): ?>
-			
-			<?php if ( get_field('heading') ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif; ?>
-		
-		<?php elseif ( $headingsize == 'small' ): ?>
-		
-			<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif; ?>
-			
-		<?php endif; ?>
-		
-		<?php 
 		$bodysize = get_field('paragraph_size');
 		
-		if ( $bodysize == 'large' ): ?>
+		if ( $headingsize == 'large' && $bodysize == 'large' ):
 		
-			<?php if ( get_field('content') ): ?>
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif;
+			
+			if ( get_field('content') ): ?>
 			<div class="large"><?php the_field('content'); ?></div>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php elseif ( $bodysize == 'small' ): ?>
-		
-			<?php if ( get_field('content') ): ?>
+		elseif ( $headingsize == 'large' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
 			<?php the_field('content'); ?>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php endif; ?>
+		elseif ( $headingsize == 'small' && $bodysize == 'large' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		elseif ( $headingsize == 'small' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $headingsize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $bodysize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		else :
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+		
+		endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
 		<?php while( have_rows('cta_button') ): the_row(); ?>
@@ -778,37 +1324,79 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		
 		<?php
 		$headingsize = get_field('heading_size');
-		
-		if ( $headingsize == 'large' ): ?>
-			
-			<?php if ( get_field('heading') ): ?>
-			<h1><?php the_field('heading'); ?></h1>
-			<?php endif; ?>
-		
-		<?php elseif ( $headingsize == 'small' ): ?>
-		
-			<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
-			<?php endif; ?>
-			
-		<?php endif; ?>
-		
-		<?php 
 		$bodysize = get_field('paragraph_size');
 		
-		if ( $bodysize == 'large' ): ?>
+		if ( $headingsize == 'large' && $bodysize == 'large' ):
 		
-			<?php if ( get_field('content') ): ?>
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif;
+			
+			if ( get_field('content') ): ?>
 			<div class="large"><?php the_field('content'); ?></div>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php elseif ( $bodysize == 'small' ): ?>
-		
-			<?php if ( get_field('content') ): ?>
+		elseif ( $headingsize == 'large' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
 			<?php the_field('content'); ?>
-			<?php endif; ?>
+			<?php endif;
 			
-		<?php endif; ?>
+		elseif ( $headingsize == 'small' && $bodysize == 'large' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		elseif ( $headingsize == 'small' && $bodysize == 'small' ):
+			
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $headingsize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h1><?php the_field('heading'); ?></h1>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+			
+		elseif ( $bodysize == 'large' ):
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<div class="large"><?php the_field('content'); ?></div>
+			<?php endif;
+			
+		else :
+		
+			if ( get_field('heading') ): ?>
+			<h2><?php the_field('heading'); ?></h2>
+			<?php endif; 
+			
+			if ( get_field('content') ): ?>
+			<?php the_field('content'); ?>
+			<?php endif;
+		
+		endif; ?>
 		
 		<?php if( have_rows('cta_button') ): ?>
 		<?php while( have_rows('cta_button') ): the_row(); ?>
@@ -816,7 +1404,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
