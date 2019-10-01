@@ -12,7 +12,7 @@
 		<div class="resident-container three_column">
 			<div class="grid-inner">
 				<?php
-				$widerlogo = get_field('logo_width', $image['ID'] ) ):
+				$widerlogo = get_field('logo_width', $image['ID'] );
 					if ( $widerlogo ) {
 						if ( has_post_thumbnail() ) {
 							echo the_post_thumbnail( $image['ID'], ["class" => "wider"] );
