@@ -82,15 +82,86 @@ elseif ( get_field('layout_type') == 'two' ):
 
 elseif ( get_field('layout_type') == 'three' ):	
 	
-	if( have_rows('variable_columns') ): ?>
+	if( have_rows('three_column_layout') ): ?>
 	
 	<div class="columns-container display-flex full-padding bottom-margin">
 		
-		<?php while( have_rows('variable_columns') ): the_row(); ?>
+		<?php while( have_rows('three_column_layout') ): the_row(); ?>
 		
-		<div class="column-container three_column">
-			<?php the_sub_field('column_content'); ?>
-		</div>
+			<?php if( have_rows('left_column_left_column') ): ?>
+			<?php while( have_rows('left_column_left_column') ): the_row(); ?>
+		
+			<div class="column-container three_column">
+				<?php
+				$contenttype = get_sub_field('column_left_content_type' ); 
+				
+				if ( $contenttype == 'text' ):
+				the_sub_field('left_column_text');
+				
+				elseif ( $contenttype == 'image' ):
+				$image = get_sub_field('left_column_image');
+				$size = 'large';
+				
+				if ( $image ): ?>
+					<?php echo wp_get_attachment_image( $image, $size ); ?>
+				<?php endif;
+				
+				endif;
+				?>
+			</div>
+			
+			<?php endwhile;
+			endif; ?>
+			
+			<?php if( have_rows('center_column_center_column') ): ?>
+			<?php while( have_rows('center_column_center_column') ): the_row(); ?>
+			
+			<div class="column-container three_column">
+				<?php
+				$contenttype = get_sub_field('column_left_content_type' ); 
+					
+				if ( $contenttype == 'text' ):
+				the_sub_field('left_column_text');
+					
+				elseif ( $contenttype == 'image' ):
+				$image = get_sub_field('left_column_image');
+				$size = 'large';
+				
+				if ( $image ): ?>
+					<?php echo wp_get_attachment_image( $image, $size ); ?>
+				<?php endif;
+				
+				endif;
+				?>
+			</div>
+				
+			<?php endwhile;
+			endif; ?>
+			
+			<?php if( have_rows('right_column_right_column') ): ?>
+			<?php while( have_rows('right_column_right_column') ): the_row(); ?>
+			
+			<div class="column-container three_column">
+				<?php
+				$contenttype = get_sub_field('column_right_content_type' ); 
+					
+				if ( $contenttype == 'text' ):
+				the_sub_field('right_column_text');
+					
+				elseif ( $contenttype == 'image' ):
+				$image = get_sub_field('right_column_image');
+				$size = 'large';
+				
+				if ( $image ): ?>
+					<?php echo wp_get_attachment_image( $image, $size ); ?>
+				<?php endif;
+				
+				endif;
+				?>
+			</div>
+				
+			<?php endwhile;
+			endif; ?>
 		
 		<?php endwhile; ?>
 		
