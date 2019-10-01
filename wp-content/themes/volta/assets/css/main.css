@@ -3468,6 +3468,9 @@ img {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+.image-grid-container.display-flex {
+	align-items: center;
+}
 .display-flex-50 {
 	display: flex;
 	flex: 1;
@@ -3984,9 +3987,10 @@ html.fixed {
 .post-content-container ul li.image-container:before {
 	display: none;
 }
-.image-grid-container {
+.post-content-container ul.image-grid-container {
 	padding: 0;
 	text-align: center;
+	margin: 0;
 }
 @media (min-width: 1600px) {
 	#header {
@@ -4321,8 +4325,6 @@ html.fixed {
 	}
 	.image-container {
 		flex-basis: 33.333%;
-		display: inline-block;
-		vertical-align: middle;
 	}
 	.image-container img {
 		padding: 20px;

@@ -6,7 +6,7 @@ $images = get_field('image_grid');
 $size = 'large';
 
 	if ( $images ): ?>
-	<ul class="image-grid-container">
+	<ul class="image-grid-container display-flex">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
@@ -23,7 +23,7 @@ $images = get_field('image_grid');
 $size = 'medium';
 
 	if ( $images ): ?>
-	<ul class="image-grid-container">
+	<ul class="image-grid-container display-flex">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container two-up">
@@ -40,7 +40,7 @@ $images = get_field('image_grid');
 $size = 'medium';
 
 	if ( $images ): ?>
-	<ul class="image-grid-container">
+	<ul class="image-grid-container display-flex">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container three-up">
@@ -57,7 +57,7 @@ $images = get_field('image_grid');
 $size = 'medium';
 
 	if ( $images ): ?>
-	<ul class="image-grid-container">
+	<ul class="image-grid-container display-flex">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container four-up">
@@ -74,7 +74,7 @@ $images = get_field('image_grid');
 $size = 'medium';
 
 	if ( $images ): ?>
-	<ul class="image-grid-container">
+	<ul class="image-grid-container display-flex">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container five-up">
@@ -91,7 +91,7 @@ $images = get_field('image_grid');
 $size = 'medium';
 
 	if ( $images ): ?>
-	<ul class="image-grid-container">
+	<ul class="image-grid-container display-flex">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
