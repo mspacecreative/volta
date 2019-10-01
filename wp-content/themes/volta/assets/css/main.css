@@ -4345,7 +4345,11 @@ header {
 		flex-basis: 49%;
 		margin-right: 2%;
 	}
-	.two_column:last-child {
+	.three_column {
+		flex-basis: 32%;
+		margin-right: 2%;
+	}
+	.two_column:last-child, .three_column:last-child {
 		margin-right: 0;
 	}
 }
