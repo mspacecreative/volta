@@ -3485,6 +3485,7 @@ img {
 }
 .resident-container {
 	border: 1px solid #e9e9e9;
+	margin-bottom: 2%;
 }
 .residents-container .grid-inner img {
 	max-height: 100px;
