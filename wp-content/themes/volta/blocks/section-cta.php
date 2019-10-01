@@ -587,7 +587,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 </section>
 
 <?php elseif ( $backgroundimage ): ?>
-<section class="banner" style="background-image: <?php the_field('background_image'); ?>;">
+<section class="banner" style="background-image: url(<?php the_field('background_image'); ?>);">
 
 	<?php if ( get_field('text_color') == 'dark' ): ?>
 	<header class="max-width-800">
