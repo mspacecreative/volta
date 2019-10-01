@@ -3630,8 +3630,7 @@ img {
 	width: 100%;
 }
 .dark-overlay:before {
-	background-color: rgba(0, 0, 0, .85);
-	background-image: radial-gradient(circle, rgba(0,0,0,.65) 30%, transparent);
+	background-color: rgba(0, 0, 0, .75);
 }
 #insights .tiles article {
 	width: 100%;
@@ -3992,6 +3991,9 @@ html.fixed {
 	padding: 0;
 	text-align: center;
 	margin: 0;
+}
+header {
+	position: relative;
 }
 @media (min-width: 1600px) {
 	#header {
