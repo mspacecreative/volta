@@ -18,15 +18,51 @@
 	
 elseif ( get_field('layout_type') == 'two' ):	
 	
-	if( have_rows('variable_columns') ): ?>
+	if( have_rows('two_column_layout') ): ?>
 	
 	<div class="columns-container display-flex">
 		
-		<?php while( have_rows('variable_columns') ): the_row(); ?>
+		<?php while( have_rows('two_column_layout') ): the_row(); ?>
 		
-		<div class="column-container two_column">
-			<?php the_sub_field('column_content'); ?>
-		</div>
+			<?php if( have_rows('left_column') ): ?>
+			<?php while( have_rows('left_column') ): the_row(); ?>
+		
+			<div class="column-container two_column">
+				<?php
+				$contenttype = get_sub_field('column_left_content_type' ); 
+				
+				if ( $contenttype == 'text' ):
+				the_sub_field('left_column_text');
+				
+				elseif ( $contenttype == 'image' ):
+				the_sub_field('left_column_image');
+				
+				endif;
+				?>
+			</div>
+			
+			<?php endwhile;
+			endif; ?>
+			
+			<?php if( have_rows('right_column') ): ?>
+			<?php while( have_rows('right_column') ): the_row(); ?>
+			
+			<div class="column-container two_column">
+				<?php
+				$contenttype = get_sub_field('column_right_content_type' ); 
+					
+				if ( $contenttype == 'text' ):
+				the_sub_field('right_column_text');
+					
+				elseif ( $contenttype == 'image' ):
+				the_sub_field('right_column_image');
+					
+				endif;
+				?>
+			</div>
+				
+			<?php endwhile;
+			endif; ?>
 		
 		<?php endwhile; ?>
 		
