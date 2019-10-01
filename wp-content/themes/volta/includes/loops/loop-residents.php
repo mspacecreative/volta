@@ -12,18 +12,17 @@
 		<div class="resident-container three_column">
 			<div class="grid-inner">
 				<?php
-				$widerlogo = get_field('logo_width', $image['ID']);
-					if ( $widerlogo ):
-						if ( has_post_thumbnail() ) {
-							echo the_post_thumbnail( array('class' => 'wider') );
-						}
+				if ( get_field('logo_width') ):
+					if ( has_post_thumbnail() ) {
+						echo the_post_thumbnail( array('class' => 'wider') );
 					}
+				}
 					
-					else : {
-						if ( has_post_thumbnail() ) {
-							echo the_post_thumbnail();
-						}
+				else : {
+					if ( has_post_thumbnail() ) {
+						echo the_post_thumbnail();
 					}
+				}
 				?>
 				<div class="resident-card-content">
 					<h3><?php the_title(); ?></h3>
