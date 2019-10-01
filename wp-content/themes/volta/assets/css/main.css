@@ -4332,6 +4332,13 @@ header {
 	.image-container img {
 		padding: 20px;
 	}
+	.two_column {
+		flex-basis: 48%;
+		margin-right: 4%;
+	}
+	.two_column:last-child {
+		margin-right: 0;
+	}
 }
 
 @media (min-width: 1600px) {
