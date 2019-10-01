@@ -4369,7 +4369,7 @@ header {
 		flex-basis: 32%;
 		margin-right: 2%;
 	}
-	.two_column:last-child, .three_column:last-child {
+	.two_column:last-child, .three_column:nth-child(3n) {
 		margin-right: 0;
 	}
 }
