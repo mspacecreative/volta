@@ -3975,6 +3975,12 @@ html.fixed {
 .simcal-events li:before {
 	display: none;
 }
+.post-content-container ul li.image-container {
+	text-indent: inherit;
+}
+.post-content-container ul li.image-container:before {
+	display: none;
+}
 @media (min-width: 1600px) {
 	#header {
 		max-height: 1000px;
@@ -4305,6 +4311,9 @@ html.fixed {
 	}
 	aside, .one_third_col {
 		width: 35%;
+	}
+	.image-container {
+		flex-basis: 33.333%;
 	}
 }
 
