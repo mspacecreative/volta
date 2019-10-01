@@ -521,8 +521,8 @@ function my_acf_init() {
 		
 		// register full span img text left block
 		acf_register_block(array(
-			'name'				=> 'fullspan-img-text-left',
-			'title'				=> __('Full Span Image Text Left Section'),
+			'name'				=> 'fullspan-img-text-overlay',
+			'title'				=> __('Full Span Image Text Overlay Section'),
 			'description'		=> __('Full span background image and content section'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
