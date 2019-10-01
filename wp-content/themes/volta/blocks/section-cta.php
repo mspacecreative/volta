@@ -1,11 +1,24 @@
 <!-- Banner -->
-<?php if ( get_field('background_image') ): ?>
-<section class="banner" style="background-image: url(<?php the_field('background_image'); ?>);">
-<?php elseif ( get_field('background_color') ): ?>
+<?php
+$imageoverlay = get_field('cta_background_image_overlay');
+$backgroundimage = get_field('background_image');
+$backgroundcolour = get_field('background_color');
+if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
+<section class="banner dark-overlay" style="background-image: url(<?php the_field('background_image'); ?>);">
+
+<?php elseif ( $imageoverlay == 'light' && $backgroundimage ): ?>
+<section class="banner light-overlay" style="background-image: url(<?php the_field('background_image'); ?>);">
+
+<?php elseif ( $backgroundimage) ): ?>
+<section class="banner" style="background-image: <?php the_field('background_image'); ?>;">
+
+<?php elseif ( $backgroundcolour) ): ?>
 <section class="banner" style="background-color: <?php the_field('background_color'); ?>;">
+
 <?php else : ?>
 <section class="banner">
 <?php endif; ?>
+	
 	<?php if ( get_field('text_color') == 'dark' ): ?>
 	<header class="max-width-800">
 		
