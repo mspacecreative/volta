@@ -36,10 +36,10 @@ elseif ( get_field('layout_type') == 'two' ):
 				
 				elseif ( $contenttype == 'image' ):
 				$image = get_sub_field('left_column_image');
-				$size = 'full';
+				$size = 'large';
 				
-				if ( $image ) {
-					echo wp_get_attachment_image( $image['ID'], $size );
+				if ( $image ): {
+					echo wp_get_attachment_image( $image, $size );
 				}
 				
 				endif;
@@ -61,10 +61,11 @@ elseif ( get_field('layout_type') == 'two' ):
 					
 				elseif ( $contenttype == 'image' ):
 				$image = get_sub_field('right_column_image');
+				$size = 'large';
 				
-				if ( $image ): ?>
-					<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-				<?php endif;
+				if ( $image ): {
+					echo wp_get_attachment_image( $image, $size );
+				}
 				
 				endif;
 				?>
