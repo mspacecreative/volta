@@ -118,13 +118,13 @@ elseif ( get_field('layout_type') == 'three' ):
 			
 			<div class="column-container three_column">
 				<?php
-				$contenttype = get_sub_field('column_left_content_type' ); 
+				$contenttype = get_sub_field('center_column_column_left_content_type' ); 
 					
 				if ( $contenttype == 'text' ):
-				the_sub_field('left_column_text');
+				the_sub_field('center_column_left_column_text');
 					
 				elseif ( $contenttype == 'image' ):
-				$image = get_sub_field('left_column_image');
+				$image = get_sub_field('center_column_left_column_image');
 				$size = 'large';
 				
 				if ( $image ): ?>
