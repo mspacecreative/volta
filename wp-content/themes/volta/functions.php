@@ -678,3 +678,11 @@ function recentPosts() {
 	return ob_get_clean();
 }
 add_shortcode( 'sidebar_posts', 'recentPosts' );
+
+// CURRENT RESIDENTS POSTS LOOP
+function currentResidents() {
+	ob_start();
+		get_template_part('includes/loops/loop-residents');
+	return ob_get_clean();
+}
+add_shortcode( 'residents_loop', 'currentResidents' );
