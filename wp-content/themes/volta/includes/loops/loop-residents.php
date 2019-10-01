@@ -1,6 +1,12 @@
 <div class="residents-container display-flex">
-<?php 
-$loop = new WP_Query( array( 'post_type' => 'residents', 'posts_per_page' => -1 ) );
+	<?php 
+	$loop = new WP_Query( array( 
+		'post_type' => 'residents',
+		'posts_per_page' => -1,
+		'orderby'=> 'title', 
+		'order' => 'ASC'
+		)
+	);
     if ( $loop->have_posts() ) :
         while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		<div class="resident-container three_column">
