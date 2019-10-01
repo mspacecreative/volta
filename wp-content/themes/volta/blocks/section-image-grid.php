@@ -5,12 +5,12 @@ if ( $imagerowcount == 'one' ):
 $images = get_field('image_grid');
 $size = 'large';
 
-	if( $images ): ?>
+	if ( $images ): ?>
 	<ul class="image-grid-container">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
-			<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+			<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
 		</li>
 		<?php endforeach; ?>
 		
@@ -22,12 +22,12 @@ elseif ( $imagerowcount == 'two' ):
 $images = get_field('image_grid');
 $size = 'medium';
 
-	if( $images ): ?>
+	if ( $images ): ?>
 	<ul class="image-grid-container">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container two-up">
-			<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+			<img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
 		</li>
 		<?php endforeach; ?>
 		
@@ -39,12 +39,12 @@ elseif ( $imagerowcount == 'three' ):
 $images = get_field('image_grid');
 $size = 'medium';
 
-	if( $images ): ?>
+	if ( $images ): ?>
 	<ul class="image-grid-container">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container three-up">
-			<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+			<img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
 		</li>
 		<?php endforeach; ?>
 		
@@ -56,12 +56,12 @@ elseif ( $imagerowcount == 'four' ):
 $images = get_field('image_grid');
 $size = 'medium';
 
-	if( $images ): ?>
+	if ( $images ): ?>
 	<ul class="image-grid-container">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container four-up">
-			<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+			<img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
 		</li>
 		<?php endforeach; ?>
 		
@@ -73,12 +73,12 @@ elseif ( $imagerowcount == 'five' ):
 $images = get_field('image_grid');
 $size = 'medium';
 
-	if( $images ): ?>
+	if ( $images ): ?>
 	<ul class="image-grid-container">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container five-up">
-			<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+			<img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
 		</li>
 		<?php endforeach; ?>
 		
@@ -90,12 +90,12 @@ else :
 $images = get_field('image_grid');
 $size = 'medium';
 
-	if( $images ): ?>
+	if ( $images ): ?>
 	<ul class="image-grid-container">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
-			<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+			<img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
 		</li>
 		<?php endforeach; ?>
 		
