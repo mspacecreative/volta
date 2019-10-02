@@ -1717,7 +1717,7 @@ input, select, textarea {
 		position: relative;
 	}
 	
-	.features .row {
+	.features {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -1731,7 +1731,7 @@ input, select, textarea {
 		background-position: center;
 	}
 	
-	.features .row:last-child {
+	.features:last-child {
 		border-bottom: 5px solid #fff;
 	}
 	
