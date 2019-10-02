@@ -4430,8 +4430,14 @@ header {
 	.home.page .features {
 		margin: auto;
 	}
-	.container {
+	.container, .left-side, .right-side {
 		max-width: 1600px;
+	}
+	.content-bottom .left, .content-bottom .right {
+		width: 100%;
+	}
+	.page .left-side .full-span-content, .page .right-side .full-span-content {
+	    padding: 4em 2em;
 	}
 }
 
