@@ -1177,7 +1177,7 @@
 	</div>
 	
 	<?php else : ?>
-	<div class="white-bg bg-img-cover light-overlay" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
+	<div class="bg-img-cover light-overlay" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
 	
 		<?php 
 		$padding = get_field('section_padding_section_padding');
@@ -2945,7 +2945,7 @@
 	</div>
 	
 	<?php else : ?>
-	<div class="white-bg bg-img-cover light-overlay" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
+	<div class="bg-img-cover" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
 	
 		<?php 
 		$padding = get_field('section_padding_section_padding');
@@ -3534,7 +3534,6 @@
 	<?php endif; ?>
 	
 <?php else : ?>
-<div class="white-bg">
 	
 	<?php if ( get_field('background_image_overlay') == 'dark' ): ?>
 	<div class="bg-img-cover dark-overlay" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
@@ -5080,7 +5079,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width ):
+		elseif ( $width == 'true' ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800">
@@ -5104,7 +5103,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width && $padding == 'bottom' ):
+		elseif ( $width == 'true' && $padding == 'bottom' ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800 bottom-padding">
@@ -5128,7 +5127,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width && $padding == 'top' ):
+		elseif ( $width == 'true' && $padding == 'top' ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800 top-padding">
@@ -5152,7 +5151,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width && $padding == 'both' ):
+		elseif ( $width == 'true' && $padding == 'both' ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800 top-bottom-padding">
@@ -5176,7 +5175,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width && $padding == 'full' ):
+		elseif ( $width == 'true' && $padding == 'full' ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800 full-padding">
@@ -5200,7 +5199,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width && $margin == 'bottom' ):
+		elseif ( $width == 'true' && $margin == 'bottom' ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800 bottom-margin">
@@ -5224,7 +5223,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width && $margin == 'top' ):
+		elseif ( $width == 'true' && $margin == 'top' ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800 top-margin">
@@ -5248,7 +5247,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width && $margin == 'both' ):
+		elseif ( $width == 'true' && $margin == 'both' ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800 top-bottom-margin">
@@ -5301,5 +5300,4 @@
 	</div>
 	<?php endif; ?>
 
-</div>
 <?php endif; ?>
