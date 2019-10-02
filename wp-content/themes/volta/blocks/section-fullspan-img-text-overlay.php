@@ -9,7 +9,7 @@
 		
 	<section class="features shadow special white-bg" style="background-image: url(<?php the_sub_field('background_image'); ?>);">
 		
-		<article class="row content-bottom container">
+		<article class="row content-bottom">
 		
 		<?php if( have_rows('text') ): ?>
 		<?php while( have_rows('text') ): the_row(); ?>

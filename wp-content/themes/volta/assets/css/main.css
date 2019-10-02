@@ -4433,6 +4433,7 @@ header {
 	.container, .left-side, .right-side {
 		max-width: 1600px;
 		margin: auto;
+		width: 100%;
 	}
 	.content-bottom .left, .content-bottom .right {
 		width: 100%;
