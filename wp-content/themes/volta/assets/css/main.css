@@ -4039,6 +4039,9 @@ header {
 .page .features {
 	margin: 0 -6em;
 }
+.home.page .features {
+	margin: 0 -4em;
+}
 @media (min-width: 1600px) {
 	#header {
 		max-height: 1000px;
@@ -4050,6 +4053,9 @@ header {
 	}
 	.page .features {
 		margin: 0 -3em;
+	}
+	.home.page .features {
+		margin: 0;
 	}
 	.featured-image-mobile {
 		display: block;
@@ -4110,6 +4116,9 @@ header {
 	}
 	.page .left-side .full-span-content, .page .right-side .full-span-content {
 	    padding: 4em 2em 2em 4em;
+	}
+	.home.page .left-side .full-span-content, .home.page .right-side .full-span-content {
+	    padding: 2em;
 	}
 	.content-bottom .left:before {
 		background-image: linear-gradient(0deg, rgba(0,0,0,.75), rgba(0,0,0,0));
@@ -4257,6 +4266,10 @@ header {
 	}
 	.page .left-side .full-span-content, .page .right-side .full-span-content {
 		padding: 2em 2em 2em 4em;
+	}
+	
+	.home.page .left-side .full-span-content, .home.page .right-side .full-span-content {
+	    padding: 2em;
 	}
 	.single .post-container, .page-template-page-sidebar .post-container {
 		padding: 1em;
