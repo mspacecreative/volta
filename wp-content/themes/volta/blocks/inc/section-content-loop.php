@@ -435,13 +435,12 @@ elseif ( $width && $padding == 'top' ):
 	</div>
 	<?php endif;
 	
-elseif ( $width && $padding == 'both' ): ?>
+elseif ( $width && $padding == 'both' ):
 	
+	if ( get_field('content_editor') ): ?>
 	<div class="width-800 top-bottom-padding">
 		
-		<?php if ( get_field('content_editor') ): ?>
 		<?php the_field('content_editor'); ?>
-		<?php endif; ?>
 		
 		<?php if( have_rows('content_cta_button') ): ?>
 		<?php while( have_rows('content_cta_button') ): the_row(); ?>
@@ -458,8 +457,9 @@ elseif ( $width && $padding == 'both' ): ?>
 		<?php endif; ?>
 		
 	</div>
+	<?php endif;
 	
-<?php elseif ( $width && $padding == 'full' ):
+elseif ( $width && $padding == 'full' ):
 	
 	if ( get_field('content_editor') ): ?>
 	<div class="width-800 full-padding">
@@ -531,9 +531,8 @@ elseif ( $width && $margin == 'top' ):
 	</div>
 	<?php endif;
 	
-elseif ( $width && $margin == 'both' ):
+elseif ( $width && $margin == 'both' ): ?>
 	
-	if ( get_field('content_editor') ): ?>
 	<div class="width-800 top-bottom-margin">
 		
 		<?php the_field('content_editor'); ?>
@@ -553,9 +552,8 @@ elseif ( $width && $margin == 'both' ):
 		<?php endif; ?>
 		
 	</div>
-	<?php endif;
 	
-else :
+<?php else :
 	
 	if ( get_field('content_editor') ): ?>
 	<div class="full-padding">
