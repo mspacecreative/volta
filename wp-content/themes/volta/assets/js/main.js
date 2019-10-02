@@ -7,7 +7,7 @@
 (function($) {
 	
 	function calcNegativeMargins() {
-		if ( $('.row.content-bottom').css('padding-top') == '25em' ) {
+		if ( $('.left-side').css('margin') == 'auto' ) {
 			var windowWidth = $(window).width() - 1600;
 			$('.page .features, .banner').css({
 				'margin-right' : -windowWidth,
