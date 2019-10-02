@@ -57,8 +57,8 @@ get_header(); ?>
 	</nav>
 	<!-- /Nav -->
 	
-	<div class="post-content-container container white-bg clear">
-		<div class="post-container">
+	<div class="post-content-container white-bg clear">
+		<div class="post-container container">
 			<!-- post title -->
 			<div class="post-title-outer">
 				<div class="post-title-container">
