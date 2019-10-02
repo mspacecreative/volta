@@ -5199,7 +5199,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width == 'true' || $margin == 'bottom' ):
+		elseif ( $width == 'true' and $margin == 'bottom' ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800 bottom-margin">
@@ -5223,7 +5223,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width == 'true' || $margin == 'top' ):
+		elseif ( $width == 'true' and $margin == 'top' ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800 top-margin">
@@ -5247,7 +5247,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width == 'true' || $margin == 'both' ):
+		elseif ( $width == 'true' and $margin == 'both' ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800 top-bottom-margin">
