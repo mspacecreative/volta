@@ -2,7 +2,7 @@
 	
 	if( have_rows('variable_columns') ): ?>
 	
-	<div class="columns-container display-flex bottom-margin">
+	<div class="columns-container display-flex bottom-padding bottom-margin">
 		
 		<?php while( have_rows('variable_columns') ): the_row(); ?>
 		
@@ -20,7 +20,7 @@ elseif ( get_field('layout_type') == 'two' ):
 	
 	if( have_rows('two_column_layout') ): ?>
 	
-	<div class="columns-container display-flex bottom-margin">
+	<div class="columns-container display-flex bottom-padding bottom-margin">
 		
 		<?php while( have_rows('two_column_layout') ): the_row(); ?>
 		
@@ -84,7 +84,7 @@ elseif ( get_field('layout_type') == 'three' ):
 	
 	if( have_rows('three_column_layout') ): ?>
 	
-	<div class="columns-container display-flex bottom-margin">
+	<div class="columns-container display-flex bottom-padding bottom-margin">
 		
 		<?php while( have_rows('three_column_layout') ): the_row(); ?>
 		
@@ -191,7 +191,7 @@ elseif ( get_field('layout_type') == 'five' ):
 	
 	if( have_rows('variable_columns') ): ?>
 	
-	<div class="columns-container display-flex bottom-margin">
+	<div class="columns-container display-flex bottom-padding bottom-margin">
 		
 		<?php while( have_rows('variable_columns') ): the_row(); ?>
 		
@@ -209,7 +209,7 @@ else :
 
 	if( have_rows('variable_columns') ): ?>
 	
-	<div class="columns-container display-flex bottom-margin">
+	<div class="columns-container display-flex bottom-padding bottom-margin">
 		
 		<?php while( have_rows('variable_columns') ): the_row(); ?>
 		
