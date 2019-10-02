@@ -3483,6 +3483,9 @@ img {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+.columns-container.display-flex {
+	align-items: center;
+}
 .image-grid-container.display-flex {
 	align-items: center;
 	justify-content: center;
