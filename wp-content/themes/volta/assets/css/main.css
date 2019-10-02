@@ -4427,7 +4427,7 @@ header {
 }
 
 @media (min-width: 1600px) {
-	.home.page .features, .page .features {
+	.home.page .features {
 		margin: auto;
 	}
 }
