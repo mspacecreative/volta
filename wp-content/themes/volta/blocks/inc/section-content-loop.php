@@ -580,5 +580,3 @@
 		<?php endif;
 	
 	endif; ?>
-	
-</div>
