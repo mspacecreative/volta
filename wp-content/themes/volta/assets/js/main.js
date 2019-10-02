@@ -7,7 +7,7 @@
 (function($) {
 	
 	function calcNegativeMargins() {
-		if ( $('.left-side').css('margin') == 'auto' ) {
+		if (window.matchMedia("(min-width: 1600px)").matches) {
 			
 			var windowWidth = $(window).width() - 1600;
 			$('.page .features, .banner').css({
