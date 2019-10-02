@@ -12,8 +12,8 @@
 			var windowWidth = $(window).width() - 1600;
 			var moreMath = windowWidth / 2;
 			$('.page .features, .banner').css({
-				'margin-right' : -moreMath + 30,
-				'margin-left' : -moreMath + 30,
+				'margin-right' : -moreMath + 60,
+				'margin-left' : -moreMath + 60,
 			});
 			
 		} else {
