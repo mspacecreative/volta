@@ -4431,10 +4431,7 @@ header {
 		margin: auto;
 	}
 	.container {
-		max-width: 60%;
-	}
-	.page .features, .banner {
-		margin: 0 -40%;
+		max-width: 1600px;
 	}
 }
 
