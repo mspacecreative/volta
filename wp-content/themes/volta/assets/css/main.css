@@ -4231,6 +4231,9 @@ header {
 	.page .features {
 		margin: 0 -3em;
 	}
+	.home.page .features {
+	    margin: 0;
+	}
 	.search-window .search-submit {
 		width: 70%;
 		margin: 25px 0 0;
