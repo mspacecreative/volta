@@ -4430,6 +4430,12 @@ header {
 	.home.page .features {
 		margin: auto;
 	}
+	.container {
+		max-width: 60%;
+	}
+	.page .features, .banner {
+		margin: 0 -40%;
+	}
 }
 
 @media (min-width: 648px) {
@@ -4442,6 +4448,9 @@ header {
 		max-width: 600px;
 		margin: auto;
 		position: relative;
+	}
+	.post-container {
+		padding: 0;
 	}
 }
 @media (max-width: 648px) {
