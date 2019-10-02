@@ -3389,7 +3389,7 @@ input, select, textarea {
 	margin: 4em 0 0;
 }
 .bottom-padding {
-	padding: 0 0 4em;
+	padding: 0 4em 4em;
 }
 .top-padding {
 	padding: 4em 0 0;
