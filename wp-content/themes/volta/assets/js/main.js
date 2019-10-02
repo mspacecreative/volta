@@ -9,7 +9,7 @@
 	function calcNegativeMargins() {
 		if (window.matchMedia("(min-width: 1600px)").matches) {
 			
-			var windowWidth = $(window).width() - 1600;
+			var windowWidth = $(window).width() - 1600 / 2;
 			$('.page .features, .banner').css({
 				'margin-right' : -windowWidth,
 				'margin-left' : -windowWidth,
