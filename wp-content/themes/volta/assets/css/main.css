@@ -4424,8 +4424,8 @@ header {
 }
 
 @media (min-width: 1600px) {
-	.container.shadow {
-		box-shadow: 0 20px 20px #666;
+	.home.page .features, .page .features {
+		margin: auto;
 	}
 }
 
