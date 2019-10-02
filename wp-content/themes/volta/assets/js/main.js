@@ -8,12 +8,21 @@
 	
 	function calcNegativeMargins() {
 		if ( $('.left-side').css('margin') == 'auto' ) {
+			$('body').addClass('add');
 			var windowWidth = $(window).width() - 1600;
 			$('.page .features, .banner').css({
 				'margin-right' : -windowWidth,
 				'margin-left' : -windowWidth,
 			});
 		}
+	}
+	
+	if ( $('.left-side').css('margin') == 'auto' ) {
+		var windowWidth = $(window).width() - 1600;
+		$('.page .features, .banner').css({
+			'margin-right' : -windowWidth,
+			'margin-left' : -windowWidth,
+		});
 	}
 	
 	function splashHeight() {
