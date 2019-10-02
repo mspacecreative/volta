@@ -11,8 +11,8 @@
 			
 			var windowWidth = $(window).width() - 1600;
 			$('.page .features, .banner').css({
-				'margin-right' : -windowWidth / 2,
-				'margin-left' : -windowWidth / 2,
+				'margin-right' : -windowWidth / 2 + 30,
+				'margin-left' : -windowWidth / 2 + 30,
 			});
 			
 		} else {
