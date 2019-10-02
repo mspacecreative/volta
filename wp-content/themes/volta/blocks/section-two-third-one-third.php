@@ -506,7 +506,7 @@ if ( $padding == 'top' && $margin == 'top' ): ?>
 </div>
 
 <?php else : ?>
-<div class="clear full-padding">
+<div class="clear">
 	
 	<?php if ( get_field('heading') ): ?>
 	<h2 class="max-width-60"><?php the_field('heading'); ?></h2>
