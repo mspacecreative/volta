@@ -17,8 +17,8 @@
 			
 		} else {
 			$('.page .features, .banner').css({
-				'margin-right' : 'auto',
-				'margin-left' : 'auto',
+				'margin-right' : '-6em',
+				'margin-left' : '-6em',
 			});
 		}
 	}
