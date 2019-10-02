@@ -4439,6 +4439,9 @@ header {
 	.page .left-side .full-span-content, .page .right-side .full-span-content {
 	    padding: 4em 2em;
 	}
+	.row.content-bottom {
+		padding-top: 25em;
+	}
 }
 
 @media (min-width: 648px) {
