@@ -2,15 +2,14 @@
 <div class="fullspan-buckets">
 	
 	<?php if( have_rows('section') ): ?>
-	
-	<section class="features container shadow special white-bg">
+	<?php while( have_rows('section') ): the_row(); ?>
 		
-		<?php while( have_rows('section') ): the_row(); ?>
+	<?php if( have_rows('content') ): ?>
+	<?php while( have_rows('content') ): the_row(); ?>
 		
-		<?php if( have_rows('content') ): ?>
-		<?php while( have_rows('content') ): the_row(); ?>
+	<section class="features shadow special white-bg" style="background-image: url(<?php the_sub_field('background_image'); ?>);">
 		
-		<article class="row content-bottom" style="background-image: url(<?php the_sub_field('background_image'); ?>);">
+		<article class="row content-bottom container">
 		
 		<?php if( have_rows('text') ): ?>
 		<?php while( have_rows('text') ): the_row(); ?>
@@ -48,15 +47,14 @@
 		endif; ?>
 		
 		</article>
-		
-		<?php endwhile;
-		endif; ?>
-		
-		<?php endwhile; ?>
-		
-	</section>
 	
-	<?php endif; ?>
+	</section>
+		
+	<?php endwhile;
+	endif; ?>
+		
+	<?php endwhile;
+	endif; ?>
 	
 </div>
 <!-- /Intro buckets -->
