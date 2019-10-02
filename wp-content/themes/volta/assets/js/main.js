@@ -9,8 +9,8 @@
 	function calcNegativeMargins() {
 		var windowWidth = $(window).width();
 		$('.page .features').css({
-			'margin-right' : -windowWidth - 1600 / 2,
-			'margin-left' : -windowWidth - 1600 / 2,
+			'margin-right' : -windowWidth - 1600,
+			'margin-left' : -windowWidth - 1600,
 		});
 	}
 	
