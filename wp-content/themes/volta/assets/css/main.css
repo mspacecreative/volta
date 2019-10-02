@@ -3783,7 +3783,7 @@ aside {
 	font-weight: bold;
 	margin: 1em 0;
 }
-.post-content-container .inner ~ div > .two_third_col h3:first-of-type {
+.post-content-container .inner > div > .two_third_col h3:first-of-type {
 	margin-top: 0;
 }
 .post-content-container .flex-box h3 {
