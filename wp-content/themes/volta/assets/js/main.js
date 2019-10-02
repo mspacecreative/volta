@@ -10,9 +10,10 @@
 		if (window.matchMedia("(min-width: 1600px)").matches) {
 			
 			var windowWidth = $(window).width() - 1600;
+			var moreMath = windowWidth / 2;
 			$('.page .features, .banner').css({
-				'margin-right' : -windowWidth + 30 / 2,
-				'margin-left' : -windowWidth + 30 / 2,
+				'margin-right' : -moreMath + 30,
+				'margin-left' : -moreMath + 30,
 			});
 			
 		} else {
