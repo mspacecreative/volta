@@ -4712,7 +4712,7 @@
 	</div>
 	
 	<?php else : ?>
-	<div class="white-bg stuff">
+	<div class="white-bg">
 	
 		<?php 
 		$padding = get_field('section_padding_section_padding');
@@ -5251,6 +5251,78 @@
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800 top-bottom-margin">
+				
+				<?php the_field('content_editor'); ?>
+				
+				<?php if( have_rows('content_cta_button') ): ?>
+				<?php while( have_rows('content_cta_button') ): the_row(); ?>
+				<?php if ( get_sub_field('content_button_link') ): ?>
+				<footer>
+					
+					<ul class="actions">
+						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+					</ul>
+					
+				</footer>
+				<?php endif; ?>
+				<?php endwhile; ?>
+				<?php endif; ?>
+				
+			</div>
+			<?php endif;
+			
+		elseif ( $margin == 'top' ):
+			
+			if ( get_field('content_editor') ): ?>
+			<div class="top-margin">
+				
+				<?php the_field('content_editor'); ?>
+				
+				<?php if( have_rows('content_cta_button') ): ?>
+				<?php while( have_rows('content_cta_button') ): the_row(); ?>
+				<?php if ( get_sub_field('content_button_link') ): ?>
+				<footer>
+					
+					<ul class="actions">
+						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+					</ul>
+					
+				</footer>
+				<?php endif; ?>
+				<?php endwhile; ?>
+				<?php endif; ?>
+				
+			</div>
+			<?php endif;
+			
+		elseif ( $margin == 'bottom' ):
+			
+			if ( get_field('content_editor') ): ?>
+			<div class="bottom-margin">
+				
+				<?php the_field('content_editor'); ?>
+				
+				<?php if( have_rows('content_cta_button') ): ?>
+				<?php while( have_rows('content_cta_button') ): the_row(); ?>
+				<?php if ( get_sub_field('content_button_link') ): ?>
+				<footer>
+					
+					<ul class="actions">
+						<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+					</ul>
+					
+				</footer>
+				<?php endif; ?>
+				<?php endwhile; ?>
+				<?php endif; ?>
+				
+			</div>
+			<?php endif;
+			
+		elseif ( $margin == 'both' ):
+			
+			if ( get_field('content_editor') ): ?>
+			<div class="top-bottom-margin">
 				
 				<?php the_field('content_editor'); ?>
 				
