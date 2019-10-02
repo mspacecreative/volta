@@ -3183,7 +3183,7 @@ input, select, textarea {
 		/* Banner */
 
 			.banner {
-				padding: 3em 2em 3em 2em;
+				padding: 3em 6em;
 			}
 
 		/* Sidebar */
@@ -3364,6 +3364,9 @@ input, select, textarea {
 }
 .top-bottom-padding {
 	padding: 2em 0;
+}
+#more-programs .top-bottom-padding, #partners .top-bottom-padding {
+	padding: 4em 0;
 }
 .no-padding-top-margin-bottom {
 	padding: 0;
@@ -4274,7 +4277,7 @@ header {
 		padding: 4em 2em;
 	}
 	#more-programs .top-bottom-padding, #partners .top-bottom-padding {
-		padding: 4em;
+		padding: 4em 2em;
 	}
 	.tiles article {
 	    padding: 2em;
