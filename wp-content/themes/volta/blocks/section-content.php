@@ -5079,7 +5079,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width == 'true' ):
+		elseif ( $width == 1 ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800">
@@ -5103,7 +5103,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width == 'true' && $padding == 'bottom' ):
+		elseif ( $width == 1 && $padding == 'bottom' ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800 bottom-padding">
@@ -5127,7 +5127,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width == 'true' && $padding == 'top' ):
+		elseif ( $width == 1 && $padding == 'top' ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800 top-padding">
@@ -5151,7 +5151,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width == 'true' && $padding == 'both' ):
+		elseif ( $width == 1 && $padding == 'both' ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800 top-bottom-padding">
@@ -5175,7 +5175,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width == 'true' && $padding == 'full' ):
+		elseif ( $width == 1 && $padding == 'full' ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800 full-padding">
@@ -5199,7 +5199,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width == 'true' and $margin == 'bottom' ):
+		elseif ( $width == 1 && $margin == 'bottom' ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800 bottom-margin">
@@ -5223,7 +5223,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width == 'true' and $margin == 'top' ):
+		elseif ( $width == 1 && $margin == 'top' ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800 top-margin">
@@ -5247,7 +5247,7 @@
 			</div>
 			<?php endif;
 			
-		elseif ( $width == 'true' and $margin == 'both' ):
+		elseif ( $width == 1 && $margin == 'both' ):
 			
 			if ( get_field('content_editor') ): ?>
 			<div class="width-800 top-bottom-margin">
