@@ -3681,7 +3681,7 @@ img {
 	max-width: none;
 	width: 100%;
 	margin: auto;
-	padding: 0 2em;
+	padding: 4em 2em 0;
 }
 .single .post-container, .page-template-page-sidebar .post-container {
 	padding: 4em 2em;
