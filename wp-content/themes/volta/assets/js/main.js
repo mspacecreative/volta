@@ -32,8 +32,8 @@
 	$(document).ready(function () {
 		splashHeight();
 		
+		var windowWidth = $(window).width() - 1600;
 		if ( $('.left-side').css('margin') == 'auto' ) {
-			var windowWidth = $(window).width() - 1600;
 			$('.page .features, .banner').css({
 				'margin-right' : -windowWidth,
 				'margin-left' : -windowWidth,
@@ -80,8 +80,8 @@
 	$(window).resize(function () {
 		splashHeight();
 		
+		var windowWidth = $(window).width() - 1600;
 		if ( $('.left-side').css('margin') == 'auto' ) {
-			var windowWidth = $(window).width() - 1600;
 			$('.page .features, .banner').css({
 				'margin-right' : -windowWidth,
 				'margin-left' : -windowWidth,
