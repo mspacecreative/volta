@@ -3241,7 +3241,7 @@ input, select, textarea {
 			border-top: 0 !important;
 		}
 		
-		.light, .light h1, .light h2, .light h3, .light h4, .light h5, .light h6 {
+		.light, .light h1, .light h2, .light h3, .light h4, .light h5, .light h6, .light ul {
 			color: #fff;
 		}
 		
@@ -4025,6 +4025,9 @@ header {
 .column-container img {
 	display: block;
 }
+.page .features {
+	margin: 0 -6em;
+}
 @media (min-width: 1600px) {
 	#header {
 		max-height: 1000px;
@@ -4033,6 +4036,9 @@ header {
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
+	}
+	.page .features {
+		margin: 0 -3em;
 	}
 	.featured-image-mobile {
 		display: block;
@@ -4198,6 +4204,9 @@ header {
 @media (max-width: 450px) {
 	.tiles .tall-image {
 		min-height: 400px;
+	}
+	.page .features {
+		margin: 0 -3em;
 	}
 	.search-window .search-submit {
 		width: 70%;
