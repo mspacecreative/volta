@@ -1794,6 +1794,14 @@ input, select, textarea {
 		padding: 4em 4em 2em 2em;
 	}
 	
+	.page .left-side .full-span-content {
+		padding: 4em 2em 2em 6em;
+	}
+	
+	.page .right-side .full-span-content {
+		padding: 4em 6em 2em 2em;
+	}
+	
 	.full-span-content h3 {
 		font-size: 2.2em;
 	}
@@ -4097,6 +4105,9 @@ header {
 	.left-side .full-span-content, .right-side .full-span-content {
 		padding: 2em 4em 2em 2em;
 	}
+	.page .left-side .full-span-content, .page .right-side .full-span-content {
+	    padding: 4em 2em 2em 4em;
+	}
 	.content-bottom .left:before {
 		background-image: linear-gradient(0deg, rgba(0,0,0,.75), rgba(0,0,0,0));
 	}
@@ -4240,6 +4251,9 @@ header {
 	}
 	.left-side .full-span-content, .right-side .full-span-content {
 		padding: 2em;
+	}
+	.page .left-side .full-span-content, .page .right-side .full-span-content {
+		padding: 2em 2em 2em 4em;
 	}
 	.single .post-container, .page-template-page-sidebar .post-container {
 		padding: 1em;
