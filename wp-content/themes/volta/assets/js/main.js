@@ -7,10 +7,10 @@
 (function($) {
 	
 	function calcNegativeMargins() {
-		var windowWidth = $(window).width();
+		var windowWidth = $(window).width() - 1600;
 		$('.page .features').css({
-			'margin-right' : -windowWidth - 1600,
-			'margin-left' : -windowWidth - 1600,
+			'margin-right' : -windowWidth,
+			'margin-left' : -windowWidth,
 		});
 	}
 	
