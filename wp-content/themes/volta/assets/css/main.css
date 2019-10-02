@@ -3901,6 +3901,9 @@ form input.search-submit[type=submit]:hover {
 	color: #fff;
 }
 .post-content-container ul {
+	margin: 1em 0;
+}
+.post-content-container ul.actions {
 	margin: 30px 0 0;
 }
 .mobile-nav a {
