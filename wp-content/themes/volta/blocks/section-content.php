@@ -4712,7 +4712,7 @@
 	</div>
 	
 	<?php else : ?>
-	<div class="white-bg">
+	<div class="white-bg stuff">
 	
 		<?php 
 		$padding = get_field('section_padding_section_padding');
