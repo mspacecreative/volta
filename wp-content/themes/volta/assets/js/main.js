@@ -15,6 +15,11 @@
 				'margin-left' : -windowWidth,
 			});
 			
+		} else {
+			$('.page .features, .banner').css({
+				'margin-right' : 'auto',
+				'margin-left' : 'auto',
+			});
 		}
 	}
 	
