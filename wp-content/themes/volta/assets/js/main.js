@@ -18,8 +18,8 @@
 			
 		} else {
 			$('.page .features, .banner').css({
-				'margin-right' : '-6em',
-				'margin-left' : '-6em',
+				'margin-right' : 'auto',
+				'margin-left' : 'auto',
 			});
 		}
 	}
