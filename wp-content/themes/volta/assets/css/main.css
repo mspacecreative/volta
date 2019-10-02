@@ -2561,7 +2561,7 @@ input, select, textarea {
 	.banner {
 		text-align: center;
 		padding: 4.5em 0 4.5em 0;
-		margin: 0 -4em;
+		margin: 0 -6em;
 		position: relative;
 		background-size: cover;
 		background-position: center;
@@ -3888,7 +3888,7 @@ form input.search-submit[type=submit]:hover {
 	color: #fff;
 }
 .post-content-container ul {
-	margin: 1em 0;
+	margin: 30px 0 0;
 }
 .mobile-nav a {
 	color: #fff;
