@@ -4395,8 +4395,8 @@ header {
 		padding: 20px;
 	}
 	.two_column {
-		flex-basis: 49%;
-		margin-right: 2%;
+		flex-basis: 48%;
+		margin-right: 4%;
 	}
 	.three_column {
 		flex-basis: 32%;
