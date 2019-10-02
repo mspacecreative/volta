@@ -8,7 +8,7 @@
 	
 	function calcNegativeMargins() {
 		var windowWidth = $(window).width() - 1600;
-		$('.page .features').css({
+		$('.page .features, .banner').css({
 			'margin-right' : -windowWidth,
 			'margin-left' : -windowWidth,
 		});
