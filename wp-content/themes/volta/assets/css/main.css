@@ -3376,6 +3376,10 @@ input, select, textarea {
 #more-programs .top-bottom-padding, #partners .top-bottom-padding {
 	padding: 4em 0;
 }
+.home.page .features {
+	margin-left: auto!important;
+	margin-right: auto!important;
+}
 .no-padding-top-margin-bottom {
 	padding: 0;
 	margin: 0 0 4em;
