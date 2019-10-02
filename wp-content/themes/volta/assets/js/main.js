@@ -6,12 +6,21 @@
 
 (function($) {
 	
+	function calcNegativeMargins() {
+		var windowWidth = $(window).width();
+		$('.page .features').css({
+			'margin-right' : -windowWidth - 1600 / 2,
+			'margin-left' : -windowWidth - 1600 / 2,
+		});
+	}
+	
 	function splashHeight() {
 		$('#header').height($(window).height());
 	}
 	
 	$(document).ready(function () {
 		splashHeight();
+		calcNegativeMargins();
 		
 		$('.window-close-button').click(function() {
 			$(this).closest('.qtip').hide();
@@ -52,6 +61,7 @@
 	
 	$(window).resize(function () {
 		splashHeight();
+		calcNegativeMargins();
 	});
 	
 	var	$window = $(window),
