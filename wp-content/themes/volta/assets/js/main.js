@@ -6,14 +6,15 @@
 
 (function($) {
 	
-	
-	if ( $('.row.content-bottom').css('padding-top') == '25em' ) {
-		function calcNegativeMargins() {
+	function calcNegativeMargins() {
+		if ( $('.left-side').css('margin') == 'auto' ) {
+			
 			var windowWidth = $(window).width() - 1600;
 			$('.page .features, .banner').css({
 				'margin-right' : -windowWidth,
 				'margin-left' : -windowWidth,
 			});
+			
 		}
 	}
 	
