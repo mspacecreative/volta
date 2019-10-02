@@ -8,10 +8,12 @@
 	
 	function calcNegativeMargins() {
 		var windowWidth = $(window).width() - 1600;
-		$('.page .features, .banner').css({
-			'margin-right' : -windowWidth,
-			'margin-left' : -windowWidth,
-		});
+		if ( $('.row.content-bottom').css('padding-top') == '25em' ) {
+			$('.page .features, .banner').css({
+				'margin-right' : -windowWidth,
+				'margin-left' : -windowWidth,
+			});
+		}
 	}
 	
 	function splashHeight() {
