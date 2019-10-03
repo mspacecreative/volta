@@ -4245,9 +4245,9 @@ header {
 		min-height: 400px;
 	}
 	
-	.home.page .features {
-		margin-left: -3em!important;
-		margin-right: -3em!important;
+	.page .features {
+		margin-left: -1em!important;
+		margin-right: -1em!important;
 	}
 	.post-title-outer {
 	    padding: 0 1em;
@@ -4298,11 +4298,11 @@ header {
 		padding: 2em;
 	}
 	.page .left-side .full-span-content, .page .right-side .full-span-content {
-		padding: 2em 2em 2em 4em;
+		padding: 2em 3em;
 	}
 	
 	.home.page .left-side .full-span-content, .home.page .right-side .full-span-content {
-	    padding: 2em;
+	    padding: 2em 3em;
 	}
 	.single .post-container, .page-template-page-sidebar .post-container {
 		padding: 1em;
