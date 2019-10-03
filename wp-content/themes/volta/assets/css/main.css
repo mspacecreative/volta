@@ -4061,6 +4061,12 @@ header {
 	.features .row.inline-icons {
 		margin-top: 0!important;
 	}
+	.bottom-padding {
+	    padding: 0 3em 4em;
+	}
+	.post-title-outer {
+		padding: 0 2em;
+	}
 	.content-bottom .left {
 	    width: 100%;
 	}
@@ -4238,6 +4244,9 @@ header {
 	.tiles .tall-image {
 		min-height: 400px;
 	}
+	.post-title-outer {
+	    padding: 0 1em;
+	}
 	.post-title-container {
 		padding: 0.5em 1em 2em;
 	}
@@ -4255,6 +4264,9 @@ header {
 	}
 	.featured-image-mobile {
 		display: block;
+	}
+	.bottom-padding {
+	    padding: 0 2em 4em;
 	}
 	.post-header {
 		display: none;
