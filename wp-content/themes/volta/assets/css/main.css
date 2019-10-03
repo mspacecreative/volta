@@ -4294,6 +4294,9 @@ header {
 	.inner-padding {
 		padding: 1em;
 	}
+	.post-container {
+		padding: 0;
+	}
 	.left-side .full-span-content, .right-side .full-span-content {
 		padding: 2em;
 	}
