@@ -3471,7 +3471,10 @@ footer {
 	z-index: 10;
 }
 h2 {
-	margin: 0 0 30px;
+	margin: 30px 0 15px;
+}
+.post-container > h2 {
+	margin-top: 0;
 }
 .pagination {
 	text-align: center;
@@ -3752,6 +3755,9 @@ img {
 }
 aside {
 	padding: 0 2em 4em 0;
+}
+.no-featured-image aside {
+	padding-top: 4em;
 }
 .post-content-container aside h3 {
 	margin: 0 0 25px;
