@@ -55,8 +55,8 @@
 	</nav>
 	<!-- /Nav -->
 	
-	<div class="post-content-container white-bg clear">
-		<div class="post-container">
+	<div class="post-content-container white-bg">
+		<div class="clear post-container">
 			<div class="container">
 				<!-- post title -->
 				<div class="post-title-container">

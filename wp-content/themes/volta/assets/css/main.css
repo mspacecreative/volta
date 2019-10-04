@@ -3696,6 +3696,9 @@ img {
 	position: relative;
 	padding: 0 4em 0;
 }
+.single .post-container {
+	padding: 0 2em;
+}
 .post-container .inner {
 	max-width: none;
 	width: 100%;
@@ -3721,6 +3724,9 @@ img {
 	padding: 1em 2em 2em;
 	background-color: #fff;
 	margin: -50px auto 0;
+}
+.single .post-title-container {
+	padding-bottom: 2em;
 }
 .sidebar-widget .one-third {
 	width: 20%;
