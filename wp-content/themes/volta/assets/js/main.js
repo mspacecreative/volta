@@ -24,6 +24,10 @@
 		}
 	}
 	
+	if ( $('.no-featured-image-in-header').length ) {
+		$('body').addClass('no-featured-image');
+	}
+	
 	function splashHeight() {
 		$('#header').height($(window).height());
 	}
