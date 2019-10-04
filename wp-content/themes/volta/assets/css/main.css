@@ -3626,7 +3626,8 @@ img {
 }
 .max-width-980 {
 	max-width: 980px;
-	margin: auto;
+	margin-right: auto;
+	margin-left: auto;
 }
 .align-center {
 	text-align: center;
@@ -3642,11 +3643,13 @@ img {
 
 .width-800 {
 	max-width: 800px;
-	margin: auto;
+	margin-right: auto;
+	margin-left: auto;
 }
 .max-width-800 {
 	max-width: 800px;
-	margin: auto;
+	margin-right: auto;
+	margin-left: auto;
 	width: 90%;
 }
 .banner .max-width-800 {
