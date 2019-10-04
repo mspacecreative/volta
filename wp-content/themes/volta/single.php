@@ -10,7 +10,7 @@
 <?php if ( get_field('hide_featured_image_in_header') ): ?>
 
 <!-- Page wrapper -->
-<div id="page-wrapper no-featured-image-in-header">
+<div id="page-wrapper" class="no-featured-image-in-header">
 	
 <?php else : ?>
 
