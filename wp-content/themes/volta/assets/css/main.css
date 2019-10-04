@@ -3702,7 +3702,7 @@ img {
 	margin: auto;
 	padding: 4em 0 0;
 }
-.single .post-container, .page-template-page-sidebar .post-container {
+.single .no-featured-image-in-header .post-container, .page-template-page-sidebar .post-container {
 	padding: 4em 2em;
 }
 .post-header {
