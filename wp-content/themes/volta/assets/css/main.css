@@ -4313,7 +4313,7 @@ header {
 		padding: 2em;
 	}
 	.page .left-side .full-span-content, .page .right-side .full-span-content {
-		padding: 2em 3em;
+		padding: 2em 1em;
 	}
 	
 	.home.page .left-side .full-span-content, .home.page .right-side .full-span-content {
