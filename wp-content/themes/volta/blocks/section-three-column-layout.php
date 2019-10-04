@@ -1,7 +1,7 @@
 <article id="more-programs">
 	
-	<div class="container shadow white-bg top-bottom-padding">
-		<div class="row inner">
+	<div class="shadow white-bg top-bottom-padding">
+		<div class="container row inner">
 		
 			<?php if ( get_field('icon_position') == 'inline' ): ?>
 			
