@@ -4080,7 +4080,7 @@ header {
 	    padding-right: 2em;
 	    padding-left: 2em;
 	}
-	.home .left-side, .home .right-side {
+	.home .container, .home .left-side, .home .right-side {
 		padding-right: 0;
 		padding-left: 0;
 	}
@@ -4273,7 +4273,7 @@ header {
 	    padding-right: 2em;
 	    padding-left: 2em;
 	}
-	.home .left-side, .home .right-side {
+	.home .container, .home .left-side, .home .right-side {
 		padding-right: 0;
 		padding-left: 0;
 	}
