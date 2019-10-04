@@ -3706,7 +3706,7 @@ img {
 	padding: 4em 0 0;
 }
 .single .no-featured-image-in-header .post-container, .page-template-page-sidebar .post-container {
-	padding: 4em 2em;
+	padding: 4em 2em 0;
 }
 .post-header {
 	width: 100%;
@@ -3727,6 +3727,9 @@ img {
 }
 .single .post-title-container {
 	padding-bottom: 2em;
+}
+.single .no-featured-image-in-header .post-title-container {
+	padding-bottom: 0;
 }
 .sidebar-widget .one-third {
 	width: 20%;
@@ -4075,8 +4078,6 @@ header {
 }
 .no-featured-image-in-header .post-title-container {
 	margin-top: 0;
-	padding-left: 0;
-	padding-right: 0;
 }
 @media (min-width: 1600px) {
 	#header {
