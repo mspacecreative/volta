@@ -1,5 +1,5 @@
 <!-- Intro section -->
-<section id="intro" class="tiles container shadow">
+<section id="intro" class="tiles shadow">
 	
 	<?php if( have_rows('left_column') ): ?>
 	<?php while( have_rows('left_column') ): the_row(); ?>
