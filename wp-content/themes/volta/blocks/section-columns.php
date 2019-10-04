@@ -171,15 +171,111 @@ elseif ( get_field('layout_type') == 'three' ):
 
 elseif ( get_field('layout_type') == 'four' ):	
 	
-	if( have_rows('variable_columns') ): ?>
+	if( have_rows('four_column_layout') ): ?>
 	
 	<div class="columns-container display-flex">
 		
-		<?php while( have_rows('variable_columns') ): the_row(); ?>
+		<?php while( have_rows('four_column_layout') ): the_row(); ?>
 		
-		<div class="column-container four_column">
-			<?php the_sub_field('column_content'); ?>
-		</div>
+			<?php if( have_rows('first_column_left_column') ): ?>
+			<?php while( have_rows('first_column_left_column') ): the_row(); ?>
+		
+			<div class="column-container three_column">
+				<?php
+				$contenttype = get_sub_field('column_left_content_type' ); 
+				
+				if ( $contenttype == 'text' ):
+				the_sub_field('left_column_text');
+				
+				elseif ( $contenttype == 'image' ):
+				$image = get_sub_field('left_column_image');
+				$size = 'large';
+				
+				if ( $image ): ?>
+					<?php echo wp_get_attachment_image( $image, $size ); ?>
+				<?php endif;
+				
+				endif;
+				?>
+			</div>
+			
+			<?php endwhile;
+			endif; ?>
+			
+			<?php if( have_rows('second_column_left_column') ): ?>
+			<?php while( have_rows('second_column_left_column') ): the_row(); ?>
+			
+			<div class="column-container three_column">
+				<?php
+				$contenttype = get_sub_field('column_left_content_type' ); 
+					
+				if ( $contenttype == 'text' ):
+				the_sub_field('left_column_text');
+					
+				elseif ( $contenttype == 'image' ):
+				$image = get_sub_field('left_column_image');
+				$size = 'large';
+				
+				if ( $image ): ?>
+					<?php echo wp_get_attachment_image( $image, $size ); ?>
+				<?php endif;
+				
+				endif;
+				?>
+			</div>
+				
+			<?php endwhile;
+			endif; ?>
+			
+			<?php if( have_rows('third_column_left_column') ): ?>
+			<?php while( have_rows('third_column_left_column') ): the_row(); ?>
+			
+			<div class="column-container three_column">
+				<?php
+				$contenttype = get_sub_field('column_left_content_type' ); 
+					
+				if ( $contenttype == 'text' ):
+				the_sub_field('left_column_text');
+					
+				elseif ( $contenttype == 'image' ):
+				$image = get_sub_field('left_column_image');
+				$size = 'large';
+				
+				if ( $image ): ?>
+					<?php echo wp_get_attachment_image( $image, $size ); ?>
+				<?php endif;
+				
+				endif;
+				?>
+			</div>
+				
+			<?php endwhile;
+			endif; ?>
+			
+			<?php if( have_rows('fourth_column_left_column') ): ?>
+			<?php while( have_rows('fourth_column_left_column') ): the_row(); ?>
+			
+			<div class="column-container three_column">
+				<?php
+				$contenttype = get_sub_field('column_left_content_type' ); 
+					
+				if ( $contenttype == 'text' ):
+				the_sub_field('left_column_text');
+					
+				elseif ( $contenttype == 'image' ):
+				$image = get_sub_field('left_column_image');
+				$size = 'large';
+				
+				if ( $image ): ?>
+					<?php echo wp_get_attachment_image( $image, $size ); ?>
+				<?php endif;
+				
+				endif;
+				?>
+			</div>
+				
+			<?php endwhile;
+			endif; ?>
 		
 		<?php endwhile; ?>
 		
@@ -189,11 +285,11 @@ elseif ( get_field('layout_type') == 'four' ):
 
 elseif ( get_field('layout_type') == 'five' ):	
 	
-	if( have_rows('variable_columns') ): ?>
+	if( have_rows('five_column_layout') ): ?>
 	
 	<div class="columns-container display-flex bottom-padding">
 		
-		<?php while( have_rows('variable_columns') ): the_row(); ?>
+		<?php while( have_rows('five_column_layout') ): the_row(); ?>
 		
 		<div class="column-container five_column">
 			<?php the_sub_field('column_content'); ?>
