@@ -73,51 +73,53 @@
 					<!-- /post details -->
 				</div>
 				<!-- /post title -->
-				<main role="main">
-					<!-- section -->
-					<section>
+				<div class="clear">
+					<main role="main">
+						<!-- section -->
+						<section>
+										
+						<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+										
+							<!-- article -->
+							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							
+								<div class="post-container">
 									
-					<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+									<?php the_content(); // Dynamic Content ?>
 									
-						<!-- article -->
-						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-						
-							<div class="post-container">
-								
-								<?php the_content(); // Dynamic Content ?>
-								
-								<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
-								
-								<div class="post-meta-container">
-									<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
+									<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 									
-									<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
+									<div class="post-meta-container">
+										<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
+										
+										<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
+									</div>
+									
+									<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
+									
+									<?php comments_template(); ?>
 								</div>
-								
-								<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
-								
-								<?php comments_template(); ?>
-							</div>
-									
-						</article>
-						<!-- /article -->
-									
-						<?php endwhile; ?>
 										
-						<?php else: ?>
+							</article>
+							<!-- /article -->
 										
-						<!-- article -->
-						<article>
-							<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
-						</article>
-						<!-- /article -->
-					
-					<?php endif; ?>
-					
-					</section>
-					<!-- /section -->
-				</main>
-				<?php get_sidebar('blog-sidebar'); ?>
+							<?php endwhile; ?>
+											
+							<?php else: ?>
+											
+							<!-- article -->
+							<article>
+								<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
+							</article>
+							<!-- /article -->
+						
+						<?php endif; ?>
+						
+						</section>
+						<!-- /section -->
+					</main>
+					<?php get_sidebar('blog-sidebar'); ?>
+				</div>
 			</div>
 		</div>
 	</div>
