@@ -37,7 +37,7 @@
 			$('html').removeClass('fixed');
 		});
 		
-		if ( $('.no-featured-image-in-header').length ) {
+		if ( $('#page-wrapper').hasClass('no-featured-image-in-header') ) {
 			$('body').addClass('no-featured-image');
 		}
 	});
