@@ -1,7 +1,7 @@
 <?php if ( get_field('background_image_background_image') ):
 
 	if ( get_field('background_image_overlay') == 'dark' ): ?>
-	<div class="bg-img-cover dark-overlay container" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
+	<div class="bg-img-cover dark-overlay" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
 	

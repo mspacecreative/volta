@@ -261,7 +261,8 @@ input, select, textarea {
 /* Container */
 
 	.container {
-		margin: 0 auto;
+		margin-right: auto;
+		margin-left: auto;
 		max-width: 1600px;
 	}
 	.inner {
@@ -4057,7 +4058,8 @@ header {
 	max-width: 800px;
 }
 .container, .left-side, .right-side {
-	padding: 0 4em;
+	padding-right: 4em;
+	padding-left: 4em;
 }
 @media (min-width: 1600px) {
 	#header {
@@ -4469,7 +4471,8 @@ header {
 	}
 	.container, .left-side, .right-side {
 		max-width: 1600px;
-		margin: auto;
+		margin-right: auto;
+		margin-left: auto;
 		width: 100%;
 	}
 	.content-bottom .left, .content-bottom .right {
