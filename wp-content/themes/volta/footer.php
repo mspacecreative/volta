@@ -58,7 +58,7 @@
 						<!-- Contact bar -->
 						<section class="contact">
 							<ul class="menu">
-								<li>&copy; Untitled. All rights reserved.</li>
+								<li>&copy; Volta. All rights reserved.</li>
 							</ul>
 							<ul class="icons">
 								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
