@@ -3192,7 +3192,7 @@ input, select, textarea {
 		/* Banner */
 
 			.banner {
-				padding: 3em 6em;
+				padding: 3em 2em;
 			}
 
 		/* Sidebar */
@@ -3651,9 +3651,6 @@ img {
 	margin-right: auto;
 	margin-left: auto;
 	width: 90%;
-}
-.banner .max-width-800 {
-	width: 80%;
 }
 
 #insights {
