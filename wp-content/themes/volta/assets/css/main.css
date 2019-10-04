@@ -4478,6 +4478,9 @@ header {
 		margin-left: auto;
 		width: 100%;
 	}
+	.width-800.container {
+		max-width: inherit;
+	}
 	.content-bottom .left, .content-bottom .right {
 		width: 100%;
 	}
