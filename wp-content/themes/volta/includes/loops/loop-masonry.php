@@ -16,7 +16,7 @@
 			
 			<?php else : ?>
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<?php the_post_thumbnail('medium'); // Declare pixel size you need inside the array ?>
+					<?php the_post_thumbnail('large'); // Declare pixel size you need inside the array ?>
 				</a>
 			<?php endif; ?>
 			<!-- /post thumbnail -->
