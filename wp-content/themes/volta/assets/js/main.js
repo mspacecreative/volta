@@ -24,10 +24,6 @@
 		}
 	}
 	
-	if ( $('.no-featured-image-in-header').length ) {
-		$('body').addClass('no-featured-image');
-	}
-	
 	function splashHeight() {
 		$('#header').height($(window).height());
 	}
@@ -40,6 +36,10 @@
 			$(this).closest('.qtip').hide();
 			$('html').removeClass('fixed');
 		});
+		
+		if ( $('.no-featured-image-in-header').length ) {
+			$('body').addClass('no-featured-image');
+		}
 	});
 	
 	$(document).ajaxSuccess(function() {
