@@ -66,6 +66,20 @@ get_header(); ?>
 				</div>
 			</div>
 			<!-- /post title -->
+			<?php if ( get_field('content_width') == 'boxed' ): ?>
+			<div class="inner boxed">
+				<?php 
+				if ( have_posts() ) {
+					while ( have_posts() ) {
+						the_post(); 
+						//
+						the_content();
+						//
+					} // end while
+				} // end if
+				?>
+			</div>
+			<?php elseif ( get_field('content_width') == 'full-width' ): ?>
 			<div class="inner">
 				<?php 
 				if ( have_posts() ) {
@@ -78,6 +92,20 @@ get_header(); ?>
 				} // end if
 				?>
 			</div>
+			<?php else : ?>
+			<div class="inner">
+				<?php 
+				if ( have_posts() ) {
+					while ( have_posts() ) {
+						the_post(); 
+						//
+						the_content();
+						//
+					} // end while
+				} // end if
+				?>
+			</div>
+			<?php endif; ?>
 		</div>
 	</div>
 

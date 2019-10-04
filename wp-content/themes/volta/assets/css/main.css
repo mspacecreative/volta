@@ -4061,6 +4061,9 @@ header {
 	padding-right: 4em;
 	padding-left: 4em;
 }
+.page .inner.boxed {
+	padding: 4em 6em 0;
+}
 @media (min-width: 1600px) {
 	#header {
 		max-height: 1000px;
