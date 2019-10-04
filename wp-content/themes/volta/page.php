@@ -93,7 +93,7 @@ get_header(); ?>
 				?>
 			</div>
 			<?php else : ?>
-			<div class="inner">
+			<div class="inner boxed">
 				<?php 
 				if ( have_posts() ) {
 					while ( have_posts() ) {
