@@ -6,7 +6,7 @@ $width = get_field('content_width');
 if ( $padding == 'top' && $margin == 'top' ):
 
 	if ( get_field('content_editor') ): ?>
-	<div class="top-padding top-margin container">
+	<div class="top-padding top-margin">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -30,7 +30,7 @@ if ( $padding == 'top' && $margin == 'top' ):
 elseif ( $width && $padding == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding container">
+	<div class="width-800 top-bottom-padding">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -54,7 +54,7 @@ elseif ( $width && $padding == 'both' ):
 elseif ( $padding == 'bottom' && $margin == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="bottom-padding bottom-margin container">
+	<div class="bottom-padding bottom-margin">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -78,7 +78,7 @@ elseif ( $padding == 'bottom' && $margin == 'bottom' ):
 elseif ( $padding == 'both' && $margin == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-bottom-padding top-bottom-margin container">
+	<div class="top-bottom-padding top-bottom-margin">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -102,7 +102,7 @@ elseif ( $padding == 'both' && $margin == 'both' ):
 elseif ( $padding == 'top' && $margin == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-padding bottom-margin container">
+	<div class="top-padding bottom-margin">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -126,7 +126,7 @@ elseif ( $padding == 'top' && $margin == 'bottom' ):
 elseif ( $padding == 'top' && $margin == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-padding top-bottom-margin container">
+	<div class="top-padding top-bottom-margin">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -150,7 +150,7 @@ elseif ( $padding == 'top' && $margin == 'both' ):
 elseif ( $padding == 'bottom' && $margin == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="bottom-padding top-margin container">
+	<div class="bottom-padding top-margin">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -174,7 +174,7 @@ elseif ( $padding == 'bottom' && $margin == 'top' ):
 elseif ( $padding == 'bottom' && $margin == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="bottom-padding top-bottom-margin container">
+	<div class="bottom-padding top-bottom-margin">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -198,7 +198,7 @@ elseif ( $padding == 'bottom' && $margin == 'both' ):
 elseif ( $padding == 'full' && $margin == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="full-padding top-margin container">
+	<div class="full-padding top-margin">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -222,7 +222,7 @@ elseif ( $padding == 'full' && $margin == 'top' ):
 elseif ( $padding == 'full' && $margin == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="full-padding bottom-margin container">
+	<div class="full-padding bottom-margin">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -246,7 +246,7 @@ elseif ( $padding == 'full' && $margin == 'bottom' ):
 elseif ( $padding == 'full' && $margin == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="full-padding top-bottom-margin container">
+	<div class="full-padding top-bottom-margin">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -270,7 +270,7 @@ elseif ( $padding == 'full' && $margin == 'both' ):
 elseif ( $padding == 'both' && $margin == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="full-padding top-margin container">
+	<div class="full-padding top-margin">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -294,7 +294,7 @@ elseif ( $padding == 'both' && $margin == 'top' ):
 elseif ( $padding == 'both' && $margin == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="full-padding bottom-margin container">
+	<div class="full-padding bottom-margin">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -318,7 +318,7 @@ elseif ( $padding == 'both' && $margin == 'bottom' ):
 elseif ( $padding == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-bottom-padding container">
+	<div class="top-bottom-padding">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -342,7 +342,7 @@ elseif ( $padding == 'both' ):
 elseif ( $padding == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-padding container">
+	<div class="top-padding">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -366,7 +366,7 @@ elseif ( $padding == 'top' ):
 elseif ( $padding == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="bottom-padding container">
+	<div class="bottom-padding">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -390,7 +390,7 @@ elseif ( $padding == 'bottom' ):
 elseif ( $width ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 container">
+	<div class="width-800">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -414,7 +414,7 @@ elseif ( $width ):
 elseif ( $width && $padding == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 bottom-padding container">
+	<div class="width-800 bottom-padding">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -438,7 +438,7 @@ elseif ( $width && $padding == 'bottom' ):
 elseif ( $width && $padding == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-padding container">
+	<div class="width-800 top-padding">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -462,7 +462,7 @@ elseif ( $width && $padding == 'top' ):
 elseif ( $width && $padding == 'full' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 full-padding container">
+	<div class="width-800 full-padding">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -486,7 +486,7 @@ elseif ( $width && $padding == 'full' ):
 elseif ( $width && $margin == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 bottom-margin container">
+	<div class="width-800 bottom-margin">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -510,7 +510,7 @@ elseif ( $width && $margin == 'bottom' ):
 elseif ( $width && $margin == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-margin container">
+	<div class="width-800 top-margin">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -533,7 +533,7 @@ elseif ( $width && $margin == 'top' ):
 	
 elseif ( $width && $margin == 'both' ): ?>
 	
-	<div class="width-800 top-bottom-margin container">
+	<div class="width-800 top-bottom-margin">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -556,7 +556,7 @@ elseif ( $width && $margin == 'both' ): ?>
 <?php else :
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="full-padding container">
+	<div class="full-padding">
 		
 		<?php the_field('content_editor'); ?>
 		
