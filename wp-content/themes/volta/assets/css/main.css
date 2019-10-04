@@ -3287,6 +3287,7 @@ input, select, textarea {
 				.tiles article header {
 					position: relative;
 					z-index: 3;
+					margin: auto;
 				}
 	
 				.tiles article h3 {
@@ -4050,6 +4051,12 @@ header {
 	margin: 0 -4em;
 }
 .post-title-outer {
+	padding: 0 4em;
+}
+.page .left-side .full-span-content, .page .right-side .full-span-content {
+	max-width: 800px;
+}
+.container, .left-side, .right-side {
 	padding: 0 4em;
 }
 @media (min-width: 1600px) {
