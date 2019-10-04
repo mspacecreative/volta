@@ -23,16 +23,16 @@ get_header(); ?>
 	<!-- post thumbnail -->
 	<?php if ( get_field('featured_image_alignment') == 'top' ): ?>
 	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-	echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: top center;"><div class="post-header-overlay"></div></div>'; ?>
+	echo '<div class="post-header" style="background-image: url('. $url.'); background-position: top center;"><div class="post-header-overlay"></div></div>'; ?>
 	<?php elseif ( get_field('featured_image_alignment') == 'bottom' ): ?>
 	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-	<?php echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: bottom center;"><div class="post-header-overlay"></div></div>'; ?>
+	<?php echo '<div class="post-header" style="background-image: url('. $url.'); background-position: bottom center;"><div class="post-header-overlay"></div></div>'; ?>
 	<?php elseif ( get_field('featured_image_alignment') == 'center' ): ?>
 	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-	echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: center;"><div class="post-header-overlay"></div></div>'; ?>
+	echo '<div class="post-header" style="background-image: url('. $url.'); background-position: center;"><div class="post-header-overlay"></div></div>'; ?>
 	<?php elseif ( has_post_thumbnail( $post->ID ) ): ?>
 	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-	echo '<div class="post-header container" style="background-image: url('. $url.'); background-position: center;"><div class="post-header-overlay"></div></div>'; ?>
+	echo '<div class="post-header" style="background-image: url('. $url.'); background-position: center;"><div class="post-header-overlay"></div></div>'; ?>
 	<?php else : ?>
 	<div class="post-header container" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/header.jpg'); background-position: center;"><div class="post-header-overlay"></div></div>
 	<?php endif; ?>
@@ -59,54 +59,56 @@ get_header(); ?>
 	<!-- /Nav -->
 	
 	<!-- post-content-container -->
-	<div class="post-content-container container white-bg">
+	<div class="post-content-container white-bg">
 	
-		<!-- post title -->
-		<div class="post-title-container">
-			<h1><?php the_title(); ?></h1>
-		</div>
-		<!-- /post title -->
-		
-		<!-- clear -->
-		<div class="clear">
+		<div class="container">
+			<!-- post title -->
+			<div class="post-title-container">
+				<h1><?php the_title(); ?></h1>
+			</div>
+			<!-- /post title -->
 			
-			<main role="main">
-				<!-- section -->
-				<section>
+			<!-- clear -->
+			<div class="clear">
+				
+				<main role="main">
+					<!-- section -->
+					<section>
+									
+					<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+									
+						<!-- article -->
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						
+							<div class="post-container">
 								
-				<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+								<?php the_content(); // Dynamic Content ?>
 								
-					<!-- article -->
-					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							</div>
+									
+						</article>
+						<!-- /article -->
+									
+						<?php endwhile; ?>
+										
+						<?php else: ?>
+										
+						<!-- article -->
+						<article>
+							<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
+						</article>
+						<!-- /article -->
 					
-						<div class="post-container">
-							
-							<?php the_content(); // Dynamic Content ?>
-							
-						</div>
-								
-					</article>
-					<!-- /article -->
-								
-					<?php endwhile; ?>
-									
-					<?php else: ?>
-									
-					<!-- article -->
-					<article>
-						<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
-					</article>
-					<!-- /article -->
+					<?php endif; ?>
+					
+					</section>
+					<!-- /section -->
+				</main>
+				<?php get_sidebar('sidebar'); ?>
 				
-				<?php endif; ?>
-				
-				</section>
-				<!-- /section -->
-			</main>
-			<?php get_sidebar('sidebar'); ?>
-			
+			</div>
+			<!-- /clear -->
 		</div>
-		<!-- /clear -->
 	
 	</div>
 	<!-- /post-content-container -->
