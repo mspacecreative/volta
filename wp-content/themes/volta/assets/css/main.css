@@ -4069,6 +4069,8 @@ header {
 }
 .no-featured-image-in-header .post-title-container {
 	margin-top: 0;
+	padding-bottom: 0;
+	padding-right: 0;
 }
 @media (min-width: 1600px) {
 	#header {
