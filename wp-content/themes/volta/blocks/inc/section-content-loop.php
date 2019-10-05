@@ -1,10 +1,11 @@
 <?php 
-$padding = get_field('section_padding_section_padding');
-$margin = get_field('section_margin_section_margin');
-$width = get_field('content_width');
 $textcolour = get_field('text_colour_text_color');
 
 if ( $textcolour = 'dark' ):
+
+	$padding = get_field('section_padding_section_padding');
+	$margin = get_field('section_margin_section_margin');
+	$width = get_field('content_width');
 	
 	if ( $padding == 'top' && $margin == 'top' ):
 	
@@ -583,6 +584,10 @@ if ( $textcolour = 'dark' ):
 	endif;
 	
 elseif ( $textcolour = 'light' ):
+
+	$padding = get_field('section_padding_section_padding');
+	$margin = get_field('section_margin_section_margin');
+	$width = get_field('content_width');
 
 	if ( $padding == 'top' && $margin == 'top' ):
 	
