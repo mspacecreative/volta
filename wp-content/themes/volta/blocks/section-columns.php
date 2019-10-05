@@ -202,18 +202,18 @@ elseif ( get_field('layout_type') == 'four' ):
 			<?php endwhile;
 			endif; ?>
 			
-			<?php if( have_rows('second_column_second_column') ): ?>
-			<?php while( have_rows('second_column_second_column') ): the_row(); ?>
+			<?php if( have_rows('second_column_left_column') ): ?>
+			<?php while( have_rows('second_column_left_column') ): the_row(); ?>
 			
 			<div class="column-container four_column">
 				<?php
-				$contenttype = get_sub_field('column_left_content_type' ); 
+				$contenttype = get_sub_field('second_column_column_left_content_type' ); 
 					
 				if ( $contenttype == 'text' ):
-				the_sub_field('left_column_text');
+				the_sub_field('second_column_left_column_text');
 					
 				elseif ( $contenttype == 'image' ):
-				$image = get_sub_field('left_column_image');
+				$image = get_sub_field('second_column_left_column_image');
 				$size = 'large';
 				
 				if ( $image ): ?>
@@ -227,18 +227,18 @@ elseif ( get_field('layout_type') == 'four' ):
 			<?php endwhile;
 			endif; ?>
 			
-			<?php if( have_rows('third_column_third_column') ): ?>
-			<?php while( have_rows('third_column_third_column') ): the_row(); ?>
+			<?php if( have_rows('third_column_left_column') ): ?>
+			<?php while( have_rows('third_column_left_column') ): the_row(); ?>
 			
 			<div class="column-container four_column">
 				<?php
-				$contenttype = get_sub_field('column_left_content_type' ); 
+				$contenttype = get_sub_field('third_column_column_left_content_type' ); 
 					
 				if ( $contenttype == 'text' ):
-				the_sub_field('left_column_text');
+				the_sub_field('third_column_left_column_text');
 					
 				elseif ( $contenttype == 'image' ):
-				$image = get_sub_field('left_column_image');
+				$image = get_sub_field('third_column_left_column_image');
 				$size = 'large';
 				
 				if ( $image ): ?>
@@ -252,18 +252,18 @@ elseif ( get_field('layout_type') == 'four' ):
 			<?php endwhile;
 			endif; ?>
 			
-			<?php if( have_rows('fourth_column_fourth_column') ): ?>
-			<?php while( have_rows('fourth_column_fourth_column') ): the_row(); ?>
+			<?php if( have_rows('fourth_column_left_column') ): ?>
+			<?php while( have_rows('fourth_column_left_column') ): the_row(); ?>
 			
 			<div class="column-container four_column">
 				<?php
-				$contenttype = get_sub_field('column_left_content_type' ); 
+				$contenttype = get_sub_field('fourth_column_column_left_content_type' ); 
 					
 				if ( $contenttype == 'text' ):
-				the_sub_field('left_column_text');
+				the_sub_field('fourth_column_left_column_text');
 					
 				elseif ( $contenttype == 'image' ):
-				$image = get_sub_field('left_column_image');
+				$image = get_sub_field('fourth_column_left_column_image');
 				$size = 'large';
 				
 				if ( $image ): ?>
