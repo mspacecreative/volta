@@ -169,11 +169,17 @@
 			
 		</div>
 		
+		<?php if( have_rows('cta_button') ): ?>
 		<footer class="no-padding-bottom-margin-top align-center">
+			<?php while( have_rows('cta_button') ): the_row(); ?>
 			<ul class="actions">
-				<li><a href="#" class="dark button">MORE PROGRAMS</a></li>
+				<li>
+					<a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
 			</ul>
+			<?php endwhile; ?>
 		</footer>
+		<?php endif; ?>
 	</div>
 	
 </article>
