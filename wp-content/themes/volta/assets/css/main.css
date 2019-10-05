@@ -4115,6 +4115,9 @@ header {
 	.features .row.inline-icons {
 		margin-top: 0!important;
 	}
+	.alignright, .alignleft {
+		max-width: 40%!important;
+	}
 	.page .inner.boxed {
 		padding: 2em 2em 0;
 	}
@@ -4320,6 +4323,9 @@ header {
 @media (max-width: 450px) {
 	.tiles .tall-image {
 		min-height: 400px;
+	}
+	.alignright, .alignleft {
+		max-width: 40%!important;
 	}
 	.page .inner.boxed {
 		padding: 2em 2em 0;
