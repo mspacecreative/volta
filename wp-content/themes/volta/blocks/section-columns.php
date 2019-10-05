@@ -177,10 +177,10 @@ elseif ( get_field('layout_type') == 'four' ):
 		
 		<?php while( have_rows('four_column_layout') ): the_row(); ?>
 		
-			<?php if( have_rows('first_column_left_column') ): ?>
-			<?php while( have_rows('first_column_left_column') ): the_row(); ?>
+			<?php if( have_rows('first_column_first_column') ): ?>
+			<?php while( have_rows('first_column_first_column') ): the_row(); ?>
 		
-			<div class="column-container three_column">
+			<div class="column-container four_column">
 				<?php
 				$contenttype = get_sub_field('column_left_content_type' ); 
 				
@@ -202,10 +202,10 @@ elseif ( get_field('layout_type') == 'four' ):
 			<?php endwhile;
 			endif; ?>
 			
-			<?php if( have_rows('second_column_left_column') ): ?>
-			<?php while( have_rows('second_column_left_column') ): the_row(); ?>
+			<?php if( have_rows('second_column_second_column') ): ?>
+			<?php while( have_rows('second_column_second_column') ): the_row(); ?>
 			
-			<div class="column-container three_column">
+			<div class="column-container four_column">
 				<?php
 				$contenttype = get_sub_field('column_left_content_type' ); 
 					
@@ -227,10 +227,10 @@ elseif ( get_field('layout_type') == 'four' ):
 			<?php endwhile;
 			endif; ?>
 			
-			<?php if( have_rows('third_column_left_column') ): ?>
-			<?php while( have_rows('third_column_left_column') ): the_row(); ?>
+			<?php if( have_rows('third_column_third_column') ): ?>
+			<?php while( have_rows('third_column_third_column') ): the_row(); ?>
 			
-			<div class="column-container three_column">
+			<div class="column-container four_column">
 				<?php
 				$contenttype = get_sub_field('column_left_content_type' ); 
 					
@@ -252,10 +252,10 @@ elseif ( get_field('layout_type') == 'four' ):
 			<?php endwhile;
 			endif; ?>
 			
-			<?php if( have_rows('fourth_column_left_column') ): ?>
-			<?php while( have_rows('fourth_column_left_column') ): the_row(); ?>
+			<?php if( have_rows('fourth_column_fourth_column') ): ?>
+			<?php while( have_rows('fourth_column_fourth_column') ): the_row(); ?>
 			
-			<div class="column-container three_column">
+			<div class="column-container four_column">
 				<?php
 				$contenttype = get_sub_field('column_left_content_type' ); 
 					
