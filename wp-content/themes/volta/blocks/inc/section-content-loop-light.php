@@ -6,7 +6,7 @@ $width = get_field('content_width');
 if ( $padding == 'top' && $margin == 'top' ):
 
 	if ( get_field('content_editor') ): ?>
-	<div class="top-padding top-margin">
+	<div class="top-padding top-margin light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -16,7 +16,7 @@ if ( $padding == 'top' && $margin == 'top' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -30,7 +30,7 @@ if ( $padding == 'top' && $margin == 'top' ):
 elseif ( $width && $padding == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding">
+	<div class="width-800 top-bottom-padding light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -40,7 +40,7 @@ elseif ( $width && $padding == 'both' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -54,7 +54,7 @@ elseif ( $width && $padding == 'both' ):
 elseif ( $padding == 'bottom' && $margin == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="bottom-padding bottom-margin">
+	<div class="bottom-padding bottom-margin light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -64,7 +64,7 @@ elseif ( $padding == 'bottom' && $margin == 'bottom' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -78,7 +78,7 @@ elseif ( $padding == 'bottom' && $margin == 'bottom' ):
 elseif ( $padding == 'both' && $margin == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-bottom-padding top-bottom-margin">
+	<div class="top-bottom-padding top-bottom-margin light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -88,7 +88,7 @@ elseif ( $padding == 'both' && $margin == 'both' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -102,7 +102,7 @@ elseif ( $padding == 'both' && $margin == 'both' ):
 elseif ( $padding == 'top' && $margin == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-padding bottom-margin">
+	<div class="top-padding bottom-margin light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -112,7 +112,7 @@ elseif ( $padding == 'top' && $margin == 'bottom' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -126,7 +126,7 @@ elseif ( $padding == 'top' && $margin == 'bottom' ):
 elseif ( $padding == 'top' && $margin == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-padding top-bottom-margin">
+	<div class="top-padding top-bottom-margin light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -136,7 +136,7 @@ elseif ( $padding == 'top' && $margin == 'both' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -150,7 +150,7 @@ elseif ( $padding == 'top' && $margin == 'both' ):
 elseif ( $padding == 'bottom' && $margin == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="bottom-padding top-margin">
+	<div class="bottom-padding top-margin light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -160,7 +160,7 @@ elseif ( $padding == 'bottom' && $margin == 'top' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -174,7 +174,7 @@ elseif ( $padding == 'bottom' && $margin == 'top' ):
 elseif ( $padding == 'bottom' && $margin == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="bottom-padding top-bottom-margin">
+	<div class="bottom-padding top-bottom-margin light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -184,7 +184,7 @@ elseif ( $padding == 'bottom' && $margin == 'both' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -198,7 +198,7 @@ elseif ( $padding == 'bottom' && $margin == 'both' ):
 elseif ( $padding == 'full' && $margin == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="full-padding top-margin">
+	<div class="full-padding top-margin light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -208,7 +208,7 @@ elseif ( $padding == 'full' && $margin == 'top' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -222,7 +222,7 @@ elseif ( $padding == 'full' && $margin == 'top' ):
 elseif ( $padding == 'full' && $margin == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="full-padding bottom-margin">
+	<div class="full-padding bottom-margin light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -232,7 +232,7 @@ elseif ( $padding == 'full' && $margin == 'bottom' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -246,7 +246,7 @@ elseif ( $padding == 'full' && $margin == 'bottom' ):
 elseif ( $padding == 'full' && $margin == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="full-padding top-bottom-margin">
+	<div class="full-padding top-bottom-margin light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -256,7 +256,7 @@ elseif ( $padding == 'full' && $margin == 'both' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -270,7 +270,7 @@ elseif ( $padding == 'full' && $margin == 'both' ):
 elseif ( $padding == 'both' && $margin == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="full-padding top-margin">
+	<div class="full-padding top-margin light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -280,7 +280,7 @@ elseif ( $padding == 'both' && $margin == 'top' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -294,7 +294,7 @@ elseif ( $padding == 'both' && $margin == 'top' ):
 elseif ( $padding == 'both' && $margin == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="full-padding bottom-margin">
+	<div class="full-padding bottom-margin light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -304,7 +304,7 @@ elseif ( $padding == 'both' && $margin == 'bottom' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -318,7 +318,7 @@ elseif ( $padding == 'both' && $margin == 'bottom' ):
 elseif ( $padding == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-bottom-padding">
+	<div class="top-bottom-padding light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -328,7 +328,7 @@ elseif ( $padding == 'both' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -342,7 +342,7 @@ elseif ( $padding == 'both' ):
 elseif ( $padding == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-padding">
+	<div class="top-padding light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -352,7 +352,7 @@ elseif ( $padding == 'top' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -366,7 +366,7 @@ elseif ( $padding == 'top' ):
 elseif ( $padding == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="bottom-padding">
+	<div class="bottom-padding light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -376,7 +376,7 @@ elseif ( $padding == 'bottom' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -390,7 +390,7 @@ elseif ( $padding == 'bottom' ):
 elseif ( $width ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800">
+	<div class="width-800 light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -400,7 +400,7 @@ elseif ( $width ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -414,7 +414,7 @@ elseif ( $width ):
 elseif ( $width && $padding == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 bottom-padding">
+	<div class="width-800 bottom-padding light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -424,7 +424,7 @@ elseif ( $width && $padding == 'bottom' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -438,7 +438,7 @@ elseif ( $width && $padding == 'bottom' ):
 elseif ( $width && $padding == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-padding">
+	<div class="width-800 top-padding light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -448,7 +448,7 @@ elseif ( $width && $padding == 'top' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -462,7 +462,7 @@ elseif ( $width && $padding == 'top' ):
 elseif ( $width && $padding == 'full' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 full-padding">
+	<div class="width-800 full-padding light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -472,7 +472,7 @@ elseif ( $width && $padding == 'full' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -486,7 +486,7 @@ elseif ( $width && $padding == 'full' ):
 elseif ( $width && $margin == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 bottom-margin">
+	<div class="width-800 bottom-margin light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -496,7 +496,7 @@ elseif ( $width && $margin == 'bottom' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -510,7 +510,7 @@ elseif ( $width && $margin == 'bottom' ):
 elseif ( $width && $margin == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-margin">
+	<div class="width-800 top-margin light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -520,7 +520,7 @@ elseif ( $width && $margin == 'top' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -534,7 +534,7 @@ elseif ( $width && $margin == 'top' ):
 elseif ( $width && $margin == 'both' ):
 
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-margin">
+	<div class="width-800 top-bottom-margin light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -544,7 +544,7 @@ elseif ( $width && $margin == 'both' ):
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -558,7 +558,7 @@ elseif ( $width && $margin == 'both' ):
 else :
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="full-padding">
+	<div class="full-padding light">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -568,7 +568,7 @@ else :
 		<footer>
 			
 			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
