@@ -3495,6 +3495,12 @@ img {
 .columns-container.display-flex {
 	align-items: center;
 }
+.columns-container.display-flex.align_items_top {
+	align-items: flex-start;
+}
+.columns-container.display-flex.align_items_bottom {
+	align-items: flex-end;
+}
 .image-grid-container.display-flex {
 	align-items: center;
 	justify-content: center;
