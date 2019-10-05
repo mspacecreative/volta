@@ -10,7 +10,9 @@
 		include('inc/section-content-loop-light.php');
 		
 		else :
-		include('inc/section-content-loop.php'); ?>
+		include('inc/section-content-loop.php');
+		
+		endif; ?>
 		
 	</div>
 	
@@ -24,7 +26,9 @@
 		include('inc/section-content-loop-light.php');
 		
 		else :
-		include('inc/section-content-loop.php'); ?>
+		include('inc/section-content-loop.php');
+		
+		endif; ?>
 		
 	</div>
 	
@@ -38,7 +42,9 @@
 		include('inc/section-content-loop-light.php');
 		
 		else :
-		include('inc/section-content-loop.php'); ?>
+		include('inc/section-content-loop.php');
+		
+		endif; ?>
 		
 	</div>
 	<?php endif; ?>
@@ -53,7 +59,9 @@
 		include('inc/section-content-loop-light.php');
 		
 		else :
-		include('inc/section-content-loop.php'); ?>
+		include('inc/section-content-loop.php');
+		
+		endif; ?>
 		
 	</div>
 	
@@ -67,7 +75,9 @@
 		include('inc/section-content-loop-light.php');
 		
 		else :
-		include('inc/section-content-loop.php'); ?>
+		include('inc/section-content-loop.php');
+		
+		endif; ?>
 		
 	</div>
 
