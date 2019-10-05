@@ -177,8 +177,8 @@ elseif ( get_field('layout_type') == 'four' ):
 		
 		<?php while( have_rows('four_column_layout') ): the_row(); ?>
 		
-			<?php if( have_rows('four_first_column') ): ?>
-			<?php while( have_rows('four_first_column') ): the_row(); ?>
+			<?php if( have_rows('four_first_column_four_first_column') ): ?>
+			<?php while( have_rows('four_first_column_four_first_column') ): the_row(); ?>
 		
 			<div class="column-container four_column">
 				<?php
