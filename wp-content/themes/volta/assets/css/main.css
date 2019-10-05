@@ -1776,14 +1776,12 @@ input, select, textarea {
 	
 	.right-side {
 		position: relative;
-		width: 90%;
 		bottom: 0;
-		left: 110%;
+		left: 100%;
 	}
 	
 	.left-side {
 		position: relative;
-		width: 90%;
 		bottom: 0;
 	}
 	
