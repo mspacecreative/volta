@@ -3398,7 +3398,7 @@ input, select, textarea {
 	padding: 0 6em 4em;
 }
 .top-padding {
-	padding: 4em 0 0;
+	padding: 4em 6em 0;
 }
 .bottom-margin {
 	margin-bottom: 2em;
@@ -3863,6 +3863,9 @@ aside {
 .full-padding {
 	padding: 2em;
 }
+.no-padding {
+	padding: 0 6em;
+}
 .home .full-padding {
 	padding: 4em;
 }
@@ -4156,6 +4159,12 @@ header {
 	.full-padding {
 	    padding: 1em;
 	}
+	.no-padding {
+	    padding: 0 1em;
+	}
+	.top-padding {
+		padding: 2em 1em 0;
+	}
 	.home .full-padding {
 	    padding: 2em;
 	}
@@ -4264,6 +4273,12 @@ header {
 	.full-padding {
 	    padding: 3em;
 	}
+	.no-padding {
+	    padding: 0 3em;
+	}
+	.top-padding {
+		padding: 4em 3em 0;
+	}
 	#intro article:first-child {
 		border-right: none;
 		border-bottom: 5px solid #fff;
@@ -4350,6 +4365,12 @@ header {
 	}
 	.full-padding {
 	    padding: 1em;
+	}
+	.no-padding {
+	    padding: 0 1em;
+	}
+	.top-padding {
+		padding: 2em 1em 0;
 	}
 	.home .full-padding {
 	    padding: 2em;
