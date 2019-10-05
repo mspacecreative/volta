@@ -1796,11 +1796,11 @@ input, select, textarea {
 	}
 	
 	.page .left-side .full-span-content {
-		padding: 4em 2em 2em 6em;
+		padding: 4em 2em 2em 2em;
 	}
 	
 	.page .right-side .full-span-content {
-		padding: 4em 6em 2em 2em;
+		padding: 4em 2em 2em 2em;
 	}
 	
 	.full-span-content h3 {
