@@ -3750,7 +3750,7 @@ img {
 	margin: 0 0 4em;
 }
 .blog .post-content-container, .single .post-content-container, .page-template-page-sidebar .post-content-container {
-	padding: 0 4em;
+	padding: 0;
 }
 .blog article:last-child {
 	margin-bottom: 0;
