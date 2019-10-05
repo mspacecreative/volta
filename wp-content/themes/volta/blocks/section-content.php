@@ -9,6 +9,9 @@
 		if ( $textcolour = 'light' ):
 		include('inc/section-content-loop-light.php');
 		
+		elseif ( $textcolour = 'dark' ):
+		include('inc/section-content-loop.php');
+		
 		else :
 		include('inc/section-content-loop.php');
 		
@@ -25,6 +28,9 @@
 		if ( $textcolour = 'light' ):
 		include('inc/section-content-loop-light.php');
 		
+		elseif ( $textcolour = 'dark' ):
+		include('inc/section-content-loop.php');
+		
 		else :
 		include('inc/section-content-loop.php');
 		
@@ -40,6 +46,9 @@
 		
 		if ( $textcolour = 'light' ):
 		include('inc/section-content-loop-light.php');
+		
+		elseif ( $textcolour = 'dark' ):
+		include('inc/section-content-loop.php');
 		
 		else :
 		include('inc/section-content-loop.php');
@@ -58,6 +67,9 @@
 		if ( $textcolour = 'light' ):
 		include('inc/section-content-loop-light.php');
 		
+		elseif ( $textcolour = 'dark' ):
+		include('inc/section-content-loop.php');
+		
 		else :
 		include('inc/section-content-loop.php');
 		
@@ -73,6 +85,9 @@
 		
 		if ( $textcolour = 'light' ):
 		include('inc/section-content-loop-light.php');
+		
+		elseif ( $textcolour = 'dark' ):
+		include('inc/section-content-loop.php');
 		
 		else :
 		include('inc/section-content-loop.php');
