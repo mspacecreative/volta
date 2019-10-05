@@ -4084,9 +4084,15 @@ header {
 .page .left-side .full-span-content, .page .right-side .full-span-content {
 	max-width: 800px;
 }
-.container, .left-side, .right-side {
+.container {
 	padding-right: 4em;
 	padding-left: 4em;
+}
+.left-side {
+	padding-left: 4em;
+}
+.right-side {
+	padding-right: 4em;
 }
 .page .inner.boxed {
 	padding: 4em 6em 0;
