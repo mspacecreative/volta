@@ -1801,8 +1801,9 @@ input, select, textarea {
 		padding: 4em 2em 2em 2em;
 	}
 	
-	.full-span-content h3 {
-		font-size: 2.2em;
+	.post-content-container .full-span-content h3 {
+		font-size: 2em;
+		font-weight: normal;
 	}
 	
 	.white-bg {
