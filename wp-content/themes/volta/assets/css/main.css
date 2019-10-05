@@ -3478,6 +3478,10 @@ h2 {
 .pagination {
 	text-align: center;
 }
+.single .post-container > .container {
+	padding-right: 2em;
+	padding-left: 2em;
+}
 .pagination .page-numbers {
 	margin: 0 3px;
 }
