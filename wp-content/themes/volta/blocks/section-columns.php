@@ -6,7 +6,7 @@ if ( $layouttype == 'one' && $verticalalignment == 'top' ):
 	
 	if( have_rows('variable_columns') ): ?>
 	
-	<div class="columns-container display-flex bottom-padding align_items_top">
+	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_top">
 		
 		<?php while( have_rows('variable_columns') ): the_row(); ?>
 		
@@ -24,7 +24,7 @@ elseif ( $layouttype == 'one' && $verticalalignment == 'center' ):
 
 	if( have_rows('variable_columns') ): ?>
 	
-	<div class="columns-container display-flex bottom-padding">
+	<div class="columns-container display-flex top-bottom-padding top-bottom-margin">
 		
 		<?php while( have_rows('variable_columns') ): the_row(); ?>
 		
@@ -42,7 +42,7 @@ elseif ( $layouttype == 'one' && $verticalalignment == 'bottom' ):
 
 	if( have_rows('variable_columns') ): ?>
 	
-	<div class="columns-container display-flex bottom-padding align_items_bottom">
+	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_bottom">
 		
 		<?php while( have_rows('variable_columns') ): the_row(); ?>
 		
@@ -60,7 +60,7 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'top' ):
 
 	if( have_rows('two_column_layout') ): ?>
 	
-	<div class="columns-container display-flex bottom-padding align_items_top">
+	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_top">
 		
 		<?php while( have_rows('two_column_layout') ): the_row(); ?>
 		
@@ -124,7 +124,7 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'center' ):
 
 	if( have_rows('two_column_layout') ): ?>
 	
-	<div class="columns-container display-flex bottom-padding">
+	<div class="columns-container display-flex top-bottom-padding top-bottom-margin">
 		
 		<?php while( have_rows('two_column_layout') ): the_row(); ?>
 		
@@ -188,7 +188,7 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'bottom' ):
 
 	if( have_rows('two_column_layout') ): ?>
 	
-	<div class="columns-container display-flex bottom-padding align_items_bottom">
+	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_bottom">
 		
 		<?php while( have_rows('two_column_layout') ): the_row(); ?>
 		
@@ -252,7 +252,7 @@ elseif ( $layouttype == 'three' && $verticalalignment == 'top' ):
 
 	if( have_rows('three_column_layout') ): ?>
 	
-	<div class="columns-container display-flex bottom-padding align_items_top">
+	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_top">
 		
 		<?php while( have_rows('three_column_layout') ): the_row(); ?>
 		
@@ -341,7 +341,7 @@ elseif ( $layouttype == 'three' && $verticalalignment == 'center' ):
 
 	if( have_rows('three_column_layout') ): ?>
 	
-	<div class="columns-container display-flex bottom-padding">
+	<div class="columns-container display-flex top-bottom-padding top-bottom-margin">
 		
 		<?php while( have_rows('three_column_layout') ): the_row(); ?>
 		
@@ -430,7 +430,7 @@ elseif ( $layouttype == 'three' && $verticalalignment == 'bottom' ):
 
 	if( have_rows('three_column_layout') ): ?>
 	
-	<div class="columns-container display-flex bottom-padding align_items_bottom">
+	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_bottom">
 		
 		<?php while( have_rows('three_column_layout') ): the_row(); ?>
 		
@@ -519,7 +519,7 @@ elseif ( $layouttype == 'four' && $verticalalignment == 'top' ):
 
 	if( have_rows('four_column_layout') ): ?>
 	
-	<div class="columns-container display-flex align_items_top">
+	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_top">
 		
 		<?php while( have_rows('four_column_layout') ): the_row(); ?>
 		
@@ -633,7 +633,7 @@ elseif ( $layouttype == 'four' && $verticalalignment == 'center' ):
 
 	if( have_rows('four_column_layout') ): ?>
 	
-	<div class="columns-container display-flex">
+	<div class="columns-container display-flex top-bottom-padding top-bottom-margin">
 		
 		<?php while( have_rows('four_column_layout') ): the_row(); ?>
 		
@@ -747,7 +747,7 @@ elseif ( $layouttype == 'four' && $verticalalignment == 'bottom' ):
 
 	if( have_rows('four_column_layout') ): ?>
 	
-	<div class="columns-container display-flex align_items_bottom">
+	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_bottom">
 		
 		<?php while( have_rows('four_column_layout') ): the_row(); ?>
 		
