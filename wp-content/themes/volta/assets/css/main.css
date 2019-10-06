@@ -4120,6 +4120,10 @@ header {
 .no-featured-image-in-header .post-title-container {
 	margin-top: 0;
 }
+.width-100 {
+	width: 100%;
+	flex-basis: 100%;
+}
 @media (min-width: 1600px) {
 	#header {
 		max-height: 1000px;

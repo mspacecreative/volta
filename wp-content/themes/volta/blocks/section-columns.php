@@ -9,7 +9,7 @@ if ( $layouttype == 'one' && $verticalalignment == 'top' ):
 	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_top">
 		
 		<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
+			<h2 class="width-100"><?php the_field('heading'); ?></h2>
 		<?php endif; ?>
 		
 		<?php while( have_rows('variable_columns') ): the_row(); ?>
@@ -31,7 +31,7 @@ elseif ( $layouttype == 'one' && $verticalalignment == 'center' ):
 	<div class="columns-container display-flex top-bottom-padding top-bottom-margin">
 		
 		<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
+			<h2 class="width-100"><?php the_field('heading'); ?></h2>
 		<?php endif; ?>
 		
 		<?php while( have_rows('variable_columns') ): the_row(); ?>
@@ -53,7 +53,7 @@ elseif ( $layouttype == 'one' && $verticalalignment == 'bottom' ):
 	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_bottom">
 		
 		<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
+			<h2 class="width-100"><?php the_field('heading'); ?></h2>
 		<?php endif; ?>
 		
 		<?php while( have_rows('variable_columns') ): the_row(); ?>
@@ -75,7 +75,7 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'top' ):
 	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_top">
 		
 		<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
+			<h2 class="width-100"><?php the_field('heading'); ?></h2>
 		<?php endif; ?>
 		
 		<?php while( have_rows('two_column_layout') ): the_row(); ?>
@@ -143,7 +143,7 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'center' ):
 	<div class="columns-container display-flex top-bottom-padding top-bottom-margin">
 		
 		<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
+			<h2 class="width-100"><?php the_field('heading'); ?></h2>
 		<?php endif; ?>
 		
 		<?php while( have_rows('two_column_layout') ): the_row(); ?>
@@ -211,7 +211,7 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'bottom' ):
 	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_bottom">
 		
 		<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
+			<h2 class="width-100"><?php the_field('heading'); ?></h2>
 		<?php endif; ?>
 		
 		<?php while( have_rows('two_column_layout') ): the_row(); ?>
@@ -279,7 +279,7 @@ elseif ( $layouttype == 'three' && $verticalalignment == 'top' ):
 	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_top">
 		
 		<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
+			<h2 class="width-100"><?php the_field('heading'); ?></h2>
 		<?php endif; ?>
 		
 		<?php while( have_rows('three_column_layout') ): the_row(); ?>
@@ -372,7 +372,7 @@ elseif ( $layouttype == 'three' && $verticalalignment == 'center' ):
 	<div class="columns-container display-flex top-bottom-padding top-bottom-margin">
 		
 		<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
+			<h2 class="width-100"><?php the_field('heading'); ?></h2>
 		<?php endif; ?>
 		
 		<?php while( have_rows('three_column_layout') ): the_row(); ?>
@@ -465,7 +465,7 @@ elseif ( $layouttype == 'three' && $verticalalignment == 'bottom' ):
 	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_bottom">
 		
 		<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
+			<h2 class="width-100"><?php the_field('heading'); ?></h2>
 		<?php endif; ?>
 		
 		<?php while( have_rows('three_column_layout') ): the_row(); ?>
@@ -558,7 +558,7 @@ elseif ( $layouttype == 'four' && $verticalalignment == 'top' ):
 	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_top">
 		
 		<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
+			<h2 class="width-100"><?php the_field('heading'); ?></h2>
 		<?php endif; ?>
 		
 		<?php while( have_rows('four_column_layout') ): the_row(); ?>
@@ -676,7 +676,7 @@ elseif ( $layouttype == 'four' && $verticalalignment == 'center' ):
 	<div class="columns-container display-flex top-bottom-padding top-bottom-margin">
 		
 		<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
+			<h2 class="width-100"><?php the_field('heading'); ?></h2>
 		<?php endif; ?>
 		
 		<?php while( have_rows('four_column_layout') ): the_row(); ?>
@@ -794,7 +794,7 @@ elseif ( $layouttype == 'four' && $verticalalignment == 'bottom' ):
 	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_bottom">
 		
 		<?php if ( get_field('heading') ): ?>
-			<h2><?php the_field('heading'); ?></h2>
+			<h2 class="width-100"><?php the_field('heading'); ?></h2>
 		<?php endif; ?>
 		
 		<?php while( have_rows('four_column_layout') ): the_row(); ?>
