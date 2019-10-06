@@ -4294,17 +4294,14 @@ header {
 		border-bottom: 5px solid #fff;
 	}
 }
-@media (min-width: 768px) {
-	
-	.blog .post-content-container > .container, .single .post-content-container > .container {
-	    padding-right: 0;
-	    padding-left: 0;
-	}
-}
 @media (max-width: 768px) {
 	.tiles article, .tiles .width-70, .tiles .width-30, .tiles > .width-50, .tiles > .width-50:nth-child(4n - 1), .tiles .width-50:nth-child(4n - 2) {
 		flex-basis: 100%;
 		width: 100%;
+	}
+	.blog .post-content-container > .container, .single .post-content-container > .container {
+	    padding-right: 0;
+	    padding-left: 0;
 	}
 	.content-bottom .left {
 	    width: 100%;
