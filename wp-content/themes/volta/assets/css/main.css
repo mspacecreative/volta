@@ -3374,9 +3374,14 @@ input, select, textarea {
 .top-bottom-padding {
 	padding: 2em 6em;
 }
+.align-center {
+	text-align: center;
+}
 /*.icon-buckets .top-bottom-padding, #partners .top-bottom-padding {
 	padding: 4em 0;
 }*/
+
+.icon-buckets
 .home.page .features {
 	margin-left: auto!important;
 	margin-right: auto!important;

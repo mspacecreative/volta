@@ -173,7 +173,7 @@
 			
 				if( have_rows('left_column') ):
 				while( have_rows('left_column') ): the_row(); ?>
-				<div class="col-4 col-12-mobile special">
+				<div class="col-4 col-12-mobile special align-center">
 					
 					<?php if ( get_sub_field('icon_left') ): ?>
 					
@@ -199,7 +199,7 @@
 				
 				<?php if( have_rows('center_column') ): ?>
 				<?php while( have_rows('center_column') ): the_row(); ?>
-				<div class="col-4 col-12-mobile special">
+				<div class="col-4 col-12-mobile special align-center">
 						
 					<?php if ( get_sub_field('icon_center') ): ?>
 					
@@ -225,7 +225,7 @@
 				
 				<?php if( have_rows('right_column') ): ?>
 				<?php while( have_rows('right_column') ): the_row(); ?>
-				<div class="col-4 col-12-mobile special">
+				<div class="col-4 col-12-mobile special align-center">
 						
 					<?php if ( get_sub_field('icon_right') ): ?>
 					
