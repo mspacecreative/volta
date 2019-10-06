@@ -1,3 +1,7 @@
+<?php if ( get_field('heading'); ): ?>
+	<h2><?php the_field('heading'); ?></h2>
+<?php endif; ?>
+
 <?php
 $layouttype = get_field('layout_type');
 $verticalalignment = get_field('vertical_alignment');
