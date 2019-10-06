@@ -28,6 +28,30 @@ if ( $padding == 'top' && $margin == 'top' ):
 	</div>
 	<?php endif;
 	
+elseif ( $padding == 'both' && $margin == 'top' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="full-padding top-margin">
+		
+		<?php the_field('content_editor'); ?>
+		
+		<?php if( have_rows('content_cta_button') ): ?>
+		<?php while( have_rows('content_cta_button') ): the_row(); ?>
+		<?php if ( get_sub_field('content_button_link') ): ?>
+		<footer>
+			
+			<ul class="actions">
+				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
+			</ul>
+			
+		</footer>
+		<?php endif; ?>
+		<?php endwhile; ?>
+		<?php endif; ?>
+		
+	</div>
+	<?php endif;
+	
 elseif ( $padding == 'top' && $margin == 'top' && $textcolour == 'light' ):
 
 	if ( get_field('content_editor') ): ?>
@@ -546,30 +570,6 @@ elseif ( $padding == 'full' && $margin == 'both' && $textcolour == 'light' ):
 			
 			<ul class="actions">
 				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $padding == 'both' && $margin == 'top' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="full-padding top-margin">
-		
-		<?php the_field('content_editor'); ?>
-		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
