@@ -3377,6 +3377,9 @@ input, select, textarea {
 .align-center {
 	text-align: center;
 }
+.default-padding {
+	padding: 0 6em;
+}
 /*.icon-buckets .top-bottom-padding, #partners .top-bottom-padding {
 	padding: 4em 0;
 }*/
@@ -4123,6 +4126,9 @@ header {
 	.features .row.inline-icons {
 		margin-top: 0!important;
 	}
+	.default-padding {
+		padding: 0 2em;
+	}
 	.alignright, .alignleft {
 		max-width: 40%!important;
 	}
@@ -4373,6 +4379,9 @@ header {
 	}
 	.bottom-padding {
 	    padding: 0 2em 4em;
+	}
+	.default-padding {
+		padding: 0 2em;
 	}
 	.post-header {
 		display: none;
