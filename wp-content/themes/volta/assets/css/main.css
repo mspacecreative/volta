@@ -3374,7 +3374,7 @@ input, select, textarea {
 .top-bottom-padding {
 	padding: 2em 6em;
 }
-#more-programs .top-bottom-padding, #partners .top-bottom-padding {
+.icon-buckets .top-bottom-padding, #partners .top-bottom-padding {
 	padding: 4em 0;
 }
 .home.page .features {
@@ -3472,7 +3472,7 @@ footer {
 h2 {
 	margin: 30px 0 15px;
 }
-.inner .two_third_col h2:first-child, .inner div div h2:first-child {
+.post-container .inner .two_third_col h2:first-child, .post-container .inner div div h2:first-child {
 	margin-top: 0;
 }
 .post-container .inner > div > h2, .banner h2 {
@@ -3548,7 +3548,7 @@ img {
 	width: 15%;
 	margin-right: 2.5%;
 }
-#more-programs .inline-icons > .icon {
+.icon-buckets .inline-icons > .icon {
 	flex-basis: 10%;
 	margin-right: 3%;
 }
@@ -3614,7 +3614,7 @@ img {
 	left: 60%;
 	padding: 2em 4em 2em 2em;
 }
-#more-programs .icon {
+.icon-buckets .icon {
 	display: block;
 	margin-bottom: 10px;
 }
@@ -3699,7 +3699,7 @@ img {
 	background: rgba(255, 255, 255, .8);
 }*/
 
-#more-programs {
+.icon-buckets {
 	position: relative;
 }
 
@@ -4449,19 +4449,19 @@ header {
 		width: 100%;
 		left: auto;
 	}
-	.top-bottom-padding, #more-programs .top-bottom-padding, #partners .top-bottom-padding {
+	.top-bottom-padding, .icon-buckets .top-bottom-padding, #partners .top-bottom-padding {
 		padding: 4em 2em;
 	}
-	#more-programs .top-bottom-padding, #partners .top-bottom-padding {
+	.icon-buckets .top-bottom-padding, #partners .top-bottom-padding {
 		padding: 4em 2em;
 	}
 	.tiles article {
 	    padding: 2em;
 	}
-	#more-programs .inner {
+	.icon-buckets .inner {
 		width: 100%;
 	}
-	#more-programs .align-center {
+	.icon-buckets .align-center {
 		text-align: left;
 	}
 	#footer .contact ul {
