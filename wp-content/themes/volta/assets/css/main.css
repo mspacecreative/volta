@@ -4120,7 +4120,7 @@ header {
 .no-featured-image-in-header .post-title-container {
 	margin-top: 0;
 }
-.blog > .container, .single > .container {
+.blog .post-content-container > .container, .single .post-content-container > .container {
     padding-right: 0;
     padding-left: 0;
 }
