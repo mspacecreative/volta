@@ -6,6 +6,14 @@
 
 (function($) {
 	
+	// REFRESH PAGE ON WINDOW RESIZE
+	$(window).bind('resize', function(e) {
+		if (window.RT) clearTimeout(window.RT);
+		window.RT = setTimeout(function() {
+	    this.location.reload(false);
+		});
+	});
+	
 	function calcNegativeMargins() {
 		if (window.matchMedia("(min-width: 1600px)").matches) {
 			
