@@ -1,6 +1,6 @@
 <article class="icon-buckets">
 	
-	<div class="shadow white-bg top-bottom-padding-and-margin">
+	<div class="shadow white-bg extra-top-bottom-padding">
 		<div class="row">
 		
 			<?php 
