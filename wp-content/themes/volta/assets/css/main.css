@@ -3472,6 +3472,9 @@ footer {
 h2 {
 	margin: 30px 0 15px;
 }
+.inner .two_third_col h2:first-child, .inner div div h2:first-child {
+	margin-top: 0;
+}
 .post-container .inner > div > h2, .banner h2 {
 	margin-top: 0;
 }
