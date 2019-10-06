@@ -3380,9 +3380,8 @@ input, select, textarea {
 .default-padding {
 	padding: 0 6em;
 }
-.top-bottom-padding-and-margin {
+.extra-top-bottom-padding {
 	padding: 4em 6em;
-	margin: 2em 0;
 }
 /*.icon-buckets .top-bottom-padding, #partners .top-bottom-padding {
 	padding: 4em 0;
@@ -4192,6 +4191,9 @@ header {
 	.no-padding {
 	    padding: 0 1em;
 	}
+	.extra-top-bottom-padding {
+		padding: 2em;
+	}
 	.top-padding {
 		padding: 2em 1em 0;
 	}
@@ -4407,6 +4409,9 @@ header {
 	}
 	.top-padding {
 		padding: 2em 1em 0;
+	}
+	.extra-top-bottom-padding {
+		padding: 2em;
 	}
 	.home .full-padding {
 	    padding: 2em;
