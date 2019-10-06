@@ -336,17 +336,17 @@
 		</div>
 		
 		<?php if( have_rows('cta_button') ):
-		 	while( have_rows('cta_button') ): the_row();
-			if ( get_sub_field('button_link'); ?>
+		 	while( have_rows('cta_button') ): the_row(); ?>
 			<footer class="no-padding-bottom-margin-top align-center">
+				<?php if ( get_sub_field('button_link'); ?>
 				<ul class="actions">
 					<li>
 						<a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
 					</li>
 				</ul>
+				<?php endif; ?>
 			</footer>
-			<?php endif;
-			endwhile; ?>
+			<?php endwhile; ?>
 		<?php endif; ?>
 	</div>
 	
