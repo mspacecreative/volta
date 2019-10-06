@@ -335,8 +335,9 @@
 			
 		</div>
 		
-		<?php if( have_rows('cta_button') ): ?>
-			<?php while( have_rows('cta_button') ): the_row(); ?>
+		<?php if( have_rows('cta_button') ):
+		 	while( have_rows('cta_button') ): the_row();
+			if ( get_sub_field('button_link'); ?>
 			<footer class="no-padding-bottom-margin-top align-center">
 				<ul class="actions">
 					<li>
@@ -344,7 +345,8 @@
 					</li>
 				</ul>
 			</footer>
-			<?php endwhile; ?>
+			<?php endif;
+			endwhile; ?>
 		<?php endif; ?>
 	</div>
 	
