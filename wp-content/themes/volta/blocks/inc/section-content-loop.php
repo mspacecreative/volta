@@ -652,7 +652,7 @@ elseif ( $padding == 'both' && $margin == 'bottom' && $textcolour == 'light' ):
 	</div>
 	<?php endif;
 	
-elseif ( $width && $padding == 'both' && $margin == 'top' ):
+elseif ( $width && $padding == 'both' && $margin == 'top' && $textcolour == 'dark' ):
 	
 	if ( get_field('content_editor') ): ?>
 	<div class="width-800 top-bottom-padding top-margin">
