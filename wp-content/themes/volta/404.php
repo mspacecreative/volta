@@ -61,7 +61,7 @@ if ( get_field('featured_image_alignment', 'options') == 'top' ): ?>
 				</div>
 			</div>
 			<!-- /post title -->
-			<div class="inner boxed">
+			<div class="top-bottom-padding top-bottom-margin">
 				<p><?php esc_html_e('Looks like this page doesn&#8217;t exist. Please refine your search, or use the navigation above.'); ?></p>
 				<p><a href="<?php echo home_url(); ?>"><?php _e( 'Return to home page', 'html5blank' ); ?></a></p>
 			</div>
