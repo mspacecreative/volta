@@ -2982,23 +2982,6 @@ input, select, textarea {
 					margin-top: 0;
 				}
 
-		/* Menu */
-
-			ul.menu {
-				height: auto;
-			}
-
-				ul.menu li {
-					display: block;
-					border: 0;
-					padding: 0.75em 0 0 0;
-					margin: 0;
-				}
-
-					ul.menu li:first-child {
-						padding-top: 0;
-					}
-
 		/* Icons */
 
 			ul.icons {
@@ -4560,6 +4543,23 @@ header {
 					.mobile_panel .depth-0 {
 						color: #fff;
 					}
+					
+	/* Menu */
+	
+				ul.menu {
+					height: auto;
+				}
+	
+					ul.menu li {
+						display: block;
+						border: 0;
+						padding: 0.75em 0 0 0;
+						margin: 0;
+					}
+	
+						ul.menu li:first-child {
+							padding-top: 0;
+						}
 	.columns-container .column-container:first-child > img {
 		margin-bottom: 20px;
 	}
