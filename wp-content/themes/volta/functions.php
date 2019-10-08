@@ -707,18 +707,18 @@ function the_title_trim($title) {
 }
 add_filter('the_title', 'the_title_trim');
 
-// PAGE SEARCH FORM
-function custom_page_search_form( $form, $value = "Search", $post_type = 'page' ) {
-
-	if ( $query->is_main_query() && is_search() ) {
-	        $query->set( 'post_type', 'page' );
-	}
-	return $query;
-    
-    $form_value = (isset($value)) ? $value : attribute_escape(apply_filters('the_search_query', get_search_query()));
-    $form = '<form method="get" id="pagesearchform" action="' . get_option('home') . '/" >
-    	<input class="search-input" type="search" name="s" placeholder="To search, type and hit enter">
-    	<button class="search-submit" type="submit" role="button">Search</button>
-    </form>';
-    return $form;
+if ( $query->is_main_query() && is_search() ) {
+        $query->set( 'post_type', 'page' );
+        
+        // PAGE SEARCH FORM
+        function custom_page_search_form( $form, $value = "Search", $post_type = 'page' ) {
+            
+            $form_value = (isset($value)) ? $value : attribute_escape(apply_filters('the_search_query', get_search_query()));
+            $form = '<form method="get" id="pagesearchform" action="' . get_option('home') . '/" >
+            	<input class="search-input" type="search" name="s" placeholder="To search, type and hit enter">
+            	<button class="search-submit" type="submit" role="button">Search</button>
+            </form>';
+            return $form;
+        }    
 }
+return $query;
