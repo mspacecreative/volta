@@ -4119,6 +4119,12 @@ header {
 .no-featured-image-in-header .post-title-container {
 	margin-top: 0;
 }
+.user-registration-MyAccount-navigation-link--dashboard {
+	text-indent: inherit;
+}
+.user-registration-MyAccount-navigation-link--dashboard:before {
+	display: none;
+}
 .width-100 {
 	width: 100%;
 	flex-basis: 100%;
