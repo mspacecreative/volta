@@ -4156,6 +4156,10 @@ header {
 	.features .row.inline-icons {
 		margin-top: 0!important;
 	}
+	.single .post-container > .container {
+	    padding-right: 0;
+	    padding-left: 0;
+	}
 	.default-padding {
 		padding: 0 2em;
 	}
@@ -4377,6 +4381,10 @@ header {
 	}
 	.alignright, .alignleft {
 		max-width: 40%!important;
+	}
+	.single .post-container > .container {
+	    padding-right: 0;
+	    padding-left: 0;
 	}
 	.page .inner.boxed {
 		padding: 2em 2em 0;
