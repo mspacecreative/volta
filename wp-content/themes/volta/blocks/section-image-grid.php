@@ -109,6 +109,9 @@ $size = 'medium';
 			<?php else : ?>
 			<img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
 			<?php endif; ?>
+			<?php if ( $image['caption'] ): ?>
+			<p><?php echo $image['caption'] ?></p>
+			<?php endif; ?>
 		</li>
 		<?php endforeach; ?>
 		
