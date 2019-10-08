@@ -4134,6 +4134,9 @@ header {
 		max-height: 1000px;
 	}
 }
+.blog article a {
+	font-weight: 900!important;
+}
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
