@@ -710,9 +710,9 @@ add_filter('the_title', 'the_title_trim');
 // PAGE SEARCH FORM
 function custom_search_form( $form, $value = "Search", $post_type = 'page' ) {
     $form_value = (isset($value)) ? $value : attribute_escape(apply_filters('the_search_query', get_search_query()));
-    $form = '<form class="search" method="get" action="<?php echo home_url(); ?>" role="search">
-    	<input class="search-input" type="search" name="s" placeholder="<?php _e( 'To search, type and hit enter.', 'html5blank' ); ?>">
-    	<button class="search-submit" type="submit" role="button"><?php _e( 'Search', 'html5blank' ); ?></button>
+    $form = '<form method="get" id="pagesearchform" action="' . get_option('home') . '/" >
+    	<input class="search-input" type="search" name="s" placeholder="To search, type and hit enter">
+    	<button class="search-submit" type="submit" role="button">Search</button>
     </form>';
     return $form;
 }
