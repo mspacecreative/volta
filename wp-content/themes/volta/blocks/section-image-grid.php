@@ -10,7 +10,13 @@ $size = 'large';
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
-			<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+			<?php if ( get_field( 'external_link', $image['ID'] ) ): ?>
+			<a href="the_field( 'external_link', $image['ID'] );" target="_blank">
+				<img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
+			</a>
+			<?php else : ?>
+			<img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
+			<?php endif; ?>
 		</li>
 		<?php endforeach; ?>
 		
