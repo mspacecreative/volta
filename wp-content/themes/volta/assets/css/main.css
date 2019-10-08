@@ -4134,7 +4134,10 @@ header {
 		max-height: 1000px;
 	}
 }
-.blog article a {
+.blog article main a {
+	font-weight: 900;
+}
+.blog article main a > span {
 	font-weight: 900!important;
 }
 @media (max-width: 812px) and (orientation:landscape) {
