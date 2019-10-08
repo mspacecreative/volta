@@ -4213,8 +4213,11 @@ header {
 	.single .post-container, .page-template-page-sidebar .post-container {
 		padding: 1em;
 	}
-	.blog .post-content-container, .single .post-content-container, .page-template-page-sidebar .post-content-container {
-	    padding: 0;
+	.blog .post-content-container, .page-template-page-sidebar .post-content-container {
+	    padding: 0 1em;
+	}
+	.single .post-content-container {
+		padding: 0;
 	}
 	.full-padding {
 	    padding: 1em;
@@ -4431,8 +4434,11 @@ header {
 	.post-header {
 		display: none;
 	}
-	.blog .post-content-container, .single .post-content-container, .page-template-page-sidebar .post-content-container {
-	    padding: 0;
+	.blog .post-content-container, .page-template-page-sidebar .post-content-container {
+	    padding: 0 1em;
+	}
+	.single .post-content-container {
+		padding: 0;
 	}
 	.blog .inner {
 		padding: 1em;
