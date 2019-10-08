@@ -3953,6 +3953,7 @@ header {
 }
 .post-title-outer {
 	padding: 0 4em;
+	margin-bottom: 2em;
 }
 .page .left-side .full-span-content, .page .right-side .full-span-content {
 	max-width: 800px;
