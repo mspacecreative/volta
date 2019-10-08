@@ -4148,6 +4148,10 @@ header {
 .single main article a > span {
 	font-weight: 900!important;
 }
+.content-section .top-bottom-padding {
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
