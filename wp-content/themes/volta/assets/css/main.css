@@ -4131,6 +4131,11 @@ header {
 }
 #instafeed a h3 {
 	color: #000;
+	transition: 0.35s ease-in-out;
+}
+#instafeed a h3:hover {
+	color: #00dbb6;
+	transition: 0.35s ease-in-out;
 }
 @media (min-width: 1600px) {
 	#header {
