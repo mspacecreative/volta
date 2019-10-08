@@ -710,8 +710,8 @@ add_filter('the_title', 'the_title_trim');
 // PAGE SEARCH FORM
 function custom_page_search_form( $query ) {
     
-    if ($query->is_search && !is_admin() ) {
-            $query->set('post_type',array('page'));
+    if ($query->is_search) {
+            $query->set('post_type', page);
             
             $form_value = (isset($value)) ? $value : attribute_escape(apply_filters('the_search_query', get_search_query()));
             $form = '<form method="get" id="pagesearchform" action="' . get_option('home') . '/" >
