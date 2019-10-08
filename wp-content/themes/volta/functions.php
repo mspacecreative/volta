@@ -722,4 +722,3 @@ function custom_page_search_form( $query ) {
     }
     return $query;
 }
-add_filter('pre_get_posts','custom_page_search_form');
