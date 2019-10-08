@@ -11,7 +11,7 @@ $size = 'large';
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
 			<?php if ( get_field( 'external_link', $image['ID'] ) ): ?>
-			<a href="the_field( 'external_link', $image['ID'] );" target="_blank">
+			<a href="<?php the_field( 'external_link', $image['ID'] ); ?>" target="_blank">
 				<img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
 			</a>
 			<?php else : ?>
@@ -34,7 +34,7 @@ $size = 'medium';
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
 			<?php if ( get_field( 'external_link', $image['ID'] ) ): ?>
-			<a href="the_field( 'external_link', $image['ID'] );" target="_blank">
+			<a href="<?php the_field( 'external_link', $image['ID'] ); ?>" target="_blank">
 				<img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
 			</a>
 			<?php else : ?>
@@ -57,7 +57,7 @@ $size = 'medium';
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
 			<?php if ( get_field( 'external_link', $image['ID'] ) ): ?>
-			<a href="the_field( 'external_link', $image['ID'] );" target="_blank">
+			<a href="<?php the_field( 'external_link', $image['ID'] ); ?>" target="_blank">
 				<img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
 			</a>
 			<?php else : ?>
@@ -80,7 +80,7 @@ $size = 'medium';
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
 			<?php if ( get_field( 'external_link', $image['ID'] ) ): ?>
-			<a href="the_field( 'external_link', $image['ID'] );" target="_blank">
+			<a href="<?php the_field( 'external_link', $image['ID'] ); ?>" target="_blank">
 				<img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
 			</a>
 			<?php else : ?>
@@ -103,7 +103,7 @@ $size = 'medium';
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
 			<?php if ( get_field( 'external_link', $image['ID'] ) ): ?>
-			<a href="the_field( 'external_link', $image['ID'] );" target="_blank">
+			<a href="<?php the_field( 'external_link', $image['ID'] ); ?>" target="_blank">
 				<img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
 			</a>
 			<?php else : ?>
@@ -126,7 +126,7 @@ $size = 'medium';
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
 			<?php if ( get_field( 'external_link', $image['ID'] ) ): ?>
-			<a href="the_field( 'external_link', $image['ID'] );" target="_blank">
+			<a href="<?php the_field( 'external_link', $image['ID'] ); ?>" target="_blank">
 				<img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
 			</a>
 			<?php else : ?>
