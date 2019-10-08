@@ -4122,7 +4122,7 @@ header {
 .post-content-container .user-registration ul li {
 	text-indent: inherit;
 }
-.post-content-container .user-registration ul libefore {
+.post-content-container .user-registration ul li:before {
 	display: none;
 }
 .width-100 {
