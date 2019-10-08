@@ -10,12 +10,12 @@
 <?php if ( get_field('hide_featured_image_in_header') ): ?>
 
 <!-- Page wrapper -->
-<div id="page-wrapper" class="no-featured-image-in-header">
+<div id="page-wrapper" class="no-featured-image-in-header blog">
 	
 <?php else : ?>
 
 <!-- Page wrapper -->
-<div id="page-wrapper">
+<div id="page-wrapper" class="blog">
 
 	<!-- post thumbnail -->
 	<?php if ( get_field('featured_image_alignment') == 'top' ): ?>
