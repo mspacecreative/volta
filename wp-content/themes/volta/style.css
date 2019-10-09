@@ -188,7 +188,7 @@ input:focus {
 .aligncenter,
 div.aligncenter {
 	display:block;
-	margin:5px auto 5px auto;
+	margin: 25px auto;
 }
 .alignright {
 	float:right;
@@ -217,7 +217,7 @@ a img.aligncenter {
 .wp-caption {
 	background:#FFF;
 	border:1px solid #F0F0F0;
-	max-width:96%;
+	max-width: 100%;
 	padding:5px 3px 10px;
 	text-align:center;
 }
