@@ -3593,7 +3593,7 @@ img {
 .post-header {
 	width: 100%;
 	background-size: cover;
-	height: 400px;
+	height: 30em;
 	background-repeat: no-repeat;
 	position: relative;
 	z-index: 1;
