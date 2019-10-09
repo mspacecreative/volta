@@ -1,6 +1,4 @@
-<?php if ( have_posts() ): ?>
-	<h1>Pages</h1>
-<?php endif; ?>
+<h1>Pages</h1>
 
 <?php while ( have_posts() ): the_post(); ?>
 
@@ -45,6 +43,8 @@
 	<?php } ?>
 	
 <?php endwhile; rewind_posts(); ?>
+
+<h1>Blog Posts</h1>
 
 <div id="instafeed" class="iso-grid">
 	

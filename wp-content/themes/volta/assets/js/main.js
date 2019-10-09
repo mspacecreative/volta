@@ -6,6 +6,10 @@
 
 (function($) {
 	
+	if ( $('.search .inner h1').next('#instafeed') ) {
+		$(this).remove();
+	}
+	
 	function calcNegativeMargins() {
 		if (window.matchMedia("(min-width: 1600px)").matches) {
 			
