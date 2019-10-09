@@ -1,6 +1,6 @@
-<?php while ( have_posts() ): the_post(); ?>
+<?php if ( $post->post_type == 'page' ) { ?>
 
-	<?php if ( $post->post_type == 'page' ) { ?>
+<?php while ( have_posts() ): the_post(); ?>
 
 	<!-- article -->
 	<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'clear', 'display-flex' )); ?>>
@@ -38,18 +38,18 @@
 	</article>
 	<!-- /article -->
 	
-	<?php } ?>
-	
 <?php endwhile; rewind_posts(); ?>
+
+<?php } ?>
 
 <div id="instafeed" class="iso-grid">
 	
 	<div class="grid-sizer"></div>
 	<div class="gutter-sizer"></div>
 
-<?php while ( have_posts() ): the_post(); ?>
+<?php if ( $post->post_type == 'post' ) { ?>
 
-	<?php if ( $post->post_type == 'post' ) { ?>
+<?php while ( have_posts() ): the_post(); ?>
 
 	<div class="grid-item <?php echo $term->slug ?>">
 		<div class="grid-inner">
@@ -91,8 +91,8 @@
 		</div>
 	</div>
 	
-	<?php } ?>
-	
 <?php endwhile; ?>
+
+<?php } ?>
 
 </div>
