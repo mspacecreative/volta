@@ -3805,6 +3805,8 @@ form input.search-submit[type=submit]:hover {
 	width: 71%;
 	margin-right: 5%;
 	color: #fff;
+	border-radius: 0;
+	-webkit-appearance: none;
 }
 .post-content-container ul {
 	margin: 1em 0;
@@ -4149,6 +4151,9 @@ header {
 	.background {
 		background-size: 100%;
 	}
+	.search-window .search-input {
+		margin-right: 0;
+	}
 	#intro-buckets.wrapper {
 		background-image: none;
 		background-color: #f0f4f4;
@@ -4242,6 +4247,9 @@ header {
 @media (max-width: 450px) {
 	.tiles .tall-image {
 		min-height: 400px;
+	}
+	.search-window .search-input {
+		margin-right: 0;
 	}
 	.alignright, .alignleft {
 		max-width: 40%!important;
