@@ -6,6 +6,12 @@
 
 (function($) {
 	
+	$('.search .inner > h1').each(function () {
+		if ( $(this).next('h1')[0] ) {
+			$(this).not($(this).remove());
+		}
+	});
+	
 	if ( $('.search .inner > h1').next('h1')[0] ) {
 		$(this).remove();
 	}
