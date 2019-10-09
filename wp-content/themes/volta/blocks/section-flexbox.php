@@ -21,7 +21,11 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
+				
+				<?php if ( get_sub_field('link') ): ?>
 				<a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('label'); ?></a>
+				<?php endif; ?>
+				
 				<?php endwhile; ?>
 				<?php endif; ?>
 				
@@ -46,7 +50,11 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
+				
+				<?php if ( get_sub_field('link') ): ?>
 				<a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('label'); ?></a>
+				<?php endif; ?>
+				
 				<?php endwhile; ?>
 				<?php endif; ?>
 				
@@ -71,7 +79,11 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
+				
+				<?php if ( get_sub_field('link') ): ?>
 				<a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('label'); ?></a>
+				<?php endif; ?>
+				
 				<?php endwhile; ?>
 				<?php endif; ?>
 				
@@ -96,7 +108,11 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
+				
+				<?php if ( get_sub_field('link') ): ?>
 				<a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('label'); ?></a>
+				<?php endif; ?>
+				
 				<?php endwhile; ?>
 				<?php endif; ?>
 				
@@ -129,7 +145,11 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
+				
+				<?php if ( get_sub_field('link') ): ?>
 				<a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('label'); ?></a>
+				<?php endif; ?>
+				
 				<?php endwhile; ?>
 				<?php endif; ?>
 				
@@ -154,7 +174,11 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
+				
+				<?php if ( get_sub_field('link') ): ?>
 				<a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('label'); ?></a>
+				<?php endif; ?>
+				
 				<?php endwhile; ?>
 				<?php endif; ?>
 				
@@ -179,7 +203,11 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
+				
+				<?php if ( get_sub_field('link') ): ?>
 				<a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('label'); ?></a>
+				<?php endif; ?>
+				
 				<?php endwhile; ?>
 				<?php endif; ?>
 				
@@ -204,7 +232,11 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
+				
+				<?php if ( get_sub_field('link') ): ?>
 				<a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('label'); ?></a>
+				<?php endif; ?>
+				
 				<?php endwhile; ?>
 				<?php endif; ?>
 				
@@ -237,7 +269,11 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
+				
+				<?php if ( get_sub_field('link') ): ?>
 				<a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('label'); ?></a>
+				<?php endif; ?>
+				
 				<?php endwhile; ?>
 				<?php endif; ?>
 				
@@ -262,7 +298,11 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
+				
+				<?php if ( get_sub_field('link') ): ?>
 				<a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('label'); ?></a>
+				<?php endif; ?>
+				
 				<?php endwhile; ?>
 				<?php endif; ?>
 				
@@ -287,7 +327,11 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 				
 				<?php if( have_rows('button') ): ?>
 				<?php while( have_rows('button') ): the_row(); ?>
+				
+				<?php if ( get_sub_field('link') ): ?>
 				<a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('label'); ?></a>
+				<?php endif; ?>
+				
 				<?php endwhile; ?>
 				<?php endif; ?>
 				
