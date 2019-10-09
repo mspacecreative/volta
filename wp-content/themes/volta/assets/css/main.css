@@ -4392,9 +4392,6 @@ header {
 	.icon-buckets .inner {
 		width: 100%;
 	}
-	.icon-buckets .align-center {
-		text-align: left;
-	}
 	#footer .contact ul {
 		flex-basis: 100%;
 		width: 100%;
