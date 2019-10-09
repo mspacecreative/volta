@@ -6,7 +6,7 @@
 
 (function($) {
 	
-	if ( $('.search .inner h1').next('#instafeed') ) {
+	if ( $('.search .inner > h1').next('h1') ) {
 		$(this).remove();
 	}
 	
