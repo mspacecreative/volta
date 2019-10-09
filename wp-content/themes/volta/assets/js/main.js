@@ -6,8 +6,8 @@
 
 (function($) {
 	
-	$('.search .inner > h1').each(function () {
-		if ( $(this).next('h1')[0] ) {
+	$('.search .inner > h2').each(function () {
+		if ( $(this).next('h2')[0] ) {
 			$(this).not($(this).remove());
 		}
 	});

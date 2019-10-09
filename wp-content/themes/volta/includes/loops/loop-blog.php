@@ -1,4 +1,4 @@
-<h1>Pages</h1>
+<h2 style="margin-bottom: 50px;">Pages</h2>
 
 <?php while ( have_posts() ): the_post(); ?>
 
@@ -22,8 +22,8 @@
 		<!-- /post thumbnail -->
 	
 		<!-- post title -->
-		<div class="two-third">
-		<h2>
+		<div class="two-third" style="max-width: 600px;">
+		<h2 style="margin-top: 0;">
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 		</h2>
 		<!-- /post title -->
@@ -44,7 +44,7 @@
 	
 <?php endwhile; rewind_posts(); ?>
 
-<h1>Blog Posts</h1>
+<h2 style="margin-bottom: 50px;">Blog Posts</h2>
 
 <div id="instafeed" class="iso-grid">
 	
