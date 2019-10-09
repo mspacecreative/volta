@@ -59,7 +59,7 @@ if ( $loop->have_posts() ) : ?>
 	<div class="grid-sizer"></div>
 	<div class="gutter-sizer"></div>
 
-<?php while (have_posts()) : the_post(); ?>
+<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
 	<div class="grid-item <?php echo $term->slug ?>">
 		<div class="grid-inner">
