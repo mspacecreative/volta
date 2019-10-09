@@ -1,6 +1,10 @@
-<?php if ( $post->post_type == 'page' ) { ?>
+<?php if ( have_posts() ): ?>
+	<h1>Pages</h1>
+<?php endif; ?>
 
 <?php while ( have_posts() ): the_post(); ?>
+
+	<?php if ( $post->post_type == 'page' ) { ?>
 
 	<!-- article -->
 	<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'clear', 'display-flex' )); ?>>
@@ -38,11 +42,9 @@
 	</article>
 	<!-- /article -->
 	
+	<?php } ?>
+	
 <?php endwhile; rewind_posts(); ?>
-
-<?php } ?>
-
-<?php elseif ( $post->post_type == 'post' ) { ?>
 
 <div id="instafeed" class="iso-grid">
 	
@@ -50,6 +52,8 @@
 	<div class="gutter-sizer"></div>
 
 <?php while ( have_posts() ): the_post(); ?>
+
+	<?php if ( $post->post_type == 'post' ) { ?>
 
 	<div class="grid-item <?php echo $term->slug ?>">
 		<div class="grid-inner">
@@ -91,8 +95,8 @@
 		</div>
 	</div>
 	
+	<?php } ?>
+	
 <?php endwhile; ?>
 
 </div>
-
-<?php } ?>
