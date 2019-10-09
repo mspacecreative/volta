@@ -5,6 +5,8 @@
 	<!-- article -->
 	<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'clear', 'display-flex' )); ?>>
 		
+		<h1>Pages</h1>
+		
 		<!-- post thumbnail -->
 		<div class="one-third">
 		<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
@@ -43,6 +45,8 @@
 <?php while (have_posts()) : the_post(); ?>
 
 	<?php if ( $post->post_type == 'post' ) { ?>
+	
+	<h1>Blog Posts</h1>
 
 	<div class="grid-item <?php echo $term->slug ?>">
 		<div class="grid-inner">
