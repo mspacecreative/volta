@@ -7,7 +7,7 @@
 (function($) {
 	
 	if ( $('.search .inner > h1').next('h1')[0] ) {
-		$('.search .inner > h1').remove();
+		$(this).remove();
 	}
 	
 	function calcNegativeMargins() {
