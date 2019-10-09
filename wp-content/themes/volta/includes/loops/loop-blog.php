@@ -42,12 +42,12 @@
 
 <?php } ?>
 
+<?php elseif ( $post->post_type == 'post' ) { ?>
+
 <div id="instafeed" class="iso-grid">
 	
 	<div class="grid-sizer"></div>
 	<div class="gutter-sizer"></div>
-
-<?php if ( $post->post_type == 'post' ) { ?>
 
 <?php while ( have_posts() ): the_post(); ?>
 
@@ -93,6 +93,6 @@
 	
 <?php endwhile; ?>
 
-<?php } ?>
-
 </div>
+
+<?php } ?>
