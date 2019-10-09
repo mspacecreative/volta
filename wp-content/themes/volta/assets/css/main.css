@@ -4018,6 +4018,9 @@ header {
 .plage .addthis_tool {
 	display: none;
 }
+.at-share-btn-elements button {
+	background-color: #000!important;
+}
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
