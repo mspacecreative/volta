@@ -26,7 +26,11 @@
 		</h2>
 		<!-- /post title -->
 	
-		<?php the_excerpt(); // Build your custom callback length in functions.php ?>
+		<?php if ( has_excerpt() ) {
+			the_excerpt();
+		} else {
+			the_content();
+		} // Build your custom callback length in functions.php ?>
 	
 		<?php edit_post_link(); ?>
 		</div>
