@@ -37,6 +37,9 @@
 <?php endwhile; rewind_posts(); ?>
 
 <?php if ( have_posts() ): ?>
+
+<h1>Blog Posts</h1>
+
 <div id="instafeed" class="iso-grid">
 	
 	<div class="grid-sizer"></div>
@@ -45,8 +48,6 @@
 <?php while (have_posts()) : the_post(); ?>
 
 	<?php if ( $post->post_type == 'post' ) { ?>
-	
-	<h1>Blog Posts</h1>
 
 	<div class="grid-item <?php echo $term->slug ?>">
 		<div class="grid-inner">
