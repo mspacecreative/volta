@@ -4015,6 +4015,9 @@ header {
 .addthis_tool {
 	margin: 25px 0 4em 0;
 }
+.plage .addthis_tool {
+	display: none;
+}
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
