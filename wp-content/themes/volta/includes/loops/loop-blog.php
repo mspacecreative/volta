@@ -11,6 +11,10 @@
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 				<?php the_post_thumbnail(array(200,200)); // Declare pixel size you need inside the array ?>
 			</a>
+		<?php else : ?>
+			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/placeholders/volta-events.jpg">
+			</a>
 		<?php endif; ?>
 		</div>
 		<!-- /post thumbnail -->
@@ -52,9 +56,13 @@
 					<?php the_field('video_embed'); ?>
 				</div>
 			
-			<?php else : ?>
+			<?php elseif ( has_post_thumbnail()) : ?>
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 					<?php the_post_thumbnail('large'); // Declare pixel size you need inside the array ?>
+				</a>
+			<?php else : ?>
+				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/placeholders/volta-events.jpg">
 				</a>
 			<?php endif; ?>
 			<!-- /post thumbnail -->
