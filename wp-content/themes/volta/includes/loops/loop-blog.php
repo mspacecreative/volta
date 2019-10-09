@@ -34,6 +34,12 @@
 	
 <?php endwhile; rewind_posts(); ?>
 
+<?php if ( have_posts() ): ?>
+<div id="instafeed" class="iso-grid">
+	
+	<div class="grid-sizer"></div>
+	<div class="gutter-sizer"></div>
+
 <?php while (have_posts()) : the_post(); ?>
 
 	<?php if ( $post->post_type == 'post' ) { ?>
@@ -77,3 +83,6 @@
 	<?php } ?>
 	
 <?php endwhile; ?>
+
+</div>
+<?php endif; ?>
