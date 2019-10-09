@@ -1,47 +1,56 @@
-<?php if ( have_posts() ): ?>
+<?php $loop = new WP_Query( array( 
+	'post_type' => 'page',
+	'posts_per_page' => -1,
+	'orderby'=> 'title', 
+	'order' => 'ASC'
+	)
+);
 
-	<?php if ( $post->post_type == 'page' ) { ?>
-	<h1>Pages</h1>
+if ( $loop->have_posts() ) : ?>
+    
+<h1>Pages</h1>
+    
+    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-	<?php while (have_posts()) : the_post(); ?>
+	<!-- article -->
+	<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'clear', 'display-flex' )); ?>>
+		
+		<!-- post thumbnail -->
+		<div class="one-third">
+		<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
+			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+				<?php the_post_thumbnail(array(200,200)); // Declare pixel size you need inside the array ?>
+			</a>
+		<?php endif; ?>
+		</div>
+		<!-- /post thumbnail -->
 	
-		<?php if ( $post->post_type == 'page' ) { ?>
+		<!-- post title -->
+		<div class="two-third">
+		<h2>
+			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+		</h2>
+		<!-- /post title -->
 	
-		<!-- article -->
-		<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'clear', 'display-flex' )); ?>>
-			
-			<!-- post thumbnail -->
-			<div class="one-third">
-			<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<?php the_post_thumbnail(array(200,200)); // Declare pixel size you need inside the array ?>
-				</a>
-			<?php endif; ?>
-			</div>
-			<!-- /post thumbnail -->
-		
-			<!-- post title -->
-			<div class="two-third">
-			<h2>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-			</h2>
-			<!-- /post title -->
-		
-			<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
-		
-			<?php edit_post_link(); ?>
-			</div>
-		
-		</article>
-		<!-- /article -->
-		
-	<?php endwhile; ?>
+		<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
 	
-	<?php } ?>
+		<?php edit_post_link(); ?>
+		</div>
 	
-<?php endif; rewind_posts(); ?>
+	</article>
+	<!-- /article -->
+	
+<?php endwhile
+endif; rewind_posts(); ?>
 
-<?php if ( have_posts() ): ?>
+<?php $loop = new WP_Query( array( 
+	'post_type' => 'post',
+	'posts_per_page' => -1,
+	'order' => 'ASC'
+	)
+);
+
+if ( $loop->have_posts() ) : ?>
 
 <h1>Blog Posts</h1>
 
@@ -51,8 +60,6 @@
 	<div class="gutter-sizer"></div>
 
 <?php while (have_posts()) : the_post(); ?>
-
-	<?php if ( $post->post_type == 'post' ) { ?>
 
 	<div class="grid-item <?php echo $term->slug ?>">
 		<div class="grid-inner">
@@ -89,8 +96,6 @@
 			
 		</div>
 	</div>
-	
-	<?php } ?>
 	
 <?php endwhile; ?>
 
