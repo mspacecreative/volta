@@ -100,4 +100,4 @@ if ( $query->have_posts() ) : ?>
 <?php endwhile; ?>
 
 </div>
-<?php endif; ?>
+<?php endif; wp_reset_query(); ?>
