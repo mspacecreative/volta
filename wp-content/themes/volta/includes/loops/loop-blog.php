@@ -1,8 +1,10 @@
-<?php if ( have_posts( $post->post_type == 'page' ) ): ?>
+<?php if ( have_posts() ): ?>
 
 	<h1>Pages</h1>
 
-<?php while ( have_posts( $post->post_type == 'page' ) ) : the_post(); ?>
+<?php while ( have_posts() ): the_post(); ?>
+
+	<?php if ( $post->post_type == 'page' ) { ?>
 
 	<!-- article -->
 	<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'clear', 'display-flex' )); ?>>
@@ -32,6 +34,8 @@
 	</article>
 	<!-- /article -->
 	
+	<?php } ?>
+	
 <?php endif;
 endwhile; rewind_posts(); ?>
 
@@ -41,7 +45,7 @@ endwhile; rewind_posts(); ?>
 	<div class="grid-sizer"></div>
 	<div class="gutter-sizer"></div>
 
-<?php while (have_posts()) : the_post(); ?>
+<?php while ( have_posts() ): the_post(); ?>
 
 	<?php if ( $post->post_type == 'post' ) { ?>
 
