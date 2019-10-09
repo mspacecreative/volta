@@ -36,7 +36,7 @@
 		
 		<?php } ?>
 		
-	<?php endwhile
+	<?php endwhile;
 endif; rewind_posts(); ?>
 
 <?php if ( have_posts() ): ?>
