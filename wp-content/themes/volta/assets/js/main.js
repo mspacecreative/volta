@@ -6,7 +6,7 @@
 
 (function($) {
 	
-	if ( $('.search .inner > h1').next('h1') ) {
+	if ( $('.search .inner > h1').next('h1').length ) {
 		$(this).remove();
 	}
 	
