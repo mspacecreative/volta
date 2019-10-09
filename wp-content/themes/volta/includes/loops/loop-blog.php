@@ -1,5 +1,5 @@
 <?php $loop = new WP_Query( array( 
-	'post_type' => 'page',
+	'post_type' => 'pages',
 	'posts_per_page' => -1,
 	'orderby'=> 'title', 
 	'order' => 'ASC'
@@ -44,7 +44,7 @@ if ( $loop->have_posts() ) : ?>
 endif; rewind_posts(); ?>
 
 <?php $query = new WP_Query( array( 
-	'post_type' => 'post',
+	'post_type' => 'posts',
 	'posts_per_page' => -1,
 	'order' => 'ASC'
 	)
