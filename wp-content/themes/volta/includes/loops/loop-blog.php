@@ -23,9 +23,9 @@
 	
 		<!-- post title -->
 		<div class="two-third" style="max-width: 600px;">
-		<h2 style="margin-top: 0;">
+		<h3 style="margin-top: 0;">
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-		</h2>
+		</h3>
 		<!-- /post title -->
 	
 		<?php if ( has_excerpt() ) {
