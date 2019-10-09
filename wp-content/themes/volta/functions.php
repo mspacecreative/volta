@@ -305,10 +305,10 @@ function html5_blank_view_article($more)
 }
 
 // Remove Admin bar
-function remove_admin_bar()
+/*function remove_admin_bar()
 {
     return false;
-}
+}*/
 
 // Remove 'text/css' from our enqueued stylesheet
 function html5_style_remove($tag)
