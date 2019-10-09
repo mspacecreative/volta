@@ -18,7 +18,7 @@
 	
 	$('.post-content-container ul').each(function () {
 	
-		if ( $('.post-content-container ul').next().length ) {
+		if ( $(this).next()[0] ) {
 			$(this).css('margin-bottom', '1em');
 		} else {
 			$(this).css('margin-bottom', '0');
