@@ -4012,10 +4012,10 @@ header {
 	padding-top: 4em;
 	padding-bottom: 4em;
 }
-.addthis_tool {
+.at-below-post {
 	margin: 25px 0 4em 0;
 }
-.page .addthis_tool, .post-container > .addthis_tool {
+.at-above-post {
 	display: none;
 }
 .at-share-btn-elements .at-share-btn {
