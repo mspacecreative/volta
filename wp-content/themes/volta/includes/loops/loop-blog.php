@@ -1,4 +1,3 @@
-<?php if ( have_posts() ): ?>
 <?php while (have_posts()) : the_post(); ?>
 
 	<?php if ( $post->post_type == 'page' ) { ?>
@@ -33,8 +32,7 @@
 	
 	<?php } ?>
 	
-<?php endif;
-endwhile; rewind_posts(); ?>
+<?php endwhile; rewind_posts(); ?>
 
 <?php if ( have_posts() ): ?>
 <div id="instafeed" class="iso-grid">
