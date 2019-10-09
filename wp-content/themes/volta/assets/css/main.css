@@ -4012,6 +4012,9 @@ header {
 	padding-top: 4em;
 	padding-bottom: 4em;
 }
+.addthis_tool {
+	margin: 25px 0 4em 0;
+}
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
@@ -4019,6 +4022,9 @@ header {
 	.single .post-container > .container {
 	    padding-right: 0;
 	    padding-left: 0;
+	}
+	.addthis_tool {
+		margin: 25px 0 4em 0;
 	}
 	.default-padding {
 		padding: 0 2em;
@@ -4247,6 +4253,9 @@ header {
 @media (max-width: 450px) {
 	.tiles .tall-image {
 		min-height: 400px;
+	}
+	.addthis_tool {
+		margin: 25px 0 4em 0;
 	}
 	.search-window .search-input {
 		margin-right: 0;
