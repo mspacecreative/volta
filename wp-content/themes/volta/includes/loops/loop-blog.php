@@ -39,4 +39,4 @@
 	
 	<?php } ?>
 	
-<?php endwhile; rewind_posts(); ?>
+<?php endwhile; ?>
