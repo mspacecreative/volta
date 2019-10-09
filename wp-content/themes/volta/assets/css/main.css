@@ -4021,6 +4021,12 @@ header {
 .at-share-btn-elements .at-share-btn {
 	background-color: #000!important;
 }
+.at-share-btn-elements .at-share-btn:hover svg {
+	fill: #00dbb6;
+}
+.at-share-btn-elements .at-share-btn:hover .at-label {
+	color: #00dbb6;
+}
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
