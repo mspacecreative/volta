@@ -41,7 +41,7 @@ if ( $loop->have_posts() ) : ?>
 	<!-- /article -->
 	
 <?php endwhile
-endif; rewind_posts(); ?>
+endif; wp_reset_query(); ?>
 
 <?php $query = new WP_Query( array( 
 	'post_type' => 'posts',
