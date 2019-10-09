@@ -6,8 +6,8 @@
 
 (function($) {
 	
-	if ( $('.search .inner > h1').next('h1').length ) {
-		$(this).remove();
+	if ( $('.search .inner > h1').next('h1')[0] ) {
+		$('.search .inner > h1').remove();
 	}
 	
 	function calcNegativeMargins() {
