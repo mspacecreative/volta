@@ -4015,6 +4015,12 @@ header {
 .at-below-post ~ .addthis_tool {
 	margin: 25px 0 4em 0;
 }
+.addthis_tool ~ .post-meta-container {
+	border-top: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
+	padding-bottom: 1em;
+	margin-top: 2em;
+}
 .at-above-post {
 	display: none;
 }
