@@ -62,7 +62,7 @@
 					<!-- /post title -->
 						
 					<div class="inner">
-						<?php get_template_part('includes/loops/loop-masonry'); ?>
+						<?php get_template_part('includes/loops/loop-blog'); ?>
 					
 						<?php get_template_part('pagination'); ?>
 					</div>
