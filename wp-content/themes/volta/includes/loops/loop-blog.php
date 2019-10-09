@@ -1,11 +1,11 @@
+<h1>Pages</h1>
+
 <?php while (have_posts()) : the_post(); ?>
 
 	<?php if ( $post->post_type == 'page' ) { ?>
 
 	<!-- article -->
 	<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'clear', 'display-flex' )); ?>>
-		
-		<h1>Pages</h1>
 		
 		<!-- post thumbnail -->
 		<div class="one-third">
