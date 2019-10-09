@@ -1,6 +1,8 @@
-<?php while (have_posts()) : the_post(); ?>
+<?php if ( have_posts( $post->post_type == 'page' ) ): ?>
 
-	<?php if ( $post->post_type == 'page' ) { ?>
+	<h1>Pages</h1>
+
+<?php while ( have_posts( $post->post_type == 'page' ) ) : the_post(); ?>
 
 	<!-- article -->
 	<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'clear', 'display-flex' )); ?>>
@@ -30,9 +32,8 @@
 	</article>
 	<!-- /article -->
 	
-	<?php } ?>
-	
-<?php endwhile; rewind_posts(); ?>
+<?php endif;
+endwhile; rewind_posts(); ?>
 
 <?php if ( have_posts() ): ?>
 <div id="instafeed" class="iso-grid">
