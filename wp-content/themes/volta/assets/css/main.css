@@ -4012,7 +4012,7 @@ header {
 	padding-top: 4em;
 	padding-bottom: 4em;
 }
-.at-below-post {
+.at-below-post ~ .addthis_tool {
 	margin: 25px 0 4em 0;
 }
 .at-above-post {
