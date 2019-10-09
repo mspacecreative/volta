@@ -29,7 +29,7 @@
 		<?php if ( has_excerpt() ) {
 			the_excerpt();
 		} else {
-			echo wp_trim_words( get_the_content(), 40, '...' );
+			echo wp_trim_words( get_the_content(), 40 );
 		} // Build your custom callback length in functions.php ?>
 	
 		<?php edit_post_link(); ?>
