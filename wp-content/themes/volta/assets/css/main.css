@@ -4015,7 +4015,7 @@ header {
 .addthis_tool {
 	margin: 25px 0 4em 0;
 }
-.page .addthis_tool {
+.page .addthis_tool, .post-container > .addthis_tool {
 	display: none;
 }
 .at-share-btn-elements .at-share-btn {
