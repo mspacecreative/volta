@@ -43,14 +43,14 @@ if ( $loop->have_posts() ) : ?>
 <?php endwhile
 endif; rewind_posts(); ?>
 
-<?php $loop = new WP_Query( array( 
+<?php $query = new WP_Query( array( 
 	'post_type' => 'post',
 	'posts_per_page' => -1,
 	'order' => 'ASC'
 	)
 );
 
-if ( $loop->have_posts() ) : ?>
+if ( $query->have_posts() ) : ?>
 
 <h1>Blog Posts</h1>
 
@@ -59,7 +59,7 @@ if ( $loop->have_posts() ) : ?>
 	<div class="grid-sizer"></div>
 	<div class="gutter-sizer"></div>
 
-<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
 	<div class="grid-item <?php echo $term->slug ?>">
 		<div class="grid-inner">
