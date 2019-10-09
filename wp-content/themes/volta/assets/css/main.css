@@ -4015,10 +4015,10 @@ header {
 .addthis_tool {
 	margin: 25px 0 4em 0;
 }
-.plage .addthis_tool {
+.page .addthis_tool {
 	display: none;
 }
-.at-share-btn-elements button {
+.at-share-btn-elements .at-share-btn {
 	background-color: #000!important;
 }
 @media (max-width: 812px) and (orientation:landscape) {
