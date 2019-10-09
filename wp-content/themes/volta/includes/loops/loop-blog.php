@@ -27,7 +27,7 @@
 		<!-- /post title -->
 	
 		<?php if ( has_excerpt() ) {
-			the_excerpt( '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>' );
+			the_excerpt();
 		} else {
 			echo wp_trim_words( get_the_content(), 40, '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>' );
 		} // Build your custom callback length in functions.php ?>
