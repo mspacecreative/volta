@@ -59,7 +59,7 @@
 		
 			<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
 		
-		<?php else : endif; ?>
+		<?php } ?>
 	
 		<?php edit_post_link(); ?>
 		</div>
@@ -77,4 +77,4 @@
 	</article>
 	<!-- /article -->
 
-<?php endif; ?>
+<?php endif; rewind_posts(); ?> ?>
