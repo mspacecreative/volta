@@ -1,6 +1,7 @@
 <?php if ( have_posts() ): ?>
 
-<h1>Pages</h1>
+	<?php if ( $post->post_type == 'page' ) { ?>
+	<h1>Pages</h1>
 
 	<?php while (have_posts()) : the_post(); ?>
 	
@@ -34,10 +35,11 @@
 		</article>
 		<!-- /article -->
 		
-		<?php } ?>
-		
-	<?php endwhile;
-endif; rewind_posts(); ?>
+	<?php endwhile; ?>
+	
+	<?php } ?>
+	
+<?php endif; rewind_posts(); ?>
 
 <?php if ( have_posts() ): ?>
 
