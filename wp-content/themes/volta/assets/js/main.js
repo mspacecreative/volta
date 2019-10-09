@@ -16,6 +16,16 @@
 		$(this).remove();
 	}
 	
+	$('.post-content-container ul').each(function () {
+	
+		if ( $('.post-content-container ul').next().length ) {
+			$(this).css('margin-bottom', '1em');
+		} else {
+			$(this).css('margin-bottom', '0');
+		}
+		
+	});
+	
 	function calcNegativeMargins() {
 		if (window.matchMedia("(min-width: 1600px)").matches) {
 			
