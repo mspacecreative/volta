@@ -1,16 +1,10 @@
-<?php $loop = new WP_Query( array( 
-	'post_type' => 'pages',
-	'posts_per_page' => -1,
-	'orderby'=> 'title', 
-	'order' => 'ASC'
-	)
-);
+<?php if ( have_posts() ): ?>
 
-if ( $loop->have_posts() ) : ?>
-    
-<h1>Pages</h1>
-    
-    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+<?php while (have_posts()) : the_post(); ?>
+
+	<h1>Pages</h1>
+
+	<?php if ( $post->post_type == 'page' ) { ?>
 
 	<!-- article -->
 	<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'clear', 'display-flex' )); ?>>
@@ -40,17 +34,11 @@ if ( $loop->have_posts() ) : ?>
 	</article>
 	<!-- /article -->
 	
-<?php endwhile
-endif; wp_reset_query(); ?>
+	<?php } ?>
+	
+<?php endwhile; rewind_posts(); ?>
 
-<?php $query = new WP_Query( array( 
-	'post_type' => 'posts',
-	'posts_per_page' => -1,
-	'order' => 'ASC'
-	)
-);
-
-if ( $query->have_posts() ) : ?>
+<?php if ( have_posts() ): ?>
 
 <h1>Blog Posts</h1>
 
@@ -59,7 +47,9 @@ if ( $query->have_posts() ) : ?>
 	<div class="grid-sizer"></div>
 	<div class="gutter-sizer"></div>
 
-<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+<?php while (have_posts()) : the_post(); ?>
+
+	<?php if ( $post->post_type == 'post' ) { ?>
 
 	<div class="grid-item <?php echo $term->slug ?>">
 		<div class="grid-inner">
@@ -97,7 +87,9 @@ if ( $query->have_posts() ) : ?>
 		</div>
 	</div>
 	
+	<?php } ?>
+	
 <?php endwhile; ?>
 
 </div>
-<?php endif; wp_reset_query(); ?>
+<?php endif; ?>
