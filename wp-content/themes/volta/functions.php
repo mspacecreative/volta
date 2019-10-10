@@ -643,6 +643,14 @@ function relatedPosts() {
 }
 add_shortcode( 'related_posts', 'relatedPosts' );
 
+// RELATED POSTS 2
+function relatedPosts2() {
+	ob_start();
+		get_template_part('includes/related-posts-2');
+	return ob_get_clean();
+}
+add_shortcode( 'related_posts_2', 'relatedPosts2' );
+
 // CURRENT RESIDENTS POSTS LOOP
 function currentResidents() {
 	ob_start();

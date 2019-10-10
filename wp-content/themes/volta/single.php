@@ -97,7 +97,7 @@
 									
 									<?php echo do_shortcode('[addthis tool="addthis_inline_share_toolbox_5n4c"]'); ?>
 									
-									<?php echo do_shortcode('[related_posts]'); ?>
+									<?php echo do_shortcode('[related_posts_2]'); ?>
 									
 									<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
 									
