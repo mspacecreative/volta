@@ -198,7 +198,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 	</header>
 	
 	<?php else : ?>
-	<header class="light max-width-800">
+	<header class="max-width-800">
 		
 		<?php
 		$headingsize = get_field('heading_size');
