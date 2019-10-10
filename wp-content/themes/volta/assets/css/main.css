@@ -134,6 +134,7 @@ input, select, textarea {
 	.post-meta-container, .post-meta-container p {
 		font-size: 15px;
 		margin: 1em 0 0;
+		line-height: 1.5em;
 	}
 
 	h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {

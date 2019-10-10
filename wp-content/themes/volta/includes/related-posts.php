@@ -46,7 +46,7 @@ if( $related->have_posts() ) {
         			<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
         			<!-- /post details -->
         			
-        			<?php html5wp_excerpt('html5wp_index'); ?>
+        			<a class="view-article" style="display: inline-block;" href="<?php get_permalink($post->ID); ?>"><?php esc_html_e('Read Article'); ?></a>
         			
         		</div>
         		
