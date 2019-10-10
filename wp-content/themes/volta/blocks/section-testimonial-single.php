@@ -11,7 +11,7 @@ if( $post_object ):
 	?>
 
 	<section class="banner">
-		<?php the_title(); ?>
+		<?php the_title($post->ID); ?>
 		<?php the_field('title__position'); ?>
 		<?php the_field('company'); ?>
 	</section>
