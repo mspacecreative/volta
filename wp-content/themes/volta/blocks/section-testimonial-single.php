@@ -29,9 +29,8 @@ if ( $loop->have_posts() ) :
 			
 			<?php the_content();
 		
-		wp_reset_postdata(); 
-		endif; ?>
-		
-	<?php else : ?>
-	<p>No testimonial was found</p>
-<?php endif; wp_reset_postdata(); ?>
+		endif;
+		wp_reset_postdata(); ?>
+	
+	<?php endwhile;
+endif; wp_reset_postdata(); ?>
