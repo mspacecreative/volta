@@ -19,4 +19,5 @@ if( $post_object ):
 		<?php the_field('company'); ?>
 	</section>
 	
-<?php endif; ?>
+<?php wp_reset_postdata(); 
+endif; ?>
