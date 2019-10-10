@@ -46,7 +46,7 @@ if( $related->have_posts() ) {
         			<a href="<?php the_permalink(); ?>"><h3 style="font-size: 18px; line-height: 1.35em;"><?php the_title(); ?></h3></a>
         			<!-- /post details -->
         			
-        			<a class="view-article" style="display: inline-block;" href="<?php get_permalink($post->ID); ?>"><?php esc_html_e('Read Article'); ?></a>
+        			<a class="view-article" style="display: inline-block; font-size: 15px;" href="<?php the_permalink(); ?>"><?php esc_html_e('Read Article'); ?></a>
         			
         		</div>
         		
