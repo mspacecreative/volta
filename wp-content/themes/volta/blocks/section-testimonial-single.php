@@ -14,18 +14,13 @@ if ( $loop->have_posts() ) :
 		$post = $post_object;
 		setup_postdata( $post );
 		$object_id = $post->ID;
-		echo 	'<section>
-					article>'
-						if ( has_post_thumbnail() ): {
-							echo the_post_thumbnail( array(200,200) );
-						}
-						echo the_title();
-					echo '<p>
-							<span class="testimonial-position">';
-							echo the_field( 'title__position', $object_id );
-					echo 	'</span>';
-		echo 		'</article>'
-			 	'</section>';
+		if ( has_post_thumbnail() ): {
+			echo the_post_thumbnail( array(200,200) );
+		}
+		echo '<h4>' . the_title() . '</h4>';
+		echo the_field( 'title__position', $object_id );
+		echo the_field( 'company', $object_id );
+		echo the_content();
 		
 	wp_reset_postdata(); 
 	endif;
