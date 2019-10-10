@@ -7,7 +7,7 @@ if( $post_object ):
 	// override $post
 	$post = $post_object;
 	setup_postdata( $post );
-	echo the_title();
+	echo the_title($post);
 	echo the_content();
 	?>
 	
