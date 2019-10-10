@@ -1,5 +1,5 @@
 <?php
-while ( have_posts() ): the_post();
+if ( have_posts() ) : while ( have_posts() ): the_post();
 
 $post_object = get_field('testimonial');
 
@@ -17,5 +17,4 @@ if( $post_object ):
 <?php wp_reset_postdata(); 
 endif; ?>
 
-<?php wp_reset_postdata();
-endwhile; ?>
+<?php endwhile; endif; wp_reset_postdata(); ?>
