@@ -4013,14 +4013,11 @@ header {
 	padding-top: 4em;
 	padding-bottom: 4em;
 }
-.at-below-post ~ .addthis_tool {
-	margin: 25px 0 4em 0;
-}
 .addthis_tool ~ .post-meta-container {
 	border-top: 1px solid #c9c9c9;
 	border-bottom: 1px solid #c9c9c9;
 	padding-bottom: 1em;
-	margin-top: 2em;
+	margin: 2em 0;
 }
 .at-above-post {
 	display: none;
@@ -4057,9 +4054,6 @@ header {
 	.single .post-container > .container {
 	    padding-right: 0;
 	    padding-left: 0;
-	}
-	.addthis_tool {
-		margin: 25px 0 4em 0;
 	}
 	.default-padding {
 		padding: 0 2em;
@@ -4292,9 +4286,6 @@ header {
 	.related-posts .event-container, .related-posts .event-container:last-child {
 		flex-basis: 100%;
 		margin-right: 0;
-	}
-	.addthis_tool {
-		margin: 25px 0 4em 0;
 	}
 	.search-window .search-input {
 		margin-right: 0;
