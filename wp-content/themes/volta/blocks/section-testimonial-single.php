@@ -1,20 +1,27 @@
 <?php
-if ( have_posts() ) : while ( have_posts() ): the_post();
+$loop = new WP_Query( array( 
+	'post_type' => 'testimonials',
+	'posts_per_page' => 1,
+	)
+);
+if ( $loop->have_posts() ) :
+    while ( $loop->have_posts() ) : $loop->the_post();
 
-$post_object = get_field('testimonial');
-
-if( $post_object ): 
-
-	$post = $post_object;
-	setup_postdata( $post );
-	$object_id = $post->ID;
-	echo the_title();
-	echo the_field( 'title__position', $object_id );
-	echo the_field( 'company', $object_id );
-	echo the_content();
-	?>
+	$post_object = get_field('testimonial');
 	
-<?php wp_reset_postdata(); 
-endif; ?>
+	if( $post_object ): 
+	
+		$post = $post_object;
+		setup_postdata( $post );
+		$object_id = $post->ID;
+		echo the_title();
+		echo the_field( 'title__position', $object_id );
+		echo the_field( 'company', $object_id );
+		echo the_content();
+		?>
+		
+	<?php wp_reset_postdata(); 
+	endif; ?>
 
-<?php endwhile; endif; wp_reset_postdata(); ?>
+	<?php endwhile;
+endif; wp_reset_postdata(); ?>
