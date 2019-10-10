@@ -17,5 +17,5 @@ if( $post_object ):
 <?php wp_reset_postdata(); 
 endif; ?>
 
-<?php endwhile;
-wp_reset_postdata(); ?>
+<?php wp_reset_postdata();
+endwhile; ?>
