@@ -1,3 +1,4 @@
+<h3><?php _e('Related articles categorized under '); the_category(', '); ?></h3>
 <ul class="divided related-posts">
 
 <?php
