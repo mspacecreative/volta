@@ -14,9 +14,7 @@ if ( $loop->have_posts() ) :
     	$post = $post_object;
     	setup_postdata( $post );
     	$object_id = $post_object->ID;
-    	if ( has_thumbnail() ) {
-    		echo the_thumbnail( array(200,200) );
-    	}
+    	echo the_thumbnail( array(200,200) );
     	echo the_title();
     	echo the_field( 'company', $object_id );
     	echo the_field( 'title__position', $object_id );
