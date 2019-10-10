@@ -708,7 +708,7 @@ add_filter( 'excerpt_more', 'customExcerptLink', 999 );
 // QUERY FIELDS FROM POST OBJECTS
 function my_post_object_query( $args, $field, $post_id ) {
 	
-    /$args['post_parent'] = $post_id;
+    $args['post_parent'] = $post_id;
 	
 	return $args;
     
