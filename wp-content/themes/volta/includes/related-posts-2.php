@@ -29,7 +29,6 @@ if( $related->have_posts() ) {
         		<header>
         			<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
         			<p class="event-date"><?php the_time('d/m/Y'); ?></p>
-					<a class="view-article" style="display: inline-block; font-size: 15px; flex-basis: 100%;" href="<?php the_permalink(); ?>"><?php esc_html_e('Read Article'); ?></a>
         		</header>
         	</div>
 			

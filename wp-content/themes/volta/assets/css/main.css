@@ -4042,10 +4042,10 @@ header {
 .related-posts {
 	display: flex;
 }
-.related-posts .bucket-content.one-third {
+.related-posts .event-thumb.one-third {
 	width: 25%;
 }
-.related-posts .event-thumb.two-third {
+.related-posts .bucket-content.two-third {
 	width: 72.5%;
 }
 @media (max-width: 812px) and (orientation:landscape) {
