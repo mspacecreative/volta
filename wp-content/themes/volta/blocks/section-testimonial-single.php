@@ -12,17 +12,20 @@ if ( $loop->have_posts() ) :
 	if( $post_object ): 
 	
 		$post = $post_object;
-		setup_postdata( $post );
 		$object_id = $post->ID;
-		$title = the_title();
-		$position = the_field( 'title__position', $object_id );
+		setup_postdata( $post );
+		
 		if ( has_post_thumbnail() ): {
 			echo the_post_thumbnail( array(200,200) );
-		}
-		echo '<h4>' . $title . '</h4>';
-		echo '<p><span class="testimonial_position">' . $position . '</span></p>';
-		echo the_field( 'company', $object_id );
-		echo the_content();
+		} ?>
+		
+		<h4><?php the_title(); ?></h4>
+		<p>
+			<span class="testimonial_position"><?php the_field('title__position', $object_id ?></span>
+			<?php _e(' / '); ?>
+			<span class="testimonial_company"><?php the_field('company', $object_id ?></span>
+		</p>
+		<?php the_content();
 		
 	wp_reset_postdata(); 
 	endif;
