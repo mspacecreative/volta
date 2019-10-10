@@ -14,11 +14,13 @@ if ( $loop->have_posts() ) :
 		$post = $post_object;
 		setup_postdata( $post );
 		$object_id = $post->ID;
+		$title = the_title();
+		$position = the_field( 'title__position', $object_id );
 		if ( has_post_thumbnail() ): {
 			echo the_post_thumbnail( array(200,200) );
 		}
-		echo '<h4>' . the_title() . '</h4>';
-		echo the_field( 'title__position', $object_id );
+		echo '<h4>' . $title . '</h4>';
+		echo '<p><span class="testimonial_position">' . $position . '</span></p>';
 		echo the_field( 'company', $object_id );
 		echo the_content();
 		
