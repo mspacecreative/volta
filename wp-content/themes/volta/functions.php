@@ -635,6 +635,14 @@ function recentPosts() {
 }
 add_shortcode( 'sidebar_posts', 'recentPosts' );
 
+// RELATED POSTS
+function relatedPosts() {
+	ob_start();
+		get_template_part('includes/related-posts');
+	return ob_get_clean();
+}
+add_shortcode( 'related_posts', 'relatedPosts' );
+
 // CURRENT RESIDENTS POSTS LOOP
 function currentResidents() {
 	ob_start();
