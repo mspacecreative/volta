@@ -52,11 +52,8 @@ if( $related->have_posts() ) {
         		
         	</div>
         </div>
-        	
-        </div>
-        <?php endif;
         
-    }
+    <?php }
     wp_reset_postdata();
 } ?>
 
