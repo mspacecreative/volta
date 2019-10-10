@@ -13,18 +13,25 @@ if ( $loop->have_posts() ) :
 	
 		$post = $post_object;
 		setup_postdata( $post );
-		$object_id = $post->ID;
-		echo '<section class="banner">';
-		if ( has_post_thumbnail() ): {
-			echo the_post_thumbnail( array(200,200) );
-		}
-		echo the_title();
-		echo the_field( 'title__position', $object_id );
-		echo the_field( 'company', $object_id );
-		echo the_content();
-		echo '</section>';
+		$object_id = $post->ID; 
+	?>
 		
-	wp_reset_postdata(); 
+		<section class="banner">
+			<article class="width-800 align-center">
+				<?php if ( has_post_thumbnail() ): {
+					echo the_post_thumbnail( array(200,200) );
+				} ?>
+				<h4><?php the_title(); ?></h4>
+				<p>
+					<span class="testimonial-position"><?php the_field( 'title__position', $object_id ); ?></span>
+					<?php esc_html_e(' / '); ?>
+					<span class="testimonial-company"><?php the_field( 'company', $object_id ); ?></span>
+				</p>
+				<?php the_content(); ?>
+			</article>
+		</section>
+		
+	<?php wp_reset_postdata(); 
 	endif;
 	
 	endwhile;
