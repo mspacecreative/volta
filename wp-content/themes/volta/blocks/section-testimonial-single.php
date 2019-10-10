@@ -9,15 +9,14 @@ if ( $loop->have_posts() ) :
 
 	$post_object = get_field('testimonial');
 	
-	if ( has_thumbnail() ) {
-		echo the_thumbnail( array(200,200) );
-	}
-	
 	if( $post_object ): 
 	
 		$post = $post_object;
 		setup_postdata( $post );
 		$object_id = $post->ID;
+		if ( has_post_thumbnail() ) {
+			echo the_post_thumbnail( array(200,200) );
+		}
 		echo the_title();
 		echo the_field( 'title__position', $object_id );
 		echo the_field( 'company', $object_id );
