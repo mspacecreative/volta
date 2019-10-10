@@ -704,3 +704,13 @@ function customExcerptLink( $more ) {
 	return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
 }
 add_filter( 'excerpt_more', 'customExcerptLink', 999 );
+
+// QUERY FIELDS FROM POST OBJECTS
+function my_post_object_query( $args, $field, $post_id ) {
+	
+    /$args['post_parent'] = $post_id;
+	
+	return $args;
+    
+}
+add_filter('acf/fields/post_object/query', 'my_post_object_query', 10, 3);
