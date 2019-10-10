@@ -16,7 +16,7 @@ if ( $loop->have_posts() ) :
     	$object_id = $post_object->ID;
     	echo the_title();
     	echo the_content();
-    	echo the_field( 'company', $post_object->ID );
+    	echo the_field( 'company', $object_id );
     	?>
     	
     <?php wp_reset_postdata(); 
