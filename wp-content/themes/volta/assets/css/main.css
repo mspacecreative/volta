@@ -4036,6 +4036,18 @@ header {
 	color: #00dbb6;
 	transition: all .2s ease-in-out;
 }
+.related-posts h4 {
+	font-size: 15px;
+}
+.related-posts {
+	display: flex;
+}
+.related-posts .bucket-content.one-third {
+	width: 25%;
+}
+.related-posts .bucket-content.two-third {
+	width: 72.5%;
+}
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
@@ -4274,6 +4286,10 @@ header {
 @media (max-width: 450px) {
 	.tiles .tall-image {
 		min-height: 400px;
+	}
+	.related-posts .event-container, .related-posts .event-container:last-child {
+		flex-basis: 100%;
+		margin-right: 0;
 	}
 	.addthis_tool {
 		margin: 25px 0 4em 0;
@@ -4634,6 +4650,22 @@ header {
 @media (min-width: 981px) {
 	main, aside, .two_third_col, .one_third_col {
 		float: left;
+	}
+	.related-posts .event-container {
+		flex-basis: 31.333%;
+		margin-right: 3%;
+	}
+	.related-posts .event-container:last-child {
+		margin-right: 0;
+	}
+	.related-posts .event-container {
+		flex-basis: 31.333%;
+	}
+	.related-posts .bucket-content.one-third {
+		width: 25%;
+	}
+	.related-posts .bucket-content.two-third {
+		width: 72.5%;
 	}
 	.max-width-60 {
 		max-width: 60%;

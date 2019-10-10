@@ -1,7 +1,4 @@
-<ul class="divided">
-	
-	<div class="grid-sizer"></div>
-	<div class="gutter-sizer"></div>
+<ul class="divided related-posts">
 
 <?php
 
@@ -34,6 +31,9 @@ if( $related->have_posts() ) {
         			<p class="event-date"><?php the_time('F j, Y'); ?></p>
         		</header>
         	</div>
+			
+			<a class="view-article" style="display: inline-block; font-size: 15px; flex-basis: 100%;" href="<?php the_permalink(); ?>"><?php esc_html_e('Read Article'); ?></a>
+			
         </div>
         
     <?php }
