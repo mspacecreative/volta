@@ -9,6 +9,10 @@ if ( $loop->have_posts() ) :
 
 	$post_object = get_field('testimonial');
 	
+	if ( has_thumbnail() ) {
+		echo the_thumbnail( array(200,200) );
+	}
+	
 	if( $post_object ): 
 	
 		$post = $post_object;
@@ -18,10 +22,9 @@ if ( $loop->have_posts() ) :
 		echo the_field( 'title__position', $object_id );
 		echo the_field( 'company', $object_id );
 		echo the_content();
-		?>
 		
-	<?php wp_reset_postdata(); 
-	endif; ?>
-
-	<?php endwhile;
+	wp_reset_postdata(); 
+	endif;
+	
+	endwhile;
 endif; wp_reset_postdata(); ?>
