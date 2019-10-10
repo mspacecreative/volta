@@ -13,11 +13,7 @@ if ( $loop->have_posts() ) :
 		
 			$post = $post_object;
 			$object_id = $post->ID;
-			setup_postdata( $post );
-			
-			if ( has_post_thumbnail() ): {
-				echo the_post_thumbnail( array(200,200) );
-			} ?>
+			setup_postdata( $post ); ?>
 			
 			<h4><?php the_title(); ?></h4>
 			
