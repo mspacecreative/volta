@@ -5,8 +5,8 @@ if( $post_object ):
 
 	$post = $post_object;
 	setup_postdata( $post );
-	$object_id = $post_object->ID;
-	echo the_title();
+	$object_id = $post->ID;
+	echo the_title( $object_id );
 	echo the_field( 'company', $object_id );
 	echo the_field( 'title__position', $object_id );
 	echo the_content();
