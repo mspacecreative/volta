@@ -23,14 +23,16 @@ if ( $loop->have_posts() ) :
 			
 			<p>
 				<span class="testimonial_position"><?php the_field( 'title__position', $object_id ); ?></span>
-				<?php _e(' / '); ?>
+				<?php esc_html_e(' / '); ?>
 				<span class="testimonial_company"><?php the_field( 'company', $object_id ); ?></span>
 			</p>
 			
 			<?php the_content();
 		
 		wp_reset_postdata(); 
-		endif;
+		endif; ?>
 	
-	endwhile;
-endif; wp_reset_postdata(); ?>
+	<?php endwhile; ?>
+	<?php else : ?>
+	<p>No testimonial was found</p>
+<?php endif; wp_reset_postdata(); ?>
