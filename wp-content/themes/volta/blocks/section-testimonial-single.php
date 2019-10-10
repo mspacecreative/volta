@@ -1,6 +1,6 @@
 <?php
 
-$post_object = get_field('testimonials');
+$post_object = get_field('testimonial');
 
 if( $post_object ): 
 
