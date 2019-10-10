@@ -6,12 +6,12 @@ if( $post_object ):
 
 	// override $post
 	$post = $post_object;
-	setup_postdata( $post ); 
+	setup_postdata( $post->ID ); 
 
 	?>
 
 	<section class="banner">
-		<?php the_title($post->ID); ?>
+		<?php the_title( $post->ID ); ?>
 		<?php the_field('title__position'); ?>
 		<?php the_field('company'); ?>
 	</section>
