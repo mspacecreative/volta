@@ -605,6 +605,19 @@ function my_acf_init() {
 			'supports'			=> array( 'mode' => false ),
 		));
 		
+		// register single testimonial block
+		acf_register_block(array(
+			'name'				=> 'testimonial-single',
+			'title'				=> __('Single Testimonial Section'),
+			'description'		=> __('Displays a single testimonial quote'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'images-alt',
+			'keywords'			=> array( 'testimonial', 'quote' ),
+			'mode'				=> 'edit',
+			'supports'			=> array( 'mode' => false ),
+		));
+		
 	}
 }
 
