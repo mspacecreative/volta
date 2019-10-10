@@ -478,7 +478,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -489,7 +489,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 	</header>
 	
 	<?php else : ?>
-	<header class="light max-width-800">
+	<header class="max-width-800">
 		
 		<?php
 		$headingsize = get_field('heading_size');
@@ -780,7 +780,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 	</header>
 	
 	<?php else : ?>
-	<header class="light max-width-800">
+	<header class="max-width-800">
 		
 		<?php
 		$headingsize = get_field('heading_size');
@@ -1060,7 +1060,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
+				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
 			</ul>
 			
 		</footer>
@@ -1071,7 +1071,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 	</header>
 	
 	<?php else : ?>
-	<header class="light max-width-800">
+	<header class="max-width-800">
 		
 		<?php
 		$headingsize = get_field('heading_size');
@@ -1320,7 +1320,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 	</header>
 	
 	<?php else : ?>
-	<header class="light max-width-800">
+	<header class="max-width-800">
 		
 		<?php
 		$headingsize = get_field('heading_size');
