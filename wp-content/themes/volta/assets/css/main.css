@@ -4045,7 +4045,7 @@ header {
 .related-posts .bucket-content.one-third {
 	width: 25%;
 }
-.related-posts .bucket-content.two-third {
+.related-posts .event-thumb.two-third {
 	width: 72.5%;
 }
 @media (max-width: 812px) and (orientation:landscape) {
