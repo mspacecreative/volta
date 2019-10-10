@@ -4660,15 +4660,6 @@ header {
 	.related-posts .event-container:last-child {
 		margin-right: 0;
 	}
-	.related-posts .event-container {
-		flex-basis: 31.333%;
-	}
-	.related-posts .bucket-content.one-third {
-		width: 25%;
-	}
-	.related-posts .bucket-content.two-third {
-		width: 72.5%;
-	}
 	.max-width-60 {
 		max-width: 60%;
 	}
