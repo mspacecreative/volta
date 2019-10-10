@@ -6,9 +6,9 @@ if( $post_object ):
 
 	// override $post
 	$post = $post_object;
-	setup_postdata( $post ); 
+	setup_postdata( $post );
+	echo the_title();
 	echo the_content();
-	echo the_field('commpany');
 	?>
 	
 <?php wp_reset_postdata(); 
