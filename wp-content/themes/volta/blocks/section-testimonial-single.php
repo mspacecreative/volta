@@ -13,9 +13,10 @@ if ( $loop->have_posts() ) :
     
     	$post = $post_object;
     	setup_postdata( $post );
+    	$object_id = $post_object->ID;
     	echo the_title();
     	echo the_content();
-    	echo the_field('company');
+    	echo the_field( 'company', $post_object->ID );
     	?>
     	
     <?php wp_reset_postdata(); 
