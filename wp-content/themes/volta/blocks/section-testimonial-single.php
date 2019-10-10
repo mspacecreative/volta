@@ -8,7 +8,7 @@ if( $post_object ):
 	$post = $post_object;
 	setup_postdata( $post ); 
 	echo the_content();
-
+	echo the_field('commpany');
 	?>
 	
 <?php wp_reset_postdata(); 
