@@ -189,6 +189,7 @@ input:focus {
 div.aligncenter {
 	display:block;
 	margin: 25px auto;
+	width: auto!important;
 }
 .alignright {
 	float:right;
