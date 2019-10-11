@@ -24,7 +24,7 @@ if ( $loop->have_posts() ) :
 					
 					<h4><?php the_title(); ?></h4>
 					
-					<p>
+					<p style="margin-bottom: 1em;">
 						<span class="testimonial_position"><?php the_field( 'title__position', $object_id ); ?></span>
 						<?php esc_html_e(' / '); ?>
 						<span class="testimonial_company"><?php the_field( 'company', $object_id ); ?></span>
