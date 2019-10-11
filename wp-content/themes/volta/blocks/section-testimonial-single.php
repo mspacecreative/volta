@@ -15,7 +15,7 @@ if ( $loop->have_posts() ) :
 			$object_id = $post->ID;
 			setup_postdata( $post ); ?>
 			
-			<section class="banner testimonial_container">
+			<section class="banner testimonial_container light-grey-bg">
 				<article class="width-800 default-padding align-center">
 			
 					<?php if ( has_post_thumbnail() ):
