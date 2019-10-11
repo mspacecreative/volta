@@ -4049,8 +4049,26 @@ header {
 }
 .testimonial_container img {
 	border-radius: 200px;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 	width: 100px;
+}
+.testimonial_content {
+	font-size: 20px;
+	line-height: 2em;
+	font-style: italic;
+	position: relative;
+}
+.testimonial_content:before {
+	content: '&ldquo;';
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.testimonial_content:after {
+	content: '&rdquo;';
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
