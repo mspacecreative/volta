@@ -1,9 +1,4 @@
 <?php
-
-if ( has_post_thumbnail() ): {
-	echo the_post_thumbnail( array(200,200) );
-}
-
 $loop = new WP_Query( array( 
 	'post_type' => 'testimonials',
 	'posts_per_page' => 1,
@@ -18,7 +13,11 @@ if ( $loop->have_posts() ) :
 		
 			$post = $post_object;
 			$object_id = $post->ID;
-			setup_postdata( $post ); ?>
+			setup_postdata( $post ); 
+			
+			if ( has_post_thumbnail() ):
+				echo the_post_thumbnail( array(200,200) );
+			endif; ?>
 			
 			<h4><?php the_title(); ?></h4>
 			
