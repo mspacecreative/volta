@@ -4050,6 +4050,7 @@ header {
 .testimonial_container img {
 	border-radius: 200px;
 	margin-bottom: 25px;
+	width: 100px;
 }
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
