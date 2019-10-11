@@ -1,4 +1,9 @@
 <?php
+
+if ( has_post_thumbnail() ): {
+	echo the_post_thumbnail( array(200,200) );
+}
+
 $loop = new WP_Query( array( 
 	'post_type' => 'testimonials',
 	'posts_per_page' => 1,
