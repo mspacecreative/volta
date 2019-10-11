@@ -30,9 +30,9 @@ if ( $loop->have_posts() ) :
 						<span class="testimonial_company"><?php the_field( 'company', $object_id ); ?></span>
 					</p>
 					
-					<span class="testimonial_content">
+					<?php _e('&ldquo;'); ?>
 						<?php the_content(); ?>
-					</span>
+					<?php _e('&rdquo;'); ?>
 					
 				</article>
 			</section>
