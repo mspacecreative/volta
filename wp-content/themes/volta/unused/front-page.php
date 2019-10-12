@@ -8,12 +8,6 @@
 		
 		<!-- Page wrapper -->
 		<div id="page-wrapper">
-			
-			<!-- Nav -->
-			<nav id="nav">
-				<?php html5blank_nav(); ?>
-			</nav>
-			<!-- /Nav -->
 							
 			<!-- Intro buckets -->
 			<div id="intro-buckets" class="">
