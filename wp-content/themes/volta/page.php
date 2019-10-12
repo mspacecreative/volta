@@ -51,12 +51,6 @@ get_header(); ?>
 	</div>
 	<!-- /post thumbnail on mobile -->
 	
-	<!-- Nav -->
-	<nav id="nav">
-		<?php html5blank_nav(); ?>
-	</nav>
-	<!-- /Nav -->
-	
 	<div class="post-content-container white-bg clear">
 		<div class="post-container container">
 			<!-- post title -->
