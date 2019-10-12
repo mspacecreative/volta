@@ -166,6 +166,11 @@ input, select, textarea {
 	em, i {
 		font-style: italic;
 	}
+	
+	i .fa {
+		font-family: fontAwesome;
+		font-style: normal;
+	}
 
 	a {
 		color: #00dbb6;
