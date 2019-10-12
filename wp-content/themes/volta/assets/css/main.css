@@ -167,7 +167,7 @@ input, select, textarea {
 		font-style: italic;
 	}
 	
-	i .fa {
+	i.fa {
 		font-family: fontAwesome;
 		font-style: normal;
 	}
