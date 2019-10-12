@@ -4785,15 +4785,15 @@ button.hamburger:hover {
 
 body .hamburger {
 	position: fixed;
-	top: 40px;
-	right: 10%;
-	padding: 0 0 0 10px;
+	top: 7px;
+	left: 2em;
+	padding: 0;
 	display: table;
 	z-index: 999999;
 	transition: 0.5s ease-in-out;
 	border-radius: 10px 0 0 10px;
 	outline: none;
-	width: 40px;
+	width: 30px;
 	height: 30px;
 }
 
@@ -4826,9 +4826,8 @@ body .hamburger:before {
 }
 
 .hamburger-inner, body .hamburger-inner:after, body .hamburger-inner:before {
-	background: #000;
+	background: #fff;
 	width: 30px;
-	border-radius: 0;
 }
 
 .hamburger-box {
