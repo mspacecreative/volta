@@ -3425,6 +3425,7 @@ img {
 .icon-buckets .inline-icons > .icon {
 	flex-basis: 10%;
 	margin-right: 3%;
+	text-align: center;
 }
 .inline-icons .bucket-content {
 	flex-basis: 87%;
