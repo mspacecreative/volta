@@ -31,12 +31,6 @@
 	<?php endif; ?>
 	<!-- /post thumbnail -->
 	
-	<!-- Nav -->
-	<nav id="nav">
-		<?php html5blank_nav(); ?>
-	</nav>
-	<!-- /Nav -->
-	
 	<?php 
 	if ( have_posts() ) {
 		while ( have_posts() ) {
