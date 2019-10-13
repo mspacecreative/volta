@@ -4195,11 +4195,7 @@ header {
 		float: none;
 	}
 	.page .left-side .full-span-content, .page .right-side .full-span-content {
-	    padding: 4em 2em 2em 4em;
-	    float: none;
-	}
-	.page .left-side .full-span-content, .page .right-side .full-span-content {
-	    padding: 2em;
+	    padding: 1em 1em 2em 1em;
 	    float: none;
 	}
 	.home.page .left-side .full-span-content, .home.page .right-side .full-span-content {
@@ -4345,7 +4341,7 @@ header {
 	.sponsor_branding {
 		float: none;
 		position: absolute;
-		right: 0;
+		right: 1em;
 		z-index: 1;
 		box-shadow: none;
 		max-width: 250px;
@@ -4446,12 +4442,8 @@ header {
 		float: none;
 	}
 	.page .left-side .full-span-content, .page .right-side .full-span-content {
-		padding: 2em 1em;
+		padding: 1em 1em 2em 1em;
 		float: none;
-	}
-	.page .left-side .full-span-content, .page .right-side .full-span-content {
-	    padding: 2em;
-	    float: none;
 	}
 	.home.page .left-side .full-span-content, .home.page .right-side .full-span-content {
 	    padding: 2em 3em;

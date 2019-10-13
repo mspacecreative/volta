@@ -39,7 +39,7 @@
 		
 			<?php elseif ( get_sub_field('alignment') == 'right' ): ?>
 			<div class="right">
-				<div class="right-side">
+				<div class="right-side clear">
 				
 					<div class="full-span-content light">
 						<header>
