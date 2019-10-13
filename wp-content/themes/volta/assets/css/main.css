@@ -3570,6 +3570,10 @@ img {
 .features.dark-overlay:before {
 	background-color: rgba(0, 0, 0, .5);
 }
+
+.features.light-overlay:before {
+	background-color: rgba(255, 255, 255, .5);
+}
 #insights .tiles article {
 	width: 100%;
 }
