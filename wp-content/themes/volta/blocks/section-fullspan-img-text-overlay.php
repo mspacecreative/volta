@@ -9,6 +9,15 @@
 		
 	<section class="features shadow special white-bg" style="background-image: url(<?php the_sub_field('background_image'); ?>);">
 		
+		<?php 
+		$image = get_field('sponsor_branding');
+		$size = 'large';
+		if ( $image ): ?>
+		<div class="sponsor_branding">
+			<?php echo wp_get_attachment_image( $image, $size ); ?>
+		</div>
+		<?php endif; ?>
+		
 		<article class="row content-bottom">
 		
 		<?php if( have_rows('text') ): ?>
