@@ -3553,6 +3553,9 @@ img {
 .light-overlay, .dark-overlay, .light-overlay > div, .dark-overlay > div {
 	position: relative;
 }
+.light-overlay > div.sponsor_branding, .dark-overlay > div.sponsor_branding {
+	position: absolute;
+}
 .light-overlay:before, .dark-overlay:before {
 	content: '';
 	position: absolute;
@@ -3563,6 +3566,9 @@ img {
 }
 .dark-overlay:before {
 	background-color: rgba(0, 0, 0, .75);
+}
+.features.dark-overlay:before {
+	background-color: rgba(0, 0, 0, .5);
 }
 #insights .tiles article {
 	width: 100%;
