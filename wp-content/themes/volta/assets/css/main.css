@@ -4344,7 +4344,7 @@ header {
 		right: 1em;
 		z-index: 1;
 		box-shadow: none;
-		max-width: 250px;
+		max-width: 50%;
 	}
 	.sponsor_branding img {
 		padding: 1em;
