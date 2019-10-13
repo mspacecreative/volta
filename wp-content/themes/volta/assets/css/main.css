@@ -1868,7 +1868,7 @@ input, select, textarea {
 
 		header > p {
 			display: block;
-			margin: 1em 0 2em 0;
+			margin: 1em 0;
 			line-height: 1.75em;
 			text-align: inherit;
 		}
@@ -2582,9 +2582,6 @@ input, select, textarea {
 		background-repeat: repeat;
 	}
 
-		.banner header > p {
-			margin-bottom: 2em;
-		}
 		.banner header > p:last-child {
 			margin-bottom: 0;
 		}
