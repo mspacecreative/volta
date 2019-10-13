@@ -1753,11 +1753,11 @@ input, select, textarea {
 	}
 	
 	.content-bottom .left {
-		width: 50%;
+		width: 60%;
 	}
 	
 	.content-bottom .right {
-		width: 50%;
+		width: 60%;
 	}
 	
 	.content-bottom .left:before {
@@ -4073,15 +4073,18 @@ header {
 	top: 0;
 }
 .sponsor_branding {
-	float: right;
-	background-color: #fff;
-	max-width: 400px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	background-color: #f9f9f9;
+	width: 300px;
 	border-radius: 0 0 0 15px;
-	box-shadow: 0 10px 20px #c9c9c9;
 }
 .sponsor_branding img {
 	display: block;
 	padding: 2em;
+	width: 100%;
 }
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
