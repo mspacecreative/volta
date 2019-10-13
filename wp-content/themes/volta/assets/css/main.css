@@ -4086,11 +4086,11 @@ header {
 .sponsor_branding {
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 4em;
 	z-index: 1;
 	background-color: #f9f9f9;
 	width: 300px;
-	border-radius: 0 0 0 15px;
+	border-radius: 0 0 15px 15px;
 }
 .sponsor_branding img {
 	display: block;
@@ -4281,7 +4281,7 @@ header {
 	.sponsor_branding {
 		float: none;
 		position: absolute;
-		right: 0;
+		right: 2em;
 		z-index: 1;
 		box-shadow: none;
 		max-width: 250px;
