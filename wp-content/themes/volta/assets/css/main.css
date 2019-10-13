@@ -4072,6 +4072,17 @@ header {
 	right: 0;
 	top: 0;
 }
+.sponsor_branding {
+	float: right;
+	background-color: #fff;
+	max-width: 400px;
+	border-radius: 0 0 0 15px;
+	box-shadow: 0 10px 20px #c9c9c9;
+}
+.sponsor_branding img {
+	display: block;
+	padding: 2em;
+}
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
@@ -4253,6 +4264,17 @@ header {
 		border-right: none;
 		border-bottom: 5px solid #fff;
 	}
+	.sponsor_branding {
+		float: none;
+		position: absolute;
+		right: 0;
+		z-index: 1;
+		box-shadow: none;
+		max-width: 250px;
+	}
+	.sponsor_branding img {
+		padding: 1em;
+	}
 }
 @media (max-width: 768px) {
 	.tiles article, .tiles .width-70, .tiles .width-30, .tiles > .width-50, .tiles > .width-50:nth-child(4n - 1), .tiles .width-50:nth-child(4n - 2) {
@@ -4311,6 +4333,17 @@ header {
 	.related-posts .event-container, .related-posts .event-container:last-child {
 		flex-basis: 100%;
 		margin-right: 0;
+	}
+	.sponsor_branding {
+		float: none;
+		position: absolute;
+		right: 0;
+		z-index: 1;
+		box-shadow: none;
+		max-width: 250px;
+	}
+	.sponsor_branding img {
+		padding: 1em;
 	}
 	.search-window .search-input {
 		margin-right: 0;
