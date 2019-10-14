@@ -717,10 +717,8 @@ add_filter('acf/fields/post_object/query', 'my_post_object_query', 10, 3);
 
 // FORMAT ANCHOR LINKS
 function custom_anchor_links( $value, $post_id, $field ) {
-	if ( $field['name'] = 'block_id' ) {
+	if ( $field['block_id'] ) {
 		$value = sanitize_title_with_dashes( $value );
-		return $value;
-	} else {
 		return $value;
 	}
 }
