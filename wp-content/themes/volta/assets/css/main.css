@@ -2178,12 +2178,12 @@ input, select, textarea {
 	.button {
 		position: relative;
 		display: inline-block;
-		color: #fff;
+		color: #000;
 		text-align: center;
 		border-radius: 0.5em;
 		text-decoration: none;
 		padding: 15px 25px;
-		border: 0;
+		border: 1px solid #000;
 		cursor: pointer;
 		outline: 0;
 		font-weight: 300;
@@ -4096,6 +4096,9 @@ header {
 	display: block;
 	padding: 2em;
 	width: 100%;
+}
+.post-content-container .gform_body ul li {
+	text-indent: inherit;
 }
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
