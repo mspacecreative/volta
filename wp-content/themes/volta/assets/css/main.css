@@ -4289,6 +4289,9 @@ header {
 	.sponsor_branding img {
 		padding: 1em;
 	}
+	.features.dark-overlay:before {
+	    background-color: rgba(0, 0, 0, .25);
+	}
 }
 @media (max-width: 768px) {
 	.tiles article, .tiles .width-70, .tiles .width-30, .tiles > .width-50, .tiles > .width-50:nth-child(4n - 1), .tiles .width-50:nth-child(4n - 2) {
@@ -4348,10 +4351,13 @@ header {
 		flex-basis: 100%;
 		margin-right: 0;
 	}
+	.features.dark-overlay:before {
+	    background-color: rgba(0, 0, 0, .25);
+	}
 	.sponsor_branding {
 		float: none;
 		position: absolute;
-		right: 1em;
+		right: 3em;
 		z-index: 1;
 		box-shadow: none;
 		max-width: 50%;
