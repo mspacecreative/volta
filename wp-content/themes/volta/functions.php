@@ -720,6 +720,8 @@ function custom_anchor_links( $value, $post_id, $field ) {
 	if ( $field['name'] = 'block_id' ) {
 		$value = sanitize_title_with_dashes( $value );
 		return $value;
+	} else {
+		return $value;
 	}
 }
 add_filter('acf/format_value', 'custom_anchor_links', 10, 3);
