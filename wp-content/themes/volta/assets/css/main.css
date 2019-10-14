@@ -69,7 +69,7 @@ input, select, textarea {
 	appearance: none;
 }*/
 
-.gform_wrapper.gf_browser_chrome .gfield_checkbox li input, .gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox], .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
+body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox], body .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
 	margin-top: 0;
 	margin-right: 5px;
 }
@@ -2066,7 +2066,7 @@ input, select, textarea {
 		display: block;
 		font-weight: 400;
 		color: #483949;
-		margin: 0 0 1em 0;
+		margin: 1em 0 0;
 	}
 
 	form input[type="text"],
