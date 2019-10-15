@@ -28,13 +28,12 @@
 		</h3>
 		<!-- /post title -->
 	
-		<?php
-		global $post;
-		$excerpt = apply_filters('get_the_content', get_post_field('post_content', $post->ID));
-		if ( $excerpt == '' ) {
-		    $excerpt = wp_trim_words( $post->post_content, 25 );
+		<?php if ( has_excerpt() ) {
+			the_excerpt();
+		} elseif {
+			echo wp_trim_words( get_field('two_third_column'), 20, '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>' );
 		} else {
-			echo $excerpt;
+			echo wp_trim_words( get_the_content(), 20, '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>' );
 		} ?>
 	
 		<?php edit_post_link(); ?>
