@@ -93,7 +93,9 @@
 										<p><?php _e( 'Categorized under ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
 										
 										<div class="addthis-container">
-											<?php echo do_shortcode('[addthis tool="addthis_inline_share_toolbox_5n4c"]'); ?>
+											<div class="addthis-container-inner">
+												<?php echo do_shortcode('[addthis tool="addthis_inline_share_toolbox_5n4c"]'); ?>
+											</div>
 										</div>
 										
 										<!--<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>-->

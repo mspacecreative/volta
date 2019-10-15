@@ -4038,7 +4038,7 @@ header {
 	display: table;
 	width: 100%;
 }
-.post-meta-container > .addthis_tool {
+.addthis-container-inner {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: right;
