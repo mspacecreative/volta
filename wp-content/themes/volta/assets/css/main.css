@@ -4079,6 +4079,7 @@ header {
 .addthis-container {
 	display: table;
 	width: 59%;
+	float: right;
 }
 .related-posts .event-thumb.one-third {
 	width: 25%;
