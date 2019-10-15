@@ -28,10 +28,12 @@
 		</h3>
 		<!-- /post title -->
 	
-		<?php if ( has_excerpt() ) {
+		<?php
+		$content = get_the_content();
+		if ( has_excerpt() ) {
 			the_excerpt();
 		} else {
-			the_content();
+			echo substr($content, 0, 20);
 		} // Build your custom callback length in functions.php ?>
 	
 		<?php edit_post_link(); ?>
