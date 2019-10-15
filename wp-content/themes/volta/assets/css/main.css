@@ -4852,3 +4852,9 @@ header {
 		padding: 5%;
 	}
 }
+
+@media (max-width: 1366px) {
+	.at-resp-share-element .at-share-btn .at-label {
+		display: none;
+	}
+}
