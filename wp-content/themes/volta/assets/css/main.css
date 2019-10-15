@@ -4045,6 +4045,9 @@ header {
 	display: table-cell;
 	vertical-align: middle;
 }
+.at-below-post ~ .post-meta-container > p {
+	display: inline-block;
+}
 .at-above-post {
 	display: none;
 }
