@@ -28,14 +28,10 @@
 		</h3>
 		<!-- /post title -->
 	
-		<?php 
-		$raw_content = get_the_content();
-		$trimmed_content = wp_trim_words($raw_content, 20);
-		$clean_excerpt = apply_filters('the_excerpt', $trimmed_content);
-		if ( has_excerpt() ) {
+		<?php if ( has_excerpt() ) {
 			the_excerpt();
 		} else {
-			echo $clean_excerpt;
+			echo truncate_text();
 		} ?>
 	
 		<?php edit_post_link(); ?>
