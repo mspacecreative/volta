@@ -34,10 +34,8 @@
 		$clean_excerpt = apply_filters('the_excerpt', $trimmed_content);
 		if ( has_excerpt() ) {
 			the_excerpt();
-		} elseif {
-			echo $clean_excerpt;
 		} else {
-			echo wp_trim_words( get_the_content(), 20, '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>' );
+			echo $clean_excerpt;
 		} ?>
 	
 		<?php edit_post_link(); ?>
