@@ -30,11 +30,11 @@
 	
 		<?php
 		global $post;
-		$excerpt = apply_filters('get_the_excerpt', get_post_field('post_excerpt', $post->ID));
+		$excerpt = apply_filters('get_the_content', get_post_field('post_content', $post->ID));
 		if ( $excerpt == '' ) {
 		    $excerpt = wp_trim_words( $post->post_content, 25 );
 		} else {
-			the_excerpt();
+			echo $excerpt;
 		} ?>
 	
 		<?php edit_post_link(); ?>
