@@ -28,11 +28,13 @@
 		</h3>
 		<!-- /post title -->
 	
-		<?php if ( has_excerpt() ) {
-			the_excerpt();
-		} else {
-			wp_trim_excerpt() ;
-		} // Build your custom callback length in functions.php ?>
+		<?php global $post;
+		
+		$excerpt = apply_filters('get_the_excerpt', get_post_field('post_excerpt', $post->ID));
+		
+		if ( $excerpt == '' ) {
+		    $excerpt = wp_trim_words( $post->post_content, 55 );
+		} ?>
 	
 		<?php edit_post_link(); ?>
 		</div>
