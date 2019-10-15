@@ -31,7 +31,7 @@
 		<?php if ( has_excerpt() ) {
 			the_excerpt();
 		} else {
-			echo truncate_the_content();
+			echo apply_filters( 'the_content', limit_text( get_the_content(), 15 ) );
 		} // Build your custom callback length in functions.php ?>
 	
 		<?php edit_post_link(); ?>
