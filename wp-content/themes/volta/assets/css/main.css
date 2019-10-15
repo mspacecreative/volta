@@ -4037,6 +4037,14 @@ header {
 	padding-bottom: 1em;
 	margin: 2em 0;
 }
+.post-meta-container > .addthis_tool {
+	display: table;
+	float: right;
+}
+.post-meta-container > .addthis_tool > div {
+	display: table-cell;
+	vertical-align: middle;
+}
 .at-above-post {
 	display: none;
 }
