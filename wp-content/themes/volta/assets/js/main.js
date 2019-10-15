@@ -8,7 +8,7 @@
 	
 	// SOCIAL MEDIA BAR POSITIONING
 	function socialMediaBarPositioning() {
-		$('.addthis-container').css( 'height', $(this).prev('p').outerHeight() );
+		$('.addthis-container').height( $(this).prev().outerHeight() );
 	}
 	
 	// SMOOTH SCROLL

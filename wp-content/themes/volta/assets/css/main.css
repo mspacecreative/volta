@@ -4035,26 +4035,25 @@ header {
 	border-top: 1px solid #c9c9c9;
 	border-bottom: 1px solid #c9c9c9;
 	margin: 2em 0;
-	position: relative;
+	display: table;
+	width: 100%;
 }
 .post-meta-container > .addthis_tool {
 	display: table-cell;
 	vertical-align: middle;
-	width: 59%;
 	text-align: right;
 }
 .addthis_tool .at-resp-share-element .at-share-btn {
 	margin-bottom: 0;
 }
-.post-meta-container > .addthis_tool > div {
-	display: table-cell;
-	vertical-align: middle;
-}
 .at-below-post ~ .post-meta-container > p {
-	padding: 0.75em 0;
+	padding: 1em 0;
 	width: 39%;
 	margin-right: 2%;
 	display: table-cell;
+	float: left;
+	margin-top: 0;
+	vertical-align: middle;
 }
 .at-above-post {
 	display: none;
@@ -4079,7 +4078,7 @@ header {
 }
 .addthis-container {
 	display: table;
-	width: 100%;
+	width: 59%;
 }
 .related-posts .event-thumb.one-third {
 	width: 25%;
