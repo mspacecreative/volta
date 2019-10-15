@@ -4048,7 +4048,7 @@ header {
 }
 .at-below-post ~ .post-meta-container > p {
 	padding: 1em 0;
-	width: 39%;
+	width: 35%;
 	margin-right: 2%;
 	display: table-cell;
 	float: left;
@@ -4078,7 +4078,7 @@ header {
 }
 .addthis-container {
 	display: table;
-	width: 59%;
+	width: 63%;
 	float: right;
 }
 .related-posts .event-thumb.one-third {
@@ -4853,7 +4853,7 @@ header {
 	}
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1280px) {
 	.at-resp-share-element .at-share-btn .at-label {
 		display: none;
 	}
