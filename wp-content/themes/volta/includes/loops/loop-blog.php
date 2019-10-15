@@ -29,7 +29,7 @@
 		<!-- /post title -->
 	
 		<?php if ( has_excerpt() ) {
-			the_excerpt();
+			html5wp_excerpt('html5wp_index');
 		} else {
 			echo truncate_the_content();
 		} // Build your custom callback length in functions.php ?>
