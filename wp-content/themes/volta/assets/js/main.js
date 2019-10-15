@@ -6,6 +6,11 @@
 
 (function($) {
 	
+	// SOCIAL MEDIA BAR POSITIONING
+	function socialMediaBarPositioning() {
+		$('.addthis-container').css( 'height', $(this).prev('p').outerHeight() );
+	}
+	
 	// SMOOTH SCROLL
 	// Select all links with hashes
 	$('a[href*="#"]')
@@ -89,6 +94,7 @@
 	$(document).ready(function () {
 		splashHeight();
 		calcNegativeMargins();
+		socialMediaBarPositioning();
 		
 		$('.window-close-button').click(function() {
 			$(this).closest('.qtip').hide();
@@ -134,6 +140,7 @@
 	$(window).resize(function () {
 		splashHeight();
 		calcNegativeMargins();
+		socialMediaBarPositioning();
 	});
 	
 	var	$window = $(window),
