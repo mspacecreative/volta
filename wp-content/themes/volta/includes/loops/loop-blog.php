@@ -29,8 +29,8 @@
 		<!-- /post title -->
 	
 		<?php 
-		$raw_content = get_field('two_third_column');
-		$trimmed_content = wp_trim_words($raw_content);
+		$raw_content = get_the_content();
+		$trimmed_content = wp_trim_words($raw_content, 20);
 		$clean_excerpt = apply_filters('the_excerpt', $trimmed_content);
 		if ( has_excerpt() ) {
 			the_excerpt();
