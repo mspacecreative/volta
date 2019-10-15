@@ -31,7 +31,7 @@
 		<?php if ( has_excerpt() ) {
 			the_excerpt();
 		} else {
-			truncate_text('truncate_the_content');
+			echo truncate_text('truncate_the_content');
 		} // Build your custom callback length in functions.php ?>
 	
 		<?php edit_post_link(); ?>
