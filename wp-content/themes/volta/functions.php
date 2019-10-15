@@ -724,3 +724,5 @@ add_filter('acf/load_value/name=block_id', 'custom_anchor_links', 10, 3);
 
 // INCLUDES
 include_once 'functions/acf-search.php';
+
+include_once 'functions/truncate_words.php';
