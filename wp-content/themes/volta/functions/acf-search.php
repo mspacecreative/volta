@@ -1,27 +1,56 @@
 <?php
-function custom_search_function( $where, $wp_query ) {
-    if ( empty( $where )) {
-      return $where;
+/**
+ * Extend WordPress search to include custom fields
+ *
+ * https://adambalee.com
+ */
+
+/**
+ * Join posts and postmeta tables
+ *
+ * http://codex.wordpress.org/Plugin_API/Filter_Reference/posts_join
+ */
+function cf_search_join( $join ) {
+    global $wpdb;
+
+    if ( is_search() ) {    
+        $join .=' LEFT JOIN '.$wpdb->postmeta. ' ON '. $wpdb->posts . '.ID = ' . $wpdb->postmeta . '.post_id ';
     }
 
-    // get search expression
-    $terms = $wp_query->query_vars['s'];
+    return $join;
+}
+add_filter('posts_join', 'cf_search_join' );
 
-    // explode search expression to get search terms
-    $exploded = explode(' ', $terms);
-    if( $exploded === FALSE || count($exploded) === 0 ) {
-      $exploded = array( 0 => $terms );
+/**
+ * Modify the search query with posts_where
+ *
+ * http://codex.wordpress.org/Plugin_API/Filter_Reference/posts_where
+ */
+function cf_search_where( $where ) {
+    global $pagenow, $wpdb;
+
+    if ( is_search() ) {
+        $where = preg_replace(
+            "/\(\s*".$wpdb->posts.".post_title\s+LIKE\s*(\'[^\']+\')\s*\)/",
+            "(".$wpdb->posts.".post_title LIKE $1) OR (".$wpdb->postmeta.".meta_value LIKE $1)", $where );
     }
 
-    foreach( $exploded as $tag ) {
-        $where .= " OR EXISTS (
-          SELECT * FROM wp_terms
-            INNER JOIN wp_term_taxonomy ON wp_term_taxonomy.term_id = wp_terms.term_id
-            INNER JOIN wp_term_relationships ON wp_term_relationships.term_taxonomy_id = wp_term_taxonomy.term_taxonomy_id
-            WHERE taxonomy = 'myCustomTax' AND object_id = wp_posts.ID AND wp_terms.name LIKE '%$tag%'
-        )";
-    }
     return $where;
 }
+add_filter( 'posts_where', 'cf_search_where' );
 
-add_filter( 'posts_search', 'search_suggestions_custom_search', 500, 2 );
+/**
+ * Prevent duplicates
+ *
+ * http://codex.wordpress.org/Plugin_API/Filter_Reference/posts_distinct
+ */
+function cf_search_distinct( $where ) {
+    global $wpdb;
+
+    if ( is_search() ) {
+        return "DISTINCT";
+    }
+
+    return $where;
+}
+add_filter( 'posts_distinct', 'cf_search_distinct' );
