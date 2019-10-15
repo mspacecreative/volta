@@ -31,7 +31,7 @@
 		<?php if ( has_excerpt() ) {
 			the_excerpt();
 		} else {
-			echo apply_filters( 'the_content', limit_text( get_the_content(), 15 ) );
+			echo apply_filters( 'the_content', wp_trim_words( get_the_content(), 15, '&hellip;' ) );
 		} // Build your custom callback length in functions.php ?>
 	
 		<?php edit_post_link(); ?>
