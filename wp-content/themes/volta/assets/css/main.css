@@ -4048,7 +4048,7 @@ header {
 }
 .at-below-post ~ .post-meta-container > p {
 	padding: 1em 0;
-	width: 35%;
+	width: 30%;
 	margin-right: 2%;
 	display: table-cell;
 	float: left;
@@ -4078,7 +4078,7 @@ header {
 }
 .addthis-container {
 	display: table;
-	width: 63%;
+	width: 68%;
 	float: right;
 }
 .related-posts .event-thumb.one-third {
