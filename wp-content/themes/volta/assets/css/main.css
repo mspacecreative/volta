@@ -4036,10 +4036,16 @@ header {
 	border-bottom: 1px solid #c9c9c9;
 	padding-bottom: 1em;
 	margin: 2em 0;
+	position: relative;
 }
 .post-meta-container > .addthis_tool {
-	display: table;
-	float: right;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.addthis_tool .at-resp-share-element .at-share-btn {
+	margin-bottom: 0;
 }
 .post-meta-container > .addthis_tool > div {
 	display: table-cell;
@@ -4047,6 +4053,7 @@ header {
 }
 .at-below-post ~ .post-meta-container > p {
 	display: inline-block;
+	max-width: 40%;
 }
 .at-above-post {
 	display: none;
