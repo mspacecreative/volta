@@ -28,11 +28,13 @@
 		</h3>
 		<!-- /post title -->
 	
-		<?php if ( has_excerpt() ) {
-			the_excerpt();
-		}
+		<?php
 		$customfield = get_field('two_third_column', $post->ID);
 		$summary = wp_trim_words( $customfield, 20 );
+		
+		if ( has_excerpt() ) {
+			the_excerpt();
+		}
 		elseif ( $customfield ) {
 			$summary;
 		}
