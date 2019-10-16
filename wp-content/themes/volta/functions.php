@@ -301,11 +301,11 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
 /*function html5_blank_view_article($more)
 {
     global $post;
-    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
-}*/
+    return '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
+}
 
 // Remove Admin bar
-/*function remove_admin_bar()
+function remove_admin_bar()
 {
     return false;
 }*/
@@ -701,7 +701,7 @@ function customExcerptLink( $more ) {
 		return $more;
 	}
 
-	return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
+	return '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
 }
 add_filter( 'excerpt_more', 'customExcerptLink', 999 );
 

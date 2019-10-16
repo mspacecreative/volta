@@ -28,10 +28,20 @@
 		</h3>
 		<!-- /post title -->
 	
-		<?php if ( function_exists('html5wp_excerpt') ) {
-			html5wp_excerpt('html5wp_index');
-		} else {
+		<?php if ( hass_excerpt() ) {
 			the_excerpt();
+		} else {
+			$read_more = '&hellip; <a class="read-more-link" href="' . get_the_permalink() . '">Read Full Article</a>';
+			
+			// wpautop() auto-wraps text in paragraphs
+			echo wpautop( 
+				// wp_trim_words() gets the first X words from a text string
+				wp_trim_words(
+					get_the_content(), // We'll use the post's content as our text string
+					55, // We want the first 55 words
+					$read_more // This is what comes after the first 55 words
+				)
+			);
 		} // Build your custom callback length in functions.php ?>
 	
 		<?php edit_post_link(); ?>
