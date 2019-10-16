@@ -694,7 +694,7 @@ add_filter('the_title', 'the_title_trim');
 
 // ADD EXCERPT TO PAGES
 // Adding excerpt for page
-//add_post_type_support( 'page', 'excerpt' );
+add_post_type_support( 'page', 'excerpt' );
 
 /*function customExcerptLink( $more ) {
 	if ( is_admin() ) {
@@ -705,21 +705,9 @@ add_filter('the_title', 'the_title_trim');
 }
 add_filter( 'excerpt_more', 'customExcerptLink', 999 );*/
 
-// QUERY FIELDS FROM POST OBJECTS
-function my_post_object_query( $args, $field, $post_id ) {
-	
-    $args['post_parent'] = $post_id;
-	
-	return $args;
-    
-}
-add_filter('acf/fields/post_object/query', 'my_post_object_query', 10, 3);
-
 // FORMAT ANCHOR LINKS
 function custom_anchor_links( $value, $post_id, $field ) {
 	$value = sanitize_title_with_dashes( $value );
 	return $value;
 }
 add_filter('acf/load_value/name=block_id', 'custom_anchor_links', 10, 3);
-
-add_filter('acf/settings/remove_wp_meta_box', '__return_false');
