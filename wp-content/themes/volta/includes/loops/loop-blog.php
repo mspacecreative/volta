@@ -28,12 +28,8 @@
 		</h3>
 		<!-- /post title -->
 	
-		<?php
-		
-		if ( has_excerpt() ) {
-			$view_page = '<a class="view-article" href="' . get_permalink($post->ID) . '">' . __(' View page &raquo;', 'html5blank') . '</a>';
+		<?php if ( has_excerpt() ) {
 			the_excerpt();
-			echo $view_page;
 		}
 		else {
 			$read_more = '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';

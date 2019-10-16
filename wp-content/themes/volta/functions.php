@@ -298,14 +298,14 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
 }
 
 // Custom View Article link to Post
-/*function html5_blank_view_article($more)
+function html5_blank_view_article($more)
 {
     global $post;
     return '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
 }
 
 // Remove Admin bar
-function remove_admin_bar()
+/*function remove_admin_bar()
 {
     return false;
 }*/
@@ -696,14 +696,14 @@ add_filter('the_title', 'the_title_trim');
 // Adding excerpt for page
 add_post_type_support( 'page', 'excerpt' );
 
-function customExcerptLink( $more ) {
+/*function customExcerptLink( $more ) {
 	if ( is_admin() ) {
 		return $more;
 	}
 
-	return '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
+	return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
 }
-add_filter( 'excerpt_more', 'customExcerptLink', 999 );
+add_filter( 'excerpt_more', 'customExcerptLink', 999 );*/
 
 // QUERY FIELDS FROM POST OBJECTS
 function my_post_object_query( $args, $field, $post_id ) {
@@ -721,5 +721,3 @@ function custom_anchor_links( $value, $post_id, $field ) {
 	return $value;
 }
 add_filter('acf/load_value/name=block_id', 'custom_anchor_links', 10, 3);
-
-// INCLUDES
