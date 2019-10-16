@@ -43,3 +43,9 @@ function cf_search_distinct( $where ) {
     return $where;
 }
 add_filter( 'posts_distinct', 'cf_search_distinct' );
+
+function strip_shortcode_from_excerpt( $content ) {
+  $content = strip_shortcodes( $content );
+  return $content;
+}
+add_filter('the_excerpt', 'strip_shortcode_from_excerpt');

@@ -42,11 +42,9 @@
 			echo wpautop( 
 				// wp_trim_words() gets the first X words from a text string
 				wp_trim_words(
-					strip_shortcodes(
-						get_the_content(), // We'll use the post's content as our text string
-						20, // We want the first 55 words
-						$read_more // This is what comes after the first 55 words
-					)
+					get_the_content(), // We'll use the post's content as our text string
+					20, // We want the first 55 words
+					$read_more // This is what comes after the first 55 words
 				)
 			);
 		} ?>
