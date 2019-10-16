@@ -1,56 +1,34 @@
 <?php
+add_filter( 'get_post_metadata', 'add_dynamic_post_meta', 10, 4 );
+ 
 /**
- * Extend WordPress search to include custom fields
+ * Add dynamically-generated "post meta" to `\WP_Post` objects
  *
- * https://adambalee.com
- */
-
-/**
- * Join posts and postmeta tables
+ * This makes it possible to access dynamic data related to a post object by simply referencing `$post->foo`.
+ * That keeps the calling code much cleaner than if it were to have to do something like
+ * `$foo = some_custom_logic( get_post_meta( $post->ID, 'bar', true ) ); echo esc_html( $foo )`.
  *
- * http://codex.wordpress.org/Plugin_API/Filter_Reference/posts_join
+ * @param mixed  $value
+ * @param int    $post_id
+ * @param string $meta_key
+ * @param int    $single   @todo handle the case where this is false
+ *
+ * @return mixed
+ *      `null` to instruct `get_metadata()` to pull the value from the database
+ *      Any non-null value will be returned as if it were pulled from the database
  */
-function cf_search_join( $join ) {
-    global $wpdb;
-
-    if ( is_search() ) {    
-        $join .=' LEFT JOIN '.$wpdb->postmeta. ' ON '. $wpdb->posts . '.ID = ' . $wpdb->postmeta . '.post_id ';
+function add_dynamic_post_meta( $value, $post_id, $meta_key, $single ) {
+    $post = get_post( $post_id );
+ 
+    if ( 'page' != $post->post_type ) {
+        return $value;
     }
-
-    return $join;
-}
-add_filter('posts_join', 'cf_search_join' );
-
-/**
- * Modify the search query with posts_where
- *
- * http://codex.wordpress.org/Plugin_API/Filter_Reference/posts_where
- */
-function cf_search_where( $where ) {
-    global $pagenow, $wpdb;
-
-    if ( is_search() ) {
-        $where = preg_replace(
-            "/\(\s*".$wpdb->posts.".post_title\s+LIKE\s*(\'[^\']+\')\s*\)/",
-            "(".$wpdb->posts.".post_title LIKE $1) OR (".$wpdb->postmeta.".meta_value LIKE $1)", $where );
+ 
+    switch ( $meta_key ) {
+        case 'verbose_page_template':
+            $value = "The page template is " . ( $post->_wp_page_template ?: 'not assigned' );
+            break;
     }
-
-    return $where;
+ 
+    return $value;
 }
-add_filter( 'posts_where', 'cf_search_where' );
-
-/**
- * Prevent duplicates
- *
- * http://codex.wordpress.org/Plugin_API/Filter_Reference/posts_distinct
- */
-function cf_search_distinct( $where ) {
-    global $wpdb;
-
-    if ( is_search() ) {
-        return "DISTINCT";
-    }
-
-    return $where;
-}
-add_filter( 'posts_distinct', 'cf_search_distinct' );

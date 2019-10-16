@@ -1,17 +1,8 @@
 <h2 style="margin-bottom: 50px;">Pages</h2>
 
-<?php
-$args = array(
-	'numberposts'	=> -1,
-	'post_type'		=> 'page',
-	'meta_key'		=> 'two_third_column'
-);
+<?php while ( have_posts() ): the_post(); ?>
 
-$the_query = new WP_Query( $args );
-
-	while( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
-	
+	<?php if ( $post->post_type == 'page' ) { ?>
 
 	<!-- article -->
 	<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'clear', 'display-flex' )); ?>>
@@ -59,9 +50,9 @@ $the_query = new WP_Query( $args );
 	</article>
 	<!-- /article -->
 	
+	<?php } ?>
 	
-	
-<?php endwhile; wp_reset_query(); ?>
+<?php endwhile; rewind_posts(); ?>
 
 <h2 style="margin-bottom: 50px;">Blog Posts</h2>
 
