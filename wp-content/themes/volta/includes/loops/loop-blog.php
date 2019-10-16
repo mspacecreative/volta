@@ -99,7 +99,7 @@
 				<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
 				<!-- /post details -->
 				
-				<?php the_excerpt(); ?>
+				<?php html5wp_excerpt('html5wp_index'); ?>
 				
 			</div>
 			
