@@ -5,11 +5,12 @@ $args = array(
 	'numberposts'	=> -1,
 	'post_type'		=> 'page',
 	'meta_key'		=> 'two_third_column',
+	'posts_per_page' => -1,
 );
 $the_query = new WP_Query( $args );
 while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-	<?php if ( $post->post_type == 'page' ) { ?>
+	
 
 	<!-- article -->
 	<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'clear', 'display-flex' )); ?>>
@@ -37,8 +38,8 @@ while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 	
 		<?php
 	
-		if ( get_field('two_third_column', $post->ID) ) {
-			the_field('two_third_column', $post->ID);
+		if ( get_field('two_third_column') ) {
+			the_field('two_third_column');
 		}
 		else {
 			$read_more = '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
@@ -60,7 +61,7 @@ while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 	</article>
 	<!-- /article -->
 	
-	<?php } ?>
+	
 	
 <?php endwhile; wp_reset_query(); ?>
 
