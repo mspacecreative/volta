@@ -28,7 +28,7 @@
 		</h3>
 		<!-- /post title -->
 	
-		<?php if ( hass_excerpt() ) {
+		<?php if ( has_excerpt() ) {
 			the_excerpt();
 		} else {
 			$read_more = '&hellip; <a class="read-more-link" href="' . get_the_permalink() . '">Read Full Article</a>';
@@ -42,7 +42,7 @@
 					$read_more // This is what comes after the first 55 words
 				)
 			);
-		} // Build your custom callback length in functions.php ?>
+		} ?>
 	
 		<?php edit_post_link(); ?>
 		</div>
