@@ -1,16 +1,8 @@
 <h2 style="margin-bottom: 50px;">Pages</h2>
 
-<?php
-$args = array(
-	'numberposts'	=> -1,
-	'post_type'		=> 'page',
-	'meta_key'		=> 'two_third_column',
-	'posts_per_page' => -1,
-);
-$the_query = new WP_Query( $args );
-while( $the_query->have_posts() ) : $the_query->the_post(); ?>
+<?php while ( have_posts() ): the_post(); ?>
 
-	
+	<?php if ( $post->post_type == 'page' ) { ?>
 
 	<!-- article -->
 	<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'clear', 'display-flex' )); ?>>
@@ -37,9 +29,11 @@ while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 		<!-- /post title -->
 	
 		<?php
-	
-		if ( get_field('two_third_column') ) {
-			the_field('two_third_column');
+		
+		if ( has_excerpt() ) {
+			$view_page = '<a class="view-article" href="' . get_permalink($post->ID) . '">' . __(' View page &raquo;', 'html5blank') . '</a>';
+			the_excerpt();
+			echo $view_page;
 		}
 		else {
 			$read_more = '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
@@ -48,9 +42,11 @@ while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 			echo wpautop( 
 				// wp_trim_words() gets the first X words from a text string
 				wp_trim_words(
-					get_the_content(), // We'll use the post's content as our text string
-					20, // We want the first 55 words
-					$read_more // This is what comes after the first 55 words
+					strip_shortcodes(
+						get_the_content(), // We'll use the post's content as our text string
+						20, // We want the first 55 words
+						$read_more // This is what comes after the first 55 words
+					)
 				)
 			);
 		} ?>
@@ -61,9 +57,9 @@ while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 	</article>
 	<!-- /article -->
 	
+	<?php } ?>
 	
-	
-<?php endwhile; wp_reset_query(); ?>
+<?php endwhile; rewind_posts(); ?>
 
 <h2 style="margin-bottom: 50px;">Blog Posts</h2>
 
