@@ -627,8 +627,8 @@ function my_acf_block_render_callback( $block ) {
 	
 	$slug = str_replace('acf/', '', $block['name']);
 	
-	if( file_exists( get_theme_file_path("/blocks/section-{$slug}.php") ) ) {
-		include( get_theme_file_path("/blocks/section-{$slug}.php") );
+	if( file_exists( get_theme_file_path("/blocks/block-{$slug}.php") ) ) {
+		include( get_theme_file_path("/blocks/block-{$slug}.php") );
 	}
 }
 
