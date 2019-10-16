@@ -29,14 +29,13 @@
 		<!-- /post title -->
 	
 		<?php
-		$customfield = get_field('two_third_column', $post->ID);
-		$summary = wp_trim_words( $customfield, 20 );
 		
 		if ( has_excerpt() ) {
 			the_excerpt();
 		}
-		elseif ( $customfield ) {
-			$summary;
+		elseif ( get_field('two_third_column', $post->ID) ) {
+			$summary = wp_trim_words( get_field('two_third_column', $post->ID), 20 );
+			echo $summary;
 		}
 		else {
 			$read_more = '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
