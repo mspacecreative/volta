@@ -32,11 +32,9 @@
 			the_excerpt();
 		}
 		$variable = get_field('two_third_column', $post->ID);
+		$excerpt = wp_trim_words( $variable, 20 );
 		elseif ( $variable ) {
-			wp_trim_words(
-				$variable, // We'll use the post's content as our text string
-				20,
-			);
+			echo $excerpt;
 		}
 		else {
 			$read_more = '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
