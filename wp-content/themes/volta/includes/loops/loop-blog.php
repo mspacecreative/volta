@@ -31,9 +31,6 @@
 		<?php if ( has_excerpt() ) {
 			the_excerpt();
 		}
-		elseif ( get_field('two_third_column') ) {
-			the_field('two_third_column');
-		}
 		else {
 			$read_more = '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
 			
