@@ -28,10 +28,10 @@
 		</h3>
 		<!-- /post title -->
 	
-		<?php if ( has_excerpt() ) {
-			the_excerpt();
+		<?php if ( function_exists('html5wp_excerpt') {
+			html5wp_excerpt('html5wp_index');
 		} else {
-			echo wp_trim_words( get_the_content(), 20, '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>' );
+			the_excerpt();
 		} // Build your custom callback length in functions.php ?>
 	
 		<?php edit_post_link(); ?>
