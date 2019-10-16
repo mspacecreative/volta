@@ -31,10 +31,10 @@
 		<?php if ( has_excerpt() ) {
 			the_excerpt();
 		}
-		$variable = get_field('two_third_column', $post->ID);
-		$excerpt = wp_trim_words( $variable, 20 );
-		elseif ( $variable ) {
-			echo $excerpt;
+		$customfield = get_field('two_third_column', $post->ID);
+		$summary = wp_trim_words( $customfield, 20 );
+		elseif ( $customfield ) {
+			$summary;
 		}
 		else {
 			$read_more = '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
