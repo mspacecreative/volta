@@ -30,15 +30,19 @@
 	
 		<?php if ( has_excerpt() ) {
 			the_excerpt();
-		} else {
-			$read_more = '&hellip; <a class="read-more-link" href="' . get_the_permalink() . '">Read Full Article</a>';
+		}
+		elseif ( get_field('two_third_column') ) {
+			the_field('two_third_column');
+		}
+		else {
+			$read_more = '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
 			
 			// wpautop() auto-wraps text in paragraphs
 			echo wpautop( 
 				// wp_trim_words() gets the first X words from a text string
 				wp_trim_words(
 					get_the_content(), // We'll use the post's content as our text string
-					55, // We want the first 55 words
+					20, // We want the first 55 words
 					$read_more // This is what comes after the first 55 words
 				)
 			);
@@ -98,7 +102,7 @@
 				<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
 				<!-- /post details -->
 				
-				<?php html5wp_excerpt('html5wp_index'); ?>
+				<?php the_excerpt(); ?>
 				
 			</div>
 			
