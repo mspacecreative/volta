@@ -36,17 +36,7 @@
 			echo $view_page;
 		}
 		else {
-			$read_more = '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
-			
-			// wpautop() auto-wraps text in paragraphs
-			echo wpautop( 
-				// wp_trim_words() gets the first X words from a text string
-				wp_trim_words(
-					get_the_content(), // We'll use the post's content as our text string
-					20, // We want the first 55 words
-					$read_more // This is what comes after the first 55 words
-				)
-			);
+			wpse_40574_create_excerpt();
 		} ?>
 	
 		<?php edit_post_link(); ?>
