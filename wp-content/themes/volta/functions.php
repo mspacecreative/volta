@@ -694,7 +694,7 @@ add_filter('the_title', 'the_title_trim');
 
 // ADD EXCERPT TO PAGES
 // Adding excerpt for page
-add_post_type_support( 'page', 'excerpt' );
+//add_post_type_support( 'page', 'excerpt' );
 
 /*function customExcerptLink( $more ) {
 	if ( is_admin() ) {
