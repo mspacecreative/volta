@@ -1615,7 +1615,7 @@ elseif ( $width && $margin == 'both' && $textcolour == 'light' ):
 else :
 	
 	if ( get_field('content_editor') ): ?>
-	<div>
+	<div class="default-padding top-bottom-margin">
 		
 		<?php the_field('content_editor'); ?>
 		

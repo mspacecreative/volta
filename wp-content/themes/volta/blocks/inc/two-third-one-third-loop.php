@@ -28,7 +28,7 @@
 	
 	<?php elseif ( get_sub_field('content_type') == 'video' ): ?>
 	<div class="one_third_col">
-		<?php the_sub_field('image_upload'); ?>
+		<?php the_sub_field('video_upload'); ?>
 	</div>
 	<?php endif; ?>
 
