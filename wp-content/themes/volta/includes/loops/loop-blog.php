@@ -31,6 +31,14 @@
 		<?php if ( has_excerpt() ) {
 			the_excerpt();
 		}
+		$variable = get_field('two_third_column', $post->ID);
+		elseif ( $variable ) {
+			wp_trim_words(
+				get_the_content(), // We'll use the post's content as our text string
+				20, // We want the first 55 words
+				$read_more // This is what comes after the first 55 words
+			)
+		}
 		else {
 			$read_more = '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
 			
