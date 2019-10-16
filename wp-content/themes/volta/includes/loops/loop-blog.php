@@ -32,7 +32,8 @@
 		
 		if ( has_excerpt() ) {
 			$read_more = '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
-			the_excerpt( $read_more );
+			the_excerpt();
+			echo $read_more;
 		}
 		elseif ( get_field('two_third_column', $post->ID) ) {
 			the_field('two_third_column', $post->ID);
