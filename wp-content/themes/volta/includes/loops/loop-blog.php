@@ -29,13 +29,8 @@
 		<!-- /post title -->
 	
 		<?php
-		
-		if ( has_excerpt() ) {
-			$view_page = '<a class="view-article" href="' . get_permalink($post->ID) . '">' . __(' View page &raquo;', 'html5blank') . '</a>';
-			the_excerpt();
-			echo $view_page;
-		}
-		elseif ( get_field('two_third_column', $post->ID) ) {
+	
+		if ( get_field('two_third_column', $post->ID) ) {
 			the_field('two_third_column', $post->ID);
 		}
 		else {
