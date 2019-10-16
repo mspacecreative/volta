@@ -28,7 +28,7 @@
 		</h3>
 		<!-- /post title -->
 	
-		<?php if ( function_exists('html5wp_excerpt') {
+		<?php if ( function_exists('html5wp_excerpt') ) {
 			html5wp_excerpt('html5wp_index');
 		} else {
 			the_excerpt();
