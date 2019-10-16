@@ -89,7 +89,6 @@
 				<!-- /post details -->
 				
 				<?php html5wp_excerpt('html5wp_index'); ?>
-				<?php html5_blank_view_article(); ?>
 				
 			</div>
 			
