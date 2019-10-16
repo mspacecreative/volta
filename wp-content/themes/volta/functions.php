@@ -464,7 +464,7 @@ function my_acf_init() {
 		
 		// register splash block
 		acf_register_block(array(
-			'name'				=> 'splash-section',
+			'name'				=> 'splash',
 			'title'				=> __('Splash Section'),
 			'description'		=> __('Home page splash section'),
 			'render_callback'	=> 'my_acf_block_render_callback',
@@ -477,7 +477,7 @@ function my_acf_init() {
 		
 		// register full span img text left block
 		acf_register_block(array(
-			'name'				=> 'fullspan-img-text-overlay',
+			'name'				=> 'fullspan-image-text-overlay',
 			'title'				=> __('Full Span Image Text Overlay Section'),
 			'description'		=> __('Full span background image and content section'),
 			'render_callback'	=> 'my_acf_block_render_callback',
@@ -490,7 +490,7 @@ function my_acf_init() {
 		
 		// register 50/50 colour overlay text block
 		acf_register_block(array(
-			'name'				=> 'fifty-fifty-colour-overlay-text',
+			'name'				=> 'half-half-color-overlay-with-text',
 			'title'				=> __('50/50 Colour Overlay Text Section'),
 			'description'		=> __('Background image with coloured overlay and content section'),
 			'render_callback'	=> 'my_acf_block_render_callback',
@@ -503,7 +503,7 @@ function my_acf_init() {
 		
 		// register three column layout block
 		acf_register_block(array(
-			'name'				=> 'three-column-layout',
+			'name'				=> 'three-column-with-icons',
 			'title'				=> __('Three Column Layout Section'),
 			'description'		=> __('Three column layout section'),
 			'render_callback'	=> 'my_acf_block_render_callback',
@@ -516,7 +516,7 @@ function my_acf_init() {
 		
 		// register cta block
 		acf_register_block(array(
-			'name'				=> 'cta',
+			'name'				=> 'cta-area',
 			'title'				=> __('CTA Section'),
 			'description'		=> __('Call to Action section'),
 			'render_callback'	=> 'my_acf_block_render_callback',
@@ -529,7 +529,7 @@ function my_acf_init() {
 		
 		// register events block
 		acf_register_block(array(
-			'name'				=> 'events',
+			'name'				=> 'events-section',
 			'title'				=> __('Events Section'),
 			'description'		=> __('Displays recent events'),
 			'render_callback'	=> 'my_acf_block_render_callback',
