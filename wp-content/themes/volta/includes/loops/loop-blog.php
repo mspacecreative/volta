@@ -31,7 +31,7 @@
 		<?php if ( has_excerpt() ) {
 			the_excerpt();
 		} else {
-			echo apply_filters( 'the_content', wp_trim_words( get_the_content(), 50, '&hellip;' ) );
+			echo wp_trim_words( get_the_content(), 20, '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>' );
 		} // Build your custom callback length in functions.php ?>
 	
 		<?php edit_post_link(); ?>
