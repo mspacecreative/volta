@@ -30,7 +30,7 @@
 					
 					<div class="full-span-content light">
 						<header>
-							<h3><?php the_sub_field('heading'); ?></h3>
+							<h1><?php the_sub_field('heading'); ?></h1>
 						</header>
 						<?php the_sub_field('copy'); ?>
 					</div>
@@ -44,7 +44,7 @@
 				
 					<div class="full-span-content light">
 						<header>
-							<h3><?php the_sub_field('heading'); ?></h3>
+							<h1><?php the_sub_field('heading'); ?></h1>
 						</header>
 						<?php the_sub_field('copy'); ?>
 					</div>
@@ -83,7 +83,7 @@
 					
 					<div class="full-span-content light">
 						<header>
-							<h3><?php the_sub_field('heading'); ?></h3>
+							<h1><?php the_sub_field('heading'); ?></h1>
 						</header>
 						<?php the_sub_field('copy'); ?>
 					</div>
@@ -97,7 +97,7 @@
 				
 					<div class="full-span-content light">
 						<header>
-							<h3><?php the_sub_field('heading'); ?></h3>
+							<h1><?php the_sub_field('heading'); ?></h1>
 						</header>
 						<?php the_sub_field('copy'); ?>
 					</div>
@@ -136,7 +136,7 @@
 					
 					<div class="full-span-content light">
 						<header>
-							<h3><?php the_sub_field('heading'); ?></h3>
+							<h1><?php the_sub_field('heading'); ?></h1>
 						</header>
 						<?php the_sub_field('copy'); ?>
 					</div>
@@ -150,7 +150,7 @@
 				
 					<div class="full-span-content light">
 						<header>
-							<h3><?php the_sub_field('heading'); ?></h3>
+							<h1><?php the_sub_field('heading'); ?></h1>
 						</header>
 						<?php the_sub_field('copy'); ?>
 					</div>

@@ -4128,6 +4128,10 @@ header {
 .post-content-container .gform_body ul li {
 	text-indent: inherit;
 }
+
+.features h1 {
+	margin-bottom: 0;
+}
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
