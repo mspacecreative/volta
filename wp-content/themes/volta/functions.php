@@ -711,3 +711,10 @@ function custom_anchor_links( $value, $post_id, $field ) {
 	return $value;
 }
 add_filter('acf/load_value/name=block_id', 'custom_anchor_links', 10, 3);
+
+// REDIRECT LOGGED OUT USERS
+function ur_redirect_after_logout(){
+         wp_redirect( home_url() );
+         exit();
+}
+add_action( 'wp_logout', 'ur_redirect_after_logout');
