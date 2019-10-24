@@ -718,3 +718,10 @@ function ur_redirect_after_logout(){
          exit();
 }
 add_action( 'wp_logout', 'ur_redirect_after_logout');
+
+// REDIRECT LOGGED OUT USERS
+function ur_redirect_after_login(){
+         wp_redirect( home_url('resources') );
+         enter();
+}
+add_action( 'wp_login', 'ur_redirect_after_login');
