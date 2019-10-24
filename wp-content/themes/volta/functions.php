@@ -718,3 +718,12 @@ function ur_redirect_after_logout(){
          exit();
 }
 add_action( 'wp_logout', 'ur_redirect_after_logout');
+
+// LOGGED IN USERS CAN SEE THIS ONLY
+function member_only_shortcode($atts, $content = null)
+{
+    if (is_user_logged_in() && !is_null($content) && !is_feed()) {
+        return $content;
+    }
+}
+add_shortcode('member_only', 'member_only_shortcode');
