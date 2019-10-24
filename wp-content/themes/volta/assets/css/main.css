@@ -2089,9 +2089,12 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 		transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 	}
 	form input[type=submit] {
-		border: 1px solid #fff;
 		background-color: transparent;
 		border-radius: 4px;
+	}
+	
+	form input[type=submit]:hover {
+		color: #999;
 	}
 
 		form input[type="text"]:focus,
