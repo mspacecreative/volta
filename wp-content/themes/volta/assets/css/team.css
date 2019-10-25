@@ -22,16 +22,12 @@
 	transition: all 0.25s ease-in-out;
 }
 .profile-img-wrap {
-	box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.3);
-	border-radius: 5px;
-	margin: 0 0 20px;
 	position: relative;
 }
 .team-profile img {
 	width: 100%;
 	max-width: 100%;
 	height: auto;
-	border-radius: 5px;
 	display: block;
 }
 .team-profile h4, .team-profile p {
@@ -40,6 +36,7 @@
 .team-profile h4 {
 	font-size: 20px;
 	margin: 10px 0 5px;
+	text-align: center;
 }
 .team-profile p {
 	margin: 5px 0 10px;
@@ -97,7 +94,7 @@
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.25s ease-in-out;
-	border-radius: 5px;
+	border-radius: 1000px;
 }
 .plus-sign {
 	position: absolute;
