@@ -656,6 +656,14 @@ function currentResidents() {
 }
 add_shortcode( 'residents_loop', 'currentResidents' );
 
+// CURRENT RESIDENTS POSTS LOOP
+function teamMembers() {
+	ob_start();
+		get_template_part('includes/loops/loop-team');
+	return ob_get_clean();
+}
+add_shortcode( 'volta_team', 'teamMembers' );
+
 // REMOVE PROTECTED / PRIVATE PREFIX ON PROTECTED PAGES
 function the_title_trim($title) {
 
