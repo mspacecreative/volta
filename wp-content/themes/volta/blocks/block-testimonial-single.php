@@ -19,10 +19,10 @@ if ( $loop->have_posts() ) :
 				<article class="width-800 default-padding align-center">
 			
 					<?php if ( has_post_thumbnail() ):
-						echo the_post_thumbnail( array(200,200) );
+						echo get_the_post_thumbnail( $object_id, array(200,200) );
 					endif; ?>
 					
-					<h4><?php the_title(); ?></h4>
+					<h4><?php echo esc_html( get_the_title( $object_id ) ); ?></h4>
 					
 					<p style="margin-bottom: 1em;">
 						<span class="testimonial_position"><?php the_field( 'title__position', $object_id ); ?></span>
