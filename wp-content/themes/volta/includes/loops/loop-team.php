@@ -5,7 +5,7 @@ $loop = new WP_Query( array(
 	)
 );
 if ( $loop->have_posts() ) : ?>
-<div class="team-container clearfix">
+<div class="team-container clear">
 	
 	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 	
