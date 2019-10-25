@@ -289,16 +289,10 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
 }
 
 // Custom View Article link to Post
-function html5_blank_view_article($more)
+/*function html5_blank_view_article($more)
 {
     global $post;
     return '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
-}
-
-// Remove Admin bar
-/*function remove_admin_bar()
-{
-    return false;
 }*/
 
 // Remove 'text/css' from our enqueued stylesheet
