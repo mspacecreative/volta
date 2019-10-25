@@ -213,8 +213,8 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 
 	p, ul, ol, dl, table {
 		margin-bottom: 1em;
-		font-size: 18px;
-		line-height: 1.75em;
+		font-size: 16px;
+		line-height: 1.55em;
 		color: #000;
 		letter-spacing: 0.015em;
 	}
