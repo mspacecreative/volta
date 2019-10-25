@@ -1,8 +1,8 @@
 .team-profile {
 	display: inline-block;
 	vertical-align: top;
-	width: 20%;
-	padding: 1%;
+	width: 18%;
+	margin: 1%;
 	transition: all 0.25s ease-in-out;
 	cursor: pointer;
 	text-align: center;
