@@ -1,8 +1,8 @@
 .team-profile {
-	float: left;
-	width: 23.125%;
-	flex-basis: 23.125%;
-	margin: 0 2.5% 2.5% 0;
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	padding: 1%;
 	transition: all 0.25s ease-in-out;
 	cursor: pointer;
 	text-align: center;
@@ -14,8 +14,7 @@
 	transition: all 0.25s ease-in-out;
 }
 .team-container {
-	display: flex;
-	flex-wrap: wrap;
+	font-size: 0;
 }
 .team-profile:hover .profile-overlay, .team-profile:hover .plus-sign {
 	opacity: 1;
