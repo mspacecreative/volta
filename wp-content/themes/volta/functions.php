@@ -122,6 +122,9 @@ function html5blank_styles()
     
     wp_register_style('isotope-css', get_template_directory_uri() . '/assets/css/isotope.css', array(), '1.0', 'all');
     wp_enqueue_style('isotope-css');
+    
+    wp_register_style('team-css', get_template_directory_uri() . '/assets/css/team.css', array(), '1.0', 'all');
+    wp_enqueue_style('team-css');
 }
 
 // Load scripts in footer

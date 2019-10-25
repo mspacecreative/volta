@@ -6,6 +6,20 @@
 
 (function($) {
 	
+	// TEAM MEMBERS
+	$('.team-profile, .team-bio-inner .fa').click(function () {
+		$(this).next('.team-bio-container').toggleClass('show');
+		$('body').addClass('header-switch');
+	});
+	$('.team-bio-container .fa-close.mobile').click(function () {
+		$(this).parent().toggleClass('show');
+		$('body').removeClass('header-switch');
+	});
+	$('.team-bio-inner .fa-close').click(function () {
+		$(this).parent().parent().toggleClass('show');
+		$('body').removeClass('header-switch');
+	});
+	
 	// SOCIAL MEDIA BAR POSITIONING
 	function socialMediaBarPositioning() {
 		$('.addthis-container').height( $('.addthis-container').prev().outerHeight() );
