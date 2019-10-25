@@ -17,7 +17,7 @@ if ( $loop->have_posts() ) : ?>
 			</div>
 			<div class="profile-overlay"></div>
 			<?php if ( has_post_thumbnail() ) {
-				echo the_post_thumbnail('large');
+				echo the_post_thumbnail( array(400,400) );
 			} ?>
 		</div>
 								
