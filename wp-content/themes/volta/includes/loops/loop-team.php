@@ -7,7 +7,15 @@ $loop = new WP_Query( array(
 if ( $loop->have_posts() ) : ?>
 <div class="team-container clear">
 	
-	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+	<?php while ( $loop->have_posts() ) : $loop->the_post();
+	
+	$post_object = get_field('position__title');
+	
+	if( $post_object ): 
+		
+		$post = $post_object;
+		$object_id = $post->ID;
+		setup_postdata( $post ); ?>
 	
 	<div class="team-profile">
 				
@@ -23,8 +31,8 @@ if ( $loop->have_posts() ) : ?>
 								
 		<h4><?php the_title(); ?></h4>
 		
-		<?php if ( get_field('position__title') ): ?>
-		<p><?php get_field('position__title'); ?></p>
+		<?php if ( get_field('position__title', $object_id) ): ?>
+		<p><?php get_field('position__title', $object_id); ?></p>
 		<?php endif; ?>
 								
 	</div>
@@ -37,7 +45,10 @@ if ( $loop->have_posts() ) : ?>
 		</div>
 	</div>
 	
-	<?php endwhile; ?>
+	<?php endif;
+	wp_reset_postdata();
+	
+	endwhile; ?>
 
 </div>
 <?php endif; wp_reset_query(); ?>
