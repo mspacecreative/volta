@@ -1,16 +1,13 @@
 <?php 
-$args = array( 
+$loop = new WP_Query( array( 
 	'post_type' => 'team',
-	'posts_per_page' => -1
+	'posts_per_page' => -1,
+	)
 );
-
-$the_query = new WP_Query( $args );
-if( $the_query->have_posts() ): ?>
+if ( $loop->have_posts() ) : ?>
 <div class="team-container clear">
 	
-	<?php while( $the_query->have_posts() ) : $the_query->the_post();
-	
-	$position = get_field('position__title', $post->ID); ?>
+	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 	
 	<div class="team-profile">
 				
@@ -26,8 +23,8 @@ if( $the_query->have_posts() ): ?>
 								
 		<h4><?php the_title(); ?></h4>
 		
-		<?php if ( $position ): ?>
-		<p><?php get_field('position__title', $post->ID); ?></p>
+		<?php if ( get_field('position__title') ): ?>
+		<p><?php the_field('position__title'); ?></p>
 		<?php endif; ?>
 								
 	</div>
