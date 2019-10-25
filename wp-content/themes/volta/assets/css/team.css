@@ -5,6 +5,7 @@
 	margin: 0 2.5% 2.5% 0;
 	transition: all 0.25s ease-in-out;
 	cursor: pointer;
+	text-align: center;
 }
 .team-container div:nth-child(7n) {
 	margin-right: 0;
@@ -36,7 +37,6 @@
 .team-profile h4 {
 	font-size: 20px;
 	margin: 10px 0 5px;
-	text-align: center;
 }
 .team-profile p {
 	margin: 5px 0 10px;
