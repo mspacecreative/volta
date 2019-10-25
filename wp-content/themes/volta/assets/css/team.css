@@ -7,7 +7,7 @@
 	cursor: pointer;
 	text-align: center;
 }
-.team-container div:nth-child(7n) {
+.team-profile:nth-of-type(4n) {
 	margin-right: 0;
 }
 .team-profile:hover {

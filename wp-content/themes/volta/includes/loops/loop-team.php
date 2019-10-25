@@ -18,6 +18,8 @@ if ( $loop->have_posts() ) : ?>
 			<div class="profile-overlay"></div>
 			<?php if ( has_post_thumbnail() ) {
 				echo the_post_thumbnail( array(400,400) );
+			} else {
+			echo '<img src="' . get_template_directory_uri() . '/img/portrait_placeholder.jpg">';
 			} ?>
 		</div>
 								
