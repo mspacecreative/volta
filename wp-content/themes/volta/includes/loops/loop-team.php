@@ -3,7 +3,6 @@ $args = array(
 	'post_type' => 'team',
 	'posts_per_page' => -1,
 	'meta_key' => 'position__title',
-	)
 );
 
 $the_query = new WP_Query( $args );
