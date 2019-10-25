@@ -1,12 +1,35 @@
 <?php
 $layouttype = get_field('layout_type');
 $verticalalignment = get_field('vertical_alignment');
+$bgcolour = get_field('background_colour_column_background_colour');
 
 if ( $layouttype == 'one' && $verticalalignment == 'top' ):	
 	
 	if( have_rows('variable_columns') ): ?>
 	
 	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_top">
+		
+		<?php if ( get_field('heading') ): ?>
+			<h2 class="width-100"><?php the_field('heading'); ?></h2>
+		<?php endif; ?>
+		
+		<?php while( have_rows('variable_columns') ): the_row(); ?>
+		
+		<div class="column-container one_column">
+			<?php the_sub_field('column_content'); ?>
+		</div>
+		
+		<?php endwhile; ?>
+		
+	</div>
+	
+	<?php endif;
+	
+elseif ( $layouttype == 'one' && $verticalalignment == 'center' && $bgcolour ):
+
+	if( have_rows('variable_columns') ): ?>
+	
+	<div class="columns-container display-flex extra-top-bottom-padding top-bottom-margin" style="background-color: <?php the_field('background_colour_column_background_colour'); ?>;">
 		
 		<?php if ( get_field('heading') ): ?>
 			<h2 class="width-100"><?php the_field('heading'); ?></h2>
@@ -73,6 +96,74 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'top' ):
 	if( have_rows('two_column_layout') ): ?>
 	
 	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_top">
+		
+		<?php if ( get_field('heading') ): ?>
+			<h2 class="width-100"><?php the_field('heading'); ?></h2>
+		<?php endif; ?>
+		
+		<?php while( have_rows('two_column_layout') ): the_row(); ?>
+		
+			<?php if( have_rows('left_column') ): ?>
+			<?php while( have_rows('left_column') ): the_row(); ?>
+		
+			<div class="column-container two_column">
+				<?php
+				$contenttype = get_sub_field('column_left_content_type' ); 
+				
+				if ( $contenttype == 'text' ):
+				the_sub_field('left_column_text');
+				
+				elseif ( $contenttype == 'image' ):
+				$image = get_sub_field('left_column_image');
+				$size = 'large';
+				
+				if ( $image ): ?>
+					<?php echo wp_get_attachment_image( $image, $size ); ?>
+				<?php endif;
+				
+				endif;
+				?>
+			</div>
+			
+			<?php endwhile;
+			endif; ?>
+			
+			<?php if( have_rows('right_column') ): ?>
+			<?php while( have_rows('right_column') ): the_row(); ?>
+			
+			<div class="column-container two_column">
+				<?php
+				$contenttype = get_sub_field('column_right_content_type' ); 
+					
+				if ( $contenttype == 'text' ):
+				the_sub_field('right_column_text');
+					
+				elseif ( $contenttype == 'image' ):
+				$image = get_sub_field('right_column_image');
+				$size = 'large';
+				
+				if ( $image ): ?>
+					<?php echo wp_get_attachment_image( $image, $size ); ?>
+				<?php endif;
+				
+				endif;
+				?>
+			</div>
+				
+			<?php endwhile;
+			endif; ?>
+		
+		<?php endwhile; ?>
+		
+	</div>
+	
+	<?php endif;
+	
+elseif ( $layouttype == 'two' && $verticalalignment == 'top' && $bgcolour ):
+
+	if( have_rows('two_column_layout') ): ?>
+	
+	<div class="columns-container display-flex extra-top-bottom-padding top-bottom-margin align_items_top" style="background-color: <?php the_field('background_colour_column_background_colour'); ?>;">
 		
 		<?php if ( get_field('heading') ): ?>
 			<h2 class="width-100"><?php the_field('heading'); ?></h2>
@@ -204,11 +295,147 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'center' ):
 	
 	<?php endif;
 	
+elseif ( $layouttype == 'two' && $verticalalignment == 'center' && $bgcolour ):
+
+	if( have_rows('two_column_layout') ): ?>
+	
+	<div class="columns-container display-flex extra-top-bottom-padding top-bottom-margin" style="background-color: <?php the_field('background_colour_column_background_colour'); ?>;">
+		
+		<?php if ( get_field('heading') ): ?>
+			<h2 class="width-100"><?php the_field('heading'); ?></h2>
+		<?php endif; ?>
+		
+		<?php while( have_rows('two_column_layout') ): the_row(); ?>
+		
+			<?php if( have_rows('left_column') ): ?>
+			<?php while( have_rows('left_column') ): the_row(); ?>
+		
+			<div class="column-container two_column">
+				<?php
+				$contenttype = get_sub_field('column_left_content_type' ); 
+				
+				if ( $contenttype == 'text' ):
+				the_sub_field('left_column_text');
+				
+				elseif ( $contenttype == 'image' ):
+				$image = get_sub_field('left_column_image');
+				$size = 'large';
+				
+				if ( $image ): ?>
+					<?php echo wp_get_attachment_image( $image, $size ); ?>
+				<?php endif;
+				
+				endif;
+				?>
+			</div>
+			
+			<?php endwhile;
+			endif; ?>
+			
+			<?php if( have_rows('right_column') ): ?>
+			<?php while( have_rows('right_column') ): the_row(); ?>
+			
+			<div class="column-container two_column">
+				<?php
+				$contenttype = get_sub_field('column_right_content_type' ); 
+					
+				if ( $contenttype == 'text' ):
+				the_sub_field('right_column_text');
+					
+				elseif ( $contenttype == 'image' ):
+				$image = get_sub_field('right_column_image');
+				$size = 'large';
+				
+				if ( $image ): ?>
+					<?php echo wp_get_attachment_image( $image, $size ); ?>
+				<?php endif;
+				
+				endif;
+				?>
+			</div>
+				
+			<?php endwhile;
+			endif; ?>
+		
+		<?php endwhile; ?>
+		
+	</div>
+	
+	<?php endif;
+	
 elseif ( $layouttype == 'two' && $verticalalignment == 'bottom' ):
 
 	if( have_rows('two_column_layout') ): ?>
 	
 	<div class="columns-container display-flex top-bottom-padding top-bottom-margin align_items_bottom">
+		
+		<?php if ( get_field('heading') ): ?>
+			<h2 class="width-100"><?php the_field('heading'); ?></h2>
+		<?php endif; ?>
+		
+		<?php while( have_rows('two_column_layout') ): the_row(); ?>
+		
+			<?php if( have_rows('left_column') ): ?>
+			<?php while( have_rows('left_column') ): the_row(); ?>
+		
+			<div class="column-container two_column">
+				<?php
+				$contenttype = get_sub_field('column_left_content_type' ); 
+				
+				if ( $contenttype == 'text' ):
+				the_sub_field('left_column_text');
+				
+				elseif ( $contenttype == 'image' ):
+				$image = get_sub_field('left_column_image');
+				$size = 'large';
+				
+				if ( $image ): ?>
+					<?php echo wp_get_attachment_image( $image, $size ); ?>
+				<?php endif;
+				
+				endif;
+				?>
+			</div>
+			
+			<?php endwhile;
+			endif; ?>
+			
+			<?php if( have_rows('right_column') ): ?>
+			<?php while( have_rows('right_column') ): the_row(); ?>
+			
+			<div class="column-container two_column">
+				<?php
+				$contenttype = get_sub_field('column_right_content_type' ); 
+					
+				if ( $contenttype == 'text' ):
+				the_sub_field('right_column_text');
+					
+				elseif ( $contenttype == 'image' ):
+				$image = get_sub_field('right_column_image');
+				$size = 'large';
+				
+				if ( $image ): ?>
+					<?php echo wp_get_attachment_image( $image, $size ); ?>
+				<?php endif;
+				
+				endif;
+				?>
+			</div>
+				
+			<?php endwhile;
+			endif; ?>
+		
+		<?php endwhile; ?>
+		
+	</div>
+	
+	<?php endif;
+	
+elseif ( $layouttype == 'two' && $verticalalignment == 'bottom' && $bgcolour ):
+
+	if( have_rows('two_column_layout') ): ?>
+	
+	<div class="columns-container display-flex extra-top-bottom-padding top-bottom-margin align_items_bottom" style="background-color: <?php the_field('background_colour_column_background_colour'); ?>;">
 		
 		<?php if ( get_field('heading') ): ?>
 			<h2 class="width-100"><?php the_field('heading'); ?></h2>
