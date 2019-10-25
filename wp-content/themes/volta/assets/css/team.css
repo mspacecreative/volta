@@ -6,7 +6,7 @@
 	transition: all 0.25s ease-in-out;
 	cursor: pointer;
 }
-.team-container .team-profile:nth-of-type(4n) {
+.team-container div:nth-child(7n) {
 	margin-right: 0;
 }
 .team-profile:hover {
