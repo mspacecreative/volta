@@ -686,14 +686,14 @@ add_filter('the_title', 'the_title_trim');
 // Adding excerpt for page
 add_post_type_support( 'page', 'excerpt' );
 
-/*function customExcerptLink( $more ) {
+function customExcerptLink( $more ) {
 	if ( is_admin() ) {
 		return $more;
 	}
 
 	return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
 }
-add_filter( 'excerpt_more', 'customExcerptLink', 999 );*/
+add_filter( 'excerpt_more', 'customExcerptLink', 999 );
 
 // FORMAT ANCHOR LINKS
 function custom_anchor_links( $value, $post_id, $field ) {
