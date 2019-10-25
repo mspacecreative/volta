@@ -7,7 +7,7 @@
 	cursor: pointer;
 	text-align: center;
 }
-.team-profile:nth-of-type(4n) {
+.team-profile:nth-of-type(4) {
 	margin-right: 0;
 }
 .team-profile:hover {
@@ -30,6 +30,7 @@
 	max-width: 100%;
 	height: auto;
 	display: block;
+	border-radius: 1000px;
 }
 .team-profile h4, .team-profile p {
 	padding: 0;
