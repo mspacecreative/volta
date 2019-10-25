@@ -2,7 +2,6 @@
 $args = array( 
 	'post_type' => 'team',
 	'posts_per_page' => -1,
-	'meta_key' => 'position__title',
 );
 
 $the_query = new WP_Query( $args );
@@ -25,8 +24,8 @@ if( $the_query->have_posts() ): ?>
 								
 		<h4><?php the_title(); ?></h4>
 		
-		<?php if ( get_field('position__title') ): ?>
-		<p><?php get_field('position__title'); ?></p>
+		<?php if ( get_field('position__title', $post->ID) ): ?>
+		<p><?php get_field('position__title', $post->ID); ?></p>
 		<?php endif; ?>
 								
 	</div>
