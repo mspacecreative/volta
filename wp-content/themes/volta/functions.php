@@ -289,11 +289,11 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
 }
 
 // Custom View Article link to Post
-/*function html5_blank_view_article($more)
+function html5_blank_view_article($more)
 {
     global $post;
     return '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
-}*/
+}
 
 // Remove 'text/css' from our enqueued stylesheet
 function html5_style_remove($tag)
@@ -398,6 +398,7 @@ remove_action('wp_head', 'rel_canonical');
 remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
 
 // Add Filters
+add_filter( 'excerpt_more', 'html5_blank_view_article', 999 );
 add_filter('avatar_defaults', 'html5blankgravatar'); // Custom Gravatar in Settings > Discussion
 add_filter('body_class', 'add_slug_to_body_class'); // Add slug to body class (Starkers build)
 add_filter('widget_text', 'do_shortcode'); // Allow shortcodes in Dynamic Sidebar
@@ -679,15 +680,6 @@ add_filter('the_title', 'the_title_trim');
 // ADD EXCERPT TO PAGES
 // Adding excerpt for page
 add_post_type_support( 'page', 'excerpt' );
-
-function customExcerptLink( $more ) {
-	if ( is_admin() ) {
-		return $more;
-	}
-
-	return '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('read more', 'html5blank') . '</a>';
-}
-add_filter( 'excerpt_more', 'customExcerptLink', 999 );
 
 // FORMAT ANCHOR LINKS
 function custom_anchor_links( $value, $post_id, $field ) {
