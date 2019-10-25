@@ -23,8 +23,8 @@ if ( $loop->have_posts() ) : ?>
 								
 		<h4><?php the_title(); ?></h4>
 		
-		<?php if ( get_field('position__title') ): ?>
-		<p><?php the_field('position__title'); ?></p>
+		<?php if ( get_field('position__title', $post->ID) ): ?>
+		<p><?php the_field('position__title', $post->ID); ?></p>
 		<?php endif; ?>
 								
 	</div>
