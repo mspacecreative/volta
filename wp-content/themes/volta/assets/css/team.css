@@ -47,7 +47,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: rgba(24,42,84, .98);
+	background: rgba(0,0,0,.8);
 	visibility: hidden;
 	opacity: 0;
 	transition: all 0.25s ease-in-out;
@@ -90,7 +90,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(24,42,84, .9);
+	background: rgba(0,0,0, .8);
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.25s ease-in-out;
@@ -107,7 +107,7 @@
 }
 .plus-sign .fa {
 	color: #fff;
-	font-size: 50px;
+	font-size: 30px;
 }
 
 .fa-close.mobile {
