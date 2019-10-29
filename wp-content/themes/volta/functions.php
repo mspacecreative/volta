@@ -670,7 +670,7 @@ add_shortcode( 'volta_team', 'teamMembers' );
 // PRICING TABLE
 function pricingTable() {
 	ob_start();
-		get_template_part('includes/loops/pricing-table');
+		get_template_part('includes/pricing-table');
 	return ob_get_clean();
 }
 add_shortcode( 'pricing_table', 'pricingTable' );

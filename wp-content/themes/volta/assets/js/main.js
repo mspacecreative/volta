@@ -25,6 +25,20 @@
 		$('.addthis-container').height( $('.addthis-container').prev().outerHeight() );
 	}
 	
+	function sticktothetop() {
+		var window_top = $(window).scrollTop();
+		var top = $('.corporate_pricing_table').offset().top;
+		if (window_top > top) {
+		    $('.header-row').addClass('fixed');
+		} else {
+		    $('.header-row').removeClass('fixed');
+		}
+	}
+	    
+	$(window).scroll(function() {
+	    sticktothetop();
+	});
+	
 	// SMOOTH SCROLL
 	// Select all links with hashes
 	$('a[href*="#"]')

@@ -1,5 +1,5 @@
 <style>
-	.pricing-table {
+	.corporate_pricing_table {
 		margin: auto;
 		width: 90%;
 		font-family: sans-serif;
@@ -22,7 +22,6 @@
 		vertical-align: middle;
 		border-right: none;
 		text-align: center;
-		
 	}
 	.header-row td:first-of-type {
 		background-color: transparent;
@@ -42,9 +41,10 @@
 	.header-row td:last-of-type, .body-row td:last-of-type {
 		margin-right: 0;
 	}
-	.pricing-table td {
+	.corporate_pricing_table td {
 		padding: 1%;
 		box-sizing: border-box;
+		line-height: 20px;
 	}
 	.align-center {
 		text-align: center;
@@ -54,7 +54,7 @@
 		color: #fff;
 		display: block;
 	}
-	.pricing-table .first {
+	.corporate_pricing_table .first {
 		margin-top: calc(2% + 44px);
 	}
 	.grey-row-bg > td {
@@ -79,13 +79,13 @@
 		font-size: 15px;
 		vertical-align: middle;
 	}
-	.pricing-table svg {
+	.corporate_pricing_table svg {
 		width: 15px;
 		height: 15px;
 	}
 </style>
 
-<table cellpadding="0" cellspacing="0" border="0" class="pricing-table">
+<table cellpadding="0" cellspacing="0" border="0" class="corporate_pricing_table">
 	<tr class="header-row">
 		<td>Benefits</td>
 		<td>Innovator</td>
@@ -105,18 +105,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -125,18 +113,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 	</tr>
 	<tr class="body-row">
@@ -149,18 +125,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -169,18 +133,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 	</tr>
 	<tr class="body-row">
@@ -192,18 +144,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -212,18 +152,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -232,18 +160,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -252,18 +168,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 	</tr>
 	<tr class="body-row">
@@ -275,18 +179,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 	</tr>
 	<tr class="body-row">
@@ -298,18 +190,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 	</tr>
 	<tr class="body-row">
@@ -321,18 +201,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -341,18 +209,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -361,18 +217,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -381,18 +225,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 	</tr>
 	<tr class="body-row">
@@ -404,18 +236,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -424,18 +244,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -444,18 +252,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -464,18 +260,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 	</tr>
 	<tr class="align-center grey-row-bg">
@@ -490,18 +274,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -510,18 +282,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -531,18 +291,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 	</tr>
 	<tr class="body-row">
@@ -554,18 +302,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -574,18 +310,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 	</tr>
 	<tr class="body-row">
@@ -597,18 +321,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -617,18 +329,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -637,18 +337,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -657,18 +345,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 	</tr>
 	<tr class="body-row">
@@ -680,18 +356,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -700,18 +364,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -720,18 +372,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -740,18 +380,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 	</tr>
 	<tr class="align-center grey-row-bg">
@@ -766,18 +394,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 	</tr>
 	<tr class="body-row">
@@ -789,18 +405,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -809,18 +413,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 	</tr>
 	<tr class="body-row">
@@ -832,18 +424,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -852,18 +432,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -872,18 +440,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -892,18 +448,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 	</tr>
 	<tr class="body-row">
@@ -915,18 +459,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -935,18 +467,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -955,18 +475,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -975,18 +483,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 	</tr>
 	<tr class="align-center grey-row-bg">
@@ -1001,18 +497,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 	</tr>
 	<tr class="body-row">
@@ -1024,18 +508,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -1044,18 +516,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -1064,18 +524,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -1084,18 +532,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 	</tr>
 	<tr class="body-row">
@@ -1107,18 +543,6 @@
 				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
 		</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
-		<g>
-		</g>
 		</svg></td>
 	</tr>
 	<tr class="align-center grey-row-bg">
