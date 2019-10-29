@@ -11,11 +11,11 @@
 		$(this).next('.team-bio-container').toggleClass('show');
 		$('body').addClass('header-switch');
 	});
-	$('.team-bio-container .fa-close.mobile').click(function () {
+	$('.team-bio-container .mobile').click(function () {
 		$(this).parent().toggleClass('show');
 		$('body').removeClass('header-switch');
 	});
-	$('.team-bio-inner .fa-close').click(function () {
+	$('.team-bio-inner .mobile').click(function () {
 		$(this).parent().parent().toggleClass('show');
 		$('body').removeClass('header-switch');
 	});

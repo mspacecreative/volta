@@ -32,9 +32,8 @@ if ( $loop->have_posts() ) : ?>
 	</div>
 	 
 	<div class="team-bio-container">
-		<i class="fa fa-close mobile"></i>
 		<div class="team-bio-inner">
-			<i class="fa fa-close"></i>
+			<span class="mobile"></span>
 			<?php the_content(); ?>
 		</div>
 	</div>
