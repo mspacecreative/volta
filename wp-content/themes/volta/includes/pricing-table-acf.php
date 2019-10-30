@@ -133,7 +133,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif;
+		<?php endif; rewind_posts();
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -166,7 +166,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif;
+		<?php endif; rewind_posts();
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -199,7 +199,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif;
+		<?php endif; rewind_posts();
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -232,7 +232,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; ?>
+		<?php endif; rewind_posts(); ?>
 		
 	</tr>
 	
@@ -271,7 +271,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif;
+		<?php endif; rewind_posts();
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -304,7 +304,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif;
+		<?php endif; rewind_posts();
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -337,7 +337,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif;
+		<?php endif; rewind_posts();
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -370,7 +370,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; ?>
+		<?php endif; rewind_posts(); ?>
 		
 	</tr>
 	<tr class="body-row">
