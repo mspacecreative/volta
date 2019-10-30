@@ -120,15 +120,13 @@
 		}
 		
 		// STICKY HEADER ROW
-		var s = $('.corporate_pricing_table');
-		var pos = s.position();
-		var banner = $('.banner');
+		var header = $('.corporate_pricing_table').offset();
+		var viewport = $(window);
 		$(window).scroll(function() {
-			var windowpos = $(window).scrollTop();
-			if (windowpos >= pos.top & windowpos <= banner) {
-				s.addClass('fixed');
+			if ( viewport.scrollTop() >= header.top ) {
+				$('.corporate_pricing_table').addClass('fixed');
 			} else {
-				s.removeClass('fixed');	
+				$('.corporate_pricing_table').removeClass('fixed');
 			}
 		});
 	});
