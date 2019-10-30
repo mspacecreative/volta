@@ -12,8 +12,8 @@
 	}
 	.header-row {
 		font-weight: bold;
-		background-color: #fff;
-		padding: 2% 0;
+		background-color: rgba(255,255,255,.75);
+		padding: 25px 0;
 	}
 	.header-row td {
 		background-color: #000;
@@ -57,7 +57,7 @@
 		display: block;
 	}
 	.corporate_pricing_table.fixed .first {
-		margin-top: calc(2% + 46px);
+		margin-top: 90px;
 	}
 	.grey-row-bg > td {
 		display: block;
