@@ -100,21 +100,15 @@ while( have_rows('desktop_table') ): the_row(); ?>
 		<td>People</td>
 	</tr>
 	
-	<?php 
-	if( have_rows('innovator') ):
-	while( have_rows('innovator') ): the_row();
-	if( have_rows('builder') ):
-	while( have_rows('builder') ): the_row();
-	if( have_rows('supporter') ):
-	while( have_rows('supporter') ): the_row();
-	if( have_rows('out-of-towner') ):
-	while( have_rows('out-of-towner') ): the_row(); ?>
-	
 	<tr class="body-row">
 		
 		<td>Innovation Assessment</td>
 		
-		<?php if( have_rows('benefit_categories') ):
+		<?php 
+		if( have_rows('innovator') ):
+		while( have_rows('innovator') ): the_row();
+		
+		if( have_rows('benefit_categories') ):
 		while( have_rows('benefit_categories') ): the_row();
 		
 		$people = get_sub_field('people');
@@ -132,9 +126,16 @@ while( have_rows('desktop_table') ): the_row(); ?>
 		<?php endif;
 		
 		endwhile;
+		endif;
+		
+		endwhile;
 		endif; ?>
 		
-		<?php if( have_rows('builder_benefit_categories') ):
+		<?php 
+		if( have_rows('builder') ):
+		while( have_rows('builder') ): the_row();
+		
+		if( have_rows('builder_benefit_categories') ):
 		while( have_rows('builder_benefit_categories') ): the_row();
 		
 		$people = get_sub_field('people');
@@ -152,9 +153,16 @@ while( have_rows('desktop_table') ): the_row(); ?>
 		<?php endif;
 		
 		endwhile;
+		endif;
+		
+		endwhile;
 		endif; ?>
 		
-		<?php if( have_rows('supporter_benefit_categories') ):
+		<?php 
+		if( have_rows('supporter') ):
+		while( have_rows('supporter') ): the_row();
+		
+		if( have_rows('supporter_benefit_categories') ):
 		while( have_rows('supporter_benefit_categories') ): the_row();
 		
 		$people = get_sub_field('people');
@@ -172,9 +180,16 @@ while( have_rows('desktop_table') ): the_row(); ?>
 		<?php endif;
 		
 		endwhile;
+		endif;
+		
+		endwhile;
 		endif; ?>
 		
-		<?php if( have_rows('towner_benefit_categories') ):
+		<?php 
+		if( have_rows('out-of-towner') ):
+		while( have_rows('out-of-towner') ): the_row();
+		
+		if( have_rows('towner_benefit_categories') ):
 		while( have_rows('towner_benefit_categories') ): the_row();
 		
 		$people = get_sub_field('people');
@@ -192,9 +207,13 @@ while( have_rows('desktop_table') ): the_row(); ?>
 		<?php endif;
 		
 		endwhile;
+		endif;
+		
+		endwhile;
 		endif; ?>
 		
 	</tr>
+	
 	<tr class="body-row">
 		<td>Corporate Innovation
 		Training</td>
@@ -632,11 +651,6 @@ while( have_rows('desktop_table') ): the_row(); ?>
 		<td>$2,500</td>
 		<td>$2,500</td>
 	</tr>
-	<?php endwhile;
-	endif; endwhile;
-	endif; endwhile;
-	endif; endwhile;
-	endif; ?>
 </table>
 <?php endwhile;
 endif; ?>
