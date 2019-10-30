@@ -25,6 +25,25 @@
 		$('.addthis-container').height( $('.addthis-container').prev().outerHeight() );
 	}
 	
+	var stickyHeader = $('.header-row').position().top;
+	$(window).scroll(function() {
+		if(stickyHeader >= $(window).scrollTop()) {
+			if($('.header-row').hasClass('fixed')) {
+		    	$('.header-row').removeClass('fixed');
+		    }
+		    if($('.placeholder').hasClass('sticky-top')) {
+		    	$('.placeholder').removeClass('sticky-top');
+		    }
+		} else { 
+			if(!$('.header-row').hasClass('fixed')) {
+		    	$('.header-row').addClass('fixed');
+		    }
+		    if(!$('.placeholder').hasClass('sticky-top')) {
+		    	$('.placeholder').addClass('sticky-top');
+			}
+		}
+	});
+	
 	// SMOOTH SCROLL
 	// Select all links with hashes
 	$('a[href*="#"]')
