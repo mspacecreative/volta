@@ -121,7 +121,10 @@
 				</g>
 			<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
 			</svg>
-			<?php endif; ?>
+			<?php endif;
+			
+			endwhile;
+			endif; ?>
 		
 		</td>
 		
@@ -150,7 +153,10 @@
 				</g>
 			<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
 			</svg>
-			<?php endif; ?>
+			<?php endif;
+			
+			endwhile;
+			endif; ?>
 		
 		</td>
 		
@@ -179,7 +185,10 @@
 				</g>
 			<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
 			</svg>
-			<?php endif; ?>
+			<?php endif;
+			
+			endwhile;
+			endif; ?>
 			
 		</td>
 			
@@ -208,7 +217,10 @@
 				</g>
 			<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
 			</svg>
-			<?php endif; ?>
+			<?php endif;
+			
+			endwhile;
+			endif; ?>
 				
 		</td>
 				
@@ -244,7 +256,10 @@
 				</g>
 			<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
 			</svg>
-			<?php endif; ?>
+			<?php endif;
+			
+			endwhile;
+			endif; ?>
 		
 		</td>
 		
@@ -273,7 +288,10 @@
 				</g>
 			<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
 			</svg>
-			<?php endif; ?>
+			<?php endif;
+			
+			endwhile;
+			endif; ?>
 		
 		</td>
 		
@@ -302,7 +320,10 @@
 				</g>
 			<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
 			</svg>
-			<?php endif; ?>
+			<?php endif;
+			
+			endwhile;
+			endif; ?>
 			
 		</td>
 			
@@ -331,7 +352,10 @@
 				</g>
 			<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
 			</svg>
-			<?php endif; ?>
+			<?php endif;
+			
+			endwhile;
+			endif; ?>
 				
 		</td>
 				
