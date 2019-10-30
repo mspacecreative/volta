@@ -7,12 +7,13 @@
 	}
 	.corporate_pricing_table.fixed .header-row {
 		position: fixed;
-		top: calc(46px + 20px);
+		top: 46px;
 		width: 100%;
 	}
 	.header-row {
 		font-weight: bold;
 		background-color: #fff;
+		padding: 2% 0;
 	}
 	.header-row td {
 		background-color: #000;
@@ -55,11 +56,8 @@
 		color: #fff;
 		display: block;
 	}
-	.corporate_pricing_table .first {
-		margin-top: 2%;
-	}
 	.corporate_pricing_table.fixed .first {
-		margin-top: calc(2% + 46px);
+		margin-top: 2%;
 	}
 	.grey-row-bg > td {
 		display: block;
@@ -67,10 +65,6 @@
 	}
 	.header-row, .grey-row-bg, .body-row {
 		display: block;
-	}
-	
-	.header-row {
-		margin-bottom: 2%;
 	}
 	.body-row td, .header-row td {
 		width: 18.4%;
