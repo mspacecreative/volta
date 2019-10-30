@@ -125,7 +125,7 @@
 		var viewport = $(window);
 		var bottom = headerTop + header.outerHeight(true);
 		$(window).scroll(function() {
-			if ( viewport.scrollTop() >= headerTop && <= bottom ) {
+			if ( !viewport.scrollTop() >= headerTop && !viewport.scrollTop() <= bottom ) {
 				header.addClass('fixed');
 			} else {
 				header.removeClass('fixed');
