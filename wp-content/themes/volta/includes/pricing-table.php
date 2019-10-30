@@ -5,6 +5,11 @@
 		font-family: sans-serif;
 		font-size: 0;
 	}
+	.corporate_pricing_table.fixed .header-row {
+		position: fixed;
+		top: calc(46px + 2%);
+		width: 100%;
+	}
 	.header-row {
 		font-weight: bold;
 		background-color: #fff;
