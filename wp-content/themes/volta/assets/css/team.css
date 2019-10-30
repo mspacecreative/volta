@@ -136,7 +136,7 @@
 
 @media (max-width: 450px) {
 	.team-profile {
-		width: 47.5%;
+		width: 46%;
 	}
 	.team-profile:nth-child(even) {
 		margin-right: 0;
