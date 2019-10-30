@@ -102,13 +102,13 @@
 		
 		<td>Innovation Assessment</td>
 		
-		<?php 
-		if( have_rows('innovator', 'options') ):
-		while( have_rows('innovator', 'options') ): the_row(); ?>
+		<?php if( have_rows('innovator', 'options') ): ?>
 		
 		<td>
 		
-			<?php if( have_rows('benefit_categories', 'options') ):
+		<?php while( have_rows('innovator', 'options') ): the_row();
+		
+			if( have_rows('benefit_categories', 'options') ):
 			while( have_rows('benefit_categories', 'options') ): the_row();
 			
 			$people = get_sub_field('people');
@@ -124,23 +124,24 @@
 			<?php endif;
 			
 			endwhile;
-			endif; ?>
+			endif;
+			
+		endwhile; ?>
 		
 		</td>
 		
-		<?php endwhile;
-		
-		else : ?>
+		<?php else : ?>
 		<td>&nbsp;</td>
 		
 		<?php endif;
 		
-		if( have_rows('builder', 'options') ):
-		while( have_rows('builder', 'options') ): the_row(); ?>
+		if( have_rows('builder', 'options') ): ?>
 		
 		<td>
 			
-			<?php if( have_rows('builder_benefit_categories', 'options') ):
+		<?php while( have_rows('builder', 'options') ): the_row();
+		
+			if( have_rows('builder_benefit_categories', 'options') ):
 			while( have_rows('builder_benefit_categories', 'options') ): the_row();
 			
 			$people = get_sub_field('people');
@@ -156,23 +157,24 @@
 			<?php endif;
 			
 			endwhile;
-			endif; ?>
+			endif;
+			
+		endwhile; ?>
 		
 		</td>
 		
-		<?php endwhile;
-		
-		else : ?>
+		<?php else : ?>
 		<td>&nbsp;</td>
 		
 		<?php endif;
 		
-		if( have_rows('supporter', 'options') ):
-		while( have_rows('supporter', 'options') ): the_row(); ?>
+		if( have_rows('supporter', 'options') ): ?>
 		
 		<td>
-				
-			<?php if( have_rows('supporter_benefit_categories', 'options') ):
+		
+		<?php while( have_rows('supporter', 'options') ): the_row();
+		
+			if( have_rows('supporter_benefit_categories', 'options') ):
 			while( have_rows('supporter_benefit_categories', 'options') ): the_row();
 			
 			$people = get_sub_field('people');
@@ -188,23 +190,24 @@
 			<?php endif;
 			
 			endwhile;
-			endif; ?>
+			endif;
 			
+		endwhile; ?>
+	
 		</td>
 			
-		<?php endwhile;
-			
-		else : ?>
+		<?php else : ?>
 		<td>&nbsp;</td>
 			
 		<?php endif;
 		
-		if( have_rows('out-of-towner', 'options') ):
-		while( have_rows('out-of-towner', 'options') ): the_row(); ?>
+		if( have_rows('out-of-towner', 'options') ): ?>
 		
 		<td>
 				
-			<?php if( have_rows('towner_benefit_categories', 'options') ):
+		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		
+			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
 			
 			$people = get_sub_field('people');
@@ -220,13 +223,13 @@
 			<?php endif;
 			
 			endwhile;
-			endif; ?>
-				
+			endif;
+			
+		endwhile; ?>
+		
 		</td>
 				
-		<?php endwhile;
-				
-		else : ?>
+		<?php else : ?>
 		<td>&nbsp;</td>
 				
 		<?php endif; ?>
@@ -237,13 +240,13 @@
 		<td>Corporate Innovation
 		Training</td>
 		
-		<?php 
-		if( have_rows('innovator', 'options') ):
-		while( have_rows('innovator', 'options') ): the_row(); ?>
+		<?php if( have_rows('innovator', 'options') ): ?>
 		
 		<td>
 		
-			<?php if( have_rows('benefit_categories', 'options') ):
+		<?php while( have_rows('innovator', 'options') ): the_row();
+		
+			if( have_rows('benefit_categories', 'options') ):
 			while( have_rows('benefit_categories', 'options') ): the_row();
 			
 			$people = get_sub_field('people');
@@ -259,23 +262,24 @@
 			<?php endif;
 			
 			endwhile;
-			endif; ?>
+			endif;
+			
+		endwhile; ?>
 		
 		</td>
 		
-		<?php endwhile;
-		
-		else : ?>
+		<?php else : ?>
 		<td>&nbsp;</td>
 		
 		<?php endif;
 		
-		if( have_rows('builder', 'options') ):
-		while( have_rows('builder', 'options') ): the_row(); ?>
+		if( have_rows('builder', 'options') ): ?>
 		
 		<td>
 			
-			<?php if( have_rows('builder_benefit_categories', 'options') ):
+		<?php while( have_rows('builder', 'options') ): the_row();
+		
+			if( have_rows('builder_benefit_categories', 'options') ):
 			while( have_rows('builder_benefit_categories', 'options') ): the_row();
 			
 			$people = get_sub_field('people');
@@ -291,23 +295,24 @@
 			<?php endif;
 			
 			endwhile;
-			endif; ?>
+			endif;
+			
+		endwhile; ?>
 		
 		</td>
 		
-		<?php endwhile;
-		
-		else : ?>
+		<?php else : ?>
 		<td>&nbsp;</td>
 		
 		<?php endif;
 		
-		if( have_rows('supporter', 'options') ):
-		while( have_rows('supporter', 'options') ): the_row(); ?>
+		if( have_rows('supporter', 'options') ): ?>
 		
 		<td>
 				
-			<?php if( have_rows('supporter_benefit_categories', 'options') ):
+		<?php while( have_rows('supporter', 'options') ): the_row();
+		
+			if( have_rows('supporter_benefit_categories', 'options') ):
 			while( have_rows('supporter_benefit_categories', 'options') ): the_row();
 			
 			$people = get_sub_field('people');
@@ -323,23 +328,24 @@
 			<?php endif;
 			
 			endwhile;
-			endif; ?>
+			endif;
 			
+		endwhile; ?>
+		
 		</td>
 			
-		<?php endwhile;
-			
-		else : ?>
+		<?php else : ?>
 		<td>&nbsp;</td>
 			
 		<?php endif;
 		
-		if( have_rows('out-of-towner', 'options') ):
-		while( have_rows('out-of-towner', 'options') ): the_row(); ?>
+		if( have_rows('out-of-towner', 'options') ): ?>
 		
 		<td>
 				
-			<?php if( have_rows('towner_benefit_categories', 'options') ):
+		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		
+			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
 			
 			$people = get_sub_field('people');
@@ -355,13 +361,13 @@
 			<?php endif;
 			
 			endwhile;
-			endif; ?>
-				
+			endif;
+			
+		endwhile; ?>
+		
 		</td>
 				
-		<?php endwhile;
-				
-		else : ?>
+		<?php else : ?>
 		<td>&nbsp;</td>
 				
 		<?php endif; ?>
