@@ -86,8 +86,8 @@
 
 <h2 style="margin-bottom: 50px;"><?php esc_html_e('Benefits &amp; Pricing'); ?></h2>
 
-<?php if( have_rows('desktop_table') ):
-while( have_rows('desktop_table') ): the_row(); ?>
+<?php if( have_rows('desktop_table', 'options') ):
+while( have_rows('desktop_table', 'options') ): the_row(); ?>
 <table cellpadding="0" cellspacing="0" border="0" class="corporate_pricing_table">
 	<tr class="header-row">
 		<td>Benefits</td>
@@ -105,40 +105,13 @@ while( have_rows('desktop_table') ): the_row(); ?>
 		<td>Innovation Assessment</td>
 		
 		<?php 
-		if( have_rows('innovator') ):
-		while( have_rows('innovator') ): the_row();
+		if( have_rows('innovator', 'options') ):
+		while( have_rows('innovator', 'options') ): the_row();
 		
-		if( have_rows('benefit_categories') ):
-		while( have_rows('benefit_categories') ): the_row();
+		if( have_rows('benefit_categories', 'options') ):
+		while( have_rows('benefit_categories', 'options') ): the_row();
 		
-		$people = get_sub_field('people');
-		
-		if ( $people && in_array('innovation', $people) ): ?>
-		<td><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
-			<g>
-				<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
-					S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
-			</g>
-		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		</svg></td>
-		<?php else : ?>
-		<td>&nbsp;</td>
-		<?php endif;
-		
-		endwhile;
-		endif;
-		
-		endwhile;
-		endif; ?>
-		
-		<?php 
-		if( have_rows('builder') ):
-		while( have_rows('builder') ): the_row();
-		
-		if( have_rows('builder_benefit_categories') ):
-		while( have_rows('builder_benefit_categories') ): the_row();
-		
-		$people = get_sub_field('people');
+		$people = get_sub_field('people', 'options');
 		
 		if ( $people && in_array('innovation', $people) ): ?>
 		<td><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
@@ -159,13 +132,13 @@ while( have_rows('desktop_table') ): the_row(); ?>
 		endif; ?>
 		
 		<?php 
-		if( have_rows('supporter') ):
-		while( have_rows('supporter') ): the_row();
+		if( have_rows('builder', 'options') ):
+		while( have_rows('builder', 'options') ): the_row();
 		
-		if( have_rows('supporter_benefit_categories') ):
-		while( have_rows('supporter_benefit_categories') ): the_row();
+		if( have_rows('builder_benefit_categories', 'options') ):
+		while( have_rows('builder_benefit_categories', 'options') ): the_row();
 		
-		$people = get_sub_field('people');
+		$people = get_sub_field('people', 'options');
 		
 		if ( $people && in_array('innovation', $people) ): ?>
 		<td><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
@@ -186,13 +159,40 @@ while( have_rows('desktop_table') ): the_row(); ?>
 		endif; ?>
 		
 		<?php 
-		if( have_rows('out-of-towner') ):
-		while( have_rows('out-of-towner') ): the_row();
+		if( have_rows('supporter', 'options') ):
+		while( have_rows('supporter', 'options') ): the_row();
 		
-		if( have_rows('towner_benefit_categories') ):
-		while( have_rows('towner_benefit_categories') ): the_row();
+		if( have_rows('supporter_benefit_categories', 'options') ):
+		while( have_rows('supporter_benefit_categories', 'options') ): the_row();
 		
-		$people = get_sub_field('people');
+		$people = get_sub_field('people', 'options');
+		
+		if ( $people && in_array('innovation', $people) ): ?>
+		<td><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
+			<g>
+				<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
+					S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
+			</g>
+		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
+		</svg></td>
+		<?php else : ?>
+		<td>&nbsp;</td>
+		<?php endif;
+		
+		endwhile;
+		endif;
+		
+		endwhile;
+		endif; ?>
+		
+		<?php 
+		if( have_rows('out-of-towner', 'options') ):
+		while( have_rows('out-of-towner', 'options') ): the_row();
+		
+		if( have_rows('towner_benefit_categories', 'options') ):
+		while( have_rows('towner_benefit_categories', 'options') ): the_row();
+		
+		$people = get_sub_field('people', 'options');
 		
 		if ( $people && in_array('innovation', $people) ): ?>
 		<td><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
