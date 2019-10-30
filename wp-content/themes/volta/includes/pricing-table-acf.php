@@ -126,14 +126,14 @@
 			endwhile;
 			endif;
 			
-		endwhile; ?>
+		endwhile; reset_rows(); ?>
 		
 		</td>
 		
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; rewind_posts();
+		<?php endif;
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -159,14 +159,14 @@
 			endwhile;
 			endif;
 			
-		endwhile; ?>
+		endwhile; reset_rows(); ?>
 		
 		</td>
 		
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; rewind_posts();
+		<?php endif;
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -192,14 +192,14 @@
 			endwhile;
 			endif;
 			
-		endwhile; ?>
+		endwhile; reset_rows(); ?>
 	
 		</td>
 			
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif; rewind_posts();
+		<?php endif;
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -225,14 +225,14 @@
 			endwhile;
 			endif;
 			
-		endwhile; ?>
+		endwhile; reset_rows(); ?>
 		
 		</td>
 				
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; rewind_posts(); ?>
+		<?php endif; ?>
 		
 	</tr>
 	
@@ -264,14 +264,14 @@
 			endwhile;
 			endif;
 			
-		endwhile; ?>
+		endwhile; reset_rows(); ?>
 		
 		</td>
 		
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; rewind_posts();
+		<?php endif;
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -297,14 +297,14 @@
 			endwhile;
 			endif;
 			
-		endwhile; ?>
+		endwhile; reset_rows(); ?>
 		
 		</td>
 		
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; rewind_posts();
+		<?php endif;
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -330,14 +330,14 @@
 			endwhile;
 			endif;
 			
-		endwhile; ?>
+		endwhile; reset_rows(); ?>
 		
 		</td>
 			
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif; rewind_posts();
+		<?php endif;
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -363,14 +363,14 @@
 			endwhile;
 			endif;
 			
-		endwhile; ?>
+		endwhile; reset_rows(); ?>
 		
 		</td>
 				
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; rewind_posts(); ?>
+		<?php endif; ?>
 		
 	</tr>
 	<tr class="body-row">
