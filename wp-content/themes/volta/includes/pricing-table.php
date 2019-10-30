@@ -540,7 +540,7 @@
 		<td>Price</td>
 	</tr>
 	<tr class="body-row">
-		<td></td>
+		<td>&nbsp;</td>
 		<td>$10,000</td>
 		<td>$5,000</td>
 		<td>$2,500</td>
