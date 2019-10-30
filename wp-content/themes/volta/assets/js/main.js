@@ -121,7 +121,7 @@
 		
 		// STICKY HEADER ROW
 		var header = $('.corporate_pricing_table');
-		var headerTop = $('.corporate_pricing_table').offset().top;
+		var headerTop = $('.corporate_pricing_table').offset().top + 60;
 		var viewport = $(window);
 		var bottom = headerTop + header.outerHeight(true);
 		$(window).scroll(function() {

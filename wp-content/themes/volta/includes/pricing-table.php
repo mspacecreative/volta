@@ -58,6 +58,9 @@
 	.corporate_pricing_table .first {
 		margin-top: calc(2% + 44px);
 	}
+	.corporate_pricing_table.fixed .first {
+		margin-top: calc(2% + 104px);
+	}
 	.grey-row-bg > td {
 		display: block;
 		font-size: 20px;
