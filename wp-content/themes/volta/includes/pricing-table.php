@@ -57,7 +57,7 @@
 		display: block;
 	}
 	.corporate_pricing_table.fixed .first {
-		margin-top: 2%;
+		margin-top: calc(2% + 46px);
 	}
 	.grey-row-bg > td {
 		display: block;
