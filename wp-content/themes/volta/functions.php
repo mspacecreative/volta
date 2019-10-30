@@ -721,3 +721,9 @@ function member_only_shortcode($atts, $content = null)
     }
 }
 add_shortcode('member_only', 'member_only_shortcode');
+
+/* ACF OPTIONS PAGE */
+if( function_exists('acf_add_options_sub_page') ) {
+
+	acf_add_options_sub_page('Options');
+}
