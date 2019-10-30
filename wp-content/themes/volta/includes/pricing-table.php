@@ -56,10 +56,10 @@
 		display: block;
 	}
 	.corporate_pricing_table .first {
-		margin-top: calc(2% + 44px);
+		margin-top: 2%;
 	}
 	.corporate_pricing_table.fixed .first {
-		margin-top: calc(2% + 100px);
+		margin-top: calc(2% + 46px);
 	}
 	.grey-row-bg > td {
 		display: block;
