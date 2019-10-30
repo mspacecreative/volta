@@ -83,6 +83,7 @@
 	}
 </style>
 
+<h2><?php esc_html_e('Benefits &amp; Pricing'); ?></h2>
 <table cellpadding="0" cellspacing="0" border="0" class="corporate_pricing_table">
 	<tr class="header-row">
 		<td>Benefits</td>
