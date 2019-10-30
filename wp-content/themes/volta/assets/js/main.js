@@ -25,12 +25,16 @@
 		$('.addthis-container').height( $('.addthis-container').prev().outerHeight() );
 	}
 	
-	var stickyHeader = $('.corporate_pricing_table').position().top;
+	// STICKY HEADER ROW
+	var s = $('.corporate_pricing_table');
+	var pos = s.position();
+	var banner = $('.banner');
 	$(window).scroll(function() {
-		if( stickyHeader >= $(window).scrollTop() ) {
-			$('.corporate_pricing_table').addClass('fixed');
-		} else { 
-			$('.corporate_pricing_table').removeClass('fixed');
+		var windowpos = $(window).scrollTop();
+		if (windowpos >= pos.top & windowpos <= banner) {
+			s.addClass('fixed');
+		} else {
+			s.removeClass('fixed');	
 		}
 	});
 	
