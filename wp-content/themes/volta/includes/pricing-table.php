@@ -8,7 +8,7 @@
 	}
 	.header-row {
 		font-weight: bold;
-		position: fixed;
+		/*position: fixed;*/
 		width: 100%;
 		max-width: 1080px;
 		background-color: #fff;
@@ -98,20 +98,11 @@
 	</tr>
 	<tr class="body-row">
 		<td>Innovation Assessment</td>
-		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
-		<g>
-			<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
-				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
-		</g>
-		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		</svg></td>
-		<td><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-			 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
-		<g>
-			<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
-				S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
-		</g>
+		<td><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
+			<g>
+				<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
+					S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
+			</g>
 		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
 		</svg></td>
 	</tr>
