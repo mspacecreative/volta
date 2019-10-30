@@ -28,7 +28,6 @@
 	.header-row td:first-of-type {
 		background-color: transparent;
 		color: #000;
-		border-right: 1px solid #c9c9c9;
 		text-align: left;
 	}
 	.body-row td {
