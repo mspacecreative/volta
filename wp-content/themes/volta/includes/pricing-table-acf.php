@@ -86,8 +86,6 @@
 
 <h2 style="margin-bottom: 50px;"><?php esc_html_e('Benefits &amp; Pricing'); ?></h2>
 
-<?php if( have_rows('desktop_table', 'options') ):
-while( have_rows('desktop_table', 'options') ): the_row(); ?>
 <table cellpadding="0" cellspacing="0" border="0" class="corporate_pricing_table">
 	<tr class="header-row">
 		<td>Benefits</td>
@@ -135,8 +133,8 @@ while( have_rows('desktop_table', 'options') ): the_row(); ?>
 		if( have_rows('builder', 'options') ):
 		while( have_rows('builder', 'options') ): the_row();
 		
-		if( have_rows('builder_benefit_categories_builder_benefit_categories', 'options') ):
-		while( have_rows('builder_benefit_categories_builder_benefit_categories', 'options') ): the_row();
+		if( have_rows('builder_benefit_categories', 'options') ):
+		while( have_rows('builder_benefit_categories', 'options') ): the_row();
 		
 		$people = get_sub_field('people');
 		
@@ -652,5 +650,3 @@ while( have_rows('desktop_table', 'options') ): the_row(); ?>
 		<td>$2,500</td>
 	</tr>
 </table>
-<?php endwhile;
-endif; ?>
