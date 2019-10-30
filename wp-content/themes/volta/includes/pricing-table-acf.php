@@ -126,14 +126,14 @@
 			endwhile;
 			endif;
 			
-		endwhile; reset_rows(); ?>
+		endwhile; ?>
 		
 		</td>
 		
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif;
+		<?php endif; reset_rows();
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -159,14 +159,14 @@
 			endwhile;
 			endif;
 			
-		endwhile; reset_rows(); ?>
+		endwhile; ?>
 		
 		</td>
 		
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif;
+		<?php endif; reset_rows();
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -192,14 +192,14 @@
 			endwhile;
 			endif;
 			
-		endwhile; reset_rows(); ?>
+		endwhile; ?>
 	
 		</td>
 			
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif;
+		<?php endif; reset_rows();
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -225,14 +225,14 @@
 			endwhile;
 			endif;
 			
-		endwhile; reset_rows(); ?>
+		endwhile; ?>
 		
 		</td>
 				
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; ?>
+		<?php endif; reset_rows(); ?>
 		
 	</tr>
 	
@@ -264,14 +264,14 @@
 			endwhile;
 			endif;
 			
-		endwhile; reset_rows(); ?>
+		endwhile; ?>
 		
 		</td>
 		
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif;
+		<?php endif; reset_rows();
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -297,14 +297,14 @@
 			endwhile;
 			endif;
 			
-		endwhile; reset_rows(); ?>
+		endwhile; ?>
 		
 		</td>
 		
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif;
+		<?php endif; reset_rows();
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -330,7 +330,7 @@
 			endwhile;
 			endif;
 			
-		endwhile; reset_rows(); ?>
+		endwhile; ?>
 		
 		</td>
 			
@@ -363,14 +363,14 @@
 			endwhile;
 			endif;
 			
-		endwhile; reset_rows(); ?>
+		endwhile; ?>
 		
 		</td>
 				
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; ?>
+		<?php endif; reset_rows(); ?>
 		
 	</tr>
 	<tr class="body-row">
