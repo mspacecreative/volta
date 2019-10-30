@@ -123,7 +123,7 @@
 		var header = $('.corporate_pricing_table');
 		var headerTop = $('.corporate_pricing_table').offset().top;
 		var viewport = $(window);
-		var bottom = headerTop + header.outerHeight(true);
+		var bottom = headerTop + header.outerHeight(true) - 46;
 		$(window).scroll(function() {
 			if ( viewport.scrollTop() + 46 >= headerTop && viewport.scrollTop() + 46 <= bottom ) {
 				header.addClass('fixed');
