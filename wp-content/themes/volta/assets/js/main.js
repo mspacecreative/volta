@@ -127,12 +127,10 @@
 		$(window).scroll(function() {
 			if ( viewport.scrollTop() >= headerTop && viewport.scrollTop() <= bottom ) {
 				header.addClass('fixed');
+				header.children('.header-row').css('max-width', header.outerWidth());
 			} else {
 				header.removeClass('fixed');
-			}
-			
-			if ( $('.corporate_pricing_table').hasClass('fixed') ) {
-				$('.header-row').css('max-width', $('.header-row').parent().parent().outerWidth());
+				header.children('.header-row').css('max-width', 'none');
 			}
 		});
 	});
