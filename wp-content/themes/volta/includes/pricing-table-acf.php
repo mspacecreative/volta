@@ -111,7 +111,7 @@ while( have_rows('desktop_table', 'options') ): the_row(); ?>
 		if( have_rows('benefit_categories', 'options') ):
 		while( have_rows('benefit_categories', 'options') ): the_row();
 		
-		$people = get_sub_field('people', 'options');
+		$people = get_sub_field('people');
 		
 		if ( $people && in_array('innovation', $people) ): ?>
 		<td><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
