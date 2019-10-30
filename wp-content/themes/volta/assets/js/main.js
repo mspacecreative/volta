@@ -133,7 +133,7 @@
 		});
 		
 		if ( $('.corporate_pricing_table').hasClass('fixed') ) {
-			$('.header-row').css('max-width', $('.header-row').parents('.corporate_pricing_table').width());
+			$('.header-row').css('max-width', $('.header-row').parent().parent().outerWidth());
 		}
 	});
 	
