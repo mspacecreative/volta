@@ -675,6 +675,13 @@ function pricingTable() {
 }
 add_shortcode( 'pricing_table', 'pricingTable' );
 
+function pricingTable2() {
+	ob_start();
+		get_template_part('includes/pricing-table-acf');
+	return ob_get_clean();
+}
+add_shortcode( 'pricing_table_2', 'pricingTable2' );
+
 // REMOVE PROTECTED / PRIVATE PREFIX ON PROTECTED PAGES
 function the_title_trim($title) {
 
@@ -724,6 +731,5 @@ add_shortcode('member_only', 'member_only_shortcode');
 
 /* ACF OPTIONS PAGE */
 if( function_exists('acf_add_options_sub_page') ) {
-
 	acf_add_options_sub_page('Options');
 }
