@@ -130,11 +130,11 @@
 			} else {
 				header.removeClass('fixed');
 			}
+			
+			if ( $('.corporate_pricing_table').hasClass('fixed') ) {
+				$('.header-row').css('max-width', $('.header-row').parent().parent().outerWidth());
+			}
 		});
-		
-		if ( $('.corporate_pricing_table').hasClass('fixed') ) {
-			$('.header-row').css('max-width', $('.header-row').parent().parent().outerWidth());
-		}
 	});
 	
 	$(document).ajaxSuccess(function() {
