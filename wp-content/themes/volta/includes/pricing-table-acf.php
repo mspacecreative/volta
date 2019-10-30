@@ -104,7 +104,11 @@
 		
 		<?php 
 		if( have_rows('innovator', 'options') ):
-		while( have_rows('innovator', 'options') ): the_row();
+		if( have_rows('builder', 'options') ):
+		if( have_rows('supporter', 'options') ):
+		if( have_rows('out-of-towner', 'options') ):
+		
+			while( have_rows('innovator', 'options') ): the_row();
 		
 			if( have_rows('benefit_categories', 'options') ):
 			while( have_rows('benefit_categories', 'options') ): the_row();
@@ -122,9 +126,11 @@
 			<?php else : ?>
 			<td>&nbsp;</td>
 			<?php endif;
+			
+			endwhile;
+			endif;
 		
-		if( have_rows('builder', 'options') ):
-		while( have_rows('builder', 'options') ): the_row();
+			while( have_rows('builder', 'options') ): the_row();
 			
 			if( have_rows('builder_benefit_categories', 'options') ):
 			while( have_rows('builder_benefit_categories', 'options') ): the_row();
@@ -142,9 +148,11 @@
 			<?php else : ?>
 			<td>&nbsp;</td>
 			<?php endif;
+			
+			endwhile;
+			endif;
 		
-		if( have_rows('supporter', 'options') ):
-		while( have_rows('supporter', 'options') ): the_row();
+			while( have_rows('supporter', 'options') ): the_row();
 				
 			if( have_rows('supporter_benefit_categories', 'options') ):
 			while( have_rows('supporter_benefit_categories', 'options') ): the_row();
@@ -162,9 +170,11 @@
 			<?php else : ?>
 			<td>&nbsp;</td>
 			<?php endif;
+			
+			endwhile;
+			endif;
 		
-		if( have_rows('out-of-towner', 'options') ):
-		while( have_rows('out-of-towner', 'options') ): the_row();
+			while( have_rows('out-of-towner', 'options') ): the_row();
 				
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -182,16 +192,7 @@
 			<?php else : ?>
 			<td>&nbsp;</td>
 			<?php endif;
-				
-			endwhile;
-			endif;
-		
-			endwhile;
-			endif;
-				
-			endwhile;
-			endif;
-				
+			
 			endwhile;
 			endif;
 			
