@@ -13,13 +13,13 @@
 	.header-row {
 		font-weight: bold;
 		background-color: rgba(255,255,255,.75);
-		padding: 25px 0;
+		/*padding: 25px 0;*/
 	}
 	.header-row td {
-		background-color: #000;
+		background-color: #333;
 		color: #fff;
 		font-size: 20px;
-		margin-right: 2%;
+		/*margin-right: 2%;*/
 		display: inline-block;
 		vertical-align: middle;
 		border-right: none;
@@ -33,12 +33,13 @@
 	}
 	.body-row td {
 		text-align: center;
-		margin-right: 2%;
+		/*margin-right: 2%;*/
 		display: inline-block;
 		vertical-align: top;
 	}
 	.body-row td:first-of-type {
 		text-align: left;
+		border-right: 1px solid #c9c9c9;
 	}
 	.header-row td:last-of-type, .body-row td:last-of-type {
 		margin-right: 0;
@@ -57,7 +58,7 @@
 		display: block;
 	}
 	.corporate_pricing_table.fixed .first {
-		margin-top: 90px;
+		margin-top: 65px;
 	}
 	.grey-row-bg > td {
 		display: block;
@@ -67,7 +68,7 @@
 		display: block;
 	}
 	.body-row td, .header-row td {
-		width: 18.4%;
+		width: 20%;
 	}
 	.body-row {
 		border-bottom: 1px solid #c9c9c9;
@@ -83,7 +84,7 @@
 	}
 </style>
 
-<h2><?php esc_html_e('Benefits &amp; Pricing'); ?></h2>
+<h2 style="margin-bottom: 50px;"><?php esc_html_e('Benefits &amp; Pricing'); ?></h2>
 <table cellpadding="0" cellspacing="0" border="0" class="corporate_pricing_table">
 	<tr class="header-row">
 		<td>Benefits</td>
