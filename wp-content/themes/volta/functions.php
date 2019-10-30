@@ -680,7 +680,7 @@ function pricingTable2() {
 		get_template_part('includes/pricing-table-acf');
 	return ob_get_clean();
 }
-add_shortcode( 'pricing_table_2', 'pricingTable2' );
+add_shortcode( 'pricing_table_acf', 'pricingTable2' );
 
 // REMOVE PROTECTED / PRIVATE PREFIX ON PROTECTED PAGES
 function the_title_trim($title) {
