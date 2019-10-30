@@ -125,10 +125,10 @@
 		var viewport = $(window);
 		var bottom = headerTop + header.outerHeight(true);
 		$(window).scroll(function() {
-			if ( viewport.scrollTop() >= headerTop & <= bottom ) {
-				$('.corporate_pricing_table').addClass('fixed');
+			if ( viewport.scrollTop() >= headerTop && <= bottom ) {
+				header.addClass('fixed');
 			} else {
-				$('.corporate_pricing_table').removeClass('fixed');
+				header.removeClass('fixed');
 			}
 		});
 	});
