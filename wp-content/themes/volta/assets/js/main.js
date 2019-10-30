@@ -121,11 +121,11 @@
 		
 		// STICKY HEADER ROW
 		var header = $('.corporate_pricing_table');
-		var headerTop = $('.corporate_pricing_table').offset().top + 60;
+		var headerTop = $('.corporate_pricing_table').offset().top;
 		var viewport = $(window);
 		var bottom = headerTop + header.outerHeight(true);
 		$(window).scroll(function() {
-			if ( viewport.scrollTop() >= headerTop && viewport.scrollTop() <= bottom ) {
+			if ( viewport.scrollTop() + 60 >= headerTop && viewport.scrollTop() + 60 <= bottom ) {
 				header.addClass('fixed');
 			} else {
 				header.removeClass('fixed');
