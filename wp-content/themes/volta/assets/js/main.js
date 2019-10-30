@@ -25,19 +25,6 @@
 		$('.addthis-container').height( $('.addthis-container').prev().outerHeight() );
 	}
 	
-	// STICKY HEADER ROW
-	var s = $('.corporate_pricing_table');
-	var pos = s.position();
-	var banner = $('.banner');
-	$(window).scroll(function() {
-		var windowpos = $(window).scrollTop();
-		if (windowpos >= pos.top & windowpos <= banner) {
-			s.addClass('fixed');
-		} else {
-			s.removeClass('fixed');	
-		}
-	});
-	
 	// SMOOTH SCROLL
 	// Select all links with hashes
 	$('a[href*="#"]')
@@ -131,6 +118,19 @@
 		if ( $('#page-wrapper').hasClass('no-featured-image-in-header') ) {
 			$('body').addClass('no-featured-image');
 		}
+		
+		// STICKY HEADER ROW
+		var s = $('.corporate_pricing_table');
+		var pos = s.position();
+		var banner = $('.banner');
+		$(window).scroll(function() {
+			var windowpos = $(window).scrollTop();
+			if (windowpos >= pos.top & windowpos <= banner) {
+				s.addClass('fixed');
+			} else {
+				s.removeClass('fixed');	
+			}
+		});
 	});
 	
 	$(document).ajaxSuccess(function() {
