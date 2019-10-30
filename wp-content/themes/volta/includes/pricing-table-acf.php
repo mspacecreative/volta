@@ -103,85 +103,121 @@
 		<td>Innovation Assessment</td>
 		
 		<?php 
-		if( have_rows('benefit_categories', 'options') ):
-		while( have_rows('benefit_categories', 'options') ): the_row();
+		if( have_rows('innovator', 'options') ):
+		while( have_rows('innovator', 'options') ): the_row(); ?>
 		
-		$people = get_sub_field('people');
+		<td>
 		
-		if ( $people && in_array('innovation', $people) ): ?>
-		<td><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
-			<g>
-				<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
-					S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
-			</g>
-		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		</svg></td>
-		<?php else : ?>
+			<?php if( have_rows('benefit_categories', 'options') ):
+			while( have_rows('benefit_categories', 'options') ): the_row();
+			
+			$people = get_sub_field('people');
+			
+			if ( $people && in_array('innovation', $people) ): ?>
+			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
+				<g>
+					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
+						S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
+				</g>
+			<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
+			</svg>
+			<?php endif; ?>
+		
+		</td>
+		
+		<?php endwhile;
+		
+		else : ?>
 		<td>&nbsp;</td>
+		
 		<?php endif;
 		
-		endwhile;
-		endif;
+		if( have_rows('builder', 'options') ):
+		while( have_rows('builder', 'options') ): the_row(); ?>
 		
-		if( have_rows('builder_benefit_categories', 'options') ):
-		while( have_rows('builder_benefit_categories', 'options') ): the_row();
+		<td>
+			
+			<?php if( have_rows('builder_benefit_categories', 'options') ):
+			while( have_rows('builder_benefit_categories', 'options') ): the_row();
+			
+			$people = get_sub_field('people');
+			
+			if ( $people && in_array('innovation', $people) ): ?>
+			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
+				<g>
+					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
+						S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
+				</g>
+			<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
+			</svg>
+			<?php endif; ?>
 		
-		$people = get_sub_field('people');
+		</td>
 		
-		if ( $people && in_array('innovation', $people) ): ?>
-		<td><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
-			<g>
-				<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
-					S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
-			</g>
-		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		</svg></td>
-		<?php else : ?>
+		<?php endwhile;
+		
+		else : ?>
 		<td>&nbsp;</td>
+		
 		<?php endif;
 		
-		endwhile;
-		endif;
+		if( have_rows('supporter', 'options') ):
+		while( have_rows('supporter', 'options') ): the_row(); ?>
 		
-		if( have_rows('supporter_benefit_categories', 'options') ):
-		while( have_rows('supporter_benefit_categories', 'options') ): the_row();
-		
-		$people = get_sub_field('people');
-		
-		if ( $people && in_array('innovation', $people) ): ?>
-		<td><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
-			<g>
-				<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
-					S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
-			</g>
-		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		</svg></td>
-		<?php else : ?>
+		<td>
+				
+			<?php if( have_rows('supporter_benefit_categories', 'options') ):
+			while( have_rows('supporter_benefit_categories', 'options') ): the_row();
+			
+			$people = get_sub_field('people');
+			
+			if ( $people && in_array('innovation', $people) ): ?>
+			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
+				<g>
+					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
+						S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
+				</g>
+			<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
+			</svg>
+			<?php endif; ?>
+			
+		</td>
+			
+		<?php endwhile;
+			
+		else : ?>
 		<td>&nbsp;</td>
+			
 		<?php endif;
 		
-		endwhile;
-		endif;
+		if( have_rows('out-of-towner', 'options') ):
+		while( have_rows('out-of-towner', 'options') ): the_row(); ?>
 		
-		if( have_rows('towner_benefit_categories', 'options') ):
-		while( have_rows('towner_benefit_categories', 'options') ): the_row();
-		
-		$people = get_sub_field('people');
-		
-		if ( $people && in_array('innovation', $people) ): ?>
-		<td><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
-			<g>
-				<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
-					S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
-			</g>
-		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		</svg></td>
-		<?php else : ?>
+		<td>
+				
+			<?php if( have_rows('towner_benefit_categories', 'options') ):
+			while( have_rows('towner_benefit_categories', 'options') ): the_row();
+			
+			$people = get_sub_field('people');
+			
+			if ( $people && in_array('innovation', $people) ): ?>
+			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
+				<g>
+					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
+						S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
+				</g>
+			<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
+			</svg>
+			<?php endif; ?>
+				
+		</td>
+				
+		<?php endwhile;
+				
+		else : ?>
 		<td>&nbsp;</td>
-		<?php endif;
-		
-		endwhile;
-		endif; ?>
+				
+		<?php endif; ?>
 		
 	</tr>
 	
@@ -190,85 +226,121 @@
 		Training</td>
 		
 		<?php 
-		if( have_rows('benefit_categories', 'options') ):
-		while( have_rows('benefit_categories', 'options') ): the_row();
+		if( have_rows('innovator', 'options') ):
+		while( have_rows('innovator', 'options') ): the_row(); ?>
 		
-		$people = get_sub_field('people');
+		<td>
 		
-		if ( $people && in_array('corporate', $people) ): ?>
-		<td><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
-			<g>
-				<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
-					S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
-			</g>
-		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		</svg></td>
-		<?php else : ?>
+			<?php if( have_rows('benefit_categories', 'options') ):
+			while( have_rows('benefit_categories', 'options') ): the_row();
+			
+			$people = get_sub_field('people');
+			
+			if ( $people && in_array('corporate', $people) ): ?>
+			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
+				<g>
+					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
+						S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
+				</g>
+			<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
+			</svg>
+			<?php endif; ?>
+		
+		</td>
+		
+		<?php endwhile;
+		
+		else : ?>
 		<td>&nbsp;</td>
+		
 		<?php endif;
 		
-		endwhile;
-		endif;
+		if( have_rows('builder', 'options') ):
+		while( have_rows('builder', 'options') ): the_row(); ?>
 		
-		if( have_rows('builder_benefit_categories', 'options') ):
-		while( have_rows('builder_benefit_categories', 'options') ): the_row();
+		<td>
+			
+			<?php if( have_rows('builder_benefit_categories', 'options') ):
+			while( have_rows('builder_benefit_categories', 'options') ): the_row();
+			
+			$people = get_sub_field('people');
+			
+			if ( $people && in_array('corporate', $people) ): ?>
+			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
+				<g>
+					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
+						S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
+				</g>
+			<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
+			</svg>
+			<?php endif; ?>
 		
-		$people = get_sub_field('people');
+		</td>
 		
-		if ( $people && in_array('corporate', $people) ): ?>
-		<td><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
-			<g>
-				<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
-					S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
-			</g>
-		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		</svg></td>
-		<?php else : ?>
+		<?php endwhile;
+		
+		else : ?>
 		<td>&nbsp;</td>
+		
 		<?php endif;
 		
-		endwhile;
-		endif;
+		if( have_rows('supporter', 'options') ):
+		while( have_rows('supporter', 'options') ): the_row(); ?>
 		
-		if( have_rows('supporter_benefit_categories', 'options') ):
-		while( have_rows('supporter_benefit_categories', 'options') ): the_row();
-		
-		$people = get_sub_field('people');
-		
-		if ( $people && in_array('corporate', $people) ): ?>
-		<td><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
-			<g>
-				<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
-					S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
-			</g>
-		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		</svg></td>
-		<?php else : ?>
+		<td>
+				
+			<?php if( have_rows('supporter_benefit_categories', 'options') ):
+			while( have_rows('supporter_benefit_categories', 'options') ): the_row();
+			
+			$people = get_sub_field('people');
+			
+			if ( $people && in_array('corporate', $people) ): ?>
+			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
+				<g>
+					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
+						S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
+				</g>
+			<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
+			</svg>
+			<?php endif; ?>
+			
+		</td>
+			
+		<?php endwhile;
+			
+		else : ?>
 		<td>&nbsp;</td>
+			
 		<?php endif;
 		
-		endwhile;
-		endif;
+		if( have_rows('out-of-towner', 'options') ):
+		while( have_rows('out-of-towner', 'options') ): the_row(); ?>
 		
-		if( have_rows('towner_benefit_categories', 'options') ):
-		while( have_rows('towner_benefit_categories', 'options') ): the_row();
-		
-		$people = get_sub_field('people');
-		
-		if ( $people && in_array('corporate', $people) ): ?>
-		<td><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
-			<g>
-				<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
-					S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
-			</g>
-		<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
-		</svg></td>
-		<?php else : ?>
+		<td>
+				
+			<?php if( have_rows('towner_benefit_categories', 'options') ):
+			while( have_rows('towner_benefit_categories', 'options') ): the_row();
+			
+			$people = get_sub_field('people');
+			
+			if ( $people && in_array('corporate', $people) ): ?>
+			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
+				<g>
+					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
+						S7.61,1.598,15,1.598 M15,0C6.715,0,0,6.716,0,15c0,8.284,6.715,15,15,15c8.283,0,15-6.716,15-15C30,6.716,23.283,0,15,0L15,0z"/>
+				</g>
+			<circle fill="#231F20" cx="15" cy="15" r="9.73"/>
+			</svg>
+			<?php endif; ?>
+				
+		</td>
+				
+		<?php endwhile;
+				
+		else : ?>
 		<td>&nbsp;</td>
-		<?php endif;
-		
-		endwhile;
-		endif; ?>
+				
+		<?php endif; ?>
 		
 	</tr>
 	<tr class="body-row">
