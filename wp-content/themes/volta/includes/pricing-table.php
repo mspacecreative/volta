@@ -7,7 +7,7 @@
 	}
 	.corporate_pricing_table.fixed .header-row {
 		position: fixed;
-		top: calc(46px + 2%);
+		top: calc(46px + 20px);
 		width: 100%;
 	}
 	.header-row {
@@ -59,7 +59,7 @@
 		margin-top: calc(2% + 44px);
 	}
 	.corporate_pricing_table.fixed .first {
-		margin-top: calc(2% + 104px);
+		margin-top: calc(2% + 100px);
 	}
 	.grey-row-bg > td {
 		display: block;
