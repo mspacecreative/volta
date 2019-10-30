@@ -25,12 +25,12 @@
 		$('.addthis-container').height( $('.addthis-container').prev().outerHeight() );
 	}
 	
-	var stickyHeader = $('.header-row').position().top;
+	var stickyHeader = $('.corporate_pricing_table').position().top;
 	$(window).scroll(function() {
 		if( stickyHeader >= $(window).scrollTop() ) {
-			$('.header-row').addClass('fixed');
+			$('.corporate_pricing_table').addClass('fixed');
 		} else { 
-			$('.header-row').removeClass('fixed');
+			$('.corporate_pricing_table').removeClass('fixed');
 		}
 	});
 	

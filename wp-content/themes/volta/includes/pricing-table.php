@@ -1,16 +1,12 @@
 <style>
 	.corporate_pricing_table {
 		margin: auto;
-		width: 90%;
+		width: 100%;
 		font-family: sans-serif;
-		max-width: 1080px;
 		font-size: 0;
 	}
 	.header-row {
 		font-weight: bold;
-		/*position: fixed;*/
-		width: 100%;
-		max-width: 1080px;
 		background-color: #fff;
 	}
 	.header-row td {
