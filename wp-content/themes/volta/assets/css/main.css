@@ -4007,15 +4007,18 @@ header {
 .post-content-container .user-registration ul li:before {
 	display: none;
 }
-#mc_embed_signup {
+body #mc_embed_signup {
 	background: none;
 }
-footer #mc_embed_signup form label {
+#footer #mc_embed_signup form label {
 	color: #fff;
 }
 .width-100 {
 	width: 100%;
 	flex-basis: 100%;
+}
+body #mc_embed_signup form {
+	padding: 0;
 }
 #instafeed a h3 {
 	color: #000;
