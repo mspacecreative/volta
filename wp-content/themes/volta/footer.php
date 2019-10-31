@@ -45,7 +45,7 @@
 								</form>
 								</div>
 								<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='TENANT';ftypes[3]='text';fnames[4]='MNGMT';ftypes[4]='text';fnames[5]='NETWORK';ftypes[5]='text';fnames[6]='SPONSOR';ftypes[6]='text';fnames[7]='PRESS';ftypes[7]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-								<!--End mc_embed_signup--></div>
+								<!--End mc_embed_signup-->
 							</section>
 							<!-- /Enewsletter form -->
 											
