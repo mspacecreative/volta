@@ -118,23 +118,6 @@
 		if ( $('#page-wrapper').hasClass('no-featured-image-in-header') ) {
 			$('body').addClass('no-featured-image');
 		}
-		
-		// STICKY HEADER ROW
-		var header = $('.corporate_pricing_table');
-		var headerTop = $('.corporate_pricing_table').offset().top;
-		var viewport = $(window);
-		var bottom = headerTop + header.outerHeight(true) - 46;
-		$(window).scroll(function() {
-			if ( viewport.scrollTop() + 46 >= headerTop && viewport.scrollTop() + 46 <= bottom ) {
-				header.addClass('fixed');
-			} else {
-				header.removeClass('fixed');
-			}
-			
-			if ( $('.corporate_pricing_table').hasClass('fixed') ) {
-				$('.header-row').css('max-width', $('.header-row').parent().parent().outerWidth());
-			}
-		});
 	});
 	
 	$(document).ajaxSuccess(function() {
