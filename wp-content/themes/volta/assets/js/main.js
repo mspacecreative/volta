@@ -129,7 +129,6 @@
 		splashHeight();
 		calcNegativeMargins();
 		socialMediaBarPositioning();
-		corporatePricingTable();
 		
 		$('.window-close-button').click(function() {
 			$(this).closest('.qtip').hide();
@@ -176,6 +175,10 @@
 		splashHeight();
 		calcNegativeMargins();
 		socialMediaBarPositioning();
+	});
+	
+	$(window).scroll(function () {
+		corporatePricingTable();
 	});
 	
 	var	$window = $(window),
