@@ -24,7 +24,7 @@
 	function corporatePricingTable() {
 		// STICKY HEADER ROW
 		var header = $('.corporate_pricing_table');
-		var headerTop = $('.corporate_pricing_table').jQuery.offset().top;
+		var headerTop = if ( header.length ) { header.offset().top }
 		var viewport = $(window);
 		var bottom = headerTop + header.outerHeight(true) - 46;
 		$(window).scroll(function() {
