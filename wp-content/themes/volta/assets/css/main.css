@@ -4016,6 +4016,9 @@ body #mc_embed_signup {
 #footer .indicates-required {
 	color: #fff;
 }
+body #mc_embed_signup .indicates-required {
+	text-align: left;
+}
 .width-100 {
 	width: 100%;
 	flex-basis: 100%;
