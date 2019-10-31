@@ -20,6 +20,26 @@
 		$('body').removeClass('header-switch');
 	});
 	
+	// CORPORATE PRICING TABLE
+	function corporatePricingTable() {
+		// STICKY HEADER ROW
+		var header = $('.corporate_pricing_table');
+		var headerTop = $('.corporate_pricing_table').offset().top;
+		var viewport = $(window);
+		var bottom = headerTop + header.outerHeight(true) - 46;
+		$(window).scroll(function() {
+			if ( viewport.scrollTop() + 46 >= headerTop && viewport.scrollTop() + 46 <= bottom ) {
+				header.addClass('fixed');
+			} else {
+				header.removeClass('fixed');
+			}
+			
+			if ( $('.corporate_pricing_table').hasClass('fixed') ) {
+				$('.header-row').css('max-width', $('.header-row').parent().parent().outerWidth());
+			}
+		});
+	}
+	
 	// SOCIAL MEDIA BAR POSITIONING
 	function socialMediaBarPositioning() {
 		$('.addthis-container').height( $('.addthis-container').prev().outerHeight() );
@@ -109,6 +129,7 @@
 		splashHeight();
 		calcNegativeMargins();
 		socialMediaBarPositioning();
+		corporatePricingTable();
 		
 		$('.window-close-button').click(function() {
 			$(this).closest('.qtip').hide();
