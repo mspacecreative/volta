@@ -24,20 +24,21 @@
 	function corporatePricingTable() {
 		// STICKY HEADER ROW
 		var header = $('.corporate_pricing_table');
-		var headerTop = if ( header.length ) { header.offset().top }
 		var viewport = $(window);
 		var bottom = headerTop + header.outerHeight(true) - 46;
-		$(window).scroll(function() {
-			if ( viewport.scrollTop() + 46 >= headerTop && viewport.scrollTop() + 46 <= bottom ) {
-				header.addClass('fixed');
-			} else {
-				header.removeClass('fixed');
-			}
-			
-			if ( $('.corporate_pricing_table').hasClass('fixed') ) {
-				$('.header-row').css('max-width', $('.header-row').parent().parent().outerWidth());
-			}
-		});
+		if ( header.length ) {
+			$(window).scroll(function() {
+				if ( viewport.scrollTop() + 46 >= header.offset().top && viewport.scrollTop() + 46 <= bottom ) {
+					header.addClass('fixed');
+				} else {
+					header.removeClass('fixed');
+				}
+				
+				if ( $('.corporate_pricing_table').hasClass('fixed') ) {
+					$('.header-row').css('max-width', $('.header-row').parent().parent().outerWidth());
+				}
+			});
+		}
 	}
 	
 	// SOCIAL MEDIA BAR POSITIONING
