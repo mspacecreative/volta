@@ -4007,6 +4007,12 @@ header {
 .post-content-container .user-registration ul li:before {
 	display: none;
 }
+#mc_embed_signup {
+	background: none;
+}
+footer #mc_embed_signup form label {
+	color: #fff;
+}
 .width-100 {
 	width: 100%;
 	flex-basis: 100%;
