@@ -15,7 +15,7 @@
 		$(this).parent().toggleClass('show');
 		$('body').removeClass('header-switch');
 	});
-	$('.team-bio-inner .mobile').click(function () {
+	$('.team-bio-inner .desktop').click(function () {
 		$(this).parent().parent().toggleClass('show');
 		$('body').removeClass('header-switch');
 	});
