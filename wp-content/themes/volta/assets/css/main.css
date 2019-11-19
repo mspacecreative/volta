@@ -4175,6 +4175,9 @@ body #mc_embed_signup form {
 		top: 50%;
 		transform: translateY(-50%);
 	}
+	.super-title h4 {
+		font-size: 16px;
+	}
 	.single .post-container > .container {
 	    padding-right: 0;
 	    padding-left: 0;
@@ -4426,6 +4429,9 @@ body #mc_embed_signup form {
 		z-index: 2;
 		top: 50%;
 		transform: translateY(-50%);
+	}
+	.super-title h4 {
+		font-size: 16px;
 	}
 	.related-posts .event-container, .related-posts .event-container:last-child {
 		flex-basis: 100%;

@@ -100,7 +100,8 @@ get_header(); ?>
 	
 	<!-- post thumbnail on mobile -->
 	<div class="featured-image-mobile">
-		<?php $supertitle = get_field('super_title');
+		<?php 
+		$supertitle = get_field('super_title');
 		if ( $supertitle ) {
 			echo '<div class="default-padding super-title"><h4>' . $supertitle . '</h4></div>'; 
 		} ?>
