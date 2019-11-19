@@ -4163,6 +4163,7 @@ body #mc_embed_signup form {
 	letter-spacing: 4px;
 	color: #fff;
 	text-transform: uppercase;
+	font-size: 20px;
 }
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
