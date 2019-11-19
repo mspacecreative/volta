@@ -100,6 +100,10 @@ get_header(); ?>
 	
 	<!-- post thumbnail on mobile -->
 	<div class="featured-image-mobile">
+		<?php $supertitle = get_field('super_title');
+		if ( $supertitle ) {
+			echo '<div class="default-padding super-title"><h4>' . $supertitle . '</h4></div>'; 
+		} ?>
 		<div class="post-header-overlay"></div>
 		<?php if ( has_post_thumbnail() ): ?>
 			<?php the_post_thumbnail('featured-mobile'); ?>
