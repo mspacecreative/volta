@@ -77,7 +77,7 @@ get_header(); ?>
 	<?php if ( get_field('featured_image_alignment') == 'top' ):
 	$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 	$supertitle = get_field('super_title');
-	echo '<div class="post-header" style="background-image: url(' . $url . '); background-position: top center;"><div class="post-header-overlay"></div><div class="default-padding super-title"><h4>' . the_field('super_title') . '</h4></div></div>'; ?>
+	echo '<div class="post-header" style="background-image: url(' . $url . '); background-position: top center;"><div class="post-header-overlay"></div><div class="default-padding super-title"><h4>' . $supertitle . '</h4></div></div>'; ?>
 	<?php elseif ( get_field('featured_image_alignment') == 'bottom' ):
 	$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 	$supertitle = get_field('super_title');
