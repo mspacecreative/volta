@@ -3621,6 +3621,7 @@ img {
 	z-index: 1;
 	background-color: #00dbb6;
 	background-position: center;
+	display: table;
 }
 .post-title-container {
 	position: relative;
@@ -4152,6 +4153,16 @@ body #mc_embed_signup form {
 
 .features h1 {
 	margin-bottom: 0;
+}
+.super-title {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+.super-title h4 {
+	letter-spacing: 4px;
+	color: #fff;
+	text-transform: uppercase;
 }
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
