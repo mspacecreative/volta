@@ -92,7 +92,15 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
+				<?php if ( get_field('button_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php elseif ( get_field('external_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('external_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php endif; ?>
 			</ul>
 			
 		</footer>
@@ -187,7 +195,15 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
+				<?php if ( get_field('button_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php elseif ( get_field('external_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('external_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php endif; ?>
 			</ul>
 			
 		</footer>
@@ -282,7 +298,15 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
+				<?php if ( get_field('button_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php elseif ( get_field('external_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('external_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php endif; ?>
 			</ul>
 			
 		</footer>
@@ -383,7 +407,15 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
+				<?php if ( get_field('button_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php elseif ( get_field('external_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('external_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php endif; ?>
 			</ul>
 			
 		</footer>
@@ -478,7 +510,15 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
+				<?php if ( get_field('button_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php elseif ( get_field('external_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('external_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php endif; ?>
 			</ul>
 			
 		</footer>
@@ -573,7 +613,15 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
+				<?php if ( get_field('button_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php elseif ( get_field('external_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('external_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php endif; ?>
 			</ul>
 			
 		</footer>
@@ -674,7 +722,15 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
+				<?php if ( get_field('button_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php elseif ( get_field('external_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('external_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php endif; ?>
 			</ul>
 			
 		</footer>
@@ -769,7 +825,15 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
+				<?php if ( get_field('button_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php elseif ( get_field('external_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('external_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php endif; ?>
 			</ul>
 			
 		</footer>
@@ -864,7 +928,15 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
+				<?php if ( get_field('button_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php elseif ( get_field('external_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('external_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php endif; ?>
 			</ul>
 			
 		</footer>
@@ -965,7 +1037,15 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
+				<?php if ( get_field('button_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php elseif ( get_field('external_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('external_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php endif; ?>
 			</ul>
 			
 		</footer>
@@ -1060,7 +1140,15 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
+				<?php if ( get_field('button_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php elseif ( get_field('external_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('external_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php endif; ?>
 			</ul>
 			
 		</footer>
@@ -1155,7 +1243,15 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
+				<?php if ( get_field('button_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php elseif ( get_field('external_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('external_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php endif; ?>
 			</ul>
 			
 		</footer>
@@ -1256,7 +1352,15 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
+				<?php if ( get_field('button_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php elseif ( get_field('external_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('external_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php endif; ?>
 			</ul>
 			
 		</footer>
@@ -1309,7 +1413,15 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a></li>
+				<?php if ( get_field('button_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('button_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php elseif ( get_field('external_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('external_link'); ?>" class="light button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php endif; ?>
 			</ul>
 			
 		</footer>
@@ -1404,7 +1516,15 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 		<footer>
 			
 			<ul class="actions center-items">
-				<li><a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a></li>
+				<?php if ( get_field('button_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php elseif ( get_field('external_link') ): ?>
+				<li>
+					<a href="<?php the_sub_field('external_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+				<?php endif; ?>
 			</ul>
 			
 		</footer>
