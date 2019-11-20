@@ -11,19 +11,7 @@ if ( $padding == 'top' && $margin == 'top' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -35,19 +23,7 @@ elseif ( $width && $padding == 'top' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -59,19 +35,7 @@ elseif ( $width && $padding == 'both' && $margin == 'top' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -83,19 +47,7 @@ elseif ( $width && $padding == 'both' && $margin == 'top' && $textcolour == 'lig
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -107,19 +59,7 @@ elseif ( $width && $padding == 'top' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -131,19 +71,7 @@ elseif ( $width && $padding == 'bottom' && $margin == 'top' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -155,19 +83,7 @@ elseif ( $width && $padding == 'bottom' && $margin == 'top' && $textcolour == 'l
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -179,19 +95,7 @@ elseif ( $width && $padding == 'bottom' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -203,19 +107,7 @@ elseif ( $width && $padding == 'bottom' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -227,19 +119,7 @@ elseif ( $width && $margin == 'both' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -251,19 +131,7 @@ elseif ( $width && $margin == 'both' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -275,19 +143,7 @@ elseif ( $width && $padding == 'both' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -299,19 +155,7 @@ elseif ( $width && $padding == 'top' && $margin == 'top' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -323,19 +167,7 @@ elseif ( $width && $padding == 'top' && $margin == 'top' && $textcolour == 'ligh
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -347,19 +179,7 @@ elseif ( $padding == 'both' && $margin == 'top' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -371,19 +191,7 @@ elseif ( $padding == 'both' && $margin == 'top' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -395,19 +203,7 @@ elseif ( $padding == 'top' && $margin == 'top' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -419,19 +215,7 @@ elseif ( $padding == 'top' && $margin == 'top' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -443,19 +227,7 @@ elseif ( $width && $padding == 'both' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -467,19 +239,7 @@ elseif ( $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -491,19 +251,7 @@ elseif ( $padding == 'bottom' && $margin == 'bottom' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -515,19 +263,7 @@ elseif ( $padding == 'bottom' && $margin == 'bottom' && $textcolour == 'light' )
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -539,19 +275,7 @@ elseif ( $padding == 'both' && $margin == 'both' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -563,19 +287,7 @@ elseif ( $padding == 'both' && $margin == 'both' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -587,19 +299,7 @@ elseif ( $padding == 'top' && $margin == 'bottom' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -611,19 +311,7 @@ elseif ( $padding == 'top' && $margin == 'bottom' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -635,19 +323,7 @@ elseif ( $padding == 'top' && $margin == 'both' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -659,19 +335,7 @@ elseif ( $padding == 'top' && $margin == 'both' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -683,19 +347,7 @@ elseif ( $padding == 'bottom' && $margin == 'top' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -707,19 +359,7 @@ elseif ( $padding == 'bottom' && $margin == 'top' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -731,19 +371,7 @@ elseif ( $padding == 'bottom' && $margin == 'both' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -755,19 +383,7 @@ elseif ( $padding == 'bottom' && $margin == 'both' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -779,19 +395,7 @@ elseif ( $padding == 'full' && $margin == 'top' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -803,19 +407,7 @@ elseif ( $padding == 'full' && $margin == 'top' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -827,19 +419,7 @@ elseif ( $padding == 'full' && $margin == 'bottom' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -851,19 +431,7 @@ elseif ( $padding == 'full' && $margin == 'bottom' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -875,19 +443,7 @@ elseif ( $padding == 'full' && $margin == 'both' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -899,19 +455,7 @@ elseif ( $padding == 'full' && $margin == 'both' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -923,19 +467,7 @@ elseif ( $padding == 'both' && $margin == 'bottom' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -947,19 +479,7 @@ elseif ( $padding == 'both' && $margin == 'bottom' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -971,19 +491,7 @@ elseif ( $padding == 'both' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -995,19 +503,7 @@ elseif ( $padding == 'both' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1019,19 +515,7 @@ elseif ( $padding == 'top' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1043,19 +527,7 @@ elseif ( $padding == 'top' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1067,19 +539,7 @@ elseif ( $padding == 'bottom' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1091,19 +551,7 @@ elseif ( $margin == 'bottom' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1115,19 +563,7 @@ elseif ( $margin == 'bottom' && $textcolour == 'light' ):
 			
 		<?php the_field('content_editor'); ?>
 			
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-				
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-				
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 			
 	</div>
 	<?php endif;
@@ -1139,19 +575,7 @@ elseif ( $margin == 'top' ):
 			
 		<?php the_field('content_editor'); ?>
 			
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-				
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-				
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 			
 	</div>
 	<?php endif;
@@ -1163,19 +587,7 @@ elseif ( $margin == 'top' && $textcolour == 'light' ):
 				
 		<?php the_field('content_editor'); ?>
 				
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-					
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-					
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 				
 	</div>
 	<?php endif;
@@ -1187,19 +599,7 @@ elseif ( $margin == 'bottom' ):
 			
 		<?php the_field('content_editor'); ?>
 			
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-				
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-				
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 			
 	</div>
 	<?php endif;
@@ -1211,19 +611,7 @@ elseif ( $margin == 'bottom' && $textcolour == 'light' ):
 			
 		<?php the_field('content_editor'); ?>
 			
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-				
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-				
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 			
 	</div>
 	<?php endif;
@@ -1235,19 +623,7 @@ elseif ( $margin == 'both' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1259,19 +635,7 @@ elseif ( $margin == 'both' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1283,19 +647,7 @@ elseif ( $width ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1307,19 +659,7 @@ elseif ( $width && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1331,19 +671,7 @@ elseif ( $width && $padding == 'bottom' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1355,19 +683,7 @@ elseif ( $width && $padding == 'bottom' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1379,19 +695,7 @@ elseif ( $width && $padding == 'top' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1403,19 +707,7 @@ elseif ( $width && $padding == 'top' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1427,19 +719,7 @@ elseif ( $width && $padding == 'full' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1451,19 +731,7 @@ elseif ( $width && $padding == 'full' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1475,19 +743,7 @@ elseif ( $width && $margin == 'bottom' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1499,19 +755,7 @@ elseif ( $width && $margin == 'bottom' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1523,19 +767,7 @@ elseif ( $width && $margin == 'top' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1547,19 +779,7 @@ elseif ( $width && $margin == 'top' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1571,19 +791,7 @@ elseif ( $width && $margin == 'both' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1595,19 +803,7 @@ elseif ( $width && $margin == 'both' && $textcolour == 'light' ):
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -1619,19 +815,7 @@ else :
 		
 		<?php the_field('content_editor'); ?>
 		
-		<?php if( have_rows('content_cta_button') ): ?>
-		<?php while( have_rows('content_cta_button') ): the_row(); ?>
-		<?php if ( get_sub_field('content_button_link') ): ?>
-		<footer>
-			
-			<ul class="actions">
-				<li><a href="<?php the_sub_field('content_button_link'); ?>" class="dark button"><?php the_sub_field('content_button_label'); ?></a></li>
-			</ul>
-			
-		</footer>
-		<?php endif; ?>
-		<?php endwhile; ?>
-		<?php endif; ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
