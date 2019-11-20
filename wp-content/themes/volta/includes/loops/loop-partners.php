@@ -8,11 +8,11 @@ $loop = new WP_Query( array(
 );
 if ( $loop->have_posts() ) : ?>
 	
-<div class="partners-table display-flex align-items-center">
+<div class="partners-table">
     
 	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
     
-	<div class="partner-row">
+	<div class="partner-row display-flex align-items-center">
 		<div class="partner-logo-cell">
 			<?php if ( has_post_thumbnail() ) {
 				echo the_post_thumbnail();
