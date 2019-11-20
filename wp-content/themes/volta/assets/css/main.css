@@ -4167,6 +4167,9 @@ body #mc_embed_signup form {
 	font-weight: lighter;
 	max-width: 50%;
 }
+a {
+	word-break: break-all;
+}
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
