@@ -31,7 +31,7 @@ if ( $loop->have_posts() ) :
 					</p>
 					
 					<i class="fa fa-quote-left" style="display: block; margin: 0 0 10px;"></i>
-						<span style="font-style: italic; font-size: 20px;"><?php the_content(); ?></span>
+						<span style="font-style: italic;" class="testimonial-text"><?php the_content(); ?></span>
 					<i class="fa fa-quote-right" style="display: block; margin: 15px 0 0;"></i>
 					
 				</article>

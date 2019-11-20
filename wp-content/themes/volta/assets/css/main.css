@@ -4165,7 +4165,7 @@ body #mc_embed_signup form {
 	text-transform: uppercase;
 	font-size: 20px;
 	font-weight: lighter;
-	max-width: 50%;
+	max-width: 40%;
 }
 a {
 	word-break: break-all;
@@ -4183,6 +4183,9 @@ a {
 }
 .partner-logo-cell.square-logo img {
 	max-width: 200px;
+}
+.testimonial-text p {
+	font-size: 20px;
 }
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
