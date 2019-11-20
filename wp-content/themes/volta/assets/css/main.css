@@ -4170,6 +4170,14 @@ body #mc_embed_signup form {
 a {
 	word-break: break-all;
 }
+.align-items-center {
+	align-items: center;
+}
+.partner-row {
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #e9e9e9;
+}
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
@@ -4812,6 +4820,13 @@ a {
 @media (min-width: 981px) {
 	main, aside, .two_third_col, .one_third_col {
 		float: left;
+	}
+	.partner-logo-cell {
+		flex-basis: 25%;
+		margin-right: 5%;
+	}
+	.partner-blurb-cell {
+		flex-basis: 70%;
 	}
 	.related-posts .event-container {
 		flex-basis: 31.333%;

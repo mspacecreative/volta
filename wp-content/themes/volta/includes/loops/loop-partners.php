@@ -8,18 +8,20 @@ $loop = new WP_Query( array(
 );
 if ( $loop->have_posts() ) : ?>
 	
-<div class="partners-table">
+<div class="partners-table display-flex align-items-center">
     
 	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
     
-    <div class="partner-logo-cell">
-		<?php if ( has_post_thumbnail() ) {
-			echo the_post_thumbnail();
-		} ?>
-	</div>
-	
-	<div class="partner-blurb-cell">
-		<?php the_content(); ?>
+	<div class="partner-row">
+		<div class="partner-logo-cell">
+			<?php if ( has_post_thumbnail() ) {
+				echo the_post_thumbnail();
+			} ?>
+		</div>
+		
+		<div class="partner-blurb-cell">
+			<?php the_content(); ?>
+		</div>
 	</div>
     
     <?php endwhile; ?>
