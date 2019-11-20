@@ -675,6 +675,7 @@ function pricingTable() {
 }
 add_shortcode( 'pricing_table', 'pricingTable' );
 
+// PRICING TABLE
 function pricingTable2() {
 	ob_start();
 		get_template_part('includes/pricing-table-acf');
