@@ -13,11 +13,19 @@ if ( $loop->have_posts() ) : ?>
 	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
     
 	<div class="partner-row display-flex align-items-center">
+		<?php if ( get_field('square_logo') ): ?>
+		<div class="partner-logo-cell square-logo">
+			<?php if ( has_post_thumbnail() ) {
+				echo the_post_thumbnail();
+			} ?>
+		</div>
+		<?php else : ?>
 		<div class="partner-logo-cell">
 			<?php if ( has_post_thumbnail() ) {
 				echo the_post_thumbnail();
 			} ?>
 		</div>
+		<?php endif; ?>
 		
 		<div class="partner-blurb-cell">
 			<?php the_content(); ?>

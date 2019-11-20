@@ -4181,6 +4181,9 @@ a {
 .partner-logo-cell img {
 	padding: 0 30px;
 }
+.partner-logo-cell.square-logo img {
+	max-width: 200px;
+}
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
@@ -4827,6 +4830,7 @@ a {
 	.partner-logo-cell {
 		flex-basis: 25%;
 		margin-right: 5%;
+		text-align: center;
 	}
 	.partner-blurb-cell {
 		flex-basis: 70%;
