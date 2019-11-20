@@ -29,7 +29,7 @@ elseif ( $layouttype == 'one' && $verticalalignment == 'center' && $bgcolour ):
 
 	if( have_rows('variable_columns') ): ?>
 	
-	<div class="columns-container display-flex extra-top-bottom-padding top-bottom-margin" style="background-color: <?php the_field('column_background_colour'); ?>;">
+	<div class="columns-container display-flex extra-top-bottom-padding top-margin" style="background-color: <?php the_field('column_background_colour'); ?>;">
 		
 		<?php if ( get_field('heading') ): ?>
 			<h2 class="width-100"><?php the_field('heading'); ?></h2>
@@ -95,7 +95,7 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'top' && $bgcolour ):
 
 	if( have_rows('two_column_layout') ): ?>
 	
-	<div class="columns-container display-flex extra-top-bottom-padding top-bottom-margin align_items_top" style="background-color: <?php the_field('column_background_colour'); ?>;">
+	<div class="columns-container display-flex extra-top-bottom-padding top-margin align_items_top" style="background-color: <?php the_field('column_background_colour'); ?>;">
 		
 		<?php if ( get_field('heading') ): ?>
 			<h2 class="width-100"><?php the_field('heading'); ?></h2>
@@ -231,7 +231,7 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'center' && $bgcolour ):
 
 	if( have_rows('two_column_layout') ): ?>
 	
-	<div class="columns-container display-flex extra-top-bottom-padding top-bottom-margin" style="background-color: <?php the_field('column_background_colour'); ?>;">
+	<div class="columns-container display-flex extra-top-bottom-padding top-margin" style="background-color: <?php the_field('column_background_colour'); ?>;">
 		
 		<?php if ( get_field('heading') ): ?>
 			<h2 class="width-100"><?php the_field('heading'); ?></h2>
@@ -367,7 +367,7 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'bottom' && $bgcolour ):
 
 	if( have_rows('two_column_layout') ): ?>
 	
-	<div class="columns-container display-flex extra-top-bottom-padding top-bottom-margin align_items_bottom" style="background-color: <?php the_field('column_background_colour'); ?>;">
+	<div class="columns-container display-flex extra-top-bottom-padding top-margin align_items_bottom" style="background-color: <?php the_field('column_background_colour'); ?>;">
 		
 		<?php if ( get_field('heading') ): ?>
 			<h2 class="width-100"><?php the_field('heading'); ?></h2>
