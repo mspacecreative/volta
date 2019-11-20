@@ -682,6 +682,14 @@ function pricingTable2() {
 }
 add_shortcode( 'pricing_table_acf', 'pricingTable2' );
 
+// PARTNERS CPT LOOP
+function partnersLoop() {
+	ob_start();
+		get_template_part('includes/loop-partners');
+	return ob_get_clean();
+}
+add_shortcode( 'partners_loop', 'partnersLoop' );
+
 // REMOVE PROTECTED / PRIVATE PREFIX ON PROTECTED PAGES
 function the_title_trim($title) {
 
