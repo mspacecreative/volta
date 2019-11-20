@@ -13,7 +13,7 @@ if ( $loop->have_posts() ) : ?>
 	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
     
 	<div class="partner-row display-flex align-items-center">
-		<?php if ( get_field('square_logo') ): ?>
+		<?php if ( get_field('square_logo', $post=>ID) ): ?>
 		<div class="partner-logo-cell square-logo">
 			<?php if ( has_post_thumbnail() ) {
 				echo the_post_thumbnail();
