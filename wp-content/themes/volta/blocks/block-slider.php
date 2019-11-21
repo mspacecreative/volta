@@ -24,6 +24,8 @@ if ( $loop->have_posts() ) : ?>
 				<?php if ( has_post_thumbnail() ) {
 					if ( get_field('attachment_link', $post->ID ) {
 						echo '<a href="' . the_field('attachment_link', $post->ID ) . '" target="_blank">' . '<img src="' . get_the_post_thumbnail_url( 'medium' ) . '"/></a>';
+					} else {
+						echo the_post_thumbnail();
 					}
 				} ?>
 			</div>
