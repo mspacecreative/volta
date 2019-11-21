@@ -22,7 +22,9 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php if ( has_post_thumbnail() ) {
-					echo the_post_thumbnail();
+					if ( get_field('attachment_link', $post->ID ) {
+						echo '<a href="' . the_field('attachment_link', $post->ID ) . '" target="_blank">' . '<img src="' . get_the_post_thumbnail_url( 'medium' ) . '"/></a>';
+					}
 				} ?>
 			</div>
 			<?php endwhile; ?>
