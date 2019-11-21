@@ -27,7 +27,8 @@ if ( $loop->have_posts() ) : ?>
 					if ( $featuredimglink ) {
 						echo '<a href="' . $featuredimglink . 'target="_blank">' the_post_thumbnail( 'medium' ) . '</a>';
 					} else {
-					echo the_post_thumbnail();
+						echo the_post_thumbnail();
+					}
 				} ?>
 			</div>
 			<?php endwhile; ?>
