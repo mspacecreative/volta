@@ -6,7 +6,7 @@ $args = array(
     'order' => 'ASC',
     'tax_query' => array(
         array(
-            'taxonomy' => 'categories',
+            'taxonomy' => 'partner_category',
             'field' => 'slug',
             'terms' => 'home-page-slider',
         )
