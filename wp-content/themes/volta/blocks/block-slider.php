@@ -22,8 +22,8 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php if ( has_post_thumbnail() ) {
-					if ( get_field('attachment_link', $post->ID) ): ?>
-						<a href="<?php the_field('attachment_link', $post->ID); ?>" target="_blank">
+					if ( get_field('external_link', $post->ID) ): ?>
+						<a href="<?php the_field('external_link', $post->ID); ?>" target="_blank">
 							<?php echo the_post_thumbnail(); ?>
 						</a>
 					<?php else :
