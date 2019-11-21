@@ -21,7 +21,12 @@ if ( $loop->have_posts() ) : ?>
 		<div class="partner-slider">
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
-				<?php if ( has_post_thumbnail() ) {
+				<?php
+				if ( has_post_thumbnail() ) {
+					$featuredimglink = get_field('external_link', $post->ID);
+					if ( $featuredimglink ) {
+						echo '<a href="' . $featuredimglink . 'target="_blank">' the_post_thumbnail( 'medium' ) . '</a>';
+					} else {
 					echo the_post_thumbnail();
 				} ?>
 			</div>
