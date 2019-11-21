@@ -4176,7 +4176,7 @@ body #mc_embed_signup form {
 	max-width: 40%;
 }
 a {
-	word-break: break-all;
+	word-wrap: break-word;
 }
 .align-items-center {
 	align-items: center;
