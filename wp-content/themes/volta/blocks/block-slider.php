@@ -22,14 +22,7 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php if ( has_post_thumbnail() ) {
-					$image = wp_get_attachment_image_src($loop->ID);
-					if ( get_field('external_link', $image['ID']) ): ?>
-						<a href="<?php the_field('external_link', $image['ID']); ?>" target="_blank">
-							<?php echo the_post_thumbnail(); ?>
-						</a>
-					<?php else :
-						echo the_post_thumbnail(); 
-					endif;
+					echo the_post_thumbnail();
 				} ?>
 			</div>
 			<?php endwhile; ?>
