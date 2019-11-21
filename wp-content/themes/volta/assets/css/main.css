@@ -3521,10 +3521,12 @@ img {
 	float: none;
 	display: inline-block;
 	vertical-align: middle;
+	outline: none;
 }
 .slick-slide img {
 	margin: auto;
 	max-width: 200px;
+	max-height: 80px;
 }
 .max-width-980 {
 	max-width: 980px;

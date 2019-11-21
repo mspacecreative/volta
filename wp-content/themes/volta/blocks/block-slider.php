@@ -15,7 +15,7 @@ $args = array(
 $loop = new WP_Query( $args );
 if ( $loop->have_posts() ) : ?>
 <!-- Partners -->
-<section id="partners" class="top-bottom-padding">
+<section id="partners" class="extra-top-bottom-padding">
 	<h3 class="align-center">THANK YOU TO OUR PARTNERS &amp; SPONSORS</h3>
 	<div class="max-width-980">
 		<div class="partner-slider">
