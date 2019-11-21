@@ -23,12 +23,7 @@ if ( $loop->have_posts() ) : ?>
 			<div>
 				<?php
 				if ( has_post_thumbnail() ) {
-					$featuredimglink = get_field('external_link', $post->ID);
-					if ( $featuredimglink ) {
-						echo '<a href="' . $featuredimglink . 'target="_blank">' . the_post_thumbnail( 'medium' ) . '</a>';
-					} else {
-						echo the_post_thumbnail();
-					}
+					echo the_post_thumbnail();
 				} ?>
 			</div>
 			<?php endwhile; ?>
