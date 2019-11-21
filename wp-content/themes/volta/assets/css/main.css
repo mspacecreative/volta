@@ -3517,6 +3517,11 @@ img {
 .partner-slider {
 	margin-top: 50px;
 }
+.partner-slider.slick-initialized .slick-slide {
+	float: none;
+	display: inline-block;
+	vertical-align: middle;
+}
 .slick-slide img {
 	margin: auto;
 }
