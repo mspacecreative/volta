@@ -6,11 +6,6 @@
 
 (function($) {
 	
-	// CLASSIC BLOCK SPACING
-	if ( $('body').hasClass('no-featured-image') ) {
-		$('.classic-block-wrap').addClass('no-bottom-padding');
-	}
-	
 	// TEAM MEMBERS
 	$('.team-profile, .team-bio-inner .fa').click(function () {
 		$(this).next('.team-bio-container').toggleClass('show');
@@ -144,6 +139,7 @@
 		
 		if ( $('#page-wrapper').hasClass('no-featured-image-in-header') ) {
 			$('body').addClass('no-featured-image');
+			$('.classic-block-wrap').addClass('no-bottom-padding');
 		}
 	});
 	
