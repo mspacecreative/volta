@@ -95,9 +95,6 @@ get_header(); ?>
 	<?php endif; ?>
 	<!-- /post thumbnail -->
 	
-<?php endif; ?>
-<!-- /Check if thumbnail is hidden -->
-	
 	<!-- post thumbnail on mobile -->
 	<div class="featured-image-mobile">
 		<?php 
@@ -167,3 +164,6 @@ get_header(); ?>
 	</div>
 
 	<?php get_footer(); ?>
+
+<?php endif; ?>
+<!-- /Check if thumbnail is hidden -->
