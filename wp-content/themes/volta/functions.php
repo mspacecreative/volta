@@ -766,7 +766,7 @@ if( function_exists('acf_add_options_page') ) {
 // ADD WRAPPING DIV TO CLASSIC BLOCK
 function wrap_classic_block( $block_content, $block ) {
 	if ( null === $block['blockName'] && ! empty( $block_content ) && ! ctype_space( $block_content ) ) {
-		$block_content = '<div class="classic-block-wrap top-bottom-padding">' . $block_content . '</div>';
+		$block_content = '<div class="classic-block-wrap">' . $block_content . '</div>';
 	}
 	return $block_content;
 }

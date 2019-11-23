@@ -4175,6 +4175,9 @@ body #mc_embed_signup form {
 	font-weight: lighter;
 	max-width: 40%;
 }
+.classic-block-wrap {
+	padding: 2em 0 4em;
+}
 a {
 	word-wrap: break-word;
 }
