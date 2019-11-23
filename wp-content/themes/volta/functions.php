@@ -764,16 +764,14 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 // ADD CLASS TO CLASSIC BLOCK
- function add_div_to_block_content( $block_content, $block ) {
+function add_div_to_block_content( $block_content, $block ) {
 
 	if($block = 'core/freeform'){
-		return $block_content;
-	}
+	$block_content = sprintf( '
 	
-	$output = '<div class="classic-wrap">';
-	$output .= $block_content;
-	$output .= '</div>';
-
- 	return $output;
+	<div class="classic-wrap"></div>
+	', $block_content );
+	}
+	return $block_content;
 }
 add_filter( 'render_block', 'add_div_to_block_content', 10, 3 );
