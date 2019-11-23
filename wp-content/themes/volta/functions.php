@@ -762,19 +762,3 @@ if( function_exists('acf_add_options_page') ) {
 		'redirect'		=> false
 	));
 }
-
-// ADD CLASS TO CLASSIC BLOCK
- 
-function my_wrap_quote_block_filter( $block_content, $block ) {
-     
-  if( "core/freeform" !== $block['blockName'] ) {
-    return $block_content;
-  }
- 
-  $output = '<div class="classic-wrap">';
-  $output .= $block_content;
-  $output .= '</div>';
- 
-  return $output;
-}
-add_filter( 'render_block', 'my_wrap_quote_block_filter', 10, 3);
