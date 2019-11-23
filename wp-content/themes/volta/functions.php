@@ -764,14 +764,10 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 // ADD CLASS TO CLASSIC BLOCK
-function add_div_to_block_content( $block_content, $block ) {
-
-	if($block = 'core/freeform'){
-	$block_content = sprintf( '
-	
-	<div class="classic-wrap"></div>
-	', $block_content );
-	}
-	return $block_content;
+function wrap_classic_block( $block_content, $block ) {
+  if ( null === $block['blockName'] && ! empty( $block_content ) && ! ctype_space( $block_content ) ) {
+    $block_content = '<div class="class-wrap">' . $block_content . '</div>';
+  }
+  return $block_content;
 }
-add_filter( 'render_block', 'add_div_to_block_content', 10, 3 );
+add_filter( 'render_block', 'wrap_classic_block', 10, 2 );
