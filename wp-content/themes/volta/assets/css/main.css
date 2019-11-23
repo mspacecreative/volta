@@ -4178,7 +4178,7 @@ body #mc_embed_signup form {
 .classic-block-wrap {
 	padding: 2em 0 4em;
 }
-.no-featured-image-in-header .classic-block-wrap:last-of-type {
+.no-featured-image-in-header > .classic-block-wrap:last-of-type {
 	padding-bottom: 0;
 }
 a {
