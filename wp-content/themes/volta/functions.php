@@ -763,11 +763,11 @@ if( function_exists('acf_add_options_page') ) {
 	));
 }
 
-// ADD CLASS TO CLASSIC BLOCK
+// ADD WRAPPING DIV TO CLASSIC BLOCK
 function wrap_classic_block( $block_content, $block ) {
-  if ( null === $block['blockName'] && ! empty( $block_content ) && ! ctype_space( $block_content ) ) {
-    $block_content = '<div class="class-wrap">' . $block_content . '</div>';
-  }
-  return $block_content;
+	if ( null === $block['blockName'] && ! empty( $block_content ) && ! ctype_space( $block_content ) ) {
+		$block_content = '<div class="classic-block-wrap top-bottom-padding">' . $block_content . '</div>';
+	}
+	return $block_content;
 }
 add_filter( 'render_block', 'wrap_classic_block', 10, 2 );
