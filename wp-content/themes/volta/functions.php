@@ -779,13 +779,13 @@ function my_custom_styles( $init_array ) {
         // These are the custom styles
         array(  
             'title' => 'Dark CTA Button',  
-            'block' => 'a',  
+            'inline' => 'a',  
             'classes' => 'dark button inline-button',
             'wrapper' => true,
         ),  
         array(  
             'title' => 'Light CTA Button',  
-            'block' => 'a',  
+            'inline' => 'a',  
             'classes' => 'light button inline-button',
             'wrapper' => true,
         ),
@@ -798,3 +798,9 @@ function my_custom_styles( $init_array ) {
 } 
 // Attach callback to 'tiny_mce_before_init' 
 add_filter( 'tiny_mce_before_init', 'my_custom_styles' );
+
+function custom_editor_styles() {
+	add_editor_style('editor-styles.css');
+}
+
+add_action('init', 'custom_editor_styles');
