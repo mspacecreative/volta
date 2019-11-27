@@ -778,21 +778,15 @@ function my_custom_styles( $init_array ) {
     $style_formats = array(  
         // These are the custom styles
         array(  
-            'title' => 'Red Button',  
+            'title' => 'Dark CTA Button',  
             'block' => 'span',  
-            'classes' => 'red-button',
+            'classes' => 'dark button',
             'wrapper' => true,
         ),  
         array(  
-            'title' => 'Content Block',  
+            'title' => 'Light CTA Button',  
             'block' => 'span',  
-            'classes' => 'content-block',
-            'wrapper' => true,
-        ),
-        array(  
-            'title' => 'Highlighter',  
-            'block' => 'span',  
-            'classes' => 'highlighter',
+            'classes' => 'light button',
             'wrapper' => true,
         ),
     );  
