@@ -2,7 +2,7 @@
 	margin-top: 15px;
 }
 
-.button {
+.button.inline-button {
 	position: relative;
 	display: inline-block;
 	color: #000;
@@ -21,17 +21,17 @@
 .dark {
 	color: #000;
 }
-.button {
+.button.inline-button {
 	border-radius: 4px;
 }
-.dark.button {
+.dark.button.inline-button {
 	background-color: #000;
 	color: #fff;
 	padding: 15px 25px;
 }
-.light.button {
+.light.button.inline-button {
 	color: #000;
 }
-.dark.button:hover {
+.dark.button.inline-button:hover {
 	background-color: #999;
 }
