@@ -771,3 +771,36 @@ function wrap_classic_block( $block_content, $block ) {
 	return $block_content;
 }
 add_filter( 'render_block', 'wrap_classic_block', 10, 2 );
+
+// CUSTOM STYLES ADDED TO FORMATS DROPDOWN
+function my_custom_styles( $init_array ) {  
+
+    $style_formats = array(  
+        // These are the custom styles
+        array(  
+            'title' => 'Red Button',  
+            'block' => 'span',  
+            'classes' => 'red-button',
+            'wrapper' => true,
+        ),  
+        array(  
+            'title' => 'Content Block',  
+            'block' => 'span',  
+            'classes' => 'content-block',
+            'wrapper' => true,
+        ),
+        array(  
+            'title' => 'Highlighter',  
+            'block' => 'span',  
+            'classes' => 'highlighter',
+            'wrapper' => true,
+        ),
+    );  
+    // Insert the array, JSON ENCODED, into 'style_formats'
+    $init_array['style_formats'] = json_encode( $style_formats );  
+    
+    return $init_array;  
+  
+} 
+// Attach callback to 'tiny_mce_before_init' 
+add_filter( 'tiny_mce_before_init', 'my_custom_styles' );
