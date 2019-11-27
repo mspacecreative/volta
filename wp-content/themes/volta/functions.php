@@ -779,14 +779,14 @@ function my_custom_styles( $init_array ) {
         // These are the custom styles
         array(  
             'title' => 'Dark CTA Button',  
-            'block' => 'span',  
-            'classes' => 'dark button',
+            'block' => 'a',  
+            'classes' => 'dark button inline-button',
             'wrapper' => true,
         ),  
         array(  
             'title' => 'Light CTA Button',  
-            'block' => 'span',  
-            'classes' => 'light button',
+            'block' => 'a',  
+            'classes' => 'light button inline-button',
             'wrapper' => true,
         ),
     );  
