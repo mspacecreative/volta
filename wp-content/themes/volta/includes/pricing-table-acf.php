@@ -2569,9 +2569,17 @@
 	</tr>
 	<tr class="body-row">
 		<td>&nbsp;</td>
-		<td>$10,000</td>
-		<td>$5,000</td>
-		<td>$2,500</td>
-		<td>$2,500</td>
+		<?php if ( get_sub_field('cost') ): ?>
+		<td><?php the_sub_field('cost'); ?></td>
+		<?php endif;
+		if ( get_sub_field('builder_cost') ): ?>
+		<td><?php the_sub_field('builder_cost'); ?></td>
+		<?php endif;
+		if ( get_sub_field('supporter_cost') ): ?>
+		<td><?php the_sub_field('supporter_cost'); ?></td>
+		<?php endif;
+		if ( get_sub_field('towner_cost') ): ?>
+		<td><?php the_sub_field('towner_cost'); ?></td>
+		<?php endif; ?>
 	</tr>
 </table>
