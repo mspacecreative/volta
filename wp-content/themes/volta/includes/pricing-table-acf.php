@@ -2569,17 +2569,17 @@
 	</tr>
 	<tr class="body-row">
 		<td>&nbsp;</td>
-		<?php if ( get_sub_field('cost') ): ?>
-		<td><?php the_sub_field('cost'); ?></td>
+		<?php if ( get_sub_field('cost', 'options') ): ?>
+		<td><?php the_sub_field('cost', 'options'); ?></td>
 		<?php endif;
-		if ( get_sub_field('builder_cost') ): ?>
-		<td><?php the_sub_field('builder_cost'); ?></td>
+		if ( get_sub_field('builder_cost', 'options') ): ?>
+		<td><?php the_sub_field('builder_cost', 'options'); ?></td>
 		<?php endif;
-		if ( get_sub_field('supporter_cost') ): ?>
-		<td><?php the_sub_field('supporter_cost'); ?></td>
+		if ( get_sub_field('supporter_cost', 'options') ): ?>
+		<td><?php the_sub_field('supporter_cost', 'options'); ?></td>
 		<?php endif;
-		if ( get_sub_field('towner_cost') ): ?>
-		<td><?php the_sub_field('towner_cost'); ?></td>
+		if ( get_sub_field('towner_cost', 'options') ): ?>
+		<td><?php the_sub_field('towner_cost', 'options'); ?></td>
 		<?php endif; ?>
 	</tr>
 </table>
