@@ -2628,13 +2628,14 @@
 		
 		<div class="membership-type-inner">
 			<?php
-			$people = get_sub_field('people');
+			$field = get_field_object('people');
+			$people = $field['value'];
 			if ( $people ): ?>
 			
 			<h3>People</h3>
 			<ul>
 				<?php foreach( $people as $person ): ?>
-				<li><?php echo $person['label']; ?></li>
+				<li><?php echo $field['choices'][$person]; ?></li>
 				<?php endforeach; ?>
 			</ul>
 			<?php endif;
