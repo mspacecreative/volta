@@ -106,10 +106,29 @@
 	}
 	@media (max-width: 980px) {
 		.mobile-pricing-table {
-			display: block;
+			display: flex;
+			flex-wrap: wrap;
 		}
 		.corporate_pricing_table {
 			display: none;
+		}
+	}
+	@media (min-width: 768px) and (max-width: 980px) {
+		.membership-type {
+			flex-basis: 48%;
+			margin-right: 4%;
+		}
+		.membership-type:nth-child(2n) {
+			margin-right: 0;
+		}
+	}
+	@media (max-width: 850px) and (orientation: landscape) {
+		.membership-type {
+			flex-basis: 48%;
+			margin-right: 4%;
+		}
+		.membership-type:nth-child(2n) {
+			margin-right: 0;
 		}
 	}
 </style>
