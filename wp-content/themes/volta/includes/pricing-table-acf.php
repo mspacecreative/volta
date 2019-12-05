@@ -124,9 +124,9 @@
 			<?php endif;
 			
 			endwhile;
-			endif;
+			endif; reset_rows();
 			
-		endwhile; reset_rows(); ?>
+		endwhile; ?>
 		
 		</td>
 		
@@ -157,9 +157,9 @@
 			<?php endif;
 			
 			endwhile;
-			endif;
+			endif;reset_rows();
 			
-		endwhile; reset_rows(); ?>
+		endwhile; ?>
 		
 		</td>
 		
@@ -190,9 +190,9 @@
 			<?php endif;
 			
 			endwhile;
-			endif;
+			endif; reset_rows();
 			
-		endwhile; reset_rows(); ?>
+		endwhile; ?>
 	
 		</td>
 			
@@ -223,9 +223,9 @@
 			<?php endif;
 			
 			endwhile;
-			endif;
+			endif; reset_rows();
 			
-		endwhile; reset_rows(); ?>
+		endwhile; ?>
 		
 		</td>
 				
@@ -264,7 +264,7 @@
 			endwhile;
 			endif;
 			
-		endwhile; reset_rows(); ?>
+		endwhile; ?>
 		
 		</td>
 		
@@ -297,7 +297,7 @@
 			endwhile;
 			endif;
 			
-		endwhile; reset_rows(); ?>
+		endwhile; ?>
 		
 		</td>
 		
@@ -330,7 +330,7 @@
 			endwhile;
 			endif;
 			
-		endwhile; reset_rows(); ?>
+		endwhile; ?>
 		
 		</td>
 			
@@ -363,7 +363,7 @@
 			endwhile;
 			endif;
 			
-		endwhile; reset_rows(); ?>
+		endwhile; ?>
 		
 		</td>
 				
