@@ -82,6 +82,17 @@
 		width: 15px;
 		height: 15px;
 	}
+	.mobile-pricing-table {
+		display: none;
+	}
+	@media (max-width: 980px) {
+		.mobile-pricing-table {
+			display: block;
+		}
+		.corporate_pricing_table {
+			display: none;
+		}
+	}
 </style>
 
 <h2 style="margin-bottom: 50px;"><?php esc_html_e('Benefits &amp; Pricing'); ?></h2>
@@ -2591,3 +2602,32 @@
 		endif; ?>
 	</tr>
 </table>
+
+<div class="mobile-pricing-table">
+	<?php if ( have_rows('innovator', 'options') ): ?>
+	<div class="membership-type">
+		<?php while( have_rows('innovator', 'options') ): the_row(); ?>
+		
+		<h2>Innovator</h2>
+		
+		<?php
+		if( have_rows('benefit_categories', 'options') ):
+		while( have_rows('benefit_categories', 'options') ): the_row();
+		
+		$people = get_sub_field('people');
+		
+		if ( $people ): ?>
+		<ul>
+			<?php foreach( $people as $person ): ?>
+			<li><?php echo $person['label']; ?></li>
+			<?php endforeach; ?>
+		</ul>
+		<?php endif;
+		
+		endwhile;
+		endif;
+		
+		endwhile; ?>
+	</div>
+	<?php endif; ?>
+</div>
