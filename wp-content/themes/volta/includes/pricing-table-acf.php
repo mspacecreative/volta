@@ -133,7 +133,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif;
+		<?php endif; reset_rows();
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -166,7 +166,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif;
+		<?php endif; reset_rows();
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -199,7 +199,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif;
+		<?php endif; reset_rows();
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -232,7 +232,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; ?>
+		<?php endif; reset_rows(); ?>
 		
 	</tr>
 	
