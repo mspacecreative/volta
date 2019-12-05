@@ -124,7 +124,7 @@
 			<?php endif;
 			
 			endwhile;
-			endif; reset_rows();
+			endif;
 			
 		endwhile; ?>
 		
@@ -157,7 +157,7 @@
 			<?php endif;
 			
 			endwhile;
-			endif;reset_rows();
+			endif;
 			
 		endwhile; ?>
 		
@@ -190,7 +190,7 @@
 			<?php endif;
 			
 			endwhile;
-			endif; reset_rows();
+			endif;
 			
 		endwhile; ?>
 	
@@ -223,7 +223,7 @@
 			<?php endif;
 			
 			endwhile;
-			endif; reset_rows();
+			endif;
 			
 		endwhile; ?>
 		
