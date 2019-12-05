@@ -155,9 +155,9 @@
 			if( have_rows('builder_benefit_categories', 'options') ):
 			while( have_rows('builder_benefit_categories', 'options') ): the_row();
 			
-			$people = get_sub_field('people');
+			$builderpeople = get_sub_field('people');
 			
-			if ( $people && in_array('innovation', $people) ): ?>
+			if ( $builderpeople ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -188,9 +188,9 @@
 			if( have_rows('supporter_benefit_categories', 'options') ):
 			while( have_rows('supporter_benefit_categories', 'options') ): the_row();
 			
-			$people = get_sub_field('people');
+			$supporterpeople = get_sub_field('people');
 			
-			if ( $people && in_array('innovation', $people) ): ?>
+			if ( $supporterpeople ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -221,9 +221,9 @@
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
 			
-			$people = get_sub_field('people');
+			$townerpeople = get_sub_field('people');
 			
-			if ( $people && in_array('innovation', $people) ): ?>
+			if ( $townerpeople ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -2613,6 +2613,68 @@
 		<?php
 		if( have_rows('benefit_categories', 'options') ):
 		while( have_rows('benefit_categories', 'options') ): the_row(); ?>
+		
+		<?php
+		$people = get_sub_field('people');
+		if ( $people ): ?>
+		
+		<h3>People</h3>
+		<ul>
+			<?php foreach( $people as $person ): ?>
+			<li><?php echo $person['label']; ?></li>
+			<?php endforeach; ?>
+		</ul>
+		<?php endif;
+		
+		$engagement = get_sub_field('engagement');
+		if ( $engagement ): ?>
+		
+		<h3>Engagement</h3>
+		<ul>
+			<?php foreach( $engagement as $engage ): ?>
+			<li><?php echo $engage['label']; ?></li>
+			<?php endforeach; ?>
+		</ul>
+		<?php endif;
+		
+		$spaces = get_sub_field('space');
+		if ( $spaces ): ?>
+		
+		<h3>Space</h3>
+		<ul>
+			<?php foreach( $spaces as $space ): ?>
+			<li><?php echo $space['label']; ?></li>
+			<?php endforeach; ?>
+		</ul>
+		<?php endif;
+		
+		$recognition = get_sub_field('recognition');
+		if ( $recognition ): ?>
+		
+		<h3>Recognition</h3>
+		<ul>
+			<?php foreach( $recognition as $recognize ): ?>
+			<li><?php echo $recognize['label']; ?></li>
+			<?php endforeach; ?>
+		</ul>
+		<?php endif;
+		
+		endwhile;
+		endif;
+		
+		endwhile; ?>
+	</div>
+	<?php endif; ?>
+	
+	<?php if ( have_rows('builder', 'options') ): ?>
+	<div class="membership-type">
+		<?php while( have_rows('builder', 'options') ): the_row(); ?>
+		
+		<h2>Builder</h2>
+		
+		<?php
+		if( have_rows('builder_benefit_categories', 'options') ):
+		while( have_rows('builder_benefit_categories', 'options') ): the_row(); ?>
 		
 		<?php
 		$people = get_sub_field('people');
