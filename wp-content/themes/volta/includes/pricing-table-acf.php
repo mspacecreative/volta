@@ -2637,6 +2637,28 @@
 		</ul>
 		<?php endif;
 		
+		$spaces = get_sub_field('space');
+		if ( $spaces ): ?>
+		
+		<h3>Space</h3>
+		<ul>
+			<?php foreach( $spaces as $space ): ?>
+			<li><?php echo $space['label']; ?></li>
+			<?php endforeach; ?>
+		</ul>
+		<?php endif;
+		
+		$recognition = get_sub_field('recognition');
+		if ( $recognition ): ?>
+		
+		<h3>Recognition</h3>
+		<ul>
+			<?php foreach( $recognition as $recognize ): ?>
+			<li><?php echo $recognize['label']; ?></li>
+			<?php endforeach; ?>
+		</ul>
+		<?php endif;
+		
 		endwhile;
 		endif;
 		
