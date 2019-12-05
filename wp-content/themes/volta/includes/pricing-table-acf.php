@@ -271,7 +271,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif;
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -304,7 +304,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif;
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -337,7 +337,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif; reset_rows();
+		<?php endif;
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -370,7 +370,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; reset_rows(); ?>
+		<?php endif;  ?>
 		
 	</tr>
 	<tr class="body-row">
@@ -407,7 +407,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -440,7 +440,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -473,7 +473,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -506,7 +506,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; reset_rows(); ?>
+		<?php endif;  ?>
 		
 	</tr>
 	<tr class="body-row">
@@ -543,7 +543,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -576,7 +576,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -609,7 +609,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -642,7 +642,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; reset_rows(); ?>
+		<?php endif;  ?>
 		
 	</tr>
 	<tr class="body-row">
@@ -679,7 +679,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -712,7 +712,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -745,7 +745,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -778,7 +778,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; reset_rows(); ?>
+		<?php endif;  ?>
 		
 	</tr>
 	<tr class="align-center grey-row-bg">
@@ -818,7 +818,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -851,7 +851,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -884,7 +884,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -917,7 +917,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; reset_rows(); ?>
+		<?php endif;  ?>
 		
 	</tr>
 	<tr class="body-row">
@@ -954,7 +954,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -987,7 +987,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -1020,7 +1020,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -1053,7 +1053,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; reset_rows(); ?>
+		<?php endif;  ?>
 		
 	</tr>
 	<tr class="body-row">
@@ -1090,7 +1090,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -1123,7 +1123,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -1156,7 +1156,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -1189,7 +1189,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; reset_rows(); ?>
+		<?php endif;  ?>
 		
 	</tr>
 	<tr class="body-row">
@@ -1226,7 +1226,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -1259,7 +1259,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -1292,7 +1292,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -1325,7 +1325,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; reset_rows(); ?>
+		<?php endif;  ?>
 		
 	</tr>
 	<tr class="body-row">
@@ -1362,7 +1362,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -1395,7 +1395,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -1428,7 +1428,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -1461,7 +1461,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; reset_rows(); ?>
+		<?php endif;  ?>
 		
 	</tr>
 	<tr class="body-row">
@@ -1498,7 +1498,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -1531,7 +1531,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -1564,7 +1564,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -1597,7 +1597,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; reset_rows(); ?>
+		<?php endif;  ?>
 		
 	</tr>
 	<tr class="body-row">
@@ -1634,7 +1634,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -1667,7 +1667,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -1700,7 +1700,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -1733,7 +1733,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; reset_rows(); ?>
+		<?php endif;  ?>
 		
 	</tr>
 	<tr class="align-center grey-row-bg">
@@ -1773,7 +1773,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -1806,7 +1806,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -1839,7 +1839,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -1872,7 +1872,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; reset_rows(); ?>
+		<?php endif;  ?>
 		
 	</tr>
 	<tr class="body-row">
@@ -1909,7 +1909,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -1942,7 +1942,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -1975,7 +1975,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -2008,7 +2008,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; reset_rows(); ?>
+		<?php endif;  ?>
 		
 	</tr>
 	<tr class="body-row">
@@ -2045,7 +2045,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('builder', 'options') ): ?>
 		
@@ -2078,7 +2078,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -2111,7 +2111,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif; reset_rows();
+		<?php endif; 
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -2144,7 +2144,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; reset_rows(); ?>
+		<?php endif;  ?>
 		
 	</tr>
 	<tr class="align-center grey-row-bg">
