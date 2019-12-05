@@ -2614,14 +2614,25 @@
 		if( have_rows('benefit_categories', 'options') ):
 		while( have_rows('benefit_categories', 'options') ): the_row(); ?>
 		
-		<h3>People</h3>
-		
 		<?php
 		$people = get_sub_field('people');
 		if ( $people ): ?>
+		
+		<h3>People</h3>
 		<ul>
 			<?php foreach( $people as $person ): ?>
 			<li><?php echo $person['label']; ?></li>
+			<?php endforeach; ?>
+		</ul>
+		<?php endif;
+		
+		$engagement = get_sub_field('engagement');
+		if ( $engagement ): ?>
+		
+		<h3>Engagement</h3>
+		<ul>
+			<?php foreach( $engagement as $engage ): ?>
+			<li><?php echo $engage['label']; ?></li>
 			<?php endforeach; ?>
 		</ul>
 		<?php endif;
