@@ -2569,35 +2569,38 @@
 			</ul>
 			<?php endif;
 			
-			$engagement = get_sub_field('engagement');
+			$field = get_sub_field_object('engagement');
+			$engagement = $field['value'];
 			if ( $engagement ): ?>
 			
 			<h3>Engagement</h3>
 			<ul>
 				<?php foreach( $engagement as $engage ): ?>
-				<li><?php echo $engage['label']; ?></li>
+				<li><?php echo $field['choices'][ $engage ]; ?></li>
 				<?php endforeach; ?>
 			</ul>
 			<?php endif;
 			
-			$spaces = get_sub_field('space');
+			$field = get_sub_field_object('space');
+			$spaces = $field['value'];
 			if ( $spaces ): ?>
 			
 			<h3>Space</h3>
 			<ul>
 				<?php foreach( $spaces as $space ): ?>
-				<li><?php echo $space['label']; ?></li>
+				<li><?php echo $field['choices'][ $space ]; ?></li>
 				<?php endforeach; ?>
 			</ul>
 			<?php endif;
 			
-			$recognition = get_sub_field('recognition');
+			$field = get_sub_field_object('recognition');
+			$recognition = $field['value'];
 			if ( $recognition ): ?>
 			
 			<h3>Recognition</h3>
 			<ul>
 				<?php foreach( $recognition as $recognize ): ?>
-				<li><?php echo $recognize['label']; ?></li>
+				<li><?php echo $field['choices'][ $recognize ]; ?></li>
 				<?php endforeach; ?>
 			</ul>
 			<?php endif; ?>
@@ -2623,46 +2626,50 @@
 		
 		<div class="membership-type-inner">
 			<?php
-			$people = get_sub_field('people');
+			$field = get_sub_field_object('people');
+			$people = $field['value'];
 			if ( $people ): ?>
 			
 			<h3>People</h3>
 			<ul>
 				<?php foreach( $people as $person ): ?>
-				<li><?php echo $person['label']; ?></li>
+				<li><?php echo $field['choices'][ $person ]; ?></li>
 				<?php endforeach; ?>
 			</ul>
 			<?php endif;
 			
-			$engagement = get_sub_field('engagement');
+			$field = get_sub_field_object('engagement');
+			$engagement = $field['value'];
 			if ( $engagement ): ?>
 			
 			<h3>Engagement</h3>
 			<ul>
 				<?php foreach( $engagement as $engage ): ?>
-				<li><?php echo $engage['label']; ?></li>
+				<li><?php echo $field['choices'][ $engage ]; ?></li>
 				<?php endforeach; ?>
 			</ul>
 			<?php endif;
 			
-			$spaces = get_sub_field('space');
+			$field = get_sub_field_object('space');
+			$spaces = $field['value'];
 			if ( $spaces ): ?>
 			
 			<h3>Space</h3>
 			<ul>
 				<?php foreach( $spaces as $space ): ?>
-				<li><?php echo $space['label']; ?></li>
+				<li><?php echo $field['choices'][ $space ]; ?></li>
 				<?php endforeach; ?>
 			</ul>
 			<?php endif;
 			
-			$recognition = get_sub_field('recognition');
+			$field = get_sub_field_object('recognition');
+			$recognition = $field['value'];
 			if ( $recognition ): ?>
 			
 			<h3>Recognition</h3>
 			<ul>
 				<?php foreach( $recognition as $recognize ): ?>
-				<li><?php echo $recognize['label']; ?></li>
+				<li><?php echo $field['choices'][ $recognize ]; ?></li>
 				<?php endforeach; ?>
 			</ul>
 			<?php endif; ?>
@@ -2688,46 +2695,50 @@
 		
 		<div class="membership-type-inner">
 			<?php
-			$people = get_sub_field('people');
+			$field = get_sub_field_object('people');
+			$people = $field['value'];
 			if ( $people ): ?>
 			
 			<h3>People</h3>
 			<ul>
 				<?php foreach( $people as $person ): ?>
-				<li><?php echo $person['label']; ?></li>
+				<li><?php echo $field['choices'][ $person ]; ?></li>
 				<?php endforeach; ?>
 			</ul>
 			<?php endif;
 			
-			$engagement = get_sub_field('engagement');
+			$field = get_sub_field_object('engagement');
+			$engagement = $field['value'];
 			if ( $engagement ): ?>
 			
 			<h3>Engagement</h3>
 			<ul>
 				<?php foreach( $engagement as $engage ): ?>
-				<li><?php echo $engage['label']; ?></li>
+				<li><?php echo $field['choices'][ $engage ]; ?></li>
 				<?php endforeach; ?>
 			</ul>
 			<?php endif;
 			
-			$spaces = get_sub_field('space');
+			$field = get_sub_field_object('space');
+			$spaces = $field['value'];
 			if ( $spaces ): ?>
 			
 			<h3>Space</h3>
 			<ul>
 				<?php foreach( $spaces as $space ): ?>
-				<li><?php echo $space['label']; ?></li>
+				<li><?php echo $field['choices'][ $space ]; ?></li>
 				<?php endforeach; ?>
 			</ul>
 			<?php endif;
 			
-			$recognition = get_sub_field('recognition');
+			$field = get_sub_field_object('recognition');
+			$recognition = $field['value'];
 			if ( $recognition ): ?>
 			
 			<h3>Recognition</h3>
 			<ul>
 				<?php foreach( $recognition as $recognize ): ?>
-				<li><?php echo $recognize['label']; ?></li>
+				<li><?php echo $field['choices'][ $recognize ]; ?></li>
 				<?php endforeach; ?>
 			</ul>
 			<?php endif; ?>
@@ -2753,46 +2764,50 @@
 		
 		<div class="membership-type-inner">
 			<?php
-			$people = get_sub_field('people');
+			$field = get_sub_field_object('people');
+			$people = $field['value'];
 			if ( $people ): ?>
 			
 			<h3>People</h3>
 			<ul>
 				<?php foreach( $people as $person ): ?>
-				<li><?php echo $person['label']; ?></li>
+				<li><?php echo $field['choices'][ $person ]; ?></li>
 				<?php endforeach; ?>
 			</ul>
 			<?php endif;
 			
-			$engagement = get_sub_field('engagement');
+			$field = get_sub_field_object('engagement');
+			$engagement = $field['value'];
 			if ( $engagement ): ?>
 			
 			<h3>Engagement</h3>
 			<ul>
 				<?php foreach( $engagement as $engage ): ?>
-				<li><?php echo $engage['label']; ?></li>
+				<li><?php echo $field['choices'][ $engage ]; ?></li>
 				<?php endforeach; ?>
 			</ul>
 			<?php endif;
 			
-			$spaces = get_sub_field('space');
+			$field = get_sub_field_object('space');
+			$spaces = $field['value'];
 			if ( $spaces ): ?>
 			
 			<h3>Space</h3>
 			<ul>
 				<?php foreach( $spaces as $space ): ?>
-				<li><?php echo $space['label']; ?></li>
+				<li><?php echo $field['choices'][ $space ]; ?></li>
 				<?php endforeach; ?>
 			</ul>
 			<?php endif;
 			
-			$recognition = get_sub_field('recognition');
+			$field = get_sub_field_object('recognition');
+			$recognition = $field['value'];
 			if ( $recognition ): ?>
 			
 			<h3>Recognition</h3>
 			<ul>
 				<?php foreach( $recognition as $recognize ): ?>
-				<li><?php echo $recognize['label']; ?></li>
+				<li><?php echo $field['choices'][ $recognize ]; ?></li>
 				<?php endforeach; ?>
 			</ul>
 			<?php endif; ?>
