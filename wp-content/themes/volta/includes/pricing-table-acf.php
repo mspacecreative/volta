@@ -98,6 +98,12 @@
 	.membership-type-inner {
 		padding: 5px 30px 20px;
 	}
+	.post-content-container .mobile-pricing-table ul {
+	    margin: 0 0 2em;
+	}
+	.post-content-container .mobile-pricing-table h3 {
+		margin: 1em 0 .5em;
+	}
 	@media (max-width: 980px) {
 		.mobile-pricing-table {
 			display: block;
