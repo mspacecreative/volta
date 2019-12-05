@@ -126,7 +126,7 @@
 			endwhile;
 			endif;
 			
-		endwhile; ?>
+		endwhile; reset_rows(); ?>
 		
 		</td>
 		
@@ -159,7 +159,7 @@
 			endwhile;
 			endif;
 			
-		endwhile; ?>
+		endwhile; reset_rows(); ?>
 		
 		</td>
 		
@@ -192,7 +192,7 @@
 			endwhile;
 			endif;
 			
-		endwhile; ?>
+		endwhile; reset_rows(); ?>
 	
 		</td>
 			
@@ -225,7 +225,7 @@
 			endwhile;
 			endif;
 			
-		endwhile; ?>
+		endwhile; reset_rows(); ?>
 		
 		</td>
 				
@@ -264,7 +264,7 @@
 			endwhile;
 			endif;
 			
-		endwhile; ?>
+		endwhile; reset_rows(); ?>
 		
 		</td>
 		
@@ -297,7 +297,7 @@
 			endwhile;
 			endif;
 			
-		endwhile; ?>
+		endwhile; reset_rows(); ?>
 		
 		</td>
 		
@@ -330,7 +330,7 @@
 			endwhile;
 			endif;
 			
-		endwhile; ?>
+		endwhile; reset_rows(); ?>
 		
 		</td>
 			
@@ -363,7 +363,7 @@
 			endwhile;
 			endif;
 			
-		endwhile; ?>
+		endwhile; reset_rows(); ?>
 		
 		</td>
 				
