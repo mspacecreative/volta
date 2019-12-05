@@ -2680,7 +2680,7 @@
 	<div class="membership-type">
 		<?php while( have_rows('supporter', 'options') ): the_row(); ?>
 		
-		<h2>Builder</h2>
+		<h2>Supporter</h2>
 		
 		<?php
 		if( have_rows('supporter_benefit_categories', 'options') ):
@@ -2745,7 +2745,7 @@
 	<div class="membership-type">
 		<?php while( have_rows('out-of-towner', 'options') ): the_row(); ?>
 		
-		<h2>Builder</h2>
+		<h2>Out-of-towner</h2>
 		
 		<?php
 		if( have_rows('towner_benefit_categories', 'options') ):
