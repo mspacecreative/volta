@@ -295,7 +295,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('corporate', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -328,7 +328,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('corporate', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -361,7 +361,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('corporate', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -398,7 +398,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('employee', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -431,7 +431,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('employee', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -464,7 +464,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('employee', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -497,7 +497,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('employee', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -534,7 +534,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('reverse', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -567,7 +567,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('reverse', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -600,7 +600,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('reverse', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -633,7 +633,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('reverse', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -670,7 +670,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('access', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -703,7 +703,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('access', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -736,7 +736,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('access', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -769,7 +769,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('access', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -806,7 +806,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('network', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -839,7 +839,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('network', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -872,7 +872,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('network', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -905,7 +905,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('network', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -942,7 +942,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('tickets', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -975,7 +975,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('tickets', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1008,7 +1008,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('tickets', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1041,7 +1041,7 @@
 			
 			$people = get_sub_field('people');
 			
-			if ( $people && in_array('tickets', $people) ): ?>
+			if ( $people ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1083,7 +1083,7 @@
 			
 			$engagement = get_sub_field('engagement');
 			
-			if ( $engagement && in_array('access', $engagement) ): ?>
+			if ( $engagement ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1116,7 +1116,7 @@
 			
 			$engagement = get_sub_field('engagement');
 			
-			if ( $engagement && in_array('access', $engagement) ): ?>
+			if ( $engagement ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1149,7 +1149,7 @@
 			
 			$engagement = get_sub_field('engagement');
 			
-			if ( $engagement && in_array('access', $engagement) ): ?>
+			if ( $engagement ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1182,7 +1182,7 @@
 			
 			$engagement = get_sub_field('engagement');
 			
-			if ( $engagement && in_array('access', $engagement) ): ?>
+			if ( $engagement ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1219,7 +1219,7 @@
 			
 			$engagement = get_sub_field('engagement');
 			
-			if ( $engagement && in_array('lunch-and-learn', $engagement) ): ?>
+			if ( $engagement ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1252,7 +1252,7 @@
 			
 			$engagement = get_sub_field('engagement');
 			
-			if ( $engagement && in_array('lunch-and-learn', $engagement) ): ?>
+			if ( $engagement ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1285,7 +1285,7 @@
 			
 			$engagement = get_sub_field('engagement');
 			
-			if ( $engagement && in_array('lunch-and-learn', $engagement) ): ?>
+			if ( $engagement ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1318,7 +1318,7 @@
 			
 			$engagement = get_sub_field('engagement');
 			
-			if ( $engagement && in_array('lunch-and-learn', $engagement) ): ?>
+			if ( $engagement ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1355,7 +1355,7 @@
 			
 			$engagement = get_sub_field('engagement');
 			
-			if ( $engagement && in_array('ecosystem', $engagement) ): ?>
+			if ( $engagement ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1388,7 +1388,7 @@
 			
 			$engagement = get_sub_field('engagement');
 			
-			if ( $engagement && in_array('ecosystem', $engagement) ): ?>
+			if ( $engagement ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1421,7 +1421,7 @@
 			
 			$engagement = get_sub_field('engagement');
 			
-			if ( $engagement && in_array('ecosystem', $engagement) ): ?>
+			if ( $engagement ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1454,7 +1454,7 @@
 			
 			$engagement = get_sub_field('engagement');
 			
-			if ( $engagement && in_array('ecosystem', $engagement) ): ?>
+			if ( $engagement ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1491,7 +1491,7 @@
 			
 			$engagement = get_sub_field('engagement');
 			
-			if ( $engagement && in_array('newsletter', $engagement) ): ?>
+			if ( $engagement ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1524,7 +1524,7 @@
 			
 			$engagement = get_sub_field('engagement');
 			
-			if ( $engagement && in_array('newsletter', $engagement) ): ?>
+			if ( $engagement ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1557,7 +1557,7 @@
 			
 			$engagement = get_sub_field('engagement');
 			
-			if ( $engagement && in_array('newsletter', $engagement) ): ?>
+			if ( $engagement ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1590,7 +1590,7 @@
 			
 			$engagement = get_sub_field('engagement');
 			
-			if ( $engagement && in_array('newsletter', $engagement) ): ?>
+			if ( $engagement ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1632,7 +1632,7 @@
 			
 			$space = get_sub_field('space');
 			
-			if ( $space && in_array('office-hours', $space) ): ?>
+			if ( $space ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1665,7 +1665,7 @@
 			
 			$space = get_sub_field('space');
 			
-			if ( $space && in_array('office-hours', $space) ): ?>
+			if ( $space ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1698,7 +1698,7 @@
 			
 			$space = get_sub_field('space');
 			
-			if ( $space && in_array('office-hours', $space) ): ?>
+			if ( $space ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1731,7 +1731,7 @@
 			
 			$space = get_sub_field('space');
 			
-			if ( $space && in_array('office-hours', $space) ): ?>
+			if ( $space ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1768,7 +1768,7 @@
 			
 			$space = get_sub_field('space');
 			
-			if ( $space && in_array('space-rentals', $space) ): ?>
+			if ( $space ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1801,7 +1801,7 @@
 			
 			$space = get_sub_field('space');
 			
-			if ( $space && in_array('space-rentals', $space) ): ?>
+			if ( $space ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1834,7 +1834,7 @@
 			
 			$space = get_sub_field('space');
 			
-			if ( $space && in_array('space-rentals', $space) ): ?>
+			if ( $space ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1867,7 +1867,7 @@
 			
 			$space = get_sub_field('space');
 			
-			if ( $space && in_array('space-rentals', $space) ): ?>
+			if ( $space ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1904,7 +1904,7 @@
 			
 			$space = get_sub_field('space');
 			
-			if ( $space && in_array('discount-space-rentals', $space) ): ?>
+			if ( $space ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1937,7 +1937,7 @@
 			
 			$space = get_sub_field('space');
 			
-			if ( $space && in_array('discount-space-rentals', $space) ): ?>
+			if ( $space ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1970,7 +1970,7 @@
 			
 			$space = get_sub_field('space');
 			
-			if ( $space && in_array('discount-space-rentals', $space) ): ?>
+			if ( $space ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -2003,7 +2003,7 @@
 			
 			$space = get_sub_field('space');
 			
-			if ( $space && in_array('discount-space-rentals', $space) ): ?>
+			if ( $space ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -2040,7 +2040,7 @@
 			
 			$space = get_sub_field('space');
 			
-			if ( $space && in_array('coworking-space', $space) ): ?>
+			if ( $space ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -2073,7 +2073,7 @@
 			
 			$space = get_sub_field('space');
 			
-			if ( $space && in_array('coworking-space', $space) ): ?>
+			if ( $space ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -2106,7 +2106,7 @@
 			
 			$space = get_sub_field('space');
 			
-			if ( $space && in_array('coworking-space', $space) ): ?>
+			if ( $space ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -2139,7 +2139,7 @@
 			
 			$space = get_sub_field('space');
 			
-			if ( $space && in_array('coworking-space', $space) ): ?>
+			if ( $space ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -2181,7 +2181,7 @@
 			
 			$recognition = get_sub_field('recognition');
 			
-			if ( $recognition && in_array('logo', $recognition) ): ?>
+			if ( $recognition ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -2214,7 +2214,7 @@
 			
 			$recognition = get_sub_field('recognition');
 			
-			if ( $recognition && in_array('logo', $recognition) ): ?>
+			if ( $recognition ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -2247,7 +2247,7 @@
 			
 			$recognition = get_sub_field('recognition');
 			
-			if ( $recognition && in_array('logo', $recognition) ): ?>
+			if ( $recognition ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -2280,7 +2280,7 @@
 			
 			$recognition = get_sub_field('recognition');
 			
-			if ( $recognition && in_array('logo', $recognition) ): ?>
+			if ( $recognition ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -2317,7 +2317,7 @@
 			
 			$recognition = get_sub_field('recognition');
 			
-			if ( $recognition && in_array('brand-exposure', $recognition) ): ?>
+			if ( $recognition ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -2350,7 +2350,7 @@
 			
 			$recognition = get_sub_field('recognition');
 			
-			if ( $recognition && in_array('brand-exposure', $recognition) ): ?>
+			if ( $recognition ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -2383,7 +2383,7 @@
 			
 			$recognition = get_sub_field('recognition');
 			
-			if ( $recognition && in_array('brand-exposure', $recognition) ): ?>
+			if ( $recognition ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -2416,7 +2416,7 @@
 			
 			$recognition = get_sub_field('recognition');
 			
-			if ( $recognition && in_array('brand-exposure', $recognition) ): ?>
+			if ( $recognition ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -2453,7 +2453,7 @@
 			
 			$recognition = get_sub_field('recognition');
 			
-			if ( $recognition && in_array('blog-post', $recognition) ): ?>
+			if ( $recognition ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -2486,7 +2486,7 @@
 			
 			$recognition = get_sub_field('recognition');
 			
-			if ( $recognition && in_array('blog-post', $recognition) ): ?>
+			if ( $recognition ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -2519,7 +2519,7 @@
 			
 			$recognition = get_sub_field('recognition');
 			
-			if ( $recognition && in_array('blog-post', $recognition) ): ?>
+			if ( $recognition ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -2552,7 +2552,7 @@
 			
 			$recognition = get_sub_field('recognition');
 			
-			if ( $recognition && in_array('blog-post', $recognition) ): ?>
+			if ( $recognition ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
