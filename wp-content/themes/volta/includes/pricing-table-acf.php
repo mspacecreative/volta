@@ -133,7 +133,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif;
 		
 		if( have_rows('builder', 'options') ): ?>
 		
