@@ -166,7 +166,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 		
-		<?php endif; reset_rows();
+		<?php endif;
 		
 		if( have_rows('supporter', 'options') ): ?>
 		
@@ -199,7 +199,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 			
-		<?php endif; reset_rows();
+		<?php endif;
 		
 		if( have_rows('out-of-towner', 'options') ): ?>
 		
@@ -232,7 +232,7 @@
 		<?php else : ?>
 		<td>&nbsp;</td>
 				
-		<?php endif; reset_rows(); ?>
+		<?php endif; ?>
 		
 	</tr>
 	
