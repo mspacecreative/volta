@@ -2571,22 +2571,22 @@
 		<td>&nbsp;</td>
 		<?php if ( have_rows('innovator', 'options') ):
 		while( have_rows('innovator', 'options') ): the_row(); ?>
-		<td><?php the_sub_field('cost'); ?></td>
+		<td><?php esc_html_e('$'); the_sub_field('cost'); ?></td>
 		<?php endwhile; 
 		endif;
 		if ( have_rows('builder', 'options') ):
 		while( have_rows('builder', 'options') ): the_row(); ?>
-		<td><?php the_sub_field('builder_cost'); ?></td>
+		<td><?php esc_html_e('$'); the_sub_field('builder_cost'); ?></td>
 		<?php endwhile; 
 		endif;
 		if ( have_rows('supporter', 'options') ):
 		while( have_rows('supporter', 'options') ): the_row(); ?>
-		<td><?php the_sub_field('supporter_cost'); ?></td>
+		<td><?php esc_html_e('$'); the_sub_field('supporter_cost'); ?></td>
 		<?php endwhile; 
 		endif;
 		if ( have_rows('out-of-towner', 'options') ):
 		while( have_rows('out-of-towner', 'options') ): the_row(); ?>
-		<td><?php the_sub_field('towner_cost'); ?></td>
+		<td><?php esc_html_e('$'); the_sub_field('towner_cost'); ?></td>
 		<?php endwhile; 
 		endif; ?>
 	</tr>
