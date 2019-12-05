@@ -85,6 +85,19 @@
 	.mobile-pricing-table {
 		display: none;
 	}
+	.membership-type {
+		border: 1px solid #333;
+		margin-bottom: 1.5em;
+	}
+	.membership-type h2 {
+		background-color: #000;
+		color: #fff;
+		padding: 15px 2em;
+		margin-bottom: 0;
+	}
+	.membership-type-inner {
+		padding: 2em;
+	}
 	@media (max-width: 980px) {
 		.mobile-pricing-table {
 			display: block;
@@ -2614,51 +2627,54 @@
 		if( have_rows('benefit_categories', 'options') ):
 		while( have_rows('benefit_categories', 'options') ): the_row(); ?>
 		
-		<?php
-		$people = get_sub_field('people');
-		if ( $people ): ?>
+		<div class="membership-type-inner">
+			<?php
+			$people = get_sub_field('people');
+			if ( $people ): ?>
+			
+			<h3>People</h3>
+			<ul>
+				<?php foreach( $people as $person ): ?>
+				<li><?php echo $person['label']; ?></li>
+				<?php endforeach; ?>
+			</ul>
+			<?php endif;
+			
+			$engagement = get_sub_field('engagement');
+			if ( $engagement ): ?>
+			
+			<h3>Engagement</h3>
+			<ul>
+				<?php foreach( $engagement as $engage ): ?>
+				<li><?php echo $engage['label']; ?></li>
+				<?php endforeach; ?>
+			</ul>
+			<?php endif;
+			
+			$spaces = get_sub_field('space');
+			if ( $spaces ): ?>
+			
+			<h3>Space</h3>
+			<ul>
+				<?php foreach( $spaces as $space ): ?>
+				<li><?php echo $space['label']; ?></li>
+				<?php endforeach; ?>
+			</ul>
+			<?php endif;
+			
+			$recognition = get_sub_field('recognition');
+			if ( $recognition ): ?>
+			
+			<h3>Recognition</h3>
+			<ul>
+				<?php foreach( $recognition as $recognize ): ?>
+				<li><?php echo $recognize['label']; ?></li>
+				<?php endforeach; ?>
+			</ul>
+			<?php endif; ?>
+		</div>
 		
-		<h3>People</h3>
-		<ul>
-			<?php foreach( $people as $person ): ?>
-			<li><?php echo $person['label']; ?></li>
-			<?php endforeach; ?>
-		</ul>
-		<?php endif;
-		
-		$engagement = get_sub_field('engagement');
-		if ( $engagement ): ?>
-		
-		<h3>Engagement</h3>
-		<ul>
-			<?php foreach( $engagement as $engage ): ?>
-			<li><?php echo $engage['label']; ?></li>
-			<?php endforeach; ?>
-		</ul>
-		<?php endif;
-		
-		$spaces = get_sub_field('space');
-		if ( $spaces ): ?>
-		
-		<h3>Space</h3>
-		<ul>
-			<?php foreach( $spaces as $space ): ?>
-			<li><?php echo $space['label']; ?></li>
-			<?php endforeach; ?>
-		</ul>
-		<?php endif;
-		
-		$recognition = get_sub_field('recognition');
-		if ( $recognition ): ?>
-		
-		<h3>Recognition</h3>
-		<ul>
-			<?php foreach( $recognition as $recognize ): ?>
-			<li><?php echo $recognize['label']; ?></li>
-			<?php endforeach; ?>
-		</ul>
-		<?php endif;
-		
+		<?php 
 		endwhile;
 		endif;
 		
@@ -2676,51 +2692,54 @@
 		if( have_rows('builder_benefit_categories', 'options') ):
 		while( have_rows('builder_benefit_categories', 'options') ): the_row(); ?>
 		
-		<?php
-		$people = get_sub_field('people');
-		if ( $people ): ?>
+		<div class="membership-type-inner">
+			<?php
+			$people = get_sub_field('people');
+			if ( $people ): ?>
+			
+			<h3>People</h3>
+			<ul>
+				<?php foreach( $people as $person ): ?>
+				<li><?php echo $person['label']; ?></li>
+				<?php endforeach; ?>
+			</ul>
+			<?php endif;
+			
+			$engagement = get_sub_field('engagement');
+			if ( $engagement ): ?>
+			
+			<h3>Engagement</h3>
+			<ul>
+				<?php foreach( $engagement as $engage ): ?>
+				<li><?php echo $engage['label']; ?></li>
+				<?php endforeach; ?>
+			</ul>
+			<?php endif;
+			
+			$spaces = get_sub_field('space');
+			if ( $spaces ): ?>
+			
+			<h3>Space</h3>
+			<ul>
+				<?php foreach( $spaces as $space ): ?>
+				<li><?php echo $space['label']; ?></li>
+				<?php endforeach; ?>
+			</ul>
+			<?php endif;
+			
+			$recognition = get_sub_field('recognition');
+			if ( $recognition ): ?>
+			
+			<h3>Recognition</h3>
+			<ul>
+				<?php foreach( $recognition as $recognize ): ?>
+				<li><?php echo $recognize['label']; ?></li>
+				<?php endforeach; ?>
+			</ul>
+			<?php endif; ?>
+		</div>
 		
-		<h3>People</h3>
-		<ul>
-			<?php foreach( $people as $person ): ?>
-			<li><?php echo $person['label']; ?></li>
-			<?php endforeach; ?>
-		</ul>
-		<?php endif;
-		
-		$engagement = get_sub_field('engagement');
-		if ( $engagement ): ?>
-		
-		<h3>Engagement</h3>
-		<ul>
-			<?php foreach( $engagement as $engage ): ?>
-			<li><?php echo $engage['label']; ?></li>
-			<?php endforeach; ?>
-		</ul>
-		<?php endif;
-		
-		$spaces = get_sub_field('space');
-		if ( $spaces ): ?>
-		
-		<h3>Space</h3>
-		<ul>
-			<?php foreach( $spaces as $space ): ?>
-			<li><?php echo $space['label']; ?></li>
-			<?php endforeach; ?>
-		</ul>
-		<?php endif;
-		
-		$recognition = get_sub_field('recognition');
-		if ( $recognition ): ?>
-		
-		<h3>Recognition</h3>
-		<ul>
-			<?php foreach( $recognition as $recognize ): ?>
-			<li><?php echo $recognize['label']; ?></li>
-			<?php endforeach; ?>
-		</ul>
-		<?php endif;
-		
+		<?php 
 		endwhile;
 		endif;
 		
