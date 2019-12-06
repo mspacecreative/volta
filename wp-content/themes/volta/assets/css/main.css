@@ -181,21 +181,6 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 		font-style: normal;
 	}
 
-	a {
-		color: #00dbb6;
-		/*border-bottom: solid 1px rgba(0,0,0,.15);*/
-		text-decoration: none;
-		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-	}
-
-		a:hover {
-			color: #00dbb6;
-			border-bottom-color: transparent;
-		}
-
 	sub {
 		position: relative;
 		top: 0.5em;
@@ -4204,6 +4189,23 @@ a {
 }
 .testimonial-text p {
 	font-size: 20px;
+}
+body #privy-container #privy-inner-container .privy-tab-container.privy-top {
+    top: 50%;
+    right: -21px;
+    left: auto!important;
+    transform: translateY(-50%) rotate(-90deg);
+}
+body #privy-container #privy-inner-container div.privy-tab.privy-basic.privy-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	background-color: #000!important;
+}
+body #privy-container #privy-inner-container .privy-caret-down {
+    border-bottom: 5px solid #fff;
+	border-top: none;
 }
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
