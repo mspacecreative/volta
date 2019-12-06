@@ -88,7 +88,7 @@
 											
 						<!-- Contact bar -->
 						<section class="contact">
-							<ul class="menu">
+							<ul>
 								<li>&copy; Volta. All rights reserved.</li>
 							</ul>
 							<ul class="icons">
