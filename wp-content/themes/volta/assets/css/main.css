@@ -4825,9 +4825,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.stickymenu-inner {
 		padding: 0 2em;
 	}
-	#menu-main-menu {
-		display: none;
-	}
 	.mobile_panel .link.depth-1 {
 		display: none;
 	}
