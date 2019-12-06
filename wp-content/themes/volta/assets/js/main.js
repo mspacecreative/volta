@@ -190,7 +190,7 @@
 		corporatePricingTable();
 	});
 	
-	var	$window = $(window),
+	/*var	$window = $(window),
 		$body = $('body'),
 		settings = {
 
@@ -367,6 +367,6 @@
 
 				});
 
-		});
+		});*/
 
 })(jQuery);
