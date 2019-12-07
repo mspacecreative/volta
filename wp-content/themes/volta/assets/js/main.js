@@ -193,10 +193,9 @@
 	// Nav.
 	$('.partner-slider').slick({
 	    dots: false, 
-		arrows: false, 
-		centerMode: true, 
+		arrows: false,
 		slidesToShow: 3,
-		slidesToScroll: 6,
+		slidesToScroll: 3,
 		centerPadding: '20px', 
 		autoplay: true, 
 		autoplaySpeed: 3000, 
