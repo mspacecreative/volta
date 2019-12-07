@@ -770,6 +770,8 @@ function wrap_classic_block( $block_content, $block ) {
 			$block_content = '<div class="classic-block-wrap">' . $block_content . '</div>';
 		}
 		return $block_content;
+	} else {
+		return $block_content;
 	}
 }
 add_filter( 'render_block', 'wrap_classic_block', 10, 2 );
