@@ -192,7 +192,14 @@
 	
 	// Nav.
 	$('.partner-slider').slick({
-	    dots: false, arrows: false, centerMode: true, slidesToShow: 3, centerPadding: '20px', autoplay: true, autoplaySpeed: 0, speed: 7000, cssEase: 'linear'
+	    dots: false, 
+		arrows: false, 
+		centerMode: true, 
+		slidesToShow: 3, 
+		centerPadding: '20px', 
+		autoplay: true, 
+		autoplaySpeed: 3000, 
+		speed: 1000,
 	});
 	
 	$(window).resize(function () {
