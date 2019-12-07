@@ -765,10 +765,12 @@ if( function_exists('acf_add_options_page') ) {
 
 // ADD WRAPPING DIV TO CLASSIC BLOCK
 function wrap_classic_block( $block_content, $block ) {
-	if ( null === $block['blockName'] && ! empty( $block_content ) && ! ctype_space( $block_content ) ) {
-		$block_content = '<div class="classic-block-wrap">' . $block_content . '</div>';
+	if ( is_singular('page') ) {
+		if ( null === $block['blockName'] && ! empty( $block_content ) && ! ctype_space( $block_content ) ) {
+			$block_content = '<div class="classic-block-wrap">' . $block_content . '</div>';
+		}
+		return $block_content;
 	}
-	return $block_content;
 }
 add_filter( 'render_block', 'wrap_classic_block', 10, 2 );
 
