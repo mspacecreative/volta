@@ -21,9 +21,15 @@
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
 	
-<?php else : ?>
+<?php else :
+	if ( get_field('block_id') ): ?>
 	<div id="<?php the_field('block_id'); ?>" class="white-bg content-section">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
+	<?php else : ?>
+	<div class="white-bg content-section">
+		<?php include('inc/section-content-loop.php'); ?>
+	</div>
+	<?php endif; ?>
 
 <?php endif; ?>
