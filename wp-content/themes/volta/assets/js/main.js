@@ -196,7 +196,7 @@
 		arrows: false, 
 		centerMode: true, 
 		slidesToShow: 3,
-		slidesToScroll: 3,
+		slidesToScroll: 6,
 		centerPadding: '20px', 
 		autoplay: true, 
 		autoplaySpeed: 3000, 
