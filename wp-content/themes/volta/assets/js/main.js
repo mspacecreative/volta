@@ -195,11 +195,28 @@
 	    dots: false, 
 		arrows: false, 
 		centerMode: true, 
-		slidesToShow: 3, 
+		slidesToShow: 3,
+		slidesToScroll: 3,
 		centerPadding: '20px', 
 		autoplay: true, 
 		autoplaySpeed: 3000, 
 		speed: 1000,
+		responsive: [
+		    {
+		      breakpoint: 600,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 2
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		]
 	});
 	
 	$(window).resize(function () {
