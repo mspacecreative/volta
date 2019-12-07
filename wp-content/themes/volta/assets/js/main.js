@@ -202,14 +202,14 @@
 		speed: 1000,
 		responsive: [
 		    {
-		      breakpoint: 600,
+		      breakpoint: 980,
 		      settings: {
 		        slidesToShow: 2,
 		        slidesToScroll: 2
 		      }
 		    },
 		    {
-		      breakpoint: 480,
+		      breakpoint: 450,
 		      settings: {
 		        slidesToShow: 1,
 		        slidesToScroll: 1
