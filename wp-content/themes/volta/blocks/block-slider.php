@@ -23,9 +23,10 @@ if ( $loop->have_posts() ) : ?>
 			<div>
 				<?php
 				
-				$logo = get_field('logo_image', $taxonomy . '_' . $term_id);
+				$logo = get_field('logo_image', $term->taxonomy.'_'.$term->term_id);
+				$size - 'medium';
 				if ( $logo ) {
-					echo '<img src="' . $logo[0] . '/>';
+					echo  wp_get_attachment_image( $logo, $size );
 				} ?>
 			</div>
 			<?php endwhile; ?>
