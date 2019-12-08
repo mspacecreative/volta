@@ -22,7 +22,10 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php
-				the_title(); ?>
+				$logo = wp_get_attachment_image(get_field('logo_image', $taxonomy . '_' . $term_id);
+				if ( $logo ) {
+					echo '<img src="' . $logo[0] . '/>';
+				} ?>
 			</div>
 			<?php endwhile; ?>
 		</div>
