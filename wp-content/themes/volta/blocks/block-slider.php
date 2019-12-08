@@ -22,9 +22,7 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php
-				// ACF >= 5.5.0
-				$post_id = 'partner_category_92';
-				$logoimage = get_field('logo_image', $post_id);
+				$logoimage = get_field('logo_image', $post->ID);
 				$size = 'medium';
 				if ( $logoimage ) {
 					echo  wp_get_attachment_image( $logoimage, $size );
