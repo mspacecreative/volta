@@ -24,13 +24,14 @@ if ( $loop->have_posts() ) : ?>
 				<?php
 				$post_object = get_field('partner_sponsors');
 				$image = get_field('logo_image', $post_object->ID);
-				$logolink = get_field('logo_link', $post_object->ID);
+				$size = 'full';
 				if ( $post_object ) {
-					if ( $image && $logolink ) {
-						echo '<a href="' . $logolink . '" target="_blank"><img src="'. $image['url'] .'" alt="' . $image['alt'] . '" /></a>';
-					} elseif ( $image ) {
-					echo '<img src="'. $image['url'] .'" alt="' . $image['alt'] . '" />';
-					}
+					$post = $post_object;
+					$object_id = $post->ID;
+					setup_postdata( $post );
+					
+					echo '<a href="' . the_field('logo_link', $object_id) . '" target="_blank"><img src="'. wp_get_attachment_image( $object_id, $image, $size ); . '" /></a>';
+					
 				} ?>
 			</div>
 			<?php endwhile; ?>
