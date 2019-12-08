@@ -22,8 +22,12 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php
-				if ( has_post_thumbnail() ) {
-					echo the_post_thumbnail();
+				$logo_image = get_field('logo_image', $post->ID);
+				$logolink = get_field('logo_link', $post->ID);
+				if ( $logo_image && $logolink ) {
+					echo '<a href="' . $logolink . '" target="_blank">' . $logo_image . '</a>';
+				} else {
+					echo $logo_image;
 				} ?>
 			</div>
 			<?php endwhile; ?>
