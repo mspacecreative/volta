@@ -22,16 +22,14 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php
-				$logo_image = get_field('logo_image', $post->ID);
+				$logo_image = get_field('logo_image', $term->taxonomy . '_' . $term->term_id);
 				$size = 'medium';
-				$logolink = get_field('logo_link', $post->ID);
-				if ( $logo_image && $logolink ) : ?>
-					<a href="<?php the_field('logo_link', $post->ID); ?>" target="_blank">
-						<?php echo wp_get_attachment_image( $image, $size, $post->ID ); ?>
-					</a>
-				<?php elseif ( $logo_image ) :
-					echo wp_get_attachment_image( $logo_image, $size, $post->ID );
-				endif; ?>
+				$logolink = get_field('logo_link', $term->taxonomy . '_' . $term->term_id);
+				if ( $logo_image && $logolink ) {
+					echo '<a href="' . $logolink . '" target="_blank">' . wp_get_attachment_image( $logo_image, $size ) . '</a>';
+				} elseif ( $logo_image ) {
+					echo wp_get_attachment_image( $logo_image, $size );
+				} ?>
 			</div>
 			<?php endwhile; ?>
 		</div>
