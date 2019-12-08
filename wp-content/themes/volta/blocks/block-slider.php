@@ -22,16 +22,15 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php
-				$post_object = get_field('partner_sponsors');
-				$image = get_field('logo_image', $post_object->ID);
-				$size = 'full';
-				if ( $post_object ) {
-					$post = $post_object;
-					$object_id = $post->ID;
-					setup_postdata( $post );
-					
-					echo '<a href="' . the_field('logo_link', $object_id) . '" target="_blank"><img src="'. wp_get_attachment_image( $object_id, $image, $size ) . '" /></a>';
-					
+				$taxonomy = $category->taxonomy;
+				$term_id = $category->term_id;
+				$logo = wp_get_attachment_image_src(get_field('logo_image', $taxonomy . '_' . $term_id), 'partner_category');
+				$size = 'medium';
+				$logolink = get_field('logo_link', $taxonomy . '_' . $term_id), 'partner_category');
+				if ( $logo_image && $logolink ) {
+					echo '<a href="' . $logolink . '" target="_blank">' . '<img src="' . $logo[0] . '/></a>';
+				} elseif ( $logo_image ) {
+					echo '<img src="' . $logo[0] . '/>';
 				} ?>
 			</div>
 			<?php endwhile; ?>
