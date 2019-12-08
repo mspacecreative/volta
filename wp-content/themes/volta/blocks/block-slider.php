@@ -30,7 +30,7 @@ if ( $loop->have_posts() ) : ?>
 					$object_id = $post->ID;
 					setup_postdata( $post );
 					
-					echo '<a href="' . the_field('logo_link', $object_id) . '" target="_blank"><img src="'. wp_get_attachment_image( $object_id, $image, $size ); . '" /></a>';
+					echo '<a href="' . the_field('logo_link', $object_id) . '" target="_blank"><img src="'. wp_get_attachment_image( $object_id, $image, $size ) . '" /></a>';
 					
 				} ?>
 			</div>
