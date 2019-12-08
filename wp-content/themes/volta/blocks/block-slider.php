@@ -23,8 +23,7 @@ if ( $loop->have_posts() ) : ?>
 			<div>
 				<?php
 				// ACF >= 5.5.0
-				$queried_object = get_queried_object(); // gets the term
-				$post_id = 'term_'.$queried_object->term_id;
+				$post_id = 'partner_category_92';
 				$logoimage = get_field('logo_image', $post_id);
 				$size = 'medium';
 				if ( $logoimage ) {
