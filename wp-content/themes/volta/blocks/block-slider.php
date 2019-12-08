@@ -27,9 +27,9 @@ if ( $loop->have_posts() ) : ?>
 				$logo = wp_get_attachment_image_src(get_field('logo_image', $taxonomy . '_' . $term_id), 'partner_category');
 				$size = 'medium';
 				$logolink = get_field('logo_link', $taxonomy . '_' . $term_id), 'partner_category');
-				if ( $logo_image && $logolink ) {
-					echo '<a href="' . $logolink . '" target="_blank">' . '<img src="' . $logo[0] . '/></a>';
-				} elseif ( $logo_image ) {
+				if ( $logo && $logolink ) {
+					echo '<a href="' . $logo . '" target="_blank">' . '<img src="' . $logo[0] . '/></a>';
+				} elseif ( $logo ) {
 					echo '<img src="' . $logo[0] . '/>';
 				} ?>
 			</div>
