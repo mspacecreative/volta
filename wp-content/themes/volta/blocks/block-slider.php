@@ -23,9 +23,8 @@ if ( $loop->have_posts() ) : ?>
 			<div>
 				<?php
 				$logoimage = get_field('logo_image', $post->ID);
-				$size = 'medium';
 				if ( $logoimage ) {
-					echo  wp_get_attachment_image( $logoimage, $size );
+					echo  '<img src="' . the_field('logo_image', $post->ID) . '" />';
 				} ?>
 			</div>
 			<?php endwhile; ?>
