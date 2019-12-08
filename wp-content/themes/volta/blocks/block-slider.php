@@ -23,7 +23,7 @@ if ( $loop->have_posts() ) : ?>
 			<div>
 				<?php
 				
-				$logo = get_field('logo_image', 'partner_category' . '_' . '92');
+				$logo = get_field('logo_image', $taxonomy . '_' . $term_id);
 				if ( $logo ) {
 					echo '<img src="' . $logo[0] . '/>';
 				} ?>
