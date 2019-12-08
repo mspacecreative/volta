@@ -23,11 +23,12 @@ if ( $loop->have_posts() ) : ?>
 			<div>
 				<?php
 				$logo_image = get_field('logo_image', $post->ID);
+				$size = 'medium';
 				$logolink = get_field('logo_link', $post->ID);
 				if ( $logo_image && $logolink ) {
-					echo '<a href="' . $logolink . '" target="_blank">' . $logo_image . '</a>';
+					echo '<a href="' . $logolink . '" target="_blank">' . wp_get_attachment_image( $image, $size ) . '</a>';
 				} else {
-					echo $logo_image;
+					echo wp_get_attachment_image( $image, $size );
 				} ?>
 			</div>
 			<?php endwhile; ?>
