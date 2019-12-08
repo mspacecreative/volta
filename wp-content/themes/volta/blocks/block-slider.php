@@ -22,11 +22,13 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php
-				
-				$logoimage = get_field($post->ID, 'logo_image');
+				// ACF >= 5.5.0
+				$queried_object = get_queried_object(); // gets the term
+				$post_id = 'term_'.$queried_object->term_id;
+				$logoimage = get_field('logo_image', $post_id);
 				$size = 'medium';
 				if ( $logoimage ) {
-					echo  wp_get_attachment_image( $post->ID, $logoimage, $size );
+					echo  wp_get_attachment_image( $logoimage, $size );
 				} ?>
 			</div>
 			<?php endwhile; ?>
