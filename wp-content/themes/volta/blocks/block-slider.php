@@ -22,9 +22,10 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php
-				$logo_image = get_field('logo_image', $term->taxonomy . '_' . $term->term_id);
+				$term = get_queried_object();
+				$logo_image = get_field('logo_image', $term);
 				$size = 'medium';
-				$logolink = get_field('logo_link', $term->taxonomy . '_' . $term->term_id);
+				$logolink = get_field('logo_link', $term);
 				if ( $logo_image && $logolink ) {
 					echo '<a href="' . $logolink . '" target="_blank">' . wp_get_attachment_image( $logo_image, $size ) . '</a>';
 				} elseif ( $logo_image ) {
