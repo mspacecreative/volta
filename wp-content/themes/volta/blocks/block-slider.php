@@ -22,12 +22,12 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php
-				$image = get_field('logo_image', $post->ID);
-				$logolink = get_field('logo_link', $post->ID);
-				if ( $image && $logolink ) {
-					echo '<a href="' . $logolink . '" target="_blank"><img src="'. $image['url'] .'" alt="' . $image['alt'] . '" /></a>';
+				$post_object = get_field('partner_sponsors');
+				$image = get_field('logo_image', $post_object->ID);
+				if ( $post_object ) {
+					echo '<a href="' . the_field('logo_link', $post_object->ID) . '" target="_blank"><img src="'. $image['url', $post_object->ID] .'" alt="' . $image['alt', $post_object->ID] . '" /></a>';
 				} elseif ( $image ) {
-					echo '<img src="'. $image['url'] .'" alt="' . $image['alt'] . '" />';
+					echo '<img src="'. $image['url', $post_object->ID] .'" alt="' . $image['alt', $post_object->ID] . '" />';
 				} ?>
 			</div>
 			<?php endwhile; ?>
