@@ -22,6 +22,8 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php
+				$taxonomy = $category->taxonomy;
+				$term_id = $category->term_id;
 				$logo = wp_get_attachment_image(get_field('logo_image', $taxonomy . '_' . $term_id);
 				if ( $logo ) {
 					echo '<img src="' . $logo[0] . '/>';
