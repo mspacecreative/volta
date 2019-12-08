@@ -22,8 +22,8 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php
-				$image = get_field('logo_image', $termid);
-				$logolink = get_field('logo_link', $termid);
+				$image = get_field('logo_image', $post->ID);
+				$logolink = get_field('logo_link', $post->ID);
 				if ( $image && $logolink ) {
 					echo '<a href="' . $logolink . '" target="_blank"><img src="'. $image['url'] .'" alt="' . $image['alt'] . '" /></a>';
 				} elseif ( $image ) {
