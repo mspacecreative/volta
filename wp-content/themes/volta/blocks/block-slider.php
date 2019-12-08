@@ -23,10 +23,10 @@ if ( $loop->have_posts() ) : ?>
 			<div>
 				<?php
 				
-				$logoimage = get_field('logo_image', $attachment->ID);
+				$logoimage = get_field($post->ID, 'logo_image');
 				$size = 'medium';
 				if ( $logoimage ) {
-					echo  wp_get_attachment_image( $attachment->ID, $logoimage, $size );
+					echo  wp_get_attachment_image( $post->ID, $logoimage, $size );
 				} ?>
 			</div>
 			<?php endwhile; ?>
