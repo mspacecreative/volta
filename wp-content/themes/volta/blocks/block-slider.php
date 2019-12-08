@@ -26,9 +26,9 @@ if ( $loop->have_posts() ) : ?>
 				$size = 'medium';
 				$logolink = get_field('logo_link', $post->ID);
 				if ( $logo_image && $logolink ) {
-					echo '<a href="' . $logolink . '" target="_blank">' . wp_get_attachment_image( $image, $size ) . '</a>';
-				} else {
-					echo wp_get_attachment_image( $image, $size );
+					echo '<a href="' . $logolink . '" target="_blank">' . wp_get_attachment_image( $logo_image, $size ) . '</a>';
+				} elseif ( $logo_image ) {
+					echo wp_get_attachment_image( $logo_image, $size );
 				} ?>
 			</div>
 			<?php endwhile; ?>
