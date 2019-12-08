@@ -22,13 +22,8 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php
-				$queried_object = get_queried_object(); 
-				$taxonomy = $queried_object->taxonomy;
-				$term_id = $queried_object->term_id;
-				$image = get_field('logo_image', $queried_object);
-				$image = get_field('logo_image', $taxonomy . '_' . $term_id);
-				$logolink = get_field('logo_link', $queried_object);
-				$logolink = get_field('logo_link', $taxonomy . '_' . $term_id);
+				$image = get_field('logo_image', 'partner_category_', 'home-page-slider');
+				$logolink = get_field('logo_link', 'partner_category_', 'home-page-slider');
 				if ( $image && $logolink ) {
 					echo '<a href="' . $logolink . '" target="_blank"><img src="'. $image['url'] .'" alt="' . $image['alt'] . '" /></a>';
 				} elseif ( $image ) {
