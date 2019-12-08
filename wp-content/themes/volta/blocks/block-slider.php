@@ -22,16 +22,7 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php
-				$taxonomy = $category->taxonomy;
-				$term_id = $category->term_id;
-				$logo = wp_get_attachment_image_src(get_field('logo_image', $taxonomy . '_' . $term_id), 'partner_category');
-				$size = 'medium';
-				$logolink = get_field('logo_link', $taxonomy . '_' . $term_id), 'partner_category');
-				if ( $logo && $logolink ) {
-					echo '<a href="' . $logo . '" target="_blank">' . '<img src="' . $logo[0] . '/></a>';
-				} elseif ( $logo ) {
-					echo '<img src="' . $logo[0] . '/>';
-				} ?>
+				the_title(); ?>
 			</div>
 			<?php endwhile; ?>
 		</div>
