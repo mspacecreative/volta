@@ -10,6 +10,13 @@ if ( $blockanchor && $padding == 'top' && $margin == 'top' ): ?>
 	
 </div>
 
+<?php elseif ( $padding == 'top' && $margin == 'top' ): ?>
+<div class="clear top-padding top-margin">
+	
+	<?php include('inc/two-third-one-third-loop.php'); ?>
+	
+</div>
+
 <?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'bottom' ): ?>
 <div id="<?php the_field('block_id'); ?>" class="clear bottom-padding bottom-margin">
 	
