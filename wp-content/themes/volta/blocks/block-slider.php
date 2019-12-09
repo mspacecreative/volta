@@ -1,7 +1,7 @@
 <?php 
 $args = array(
     'post_type' => 'partners',
-    'posts_per_page'=> -1,
+    'posts_per_page'=> 1,
     'orderby' => 'title',
     'order' => 'ASC',
     'tax_query' => array(
