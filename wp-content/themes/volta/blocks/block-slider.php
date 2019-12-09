@@ -22,12 +22,19 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php
-				$postid = get_term_by( 'id', 92, 'category' );
-				$logoimage = get_field('logo_image', $postid);
-				$size = 'medium';
+				$category_classes = array();
+				$categories = get_the_terms( get_the_ID(), 'partner_category' );
 				
-				if ( $logoimage ) {
-					echo wp_get_attachment_image( $image, $size );
+				if ( $categories ) {
+				    foreach ( $categories as $category ) {
+				        $categories_included[] = $category->term_id;
+				        $logoimage = get_field('logo_image', $category);
+				        $size = 'medium';
+				        
+				        if ( $logoimage ) {
+				        	echo wp_get_attachment_image( $image, $size );
+				        }
+				    }
 				}
 				?>
 			</div>
