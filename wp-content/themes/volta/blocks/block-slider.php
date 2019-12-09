@@ -25,14 +25,14 @@ $loop = get_posts($args); ?>
 			foreach ( $loop as $post ) : setup_postdata( $post ); ?>
 			<div>
 				<?php
-				$imagelogo = get_field('logo_image', 92);
-				$logolink = get_field('logo_link', 92);
+				$imagelogo = get_field('logo_image', $post->ID);
+				$logolink = get_field('logo_link', $post->ID);
 				if ( $imagelogo && $logolink ) : ?>
-				<a href="<?php the_field('logo_link', 92); ?>" target="_blank">
-					<img src="<?php the_field('logo_image', 92); ?>" />
+				<a href="<?php the_field('logo_link', $post->ID); ?>" target="_blank">
+					<img src="<?php the_field('logo_image', $post->ID); ?>" />
 				</a>
 				<?php elseif ( $imagelogo ) : ?>
-					<img src="<?php the_field('logo_image', 92); ?>" />
+					<img src="<?php the_field('logo_image', $post->ID); ?>" />
 				<?php endif; ?>
 			</div>
 			<?php endforeach;
