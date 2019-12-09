@@ -30,10 +30,10 @@ $loop = get_posts($args); ?>
 				$logolink = get_field('logo_link', $post->ID);
 				if ( $imagelogo && $logolink ) : ?>
 				<a href="<?php the_field('logo_link', $post->ID); ?>" target="_blank">
-					<?php echo wp_get_attachment_image( $post->ID, $imagelogo, $size ); ?>
+					<?php echo wp_get_attachment_image( $imagelogo, $size ); ?>
 				</a>
 				<?php elseif ( $imagelogo ) : ?>
-					<?php echo wp_get_attachment_image( $post->ID, $imagelogo, $size ); ?>
+					<?php echo wp_get_attachment_image( $imagelogo, $size ); ?>
 				<?php endif; ?>
 			</div>
 			<?php endforeach;
