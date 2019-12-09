@@ -1,5 +1,4 @@
 <?php 
-$buildType = get_post_meta($post->ID, '92', true);
 $args = array(
     'post_type' => 'partners',
     'posts_per_page'=> -1,
@@ -8,8 +7,8 @@ $args = array(
     'tax_query' => array(
         array(
             'taxonomy' => 'partner_category',
-            'terms' => $buildType,
             'field' => 'term_id',
+            'terms' => '92',
         )
     )
 );
@@ -22,6 +21,7 @@ if ( $loop->have_posts() ) : ?>
 		<div class="partner-slider">
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
+				<?php $post_id = "partner_category_92"; ?>
 				<img src="<?php the_field( 'logo_image', $post_id ); ?>" />
 			</div>
 			<?php endwhile; ?>
