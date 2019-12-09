@@ -4080,10 +4080,10 @@ body #mc_embed_signup form {
 .single main article a > span {
 	font-weight: 900!important;
 }
-.content-section .top-bottom-padding {
+/*.content-section .top-bottom-padding {
 	padding-top: 4em;
 	padding-bottom: 4em;
-}
+}*/
 .addthis_tool ~ .post-meta-container {
 	border-top: 1px solid #c9c9c9;
 	border-bottom: 1px solid #c9c9c9;
