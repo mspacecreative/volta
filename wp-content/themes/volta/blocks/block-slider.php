@@ -1,7 +1,7 @@
 <?php 
 $args = array(
     'post_type' => 'partners',
-    'posts_per_page'=> 1,
+    'posts_per_page'=> -1,
     'orderby' => 'title',
     'order' => 'ASC',
     'tax_query' => array(
@@ -21,11 +21,7 @@ $loop = get_posts($args); ?>
 			<?php foreach ( $loop as $post ) : setup_postdata( $post ); ?>
 			<div>
 				<?php
-				$logoimage = get_field('logo_image', $post->ID);
-				
-				if ( $logoimage ) {
-					echo '<img src="' . the_field('logo_image', $post->ID) . '/>';
-				}
+				echo '<img src="' . the_field('logo_image', $post->ID) . '/>';
 				?>
 			</div>
 			<?php endforeach; ?>
