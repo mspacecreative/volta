@@ -22,7 +22,7 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php $post_id = "partner_category_92"; ?>
-				<img src="<?php the_field( 'logo_image', '92' ); ?>" />
+				<img src="<?php the_field( 'logo_image', 92 ); ?>" />
 			</div>
 			<?php endwhile; ?>
 		</div>
