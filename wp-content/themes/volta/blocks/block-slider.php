@@ -22,7 +22,12 @@ $loop = get_posts($args); ?>
 			<div>
 				<?php
 				$imagelogo = get_field('logo_image', $post->ID);
-				if ( $imagelogo ) : ?>
+				$logolink = get_field('logo_link', $post->ID);
+				if ( $imagelogo && $logolink ) : ?>
+				<a href="<?php the_field('logo_link', $post->ID); ?>" target="_blank">
+					<img src="<?php the_field('logo_image', $post->ID); ?>" />
+				</a>
+				<?php elseif ( $imagelogo ) : ?>
 					<img src="<?php the_field('logo_image', $post->ID); ?>" />
 				<?php endif; ?>
 			</div>
