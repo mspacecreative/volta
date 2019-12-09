@@ -18,15 +18,17 @@ $loop = get_posts($args); ?>
 	<h3 class="align-center">THANK YOU TO OUR PARTNERS &amp; SPONSORS</h3>
 	<div class="max-width-980">
 		<div class="partner-slider">
+			<?php foreach ( $loop as $post ) : setup_postdata( $post ); ?>
 			<div>
-				<?php foreach ( $loop as $post ) : setup_postdata( $post );
+				<?php
 				$imagelogo = get_field('image_logo', $post->ID);
 				$size = 'medium';
 				if ( $imagelogo ) {
-					echo wp_get_attachment_image( $imagelogo, $size );
+					echo wp_get_attachment_image( $imagelogo, $size, , $post->ID );
 				}
-				endforeach; ?>
+				?>
 			</div>
+			<?php endforeach; ?>
 		</div>
 	</div>
 </section>
