@@ -22,10 +22,14 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php
-				$logoimage = get_field('logo_image', 'partner_category_92');
-				if( !empty( $logoimage ) ): ?>
-					<img src="<?php echo esc_url($logoimage['url']); ?>" alt="<?php echo esc_attr($logoimage['alt']); ?>" />
-				<?php endif; ?>
+				$taxonomy = $category->taxonomy;
+				$term_id = $category->term_id; 
+				
+				$image =  wp_get_attachment_image_src(get_field('logo_image', $taxonomy . '_' . $term_id), 'partner_category');
+				
+				if ( $image ) {
+				  echo '<img src="' . $image[0] . '" alt="" />';
+				} ?>
 			</div>
 			<?php endwhile; ?>
 		</div>
