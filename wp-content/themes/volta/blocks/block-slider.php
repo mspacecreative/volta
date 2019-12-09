@@ -21,7 +21,7 @@ if ( $loop->have_posts() ) : ?>
 		<div class="partner-slider">
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
-				<img src="<?php the_field( 'logo_image', 'partner_category_92' ); ?>" />
+				<img src="<?php the_field( 'logo_image', $post->ID ); ?>" />
 			</div>
 			<?php endwhile; ?>
 		</div>
