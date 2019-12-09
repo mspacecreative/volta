@@ -27,12 +27,10 @@ if ( $loop->have_posts() ) : ?>
 				
 				if ( $categories ) {
 				    foreach ( $categories as $category ) {
-				        $categories_included[] = $category->term_id;
 				        $logoimage = get_field('logo_image', $category);
-				        $size = 'medium';
 				        
 				        if ( $logoimage ) {
-				        	echo wp_get_attachment_image( $image, $size );
+				        	echo '<img src="' . the_field('logo_image', $category) . '/>';
 				        }
 				    }
 				}
