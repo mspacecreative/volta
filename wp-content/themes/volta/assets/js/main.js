@@ -6,6 +6,12 @@
 
 (function($) {
 	
+	// INLINE BUTTONS
+	$('.inline-button').parent().css({
+		'display': 'inline-block',
+		'margin-right': '15px'
+	});
+	
 	// TOUCH HOVER FOR DESKTOP MENU
 	$('.desktop-nav-menu .menu-item-has-children').on("touchstart", function (e) {
 	'use strict'; //satisfy code inspectors
