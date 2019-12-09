@@ -7,37 +7,30 @@ $args = array(
     'tax_query' => array(
         array(
             'taxonomy' => 'partner_category',
-            'field' => 'term_id',
-            'terms' => '92',
+            'field' => 'slug',
+            'terms' => 'home-page-slider',
         )
     )
 );
-$loop = new WP_Query( $args );
-if ( $loop->have_posts() ) : ?>
+$loop = get_posts($args); ?>
 <!-- Partners -->
 <section id="partners" class="extra-top-bottom-padding">
 	<h3 class="align-center">THANK YOU TO OUR PARTNERS &amp; SPONSORS</h3>
 	<div class="max-width-980">
 		<div class="partner-slider">
-			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+			<?php foreach ( $loop as $post ) : setup_postdata( $post ); ?>
 			<div>
 				<?php
-				$categories = get_the_terms( get_the_ID(), 'partner_category' );
+				$logoimage = get_field('logo_image', $post_id);
 				
-				if ( $categories ) {
-				    foreach ( $categories as $category ) {
-				        $logoimage = get_field('logo_image', $category);
-				        
-				        if ( $logoimage ) {
-				        	echo '<img src="' . the_field('logo_image', $category) . '/>';
-				        }
-				    }
+				if ( $logoimage ) {
+					echo '<img src="' . the_field('logo_image', $post_id) . '/>';
 				}
 				?>
 			</div>
-			<?php endwhile; ?>
+			<?php endforeach; ?>
 		</div>
 	</div>
 </section>
 <!-- /Partners -->
-<?php endif; wp_reset_postdata(); ?>
+<?php wp_reset_postdata(); ?>
