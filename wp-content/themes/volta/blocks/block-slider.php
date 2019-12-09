@@ -21,10 +21,10 @@ $loop = get_posts($args); ?>
 			<?php foreach ( $loop as $post ) : setup_postdata( $post ); ?>
 			<div>
 				<?php
-				$logoimage = get_field('logo_image', $post_id);
+				$logoimage = get_field('logo_image', $post->ID);
 				
 				if ( $logoimage ) {
-					echo '<img src="' . the_field('logo_image', $post_id) . '/>';
+					echo '<img src="' . the_field('logo_image', $post->ID) . '/>';
 				}
 				?>
 			</div>
