@@ -18,9 +18,12 @@ $loop = get_posts($args); ?>
 	<h3 class="align-center">THANK YOU TO OUR PARTNERS &amp; SPONSORS</h3>
 	<div class="max-width-980">
 		<div class="partner-slider">
-			<?php foreach ( $loop as $post ) : setup_postdata( $post );
+			
+			<?php 
 			global $post;
-			$post_id = $post->ID; ?>
+			$post_id = $post->ID;
+			
+			foreach ( $loop as $post ) : setup_postdata( $post ); ?>
 			<div>
 				<?php
 				$imagelogo = get_field('logo_image', $post_id);
@@ -34,6 +37,7 @@ $loop = get_posts($args); ?>
 				<?php endif; ?>
 			</div>
 			<?php endforeach; ?>
+			
 		</div>
 	</div>
 </section>
