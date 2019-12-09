@@ -4679,6 +4679,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.full-span-content {
 		padding: 2em;
 	}
+	.shrink-logo img {
+		max-width: 150px;
+	}
 }
 
 @media (max-width: 980px) {

@@ -29,7 +29,7 @@ $loop = get_posts($args); ?>
 				$size = 'medium';
 				$logolink = get_field('logo_link', $post->ID);
 				$shrinklogo = get_field('square_logo', $post->ID);
-				if ( $imagelogo && $logolink && $shrinklogo) : ?>
+				if ( $imagelogo && $logolink && $shrinklogo ) : ?>
 				<a href="<?php the_field('logo_link', $post->ID); ?>" target="_blank">
 					<span class="shrink-logo">
 						<?php echo wp_get_attachment_image( $imagelogo, $size ); ?>
