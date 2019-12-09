@@ -22,7 +22,7 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php
-				$postid = get_term_by( 'id', 92, 'partner_category' );
+				$postid = get_term_by( 'id', 92, 'category' );
 				$logoimage = get_field('logo_image', $postid);
 				$size = 'medium';
 				
