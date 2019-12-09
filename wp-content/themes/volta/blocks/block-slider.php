@@ -21,16 +21,14 @@ $loop = get_posts($args); ?>
 			<?php foreach ( $loop as $post ) : setup_postdata( $post ); ?>
 			<div>
 				<?php
-				$postid = 92;
-				$imagelogo = get_field('logo_image', $postid);
-				$size = 'medium';
-				$logolink = get_field('logo_link', $postid);
+				$imagelogo = get_field('logo_image', $post->ID);
+				$logolink = get_field('logo_link', $post->ID);
 				if ( $imagelogo && $logolink ) : ?>
-				<a href="<?php the_field('logo_link', $postid); ?>" target="_blank">
-					<?php echo wp_get_attachment_image( $imagelogo, $size ); ?>
+				<a href="<?php the_field('logo_link', $post->ID); ?>" target="_blank">
+					<img src="<?php the_field('logo_image', $post->ID); ?>" />
 				</a>
 				<?php elseif ( $imagelogo ) : ?>
-					<?php echo wp_get_attachment_image( $imagelogo, $size ); ?>
+					<img src="<?php the_field('logo_image', $post->ID); ?>" />
 				<?php endif; ?>
 			</div>
 			<?php endforeach; ?>
