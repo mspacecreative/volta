@@ -22,11 +22,9 @@ $loop = get_posts($args); ?>
 			<div>
 				<?php
 				$imagelogo = get_field('image_logo', $post->ID);
-				$size = 'medium';
-				if ( $imagelogo ) {
-					echo wp_get_attachment_image( $imagelogo, $size );
-				}
-				?>
+				if ( $imagelogo ) : ?>
+					<img src="<?php the_field('image_logo', $post->ID); ?>" />
+				<?php endif; ?>
 			</div>
 			<?php endforeach; ?>
 		</div>
