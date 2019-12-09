@@ -1,25 +1,35 @@
 <?php if ( get_field('background_image_background_image') ):
-
-	if ( get_field('background_image_overlay') == 'dark' ): ?>
+	
+	$blockanchor = get_field('block_id');
+	$bgimgoverlay = get_field('background_image_overlay');
+	if ( $blockanchor && $bgimgoverlay == 'dark' ): ?>
 	<div id="<?php the_field('block_id'); ?>" class="bg-img-cover dark-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
 	
-	<?php elseif ( get_field('background_image_overlay') == 'light' ): ?>
+	<?php elseif ( $blockanchor && $bgimgoverlay == 'light' ): ?>
 	<div id="<?php the_field('block_id'); ?>" class="bg-img-cover light-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
 	
 	<?php else : ?>
-	<div id="<?php the_field('block_id'); ?>" class="bg-img-cover content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
+	<div class="bg-img-cover content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
 	<?php endif; ?>
 
-<?php elseif ( get_field('background_color_background_color') ): ?>
+<?php elseif ( get_field('background_color_background_color') ):
+	
+	$blockanchor = get_field('block_id');
+	if ( $blockanchor ) : ?>
 	<div id="<?php the_field('block_id'); ?>" class="white-bg content-section" style="background-color: <?php the_field('background_color_background_color'); ?>;">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
+	<?php else : ?>
+	<div class="white-bg content-section" style="background-color: <?php the_field('background_color_background_color'); ?>;">
+		<?php include('inc/section-content-loop.php'); ?>
+	</div>
+	<?php endif; ?>
 	
 <?php else :
 	if ( get_field('block_id') ): ?>
