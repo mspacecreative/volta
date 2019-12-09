@@ -18,22 +18,28 @@ $loop = get_posts($args); ?>
 	<h3 class="align-center">THANK YOU TO OUR PARTNERS &amp; SPONSORS</h3>
 	<div class="max-width-980">
 		<div class="partner-slider">
-			<?php foreach ( $loop as $post ) : setup_postdata( $post );
-			global $post;
-			$post_id = $post->ID; ?>
+			
+			<?php
+			if ( $loop ) :
+			
+			foreach ( $loop as $post ) : setup_postdata( $post ); ?>
 			<div>
 				<?php
-				$imagelogo = get_field('logo_image', $post_id);
-				$logolink = get_field('logo_link', $post_id);
+				$imagelogo = get_field('logo_image', $post->ID);
+				$logolink = get_field('logo_link', $post->ID);
 				if ( $imagelogo && $logolink ) : ?>
-				<a href="<?php the_field('logo_link', $post_id); ?>" target="_blank">
-					<img src="<?php the_field('logo_image', $post_id); ?>" />
+				<a href="<?php the_field('logo_link', $post->ID); ?>" target="_blank">
+					<img src="<?php the_field('logo_image', $post->ID); ?>" />
 				</a>
 				<?php elseif ( $imagelogo ) : ?>
-					<img src="<?php the_field('logo_image', $post_id); ?>" />
+					<img src="<?php the_field('logo_image', $post->ID); ?>" />
 				<?php endif; ?>
 			</div>
-			<?php endforeach; ?>
+			<?php endforeach;
+			
+			endif; 
+			?>
+			
 		</div>
 	</div>
 </section>
