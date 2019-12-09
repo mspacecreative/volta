@@ -26,14 +26,13 @@ $loop = get_posts($args); ?>
 			<div>
 				<?php
 				$imagelogo = get_field('logo_image', $post->ID);
-				$size = 'medium';
 				$logolink = get_field('logo_link', $post->ID);
 				if ( $imagelogo && $logolink ) : ?>
 				<a href="<?php the_field('logo_link', $post->ID); ?>" target="_blank">
-					<?php echo wp_get_attachment_image( get_post_thumbnail_id($post->ID), $imagelogo, $size ); ?>
+					<?php echo wp_get_attachment_image( get_the_ID(), $imagelogo, array('700', '600'), "", array( "class" => "img-responsive" ) ); ?>
 				</a>
 				<?php elseif ( $imagelogo ) : ?>
-					<?php echo wp_get_attachment_image( get_post_thumbnail_id($post->ID), $imagelogo, $size ); ?>
+					<?php echo wp_get_attachment_image( get_the_ID(), $imagelogo, array('700', '600'), "", array( "class" => "img-responsive" ) ); ?>
 				<?php endif; ?>
 			</div>
 			<?php endforeach;
