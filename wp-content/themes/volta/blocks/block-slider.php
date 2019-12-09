@@ -7,8 +7,8 @@ $args = array(
     'tax_query' => array(
         array(
             'taxonomy' => 'partner_category',
-            'field' => 'slug',
-            'terms' => 'home-page-slider',
+            'field' => 'term_id',
+            'terms' => '92',
         )
     )
 );
