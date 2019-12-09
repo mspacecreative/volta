@@ -28,7 +28,14 @@ $loop = get_posts($args); ?>
 				$imagelogo = get_field('logo_image', $post->ID);
 				$size = 'medium';
 				$logolink = get_field('logo_link', $post->ID);
-				if ( $imagelogo && $logolink ) : ?>
+				$shrinklogo = get_field('square_logo', $post->ID);
+				if ( $imagelogo && $logolink && $shrinklogo) : ?>
+				<a href="<?php the_field('logo_link', $post->ID); ?>" target="_blank">
+					<span class="shrink-logo">
+						<?php echo wp_get_attachment_image( $imagelogo, $size ); ?>
+					</span>
+				</a>
+				<?php elseif ( $imagelogo && $logolink ) : ?>
 				<a href="<?php the_field('logo_link', $post->ID); ?>" target="_blank">
 					<?php echo wp_get_attachment_image( $imagelogo, $size ); ?>
 				</a>
