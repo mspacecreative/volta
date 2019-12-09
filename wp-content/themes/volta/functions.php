@@ -631,7 +631,7 @@ function my_acf_block_render_callback( $block ) {
 		include( get_theme_file_path("/blocks/block-{$slug}.php") );
 	}
 	
-	$className = 'block';
+	$className = 'block-class';
 	if( !empty($block['className']) ) {
 		$className .= ' ' . $block['className'];
 	}
