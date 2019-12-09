@@ -630,6 +630,11 @@ function my_acf_block_render_callback( $block ) {
 	if( file_exists( get_theme_file_path("/blocks/block-{$slug}.php") ) ) {
 		include( get_theme_file_path("/blocks/block-{$slug}.php") );
 	}
+	
+	$className = 'block';
+	if( !empty($block['className']) ) {
+		$className .= ' ' . $block['className'];
+	}
 }
 
 /* STYLE GUTENBERG */
