@@ -2587,7 +2587,7 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 
 	.banner {
 		text-align: center;
-		padding: 4.5em 0 4.5em 0;
+		padding: 4em 0 4em 0;
 		margin: 0 -6em;
 		position: relative;
 		background-size: cover;
@@ -3281,7 +3281,7 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 	padding: 0 6em 4em;
 }
 .top-padding {
-	padding: 4em 6em 0;
+	padding: 2em 6em 0;
 }
 .bottom-margin {
 	margin-bottom: 2em;
