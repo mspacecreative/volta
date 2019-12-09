@@ -3534,6 +3534,15 @@ img {
 .slick-slide .shrink-logo img {
 	max-width: 130px;
 }
+.display-flex.vertical-align-center {
+	align-items: center;
+}
+.logo-cell {
+	flex-basis: 25%;
+}
+.logo-cell img {
+	padding: 0 20px;
+}
 .max-width-980 {
 	max-width: 980px;
 	margin-right: auto;

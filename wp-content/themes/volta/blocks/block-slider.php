@@ -56,7 +56,7 @@ $loop = get_posts($args); ?>
 		</div>
 	</div>
 	<?php elseif ( $format == 'grid' ) : ?>
-	<div class="logo-grid">
+	<div class="logo-grid display-flex vertical-align-center">
 		<?php
 		if ( $loop ) :
 		
