@@ -4,7 +4,31 @@ $margin = get_field('section_margin_section_margin');
 $width = get_field('content_width');
 $textcolour = get_field('text_colour_text_color');
 
-if ( $padding == 'top' && $margin == 'top' ):
+if ( $width && $padding == 'both' && $margin == 'both' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-bottom-padding top-bottom-margin">
+		
+		<?php the_field('content_editor'); ?>
+		
+		<?php include('content-cta-button-dark.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'both' && $margin == 'both' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-bottom-padding top-bottom-margin light">
+		
+		<?php the_field('content_editor'); ?>
+		
+		<?php include('content-cta-button-light.php'); ?>
+		
+	</div>
+	<?php endif;
+
+elseif ( $padding == 'top' && $margin == 'top' ):
 
 	if ( get_field('content_editor') ): ?>
 	<div class="top-padding top-margin">
