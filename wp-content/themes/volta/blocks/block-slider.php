@@ -1,4 +1,5 @@
 <?php 
+$buildType = get_post_meta($post->ID, '92', true);
 $args = array(
     'post_type' => 'partners',
     'posts_per_page'=> -1,
@@ -7,8 +8,8 @@ $args = array(
     'tax_query' => array(
         array(
             'taxonomy' => 'partner_category',
+            'terms' => $buildType,
             'field' => 'term_id',
-            'terms' => '92',
         )
     )
 );
