@@ -24,7 +24,7 @@ $loop = get_posts($args); ?>
 				$imagelogo = get_field('image_logo', $post->ID);
 				$size = 'medium';
 				if ( $imagelogo ) {
-					echo wp_get_attachment_image( $imagelogo, $size, , $post->ID );
+					echo wp_get_attachment_image( $imagelogo, $size, $post->ID );
 				}
 				?>
 			</div>
