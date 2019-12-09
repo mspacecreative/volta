@@ -22,7 +22,6 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php
-				$category_classes = array();
 				$categories = get_the_terms( get_the_ID(), 'partner_category' );
 				
 				if ( $categories ) {
