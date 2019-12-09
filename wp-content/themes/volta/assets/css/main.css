@@ -3530,7 +3530,6 @@ img {
 .slick-slide img {
 	margin: auto;
 	max-width: 200px;
-	max-height: 80px;
 }
 .max-width-980 {
 	max-width: 980px;
@@ -4679,7 +4678,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.full-span-content {
 		padding: 2em;
 	}
-	.shrink-logo img {
+	.slick-slide .shrink-logo img {
 		max-width: 150px;
 	}
 }
