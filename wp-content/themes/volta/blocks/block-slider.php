@@ -22,9 +22,10 @@ if ( $loop->have_posts() ) : ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
 				<?php
-				$logoimage = get_field('logo_image', $post->ID);
+				$logoimage = get_field('logo_image', 'partner_category_92');
+				$size = 'medium';
 				if ( $logoimage ) {
-					echo  '<img src="' . the_field('logo_image', $post->ID) . '" />';
+					echo wp_get_attachment_image( $image, $size );
 				} ?>
 			</div>
 			<?php endwhile; ?>
