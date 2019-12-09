@@ -20,7 +20,11 @@ $loop = get_posts($args); ?>
 		<div class="partner-slider">
 			<?php foreach ( $loop as $post ) : setup_postdata( $post ); ?>
 			<div>
-				<img src="<?php the_field('logo_image', $post->ID); ?>" />
+				<?php
+				$imagelogo = get_field('logo_image', $post->ID);
+				if ( $imagelogo ) : ?>
+					<img src="<?php the_field('logo_image', $post->ID); ?>" />
+				<?php endif; ?>
 			</div>
 			<?php endforeach; ?>
 		</div>
