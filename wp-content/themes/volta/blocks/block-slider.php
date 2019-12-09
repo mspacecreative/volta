@@ -21,8 +21,19 @@ if ( $loop->have_posts() ) : ?>
 		<div class="partner-slider">
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
-				<?php $post_id = "partner_category_92"; ?>
-				<img src="<?php the_field( 'logo_image', 92 ); ?>" />
+				<?php
+				$category_classes = array();
+				$categories = get_the_terms( get_the_ID(), 'partner_category' );
+				
+				if ( $categories ) {
+				    foreach ( $categories as $category ) {
+				        $categories_included[] = $category->term_id;
+				        $logoimage = get_field('logo_image', 'partner_category_' . $category->term_id);
+				        $size = 'medium';
+				        
+				        echo wp_get_attachment_image( $image, $size );
+				    }
+				} ?>
 			</div>
 			<?php endwhile; ?>
 		</div>
