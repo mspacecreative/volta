@@ -21,15 +21,7 @@ if ( $loop->have_posts() ) : ?>
 		<div class="partner-slider">
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			<div>
-				<?php
-				$taxonomy = $category->taxonomy;
-				$term_id = $category->term_id; 
-				
-				$image =  wp_get_attachment_image_src(get_field('logo_image', $taxonomy . '_' . $term_id), 'partner_category');
-				
-				if ( $image ) {
-				  echo '<img src="' . $image[0] . '" alt="" />';
-				} ?>
+				<img src="<?php the_field( 'logo_image', 'partner_category_92' ); ?>" />
 			</div>
 			<?php endwhile; ?>
 		</div>
