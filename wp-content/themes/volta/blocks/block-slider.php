@@ -25,7 +25,7 @@ if ( $loop->have_posts() ) : ?>
 				$logoimage = get_field('logo_image', 'partner_category_92');
 				$size = 'medium';
 				if ( $logoimage ) {
-					echo wp_get_attachment_image( $image, $size );
+					echo wp_get_attachment_image( $image, $size, 'partner_category_92' );
 				} ?>
 			</div>
 			<?php endwhile; ?>
