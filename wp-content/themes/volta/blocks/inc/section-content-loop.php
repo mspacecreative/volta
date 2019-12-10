@@ -256,6 +256,18 @@ elseif ( $width && $padding == 'both' ):
 	</div>
 	<?php endif;
 	
+elseif ( $width && $padding == 'both' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-bottom-padding light clear">
+		
+		<?php the_field('content_editor'); ?>
+		
+		<?php include('content-cta-button-light.php'); ?>
+		
+	</div>
+	<?php endif;
+	
 elseif ( $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
