@@ -37,6 +37,7 @@
 }
 .underlined-heading {
 	position: relative;
+	display: block;
 }
 .underlined-heading:before {
 	position: absolute;

@@ -4071,6 +4071,7 @@ body #mc_embed_signup form {
 }
 .underlined-heading {
 	position: relative;
+	display: block;
 }
 .underlined-heading:before {
 	position: absolute;
