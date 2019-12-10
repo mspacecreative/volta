@@ -4069,6 +4069,17 @@ body #mc_embed_signup form {
 #events {
 	outline: none;
 }
+.underlined-heading {
+	position: relative;
+}
+.underlined-heading:before {
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	background-color: #000;
+	top: 100%;
+	content: '';
+}
 @media (min-width: 1600px) {
 	#header {
 		max-height: 1000px;

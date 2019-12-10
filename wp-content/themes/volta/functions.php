@@ -808,6 +808,12 @@ function my_custom_styles( $init_array ) {
             'classes' => 'light button inline-button',
             'wrapper' => true,
         ),
+        array(
+        	'title' => 'Underlined Title',
+        	'block' => 'h3',
+        	'classes' => 'underlined-heading',
+        	'wrapper' => true,
+        )
     );  
     // Insert the array, JSON ENCODED, into 'style_formats'
     $init_array['style_formats'] = json_encode( $style_formats );  
