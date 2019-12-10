@@ -798,19 +798,19 @@ function my_custom_styles( $init_array ) {
         // These are the custom styles
         array(  
             'title' => 'Dark CTA Button',  
-            'inline' => 'a',  
+            'block' => 'a',  
             'classes' => 'dark button inline-button',
             'wrapper' => true,
         ),  
         array(  
             'title' => 'Light CTA Button',  
-            'inline' => 'a',  
+            'block' => 'a',  
             'classes' => 'light button inline-button',
             'wrapper' => true,
         ),
         array(
         	'title' => 'Underlined Title',
-        	'block' => 'h3',
+        	'block' => 'span',
         	'classes' => 'underlined-heading',
         	'wrapper' => true,
         )
