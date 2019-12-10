@@ -7,8 +7,18 @@
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
 	
+	<?php elseif ( $bgimgoverlay == 'dark' ): ?>
+	<div class="bg-img-cover dark-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
+		<?php include('inc/section-content-loop.php'); ?>
+	</div>
+	
 	<?php elseif ( $blockanchor && $bgimgoverlay == 'light' ): ?>
 	<div id="<?php the_field('block_id'); ?>" class="bg-img-cover light-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
+		<?php include('inc/section-content-loop.php'); ?>
+	</div>
+	
+	<?php elseif ( $bgimgoverlay == 'light' ): ?>
+	<div class="bg-img-cover light-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
 	
