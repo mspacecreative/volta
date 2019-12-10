@@ -117,7 +117,7 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 	h1, h2, h5, h6 {
 		font-weight: 400;
 		color: #000;
-		line-height: 1.25em;
+		line-height: 1.35em;
 		letter-spacing: 0.015em;
 	}
 	
@@ -151,7 +151,8 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 	}
 
 	h2 {
-		font-size: 2em;
+		font-size: 1.45em;
+		font-weight: bold;
 	}
 
 	h3 {
@@ -221,6 +222,7 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 		line-height: 1.75em;
 		color: #000;
 		letter-spacing: 0.015em;
+		font-weight: normal;
 	}
 	
 	span {
@@ -3742,9 +3744,6 @@ aside {
 .blog .inner {
 	width: 100%;
 	padding: 4em 2em;
-}
-.page h2 {
-	font-size: 1.5em;
 }
 .post-content-container h3 {
 	font-weight: bold;
