@@ -7,7 +7,7 @@ $textcolour = get_field('text_colour_text_color');
 if ( $width && $padding == 'both' && $margin == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding top-bottom-margin">
+	<div class="width-800 top-bottom-padding top-bottom-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -19,7 +19,7 @@ if ( $width && $padding == 'both' && $margin == 'both' ):
 elseif ( $width && $padding == 'both' && $margin == 'both' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding top-bottom-margin light">
+	<div class="width-800 top-bottom-padding top-bottom-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -31,7 +31,7 @@ elseif ( $width && $padding == 'both' && $margin == 'both' && $textcolour == 'li
 elseif ( $padding == 'top' && $margin == 'top' ):
 
 	if ( get_field('content_editor') ): ?>
-	<div class="top-padding top-margin">
+	<div class="top-padding top-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -43,7 +43,7 @@ elseif ( $padding == 'top' && $margin == 'top' ):
 elseif ( $width && $padding == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-padding">
+	<div class="width-800 top-padding clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -55,7 +55,7 @@ elseif ( $width && $padding == 'top' ):
 elseif ( $width && $padding == 'both' && $margin == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding top-margin">
+	<div class="width-800 top-bottom-padding top-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -67,7 +67,7 @@ elseif ( $width && $padding == 'both' && $margin == 'top' ):
 elseif ( $width && $padding == 'both' && $margin == 'top' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding top-margin light">
+	<div class="width-800 top-bottom-padding top-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -79,7 +79,7 @@ elseif ( $width && $padding == 'both' && $margin == 'top' && $textcolour == 'lig
 elseif ( $width && $padding == 'top' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-padding light">
+	<div class="width-800 top-padding light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -91,7 +91,7 @@ elseif ( $width && $padding == 'top' && $textcolour == 'light' ):
 elseif ( $width && $padding == 'bottom' && $margin == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 bottom-padding top-margin">
+	<div class="width-800 bottom-padding top-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -103,7 +103,7 @@ elseif ( $width && $padding == 'bottom' && $margin == 'top' ):
 elseif ( $width && $padding == 'bottom' && $margin == 'top' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 bottom-padding top-margin light">
+	<div class="width-800 bottom-padding top-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -115,7 +115,7 @@ elseif ( $width && $padding == 'bottom' && $margin == 'top' && $textcolour == 'l
 elseif ( $width && $padding == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 bottom-padding">
+	<div class="width-800 bottom-padding clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -127,7 +127,7 @@ elseif ( $width && $padding == 'bottom' ):
 elseif ( $width && $padding == 'bottom' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 bottom-padding light">
+	<div class="width-800 bottom-padding light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -139,7 +139,7 @@ elseif ( $width && $padding == 'bottom' && $textcolour == 'light' ):
 elseif ( $width && $margin == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 default-padding top-bottom-margin">
+	<div class="width-800 default-padding top-bottom-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -151,7 +151,7 @@ elseif ( $width && $margin == 'both' ):
 elseif ( $width && $margin == 'both' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 default-padding top-bottom-margin light">
+	<div class="width-800 default-padding top-bottom-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -163,7 +163,7 @@ elseif ( $width && $margin == 'both' && $textcolour == 'light' ):
 elseif ( $width && $padding == 'both' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding light">
+	<div class="width-800 top-bottom-padding light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -175,7 +175,7 @@ elseif ( $width && $padding == 'both' && $textcolour == 'light' ):
 elseif ( $width && $padding == 'top' && $margin == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-padding top-margin">
+	<div class="width-800 top-padding top-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -187,7 +187,7 @@ elseif ( $width && $padding == 'top' && $margin == 'top' ):
 elseif ( $width && $padding == 'top' && $margin == 'top' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-padding top-margin light">
+	<div class="width-800 top-padding top-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -199,7 +199,7 @@ elseif ( $width && $padding == 'top' && $margin == 'top' && $textcolour == 'ligh
 elseif ( $padding == 'both' && $margin == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-bottom-padding top-margin">
+	<div class="top-bottom-padding top-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -211,7 +211,7 @@ elseif ( $padding == 'both' && $margin == 'top' ):
 elseif ( $padding == 'both' && $margin == 'top' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-bottom-padding top-margin light">
+	<div class="top-bottom-padding top-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -223,7 +223,7 @@ elseif ( $padding == 'both' && $margin == 'top' && $textcolour == 'light' ):
 elseif ( $padding == 'top' && $margin == 'top' && $textcolour == 'light' ):
 
 	if ( get_field('content_editor') ): ?>
-	<div class="top-padding top-margin light">
+	<div class="top-padding top-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -235,7 +235,7 @@ elseif ( $padding == 'top' && $margin == 'top' && $textcolour == 'light' ):
 elseif ( $padding == 'top' && $margin == 'top' && $textcolour == 'light' ):
 
 	if ( get_field('content_editor') ): ?>
-	<div class="top-padding top-margin light">
+	<div class="top-padding top-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -247,7 +247,7 @@ elseif ( $padding == 'top' && $margin == 'top' && $textcolour == 'light' ):
 elseif ( $width && $padding == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding">
+	<div class="width-800 top-bottom-padding clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -259,7 +259,7 @@ elseif ( $width && $padding == 'both' ):
 elseif ( $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-bottom-padding light">
+	<div class="top-bottom-padding light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -271,7 +271,7 @@ elseif ( $textcolour == 'light' ):
 elseif ( $padding == 'bottom' && $margin == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="bottom-padding bottom-margin">
+	<div class="bottom-padding bottom-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -283,7 +283,7 @@ elseif ( $padding == 'bottom' && $margin == 'bottom' ):
 elseif ( $padding == 'bottom' && $margin == 'bottom' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="bottom-padding bottom-margin light">
+	<div class="bottom-padding bottom-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -295,7 +295,7 @@ elseif ( $padding == 'bottom' && $margin == 'bottom' && $textcolour == 'light' )
 elseif ( $padding == 'both' && $margin == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-bottom-padding top-bottom-margin">
+	<div class="top-bottom-padding top-bottom-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -307,7 +307,7 @@ elseif ( $padding == 'both' && $margin == 'both' ):
 elseif ( $padding == 'both' && $margin == 'both' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-bottom-padding top-bottom-margin light">
+	<div class="top-bottom-padding top-bottom-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -319,7 +319,7 @@ elseif ( $padding == 'both' && $margin == 'both' && $textcolour == 'light' ):
 elseif ( $padding == 'top' && $margin == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-padding bottom-margin">
+	<div class="top-padding bottom-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -331,7 +331,7 @@ elseif ( $padding == 'top' && $margin == 'bottom' ):
 elseif ( $padding == 'top' && $margin == 'bottom' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-padding bottom-margin light">
+	<div class="top-padding bottom-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -343,7 +343,7 @@ elseif ( $padding == 'top' && $margin == 'bottom' && $textcolour == 'light' ):
 elseif ( $padding == 'top' && $margin == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-padding top-bottom-margin">
+	<div class="top-padding top-bottom-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -355,7 +355,7 @@ elseif ( $padding == 'top' && $margin == 'both' ):
 elseif ( $padding == 'top' && $margin == 'both' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-padding top-bottom-margin light">
+	<div class="top-padding top-bottom-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -367,7 +367,7 @@ elseif ( $padding == 'top' && $margin == 'both' && $textcolour == 'light' ):
 elseif ( $padding == 'bottom' && $margin == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="bottom-padding top-margin">
+	<div class="bottom-padding top-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -379,7 +379,7 @@ elseif ( $padding == 'bottom' && $margin == 'top' ):
 elseif ( $padding == 'bottom' && $margin == 'top' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="bottom-padding top-margin light">
+	<div class="bottom-padding top-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -391,7 +391,7 @@ elseif ( $padding == 'bottom' && $margin == 'top' && $textcolour == 'light' ):
 elseif ( $padding == 'bottom' && $margin == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="bottom-padding top-bottom-margin">
+	<div class="bottom-padding top-bottom-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -403,7 +403,7 @@ elseif ( $padding == 'bottom' && $margin == 'both' ):
 elseif ( $padding == 'bottom' && $margin == 'both' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="bottom-padding top-bottom-margin light">
+	<div class="bottom-padding top-bottom-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -415,7 +415,7 @@ elseif ( $padding == 'bottom' && $margin == 'both' && $textcolour == 'light' ):
 elseif ( $padding == 'full' && $margin == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="full-padding top-margin">
+	<div class="full-padding top-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -427,7 +427,7 @@ elseif ( $padding == 'full' && $margin == 'top' ):
 elseif ( $padding == 'full' && $margin == 'top' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="full-padding top-margin light">
+	<div class="full-padding top-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -439,7 +439,7 @@ elseif ( $padding == 'full' && $margin == 'top' && $textcolour == 'light' ):
 elseif ( $padding == 'full' && $margin == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="full-padding bottom-margin">
+	<div class="full-padding bottom-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -451,7 +451,7 @@ elseif ( $padding == 'full' && $margin == 'bottom' ):
 elseif ( $padding == 'full' && $margin == 'bottom' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="full-padding bottom-margin light">
+	<div class="full-padding bottom-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -463,7 +463,7 @@ elseif ( $padding == 'full' && $margin == 'bottom' && $textcolour == 'light' ):
 elseif ( $padding == 'full' && $margin == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="full-padding top-bottom-margin">
+	<div class="full-padding top-bottom-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -475,7 +475,7 @@ elseif ( $padding == 'full' && $margin == 'both' ):
 elseif ( $padding == 'full' && $margin == 'both' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="full-padding top-bottom-margin light">
+	<div class="full-padding top-bottom-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -487,7 +487,7 @@ elseif ( $padding == 'full' && $margin == 'both' && $textcolour == 'light' ):
 elseif ( $padding == 'both' && $margin == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-bottom-padding bottom-margin">
+	<div class="top-bottom-padding bottom-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -499,7 +499,7 @@ elseif ( $padding == 'both' && $margin == 'bottom' ):
 elseif ( $padding == 'both' && $margin == 'bottom' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-bottom-padding bottom-margin light">
+	<div class="top-bottom-padding bottom-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -511,7 +511,7 @@ elseif ( $padding == 'both' && $margin == 'bottom' && $textcolour == 'light' ):
 elseif ( $padding == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-bottom-padding">
+	<div class="top-bottom-padding clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -523,7 +523,7 @@ elseif ( $padding == 'both' ):
 elseif ( $padding == 'both' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-bottom-padding light">
+	<div class="top-bottom-padding light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -535,7 +535,7 @@ elseif ( $padding == 'both' && $textcolour == 'light' ):
 elseif ( $padding == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-padding">
+	<div class="top-padding clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -547,7 +547,7 @@ elseif ( $padding == 'top' ):
 elseif ( $padding == 'top' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="top-padding light">
+	<div class="top-padding light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -559,7 +559,7 @@ elseif ( $padding == 'top' && $textcolour == 'light' ):
 elseif ( $padding == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="bottom-padding">
+	<div class="bottom-padding clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -583,7 +583,7 @@ elseif ( $margin == 'bottom' ):
 elseif ( $margin == 'bottom' && $textcolour == 'light' ):
 		
 	if ( get_field('content_editor') ): ?>
-	<div class="default-padding bottom-margin light">
+	<div class="default-padding bottom-margin light clear">
 			
 		<?php the_field('content_editor'); ?>
 			
@@ -595,7 +595,7 @@ elseif ( $margin == 'bottom' && $textcolour == 'light' ):
 elseif ( $margin == 'top' ):
 		
 	if ( get_field('content_editor') ): ?>
-	<div class="default-padding top-margin">
+	<div class="default-padding top-margin clear">
 			
 		<?php the_field('content_editor'); ?>
 			
@@ -607,7 +607,7 @@ elseif ( $margin == 'top' ):
 elseif ( $margin == 'top' && $textcolour == 'light' ):
 			
 	if ( get_field('content_editor') ): ?>
-	<div class="default-padding top-margin light">
+	<div class="default-padding top-margin light clear">
 				
 		<?php the_field('content_editor'); ?>
 				
@@ -619,7 +619,7 @@ elseif ( $margin == 'top' && $textcolour == 'light' ):
 elseif ( $margin == 'bottom' ):
 		
 	if ( get_field('content_editor') ): ?>
-	<div class="default-padding bottom-margin">
+	<div class="default-padding bottom-margin clear">
 			
 		<?php the_field('content_editor'); ?>
 			
@@ -631,7 +631,7 @@ elseif ( $margin == 'bottom' ):
 elseif ( $margin == 'bottom' && $textcolour == 'light' ):
 		
 	if ( get_field('content_editor') ): ?>
-	<div class="default-padding bottom-margin light">
+	<div class="default-padding bottom-margin light clear">
 			
 		<?php the_field('content_editor'); ?>
 			
@@ -643,7 +643,7 @@ elseif ( $margin == 'bottom' && $textcolour == 'light' ):
 elseif ( $margin == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="default-padding top-bottom-margin">
+	<div class="default-padding top-bottom-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -655,7 +655,7 @@ elseif ( $margin == 'both' ):
 elseif ( $margin == 'both' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="default-padding top-bottom-margin light">
+	<div class="default-padding top-bottom-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -667,7 +667,7 @@ elseif ( $margin == 'both' && $textcolour == 'light' ):
 elseif ( $width ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800">
+	<div class="width-800 clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -679,7 +679,7 @@ elseif ( $width ):
 elseif ( $width && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 light">
+	<div class="width-800 light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -691,7 +691,7 @@ elseif ( $width && $textcolour == 'light' ):
 elseif ( $width && $padding == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 bottom-padding">
+	<div class="width-800 bottom-padding clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -703,7 +703,7 @@ elseif ( $width && $padding == 'bottom' ):
 elseif ( $width && $padding == 'bottom' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 bottom-padding light">
+	<div class="width-800 bottom-padding light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -715,7 +715,7 @@ elseif ( $width && $padding == 'bottom' && $textcolour == 'light' ):
 elseif ( $width && $padding == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-padding">
+	<div class="width-800 top-padding clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -727,7 +727,7 @@ elseif ( $width && $padding == 'top' ):
 elseif ( $width && $padding == 'top' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-padding light">
+	<div class="width-800 top-padding light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -739,7 +739,7 @@ elseif ( $width && $padding == 'top' && $textcolour == 'light' ):
 elseif ( $width && $padding == 'full' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 full-padding">
+	<div class="width-800 full-padding clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -751,7 +751,7 @@ elseif ( $width && $padding == 'full' ):
 elseif ( $width && $padding == 'full' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 full-padding light">
+	<div class="width-800 full-padding light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -763,7 +763,7 @@ elseif ( $width && $padding == 'full' && $textcolour == 'light' ):
 elseif ( $width && $margin == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 bottom-margin">
+	<div class="width-800 bottom-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -775,7 +775,7 @@ elseif ( $width && $margin == 'bottom' ):
 elseif ( $width && $margin == 'bottom' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 bottom-margin light">
+	<div class="width-800 bottom-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -787,7 +787,7 @@ elseif ( $width && $margin == 'bottom' && $textcolour == 'light' ):
 elseif ( $width && $margin == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-margin">
+	<div class="width-800 top-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -799,7 +799,7 @@ elseif ( $width && $margin == 'top' ):
 elseif ( $width && $margin == 'top' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-margin light">
+	<div class="width-800 top-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -811,7 +811,7 @@ elseif ( $width && $margin == 'top' && $textcolour == 'light' ):
 elseif ( $width && $margin == 'both' ):
 
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-margin">
+	<div class="width-800 top-bottom-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -823,7 +823,7 @@ elseif ( $width && $margin == 'both' ):
 elseif ( $width && $margin == 'both' && $textcolour == 'light' ):
 
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-margin light">
+	<div class="width-800 top-bottom-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
