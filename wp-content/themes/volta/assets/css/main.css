@@ -3635,7 +3635,7 @@ img {
 	position: relative;
 }
 
-.icon-buckets > .row {
+.icon-buckets .max-width-1600 {
 	max-width: 1600px;
 	margin: auto;
 }
@@ -4102,7 +4102,7 @@ body #mc_embed_signup form {
 	#header {
 		max-height: 1000px;
 	}
-	.icon-buckets > .row {
+	.icon-buckets .max-width-1600 {
 		padding: 0 6em;
 	}
 }
