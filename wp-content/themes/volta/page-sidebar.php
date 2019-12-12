@@ -3,9 +3,15 @@
 get_header(); ?>
 
 <!-- Background image -->
-<div class="background">
+<?php if ( get_field('theme_background_img', 'options') : ?>
+<div class="background" style="background-image: url(<?php the_field('theme_background_img', 'options'); ?>);">
 	<div class="gradient-overlay"></div>
 </div>
+<?php else : ?>
+<div class="background" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/splash/volta-splash-design-2.jpg);">
+	<div class="gradient-overlay"></div>
+</div>
+<?php endif; ?>
 <!-- /Background image -->
 
 
