@@ -108,13 +108,13 @@
 			
 			var windowWidth = $(window).width() - 1600;
 			var moreMath = windowWidth / 2;
-			$('.page .features, .banner').css({
+			$('.page .features, .banner, .columns-container').css({
 				'margin-right' : -moreMath,
 				'margin-left' : -moreMath,
 			});
 			
 		} else {
-			$('.page .features, .banner').css({
+			$('.page .features, .banner, .columns-container').css({
 				'margin-right' : 'auto',
 				'margin-left' : 'auto',
 			});

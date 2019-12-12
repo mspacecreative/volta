@@ -3542,7 +3542,8 @@ img {
 	width: auto;
 }
 .logo-grid {
-	margin-top: 50px;
+	margin-top: 50px auto 0;
+	max-width: 1280px;
 }
 .display-flex.vertical-align-center {
 	align-items: center;
