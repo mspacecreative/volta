@@ -3394,6 +3394,9 @@ img {
 .columns-container.display-flex.align_items_bottom {
 	align-items: flex-end;
 }
+.align_items_center {
+	align-items: center;
+}
 .image-grid-container.display-flex {
 	align-items: center;
 	justify-content: center;
