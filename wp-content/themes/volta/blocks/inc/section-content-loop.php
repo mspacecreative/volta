@@ -113,6 +113,18 @@ elseif ( $width && $padding == 'both' && $margin == 'bottom' && $textcolour == '
 	</div>
 	<?php endif;
 	
+elseif ( $width && $padding == 'both' && $margin == 'bottom' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-bottom-padding bottom-margin clear">
+		
+		<?php the_field('content_editor'); ?>
+		
+		<?php include('content-cta-button-dark.php'); ?>
+		
+	</div>
+	<?php endif;
+	
 elseif ( $width && $padding == 'bottom' && $margin == 'top' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
