@@ -41,17 +41,17 @@
 					<?php elseif ( $imagelogo ) : ?>
 						<?php echo wp_get_attachment_image( $imagelogo, $size ); ?>
 					<?php endif; ?>
-					<div class="resident-card-content">
-						<h3><?php the_title(); ?></h3>
-						<p><?php echo esc_html_e('Focus: '); the_field('focus'); ?></p>
-						<?php
-						if( has_excerpt() ) { 
-							echo '<p>' . the_excerpt() . '</p>';
-						} else {
-							the_content();
-						}
-							?>
-					</div>
+				</div>
+				<div class="resident-card-content">
+					<h3><?php the_title(); ?></h3>
+					<p><?php echo esc_html_e('Focus: '); the_field('focus'); ?></p>
+					<?php
+					if( has_excerpt() ) { 
+						echo '<p>' . the_excerpt() . '</p>';
+					} else {
+						the_content();
+					}
+						?>
 				</div>
 			</div>
 		</div>
