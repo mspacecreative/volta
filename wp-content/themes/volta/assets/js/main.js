@@ -6,12 +6,6 @@
 
 (function($) {
 	
-	// MOVE STICKY MENU DOWN IF ADMIN BAR IS ACTIVE
-	var navMenu = $('.stickymenu');
-	if ( $('#wpadminbar').length ) {
-		navMenu.css('top', '32px');
-	}
-	
 	// INLINE BUTTONS
 	$('.inline-button').parent().css({
 		'display': 'inline-block',
@@ -144,6 +138,12 @@
 		if ( $('#page-wrapper').hasClass('no-featured-image-in-header') ) {
 			$('body').addClass('no-featured-image');
 			$('.classic-block-wrap').addClass('no-bottom-padding');
+		}
+		
+		// MOVE STICKY MENU DOWN IF ADMIN BAR IS ACTIVE
+		var navMenu = $('.stickymenu');
+		if ( $('#wpadminbar').length ) {
+			navMenu.css('top', '32px');
 		}
 	});
 	
