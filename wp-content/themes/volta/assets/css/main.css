@@ -3991,6 +3991,10 @@ html.fixed {
 .post-content-container ul li.image-container {
 	text-indent: inherit;
 }
+.post-content-container ul li.image-container p {
+	position: relative;
+	top: -15px;
+}
 .post-content-container ul li.image-container:before {
 	display: none;
 }
