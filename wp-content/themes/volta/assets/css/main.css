@@ -3545,7 +3545,7 @@ img {
 	width: auto;
 }
 .logo-grid {
-	margin-top: 50px auto 0;
+	margin: 50px auto 0;
 	max-width: 1280px;
 }
 .display-flex.vertical-align-center {
@@ -3633,6 +3633,11 @@ img {
 
 .icon-buckets {
 	position: relative;
+}
+
+.icon-buckets .row {
+	max-width: 1600px;
+	margin: auto;
 }
 
 #programs article, #insights {
@@ -4097,6 +4102,9 @@ body #mc_embed_signup form {
 	#header {
 		max-height: 1000px;
 	}
+	.icon-buckets .row {
+		padding: 0 6em;
+	}
 }
 .single main article a {
 	font-weight: 900;
@@ -4519,11 +4527,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		margin-top: 1em;
 	}
 }
-@media (min-width: 1024px) {
-	.flex-wrap.flexbox-block {
-		flex-wrap: unset;
-	}
-}
 @media (max-width: 450px) {
 	.tiles .tall-image {
 		min-height: 400px;
@@ -4911,6 +4914,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 @media (min-width: 981px) {
 	main, aside, .two_third_col, .one_third_col {
 		float: left;
+	}
+	.flex-wrap.flexbox-block {
+		flex-wrap: unset;
 	}
 	.partner-logo-cell {
 		flex-basis: 25%;
