@@ -3,7 +3,7 @@
 get_header(); ?>
 
 <!-- Background image -->
-<?php if ( get_field('theme_background_img', 'options') : ?>
+<?php if ( get_field('theme_background_img', 'options') ): ?>
 <div class="background" style="background-image: url(<?php the_field('theme_background_img', 'options'); ?>);">
 	<div class="gradient-overlay"></div>
 </div>
