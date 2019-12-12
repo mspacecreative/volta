@@ -3406,6 +3406,10 @@ img {
 .residents-container {
 	padding: 0 0 4em;
 }
+.residents-container img {
+	max-height: 100%;
+	width: auto;
+}
 .resident-container {
 	margin-bottom: 2%;
 	box-shadow: 0 0 11px #d9d9d9;
