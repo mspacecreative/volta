@@ -36,7 +36,7 @@ elseif ( $layouttype == 'one' && $verticalalignment == 'center' && $bgcolour ):
 	<div class="columns-container">
 		
 		<div style="max-width: 1600px; margin: auto;">
-			<div class="extra-top-bottom-padding display-flex flex-wrap top-bottom-margin top-margin">
+			<div class="extra-top-bottom-padding display-flex flex-wrap top-bottom-margin">
 				<?php if ( get_field('heading') ): ?>
 					<h2 class="width-100"><?php the_field('heading'); ?></h2>
 				<?php endif; ?>
@@ -114,7 +114,7 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'top' && $bgcolour ):
 	<div class="columns-container" style="background-color: <?php the_field('column_background_colour'); ?>;">
 		
 		<div style="max-width: 1600px; margin: auto;">
-			<div class="columns-container flex-wrap display-flex extra-top-bottom-padding top-margin align_items_top">
+			<div class="flex-wrap display-flex extra-top-bottom-padding top-margin align_items_top">
 				<?php if ( get_field('heading') ): ?>
 					<h2 class="width-100"><?php the_field('heading'); ?></h2>
 				<?php endif; ?>
@@ -186,7 +186,7 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'top' ):
 	<div class="columns-container">
 		
 		<div style="max-width: 1600px; margin: auto;">
-			<div class="columns-container flex-wrap display-flex top-bottom-padding top-bottom-margin align_items_top">
+			<div class="flex-wrap display-flex top-bottom-padding top-bottom-margin align_items_top">
 		
 			<?php if ( get_field('heading') ): ?>
 				<h2 class="width-100"><?php the_field('heading'); ?></h2>
@@ -260,7 +260,7 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'center' && $bgcolour ):
 	<div class="columns-container" style="background-color: <?php the_field('column_background_colour'); ?>;">
 		
 		<div style="max-width: 1600px; margin: auto;">
-			<div class="columns-container flex-wrap display-flex extra-top-bottom-padding top-margin">
+			<div class="display-flex extra-top-bottom-padding top-margin">
 		
 				<?php if ( get_field('heading') ): ?>
 					<h2 class="width-100"><?php the_field('heading'); ?></h2>
@@ -334,7 +334,7 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'center' ):
 	<div class="columns-container">
 		
 		<div style="max-width: 1600px; margin: auto;">
-			<div class="columns-container flex-wrap display-flex top-bottom-padding top-bottom-margin">
+			<div class="display-flex top-bottom-padding top-bottom-margin">
 		
 				<?php if ( get_field('heading') ): ?>
 					<h2 class="width-100"><?php the_field('heading'); ?></h2>
@@ -407,7 +407,7 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'bottom' && $bgcolour ):
 	<div class="columns-container" style="background-color: <?php the_field('column_background_colour'); ?>;">
 		
 		<div style="max-width: 1600px; margin: auto;">
-			<div class="columns-container flex-wrap display-flex extra-top-bottom-padding top-margin align_items_bottom">
+			<div class="display-flex extra-top-bottom-padding top-margin align_items_bottom">
 		
 				<?php if ( get_field('heading') ): ?>
 					<h2 class="width-100"><?php the_field('heading'); ?></h2>
@@ -480,7 +480,7 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'bottom' ):
 	<div class="columns-container">
 		
 		<div style="max-width: 1600px; margin: auto;">
-			<div class="columns-container flex-wrap display-flex top-bottom-padding top-bottom-margin align_items_bottom">
+			<div class="display-flex top-bottom-padding top-bottom-margin align_items_bottom">
 		
 				<?php if ( get_field('heading') ): ?>
 					<h2 class="width-100"><?php the_field('heading'); ?></h2>
@@ -553,7 +553,7 @@ elseif ( $layouttype == 'three' && $verticalalignment == 'top' ):
 	<div class="columns-container">
 		
 		<div style="max-width: 1600px; margin: auto;">
-			<div class="columns-container flex-wrap display-flex top-bottom-padding top-bottom-margin align_items_top">
+			<div class="display-flex top-bottom-padding top-bottom-margin align_items_top">
 		
 				<?php if ( get_field('heading') ): ?>
 					<h2 class="width-100"><?php the_field('heading'); ?></h2>
@@ -651,7 +651,7 @@ elseif ( $layouttype == 'three' && $verticalalignment == 'center' ):
 	<div class="columns-container">
 		
 		<div style="max-width: 1600px; margin: auto;">
-			<div class="columns-container flex-wrap display-flex top-bottom-padding top-bottom-margin">
+			<div class="display-flex top-bottom-padding top-bottom-margin">
 		
 				<?php if ( get_field('heading') ): ?>
 					<h2 class="width-100"><?php the_field('heading'); ?></h2>
@@ -749,7 +749,7 @@ elseif ( $layouttype == 'three' && $verticalalignment == 'bottom' ):
 	<div class="columns-container">
 		
 		<div style="max-width: 1600px; margin: auto;">
-			<div class="columns-container flex-wrap display-flex top-bottom-padding top-bottom-margin align_items_bottom">
+			<div class="display-flex top-bottom-padding top-bottom-margin align_items_bottom">
 		
 				<?php if ( get_field('heading') ): ?>
 					<h2 class="width-100"><?php the_field('heading'); ?></h2>
@@ -847,7 +847,7 @@ elseif ( $layouttype == 'four' && $verticalalignment == 'top' ):
 	<div class="columns-container">
 		
 		<div style="max-width: 1600px; margin: auto;">
-			<div class="columns-container flex-wrap display-flex top-bottom-padding top-bottom-margin align_items_top">
+			<div class="display-flex top-bottom-padding top-bottom-margin align_items_top">
 		
 				<?php if ( get_field('heading') ): ?>
 					<h2 class="width-100"><?php the_field('heading'); ?></h2>
@@ -970,7 +970,7 @@ elseif ( $layouttype == 'four' && $verticalalignment == 'center' ):
 	<div class="columns-container">
 		
 		<div style="max-width: 1600px; margin: auto;">
-			<div class="columns-container flex-wrap display-flex top-bottom-padding top-bottom-margin">
+			<div class="display-flex top-bottom-padding top-bottom-margin">
 		
 				<?php if ( get_field('heading') ): ?>
 					<h2 class="width-100"><?php the_field('heading'); ?></h2>
@@ -1093,7 +1093,7 @@ elseif ( $layouttype == 'four' && $verticalalignment == 'bottom' ):
 	<div class="columns-container">
 		
 		<div style="max-width: 1600px; margin: auto;">
-			<div class="columns-container flex-wrap display-flex top-bottom-padding top-bottom-margin align_items_bottom">
+			<div class="display-flex top-bottom-padding top-bottom-margin align_items_bottom">
 		
 				<?php if ( get_field('heading') ): ?>
 					<h2 class="width-100"><?php the_field('heading'); ?></h2>
