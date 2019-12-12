@@ -687,6 +687,14 @@ function currentResidents() {
 }
 add_shortcode( 'residents_loop', 'currentResidents' );
 
+// ALUMNI COMPANY POSTS LOOP
+function alumniCompanies() {
+	ob_start();
+		get_template_part('includes/loops/loop-alumni');
+	return ob_get_clean();
+}
+add_shortcode( 'alumni_loop', 'alumniCompanies' );
+
 // CURRENT RESIDENTS POSTS LOOP
 function teamMembers() {
 	ob_start();
