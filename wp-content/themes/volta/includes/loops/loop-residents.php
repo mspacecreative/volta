@@ -29,6 +29,10 @@
 						<?php echo wp_get_attachment_image( $imagelogo, $size ); ?>
 					</span>
 				</a>
+				<?php elseif ( $imagelogo && $shrinklogo ) : ?>
+				<span class="shrink-logo">
+					<?php echo wp_get_attachment_image( $imagelogo, $size ); ?>
+				</span>
 				<?php elseif ( $imagelogo && $logolink ) : ?>
 				<a href="<?php the_field('logo_link', $post->ID); ?>" target="_blank">
 					<?php echo wp_get_attachment_image( $imagelogo, $size ); ?>

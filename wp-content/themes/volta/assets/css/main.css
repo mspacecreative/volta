@@ -3538,6 +3538,9 @@ img {
 .slick-slide .shrink-logo img {
 	max-width: 130px;
 }
+.resident-container .shrink-logo img {
+	max-width: 75px;
+}
 .logo-grid {
 	margin-top: 50px;
 }
