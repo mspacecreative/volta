@@ -3998,7 +3998,7 @@ html.fixed {
 .post-content-container ul.image-grid-container {
 	padding: 0;
 	text-align: center;
-	margin: 0;
+	margin: 0 auto;
 }
 header {
 	position: relative;
