@@ -50,7 +50,7 @@ $loop = get_posts($args); ?>
 			</div>
 			<?php endforeach;
 			
-			endif; 
+			endif; wp_reset_postdata();
 			?>
 			
 		</div>

@@ -3382,6 +3382,8 @@ img {
 	display: flex;
 	flex: 1;
 	flex-direction: row;
+}
+.flex-wrap {
 	flex-wrap: wrap;
 }
 .columns-container.display-flex {
@@ -4713,6 +4715,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 @media (max-width: 980px) {
 	.home #nav {
 		display: none;
+	}
+	.display-flex {
+		flex-wrap: wrap;
 	}
 	aside {
 	    padding: 0 1em;
