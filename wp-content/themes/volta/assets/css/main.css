@@ -3257,9 +3257,6 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 .extra-top-bottom-padding {
 	padding: 4em 6em;
 }
-/*.icon-buckets .top-bottom-padding, #partners .top-bottom-padding {
-	padding: 4em 0;
-}*/
 
 .icon-buckets
 .home.page .features {
@@ -3567,6 +3564,9 @@ img {
 	margin-right: auto;
 	margin-left: auto;
 }
+.icon-buckets {
+	padding: 2em 0;
+}
 .align-center {
 	text-align: center;
 }
@@ -3627,12 +3627,10 @@ img {
 #insights .tiles article {
 	width: 100%;
 }
-/*.light-overlay {
-	background: rgba(255, 255, 255, .8);
-}*/
 
 .icon-buckets {
 	position: relative;
+	background-color: #fff;
 }
 
 .icon-buckets .max-width-1600 {
@@ -4095,7 +4093,7 @@ body #mc_embed_signup form {
 	height: 2px;
 	width: 100%;
 	background-color: #000;
-	top: 100%;
+	bottom: -10px;
 	content: '';
 }
 @media (min-width: 1600px) {
@@ -4904,10 +4902,10 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		width: 100%;
 		left: auto;
 	}
-	.top-bottom-padding, .icon-buckets .top-bottom-padding, #partners .top-bottom-padding {
+	.top-bottom-padding {
 		padding: 2em;
 	}
-	.icon-buckets .top-bottom-padding, #partners .top-bottom-padding {
+	#partners .top-bottom-padding {
 		padding: 4em 2em;
 	}
 	.tiles article {
