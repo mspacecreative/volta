@@ -4502,17 +4502,17 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	#programs article, #insights article {
 		overflow: hidden;
 	}
-	.flexbox-5:last-child {
-		margin-bottom: 0;
-	}
-	.one_third_col {
-		margin-top: 1em;
-	}
 }
 
 @media (max-width: 980px) {
 	.home #nav {
 		display: none;
+	}
+	.flexbox-5:last-child {
+		margin-bottom: 0;
+	}
+	.one_third_col {
+		margin-top: 50px;
 	}
 	.display-flex {
 		flex-wrap: wrap;
@@ -4823,7 +4823,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		padding: 2em 2em 0;
 	}
 	.extra-top-bottom-padding {
-		padding: 2em;
+		padding: 4em 2em;
 	}
 	.home .full-padding {
 	    padding: 2em;
