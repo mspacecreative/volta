@@ -4709,6 +4709,12 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 }
 
+@media (max-width: 980px) and (orientation: landscape) {
+	.logo-cell {
+		margin-bottom: 0;
+	}
+}
+
 @media (max-width: 450px) {
 	.tiles .tall-image {
 		min-height: 400px;
