@@ -6,6 +6,15 @@
 
 (function($) {
 	
+	// GET HEIGHT OF COMPANY LOGOS AND ADD MAX WIDTH
+	var companyImg = $('.logo-image-wrap img'),
+		 getHeight = companyImg.height();
+	companyImg.each(function() {
+		if ( getHeight > 50 ) {
+			companyImg.css('max-width', '100px');
+		}
+	});
+	
 	// INLINE BUTTONS
 	$('.inline-button').parent().css({
 		'display': 'inline-block',
