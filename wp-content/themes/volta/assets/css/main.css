@@ -3540,6 +3540,7 @@ img {
 .resident-container .shrink-logo img {
 	max-height: 100%;
 	width: auto;
+	max-width: 100px;
 }
 .logo-grid {
 	margin: 50px auto 0;
