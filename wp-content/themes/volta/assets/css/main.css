@@ -4509,7 +4509,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		display: none;
 	}
 	.logo-cell img {
-		max-width: none;
+		max-width: 100%;
 		padding: 25px;
 	}
 	.flexbox-5:last-child {
@@ -4715,7 +4715,8 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	.logo-cell {
 		flex-basis: 48%;
-		margin-right: %;
+		width: 48%;
+		margin-right: 4%;
 	}
 	.logo-cell img {
 		padding: 15px;
