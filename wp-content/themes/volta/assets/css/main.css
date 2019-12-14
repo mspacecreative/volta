@@ -4366,10 +4366,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.inner-padding {
 		padding: 1em;
 	}
-	.flex-box.flexbox-2:nth-child(2n+1):nth-last-child(-n+2),
-	  .flex-box.flexbox-2:nth-child(2n+1):nth-last-child(-n+2) ~ .flex-box.flexbox-2, .flex-box.flexbox-3:nth-child(3n+1):nth-last-child(-n+3), .flex-box.flexbox-3:nth-child(3n+1):nth-last-child(-n+3) ~ .flex-box.flexbox-3, .flex-box.flexbox-4:nth-child(4n+1):nth-last-child(-n+4), .flex-box.flexbox-4:nth-child(4n+1):nth-last-child(-n+4) ~ .flex-box.flexbox-4, .flex-box.flexbox-5:nth-child(5n+1):nth-last-child(-n+5), .flex-box.flexbox-5:nth-child(5n+1):nth-last-child(-n+5) ~ .flex-box.flexbox-5 {
-		margin-bottom: 2em;
-	}
 	.flexbox-5:last-child {
 		margin-bottom: 0;
 	}
@@ -4505,10 +4501,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	#programs article, #insights article {
 		overflow: hidden;
-	}
-	.flex-box.flexbox-2:nth-child(2n+1):nth-last-child(-n+2),
-	  .flex-box.flexbox-2:nth-child(2n+1):nth-last-child(-n+2) ~ .flex-box.flexbox-2, .flex-box.flexbox-3:nth-child(3n+1):nth-last-child(-n+3), .flex-box.flexbox-3:nth-child(3n+1):nth-last-child(-n+3) ~ .flex-box.flexbox-3, .flex-box.flexbox-4:nth-child(4n+1):nth-last-child(-n+4), .flex-box.flexbox-4:nth-child(4n+1):nth-last-child(-n+4) ~ .flex-box.flexbox-4, .flex-box.flexbox-5:nth-child(5n+1):nth-last-child(-n+5), .flex-box.flexbox-5:nth-child(5n+1):nth-last-child(-n+5) ~ .flex-box.flexbox-5 {
-		margin-bottom: 2em;
 	}
 	.flexbox-5:last-child {
 		margin-bottom: 0;
