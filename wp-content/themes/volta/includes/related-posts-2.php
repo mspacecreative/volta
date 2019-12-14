@@ -29,7 +29,7 @@ if( $related->have_posts() ) {
         	<?php endif; ?>
         	<div class="bucket-content two-third">
         		<header>
-        			<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+        			<h4><a href="<?php the_permalink(); ?>"><?php echo short_title('...', 7); ?></a></h4>
         			<p class="event-date"><?php the_time('d/m/Y'); ?></p>
         		</header>
         	</div>
