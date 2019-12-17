@@ -23,27 +23,7 @@ get_header(); ?>
 	<div class="post-content-container white-bg clear">
 		<div class="post-container container">
 			
-			<!-- drop shadow -->
-			<div class="horizontal-dropshadow"></div>
-			<!-- / drop shadow -->
-			
-			<!-- post title -->
-			<div class="post-title-outer">
-				
-				<div class="post-title-container">
-					
-					<!-- shadow cover left -->
-					<div class="shadow-cover-left"></div>
-					<!-- / shadow cover left -->
-					
-					<!-- shadow cover right -->
-					<div class="shadow-cover-right"></div>
-					<!-- / shadow cover right -->
-					
-					<!-- shadow cover bottom -->
-					<div class="shadow-cover-bottom"></div>
-					<!-- / shadow cover bottom -->
-					
+			<div class="post-title-container">
 					<h1><?php the_title(); ?></h1>
 				</div>
 			</div>
@@ -138,9 +118,28 @@ get_header(); ?>
 	
 	<div class="post-content-container white-bg clear">
 		<div class="post-container container">
+			
+			<!-- drop shadow -->
+			<div class="horizontal-dropshadow"></div>
+			<!-- / drop shadow -->
+			
 			<!-- post title -->
 			<div class="post-title-outer">
+				
 				<div class="post-title-container">
+					
+					<!-- shadow cover left -->
+					<div class="shadow-cover-left"></div>
+					<!-- / shadow cover left -->
+					
+					<!-- shadow cover right -->
+					<div class="shadow-cover-right"></div>
+					<!-- / shadow cover right -->
+					
+					<!-- shadow cover bottom -->
+					<div class="shadow-cover-bottom"></div>
+					<!-- / shadow cover bottom -->
+					
 					<h1><?php the_title(); ?></h1>
 				</div>
 			</div>
