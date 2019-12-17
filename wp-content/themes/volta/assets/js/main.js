@@ -6,6 +6,17 @@
 
 (function($) {
 	
+	// CALCULATE POST TITLE POSITION
+	function positionTitle() {
+		var titleHeight = $('.post-title-container').outerHeight(),
+		         doMath = titleHeight / 2;
+		$('.post-title-container').css('margin-top', -doMath);
+		$('.shadow-cover-left, .shadow-cover-right').css({
+			'top' : doMath,
+			'height' : doMath + 20
+		});
+	}
+	
 	// INLINE BUTTONS
 	$('.inline-button').parent().css({
 		'display': 'inline-block',
@@ -129,6 +140,7 @@
 		splashHeight();
 		calcNegativeMargins();
 		socialMediaBarPositioning();
+		positionTitle();
 		
 		$('.window-close-button').click(function() {
 			$(this).closest('.qtip').hide();
@@ -211,6 +223,7 @@
 		splashHeight();
 		calcNegativeMargins();
 		socialMediaBarPositioning();
+		positionTitle();
 	});
 	
 	$(window).scroll(function () {
