@@ -3672,26 +3672,9 @@ img {
 .post-title-container {
 	position: relative;
 	z-index: 2;
-	padding: 10px 2em 2em;
 	background-color: #fff;
 	margin: -50px auto 0;
 	box-shadow: 0 0 20px #222;
-}
-.shadow-cover-left {
-	width: 20px;
-	position: absolute;
-	background-color: #fff;
-	right: 100%;
-	top: calc(50% - 2px);
-	height: calc(100% - 4px);
-}
-.shadow-cover-right {
-	width: 20px;
-	position: absolute;
-	background-color: #fff;
-	left: 100%;
-	top: calc(50% - 2px);
-	height: calc(100% - 12px);
 }
 .shadow-cover-bottom {
 	width: 100%;
@@ -4402,17 +4385,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.flexbox-5:last-child {
 		margin-bottom: 0;
 	}
-	.post-title-container {
-		padding: 5px 1em 2em;
-	}
-	.shadow-cover-left {
-		top: calc(50% - 1px);
-		height: calc(100% - 4px);
-	}
-	.shadow-cover-right {
-		top: calc(50% - 1px);
-		height: calc(100% - 4px);
-	}
 	.one_third_col {
 		margin-top: 1em;
 	}
@@ -4548,6 +4520,17 @@ body #privy-container #privy-inner-container .privy-caret-down {
 @media (max-width: 980px) {
 	.home #nav {
 		display: none;
+	}
+	.post-title-container {
+		padding: 5px 2em 2em;
+	}
+	.shadow-cover-left {
+		top: calc(50% - 1px);
+		height: calc(100% - 4px);
+	}
+	.shadow-cover-right {
+		top: calc(50% - 1px);
+		height: calc(100% - 4px);
 	}
 	.logo-cell img {
 		max-width: 100%;
@@ -4833,17 +4816,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.post-title-outer {
 	    padding: 0 1em;
 	}
-	.post-title-container {
-		padding: 5px 1em 0;
-	}
-	.shadow-cover-left {
-		top: calc(50% - 1px);
-		height: calc(100% - 4px);
-	}
-	.shadow-cover-right {
-		top: calc(50% - 1px);
-		height: calc(100% - 4px);
-	}
 	.page .features {
 		margin: 0 -3em;
 	}
@@ -4989,6 +4961,25 @@ body #privy-container #privy-inner-container .privy-caret-down {
 @media (min-width: 981px) {
 	main, aside, .two_third_col, .one_third_col {
 		float: left;
+	}
+	.post-title-container {
+		padding: 10px 2em 2em;
+	}
+	.shadow-cover-left {
+		width: 20px;
+		position: absolute;
+		background-color: #fff;
+		right: 100%;
+		top: calc(50% - 2px);
+		height: calc(100% - 4px);
+	}
+	.shadow-cover-right {
+		width: 20px;
+		position: absolute;
+		background-color: #fff;
+		left: 100%;
+		top: calc(50% - 2px);
+		height: calc(100% - 12px);
 	}
 	.flex-wrap.flexbox-block {
 		flex-wrap: unset;

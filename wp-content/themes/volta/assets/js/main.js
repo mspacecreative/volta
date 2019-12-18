@@ -7,14 +7,14 @@
 (function($) {
 	
 	// CALCULATE POST TITLE POSITION
-	function positionTitle() {
+	/*function positionTitle() {
 		var titleHeight = $('.post-title-container').outerHeight(),
 		    subtract50 = titleHeight - 50;
 		//$('.post-title-container').css('margin-top', -doMath);
 		$('.shadow-cover-left, .shadow-cover-right').css({
 			'height' : titleHeight
 		});
-	}
+	}*/
 	
 	// INLINE BUTTONS
 	$('.inline-button').parent().css({
@@ -139,7 +139,7 @@
 		splashHeight();
 		calcNegativeMargins();
 		socialMediaBarPositioning();
-		positionTitle();
+		//positionTitle();
 		
 		$('.window-close-button').click(function() {
 			$(this).closest('.qtip').hide();
@@ -222,7 +222,7 @@
 		splashHeight();
 		calcNegativeMargins();
 		socialMediaBarPositioning();
-		positionTitle();
+		//positionTitle();
 	});
 	
 	$(window).scroll(function () {
