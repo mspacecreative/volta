@@ -45,37 +45,48 @@
 	<!-- /Nav -->
 	
 	<div class="post-content-container white-bg clear">
-
-		<div class="container">
-			<main role="main">
+		
+		<div class="post-content-container white-bg clear">
+				
+			<!-- drop shadow -->
+			<div class="horizontal-dropshadow"></div>
+			<!-- / drop shadow -->
+		
+			<div class="clear container">
+				<main role="main">
 				<!-- section -->
 				<section>
-					
+			
 					<!-- post title -->
 					<div class="post-title-container">
+							
+						<!-- shadow cover left -->
+						<div class="shadow-cover-left"></div>
+						<!-- / shadow cover left -->
+							
+						<!-- shadow cover right -->
+						<div class="shadow-cover-right"></div>
+						<!-- / shadow cover right -->
+							
+						<!-- shadow cover bottom -->
+						<div class="shadow-cover-bottom"></div>
+						<!-- / shadow cover bottom -->
+							
 						<h1><?php _e( 'Articles written by ', 'html5blank' ); echo get_the_author(); ?></h1>
 					</div>
-					
-					<?php if ( get_the_author_meta('description')) : ?>
-					
-						<?php echo get_avatar(get_the_author_meta('user_email')); ?>
-					
-						<h2><?php _e( 'About ', 'html5blank' ); echo get_the_author() ; ?></h2>
-					
-						<?php echo wpautop( get_the_author_meta('description') ); ?>
-					
-					<?php endif; ?>
 					<!-- /post title -->
-						
+			
 					<div class="inner">
 						<?php get_template_part('includes/loops/loop-masonry'); ?>
-					
+		
 						<?php get_template_part('pagination'); ?>
 					</div>
-		
+			
 				</section>
 				<!-- /section -->
 			</main>
+			</div>
+		
 		</div>
 
 	</div>

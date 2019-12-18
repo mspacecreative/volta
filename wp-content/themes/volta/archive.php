@@ -45,30 +45,47 @@
 	<!-- /Nav -->
 	
 	<div class="post-content-container white-bg clear">
-
-		<div class="container">
-			<main role="main">
+			
+			<!-- drop shadow -->
+			<div class="horizontal-dropshadow"></div>
+			<!-- / drop shadow -->
+	
+			<div class="clear container">
+				<main role="main">
 				<!-- section -->
 				<section>
-					
+		
 					<!-- post title -->
 					<div class="post-title-container">
-						<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
+						
+						<!-- shadow cover left -->
+						<div class="shadow-cover-left"></div>
+						<!-- / shadow cover left -->
+						
+						<!-- shadow cover right -->
+						<div class="shadow-cover-right"></div>
+						<!-- / shadow cover right -->
+						
+						<!-- shadow cover bottom -->
+						<div class="shadow-cover-bottom"></div>
+						<!-- / shadow cover bottom -->
+						
+						<h1><?php echo esc_html_e('Latest Posts'); ?></h1>
 					</div>
 					<!-- /post title -->
 		
 					<div class="inner">
 						<?php get_template_part('includes/loops/loop-masonry'); ?>
-						
+	
 						<?php get_template_part('pagination'); ?>
 					</div>
 		
 				</section>
 				<!-- /section -->
 			</main>
+			</div>
+	
 		</div>
-
-	</div>
 	
 </div>
 

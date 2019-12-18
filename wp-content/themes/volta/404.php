@@ -63,6 +63,18 @@ if ( get_field('featured_image_alignment', 'options') == 'top' ): ?>
 			<!-- post title -->
 			<div class="post-title-outer">
 				<div class="post-title-container">
+					<!-- shadow cover left -->
+					<div class="shadow-cover-left"></div>
+					<!-- / shadow cover left -->
+						
+					<!-- shadow cover right -->
+					<div class="shadow-cover-right"></div>
+					<!-- / shadow cover right -->
+						
+					<!-- shadow cover bottom -->
+					<div class="shadow-cover-bottom"></div>
+					<!-- / shadow cover bottom -->
+					
 					<h1><?php _e( 'Page not found', 'html5blank' ); ?></h1>
 				</div>
 			</div>

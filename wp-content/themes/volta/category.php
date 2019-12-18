@@ -52,6 +52,19 @@
 					
 					<!-- post title -->
 					<div class="post-title-container">
+						
+						<!-- shadow cover left -->
+						<div class="shadow-cover-left"></div>
+						<!-- / shadow cover left -->
+							
+						<!-- shadow cover right -->
+						<div class="shadow-cover-right"></div>
+						<!-- / shadow cover right -->
+							
+						<!-- shadow cover bottom -->
+						<div class="shadow-cover-bottom"></div>
+						<!-- / shadow cover bottom -->
+						
 						<h1><?php _e( 'Categorized under ', 'html5blank' ); single_cat_title(); ?></h1>
 					</div>
 					<!-- /post title -->
