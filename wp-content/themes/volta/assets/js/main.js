@@ -9,11 +9,11 @@
 	// CALCULATE POST TITLE POSITION
 	function positionTitle() {
 		var titleHeight = $('.post-title-container').outerHeight(),
-		         doMath = titleHeight / 2;
-		$('.post-title-container').css('margin-top', -doMath);
+		    subtract50 = titleHeight - 50;
+		//$('.post-title-container').css('margin-top', -doMath);
 		$('.shadow-cover-left, .shadow-cover-right').css({
-			'top' : doMath,
-			'height' : doMath + 20
+			'top' : subtract50,
+			'height' : subtract50 + 20
 		});
 	}
 	
