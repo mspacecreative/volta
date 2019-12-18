@@ -12,7 +12,7 @@
 		    subtract50 = titleHeight - 50;
 		//$('.post-title-container').css('margin-top', -doMath);
 		$('.shadow-cover-left, .shadow-cover-right').css({
-			'top' : subtract50,
+			'top' : '50',
 			'height' : subtract50 + 20
 		});
 	}
