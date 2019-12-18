@@ -45,6 +45,10 @@
 	
 	<div class="post-content-container white-bg clear">
 
+		<!-- drop shadow -->
+		<div class="horizontal-dropshadow"></div>
+		<!-- / drop shadow -->
+		
 		<div class="container">
 			<main role="main">
 				<!-- section -->

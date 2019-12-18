@@ -59,7 +59,13 @@ if ( get_field('featured_image_alignment', 'options') == 'top' ): ?>
 	<!-- /Nav -->
 	
 	<div class="post-content-container white-bg clear">
+		
 		<div class="post-container container">
+			
+			<!-- drop shadow -->
+			<div class="horizontal-dropshadow"></div>
+			<!-- / drop shadow -->
+			
 			<!-- post title -->
 			<div class="post-title-outer">
 				<div class="post-title-container">
