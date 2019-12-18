@@ -3673,7 +3673,6 @@ img {
 	position: relative;
 	z-index: 2;
 	background-color: #fff;
-	margin: -50px auto 0;
 	box-shadow: 0 0 20px #222;
 }
 .shadow-cover-bottom {
@@ -4294,7 +4293,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	position: absolute;
 	background-color: #fff;
 	right: 100%;
-	top: 50px;
 	height: 100%;
 }
 .shadow-cover-right {
@@ -4302,7 +4300,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	position: absolute;
 	background-color: #fff;
 	left: 100%;
-	top: 50px;
 	height: 100%;
 }
 @media (max-width: 812px) and (orientation:landscape) {
@@ -4540,6 +4537,10 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	.post-title-container {
 		padding: 5px 1em 0;
+		margin: -35px auto 0;
+	}
+	.shadow-cover-left, .shadow-cover-right {
+		top: 35px;
 	}
 	.logo-cell img {
 		max-width: 100%;
@@ -4973,6 +4974,10 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	.post-title-container {
 		padding: 10px 2em 0;
+		margin: -45px auto 0;
+	}
+	.shadow-cover-left, .shadow-cover-right {
+		top: 45px;
 	}
 	.flex-wrap.flexbox-block {
 		flex-wrap: unset;
