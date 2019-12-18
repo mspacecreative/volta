@@ -3683,6 +3683,7 @@ img {
 	background-color: #fff;
 	right: 100%;
 	top: calc(50% - 2px);
+	height: calc(100% - 4px);
 }
 .shadow-cover-right {
 	width: 20px;
@@ -3690,6 +3691,7 @@ img {
 	background-color: #fff;
 	left: 100%;
 	top: calc(50% - 2px);
+	height: calc(100% - 12px);
 }
 .shadow-cover-bottom {
 	width: 100%;
@@ -4405,9 +4407,11 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	.shadow-cover-left {
 		top: calc(50% - 1px);
+		height: calc(100% - 4px);
 	}
 	.shadow-cover-right {
 		top: calc(50% - 1px);
+		height: calc(100% - 4px);
 	}
 	.one_third_col {
 		margin-top: 1em;
@@ -4834,9 +4838,11 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	.shadow-cover-left {
 		top: calc(50% - 1px);
+		height: calc(100% - 4px);
 	}
 	.shadow-cover-right {
 		top: calc(50% - 1px);
+		height: calc(100% - 4px);
 	}
 	.page .features {
 		margin: 0 -3em;
