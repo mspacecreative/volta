@@ -3672,7 +3672,7 @@ img {
 .post-title-container {
 	position: relative;
 	z-index: 2;
-	padding: 1em 2em 2em;
+	padding: 10px 2em 2em;
 	background-color: #fff;
 	margin: -50px auto 0;
 	box-shadow: 0 0 20px #222;
@@ -3682,12 +3682,14 @@ img {
 	position: absolute;
 	background-color: #fff;
 	right: 100%;
+	top: calc(50% - 2px);
 }
 .shadow-cover-right {
 	width: 20px;
 	position: absolute;
 	background-color: #fff;
 	left: 100%;
+	top: calc(50% - 2px);
 }
 .shadow-cover-bottom {
 	width: 100%;
@@ -4399,7 +4401,13 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		margin-bottom: 0;
 	}
 	.post-title-container {
-		padding: 1em 1em 2em;
+		padding: 5px 1em 2em;
+	}
+	.shadow-cover-left {
+		top: calc(50% - 1px);
+	}
+	.shadow-cover-right {
+		top: calc(50% - 1px);
 	}
 	.one_third_col {
 		margin-top: 1em;
@@ -4823,6 +4831,12 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	.post-title-container {
 		padding: 5px 1em 0;
+	}
+	.shadow-cover-left {
+		top: calc(50% - 1px);
+	}
+	.shadow-cover-right {
+		top: calc(50% - 1px);
 	}
 	.page .features {
 		margin: 0 -3em;
