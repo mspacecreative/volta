@@ -62,10 +62,28 @@
 	<!-- /Nav -->
 	
 	<div class="post-content-container white-bg">
+		
+		<!-- drop shadow -->
+		<div class="horizontal-dropshadow"></div>
+		<!-- / drop shadow -->
+		
 		<div class="clear post-container">
 			<div class="container">
 				<!-- post title -->
 				<div class="post-title-container">
+					
+					<!-- shadow cover left -->
+					<div class="shadow-cover-left"></div>
+					<!-- / shadow cover left -->
+						
+					<!-- shadow cover right -->
+					<div class="shadow-cover-right"></div>
+					<!-- / shadow cover right -->
+						
+					<!-- shadow cover bottom -->
+					<div class="shadow-cover-bottom"></div>
+					<!-- / shadow cover bottom -->
+					
 					<h1><?php the_title(); ?></h1>
 					<!-- post details -->
 					<div class="post-meta-container">
