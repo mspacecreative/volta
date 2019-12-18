@@ -4288,6 +4288,18 @@ body #privy-container #privy-inner-container .privy-caret-down {
     border-bottom: 5px solid #fff;
 	border-top: none;
 }
+.shadow-cover-left {
+	width: 20px;
+	position: absolute;
+	background-color: #fff;
+	right: 100%;
+}
+.shadow-cover-right {
+	width: 20px;
+	position: absolute;
+	background-color: #fff;
+	left: 100%;
+}
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
@@ -4966,18 +4978,10 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		padding: 10px 2em 0;
 	}
 	.shadow-cover-left {
-		width: 20px;
-		position: absolute;
-		background-color: #fff;
-		right: 100%;
 		top: calc(50% - 2px);
 		height: calc(100% - 4px);
 	}
 	.shadow-cover-right {
-		width: 20px;
-		position: absolute;
-		background-color: #fff;
-		left: 100%;
 		top: calc(50% - 2px);
 		height: calc(100% - 12px);
 	}
