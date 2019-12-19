@@ -11,6 +11,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
+		
+		<!--SCRIPTS IN HEADER-->
+		<?php if ( get_field('google_analytics', 'options') ) {
+			echo the_field('google_analytics', 'options');
+		} ?>
 
 		<?php wp_head(); ?>
 		<script>
@@ -21,11 +26,6 @@
             tests: {}
         });
         </script>
-		
-		<!--GOOGLE ANALYTICS-->
-		<?php if ( get_field('google_analytics', 'options') ) {
-			echo the_field('google_analytics', 'options');
-		} ?>
 
 	</head>
 	<body <?php body_class(); ?>>
