@@ -237,6 +237,50 @@ if (function_exists('register_sidebar'))
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
+    
+    // Define Footer Column 1
+    register_sidebar(array(
+        'name' => __('Footer Column 1', 'html5blank'),
+        'description' => __('Items to be displayed in first footer column', 'html5blank'),
+        'id' => 'footer-col-1',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    
+    // Define Footer Column 2
+    register_sidebar(array(
+        'name' => __('Footer Column 2', 'html5blank'),
+        'description' => __('Items to be displayed in second footer column', 'html5blank'),
+        'id' => 'footer-col-2',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    
+    // Define Footer Column 3
+    register_sidebar(array(
+        'name' => __('Footer Column 3', 'html5blank'),
+        'description' => __('Items to be displayed in third footer column', 'html5blank'),
+        'id' => 'footer-col-3',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    
+    // Define Footer Column 4
+    register_sidebar(array(
+        'name' => __('Footer Column 4', 'html5blank'),
+        'description' => __('Items to be displayed in fourth footer column', 'html5blank'),
+        'id' => 'footer-col-4',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
 }
 
 // Remove wp_head() injected Recent Comment styles

@@ -2631,6 +2631,11 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 
 /* Main */
 
+	main {
+		position: relative;
+		z-index: 10;
+	}
+	
 	#main {
 		margin-bottom: 0;
 	}
