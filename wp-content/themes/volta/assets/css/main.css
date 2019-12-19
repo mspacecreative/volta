@@ -3821,9 +3821,6 @@ aside {
 .home .full-padding {
 	padding: 4em;
 }
-.textwidget {
-	margin: 2em 0 0;
-}
 .video-container {
 	height: 0;
 	padding-bottom: 56.25%;
@@ -4090,6 +4087,12 @@ body #mc_embed_signup form {
 #instafeed a h3 {
 	color: #000;
 	transition: 0.35s ease-in-out;
+}
+#footer section h3 {
+	margin-top: 50px;
+}
+#footer section h3:first-of-type {
+	margin-top: 0;
 }
 #instafeed a h3:hover {
 	color: #00dbb6;
