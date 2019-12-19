@@ -21,6 +21,11 @@
             tests: {}
         });
         </script>
+		
+		<!--GOOGLE ANALYTICS-->
+		<?php if ( get_field('google_analytics', 'options') ) {
+			echo the_field('google_analytics', 'options');
+		} ?>
 
 	</head>
 	<body <?php body_class(); ?>>
