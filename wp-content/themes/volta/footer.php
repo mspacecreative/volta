@@ -5,24 +5,24 @@
 						<div class="row">
 											
 							<section class="col-3 col-12-mobile">
-								<?php get_sidebar('footer-column-1'); ?>
+								<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-column-1')) ?>
 							</section>
 											
 							<!-- Posts -->
 							<section class="col-3 col-12-mobile">
-								<?php get_sidebar('footer-column-2'); ?>
+								<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-column-2')) ?>
 							</section>
 							<!-- /Posts -->
 											
 							<!-- About -->
 							<section class="col-3 col-12-mobile">
-								<?php get_sidebar('footer-column-3'); ?>
+								<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-column-3')) ?>
 							</section>
 							<!-- /About -->
 														
 							<!-- Contact -->
 							<section class="col-3 col-12-mobile">
-								<?php get_sidebar('footer-column-4'); ?>
+								<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-column-4')) ?>
 							</section>
 							<!-- /Contact -->
 											
