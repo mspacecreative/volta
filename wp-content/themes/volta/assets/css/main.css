@@ -4088,10 +4088,11 @@ body #mc_embed_signup form {
 	color: #000;
 	transition: 0.35s ease-in-out;
 }
-#footer section h3 {
+#footer section div h3 {
 	margin-top: 50px;
+	text-transform: uppercase;
 }
-#footer section h3:first-of-type {
+#footer section div:first-child h3 {
 	margin-top: 0;
 }
 #instafeed a h3:hover {
