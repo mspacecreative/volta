@@ -771,6 +771,14 @@ function partnersLoop() {
 }
 add_shortcode( 'partners_loop', 'partnersLoop' );
 
+// POSTS LOOP IN FOOTER
+function recentPosts3() {
+	ob_start();
+		get_template_part('includes/footer-blog-loop');
+	return ob_get_clean();
+}
+add_shortcode( 'recent_posts_3', 'recentPosts3' );
+
 // REMOVE PROTECTED / PRIVATE PREFIX ON PROTECTED PAGES
 function the_title_trim($title) {
 
