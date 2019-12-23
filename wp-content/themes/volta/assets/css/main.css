@@ -1951,7 +1951,7 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 			font-family: fontAwesome;
 			padding-right: 10px;
 		}
-		.post-container ul.actions li:before {
+		.post-container ul.actions li:before, .post-content-container ul.gform_fields li:before {
 			display: none;
 			padding-right: 0;
 		}
