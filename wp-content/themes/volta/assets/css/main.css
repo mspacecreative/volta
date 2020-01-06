@@ -2094,9 +2094,16 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 		-ms-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 		transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 	}
-	form input[type=submit] {
-		background-color: transparent;
-		border-radius: 4px;
+	#mc_embed_signup form input[type="text"],
+	#mc_embed_signup form input[type="email"],
+	#mc_embed_signup form input[type="password"],
+	#mc_embed_signup form select,
+	#mc_embed_signup form textarea {
+		margin-bottom: 0;
+	}
+	
+	#mc_embed_signup form input[type="submit"] {
+		margin-top: 20px;
 	}
 	
 	form input[type=submit]:hover {
