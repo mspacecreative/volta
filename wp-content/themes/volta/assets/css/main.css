@@ -4249,6 +4249,13 @@ body #mc_embed_signup form {
 .features h1 {
 	margin-bottom: 0;
 }
+.super-title-container {
+	display: table;
+	width: 100%;
+	height: 100%;
+	max-width: 1600px;
+	margin: auto;
+}
 .super-title {
 	display: table-cell;
 	vertical-align: middle;
