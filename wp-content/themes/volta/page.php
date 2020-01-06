@@ -117,11 +117,12 @@ get_header(); ?>
 	<!-- /post thumbnail on mobile -->
 	
 	<div class="post-content-container white-bg clear">
+		
+		<!-- drop shadow -->
+		<div class="horizontal-dropshadow"></div>
+		<!-- / drop shadow -->
+		
 		<div class="post-container container">
-			
-			<!-- drop shadow -->
-			<div class="horizontal-dropshadow"></div>
-			<!-- / drop shadow -->
 			
 			<!-- post title -->
 			<div class="post-title-outer">

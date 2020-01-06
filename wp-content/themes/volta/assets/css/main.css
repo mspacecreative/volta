@@ -4123,7 +4123,7 @@ body #mc_embed_signup form {
 }
 .horizontal-dropshadow {
 	position: absolute;
-	bottom: 100%;
+	top: -15px;
 	height: 15px;
 	background: linear-gradient(0deg, rgba(0,0,0,.35), transparent);
 	width: 100%;
