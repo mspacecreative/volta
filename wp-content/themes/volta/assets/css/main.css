@@ -4330,6 +4330,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 }
 .span-browser > div {
 	max-width: 1600px;
+	margin: auto;
 }
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
