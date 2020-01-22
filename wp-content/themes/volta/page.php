@@ -95,8 +95,48 @@ get_header(); ?>
 	$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 	$supertitle = get_field('super_title');
 	echo '<div class="post-header" style="background-image: url(' . $url . '); background-position: center;"><div class="post-header-overlay"></div><div class="super-title-container"><div class="default-padding super-title"><h4>' . $supertitle . '</h4></div></div></div>'; ?>
+	<?php elseif ( get_field('featured_image_alignment') == 'top' ) : ?>
+	<div class="post-header default" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/header.jpg'); background-position: center;"><div class="post-header-overlay"></div>
+		<?php if ( get_field('super_title') ) : ?>
+		<div class="super-title-container">
+			<div class="default-padding super-title">
+				<h4><?php the_field('super_title'); ?></h4>
+			</div>
+		</div>
+		<?php endif; ?>
+	</div>
+	<?php elseif ( get_field('featured_image_alignment') == 'center' ) : ?>
+	<div class="post-header default" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/header.jpg'); background-position: center;"><div class="post-header-overlay"></div>
+		<?php if ( get_field('super_title') ) : ?>
+		<div class="super-title-container">
+			<div class="default-padding super-title">
+				<h4><?php the_field('super_title'); ?></h4>
+			</div>
+		</div>
+		<?php endif; ?>
+	</div>
+	<?php elseif ( get_field('featured_image_alignment') == 'bottom' ) : ?>
+	<div class="post-header default" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/header.jpg'); background-position: center;"><div class="post-header-overlay"></div>
+		<?php if ( get_field('super_title') ) : ?>
+		<div class="super-title-container">
+			<div class="default-padding super-title">
+				<h4><?php the_field('super_title'); ?></h4>
+			</div>
+		</div>
+		<?php endif; ?>
+	</div>
+	<?php elseif ( get_field('featured_image_alignment') == 'top' ) : ?>
+	<div class="post-header default" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/header.jpg'); background-position: center;"><div class="post-header-overlay"></div>
+	</div>
+	<?php elseif ( get_field('featured_image_alignment') == 'center' ) : ?>
+	<div class="post-header default" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/header.jpg'); background-position: center;"><div class="post-header-overlay"></div>
+	</div>
+	<?php elseif ( get_field('featured_image_alignment') == 'bottom' ) : ?>
+	<div class="post-header default" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/header.jpg'); background-position: center;"><div class="post-header-overlay"></div>
+	</div>
 	<?php else : ?>
-	<div class="post-header default" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/header.jpg'); background-position: center;"><div class="post-header-overlay"></div><div class="super-title-container"><div class="default-padding super-title"><h4><?php the_field('super_title'); ?></h4></div></div></div>
+	<div class="post-header default" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/header.jpg'); background-position: center;"><div class="post-header-overlay"></div>
+	</div>
 	<?php endif; ?>
 	<!-- /post thumbnail -->
 	
