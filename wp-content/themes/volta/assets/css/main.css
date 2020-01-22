@@ -4328,6 +4328,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 .corporate_pricing_table tr:last-child {
 	border-bottom: none;
 }
+.span-browser > div {
+	max-width: 1600px;
+}
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
