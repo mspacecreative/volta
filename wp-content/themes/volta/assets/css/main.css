@@ -4598,10 +4598,10 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		margin-bottom: 0!important;
 	}
 	.flexbox-3:nth-child(2n), .flexbox-4:nth-child(2n), .flexbox-5:nth-child(2n) {
-	    margin-right: 2%;
+	    margin-right: 0;
 	}
 	.flexbox-3:nth-child(3n), .flexbox-4:nth-child(4n), .flexbox-5:nth-child(5n) {
-	    margin-right: 0;
+	    margin-right: 2%;
 	}
 	/* Nav */
 	
