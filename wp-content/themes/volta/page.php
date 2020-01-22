@@ -113,7 +113,7 @@ get_header(); ?>
 		</div>';
 	} ?>
 	<?php else : ?>
-		<div class="post-header default" style="background-image: url(' . get_template_directory_uri() . '/img/header.jpg); background-position: center;"><div class="post-header-overlay"></div>
+		<div class="post-header default" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/header.jpg); background-position: center;"><div class="post-header-overlay"></div>
 		</div>
 	<?php endif; ?>
 	<!-- /post thumbnail -->
