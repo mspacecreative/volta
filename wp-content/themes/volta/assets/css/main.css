@@ -4594,6 +4594,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.flex-box.flexbox-5:last-of-type {
 		margin-bottom: 0!important;
 	}
+	.flex-box.flexbox-5:nth-child(5n) {
+		margin-right: 2%;
+	}
 	.flex-box.flexbox-5:nth-child(2n) {
 		margin-right: 0;
 	}
