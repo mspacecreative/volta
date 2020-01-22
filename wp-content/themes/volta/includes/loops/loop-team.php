@@ -35,7 +35,14 @@ if ( $loop->have_posts() ) : ?>
 		<span class="close-button mobile"></span>
 		<div class="team-bio-inner">
 			<span class="close-button desktop"></span>
-			<?php the_content(); ?>
+			<?php the_content();
+			
+			$file = get_field('file');
+			if( $file ):
+			    $url = wp_get_attachment_url( $file ); ?>
+				<p><a href="<?php echo esc_html($url); ?>" >Download High Res Headshot</a></p>
+			<?php endif; ?>
+	
 		</div>
 	</div>
 	
