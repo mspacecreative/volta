@@ -39,7 +39,7 @@ if ( $loop->have_posts() ) : ?>
 			
 			$file = get_field('file', $post->ID);
 			if ( $file ) : ?>
-			    <p><a href="<?php the_field('file', $post->ID); ?>" download>Download High Res Headshot</a></p>
+			    <p><a class="button light" style="margin-top: 15px;" href="<?php the_field('file', $post->ID); ?>" download>Download high res head shot</a></p>
 			<?php endif; ?>
 	
 		</div>
