@@ -4594,12 +4594,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.flex-box.flexbox-5:last-of-type {
 		margin-bottom: 0!important;
 	}
-	.flexbox-3:nth-child(2n), .flexbox-4:nth-child(2n), .flexbox-4:nth-child(4n), .flexbox-5:nth-child(2n), .flexbox-3:nth-child(3n), .flexbox-5:nth-child(5n), .flexbox-5, .flexbox-4, .flexbox-3, .flexbox-2, .column-container {
-	    margin-right: 2%;
-	}
-	.flexbox-5:nth-child(2n), .flexbox-4:nth-child(2n), .flexbox-3:nth-child(2n), .flexbox-2:nth-child(2n), .column-container:nth-child(2n) {
-		margin-right: 0;
-	}
 	
 	/* Nav */
 	
