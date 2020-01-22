@@ -2,18 +2,50 @@
 	
 	$blockanchor = get_field('block_id');
 	$bgimgoverlay = get_field('background_image_overlay');
-	if ( $blockanchor && $bgimgoverlay == 'dark' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="bg-img-cover dark-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
+	$spanbrowser = get_field('span_browser');
+	
+	if ( $blockanchor && $bgimgoverlay == 'dark' && $spanbrowser ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="span-browser bg-img-cover dark-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
 	
-	<?php elseif ( $bgimgoverlay == 'dark' ): ?>
-	<div class="bg-img-cover dark-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
+	<?php elseif ( $blockanchor && $bgimgoverlay == 'light' && $spanbrowser ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="span-browser bg-img-cover light-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
+		<?php include('inc/section-content-loop.php'); ?>
+	</div>
+	
+	<?php elseif ( $blockanchor && $spanbrowser ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="span-browser bg-img-cover dark-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
+		<?php include('inc/section-content-loop.php'); ?>
+	</div>
+	
+	<?php elseif ( $blockanchor && $spanbrowser ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="span-browser bg-img-cover light-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
+		<?php include('inc/section-content-loop.php'); ?>
+	</div>
+	
+	<?php elseif ( $blockanchor && $bgimgoverlay == 'dark' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="bg-img-cover dark-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
 	
 	<?php elseif ( $blockanchor && $bgimgoverlay == 'light' ): ?>
 	<div id="<?php the_field('block_id'); ?>" class="bg-img-cover light-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
+		<?php include('inc/section-content-loop.php'); ?>
+	</div>
+	
+	<?php elseif ( $bgimgoverlay == 'dark' && $spanbrowser ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="span-browser bg-img-cover dark-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
+		<?php include('inc/section-content-loop.php'); ?>
+	</div>
+	
+	<?php elseif ( $bgimgoverlay == 'light' && $spanbrowser ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="span-browser bg-img-cover light-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
+		<?php include('inc/section-content-loop.php'); ?>
+	</div>
+	
+	<?php elseif ( $bgimgoverlay == 'dark' ): ?>
+	<div class="bg-img-cover dark-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
 	
