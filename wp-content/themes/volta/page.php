@@ -86,6 +86,8 @@ get_header(); ?>
 		echo '<div class="post-header" style="background-image: url(' . $url . '); background-position: top center;"><div class="post-header-overlay"></div><div class="super-title-container"><div class="default-padding super-title"><h4>' . $supertitle . '</h4></div></div></div>';
 	} elseif ( $url ) {
 		echo '<div class="post-header" style="background-image: url(' . $url . '); background-position: top center;"><div class="post-header-overlay"></div></div>';
+	} elseif ( $supertitle ) {
+		echo '<div class="post-header default" style="background-image: url(' . get_template_directory_uri() . '/img/header.jpg); background-position: center;"><div class="post-header-overlay"></div><div class="super-title-container"><div class="default-padding super-title"><h4>' . $supertitle . '</h4></div></div></div>';
 	} else {
 		echo '<div class="post-header default" style="background-image: url(' . get_template_directory_uri() . '/img/header.jpg); background-position: center;"><div class="post-header-overlay"></div>
 		</div>';
