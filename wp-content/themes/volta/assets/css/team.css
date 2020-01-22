@@ -80,11 +80,12 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	max-width: 600px;
+	max-width: 640px;
 	/*background: #fff;*/
 	border-radius: 5px;
 	width: 90%;
 	box-sizing: border-box;
+	padding: 20px;
 }
 .team-bio-inner p {
 	margin: 0 0 15px;
