@@ -63,10 +63,23 @@
 <?php elseif ( get_field('background_color_background_color') ):
 	
 	$blockanchor = get_field('block_id');
-	if ( $blockanchor ) : ?>
+	$spanbrowser = get_field('span_browser');
+	
+	if ( $blockanchor && $spanbrowser ) : ?>
+	<div id="<?php the_field('block_id'); ?>" class="span-browser white-bg content-section" style="background-color: <?php the_field('background_color_background_color'); ?>;">
+		<?php include('inc/section-content-loop.php'); ?>
+	</div>
+	
+	<?php elseif ( $blockanchor ) : ?>
 	<div id="<?php the_field('block_id'); ?>" class="white-bg content-section" style="background-color: <?php the_field('background_color_background_color'); ?>;">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
+	
+	<?php elseif ( $spanbrowser ) : ?>
+	<div id="<?php the_field('block_id'); ?>" class="span-browser white-bg content-section" style="background-color: <?php the_field('background_color_background_color'); ?>;">
+		<?php include('inc/section-content-loop.php'); ?>
+	</div>
+	
 	<?php else : ?>
 	<div class="white-bg content-section" style="background-color: <?php the_field('background_color_background_color'); ?>;">
 		<?php include('inc/section-content-loop.php'); ?>
