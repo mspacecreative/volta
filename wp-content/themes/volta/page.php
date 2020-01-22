@@ -103,6 +103,11 @@ get_header(); ?>
 	if ( $url && $supertitle ) {
 		echo '<div class="post-header" style="background-image: url(' . $url . '); background-position: center;"><div class="post-header-overlay"></div><div class="super-title-container"><div class="default-padding super-title"><h4>' . $supertitle . '</h4></div></div></div>';
 	} ?>
+	<?php elseif ( has_post_thumbnail( $post->ID ) ):
+	$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+	if ( $url ) {
+		echo '<div class="post-header" style="background-image: url(' . $url . '); background-position: center;"><div class="post-header-overlay"></div></div>';
+	} ?>
 	<?php elseif ( get_field('featured_image_alignment') == 'top' ) : ?>
 	<div class="post-header default" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/header.jpg'); background-position: center;"><div class="post-header-overlay"></div>
 		<?php if ( get_field('super_title') ) : ?>
