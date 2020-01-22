@@ -37,9 +37,9 @@ if ( $loop->have_posts() ) : ?>
 			<span class="close-button desktop"></span>
 			<?php the_content();
 			
-			$file = get_field('file');
+			$file = get_field('file', $post->ID);
 			if ( $file ) : ?>
-			    <p><a href="<?php the_field('file'); ?>" >Download High Res Headshot</a></p>
+			    <p><a href="<?php the_field('file', $post->ID); ?>" >Download High Res Headshot</a></p>
 			<?php endif; ?>
 	
 		</div>
