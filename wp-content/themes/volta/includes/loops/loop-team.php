@@ -38,9 +38,8 @@ if ( $loop->have_posts() ) : ?>
 			<?php the_content();
 			
 			$file = get_field('file');
-			if( $file ):
-			    $url = wp_get_attachment_url( $file ); ?>
-				<p><a href="<?php echo esc_html($url); ?>" >Download High Res Headshot</a></p>
+			if ( $file ) : ?>
+			    <p><a href="<?php the_field('file'); ?>" >Download High Res Headshot</a></p>
 			<?php endif; ?>
 	
 		</div>
