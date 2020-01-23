@@ -215,33 +215,25 @@ button {
 	padding-top: 10px;
 }
 
-.filters-button-group.fixed {
-    width: 100%;
-    left: 0;
-    background-color: #fff;
-    position: fixed;
-    box-shadow: 0 10px 15px #999;
-}
-
-.filters-button-group button {
-	padding: 10px 15px;
-    border: none;
-    background: #d9d9d9;
-    margin: 0 5px 10px;
-	font-size: 14px;
-}
-
 .mobile-filter {
    display: none;
    padding: 15px 0;
    text-align: center;
 }
 
-.mobile-filter button {
+.mobile-filter button,  {
     font-size: 18px;
-    padding: 10px 15px;
-    background-color: #000;
     line-height: 20px;
+}
+
+.filters-button-group button {
+	padding: 10px 15px;
+	border: none;
+	background-color: #000;
+	margin: 0 0 10px;
+}
+
+.filters-button-group button a {
 	color: #fff;
 }
 

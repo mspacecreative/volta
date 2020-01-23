@@ -15,4 +15,15 @@
 		});
 	});
 	
+	$('.mobile-filter button').click(function() {
+	    $(this).parent().siblings('.filters-button-group').slideToggle();
+		$(this).toggleClass('open');
+			
+		if ( $('.mobile-filter button').hasClass('open') ) {
+			$(this).html('Close');
+		} else {
+			$(this).html('Filter');
+		}
+	});
+	
 })(jQuery);
