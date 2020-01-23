@@ -1,7 +1,7 @@
-<?php if ( get_field('hide_block_hide_block') ): ?>
+<?php if ( get_field('hide_block_50') ): ?>
 
 	<!-- Intro section -->
-	<section id="intro" class="tiles shadow" style="display: none;">
+	<section class="intro tiles shadow" style="display: none;">
 		
 		<?php if( have_rows('left_column') ): ?>
 		<?php while( have_rows('left_column') ): the_row(); ?>
@@ -67,7 +67,7 @@
 <?php else : ?>
 
 	<!-- Intro section -->
-	<section id="intro" class="tiles shadow">
+	<section class="intro tiles shadow">
 		
 		<?php if( have_rows('left_column') ): ?>
 		<?php while( have_rows('left_column') ): the_row(); ?>
@@ -133,16 +133,16 @@
 <?php endif; ?>
 
 <style>
-	#intro article.green:before {
+	.intro article.green:before {
 		background-color: #00dbb6;
 	}
-	#intro article.black:before {
+	.intro article.black:before {
 		background-color: #000;
 	}
-	#intro article.white:before {
+	.intro article.white:before {
 		background-color: #fff;
 	}
-	#intro article.white, #intro article.white h3 {
+	.intro article.white, #intro article.white h3 {
 		color: #000;
 	}
 </style>

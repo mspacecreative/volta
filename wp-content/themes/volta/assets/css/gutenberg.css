@@ -6,3 +6,6 @@
 	margin: 0 !important;
 	max-width: none !important;
 }
+.editor-styles-wrapper .dark {
+	color: #fff!important;
+}
