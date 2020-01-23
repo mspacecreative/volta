@@ -221,9 +221,12 @@ button {
    text-align: center;
 }
 
-.mobile-filter button,  {
+.mobile-filter button {
     font-size: 18px;
     line-height: 20px;
+    border: none;
+    background-color: #000;
+	color: #fff;
 }
 
 .filters-button-group button {
@@ -234,8 +237,16 @@ button {
 	font-size: 14px;
 }
 
+.filters-button-group button:hover {
+	background-color: #999;
+}
+
 .filters-button-group button a {
 	color: #fff;
+}
+
+.mobile-filter ~ button-group {
+	display: none;
 }
 
 @media (max-width: 400px) {
