@@ -258,6 +258,75 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'center' && $bgcolour ):
 
 	if( have_rows('two_column_layout') ): ?>
 	
+	<?php if ( $hideblock ) : ?>
+	<div class="columns-container" style="background-color: <?php the_field('column_background_colour'); ?>; display: none;">
+		
+		<div style="max-width: 1600px; margin: auto;">
+			<div class="display-flex extra-top-bottom-padding top-margin align_items_center">
+		
+				<?php if ( get_field('heading') ): ?>
+					<h2 class="width-100"><?php the_field('heading'); ?></h2>
+				<?php endif; ?>
+				
+				<?php while( have_rows('two_column_layout') ): the_row(); ?>
+				
+					<?php if( have_rows('left_column') ): ?>
+					<?php while( have_rows('left_column') ): the_row(); ?>
+				
+					<div class="column-container two_column">
+						<?php
+						$contenttype = get_sub_field('column_left_content_type' ); 
+						
+						if ( $contenttype == 'text' ):
+						the_sub_field('left_column_text');
+						
+						elseif ( $contenttype == 'image' ):
+						$image = get_sub_field('left_column_image');
+						$size = 'large';
+						
+						if ( $image ): ?>
+							<?php echo wp_get_attachment_image( $image, $size ); ?>
+						<?php endif;
+						
+						endif;
+						?>
+					</div>
+					
+					<?php endwhile;
+					endif; ?>
+					
+					<?php if( have_rows('right_column') ): ?>
+					<?php while( have_rows('right_column') ): the_row(); ?>
+					
+					<div class="column-container two_column">
+						<?php
+						$contenttype = get_sub_field('column_right_content_type' ); 
+							
+						if ( $contenttype == 'text' ):
+						the_sub_field('right_column_text');
+							
+						elseif ( $contenttype == 'image' ):
+						$image = get_sub_field('right_column_image');
+						$size = 'large';
+						
+						if ( $image ): ?>
+							<?php echo wp_get_attachment_image( $image, $size ); ?>
+						<?php endif;
+						
+						endif;
+						?>
+					</div>
+						
+					<?php endwhile;
+					endif; ?>
+				
+				<?php endwhile; ?>
+				
+			</div>
+		</div>
+		
+	</div>
+	<?php else : ?>
 	<div class="columns-container" style="background-color: <?php the_field('column_background_colour'); ?>;">
 		
 		<div style="max-width: 1600px; margin: auto;">
@@ -325,8 +394,9 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'center' && $bgcolour ):
 		</div>
 		
 	</div>
-	
 	<?php endif;
+	
+	endif;
 	
 elseif ( $layouttype == 'two' && $verticalalignment == 'center' ):
 
