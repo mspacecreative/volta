@@ -1,4 +1,4 @@
-<?php if ( get_field('hide_block') ): ?>
+<?php if ( get_field('hide_block_hide_block') ): ?>
 
 	<!-- Intro section -->
 	<section id="intro" class="tiles shadow" style="display: none;">
