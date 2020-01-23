@@ -230,7 +230,8 @@ button {
 	padding: 10px 15px;
 	border: none;
 	background-color: #000;
-	margin: 0 0 10px;
+	margin: 0 5px 10px;
+	font-size: 14px;
 }
 
 .filters-button-group button a {
@@ -241,12 +242,18 @@ button {
     .mobile-filter {
         display: block;
     }
+    .filters-button-group button {
+    	margin: 0 0 10px;
+    }
 }
 
 @media (max-width: 812px) and (orientation: landscape) {
     .mobile-filter {
         display: block;
     }
+	.filters-button-group button {
+		margin: 0 0 10px;
+	}
 }
 
 .mobile-filter > button.open:after {
