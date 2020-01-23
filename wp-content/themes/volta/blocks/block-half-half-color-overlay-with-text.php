@@ -1,4 +1,4 @@
-<?php if ( get_field('hide_block_50') ): ?>
+<?php if ( get_field('hide_block_50_hide_block_50') ): ?>
 
 	<!-- Intro section -->
 	<section class="intro tiles shadow" style="display: none;">

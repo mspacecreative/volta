@@ -1753,7 +1753,7 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 		border-bottom: 5px solid #fff;
 	}
 	
-	#intro article:first-child {
+	.intro article:first-child {
 		border-right: 5px solid #fff;
 	}
 	
@@ -4506,7 +4506,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.tiles .tall-image {
 		min-height: 300px;
 	}
-	#intro article:first-child {
+	.intro article:first-child {
 		border-right: none;
 		border-bottom: 5px solid #fff;
 	}
@@ -4546,7 +4546,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.top-padding {
 		padding: 4em 3em 0;
 	}
-	#intro article:first-child {
+	.intro article:first-child {
 		border-right: none;
 		border-bottom: 5px solid #fff;
 	}
