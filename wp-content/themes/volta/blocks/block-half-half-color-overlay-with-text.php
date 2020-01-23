@@ -1,4 +1,4 @@
-<?php $hideblock = get_field('hide_block_50_hide_block_50'); ?>
+<?php $hideblock = get_field('hide_block_50_hide_block'); ?>
 
 <!-- Intro section -->
 <section class="intro tiles shadow">
