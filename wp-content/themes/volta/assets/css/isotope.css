@@ -217,7 +217,7 @@ button {
 
 .mobile-filter {
    display: none;
-   padding: 15px 0;
+   padding: 25px 0;
    text-align: center;
 }
 
@@ -268,7 +268,9 @@ button {
 }
 
 .mobile-filter > button.open:after {
-	content: '\f00d';
-	font-family: fontAwesome;
+	content: '';
 	margin-left: 10px;
+	background-image: url(../../img/icons/close-white.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
