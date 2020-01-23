@@ -195,7 +195,7 @@ get_header(); ?>
 				?>
 			</div>
 			<?php else : ?>
-			<div class="inner boxed">
+			<div class="inner">
 				<?php 
 				if ( have_posts() ) {
 					while ( have_posts() ) {
