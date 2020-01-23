@@ -118,6 +118,9 @@ get_header(); ?>
 		echo '<div class="post-header default" style="background-image: url(' . get_template_directory_uri() . '/img/header.jpg); background-position: center;"><div class="post-header-overlay"></div>
 		</div>';
 	} ?>
+	<?php elseif ( $url ) :
+		echo '<div class="post-header" style="background-image: url(' . $url . '); background-position: center;"><div class="post-header-overlay"></div></div>';
+	endif; ?>
 	<?php else : ?>
 		<div class="post-header default" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/header.jpg); background-position: center;"><div class="post-header-overlay"></div>
 		</div>
