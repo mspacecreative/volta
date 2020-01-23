@@ -2,7 +2,7 @@
 $layouttype = get_field('layout_type');
 $verticalalignment = get_field('vertical_alignment');
 $bgcolour = get_field('column_background_colour');
-$hideblock = get_field('hide_block');
+$hideblock = get_field('hide_block_hide_block');
 
 if ( $layouttype == 'one' && $verticalalignment == 'top' ):	
 	
