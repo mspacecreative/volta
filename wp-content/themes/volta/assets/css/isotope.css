@@ -244,6 +244,7 @@ button {
 
 .filters-button-group button a {
 	color: #fff;
+	display: block;
 }
 
 @media (max-width: 400px) {
