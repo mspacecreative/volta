@@ -468,6 +468,8 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'center' ):
 	</div>
 	<?php endif;
 	
+	endif;
+	
 elseif ( $layouttype == 'two' && $verticalalignment == 'bottom' && $bgcolour ):
 
 	if( have_rows('two_column_layout') ): ?>
