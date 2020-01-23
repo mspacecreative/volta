@@ -6,99 +6,55 @@ $hideblock = get_field('hide_block');
 
 if ( $layouttype == 'one' && $verticalalignment == 'top' ):	
 	
-	if( have_rows('variable_columns') ):
+	if( have_rows('variable_columns') ): ?>
 	
-		if ( $hideblock ) : ?>
-		<div class="columns-container" style="display: none;">
+	<div class="columns-container">
+		
+		<div style="max-width: 1600px; margin: auto;">
+			<div class="extra-top-bottom-padding display-flex flex-wrap top-bottom-margin align_items_top">
+				<?php if ( get_field('heading') ): ?>
+					<h2 class="width-100"><?php the_field('heading'); ?></h2>
+				<?php endif; ?>
 				
-			<div style="max-width: 1600px; margin: auto;">
-				<div class="extra-top-bottom-padding display-flex flex-wrap top-bottom-margin align_items_top">
-					<?php if ( get_field('heading') ): ?>
-						<h2 class="width-100"><?php the_field('heading'); ?></h2>
-					<?php endif; ?>
-						
-					<?php while( have_rows('variable_columns') ): the_row(); ?>
-						
-					<div class="column-container one_column">
-						<?php the_sub_field('column_content'); ?>
-					</div>
-						
-					<?php endwhile; ?>
+				<?php while( have_rows('variable_columns') ): the_row(); ?>
+				
+				<div class="column-container one_column">
+					<?php the_sub_field('column_content'); ?>
 				</div>
+				
+				<?php endwhile; ?>
 			</div>
-				
 		</div>
-		<?php else : ?>
-		<div class="columns-container">
-				
-			<div style="max-width: 1600px; margin: auto;">
-				<div class="extra-top-bottom-padding display-flex flex-wrap top-bottom-margin align_items_top">
-					<?php if ( get_field('heading') ): ?>
-						<h2 class="width-100"><?php the_field('heading'); ?></h2>
-					<?php endif; ?>
-						
-					<?php while( have_rows('variable_columns') ): the_row(); ?>
-						
-					<div class="column-container one_column">
-						<?php the_sub_field('column_content'); ?>
-					</div>
-						
-					<?php endwhile; ?>
-				</div>
-			</div>
-				
-		</div>
-		<?php endif;
+		
+	</div>
 	
-	endif;
+	<?php endif;
 	
 elseif ( $layouttype == 'one' && $verticalalignment == 'center' && $bgcolour ):
 
-	if( have_rows('variable_columns') ):
+	if( have_rows('variable_columns') ): ?>
 	
-		if ( $hideblock ) : ?>
-		<div class="columns-container" style="display: none;">
-			
-			<div style="max-width: 1600px; margin: auto;">
-				<div class="extra-top-bottom-padding display-flex flex-wrap top-bottom-margin align_items_center">
-					<?php if ( get_field('heading') ): ?>
-						<h2 class="width-100"><?php the_field('heading'); ?></h2>
-					<?php endif; ?>
-					
-					<?php while( have_rows('variable_columns') ): the_row(); ?>
-					
-					<div class="column-container one_column">
-						<?php the_sub_field('column_content'); ?>
-					</div>
-					
-					<?php endwhile; ?>
+	<div class="columns-container">
+		
+		<div style="max-width: 1600px; margin: auto;">
+			<div class="extra-top-bottom-padding display-flex flex-wrap top-bottom-margin align_items_center">
+				<?php if ( get_field('heading') ): ?>
+					<h2 class="width-100"><?php the_field('heading'); ?></h2>
+				<?php endif; ?>
+				
+				<?php while( have_rows('variable_columns') ): the_row(); ?>
+				
+				<div class="column-container one_column">
+					<?php the_sub_field('column_content'); ?>
 				</div>
+				
+				<?php endwhile; ?>
 			</div>
-			
 		</div>
-		<?php else : ?>
-		<div class="columns-container">
-			
-			<div style="max-width: 1600px; margin: auto;">
-				<div class="extra-top-bottom-padding display-flex flex-wrap top-bottom-margin align_items_center">
-					<?php if ( get_field('heading') ): ?>
-						<h2 class="width-100"><?php the_field('heading'); ?></h2>
-					<?php endif; ?>
-					
-					<?php while( have_rows('variable_columns') ): the_row(); ?>
-					
-					<div class="column-container one_column">
-						<?php the_sub_field('column_content'); ?>
-					</div>
-					
-					<?php endwhile; ?>
-				</div>
-			</div>
-			
-		</div>
-		<?php endif;
+		
+	</div>
 	
-	endif;
+	<?php endif;
 	
 elseif ( $layouttype == 'one' && $verticalalignment == 'center' ):
 
@@ -374,145 +330,143 @@ elseif ( $layouttype == 'two' && $verticalalignment == 'center' && $bgcolour ):
 	
 elseif ( $layouttype == 'two' && $verticalalignment == 'center' ):
 
-	if( have_rows('two_column_layout') ):
+	if( have_rows('two_column_layout') ): ?>
 	
-		if ( $hideblock ) : ?>
-		<div class="columns-container" style="display: none;">
-			
-			<div style="max-width: 1600px; margin: auto;">
-				<div class="display-flex flex-wrap top-bottom-padding top-bottom-margin align_items_center">
-			
-					<?php if ( get_field('heading') ): ?>
-						<h2 class="width-100"><?php the_field('heading'); ?></h2>
-					<?php endif; ?>
-					
-					<?php while( have_rows('two_column_layout') ): the_row(); ?>
-					
-						<?php if( have_rows('left_column') ): ?>
-						<?php while( have_rows('left_column') ): the_row(); ?>
-					
-						<div class="column-container two_column">
-							<?php
-							$contenttype = get_sub_field('column_left_content_type' ); 
-							
-							if ( $contenttype == 'text' ):
-							the_sub_field('left_column_text');
-							
-							elseif ( $contenttype == 'image' ):
-							$image = get_sub_field('left_column_image');
-							$size = 'large';
-							
-							if ( $image ): ?>
-								<?php echo wp_get_attachment_image( $image, $size ); ?>
-							<?php endif;
-							
-							endif;
-							?>
-						</div>
+	<?php if ( $hideblock ) : ?>
+	<div class="columns-container" style="display: none;">
+		
+		<div style="max-width: 1600px; margin: auto;">
+			<div class="display-flex flex-wrap top-bottom-padding top-bottom-margin align_items_center">
+		
+				<?php if ( get_field('heading') ): ?>
+					<h2 class="width-100"><?php the_field('heading'); ?></h2>
+				<?php endif; ?>
+				
+				<?php while( have_rows('two_column_layout') ): the_row(); ?>
+				
+					<?php if( have_rows('left_column') ): ?>
+					<?php while( have_rows('left_column') ): the_row(); ?>
+				
+					<div class="column-container two_column">
+						<?php
+						$contenttype = get_sub_field('column_left_content_type' ); 
 						
-						<?php endwhile;
-						endif; ?>
+						if ( $contenttype == 'text' ):
+						the_sub_field('left_column_text');
 						
-						<?php if( have_rows('right_column') ): ?>
-						<?php while( have_rows('right_column') ): the_row(); ?>
+						elseif ( $contenttype == 'image' ):
+						$image = get_sub_field('left_column_image');
+						$size = 'large';
 						
-						<div class="column-container two_column">
-							<?php
-							$contenttype = get_sub_field('column_right_content_type' ); 
-								
-							if ( $contenttype == 'text' ):
-							the_sub_field('right_column_text');
-								
-							elseif ( $contenttype == 'image' ):
-							$image = get_sub_field('right_column_image');
-							$size = 'large';
-							
-							if ( $image ): ?>
-								<?php echo wp_get_attachment_image( $image, $size ); ?>
-							<?php endif;
-							
-							endif;
-							?>
-						</div>
-							
-						<?php endwhile;
-						endif; ?>
+						if ( $image ): ?>
+							<?php echo wp_get_attachment_image( $image, $size ); ?>
+						<?php endif;
+						
+						endif;
+						?>
+					</div>
 					
-					<?php endwhile; ?>
-				</div>
+					<?php endwhile;
+					endif; ?>
+					
+					<?php if( have_rows('right_column') ): ?>
+					<?php while( have_rows('right_column') ): the_row(); ?>
+					
+					<div class="column-container two_column">
+						<?php
+						$contenttype = get_sub_field('column_right_content_type' ); 
+							
+						if ( $contenttype == 'text' ):
+						the_sub_field('right_column_text');
+							
+						elseif ( $contenttype == 'image' ):
+						$image = get_sub_field('right_column_image');
+						$size = 'large';
+						
+						if ( $image ): ?>
+							<?php echo wp_get_attachment_image( $image, $size ); ?>
+						<?php endif;
+						
+						endif;
+						?>
+					</div>
+						
+					<?php endwhile;
+					endif; ?>
+				
+				<?php endwhile; ?>
 			</div>
-			
 		</div>
-		<?php else : ?>
-		<div class="columns-container">
-			
-			<div style="max-width: 1600px; margin: auto;">
-				<div class="display-flex flex-wrap top-bottom-padding top-bottom-margin align_items_center">
-			
-					<?php if ( get_field('heading') ): ?>
-						<h2 class="width-100"><?php the_field('heading'); ?></h2>
-					<?php endif; ?>
-					
-					<?php while( have_rows('two_column_layout') ): the_row(); ?>
-					
-						<?php if( have_rows('left_column') ): ?>
-						<?php while( have_rows('left_column') ): the_row(); ?>
-					
-						<div class="column-container two_column">
-							<?php
-							$contenttype = get_sub_field('column_left_content_type' ); 
-							
-							if ( $contenttype == 'text' ):
-							the_sub_field('left_column_text');
-							
-							elseif ( $contenttype == 'image' ):
-							$image = get_sub_field('left_column_image');
-							$size = 'large';
-							
-							if ( $image ): ?>
-								<?php echo wp_get_attachment_image( $image, $size ); ?>
-							<?php endif;
-							
-							endif;
-							?>
-						</div>
+		
+	</div>
+	<?php else : ?>
+	<div class="columns-container">
+		
+		<div style="max-width: 1600px; margin: auto;">
+			<div class="display-flex flex-wrap top-bottom-padding top-bottom-margin align_items_center">
+		
+				<?php if ( get_field('heading') ): ?>
+					<h2 class="width-100"><?php the_field('heading'); ?></h2>
+				<?php endif; ?>
+				
+				<?php while( have_rows('two_column_layout') ): the_row(); ?>
+				
+					<?php if( have_rows('left_column') ): ?>
+					<?php while( have_rows('left_column') ): the_row(); ?>
+				
+					<div class="column-container two_column">
+						<?php
+						$contenttype = get_sub_field('column_left_content_type' ); 
 						
-						<?php endwhile;
-						endif; ?>
+						if ( $contenttype == 'text' ):
+						the_sub_field('left_column_text');
 						
-						<?php if( have_rows('right_column') ): ?>
-						<?php while( have_rows('right_column') ): the_row(); ?>
+						elseif ( $contenttype == 'image' ):
+						$image = get_sub_field('left_column_image');
+						$size = 'large';
 						
-						<div class="column-container two_column">
-							<?php
-							$contenttype = get_sub_field('column_right_content_type' ); 
-								
-							if ( $contenttype == 'text' ):
-							the_sub_field('right_column_text');
-								
-							elseif ( $contenttype == 'image' ):
-							$image = get_sub_field('right_column_image');
-							$size = 'large';
-							
-							if ( $image ): ?>
-								<?php echo wp_get_attachment_image( $image, $size ); ?>
-							<?php endif;
-							
-							endif;
-							?>
-						</div>
-							
-						<?php endwhile;
-						endif; ?>
+						if ( $image ): ?>
+							<?php echo wp_get_attachment_image( $image, $size ); ?>
+						<?php endif;
+						
+						endif;
+						?>
+					</div>
 					
-					<?php endwhile; ?>
-				</div>
+					<?php endwhile;
+					endif; ?>
+					
+					<?php if( have_rows('right_column') ): ?>
+					<?php while( have_rows('right_column') ): the_row(); ?>
+					
+					<div class="column-container two_column">
+						<?php
+						$contenttype = get_sub_field('column_right_content_type' ); 
+							
+						if ( $contenttype == 'text' ):
+						the_sub_field('right_column_text');
+							
+						elseif ( $contenttype == 'image' ):
+						$image = get_sub_field('right_column_image');
+						$size = 'large';
+						
+						if ( $image ): ?>
+							<?php echo wp_get_attachment_image( $image, $size ); ?>
+						<?php endif;
+						
+						endif;
+						?>
+					</div>
+						
+					<?php endwhile;
+					endif; ?>
+				
+				<?php endwhile; ?>
 			</div>
-			
 		</div>
-		<?php endif;
-	
-	endif;
+		
+	</div>
+	<?php endif;
 	
 elseif ( $layouttype == 'two' && $verticalalignment == 'bottom' && $bgcolour ):
 
