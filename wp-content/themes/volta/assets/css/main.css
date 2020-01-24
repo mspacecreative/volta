@@ -4257,7 +4257,7 @@ body #mc_embed_signup form {
 	margin: auto;
 }
 .super-title-container:before {
-	background: linear-gradient(90deg, rgba(0,0,0,.5) 40%, rgba(0,0,0,0));
+	background: linear-gradient(90deg, rgba(0,0,0,.5) 30%, rgba(0,0,0,0));
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -4272,14 +4272,12 @@ body #mc_embed_signup form {
 	position: relative;
 }
 .super-title h4 {
-	max-width: 500px;
-}
-.super-title h4 {
 	letter-spacing: 5px;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 20px;
 	font-weight: lighter;
+	max-width: 500px;
 }
 .classic-block-wrap {
 	padding: 2em 0 4em;
