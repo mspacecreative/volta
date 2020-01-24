@@ -4272,6 +4272,9 @@ body #mc_embed_signup form {
 	position: relative;
 }
 .super-title h4 {
+	max-width: 500px;
+}
+.super-title h4 {
 	letter-spacing: 5px;
 	color: #fff;
 	text-transform: uppercase;
