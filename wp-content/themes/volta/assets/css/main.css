@@ -4257,7 +4257,7 @@ body #mc_embed_signup form {
 	margin: auto;
 }
 .super-title-container:before {
-	background: linear-gradient(0deg, rgba(0,0,0,.5) 40%, rgba(0,0,0,0));
+	background: linear-gradient(90deg, rgba(0,0,0,.5) 40%, rgba(0,0,0,0));
 	position: absolute;
 	top: 0;
 	left: 0;
