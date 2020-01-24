@@ -6,6 +6,6 @@
 	margin: 0 !important;
 	max-width: none !important;
 }
-.editor-styles-wrapper .dark {
+.editor-styles-wrapper .dark, .acf-icon.dark {
 	color: #fff!important;
 }
