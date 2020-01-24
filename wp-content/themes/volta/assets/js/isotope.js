@@ -22,7 +22,7 @@
 		if ( $('.mobile-filter button').hasClass('open') ) {
 			$(this).html('Close');
 		} else {
-			$(this).html('Filter');
+			$(this).html('Filter by category');
 		}
 	});
 	
