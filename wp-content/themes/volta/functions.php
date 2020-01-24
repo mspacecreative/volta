@@ -150,20 +150,17 @@ function footerScripts() {
 	wp_register_script('slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), null, true);
 	wp_enqueue_script('slick');
 	
-	wp_register_script('scripts', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), null, true);
-	wp_enqueue_script('scripts');
-	
 	wp_register_script( 'isotope-cdn', 'https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js', array( 'jquery' ), null, true );
 	wp_enqueue_script('isotope-cdn');
 	
 	wp_register_script( 'isotope-images', 'https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js', array( 'jquery' ), null, true );
 	wp_enqueue_script('isotope-images');
 	
-	wp_register_script( 'isotope-script', get_template_directory_uri() . '/assets/js/isotope.js', array( 'jquery' ), null, true );
-	wp_enqueue_script('isotope-script');
-	
 	wp_register_script('fontawesome', 'https://use.fontawesome.com/6ccd600e51.js', array('jquery'), null, true);
 	wp_enqueue_script('fontawesome');
+	
+	wp_register_script('scripts', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), null, true);
+	wp_enqueue_script('scripts');
 }
 
 // Register HTML5 Blank Navigation
