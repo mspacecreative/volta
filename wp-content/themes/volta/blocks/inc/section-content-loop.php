@@ -461,6 +461,30 @@ elseif ( $width && $padding == 'both' ):
 	</div>
 	<?php endif;
 	
+elseif ( $innerpadding && $padding == 'both' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="extra-top-bottom-padding clear">
+		
+		<?php the_field('content_editor'); ?>
+		
+		<?php include('content-cta-button-light.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $innerpadding ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="extra-top-bottom-padding clear">
+		
+		<?php the_field('content_editor'); ?>
+		
+		<?php include('content-cta-button-light.php'); ?>
+		
+	</div>
+	<?php endif;
+
 elseif ( $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
