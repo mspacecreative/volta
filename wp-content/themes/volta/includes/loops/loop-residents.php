@@ -44,7 +44,9 @@
 				</div>
 				<div class="resident-card-content">
 					<h3><?php the_title(); ?></h3>
-					<p><?php echo esc_html_e('Focus: '); the_field('focus'); ?></p>
+					<?php if ( get_field('focus', $post->ID) ): ?>
+					<p><?php echo esc_html_e('Focus: '); the_field('focus', $post->ID); ?></p>
+					<?php endif; ?>
 					<?php
 					if( has_excerpt() ) { 
 						echo '<p>' . the_excerpt() . '</p>';
