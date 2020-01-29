@@ -4598,6 +4598,12 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.home #nav {
 		display: none;
 	}
+	.columns-container .display-flex {
+		flex-direction: column;
+	}
+	.columns-container .column-container:first-child {
+		margin-bottom: 25px;
+	}
 	.resident-container:nth-child(2n) {
 		margin-right: 0;
 	}
