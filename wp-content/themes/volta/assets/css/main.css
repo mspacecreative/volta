@@ -4575,6 +4575,12 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.home #nav {
 		display: none;
 	}
+	.residents-container {
+		flex-direction: column;
+	}
+	.resident-container {
+		margin-bottom: 5%;
+	}
 	.post-title-container {
 		padding: 5px 1em 0;
 		margin: -35px auto 0;
