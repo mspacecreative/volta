@@ -4604,6 +4604,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.columns-container .column-container:first-child {
 		margin-bottom: 25px;
 	}
+	.columns-container .column-container:first-child {
+		margin-bottom: 25px;
+	}
 	.resident-container:nth-child(2n) {
 		margin-right: 0;
 	}
@@ -4787,12 +4790,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 						ul.menu li:first-child {
 							padding-top: 0;
 						}
-	.columns-container .column-container:first-child > img {
-		margin-bottom: 20px;
-	}
-	.columns-container .column-container:last-child > img {
-		margin-top: 20px;
-	}
+	
 	.stickymenu-inner {
 		padding: 0 2em;
 	}
