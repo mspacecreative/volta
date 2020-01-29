@@ -14,27 +14,26 @@ if ( $loop->have_posts() ) :
 			<section class="banner testimonial_container light-grey-bg">
 				<article class="width-800 default-padding align-center">
 			
-					<?php foreach ( $post_objects as $post ) {
+					<?php foreach ( $post_objects as $post ) :
 					
-					$object_id = $post->ID;
 					setup_postdata( $post );
 					
 					if ( has_post_thumbnail() ):
-						echo get_the_post_thumbnail( $object_id, array(200,200) );
+						echo get_the_post_thumbnail( array(200,200) );
 					endif; ?>
 					
-					<h4><?php echo esc_html( get_the_title( $object_id ) ); ?></h4>
+					<h4><?php echo esc_html( get_the_title() ); ?></h4>
 					
 					<p style="margin-bottom: 1em;">
-						<span class="testimonial_position"><?php the_field( 'title__position', $object_id ); ?></span>
+						<span class="testimonial_position"><?php the_field( 'title__position'); ?></span>
 						
 						<?php esc_html_e(' / ');
 						
-						if ( have_rows('company_details', $object_id ) ): 
-						while ( have_rows('company_details', $object_id ) ): the_row();
+						if ( have_rows('company_details') ): 
+						while ( have_rows('company_details') ): the_row();
 						
-						$companyname = get_sub_field('company', $object_id );
-						$sitelink = get_sub_field('website_link', $object_id );
+						$companyname = get_sub_field('company');
+						$sitelink = get_sub_field('website_link');
 						
 						if ( $companyname && $sitelink ) {
 							echo '<span class="testimonial_company"><a href="' . $sitelink . '" target="_blank">' . $companyname . '</a></span>';
@@ -50,7 +49,7 @@ if ( $loop->have_posts() ) :
 						<span style="font-style: italic;" class="testimonial-text"><?php the_content(); ?></span>
 					<i class="fa fa-quote-right" style="display: block; margin: 15px 0 0;"></i>
 					
-					<?php } ?>
+					<?php endforeach; ?>
 					
 				</article>
 			</section>
