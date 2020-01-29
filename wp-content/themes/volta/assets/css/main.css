@@ -3555,6 +3555,9 @@ img {
 	margin: auto;
 	max-width: 200px;
 }
+.slick-slide {
+	outline: none;
+}
 .logo-image-wrap {
 	width: 150px;
 	height: 60px;
