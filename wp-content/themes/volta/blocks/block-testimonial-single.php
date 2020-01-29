@@ -20,10 +20,10 @@ if ( $loop->have_posts() ) :
 						<?php foreach ( $post_objects as $post ) : ?>
 						
 						<?php if ( has_post_thumbnail() ):
-							echo get_the_post_thumbnail( $object_id, array(200,200) );
+							echo get_the_post_thumbnail( $post->ID, array(200,200) );
 						endif; ?>
 						
-						<h4><?php echo esc_html( get_the_title() ); ?></h4>
+						<h4><?php echo esc_html( get_the_title( $post->ID ) ); ?></h4>
 						
 						<p style="margin-bottom: 1em;">
 							<span class="testimonial_position"><?php the_field( 'title__position', $post->ID ); ?></span>
