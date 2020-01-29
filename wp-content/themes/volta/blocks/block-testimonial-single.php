@@ -1,13 +1,12 @@
 <?php
-$loop = new WP_Query( array( 
+$loop = get_posts( array( 
 	'post_type' => 'testimonials',
 	'posts_per_page' => -1,
 	)
 );
-if ( $loop->have_posts() ) :
-    while ( $loop->have_posts() ) : $loop->the_post();
-
-		$post_objects = get_field('testimonial');
+if ( $loop ) :
+    
+    $post_objects = get_field('testimonial');
 	
 		if ( $post_objects ): ?>
 			
@@ -59,6 +58,4 @@ if ( $loop->have_posts() ) :
 			</section>
 		
 		<?php endif;
-		
-	endwhile;
 endif; ?>
