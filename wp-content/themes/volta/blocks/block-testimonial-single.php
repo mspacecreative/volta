@@ -7,7 +7,7 @@ $loop = new WP_Query( array(
 if ( $loop->have_posts() ) :
     while ( $loop->have_posts() ) : $loop->the_post();
 
-		$post_object = get_field('testimonial');
+		$post_objects = get_field('testimonial');
 	
 		if ( $post_objects ): ?>
 			
