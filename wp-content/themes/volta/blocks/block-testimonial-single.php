@@ -56,7 +56,7 @@ if ( $loop->have_posts() ) :
 			</section>
 		
 		<?php endif;
-		wp_reset_postdata(); ?>
-	
-	<?php endwhile;
+		wp_reset_postdata();
+		
+	endwhile;
 endif; ?>
