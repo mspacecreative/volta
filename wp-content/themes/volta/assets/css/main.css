@@ -2727,8 +2727,6 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 
 	.carousel {
 		position: relative;
-		padding: 2em 0 2em 0;
-		margin-bottom: 0;
 	}
 
 		.carousel .forward, .carousel .backward {
@@ -3554,6 +3552,9 @@ img {
 .slick-slide img {
 	margin: auto;
 	max-width: 200px;
+}
+.carousel.slick-dotted.slick-slider {
+    margin-bottom: 0x;
 }
 .slick-slide {
 	outline: none;
