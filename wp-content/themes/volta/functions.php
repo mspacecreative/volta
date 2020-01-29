@@ -728,6 +728,14 @@ function currentResidents() {
 }
 add_shortcode( 'residents_loop', 'currentResidents' );
 
+// COHORT RESIDENTS POSTS LOOP
+function cohortResidents() {
+	ob_start();
+		get_template_part('includes/loops/loop-cohort');
+	return ob_get_clean();
+}
+add_shortcode( 'cohort_loop', 'cohortResidents' );
+
 // ALUMNI COMPANY POSTS LOOP
 function alumniCompanies() {
 	ob_start();
