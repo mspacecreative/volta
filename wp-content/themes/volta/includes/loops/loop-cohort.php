@@ -57,7 +57,7 @@
 					}
 					
 					if ( $alumnicompany ) {
-						echo '<div class="alumni-company-callout">' . _e('Volta Cohort Alumni Company') . '</div>';
+						echo '<div class="alumni-company-callout">Volta Cohort Alumni Company</div>';
 					}
 					?>
 				</div>
