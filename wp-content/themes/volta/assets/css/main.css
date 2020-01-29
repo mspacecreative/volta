@@ -4576,9 +4576,8 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		display: none;
 	}
 	.resident-container, .resident-container:nth-child(3n) {
-		flex-basis: 48%;
-		width: 48%;
-		margin-right: 4%;
+		flex-basis: 49%;
+		width: 49%;
 	}
 	.resident-container:nth-child(2n) {
 		margin-right: 0;
