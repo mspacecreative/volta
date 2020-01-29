@@ -1,9 +1,9 @@
-<?php $post_objects = get_field('testimonial'); ?>
+<?php $post_objects = get_field('testimonial');
+
+if ( $post_objects ): ?>
 <section class="banner testimonial_container light-grey-bg">
 	<article class="width-800 default-padding align-center">
 			
-		<?php if ( $post_objects ): ?>
-		
 		<div class="carousel">
 				
 			<?php foreach ( $post_objects as $post ):
@@ -11,21 +11,21 @@
 			<div>
 					
 			<?php if ( has_post_thumbnail() ):
-				echo get_the_post_thumbnail( array(200,200) );
+				echo get_the_post_thumbnail( $post->ID, array(200,200) );
 			endif; ?>
 					
-			<h4><?php echo esc_html( get_the_title() ); ?></h4>
+			<h4><?php echo esc_html( get_the_title( $post->ID ) ); ?></h4>
 					
 			<p style="margin-bottom: 1em;">
-				<span class="testimonial_position"><?php the_field( 'title__position'); ?></span>
+				<span class="testimonial_position"><?php the_field( 'title__position', $post->ID); ?></span>
 						
 				<?php esc_html_e(' / ');
 						
-				if ( have_rows('company_details') ): 
-				while ( have_rows('company_details') ): the_row();
+				if ( have_rows('company_details', $post->ID) ): 
+				while ( have_rows('company_details', $post->ID) ): the_row();
 						
-				$companyname = get_sub_field('company');
-				$sitelink = get_sub_field('website_link');
+				$companyname = get_sub_field('company', $post->ID);
+				$sitelink = get_sub_field('website_link', $post->ID);
 						
 				if ( $companyname && $sitelink ) {
 					echo '<span class="testimonial_company"><a href="' . $sitelink . '" target="_blank">' . $companyname . '</a></span>';
@@ -45,9 +45,8 @@
 			<?php endforeach; ?>
 				
 		</div>
-				
-		<?php wp_reset_postdata();
-		endif; ?>
 			
 	</article>
 </section>
+<?php wp_reset_postdata();
+endif; ?>
