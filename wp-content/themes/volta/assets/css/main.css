@@ -4152,14 +4152,6 @@ body #mc_embed_signup form {
 	left: 0;
 	z-index: 1;
 }
-@media (min-width: 1600px) {
-	#header {
-		max-height: 1000px;
-	}
-	.icon-buckets .max-width-1600 {
-		padding: 0 6em;
-	}
-}
 .single main article a {
 	font-weight: 900;
 }
@@ -5134,7 +5126,13 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	    padding: 4em 2em;
 	}
 	.row.content-bottom {
-		padding-top: 25em;
+		padding-top: 20em;
+	}
+	#header {
+		max-height: 1000px;
+	}
+	.icon-buckets .max-width-1600 {
+		padding: 0 6em;
 	}
 }
 
