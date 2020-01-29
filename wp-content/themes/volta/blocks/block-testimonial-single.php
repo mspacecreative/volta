@@ -27,7 +27,7 @@ if ( $loop->have_posts() ) :
 					<p style="margin-bottom: 1em;">
 						<span class="testimonial_position"><?php the_field( 'title__position', $object_id ); ?></span>
 						<?php esc_html_e(' / ');
-						if ( have_rows('company_details', $object_id ) ): while ( have_rows('company_details', $object_id ) ): the_row(); ?>
+						if ( have_rows('company_details') ): while ( have_rows('company_details') ): the_row(); ?>
 						<span class="testimonial_company">
 							<?php
 							$companyname = get_sub_field('company', $object_id );
