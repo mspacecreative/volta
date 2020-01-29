@@ -80,22 +80,6 @@ get_header(); ?>
 	
 	<?php get_template_part('includes/templates/header_image-page'); ?>
 	
-	<!-- post thumbnail on mobile -->
-	<div class="featured-image-mobile">
-		<?php 
-		$supertitle = get_field('super_title');
-		if ( $supertitle ) {
-			echo '<div class="default-padding super-title"><h4>' . $supertitle . '</h4></div>'; 
-		} ?>
-		<div class="post-header-overlay"></div>
-		<?php if ( has_post_thumbnail() ): ?>
-			<?php the_post_thumbnail('featured-mobile'); ?>
-		<?php else : ?>
-			<img src="<?php echo get_template_directory_uri(); ?>/img/header-mobile.jpg">
-		<?php endif; ?>
-	</div>
-	<!-- /post thumbnail on mobile -->
-	
 	<div class="post-content-container white-bg clear">
 		
 		<!-- drop shadow -->
