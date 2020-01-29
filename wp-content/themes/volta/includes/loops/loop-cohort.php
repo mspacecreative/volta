@@ -57,7 +57,7 @@
 					}
 					
 					if ( $alumnicompany ) {
-						echo '<div class="alumni-company-callout">' . the_field('alumni_company') . '</div>';
+						echo '<div class="alumni-company-callout">' . esc_html_e('Volta Cohort Alumni Company') . '</div>';
 					}
 					?>
 				</div>
