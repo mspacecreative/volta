@@ -1,7 +1,7 @@
 <?php
 $loop = new WP_Query( array( 
 	'post_type' => 'testimonials',
-	'posts_per_page' => 1,
+	'posts_per_page' => -1,
 	)
 );
 if ( $loop->have_posts() ) :
@@ -11,14 +11,16 @@ if ( $loop->have_posts() ) :
 	
 		if( $post_object ): 
 		
-			$post = $post_object;
+			$posts = $post_object;
 			$object_id = $post->ID;
-			setup_postdata( $post ); ?>
+			setup_postdata( $posts ); ?>
 			
 			<section class="banner testimonial_container light-grey-bg">
 				<article class="width-800 default-padding align-center">
 			
-					<?php if ( has_post_thumbnail() ):
+					<?php foreach ($posts as $post) {
+					
+					if ( has_post_thumbnail() ):
 						echo get_the_post_thumbnail( $object_id, array(200,200) );
 					endif; ?>
 					
@@ -48,6 +50,8 @@ if ( $loop->have_posts() ) :
 					<i class="fa fa-quote-left" style="display: block; margin: 0 0 10px;"></i>
 						<span style="font-style: italic;" class="testimonial-text"><?php the_content(); ?></span>
 					<i class="fa fa-quote-right" style="display: block; margin: 15px 0 0;"></i>
+					
+					<?php } ?>
 					
 				</article>
 			</section>
