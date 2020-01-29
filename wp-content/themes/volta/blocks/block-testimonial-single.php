@@ -36,7 +36,7 @@ if ( $loop->have_posts() ) :
 						$sitelink = get_sub_field('website_link', $object_id );
 						
 						if ( $companyname && $sitelink ) {
-							echo '<span class="testimonial_company"><a href="' . $sitelink . '" target="_blank">' . $companyname . '></a></span>';
+							echo '<span class="testimonial_company"><a href="' . $sitelink . '" target="_blank">' . $companyname . '</a></span>';
 						} elseif ( $companyname ) {
 							echo '<span class="testimonial_company">' . $companyname . '</span>';
 						}
