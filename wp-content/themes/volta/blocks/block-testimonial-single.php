@@ -50,4 +50,4 @@ if ( $post_objects ): ?>
 		</article>
 	</section>
 
-<?php endif;
+<?php endif; ?>
