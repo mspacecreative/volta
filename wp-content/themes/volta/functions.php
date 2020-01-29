@@ -464,6 +464,7 @@ remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altoget
 // Shortcodes
 add_shortcode('html5_shortcode_demo', 'html5_shortcode_demo'); // You can place [html5_shortcode_demo] in Pages, Posts now.
 add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [html5_shortcode_demo_2] in Pages, Posts now.
+add_shortcode('title_with_line_rules', 'centeredLineRulesTitle');
 
 // Shortcodes above would be nested like this -
 // [html5_shortcode_demo] [html5_shortcode_demo_2] Here's the page title! [/html5_shortcode_demo_2] [/html5_shortcode_demo]
@@ -905,4 +906,9 @@ function short_title($after = '', $length) {
 		$mytitle = implode(" ",$mytitle);
 	}
 	return $mytitle;
+}
+
+// CENTERED TITLE WITH LINE RULES ON BOTH ENDS SHORTCODE
+function centeredLineRulesTitle($atts, $content = null) {
+    return '<div class="centered-title-with-line-rules"><h2><span class="before-title"></span>' . do_shortcode($content) . '<span class="after-title"></span></h2></div>';
 }

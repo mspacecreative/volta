@@ -4112,6 +4112,29 @@ body #mc_embed_signup form {
 	position: relative;
 	display: block;
 }
+.centered-title-with-line-rules {
+	text-align: center;
+	overflow: hidden;
+}
+.centered-title-with-line-rules h2 {
+	display: inline-block;
+	position: relative;
+}
+.centered-title-with-line-rules span {
+	position: absolute;
+	height: 2px;
+	width: 1000px;
+	background-color: #000;
+	top: 50%;
+}
+.centered-title-with-line-rules .before-title {
+	right: 100%;
+	margin-right: 15px;
+}
+.centered-title-with-line-rules .after-title {
+	left: 100%;
+	margin-left: 15px;
+}
 .underlined-heading:before {
 	position: absolute;
 	height: 2px;
