@@ -4352,15 +4352,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		top: 50%;
 		transform: translateY(-50%);
 	}
-	.residents-container {
-		flex-direction: column;
-	}
-	.resident-container {
-		margin-bottom: 5%;
-		flex-basis: 100%;
-		width: 100%;
-		margin-right: 0;
-	}
 	.super-title h4 {
 		font-size: 16px;
 	}
@@ -4817,7 +4808,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.residents-container {
 		flex-direction: column;
 	}
-	.resident-container {
+	.resident-container, .resident-container:nth-child(3n), .resident-container:nth-child(2n) {
 		margin-bottom: 5%;
 		flex-basis: 100%;
 		width: 100%;
