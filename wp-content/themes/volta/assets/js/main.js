@@ -251,6 +251,7 @@
 	$('.carousel').slick({
 	    dots: true, 
 		arrows: true,
+		adaptiveHeight: true,
 	});
 	/* GENERAL */
 	// CAROUSELS

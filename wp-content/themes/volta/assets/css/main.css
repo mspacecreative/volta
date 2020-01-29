@@ -1949,6 +1949,12 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 			font-family: fontAwesome;
 			padding-right: 10px;
 		}
+		.post-content-container ul.slick-dots li:before {
+			display: none;
+		}
+		.carousel .slick-dots {
+			position: relative;
+		}
 		.post-container ul.actions li:before, .post-content-container ul.gform_fields li:before {
 			display: none;
 			padding-right: 0;
@@ -2721,7 +2727,6 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 
 	.carousel {
 		position: relative;
-		overflow: hidden;
 		padding: 2em 0 2em 0;
 		margin-bottom: 0;
 	}
@@ -3536,6 +3541,15 @@ img {
 	display: inline-block;
 	vertical-align: middle;
 	outline: none;
+}
+.carousel .slick-next, .carousel .slick-prev {
+	width: auto;
+}
+.carousel .slick-next {
+	right: -25px;
+}
+.carousel .slick-prev {
+	left: -25px;
 }
 .slick-slide img {
 	margin: auto;
