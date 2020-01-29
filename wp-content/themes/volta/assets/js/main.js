@@ -218,6 +218,7 @@
 	// Google Calendar
 	
 	// CAROUSELS
+	/* PARTNERS */
 	$('.partner-slider').slick({
 	    dots: false, 
 		arrows: false,
@@ -244,11 +245,15 @@
 		    }
 		]
 	});
+	/* PARTNERS */
 	
+	/* GENERAL */
 	$('.carousel').slick({
 	    dots: true, 
 		arrows: true,
 	});
+	/* GENERAL */
+	// CAROUSELS
 	
 	$(window).resize(function () {
 		splashHeight();

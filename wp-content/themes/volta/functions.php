@@ -120,6 +120,9 @@ function html5blank_styles()
     wp_register_style('slick-css', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1.0', 'all');
     wp_enqueue_style('slick-css');
     
+    wp_register_style('slick-theme', get_template_directory_uri() . '/assets/css/slick-theme.css', array(), '1.0', 'all');
+    wp_enqueue_style('slick-theme');
+    
     wp_register_style('isotope-css', get_template_directory_uri() . '/assets/css/isotope.css', array(), '1.0', 'all');
     wp_enqueue_style('isotope-css');
     
