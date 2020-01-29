@@ -1,16 +1,5 @@
-<!--<?php
-$loop = new WP_Query( array( 
-	'post_type' => 'testimonials',
-	'posts_per_page' => -1,
-	)
-);
-if ( $loop->have_posts() ) : ?>-->
-			
-	<section class="banner testimonial_container light-grey-bg">
+<section class="banner testimonial_container light-grey-bg">
 		<article class="width-800 default-padding align-center">
-			
-			<!--<?php
-			while ( $loop->have_posts() ) : $loop->the_post(); -->
 			
 			<?php $post_objects = get_field('testimonial');
 			
@@ -63,5 +52,3 @@ if ( $loop->have_posts() ) : ?>-->
 			
 		</article>
 	</section>
-		
-<!--<?php endif; ?>-->
