@@ -3591,7 +3591,7 @@ img {
 	margin-bottom: 0;
 }
 
-.width-800 {
+.width-800, .span-browser > div.width-800 {
 	max-width: 1080px;
 	margin-right: auto;
 	margin-left: auto;
