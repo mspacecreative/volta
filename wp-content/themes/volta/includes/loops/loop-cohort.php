@@ -57,7 +57,7 @@
 					}
 					
 					if ( $alumnicompany ) {
-						echo '<div class="alumni-company-callout">' . esc_html_e('Volta Cohort Alumni Company') . '</div>';
+						echo '<div class="alumni-company-callout">' . _e('Volta Cohort Alumni Company') . '</div>';
 					}
 					?>
 				</div>
@@ -67,3 +67,9 @@
 	endif; wp_reset_postdata();
 ?>
 </div>
+
+<style>
+	.alumni-company-callout {
+		
+	}
+</style>
