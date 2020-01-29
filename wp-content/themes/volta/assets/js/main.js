@@ -217,7 +217,7 @@
 	
 	// Google Calendar
 	
-	// Nav.
+	// CAROUSELS
 	$('.partner-slider').slick({
 	    dots: false, 
 		arrows: false,
@@ -243,6 +243,11 @@
 		      }
 		    }
 		]
+	});
+	
+	$('.carousel').slick({
+	    dots: true, 
+		arrows: true,
 	});
 	
 	$(window).resize(function () {
