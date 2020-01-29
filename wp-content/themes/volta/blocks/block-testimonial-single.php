@@ -1,64 +1,53 @@
-<?php
-$loop = new WP_Query( array( 
-	'post_type' => 'testimonials',
-	'posts_per_page' => -1,
-	)
-);
-if ( $loop->have_posts() ) :
-    while ( $loop->have_posts() ) : $loop->the_post(); ?>
+<section class="banner testimonial_container light-grey-bg">
+	<article class="width-800 default-padding align-center">
+		
+		<?php
+		$post_objects = get_field('testimonial');
+		
+		if ( $post_objects ): ?>
+
+		<div class="carousel">
+		
+			<?php foreach ( $post_objects as $post ) : ?>
+			<div>
 			
-	<section class="banner testimonial_container light-grey-bg">
-		<article class="width-800 default-padding align-center">
+			<?php if ( has_post_thumbnail() ):
+				echo get_the_post_thumbnail( $post->ID, array(200,200) );
+			endif; ?>
 			
-			<?php $post_objects = get_field('testimonial');
+			<h4><?php echo esc_html( get_the_title( $post->ID ) ); ?></h4>
 			
-			if ( $post_objects ): ?>
-	
-			<div class="carousel">
-			
-				<?php foreach ( $post_objects as $post ) : ?>
-				<div>
+			<p style="margin-bottom: 1em;">
+				<span class="testimonial_position"><?php the_field( 'title__position', $post->ID ); ?></span>
 				
-				<?php if ( has_post_thumbnail() ):
-					echo get_the_post_thumbnail( $post->ID, array(200,200) );
+				<?php esc_html_e(' / ');
+				
+				if ( have_rows('company_details', $post->ID ) ): 
+				while ( have_rows('company_details', $post->ID ) ): the_row();
+				
+				$companyname = get_sub_field('company', $post->ID );
+				$sitelink = get_sub_field('website_link', $post->ID );
+				
+				if ( $companyname && $sitelink ) {
+					echo '<span class="testimonial_company"><a href="' . $sitelink . '" target="_blank">' . $companyname . '</a></span>';
+				} elseif ( $companyname ) {
+					echo '<span class="testimonial_company">' . $companyname . '</span>';
+				}
+				
+				endwhile;
 				endif; ?>
-				
-				<h4><?php echo esc_html( get_the_title( $post->ID ) ); ?></h4>
-				
-				<p style="margin-bottom: 1em;">
-					<span class="testimonial_position"><?php the_field( 'title__position', $post->ID ); ?></span>
-					
-					<?php esc_html_e(' / ');
-					
-					if ( have_rows('company_details', $post->ID ) ): 
-					while ( have_rows('company_details', $post->ID ) ): the_row();
-					
-					$companyname = get_sub_field('company', $post->ID );
-					$sitelink = get_sub_field('website_link', $post->ID );
-					
-					if ( $companyname && $sitelink ) {
-						echo '<span class="testimonial_company"><a href="' . $sitelink . '" target="_blank">' . $companyname . '</a></span>';
-					} elseif ( $companyname ) {
-						echo '<span class="testimonial_company">' . $companyname . '</span>';
-					}
-					
-					endwhile;
-					endif; ?>
-				</p>
-				
-				<i class="fa fa-quote-left" style="display: block; margin: 0 0 10px;"></i>
-					<span style="font-style: italic;" class="testimonial-text"><?php the_content(); ?></span>
-				<i class="fa fa-quote-right" style="display: block; margin: 15px 0 0;"></i>
-				
-				</div>
-				<?php endforeach; ?>
+			</p>
+			
+			<i class="fa fa-quote-left" style="display: block; margin: 0 0 10px;"></i>
+				<span style="font-style: italic;" class="testimonial-text"><?php the_content(); ?></span>
+			<i class="fa fa-quote-right" style="display: block; margin: 15px 0 0;"></i>
 			
 			</div>
-			
-			<?php endif; ?>
-			
-		</article>
-	</section>
+			<?php endforeach; ?>
 		
-	<?php endwhile;
-endif; ?>
+		</div>
+		
+		<?php endif; ?>
+		
+	</article>
+</section>
