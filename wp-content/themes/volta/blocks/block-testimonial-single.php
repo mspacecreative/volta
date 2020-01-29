@@ -26,19 +26,22 @@ if ( $loop->have_posts() ) :
 					
 					<p style="margin-bottom: 1em;">
 						<span class="testimonial_position"><?php the_field( 'title__position', $object_id ); ?></span>
+						
 						<?php esc_html_e(' / ');
-						if ( have_rows('company_details') ): while ( have_rows('company_details') ): the_row(); ?>
-						<span class="testimonial_company">
-							<?php
-							$companyname = get_sub_field('company', $object_id );
-							$sitelink = get_sub_field('website_link', $object_id );
-							if ( $companyname && $sitelink ) {
-								echo '<a href="' . $sitelink . '" target="_blank">' . $companyname . '></a>';
-							} elseif ( $companyname ) {
-								echo $companyname;
-							} ?>
-						</span>
-						<?php endif; ?>
+						
+						if ( have_rows('company_details', $object_id ) ): 
+						while ( have_rows('company_details', $object_id ) ): the_row();
+						
+						$companyname = get_sub_field('company', $object_id );
+						$sitelink = get_sub_field('website_link', $object_id );
+						
+						if ( $companyname && $sitelink ) {
+							echo '<span class="testimonial_company"><a href="' . $sitelink . '" target="_blank">' . $companyname . '></a></span>';
+						} elseif ( $companyname ) {
+								echo '<span class="testimonial_company">' . $companyname . '</span>';
+						}
+						endwhile;
+						endif; ?>
 					</p>
 					
 					<i class="fa fa-quote-left" style="display: block; margin: 0 0 10px;"></i>
