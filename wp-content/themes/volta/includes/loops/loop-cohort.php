@@ -18,7 +18,7 @@
         foreach ( $loop as $post ) : setup_postdata( $post ); ?>
 		<div class="resident-container three_column">
 			<?php if ( get_field('alumni_company', $post->ID) ): ?>
-			<div class="grid-inner" style="padding-bottom: 6em;">
+			<div class="grid-inner" style="padding-bottom: 8em;">
 				<div class="logo-image-wrap">
 					<?php
 					$imagelogo = get_field('logo_image', $post->ID);
