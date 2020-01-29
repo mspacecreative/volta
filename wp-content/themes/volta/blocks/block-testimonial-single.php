@@ -16,8 +16,8 @@ if ( $loop->have_posts() ) :
 			
 					<div class="carousel">
 					
-						<div>
 						<?php foreach ( $post_objects as $post ) : ?>
+						<div>
 						
 						<?php if ( has_post_thumbnail() ):
 							echo get_the_post_thumbnail( $post->ID, array(200,200) );
@@ -50,8 +50,8 @@ if ( $loop->have_posts() ) :
 							<span style="font-style: italic;" class="testimonial-text"><?php the_content(); ?></span>
 						<i class="fa fa-quote-right" style="display: block; margin: 15px 0 0;"></i>
 						
-						<?php endforeach; ?>
 						</div>
+						<?php endforeach; ?>
 					
 					</div>
 					
@@ -61,4 +61,4 @@ if ( $loop->have_posts() ) :
 		<?php endif;
 		
 	endwhile;
-endif; wp_reset_postdata(); ?>
+endif; ?>
