@@ -3546,10 +3546,10 @@ img {
 	width: auto;
 }
 .carousel .slick-next {
-	right: -25px;
+	right: -40px;
 }
 .carousel .slick-prev {
-	left: -25px;
+	left: -40px;
 }
 .slick-slide img {
 	margin: auto;
