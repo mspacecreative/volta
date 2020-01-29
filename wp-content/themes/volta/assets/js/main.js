@@ -253,6 +253,11 @@
 		arrows: true,
 		adaptiveHeight: true,
 	});
+	
+	var slickDots = $('.slick-dots');
+	if ( $('.slick-track').children('.slick-slide').length < 2 ) {
+		slickDots.hide();
+	}
 	/* GENERAL */
 	// CAROUSELS
 	
