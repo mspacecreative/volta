@@ -1726,8 +1726,6 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 
 	.inline-icons article {
 		display: flex;
-		flex: 1;
-		flex-direction: row;
 		flex-wrap: wrap;
 	}
 
@@ -2681,8 +2679,6 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 
 		#footer .contact {
 			display: flex;
-			flex: 1;
-			flex-direction: row;
 			flex-wrap: wrap;
 			align-items: center;
 			margin: 2em 0 0;
@@ -3388,8 +3384,6 @@ img {
 }
 .display-flex {
 	display: flex;
-	flex: 1;
-	flex-direction: row;
 }
 .flex-wrap {
 	flex-wrap: wrap;
@@ -3425,10 +3419,13 @@ img {
 .residents-container .grid-inner .wider img {
 	max-width: 150px;
 }
+.focus-description {
+	border-top: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
+	padding: 5px 0;
+}
 .display-flex-50 {
 	display: flex;
-	flex: 1;
-	flex-direction: row;
 	flex-wrap: wrap;
 	flex-basis: 47.5%;
 	margin-right: 5%;
@@ -3450,7 +3447,6 @@ img {
 }
 .inline-icons {
 	display: flex;
-	flex: 1;
 }
 .two-third {
 	width: 82.5%;
