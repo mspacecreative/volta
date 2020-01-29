@@ -9,16 +9,15 @@ if ( $loop->have_posts() ) :
 
 		$post_object = get_field('testimonial');
 	
-		if( $post_object ): 
-		
-			$posts = $post_object;
-			$object_id = $post->ID;
-			setup_postdata( $posts ); ?>
+		if ( $post_objects ): ?>
 			
 			<section class="banner testimonial_container light-grey-bg">
 				<article class="width-800 default-padding align-center">
 			
-					<?php foreach ($posts as $post) {
+					<?php foreach ( $post_objects as $post ) {
+					
+					$object_id = $post->ID;
+					setup_postdata( $post );
 					
 					if ( has_post_thumbnail() ):
 						echo get_the_post_thumbnail( $object_id, array(200,200) );
@@ -60,4 +59,4 @@ if ( $loop->have_posts() ) :
 		wp_reset_postdata(); ?>
 	
 	<?php endwhile;
-endif; wp_reset_postdata(); ?>
+endif; ?>
