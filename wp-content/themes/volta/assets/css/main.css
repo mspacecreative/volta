@@ -3360,7 +3360,7 @@ footer {
 	z-index: 10;
 }
 h2 {
-	margin: 30px 0;
+	margin: 30px 0 15px;
 }
 .post-container .inner .two_third_col h2:first-child, .post-container .inner div div h2:first-child {
 	margin-top: 0;
@@ -3403,6 +3403,9 @@ img {
 .image-grid-container.display-flex {
 	align-items: center;
 	justify-content: center;
+}
+.residents-container {
+	margin-top: 15px;
 }
 .residents-container .grid-inner {
 	border: none;
