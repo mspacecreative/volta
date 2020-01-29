@@ -29,8 +29,8 @@ if ( $loop->have_posts() ) :
 						
 						<?php esc_html_e(' / ');
 						
-						if ( have_rows('company_details', $object_id ) ): 
-						while ( have_rows('company_details', $object_id ) ): the_row();
+						if ( have_rows('company_details') ): 
+						while ( have_rows('company_details') ): the_row();
 						
 						$companyname = get_sub_field('company', $object_id );
 						$sitelink = get_sub_field('website_link', $object_id );
@@ -38,8 +38,9 @@ if ( $loop->have_posts() ) :
 						if ( $companyname && $sitelink ) {
 							echo '<span class="testimonial_company"><a href="' . $sitelink . '" target="_blank">' . $companyname . '></a></span>';
 						} elseif ( $companyname ) {
-								echo '<span class="testimonial_company">' . $companyname . '</span>';
+							echo '<span class="testimonial_company">' . $companyname . '</span>';
 						}
+						
 						endwhile;
 						endif; ?>
 					</p>
