@@ -4421,9 +4421,12 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	max-height: 100px;
 	max-width: 200px;
 }
-@media (max-width: 812px) and (orientation:landscape) {
+@media (max-width: 850px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
+	}
+	.flex-wrap.flexbox-container {
+		flex-wrap: nowrap;
 	}
 	.super-title {
 		position: absolute;
@@ -4877,6 +4880,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 @media (max-width: 450px) {
 	.tiles .tall-image {
 		min-height: 400px;
+	}
+	.flex-wrap.flexbox-container {
+		flex-wrap: nowrap;
 	}
 	.residents-container {
 		flex-direction: column;
