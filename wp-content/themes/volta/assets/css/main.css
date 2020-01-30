@@ -4655,6 +4655,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.home #nav {
 		display: none;
 	}
+	.flex-box {
+		flex: inherit;
+	}
 	.columns-container .display-flex {
 		flex-direction: column;
 	}
