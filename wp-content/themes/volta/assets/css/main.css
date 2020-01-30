@@ -2725,8 +2725,11 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 
 /* Carousel */
 
-	.slider-carousel {
+	.carousel {
 		position: relative;
+		overflow: hidden;
+		padding: 2em 0 2em 0;
+		margin-bottom: 0;
 	}
 
 		.carousel .forward, .carousel .backward {
