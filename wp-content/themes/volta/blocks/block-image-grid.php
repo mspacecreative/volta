@@ -7,7 +7,7 @@ $images = get_field('image_grid');
 $size = 'large';
 
 	if ( $images ): ?>
-	<ul class="max-width-800 image-grid-container flex-wrap display-flex">
+	<ul class="max-width-800 image-grid-container flex-wrap display-flex width-1080">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
@@ -33,7 +33,7 @@ $images = get_field('image_grid');
 $size = 'large';
 
 	if ( $images ): ?>
-	<ul class="image-grid-container flex-wrap display-flex">
+	<ul class="image-grid-container flex-wrap display-flex width-1080">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
@@ -59,7 +59,7 @@ $images = get_field('image_grid');
 $size = 'medium';
 
 	if ( $images ): ?>
-	<ul class="max-width-800 image-grid-container flex-wrap display-flex">
+	<ul class="max-width-800 image-grid-container flex-wrap display-flex width-1080">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
@@ -85,7 +85,7 @@ $images = get_field('image_grid');
 $size = 'medium';
 
 	if ( $images ): ?>
-	<ul class="image-grid-container flex-wrap display-flex">
+	<ul class="image-grid-container flex-wrap display-flex width-1080">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
@@ -111,7 +111,7 @@ $images = get_field('image_grid');
 $size = 'medium';
 
 	if ( $images ): ?>
-	<ul class="max-width-800 image-grid-container flex-wrap display-flex">
+	<ul class="max-width-800 image-grid-container flex-wrap display-flex width-1080">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
@@ -137,7 +137,7 @@ $images = get_field('image_grid');
 $size = 'medium';
 
 	if ( $images ): ?>
-	<ul class="image-grid-container flex-wrap display-flex">
+	<ul class="image-grid-container flex-wrap display-flex width-1080">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
@@ -163,7 +163,7 @@ $images = get_field('image_grid');
 $size = 'medium';
 
 	if ( $images ): ?>
-	<ul class="image-grid-container flex-wrap display-flex">
+	<ul class="image-grid-container flex-wrap display-flex width-1080">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
@@ -189,7 +189,7 @@ $images = get_field('image_grid');
 $size = 'medium';
 
 	if ( $images ): ?>
-	<ul class="max-width-800 image-grid-container flex-wrap display-flex">
+	<ul class="max-width-800 image-grid-container flex-wrap display-flex width-1080">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
@@ -215,7 +215,7 @@ $images = get_field('image_grid');
 $size = 'medium';
 
 	if ( $images ): ?>
-	<ul class="image-grid-container flex-wrap display-flex">
+	<ul class="image-grid-container flex-wrap display-flex width-1080">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
@@ -241,7 +241,7 @@ $images = get_field('image_grid');
 $size = 'medium';
 
 	if ( $images ): ?>
-	<ul class="image-grid-container flex-wrap display-flex">
+	<ul class="image-grid-container flex-wrap display-flex width-1080">
 		
 		<?php foreach( $images as $image ): ?>
 		<li class="image-container">
