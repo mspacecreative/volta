@@ -3390,7 +3390,7 @@ img {
 	height: auto;
 }
 .display-flex {
-	display: flex;
+	display: inline-flex;
 }
 .flex-wrap {
 	flex-flow: row wrap;
