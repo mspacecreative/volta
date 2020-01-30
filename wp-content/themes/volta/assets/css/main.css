@@ -160,7 +160,7 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 	}
 	
 	.flex-box h3 {
-		font-size: 1em;
+		font-size: 20px;
 	}
 
 	h4 {
@@ -3390,7 +3390,10 @@ img {
 	height: auto;
 }
 .display-flex {
-	display: inline-flex;
+	display: flex;
+}
+.flexbox-container {
+	font-size: 0;
 }
 .flex-wrap {
 	flex-flow: row wrap;
