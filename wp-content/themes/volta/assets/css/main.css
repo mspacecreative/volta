@@ -4377,6 +4377,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 }
 .image-container img {
 	max-height: 100px;
+	max-width: 200px;
 }
 @media (max-width: 812px) and (orientation:landscape) {
 	.features .row.inline-icons {
