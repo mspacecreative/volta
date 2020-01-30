@@ -3393,7 +3393,7 @@ img {
 	display: flex;
 }
 .flex-wrap {
-	flex-wrap: wrap;
+	flex-flow: row wrap;
 }
 .columns-container.display-flex {
 	align-items: center;
@@ -5109,9 +5109,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	.shadow-cover-left, .shadow-cover-right {
 		top: 45px;
-	}
-	.flex-wrap.flexbox-block {
-		flex-wrap: unset;
 	}
 	.partner-logo-cell {
 		flex-basis: 25%;
