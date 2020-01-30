@@ -248,7 +248,7 @@
 	/* PARTNERS */
 	
 	/* GENERAL */
-	$('.carousel').slick({
+	$('.slider-carousel').slick({
 	    dots: true, 
 		arrows: true,
 		adaptiveHeight: true,

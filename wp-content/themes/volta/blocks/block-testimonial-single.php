@@ -4,7 +4,7 @@ if ( $post_objects ): ?>
 <section class="banner testimonial_container light-grey-bg">
 	<article class="width-800 default-padding align-center">
 			
-		<div class="carousel">
+		<div class="slider-carousel">
 				
 			<?php foreach ( $post_objects as $post ):
 			setup_postdata( $post ); ?>
