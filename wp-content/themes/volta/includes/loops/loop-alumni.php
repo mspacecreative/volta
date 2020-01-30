@@ -24,6 +24,7 @@
 					$size = 'medium';
 					$logolink = get_field('logo_link', $post->ID);
 					$shrinklogo = get_field('square_logo', $post->ID);
+					$focus = get_field('focus', $post->ID);
 					if ( $imagelogo && $logolink && $shrinklogo ) : ?>
 					<a href="<?php the_field('logo_link', $post->ID); ?>" target="_blank">
 						<span class="shrink-logo">
@@ -44,7 +45,9 @@
 				</div>
 				<div class="resident-card-content">
 					<h3><?php the_title(); ?></h3>
-					<p><?php echo esc_html_e('Focus: '); the_field('focus'); ?></p>
+					<?php if ( $focus ): ?>
+					<p class="focus-description"><span><?php echo esc_html_e('Focus: '); ?></span><?php the_field('focus', $post->ID); ?></p>
+					<?php endif; ?>
 					<?php
 					if( has_excerpt() ) { 
 						echo '<p>' . the_excerpt() . '</p>';
