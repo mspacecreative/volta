@@ -641,7 +641,7 @@ function my_acf_init() {
 		acf_register_block(array(
 			'name'				=> 'testimonial-single',
 			'title'				=> __('Testimonial Carousel Section'),
-			'description'		=> __('Displays a single testimonial quote'),
+			'description'		=> __('Displays testimonials in a carousel'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
