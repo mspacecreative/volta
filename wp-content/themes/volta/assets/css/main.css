@@ -4908,8 +4908,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.super-title h4 {
 		font-size: 16px;
 	}
-	.related-posts .event-container, .related-posts .event-container:last-child {
+	.related-posts .event-container, .related-posts .event-container:last-child, .flex-box.flexbox-3, .flex-box.flexbox-4, .flex-box.flexbox-5, .resident-container, .resident-container:nth-child(3n) {
 		flex-basis: 100%;
+		width: 100%;
 		margin-right: 0;
 	}
 	.features.dark-overlay:before {
