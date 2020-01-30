@@ -4425,9 +4425,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.features .row.inline-icons {
 		margin-top: 0!important;
 	}
-	.flex-wrap.flexbox-container {
-		flex-wrap: nowrap;
-	}
 	.super-title {
 		position: absolute;
 		z-index: 2;
@@ -4691,9 +4688,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		width: 49%;
 		margin-right: 2%;
 	}
-	.flex-wrap {
-		flex-direction: row;
-	}
 	.flex-box.flexbox-2:nth-child(2n+1):nth-last-child(-n+2), .flex-box.flexbox-2:nth-child(2n+1):nth-last-child(-n+2) ~ .flex-box.flexbox-2, .flex-box.flexbox-3:nth-child(3n+1):nth-last-child(-n+3), .flex-box.flexbox-3:nth-child(3n+1):nth-last-child(-n+3) ~ .flex-box.flexbox-3, .flex-box.flexbox-4:nth-child(4n+1):nth-last-child(-n+4), .flex-box.flexbox-4:nth-child(4n+1):nth-last-child(-n+4) ~ .flex-box.flexbox-4, .flex-box.flexbox-5:nth-child(5n+1):nth-last-child(-n+5), .flex-box.flexbox-5:nth-child(5n+1):nth-last-child(-n+5) ~ .flex-box.flexbox-5 {
 	    margin-bottom: 2%;
 	}
@@ -4880,9 +4874,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 @media (max-width: 450px) {
 	.tiles .tall-image {
 		min-height: 400px;
-	}
-	.flex-wrap.flexbox-container {
-		flex-wrap: nowrap;
 	}
 	.residents-container {
 		flex-direction: column;
