@@ -3546,12 +3546,6 @@ img {
 .slider-carousel .slick-next, .slider-carousel .slick-prev {
 	width: auto;
 }
-.slider-carousel .slick-next {
-	right: -40px;
-}
-.slider-carousel .slick-prev {
-	left: -40px;
-}
 .slick-slider .slick-next:before {
 	background-image: url(images/next.png);
 	left: 0;
@@ -3574,10 +3568,10 @@ img {
 	width: 25px;
 }
 .slick-slider .slick-next {
-	right: 0;
+	right: -40px;
 }
 .slick-slider .slick-prev {
-	left: 0;
+	left: -40px;
 }
 .slick-slide img {
 	margin: auto;

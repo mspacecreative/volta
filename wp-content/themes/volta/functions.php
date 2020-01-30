@@ -882,7 +882,13 @@ function my_custom_styles( $init_array ) {
         	'block' => 'span',
         	'classes' => 'underlined-heading',
         	'wrapper' => true,
-        )
+        ),
+       	array(
+	       	'title' => 'Centered Title with Line Rules',
+	       	'block' => 'div',
+	       	'classes' => 'centered-title-with-line-rules',
+	       	'wrapper' => true,
+       )
     );  
     // Insert the array, JSON ENCODED, into 'style_formats'
     $init_array['style_formats'] = json_encode( $style_formats );  
