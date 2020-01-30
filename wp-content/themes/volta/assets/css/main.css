@@ -4173,7 +4173,7 @@ body #mc_embed_signup form {
 	background-color: #000;
 	top: 50%;
 }
-.centered-title-with-line-rules:before, .centered-title-with-line-rules:after {
+.centered-title-with-line-rules h2:before, .centered-title-with-line-rules h2:after {
 	position: absolute;
 	height: 2px;
 	width: 1000px;
@@ -4189,11 +4189,11 @@ body #mc_embed_signup form {
 	left: 100%;
 	margin-left: 15px;
 }
-.centered-title-with-line-rules:before {
+.centered-title-with-line-rules h2:before {
 	right: 100%;
 	margin-right: 15px;
 }
-.centered-title-with-line-rules:after {
+.centered-title-with-line-rules h2:after {
 	left: 100%;
 	margin-left: 15px;
 }
