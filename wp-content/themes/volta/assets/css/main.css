@@ -4653,7 +4653,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		display: none;
 	}
 	.display-flex {
-		flex-wrap: wrap;
+		flex-flow: row wrap;
 	}
 	.columns-container .display-flex {
 		flex-direction: column;
