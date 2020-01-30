@@ -160,6 +160,10 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 	}
 	
 	.flex-box h3 {
+		font-size: 29px;
+	}
+	
+	.flex-box h3 {
 		font-size: 20px;
 	}
 
@@ -3862,7 +3866,7 @@ aside {
 	margin-right: 0;
 }
 .flex-box > div {
-	padding: 0 1em 1em;
+	padding: 0 20px 20px;
 }
 .full-padding {
 	padding: 2em;
