@@ -4655,9 +4655,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.home #nav {
 		display: none;
 	}
-	.flex-box {
-		flex: inherit;
-	}
 	.columns-container .display-flex {
 		flex-direction: column;
 	}
@@ -4687,7 +4684,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.one_third_col {
 		margin-top: 50px;
 	}
-	.flexbox, .resident-container, .resident-container:nth-child(3n) {
+	.flexbox-container .flexbox, .resident-container, .resident-container:nth-child(3n) {
 		flex-basis: 49%;
 		width: 49%;
 		margin-right: 2%;
