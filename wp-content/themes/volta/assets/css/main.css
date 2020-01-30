@@ -4687,7 +4687,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.one_third_col {
 		margin-top: 50px;
 	}
-	.flexbox-5, .flexbox-4, .flexbox-3, .flexbox-2, .resident-container, .resident-container:nth-child(3n) {
+	.flexbox, .resident-container, .resident-container:nth-child(3n) {
 		flex-basis: 49%;
 		width: 49%;
 		margin-right: 2%;
