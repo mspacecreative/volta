@@ -640,7 +640,7 @@ function my_acf_init() {
 		// register single testimonial block
 		acf_register_block(array(
 			'name'				=> 'testimonial-single',
-			'title'				=> __('Single Testimonial Section'),
+			'title'				=> __('Testimonial Carousel Section'),
 			'description'		=> __('Displays a single testimonial quote'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
