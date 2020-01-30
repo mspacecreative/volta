@@ -740,6 +740,14 @@ function cohortResidents() {
 }
 add_shortcode( 'cohort_loop', 'cohortResidents' );
 
+// CORPORATE INNOVATION OUTPOSTS LOOP
+function corporateInnovationResidents() {
+	ob_start();
+		get_template_part('includes/loops/loop-corporate-innovation-outpost');
+	return ob_get_clean();
+}
+add_shortcode( 'corporate_innovation_loop', 'corporateInnovationResidents' );
+
 // ALUMNI COMPANY POSTS LOOP
 function alumniCompanies() {
 	ob_start();
