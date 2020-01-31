@@ -4515,7 +4515,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	    padding: 0 1em;
 	}
 	.single .post-content-container {
-		padding: 0 2em;
+		padding: 0 1em;
 	}
 	.full-padding {
 	    padding: 1em;
@@ -5143,6 +5143,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	.full-span-content {
 		padding: 2em;
+	}
+	.single article > .post-container {
+		padding: 0;
 	}
 }
 
