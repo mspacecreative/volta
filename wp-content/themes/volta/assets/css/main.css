@@ -4686,6 +4686,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.sidebar {
 		padding: 0 1em;
 	}
+	.sidebar .related-posts h4 {
+		font-size: 18px;
+	}
 	.flex-wrap {
 		flex-wrap: wrap;
 	}
