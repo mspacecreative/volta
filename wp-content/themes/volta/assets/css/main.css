@@ -4502,7 +4502,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		display: none;
 	}
 	.post-container {
-		padding: 0 1em 2em;
+		padding: 0;
 	}
 	.blog .inner {
 		padding: 1em;
