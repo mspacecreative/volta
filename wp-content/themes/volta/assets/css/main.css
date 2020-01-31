@@ -4888,6 +4888,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.image-grid-container {
 		flex-direction: column;
 	}
+	.display-flex {
+		flex-direction: column;
+	}
 	.residents-container {
 		flex-direction: column;
 	}
