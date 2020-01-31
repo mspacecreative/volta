@@ -3402,10 +3402,10 @@ img {
 	align-items: center;
 	flex-wrap: wrap;
 }
-.columns-container.display-flex.align_items_top {
+.columns-container .display-flex.align_items_top {
 	align-items: flex-start;
 }
-.columns-container.display-flex.align_items_bottom {
+.columns-container .display-flex.align_items_bottom {
 	align-items: flex-end;
 }
 .align_items_center {
@@ -3871,7 +3871,7 @@ aside {
 	padding: 0 1em 1em;
 }
 .full-padding {
-	padding: 2em;
+	padding: 2em 6em;
 }
 .no-padding {
 	padding: 0 6em;
