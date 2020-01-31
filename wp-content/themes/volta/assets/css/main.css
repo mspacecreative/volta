@@ -5148,7 +5148,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		margin-right: 4%;
 	}
 	.three_column {
-		flex: 0 auto 31.333%;
+		flex: 0 0 31.333%;
 		width: 31.333%;
 	}
 	.four_column {
