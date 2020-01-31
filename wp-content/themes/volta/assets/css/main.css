@@ -3398,7 +3398,7 @@ img {
 .flexbox-container {
 	margin-left: -2%;
 }
-.columns-container.display-flex {
+.columns-container .display-flex {
 	align-items: center;
 	flex-wrap: wrap;
 }
