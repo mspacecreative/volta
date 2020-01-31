@@ -4373,7 +4373,7 @@ a {
 .partner-logo-cell img {
 	padding: 0 30px;
 }
-.partner-logo-cell.square-logo img {
+.partner-logo-cell .square-logo img {
 	max-width: 200px;
 }
 .testimonial-text p {
