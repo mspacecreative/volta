@@ -3980,6 +3980,14 @@ form input.keyword-search-input[type="text"] {
 .post-content-container .widget_categories a {
 	display: block;
 	padding: 15px 10px;
+	background-color: #000;
+	color: #fff;
+	font-weight: bold;
+	transition: 0.25s ease-in-out;
+}
+.post-content-container .widget_categories a:hover {
+	background-color: #999;
+	transition: 0.25s ease-in-out;
 }
 .bg-img-cover {
 	background-size: cover;
@@ -4686,9 +4694,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.sidebar {
 		padding: 0 1em;
 	}
-	.sidebar .related-posts h4 {
-		font-size: 18px;
-	}
 	.flex-wrap {
 		flex-wrap: wrap;
 	}
@@ -5162,6 +5167,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 @media (min-width: 981px) {
 	main, aside, .two_third_col, .one_third_col {
 		float: left;
+	}
+	.sidebar .related-posts h4 {
+		font-size: 18px;
 	}
 	.post-title-container {
 		padding: 10px 2em 0;
