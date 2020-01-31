@@ -711,7 +711,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 </div>
 
 <?php elseif ( $sectionmargin == 'top' ): ?>
-<div class="full-padding top-margin">
+<div class="default-padding top-margin">
 	<?php if ( get_field('section_heading') ): ?>
 	<h2><?php the_field('section_heading'); ?></h2>
 	<?php endif; ?>
