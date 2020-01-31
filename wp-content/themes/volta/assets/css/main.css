@@ -3400,6 +3400,7 @@ img {
 }
 .columns-container.display-flex {
 	align-items: center;
+	flex-wrap: wrap;
 }
 .columns-container.display-flex.align_items_top {
 	align-items: flex-start;
