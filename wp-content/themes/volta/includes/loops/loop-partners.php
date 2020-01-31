@@ -27,21 +27,29 @@ if ( $loop->have_posts() ) : ?>
 		$shrinklogo = get_field('square_logo', $post->ID);
 		
 		if ( $imagelogo && $logolink && $shrinklogo ) : ?>
-		<a href="<?php the_field('logo_link', $post->ID); ?>" target="_blank">
+		<div class="partner-logo-cell">
+			<a href="<?php the_field('logo_link', $post->ID); ?>" target="_blank">
+				<span class="shrink-logo">
+					<?php echo wp_get_attachment_image( $imagelogo, $size ); ?>
+				</span>
+			</a>
+		</div>
+		<?php elseif ( $imagelogo && $shrinklogo ) : ?>
+		<div class="partner-logo-cell">
 			<span class="shrink-logo">
 				<?php echo wp_get_attachment_image( $imagelogo, $size ); ?>
 			</span>
-		</a>
-		<?php elseif ( $imagelogo && $shrinklogo ) : ?>
-		<span class="shrink-logo">
-			<?php echo wp_get_attachment_image( $imagelogo, $size ); ?>
-		</span>
+		</div>
 		<?php elseif ( $imagelogo && $logolink ) : ?>
-		<a href="<?php the_field('logo_link', $post->ID); ?>" target="_blank">
-			<?php echo wp_get_attachment_image( $imagelogo, $size ); ?>
-		</a>
+		<div class="partner-logo-cell">
+			<a href="<?php the_field('logo_link', $post->ID); ?>" target="_blank">
+				<?php echo wp_get_attachment_image( $imagelogo, $size ); ?>
+			</a>
+		</div>
 		<?php elseif ( $imagelogo ) : ?>
+		<div class="partner-logo-cell">
 			<?php echo wp_get_attachment_image( $imagelogo, $size ); ?>
+		</div>
 		<?php endif; ?>
 		
 		<div class="partner-blurb-cell">
