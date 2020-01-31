@@ -252,7 +252,6 @@
 	    dots: true, 
 		arrows: true,
 		adaptiveHeight: true,
-		centerPadding: '10%', 
 	});
 	
 	var slickDots = $('.slick-dots');

@@ -3550,6 +3550,9 @@ img {
 	vertical-align: middle;
 	outline: none;
 }
+.slider-carousel {
+	padding: 0 10%;
+}
 .slider-carousel .slick-next, .slider-carousel .slick-prev {
 	width: auto;
 }
