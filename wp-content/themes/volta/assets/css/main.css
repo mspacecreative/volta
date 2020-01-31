@@ -5147,6 +5147,10 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.single article > .post-container {
 		padding: 0;
 	}
+	.single .post-title-container {
+		margin-right: -1em;
+		margin-left: -1em;
+	}
 }
 
 @media (min-width: 981px) {
