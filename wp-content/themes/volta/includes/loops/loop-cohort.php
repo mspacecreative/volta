@@ -16,7 +16,7 @@
 	$loop = get_posts($args);
     if ( $loop ) :
         foreach ( $loop as $post ) : setup_postdata( $post ); ?>
-		<div class="resident-container three_column">
+		<div class="resident-container three_column flexbox-container">
 			<?php if ( get_field('alumni_company', $post->ID) ): ?>
 			<div class="grid-inner" style="padding-bottom: 8em;">
 				<div class="logo-image-wrap">
