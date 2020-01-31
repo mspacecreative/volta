@@ -4888,6 +4888,12 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.partner-row, .partners-table {
 		display: block;
 	}
+	.partner-logo-cell {
+		margin-bottom: 25px;
+	}
+	.partner-logo-cell img {
+		padding: 0;
+	}
 	.image-grid-container {
 		flex-direction: column;
 	}
