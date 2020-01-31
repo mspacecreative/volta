@@ -4685,6 +4685,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.partner-logo-cell img {
 		padding: 0;
 	}
+	.partner-logo-cell .shrink-logo img {
+		max-width: 100%;
+	}
 	.image-grid-container img {
 		padding: 20px;
 	}
@@ -4904,6 +4907,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	.partner-logo-cell {
 		margin-bottom: 25px;
+		text-align: left;
 	}
 	.partner-logo-cell img {
 		padding: 0;
