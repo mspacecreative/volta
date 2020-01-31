@@ -3412,6 +3412,12 @@ img {
 .residents-container {
 	margin-top: 15px;
 }
+.residents-container.flex-wrap {
+	flex-wrap: wrap;
+}
+.residents-container {
+	flex-wrap: wrap;
+}
 .residents-container .grid-inner {
 	border: none;
 	padding: 2em;
@@ -5142,12 +5148,12 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		margin-right: 4%;
 	}
 	.three_column {
-		flex-basis: 32%;
-		margin-right: 2%;
+		flex: 1 1 31.333%;
+		width: 31.333%;
 	}
 	.four_column {
-		flex-basis: 23.5%;
-		margin-right: 2%;
+		flex: 1 1 23%;
+		width: 23%;
 	}
 	.two_column:last-child, .three_column:nth-child(3n), .four_column:nth-child(4n) {
 		margin-right: 0;
