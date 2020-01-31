@@ -4,10 +4,10 @@
 );
 $arr_posts = new WP_Query( $args ); ?>
 	
-	<ul class="divided related-posts">
+	<ul class="divided related-posts display-flex" style="flex-direction: column;">
 		<?php while ( $arr_posts->have_posts() ) : $arr_posts->the_post(); ?>
 		
-		<div class="event-container tiles">
+		<div class="event-container tiles display-flex">
 			<?php
 			if ( has_post_thumbnail() ): ?>
 			<span class="event-thumb one-third">
