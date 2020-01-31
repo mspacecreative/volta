@@ -15,11 +15,11 @@ $args = array(
 $loop = new WP_Query( $args );
 if ( $loop->have_posts() ) : ?>
 	
-<div class="partners-table display-flex flex-wrap align-items-center">
+<div class="partners-table display-flex flex-wrap">
     
 	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
     
-	<div class="partner-row display-flex">
+	<div class="partner-row display-flex align-items-center">
 		<?php
 		$imagelogo = get_field('logo_image', $post->ID);
 		$size = 'medium';
