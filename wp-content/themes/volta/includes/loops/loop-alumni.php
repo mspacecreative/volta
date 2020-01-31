@@ -1,4 +1,4 @@
-<div class="residents-container display-flex flex-wrap">
+<div class="residents-container display-flex flex-wrap flexbox-container">
 	<?php 
 	$args = array(
 	    'post_type' => 'companies',
@@ -16,7 +16,7 @@
 	$loop = get_posts($args);
     if ( $loop ) :
         foreach ( $loop as $post ) : setup_postdata( $post ); ?>
-		<div class="resident-container three_column flexbox-container">
+		<div class="resident-container three_column">
 			<div class="grid-inner">
 				<div class="logo-image-wrap">
 					<?php
