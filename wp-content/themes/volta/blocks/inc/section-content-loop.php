@@ -725,7 +725,7 @@ elseif ( $padding == 'bottom' && $margin == 'both' && $textcolour == 'light' ):
 	</div>
 	<?php endif;
 	
-elseif ( $padding == 'full' && $margin == 'top' ):
+elseif ( $margin == 'top' ):
 	
 	if ( get_field('content_editor') ): ?>
 	<div class="full-padding top-margin clear">
@@ -737,7 +737,7 @@ elseif ( $padding == 'full' && $margin == 'top' ):
 	</div>
 	<?php endif;
 	
-elseif ( $padding == 'full' && $margin == 'top' && $textcolour == 'light' ):
+elseif ( $margin == 'top' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
 	<div class="full-padding top-margin light clear">
@@ -749,7 +749,7 @@ elseif ( $padding == 'full' && $margin == 'top' && $textcolour == 'light' ):
 	</div>
 	<?php endif;
 	
-elseif ( $padding == 'full' && $margin == 'bottom' ):
+elseif ( $margin == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
 	<div class="full-padding bottom-margin clear">
@@ -761,7 +761,7 @@ elseif ( $padding == 'full' && $margin == 'bottom' ):
 	</div>
 	<?php endif;
 	
-elseif ( $padding == 'full' && $margin == 'bottom' && $textcolour == 'light' ):
+elseif ( $margin == 'bottom' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
 	<div class="full-padding bottom-margin light clear">
@@ -773,7 +773,7 @@ elseif ( $padding == 'full' && $margin == 'bottom' && $textcolour == 'light' ):
 	</div>
 	<?php endif;
 	
-elseif ( $padding == 'full' && $margin == 'both' ):
+elseif ( $margin == 'both' ):
 	
 	if ( get_field('content_editor') ): ?>
 	<div class="full-padding top-bottom-margin clear">
@@ -785,7 +785,7 @@ elseif ( $padding == 'full' && $margin == 'both' ):
 	</div>
 	<?php endif;
 	
-elseif ( $padding == 'full' && $margin == 'both' && $textcolour == 'light' ):
+elseif ( $margin == 'both' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
 	<div class="full-padding top-bottom-margin light clear">
@@ -1061,7 +1061,7 @@ elseif ( $width && $padding == 'full' ):
 	</div>
 	<?php endif;
 	
-elseif ( $width && $padding == 'full' && $textcolour == 'light' ):
+elseif ( $width && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
 	<div class="width-800 full-padding light clear">
