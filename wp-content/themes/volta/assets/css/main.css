@@ -4511,6 +4511,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.single .post-container, .page-template-page-sidebar .post-container {
 		padding: 1em;
 	}
+	.blog .post-content-container, .page-template-page-sidebar .post-content-container {
+	    padding: 0 1em;
+	}
 	.single .post-content-container {
 		padding: 0;
 	}
@@ -5021,6 +5024,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	.post-header {
 		display: none;
+	}
+	.blog .post-content-container, .page-template-page-sidebar .post-content-container {
+	    padding: 0 1em;
 	}
 	.single .post-content-container {
 		padding: 0;
