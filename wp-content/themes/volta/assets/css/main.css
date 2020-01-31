@@ -4893,6 +4893,10 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	.partner-logo-cell img {
 		padding: 0;
+		max-width: 200px;
+	}
+	.partner-logo-cell .shrink-logo img {
+		max-width: 130px;
 	}
 	.image-grid-container {
 		flex-direction: column;
