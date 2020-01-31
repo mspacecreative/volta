@@ -4679,6 +4679,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.home #nav {
 		display: none;
 	}
+	.flex-wrap {
+		flex-wrap: wrap;
+	}
 	.image-grid-container.display-flex {
 		justify-content: space-around;
 	}
