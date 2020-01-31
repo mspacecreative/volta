@@ -5151,6 +5151,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		margin-right: -1em;
 		margin-left: -1em;
 	}
+	.sidebar {
+		padding: 0;
+	}
 }
 
 @media (min-width: 981px) {
