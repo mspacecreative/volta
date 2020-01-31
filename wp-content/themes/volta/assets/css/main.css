@@ -4370,6 +4370,9 @@ a {
 .align-items-center {
 	align-items: center;
 }
+.partners-table {
+	overflow: hidden;
+}
 .partner-row {
 	margin-bottom: 25px;
 	padding-bottom: 25px;
