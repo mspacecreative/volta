@@ -711,7 +711,7 @@ add_shortcode( 'sidebar_posts', 'recentPosts' );
 // BLOG SIDEBAR RECENT POSTS 2
 function recentPosts2() {
 	ob_start();
-		get_template_part('includes/loop-sidebar-blog');
+		get_template_part('includes/loops/loop-sidebar-blog');
 	return ob_get_clean();
 }
 add_shortcode( 'sidebar_recent_posts', 'recentPosts2' );
