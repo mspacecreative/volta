@@ -3392,7 +3392,7 @@ img {
 .display-flex {
 	display: flex;
 }
-.partners-table.display-fex {
+.partners-table.display-flex {
 	flex-wrap: wrap;
 }
 .flexbox-container {
@@ -4681,6 +4681,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	.image-grid-container.display-flex {
 		justify-content: space-around;
+	}
+	.partner-logo-cell img {
+		padding: 0;
 	}
 	.image-grid-container img {
 		padding: 20px;
