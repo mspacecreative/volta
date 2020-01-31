@@ -4512,10 +4512,16 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	    padding: 0 1em;
 	}
 	.extra-top-bottom-padding {
-		padding: 2em;
+		padding: 4em 3em;
+	}
+	.top-bottom-padding {
+		padding: 2em 3em;
 	}
 	.top-padding {
-		padding: 2em 2em 0;
+		padding: 2em 3em 0;
+	}
+	.bottom-padding {
+		padding: 0 3em 2em;
 	}
 	.home .full-padding {
 	    padding: 2em;
