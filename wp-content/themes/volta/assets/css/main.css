@@ -4656,9 +4656,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.home #nav {
 		display: none;
 	}
-	.display-flex {
-		flex-flow: row wrap;
-	}
 	.columns-container .display-flex {
 		flex-direction: column;
 	}
