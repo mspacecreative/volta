@@ -710,7 +710,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 	<?php endif; ?>
 </div>
 
-<?php elseif ( $sectionpadding == 'full' && $sectionmargin == 'top' ): ?>
+<?php elseif ( $sectionmargin == 'top' ): ?>
 <div class="full-padding top-margin">
 	<?php if ( get_field('section_heading') ): ?>
 	<h2><?php the_field('section_heading'); ?></h2>
@@ -818,7 +818,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 	<?php endif; ?>
 </div>
 
-<?php elseif ( $sectionpadding == 'full' && $sectionmargin == 'bottom' ): ?>
+<?php elseif ( $sectionmargin == 'bottom' ): ?>
 <div class="full-padding bottom-margin">
 	<?php if ( get_field('section_heading') ): ?>
 	<h2><?php the_field('section_heading'); ?></h2>
@@ -926,7 +926,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 	<?php endif; ?>
 </div>
 
-<?php elseif ( $sectionpadding == 'full' && $sectionmargin == 'both' ): ?>
+<?php elseif ( $sectionmargin == 'both' ): ?>
 <div class="full-padding top-bottom-margin">
 	<?php if ( get_field('section_heading') ): ?>
 	<h2><?php the_field('section_heading'); ?></h2>
