@@ -19,7 +19,7 @@ if ( $loop->have_posts() ) : ?>
     
 	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
     
-	<div class="partner-row">
+	<div class="partner-row display-flex">
 		<?php
 		$imagelogo = get_field('logo_image', $post->ID);
 		$size = 'medium';
