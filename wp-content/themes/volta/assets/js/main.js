@@ -16,6 +16,13 @@
 		});
 	}*/
 	
+	// POSITIONING BUTTON AT BOTTOM OF FLEXBOX
+	var ctaButton = $('.button'),
+	    majorHeading = $('.major');
+	if ( majorHeading.children(ctaButton).length == 1 ) {
+		ctaButton.css('margin-top', 'auto');
+	}
+	
 	// MASONRY LAYOUT / FILTERING
 	var grid = $('.iso-grid').isotope( {
 		itemSelector: ".grid-item",
