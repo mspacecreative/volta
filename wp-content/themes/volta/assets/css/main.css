@@ -3400,7 +3400,9 @@ img {
 	flex-wrap: wrap;
 }
 .flexbox-container {
-	margin-left: -2%;
+	margin-left: -10px;
+	margin-right: -10px;
+	justify-content: center;
 }
 .columns-container .display-flex {
 	align-items: center;
@@ -3851,28 +3853,29 @@ aside {
 	margin-top: 0;
 }
 .flexbox-2 {
-	flex: 0 0 48%;
+	flex-basis: 50%;
+	width: 50%;
 }
 .flexbox-3 {
-	flex: 1 1 31.333%;
+	flex: 1 1 33.33%;
 }
 .flexbox-4 {
-	flex: 0 0 23%;
+	flex-basis: 25%;
+	width: 25%;
 }
 .flex-box {
-	border: 1px solid #c9c9c9;
-	margin: 0 0 2% 2%;
+	padding: 10px;
 	border-top: 5px solid #000;
 	float: left;
 }
 .flex-box.flexbox-5 {
-	flex: 1 1 18%;
+	flex-basis: 20%;
 }
 .flex-box > div {
 	padding: 0 1em 1em;
-}
-.full-padding {
-	padding: 2em 6em;
+	height: 100%;
+	border: 1px solid #000;
+	border-top: 5px solid #000;
 }
 .no-padding {
 	padding: 0 6em;
@@ -4955,7 +4958,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.flexbox-5, .flexbox-4, .flexbox-3, .flexbox-2, .flexbox-5:nth-child(2n), .flexbox-4:nth-child(2n), .flexbox-3:nth-child(2n), .flexbox-2:nth-child(2n), .column-container, .column-container:nth-child(2n), .logo-cell:nth-child(2n) {
 		margin-right: 0;
 	}
-	.flex-box.flexbox-2:nth-child(2n+1):nth-last-child(-n+2), .flex-box.flexbox-2:nth-child(2n+1):nth-last-child(-n+2) ~ .flex-box.flexbox-2, .flex-box.flexbox-3:nth-child(3n+1):nth-last-child(-n+3), .flex-box.flexbox-3:nth-child(3n+1):nth-last-child(-n+3) ~ .flex-box.flexbox-3, .flex-box.flexbox-4:nth-child(4n+1):nth-last-child(-n+4), .flex-box.flexbox-4:nth-child(4n+1):nth-last-child(-n+4) ~ .flex-box.flexbox-4, .flex-box.flexbox-5:nth-child(5n+1):nth-last-child(-n+5), .flex-box.flexbox-5:nth-child(5n+1):nth-last-child(-n+5) ~ .flex-box.flexbox-5 {
+	.flex-box.flexbox-2:nth-child(2n+1):nth-last-child(-n+2), .flex-box.flexbox-2:nth-child(2n+1):nth-last-child(-n+2) ~ .flex-box.flexbox-2, .flex-box.flexbox-3:nth-child(3n+1):nth-last-child(-n+3), .flex-box.flexbox-3:nth-child(3n+1):nth-last-child(-n+3) ~ .flex-box.flexbox-3, .flex-box.flexbox-4:nth-child(4n+1):nth-last-child(-n+4), .flex-box.flexbox-4:nth-child(4n+1):nth-last-child(-n+4) ~ .flex-box.flexbox-4, .flex-box.flexbox-5:nth-child(5n+1):nth-last-child(-n+5), .flex-box.flexbox-5:nth-child(5n+1):nth-last-child(-n+5) ~ .flex-box.flexbox-5, .flexbox-5, .flexbox-4, .flexbox-3, .flexbox-2 {
 	    margin-bottom: 5%;
 	}
 	.super-title {
