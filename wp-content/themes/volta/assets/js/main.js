@@ -18,7 +18,7 @@
 	
 	// POSITIONING CTA BUTTON AT BOTTOM OF FLEXBOX
 	var majorHeading = $('.major');
-	if ( majorHeading.children('.button').length >= 1 ) {
+	if ( majorHeading.children().hasClass('button') ) {
 		$(this).parent.css('margin-top', 'auto');
 	}
 	
