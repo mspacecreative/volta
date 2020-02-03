@@ -94,6 +94,7 @@
 	.membership-type-inner {
 		padding: 5px 30px 20px;
 		border: 1px solid #000;
+		height: 100%;
 	}
 	.post-content-container .mobile-pricing-table ul {
 	    margin: 0 0 2em;
