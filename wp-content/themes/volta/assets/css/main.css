@@ -3867,11 +3867,7 @@ aside {
 	border-top: 5px solid #000;
 }
 .flex-box.flexbox-5 {
-	flex: 1 1 18.4%;
-	margin-bottom: 0;
-}
-.flexbox-2:nth-child(2n), .flexbox-3:nth-child(3n), .flexbox-4:nth-child(4n), .flexbox-5:nth-child(5n) {
-	margin-right: 0;
+	flex: 1 1 18%;
 }
 .flex-box > div {
 	padding: 0 1em 1em;
