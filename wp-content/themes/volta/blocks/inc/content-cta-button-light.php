@@ -15,7 +15,7 @@
 		
 		<ul class="actions">
 			<li>
-				<a href="<?php the_sub_field('content_external_link'); ?>" class="light button"><?php the_sub_field('content_button_label'); ?></a>
+				<a href="<?php the_sub_field('content_external_link'); ?>" class="light button" target="_blank><?php the_sub_field('content_button_label'); ?></a>
 			</li>
 		</ul>
 		
