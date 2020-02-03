@@ -3851,13 +3851,13 @@ aside {
 	margin-top: 0;
 }
 .flexbox-2 {
-	flex: 1 1 48%;
+	flex: 0 0 48%;
 }
 .flexbox-3 {
 	flex: 1 1 31.333%;
 }
 .flexbox-4 {
-	flex: 1 1 23%;
+	flex: 0 0 23%;
 }
 .flex-box {
 	border: 1px solid #c9c9c9;
@@ -4952,7 +4952,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		padding: 15px;
 	}
 	.flexbox-5, .flexbox-4, .flexbox-3, .flexbox-2, .column-container {
-		flex: 1 1 100%;
+		flex: 0 0 100%;
 		width: 100%;
 	}
 	.flexbox-5, .flexbox-4, .flexbox-3, .flexbox-2, .flexbox-5:nth-child(2n), .flexbox-4:nth-child(2n), .flexbox-3:nth-child(2n), .flexbox-2:nth-child(2n), .column-container, .column-container:nth-child(2n), .logo-cell:nth-child(2n) {
@@ -4971,7 +4971,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		font-size: 16px;
 	}
 	.related-posts .event-container, .related-posts .event-container:last-child, .flex-box.flexbox-3, .flex-box.flexbox-4, .flex-box.flexbox-5, .resident-container, .resident-container:nth-child(3n) {
-		flex: 1 1 100%;
+		flex: 0 0 100%;
 		width: 100%;
 	}
 	.features.dark-overlay:before {
