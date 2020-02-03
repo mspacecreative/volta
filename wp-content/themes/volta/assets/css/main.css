@@ -4738,7 +4738,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		width: 50%;
 	}
 	.flexbox-4 {
-		flex: 0 0 50%;
+		flex: 1 1 50%;
 		width: 50%;
 	}
 	
@@ -4912,6 +4912,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	.top-padding {
 	    padding: 2em 3em 0;
+	}
+	.post-title-outer {
+	    padding: 0 2em;
 	}
 }
 
