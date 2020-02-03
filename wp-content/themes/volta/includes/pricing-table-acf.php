@@ -85,10 +85,6 @@
 	.mobile-pricing-table {
 		display: none;
 	}
-	.membership-type {
-		border: 1px solid #333;
-		margin-bottom: 1.5em;
-	}
 	.membership-type h2 {
 		background-color: #000;
 		color: #fff;
@@ -97,6 +93,7 @@
 	}
 	.membership-type-inner {
 		padding: 5px 30px 20px;
+		border: 1px solid #000;
 	}
 	.post-content-container .mobile-pricing-table ul {
 	    margin: 0 0 2em;
@@ -108,27 +105,23 @@
 		.mobile-pricing-table {
 			display: flex;
 			flex-wrap: wrap;
+			margin-left: -10px;
+			margin-right: -10px;
+			justify-content: center;
 		}
 		.corporate_pricing_table {
 			display: none;
 		}
 	}
-	@media (min-width: 768px) and (max-width: 980px) {
+	@media (max-width: 980px) {
 		.membership-type {
-			flex-basis: 48%;
-			margin-right: 4%;
-		}
-		.membership-type:nth-child(2n) {
-			margin-right: 0;
+			flex-basis: 50%;
+			padding: 10px;
 		}
 	}
-	@media (max-width: 850px) and (orientation: landscape) {
+	@media (max-width: 450px) {
 		.membership-type {
-			flex-basis: 48%;
-			margin-right: 4%;
-		}
-		.membership-type:nth-child(2n) {
-			margin-right: 0;
+			flex-basis: 100%;
 		}
 	}
 </style>
