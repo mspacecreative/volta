@@ -2569,86 +2569,86 @@
 	<?php if ( have_rows('innovator', 'options') ): ?>
 	<div class="membership-type">
 		<?php while( have_rows('innovator', 'options') ): the_row(); ?>
-		
-		<div class="table-list-content">	
+		<div class="membership-type-inner">
 			<h2>Innovator</h2>
-			
-			<?php
-			if( have_rows('benefit_categories', 'options') ):
-			while( have_rows('benefit_categories', 'options') ): the_row(); ?>
-			
-			<div class="membership-type-inner">
+			<div class="table-list-content">	
+				
 				<?php
-				$field = get_sub_field_object('people');
-				$people = $field['value'];
-				if ( $people ): ?>
+				if( have_rows('benefit_categories', 'options') ):
+				while( have_rows('benefit_categories', 'options') ): the_row(); ?>
 				
-				<h3>People</h3>
-				<ul>
-					<?php foreach( $people as $person ): ?>
-					<li><?php echo $field['choices'][ $person ]; ?></li>
-					<?php endforeach; ?>
-				</ul>
-				<?php endif;
 				
-				$field = get_sub_field_object('engagement');
-				$engagement = $field['value'];
-				if ( $engagement ): ?>
+					<?php
+					$field = get_sub_field_object('people');
+					$people = $field['value'];
+					if ( $people ): ?>
+					
+					<h3>People</h3>
+					<ul>
+						<?php foreach( $people as $person ): ?>
+						<li><?php echo $field['choices'][ $person ]; ?></li>
+						<?php endforeach; ?>
+					</ul>
+					<?php endif;
+					
+					$field = get_sub_field_object('engagement');
+					$engagement = $field['value'];
+					if ( $engagement ): ?>
+					
+					<h3>Engagement</h3>
+					<ul>
+						<?php foreach( $engagement as $engage ): ?>
+						<li><?php echo $field['choices'][ $engage ]; ?></li>
+						<?php endforeach; ?>
+					</ul>
+					<?php endif;
+					
+					$field = get_sub_field_object('space');
+					$spaces = $field['value'];
+					if ( $spaces ): ?>
+					
+					<h3>Space</h3>
+					<ul>
+						<?php foreach( $spaces as $space ): ?>
+						<li><?php echo $field['choices'][ $space ]; ?></li>
+						<?php endforeach; ?>
+					</ul>
+					<?php endif;
+					
+					$field = get_sub_field_object('recognition');
+					$recognition = $field['value'];
+					if ( $recognition ): ?>
+					
+					<h3>Recognition</h3>
+					<ul>
+						<?php foreach( $recognition as $recognize ): ?>
+						<li><?php echo $field['choices'][ $recognize ]; ?></li>
+						<?php endforeach; ?>
+					</ul>
+					<?php endif; ?>
 				
-				<h3>Engagement</h3>
-				<ul>
-					<?php foreach( $engagement as $engage ): ?>
-					<li><?php echo $field['choices'][ $engage ]; ?></li>
-					<?php endforeach; ?>
-				</ul>
-				<?php endif;
-				
-				$field = get_sub_field_object('space');
-				$spaces = $field['value'];
-				if ( $spaces ): ?>
-				
-				<h3>Space</h3>
-				<ul>
-					<?php foreach( $spaces as $space ): ?>
-					<li><?php echo $field['choices'][ $space ]; ?></li>
-					<?php endforeach; ?>
-				</ul>
-				<?php endif;
-				
-				$field = get_sub_field_object('recognition');
-				$recognition = $field['value'];
-				if ( $recognition ): ?>
-				
-				<h3>Recognition</h3>
-				<ul>
-					<?php foreach( $recognition as $recognize ): ?>
-					<li><?php echo $field['choices'][ $recognize ]; ?></li>
-					<?php endforeach; ?>
-				</ul>
-				<?php endif; ?>
+				<?php 
+				endwhile;
+				endif; ?>
 			</div>
-			
-			<?php 
-			endwhile;
-			endif;
-			
-			endwhile; ?>
 		</div>
+		<?php endwhile; ?>
 	</div>
 	<?php endif; ?>
 	
 	<?php if ( have_rows('builder', 'options') ): ?>
 	<div class="membership-type">
 		<?php while( have_rows('builder', 'options') ): the_row(); ?>
+		<div class="membership-type-inner">
 		
-		<div class="table-list-content">	
 			<h2>Builder</h2>
 			
-			<?php
-			if( have_rows('builder_benefit_categories', 'options') ):
-			while( have_rows('builder_benefit_categories', 'options') ): the_row(); ?>
+			<div class="table-list-content">	
 			
-			<div class="membership-type-inner">
+				<?php
+				if( have_rows('builder_benefit_categories', 'options') ):
+				while( have_rows('builder_benefit_categories', 'options') ): the_row(); ?>
+				
 				<?php
 				$field = get_sub_field_object('people');
 				$people = $field['value'];
@@ -2697,14 +2697,13 @@
 					<?php endforeach; ?>
 				</ul>
 				<?php endif; ?>
+				
+				<?php 
+				endwhile;
+				endif; ?>
 			</div>
-			
-			<?php 
-			endwhile;
-			endif;
-			
-			endwhile; ?>
 		</div>
+		<?php endwhile; ?>
 	</div>
 	<?php endif; ?>
 	
@@ -2712,14 +2711,14 @@
 	<div class="membership-type">
 		<?php while( have_rows('supporter', 'options') ): the_row(); ?>
 		
-		<div class="table-list-content">	
+		<div class="membership-type-inner">
 			<h2>Supporter</h2>
-			
-			<?php
-			if( have_rows('supporter_benefit_categories', 'options') ):
-			while( have_rows('supporter_benefit_categories', 'options') ): the_row(); ?>
-			
-			<div class="membership-type-inner">
+			<div class="table-list-content">	
+				
+				<?php
+				if( have_rows('supporter_benefit_categories', 'options') ):
+				while( have_rows('supporter_benefit_categories', 'options') ): the_row(); ?>
+				
 				<?php
 				$field = get_sub_field_object('people');
 				$people = $field['value'];
@@ -2768,14 +2767,13 @@
 					<?php endforeach; ?>
 				</ul>
 				<?php endif; ?>
+				
+				<?php 
+				endwhile;
+				endif; ?>
 			</div>
-			
-			<?php 
-			endwhile;
-			endif;
-			
-			endwhile; ?>
 		</div>
+		<?php endwhile; ?>
 	</div>
 	<?php endif; ?>
 	
@@ -2783,14 +2781,15 @@
 	<div class="membership-type">
 		<?php while( have_rows('out-of-towner', 'options') ): the_row(); ?>
 		
-		<div class="table-list-content">	
+		<div class="membership-type-inner">
 			<h2>Out-of-towner</h2>
 			
-			<?php
-			if( have_rows('towner_benefit_categories', 'options') ):
-			while( have_rows('towner_benefit_categories', 'options') ): the_row(); ?>
+			<div class="table-list-content">	
 			
-			<div class="membership-type-inner">
+				<?php
+				if( have_rows('towner_benefit_categories', 'options') ):
+				while( have_rows('towner_benefit_categories', 'options') ): the_row(); ?>
+				
 				<?php
 				$field = get_sub_field_object('people');
 				$people = $field['value'];
@@ -2839,14 +2838,14 @@
 					<?php endforeach; ?>
 				</ul>
 				<?php endif; ?>
+				
+				<?php 
+				endwhile;
+				endif; ?>
+				
 			</div>
-			
-			<?php 
-			endwhile;
-			endif;
-			
-			endwhile; ?>
 		</div>
+		<?php endwhile; ?>
 	</div>
 	<?php endif; ?>
 </div>
