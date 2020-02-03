@@ -55,10 +55,13 @@
 	});
 	
 	// INLINE BUTTONS
-	$('.inline-button').parent().css({
-		'display': 'inline-block',
-		'margin-right': '15px'
-	});
+	var buttonAmount = $('p').children().find('.inline-button');
+	if ( buttonAmount.length > 1 ) {
+		$('.inline-button').parent().css({
+			'display': 'inline-block',
+			'margin-right': '15px'
+		});
+	}
 	
 	// TOUCH HOVER FOR DESKTOP MENU
 	$('.desktop-nav-menu .menu-item-has-children').on("touchstart", function (e) {
