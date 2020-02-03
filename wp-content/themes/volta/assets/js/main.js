@@ -55,7 +55,7 @@
 	});
 	
 	// INLINE BUTTONS
-	var buttonAmount = $('p').children().find('.inline-button');
+	var buttonAmount = $('.content-section').children().find('.inline-button');
 	if ( buttonAmount.length > 1 ) {
 		$('.inline-button').parent().css({
 			'display': 'inline-block',
