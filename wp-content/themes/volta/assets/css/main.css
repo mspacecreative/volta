@@ -4146,7 +4146,7 @@ body #mc_embed_signup .indicates-required {
 }
 .width-100 {
 	width: 100%;
-	flex: 1 1 100%;
+	flex: 0 0 100%;
 }
 body #mc_embed_signup form {
 	padding: 0;
@@ -4612,7 +4612,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		height: auto!important;
 	}
 	.tiles article, .tiles .width-70, .tiles .width-30, .tiles > .width-50, .tiles > .width-50:nth-child(4n - 1), .tiles .width-50:nth-child(4n - 2) {
-		flex: 1 1 100%;
+		flex: 0 0 100%;
 		width: 100%;
 	}
 	.row-reverse {
@@ -4653,7 +4653,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 }
 @media (max-width: 768px) {
 	.tiles article, .tiles .width-70, .tiles .width-30, .tiles > .width-50, .tiles > .width-50:nth-child(4n - 1), .tiles .width-50:nth-child(4n - 2) {
-		flex: 1 1 100%;
+		flex: 0 0 100%;
 		width: 100%;
 	}
 	.blog .post-content-container > .container, .single .post-content-container > .container {
@@ -4940,7 +4940,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	.resident-container, .resident-container:nth-child(3n), .resident-container:nth-child(2n) {
 		margin-bottom: 5%;
-		flex: 1 1 100%;
+		flex: 0 0 100%;
 		width: 100%;
 	}
 	.logo-cell {
@@ -5135,7 +5135,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		width: 100%;
 	}
 	#footer .contact ul {
-		flex: 1 1 100%;
+		flex: 0 0 100%;
 		width: 100%;
 	}
 	#footer .contact ul:nth-child(2), ul.menu {
