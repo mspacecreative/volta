@@ -3397,8 +3397,6 @@ img {
 }
 .display-flex {
 	display: flex;
-}
-.partners-table.display-flex {
 	flex-wrap: wrap;
 }
 .flexbox-container {
