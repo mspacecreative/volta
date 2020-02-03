@@ -4743,7 +4743,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		width: 48%;
 	}
 	.flexbox-4 {
-		flex: 0 0 0;
+		flex: 0 auto;
 		width: 48%;
 	}
 	
