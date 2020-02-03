@@ -3441,7 +3441,6 @@ img {
 }
 .resident-container {
 	padding: 10px;
-	box-shadow: 0 0 11px #d9d9d9;
 }
 .residents-container .grid-inner .wider img {
 	max-width: 150px;
@@ -4698,9 +4697,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.sidebar {
 		padding: 0 1em;
 	}
-	.flex-wrap {
-		flex-wrap: wrap;
-	}
 	.image-grid-container.display-flex {
 		justify-content: space-around;
 	}
@@ -4722,9 +4718,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.columns-container .column-container:first-child {
 		margin-bottom: 25px;
 	}
-	.resident-container:nth-child(2n) {
-		margin-right: 0;
-	}
 	.post-title-container {
 		padding: 5px 1em 0;
 		margin: -35px auto 0;
@@ -4736,14 +4729,15 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		max-width: 100%;
 		padding: 25px;
 	}
-	.flexbox-5:last-child {
-		margin-bottom: 0;
-	}
 	.one_third_col {
 		margin-top: 50px;
 	}
-	.flexbox-3, .flexbox-4, .flex-box.flexbox-5, .resident-container, .resident-container:nth-child(3n) {
+	.flexbox-3, .flex-box.flexbox-5, .resident-container, .resident-container:nth-child(3n) {
 		flex: 1 1 50%;
+		width: 50%;
+	}
+	.flexbox-4 {
+		flex: 0 0 50%;
 		width: 50%;
 	}
 	
@@ -4953,9 +4947,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.flexbox-5, .flexbox-4, .flexbox-3, .flexbox-2, .column-container {
 		flex: 1 1 100%;
 		width: 100%;
-	}
-	.flexbox-5, .flexbox-4, .flexbox-3, .flexbox-2, .flexbox-5:nth-child(2n), .flexbox-4:nth-child(2n), .flexbox-3:nth-child(2n), .flexbox-2:nth-child(2n), .column-container, .column-container:nth-child(2n), .logo-cell:nth-child(2n) {
-		margin-right: 0;
 	}
 	/*.flex-box.flexbox-2:nth-child(2n+1):nth-last-child(-n+2), .flex-box.flexbox-2:nth-child(2n+1):nth-last-child(-n+2) ~ .flex-box.flexbox-2, .flex-box.flexbox-3:nth-child(3n+1):nth-last-child(-n+3), .flex-box.flexbox-3:nth-child(3n+1):nth-last-child(-n+3) ~ .flex-box.flexbox-3, .flex-box.flexbox-4:nth-child(4n+1):nth-last-child(-n+4), .flex-box.flexbox-4:nth-child(4n+1):nth-last-child(-n+4) ~ .flex-box.flexbox-4, .flex-box.flexbox-5:nth-child(5n+1):nth-last-child(-n+5), .flex-box.flexbox-5:nth-child(5n+1):nth-last-child(-n+5) ~ .flex-box.flexbox-5, .flexbox-5, .flexbox-4, .flexbox-3, .flexbox-2 {
 	    margin-bottom: 5%;
