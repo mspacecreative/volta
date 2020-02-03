@@ -3856,10 +3856,10 @@ aside {
 	flex: 1 1 48%;
 }
 .flexbox-3 {
-	flex-basis: 32%;
+	flex: 1 1 31.333%;
 }
 .flexbox-4 {
-	flex-basis: 23.5%;
+	flex: 1 1 23%;
 }
 .flex-box {
 	border: 1px solid #c9c9c9;
