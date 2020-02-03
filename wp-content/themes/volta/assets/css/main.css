@@ -3865,7 +3865,6 @@ aside {
 }
 .flex-box {
 	padding: 10px;
-	border-top: 5px solid #000;
 	float: left;
 }
 .flex-box.flexbox-5 {
