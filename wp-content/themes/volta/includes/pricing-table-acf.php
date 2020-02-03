@@ -92,7 +92,6 @@
 		margin-bottom: 0;
 	}
 	.membership-type-inner {
-		padding: 5px 30px 20px;
 		border: 1px solid #000;
 		height: 100%;
 	}
