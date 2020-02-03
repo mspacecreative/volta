@@ -18,7 +18,14 @@
 	
 	// POSITIONING CTA BUTTON AT BOTTOM OF FLEXBOX
 	var ctaButton = $('.major').children().find('.button');
-	ctaButton.parent().css('margin-top', 'auto');
+	if ( ctaButton.length == 1 ) {
+		ctaButton.parent().css({
+			'margin-top' : 'auto',
+			'margin-right' : '0',
+		});
+		
+		ctaButton.parent().prev().css('margin-bottom', '1em');
+	}
 	
 	// MASONRY LAYOUT / FILTERING
 	var grid = $('.iso-grid').isotope( {
