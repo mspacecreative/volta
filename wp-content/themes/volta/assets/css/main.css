@@ -4464,7 +4464,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	    padding-left: 0;
 	}
 	.default-padding {
-		padding: 0 2em;
+		padding: 0 3em;
 	}
 	.alignright, .alignleft {
 		max-width: 40%!important;
@@ -4743,7 +4743,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		width: 48%;
 	}
 	.flexbox-4 {
-		flex: 1 auto;
+		flex: 1 1 45%;
 		width: 48%;
 	}
 	
