@@ -2571,76 +2571,70 @@
 	<div class="membership-type">
 		<?php while( have_rows('innovator', 'options') ): the_row(); ?>
 		
-		<h2>Innovator</h2>
-		
-		<?php
-		if( have_rows('benefit_categories', 'options') ):
-		while( have_rows('benefit_categories', 'options') ): the_row(); ?>
-		
-		<div class="membership-type-inner">
-			<?php
-			$field = get_sub_field_object('people');
-			$people = $field['value'];
-			if ( $people ): ?>
+		<div class="table-list-content">	
+			<h2>Innovator</h2>
 			
-			<div class="table-list-content">
+			<?php
+			if( have_rows('benefit_categories', 'options') ):
+			while( have_rows('benefit_categories', 'options') ): the_row(); ?>
+			
+			<div class="membership-type-inner">
+				<?php
+				$field = get_sub_field_object('people');
+				$people = $field['value'];
+				if ( $people ): ?>
+				
 				<h3>People</h3>
 				<ul>
 					<?php foreach( $people as $person ): ?>
 					<li><?php echo $field['choices'][ $person ]; ?></li>
 					<?php endforeach; ?>
 				</ul>
-			</div>
-			<?php endif;
-			
-			$field = get_sub_field_object('engagement');
-			$engagement = $field['value'];
-			if ( $engagement ): ?>
-			
-			<div class="table-list-content">
+				<?php endif;
+				
+				$field = get_sub_field_object('engagement');
+				$engagement = $field['value'];
+				if ( $engagement ): ?>
+				
 				<h3>Engagement</h3>
 				<ul>
 					<?php foreach( $engagement as $engage ): ?>
 					<li><?php echo $field['choices'][ $engage ]; ?></li>
 					<?php endforeach; ?>
 				</ul>
-			</div>
-			<?php endif;
-			
-			$field = get_sub_field_object('space');
-			$spaces = $field['value'];
-			if ( $spaces ): ?>
-			
-			<div class="table-list-content">	
-			<h3>Space</h3>
+				<?php endif;
+				
+				$field = get_sub_field_object('space');
+				$spaces = $field['value'];
+				if ( $spaces ): ?>
+				
+				<h3>Space</h3>
 				<ul>
 					<?php foreach( $spaces as $space ): ?>
 					<li><?php echo $field['choices'][ $space ]; ?></li>
 					<?php endforeach; ?>
 				</ul>
-			</div>
-			<?php endif;
-			
-			$field = get_sub_field_object('recognition');
-			$recognition = $field['value'];
-			if ( $recognition ): ?>
-			
-			<div class="table-list-content">
+				<?php endif;
+				
+				$field = get_sub_field_object('recognition');
+				$recognition = $field['value'];
+				if ( $recognition ): ?>
+				
 				<h3>Recognition</h3>
 				<ul>
 					<?php foreach( $recognition as $recognize ): ?>
 					<li><?php echo $field['choices'][ $recognize ]; ?></li>
 					<?php endforeach; ?>
 				</ul>
+				<?php endif; ?>
 			</div>
-			<?php endif; ?>
+			
+			<?php 
+			endwhile;
+			endif;
+			
+			endwhile; ?>
 		</div>
-		
-		<?php 
-		endwhile;
-		endif;
-		
-		endwhile; ?>
 	</div>
 	<?php endif; ?>
 	
@@ -2648,76 +2642,70 @@
 	<div class="membership-type">
 		<?php while( have_rows('builder', 'options') ): the_row(); ?>
 		
-		<h2>Builder</h2>
-		
-		<?php
-		if( have_rows('builder_benefit_categories', 'options') ):
-		while( have_rows('builder_benefit_categories', 'options') ): the_row(); ?>
-		
-		<div class="membership-type-inner">
-			<?php
-			$field = get_sub_field_object('people');
-			$people = $field['value'];
-			if ( $people ): ?>
+		<div class="table-list-content">	
+			<h2>Builder</h2>
 			
-			<div class="table-list-content">
+			<?php
+			if( have_rows('builder_benefit_categories', 'options') ):
+			while( have_rows('builder_benefit_categories', 'options') ): the_row(); ?>
+			
+			<div class="membership-type-inner">
+				<?php
+				$field = get_sub_field_object('people');
+				$people = $field['value'];
+				if ( $people ): ?>
+				
 				<h3>People</h3>
 				<ul>
 					<?php foreach( $people as $person ): ?>
 					<li><?php echo $field['choices'][ $person ]; ?></li>
 					<?php endforeach; ?>
 				</ul>
-			</div>
-			<?php endif;
-			
-			$field = get_sub_field_object('engagement');
-			$engagement = $field['value'];
-			if ( $engagement ): ?>
-			
-			<div class="table-list-content">
+				<?php endif;
+				
+				$field = get_sub_field_object('engagement');
+				$engagement = $field['value'];
+				if ( $engagement ): ?>
+				
 				<h3>Engagement</h3>
 				<ul>
 					<?php foreach( $engagement as $engage ): ?>
 					<li><?php echo $field['choices'][ $engage ]; ?></li>
 					<?php endforeach; ?>
 				</ul>
-			</div>
-			<?php endif;
-			
-			$field = get_sub_field_object('space');
-			$spaces = $field['value'];
-			if ( $spaces ): ?>
-			
-			<div class="table-list-content">
+				<?php endif;
+				
+				$field = get_sub_field_object('space');
+				$spaces = $field['value'];
+				if ( $spaces ): ?>
+				
 				<h3>Space</h3>
 				<ul>
 					<?php foreach( $spaces as $space ): ?>
 					<li><?php echo $field['choices'][ $space ]; ?></li>
 					<?php endforeach; ?>
 				</ul>
-			</div>
-			<?php endif;
-			
-			$field = get_sub_field_object('recognition');
-			$recognition = $field['value'];
-			if ( $recognition ): ?>
-			
-			<div class="table-list-content">	
+				<?php endif;
+				
+				$field = get_sub_field_object('recognition');
+				$recognition = $field['value'];
+				if ( $recognition ): ?>
+				
 				<h3>Recognition</h3>
 				<ul>
 					<?php foreach( $recognition as $recognize ): ?>
 					<li><?php echo $field['choices'][ $recognize ]; ?></li>
 					<?php endforeach; ?>
 				</ul>
+				<?php endif; ?>
 			</div>
-			<?php endif; ?>
+			
+			<?php 
+			endwhile;
+			endif;
+			
+			endwhile; ?>
 		</div>
-		
-		<?php 
-		endwhile;
-		endif;
-		
-		endwhile; ?>
 	</div>
 	<?php endif; ?>
 	
@@ -2725,76 +2713,70 @@
 	<div class="membership-type">
 		<?php while( have_rows('supporter', 'options') ): the_row(); ?>
 		
-		<h2>Supporter</h2>
-		
-		<?php
-		if( have_rows('supporter_benefit_categories', 'options') ):
-		while( have_rows('supporter_benefit_categories', 'options') ): the_row(); ?>
-		
-		<div class="membership-type-inner">
-			<?php
-			$field = get_sub_field_object('people');
-			$people = $field['value'];
-			if ( $people ): ?>
+		<div class="table-list-content">	
+			<h2>Supporter</h2>
 			
-			<div class="table-list-content">	
+			<?php
+			if( have_rows('supporter_benefit_categories', 'options') ):
+			while( have_rows('supporter_benefit_categories', 'options') ): the_row(); ?>
+			
+			<div class="membership-type-inner">
+				<?php
+				$field = get_sub_field_object('people');
+				$people = $field['value'];
+				if ( $people ): ?>
+				
 				<h3>People</h3>
 				<ul>
 					<?php foreach( $people as $person ): ?>
 					<li><?php echo $field['choices'][ $person ]; ?></li>
 					<?php endforeach; ?>
 				</ul>
-			</div>
-			<?php endif;
-			
-			$field = get_sub_field_object('engagement');
-			$engagement = $field['value'];
-			if ( $engagement ): ?>
-			
-			<div class="table-list-content">	
+				<?php endif;
+				
+				$field = get_sub_field_object('engagement');
+				$engagement = $field['value'];
+				if ( $engagement ): ?>
+				
 				<h3>Engagement</h3>
 				<ul>
 					<?php foreach( $engagement as $engage ): ?>
 					<li><?php echo $field['choices'][ $engage ]; ?></li>
 					<?php endforeach; ?>
 				</ul>
-			</div>
-			<?php endif;
-			
-			$field = get_sub_field_object('space');
-			$spaces = $field['value'];
-			if ( $spaces ): ?>
-			
-			<div class="table-list-content">	
+				<?php endif;
+				
+				$field = get_sub_field_object('space');
+				$spaces = $field['value'];
+				if ( $spaces ): ?>
+				
 				<h3>Space</h3>
 				<ul>
 					<?php foreach( $spaces as $space ): ?>
 					<li><?php echo $field['choices'][ $space ]; ?></li>
 					<?php endforeach; ?>
 				</ul>
-			</div>
-			<?php endif;
-			
-			$field = get_sub_field_object('recognition');
-			$recognition = $field['value'];
-			if ( $recognition ): ?>
-			
-			<div class="table-list-content">	
+				<?php endif;
+				
+				$field = get_sub_field_object('recognition');
+				$recognition = $field['value'];
+				if ( $recognition ): ?>
+				
 				<h3>Recognition</h3>
 				<ul>
 					<?php foreach( $recognition as $recognize ): ?>
 					<li><?php echo $field['choices'][ $recognize ]; ?></li>
 					<?php endforeach; ?>
 				</ul>
+				<?php endif; ?>
 			</div>
-			<?php endif; ?>
+			
+			<?php 
+			endwhile;
+			endif;
+			
+			endwhile; ?>
 		</div>
-		
-		<?php 
-		endwhile;
-		endif;
-		
-		endwhile; ?>
 	</div>
 	<?php endif; ?>
 	
@@ -2802,76 +2784,70 @@
 	<div class="membership-type">
 		<?php while( have_rows('out-of-towner', 'options') ): the_row(); ?>
 		
-		<h2>Out-of-towner</h2>
-		
-		<?php
-		if( have_rows('towner_benefit_categories', 'options') ):
-		while( have_rows('towner_benefit_categories', 'options') ): the_row(); ?>
-		
-		<div class="membership-type-inner">
-			<?php
-			$field = get_sub_field_object('people');
-			$people = $field['value'];
-			if ( $people ): ?>
+		<div class="table-list-content">	
+			<h2>Out-of-towner</h2>
 			
-			<div class="table-list-content">	
+			<?php
+			if( have_rows('towner_benefit_categories', 'options') ):
+			while( have_rows('towner_benefit_categories', 'options') ): the_row(); ?>
+			
+			<div class="membership-type-inner">
+				<?php
+				$field = get_sub_field_object('people');
+				$people = $field['value'];
+				if ( $people ): ?>
+				
 				<h3>People</h3>
 				<ul>
 					<?php foreach( $people as $person ): ?>
 					<li><?php echo $field['choices'][ $person ]; ?></li>
 					<?php endforeach; ?>
 				</ul>
-			</div>
-			<?php endif;
-			
-			$field = get_sub_field_object('engagement');
-			$engagement = $field['value'];
-			if ( $engagement ): ?>
-			
-			<div class="table-list-content">
+				<?php endif;
+				
+				$field = get_sub_field_object('engagement');
+				$engagement = $field['value'];
+				if ( $engagement ): ?>
+				
 				<h3>Engagement</h3>
 				<ul>
 					<?php foreach( $engagement as $engage ): ?>
 					<li><?php echo $field['choices'][ $engage ]; ?></li>
 					<?php endforeach; ?>
 				</ul>
-			</div>
-			<?php endif;
-			
-			$field = get_sub_field_object('space');
-			$spaces = $field['value'];
-			if ( $spaces ): ?>
-			
-			<div class="table-list-content">	
+				<?php endif;
+				
+				$field = get_sub_field_object('space');
+				$spaces = $field['value'];
+				if ( $spaces ): ?>
+				
 				<h3>Space</h3>
 				<ul>
 					<?php foreach( $spaces as $space ): ?>
 					<li><?php echo $field['choices'][ $space ]; ?></li>
 					<?php endforeach; ?>
 				</ul>
-			</div>
-			<?php endif;
-			
-			$field = get_sub_field_object('recognition');
-			$recognition = $field['value'];
-			if ( $recognition ): ?>
-			
-			<div class="table-list-content">	
+				<?php endif;
+				
+				$field = get_sub_field_object('recognition');
+				$recognition = $field['value'];
+				if ( $recognition ): ?>
+				
 				<h3>Recognition</h3>
 				<ul>
 					<?php foreach( $recognition as $recognize ): ?>
 					<li><?php echo $field['choices'][ $recognize ]; ?></li>
 					<?php endforeach; ?>
 				</ul>
+				<?php endif; ?>
 			</div>
-			<?php endif; ?>
+			
+			<?php 
+			endwhile;
+			endif;
+			
+			endwhile; ?>
 		</div>
-		
-		<?php 
-		endwhile;
-		endif;
-		
-		endwhile; ?>
 	</div>
 	<?php endif; ?>
 </div>
