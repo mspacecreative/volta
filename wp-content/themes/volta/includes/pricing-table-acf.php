@@ -102,6 +102,9 @@
 	.post-content-container .mobile-pricing-table h3 {
 		margin: 1em 0 .5em;
 	}
+	.table-list-content {
+		padding: 5px 30px 15px;
+	}
 	@media (max-width: 980px) {
 		.mobile-pricing-table {
 			display: flex;
@@ -2580,48 +2583,56 @@
 			$people = $field['value'];
 			if ( $people ): ?>
 			
-			<h3>People</h3>
-			<ul>
-				<?php foreach( $people as $person ): ?>
-				<li><?php echo $field['choices'][ $person ]; ?></li>
-				<?php endforeach; ?>
-			</ul>
+			<div class="table-list-content">
+				<h3>People</h3>
+				<ul>
+					<?php foreach( $people as $person ): ?>
+					<li><?php echo $field['choices'][ $person ]; ?></li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
 			<?php endif;
 			
 			$field = get_sub_field_object('engagement');
 			$engagement = $field['value'];
 			if ( $engagement ): ?>
 			
-			<h3>Engagement</h3>
-			<ul>
-				<?php foreach( $engagement as $engage ): ?>
-				<li><?php echo $field['choices'][ $engage ]; ?></li>
-				<?php endforeach; ?>
-			</ul>
+			<div class="table-list-content">
+				<h3>Engagement</h3>
+				<ul>
+					<?php foreach( $engagement as $engage ): ?>
+					<li><?php echo $field['choices'][ $engage ]; ?></li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
 			<?php endif;
 			
 			$field = get_sub_field_object('space');
 			$spaces = $field['value'];
 			if ( $spaces ): ?>
 			
+			<div class="table-list-content">	
 			<h3>Space</h3>
-			<ul>
-				<?php foreach( $spaces as $space ): ?>
-				<li><?php echo $field['choices'][ $space ]; ?></li>
-				<?php endforeach; ?>
-			</ul>
+				<ul>
+					<?php foreach( $spaces as $space ): ?>
+					<li><?php echo $field['choices'][ $space ]; ?></li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
 			<?php endif;
 			
 			$field = get_sub_field_object('recognition');
 			$recognition = $field['value'];
 			if ( $recognition ): ?>
 			
-			<h3>Recognition</h3>
-			<ul>
-				<?php foreach( $recognition as $recognize ): ?>
-				<li><?php echo $field['choices'][ $recognize ]; ?></li>
-				<?php endforeach; ?>
-			</ul>
+			<div class="table-list-content">
+				<h3>Recognition</h3>
+				<ul>
+					<?php foreach( $recognition as $recognize ): ?>
+					<li><?php echo $field['choices'][ $recognize ]; ?></li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
 			<?php endif; ?>
 		</div>
 		
@@ -2649,48 +2660,56 @@
 			$people = $field['value'];
 			if ( $people ): ?>
 			
-			<h3>People</h3>
-			<ul>
-				<?php foreach( $people as $person ): ?>
-				<li><?php echo $field['choices'][ $person ]; ?></li>
-				<?php endforeach; ?>
-			</ul>
+			<div class="table-list-content">
+				<h3>People</h3>
+				<ul>
+					<?php foreach( $people as $person ): ?>
+					<li><?php echo $field['choices'][ $person ]; ?></li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
 			<?php endif;
 			
 			$field = get_sub_field_object('engagement');
 			$engagement = $field['value'];
 			if ( $engagement ): ?>
 			
-			<h3>Engagement</h3>
-			<ul>
-				<?php foreach( $engagement as $engage ): ?>
-				<li><?php echo $field['choices'][ $engage ]; ?></li>
-				<?php endforeach; ?>
-			</ul>
+			<div class="table-list-content">
+				<h3>Engagement</h3>
+				<ul>
+					<?php foreach( $engagement as $engage ): ?>
+					<li><?php echo $field['choices'][ $engage ]; ?></li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
 			<?php endif;
 			
 			$field = get_sub_field_object('space');
 			$spaces = $field['value'];
 			if ( $spaces ): ?>
 			
-			<h3>Space</h3>
-			<ul>
-				<?php foreach( $spaces as $space ): ?>
-				<li><?php echo $field['choices'][ $space ]; ?></li>
-				<?php endforeach; ?>
-			</ul>
+			<div class="table-list-content">
+				<h3>Space</h3>
+				<ul>
+					<?php foreach( $spaces as $space ): ?>
+					<li><?php echo $field['choices'][ $space ]; ?></li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
 			<?php endif;
 			
 			$field = get_sub_field_object('recognition');
 			$recognition = $field['value'];
 			if ( $recognition ): ?>
 			
-			<h3>Recognition</h3>
-			<ul>
-				<?php foreach( $recognition as $recognize ): ?>
-				<li><?php echo $field['choices'][ $recognize ]; ?></li>
-				<?php endforeach; ?>
-			</ul>
+			<div class="table-list-content">	
+				<h3>Recognition</h3>
+				<ul>
+					<?php foreach( $recognition as $recognize ): ?>
+					<li><?php echo $field['choices'][ $recognize ]; ?></li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
 			<?php endif; ?>
 		</div>
 		
@@ -2718,48 +2737,56 @@
 			$people = $field['value'];
 			if ( $people ): ?>
 			
-			<h3>People</h3>
-			<ul>
-				<?php foreach( $people as $person ): ?>
-				<li><?php echo $field['choices'][ $person ]; ?></li>
-				<?php endforeach; ?>
-			</ul>
+			<div class="table-list-content">	
+				<h3>People</h3>
+				<ul>
+					<?php foreach( $people as $person ): ?>
+					<li><?php echo $field['choices'][ $person ]; ?></li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
 			<?php endif;
 			
 			$field = get_sub_field_object('engagement');
 			$engagement = $field['value'];
 			if ( $engagement ): ?>
 			
-			<h3>Engagement</h3>
-			<ul>
-				<?php foreach( $engagement as $engage ): ?>
-				<li><?php echo $field['choices'][ $engage ]; ?></li>
-				<?php endforeach; ?>
-			</ul>
+			<div class="table-list-content">	
+				<h3>Engagement</h3>
+				<ul>
+					<?php foreach( $engagement as $engage ): ?>
+					<li><?php echo $field['choices'][ $engage ]; ?></li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
 			<?php endif;
 			
 			$field = get_sub_field_object('space');
 			$spaces = $field['value'];
 			if ( $spaces ): ?>
 			
-			<h3>Space</h3>
-			<ul>
-				<?php foreach( $spaces as $space ): ?>
-				<li><?php echo $field['choices'][ $space ]; ?></li>
-				<?php endforeach; ?>
-			</ul>
+			<div class="table-list-content">	
+				<h3>Space</h3>
+				<ul>
+					<?php foreach( $spaces as $space ): ?>
+					<li><?php echo $field['choices'][ $space ]; ?></li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
 			<?php endif;
 			
 			$field = get_sub_field_object('recognition');
 			$recognition = $field['value'];
 			if ( $recognition ): ?>
 			
-			<h3>Recognition</h3>
-			<ul>
-				<?php foreach( $recognition as $recognize ): ?>
-				<li><?php echo $field['choices'][ $recognize ]; ?></li>
-				<?php endforeach; ?>
-			</ul>
+			<div class="table-list-content">	
+				<h3>Recognition</h3>
+				<ul>
+					<?php foreach( $recognition as $recognize ): ?>
+					<li><?php echo $field['choices'][ $recognize ]; ?></li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
 			<?php endif; ?>
 		</div>
 		
@@ -2787,48 +2814,56 @@
 			$people = $field['value'];
 			if ( $people ): ?>
 			
-			<h3>People</h3>
-			<ul>
-				<?php foreach( $people as $person ): ?>
-				<li><?php echo $field['choices'][ $person ]; ?></li>
-				<?php endforeach; ?>
-			</ul>
+			<div class="table-list-content">	
+				<h3>People</h3>
+				<ul>
+					<?php foreach( $people as $person ): ?>
+					<li><?php echo $field['choices'][ $person ]; ?></li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
 			<?php endif;
 			
 			$field = get_sub_field_object('engagement');
 			$engagement = $field['value'];
 			if ( $engagement ): ?>
 			
-			<h3>Engagement</h3>
-			<ul>
-				<?php foreach( $engagement as $engage ): ?>
-				<li><?php echo $field['choices'][ $engage ]; ?></li>
-				<?php endforeach; ?>
-			</ul>
+			<div class="table-list-content">
+				<h3>Engagement</h3>
+				<ul>
+					<?php foreach( $engagement as $engage ): ?>
+					<li><?php echo $field['choices'][ $engage ]; ?></li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
 			<?php endif;
 			
 			$field = get_sub_field_object('space');
 			$spaces = $field['value'];
 			if ( $spaces ): ?>
 			
-			<h3>Space</h3>
-			<ul>
-				<?php foreach( $spaces as $space ): ?>
-				<li><?php echo $field['choices'][ $space ]; ?></li>
-				<?php endforeach; ?>
-			</ul>
+			<div class="table-list-content">	
+				<h3>Space</h3>
+				<ul>
+					<?php foreach( $spaces as $space ): ?>
+					<li><?php echo $field['choices'][ $space ]; ?></li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
 			<?php endif;
 			
 			$field = get_sub_field_object('recognition');
 			$recognition = $field['value'];
 			if ( $recognition ): ?>
 			
-			<h3>Recognition</h3>
-			<ul>
-				<?php foreach( $recognition as $recognize ): ?>
-				<li><?php echo $field['choices'][ $recognize ]; ?></li>
-				<?php endforeach; ?>
-			</ul>
+			<div class="table-list-content">	
+				<h3>Recognition</h3>
+				<ul>
+					<?php foreach( $recognition as $recognize ): ?>
+					<li><?php echo $field['choices'][ $recognize ]; ?></li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
 			<?php endif; ?>
 		</div>
 		
