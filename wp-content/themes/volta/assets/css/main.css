@@ -3863,6 +3863,7 @@ aside {
 	border: 1px solid #c9c9c9;
 	margin: 0 0 2% 2%;
 	border-top: 5px solid #000;
+	float: left;
 }
 .flex-box.flexbox-5 {
 	flex: 1 1 18%;
@@ -4738,11 +4739,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.one_third_col {
 		margin-top: 50px;
 	}
-	.flexbox-3, .flex-box.flexbox-5, .resident-container, .resident-container:nth-child(3n) {
-		flex: 1 1 48%;
-		width: 48%;
-	}
-	.flexbox-4 {
+	.flexbox-3, .flexbox-4 .flex-box.flexbox-5, .resident-container, .resident-container:nth-child(3n) {
 		flex: 1 1 45%;
 		width: 48%;
 	}
