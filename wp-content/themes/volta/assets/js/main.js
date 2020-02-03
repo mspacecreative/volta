@@ -18,7 +18,7 @@
 	
 	// POSITIONING CTA BUTTON AT BOTTOM OF FLEXBOX
 	var ctaButton = $('.major').children().find('.button');
-	if ( ctaButton.length == 1 ) {
+	if ( ctaButton.length ) {
 		ctaButton.parent().css({
 			'margin-top' : 'auto',
 			'margin-right' : '0',
