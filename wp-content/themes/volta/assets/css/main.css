@@ -3439,7 +3439,7 @@ img {
 	width: auto;
 }
 .resident-container {
-	margin: 0 0 2% 2%;
+	padding: 10px;
 	box-shadow: 0 0 11px #d9d9d9;
 }
 .residents-container .grid-inner .wider img {
