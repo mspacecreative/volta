@@ -3176,6 +3176,8 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 					position: relative;
 					z-index: 3;
 					margin: 0 auto;
+					display: flex;
+					flex-direction: column;
 				}
 				
 				.tiles article header h2 {

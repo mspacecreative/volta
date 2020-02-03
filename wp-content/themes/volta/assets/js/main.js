@@ -16,11 +16,10 @@
 		});
 	}*/
 	
-	// POSITIONING BUTTON AT BOTTOM OF FLEXBOX
-	var ctaButton = $('.button'),
-	    majorHeading = $('.major');
-	if ( majorHeading.children(ctaButton).length == 1 ) {
-		ctaButton.css('margin-top', 'auto');
+	// POSITIONING CTA BUTTON AT BOTTOM OF FLEXBOX
+	var majorHeading = $('.major');
+	if ( majorHeading.children('.button').length >= 1 ) {
+		$(this).parent.css('margin-top', 'auto');
 	}
 	
 	// MASONRY LAYOUT / FILTERING
