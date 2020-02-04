@@ -2,7 +2,7 @@
 $padding = get_field('section_padding_section_padding');
 $margin = get_field('section_margin_section_margin');
 $width = get_field('content_width');
-$textcolour = get_field('text_colour_text_color');
+$textcolour = get_field('text_color_text_color');
 $innerpadding = get_field('extra_inner_padding');
 	
 if ( $width && $innerpadding && $margin == 'both' && $textcolour == 'light' ):
