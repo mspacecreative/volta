@@ -104,7 +104,7 @@ elseif ( $width && $innerpadding && $padding == 'both' && $margin == 'bottom' &&
 elseif ( $width && $padding == 'both' && $margin == 'bottom' && $textcolour == 'light' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 extra-top-bottom-padding bottom-margin light clear">
+	<div class="width-800 top-bottom-padding bottom-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
 		
@@ -116,7 +116,7 @@ elseif ( $width && $padding == 'both' && $margin == 'bottom' && $textcolour == '
 elseif ( $width && $padding == 'both' && $margin == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
-	<div class="width-800 extra-top-bottom-padding bottom-margin clear">
+	<div class="width-800 top-bottom-padding bottom-margin clear">
 		
 		<?php the_field('content_editor'); ?>
 		
