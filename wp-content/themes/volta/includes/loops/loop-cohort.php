@@ -106,26 +106,3 @@
 	endif; wp_reset_postdata();
 ?>
 </div>
-
-<style>
-	.alumni-company-callout {
-		position: absolute;
-		bottom: -20px;
-		right: -85px;
-		transform: rotate(-45deg);
-		padding: 15px;
-		width: 250px;
-		background: #00dbb6;
-		color: white;
-		font-size: 14px;
-		height: 120px;
-		text-align: center;
-	}
-	.alumni-company-callout h5 {
-		max-width: 90px;
-		margin: auto;
-		color: #fff;
-		font-weight: bold;
-		text-shadow: 0 0 2px #888;
-	}
-</style>
