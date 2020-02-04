@@ -2,9 +2,115 @@
 $padding = get_field('section_padding');
 $margin = get_field('section_margin');
 $blockanchor = get_field('block_id');
+$width = get_field('two_third_one_third_content_width');
 
 if ( $blockanchor && $padding == 'top' && $margin == 'top' ): ?>
 <div id="<?php the_field('block_id'); ?>" class="clear top-padding top-margin">
+	
+	<?php include('inc/two-third-one-third-loop.php'); ?>
+	
+</div>
+
+<?php elseif ( $width && $padding == 'top' && $margin == 'top' ): ?>
+<div class="width-800 clear top-padding top-margin">
+	
+	<?php include('inc/two-third-one-third-loop.php'); ?>
+	
+</div>
+
+<?php elseif ( $width && $padding == 'bottom' && $margin == 'bottom' ): ?>
+<div class="width-800 clear bottom-padding bottom-margin">
+	
+	<?php include('inc/two-third-one-third-loop.php'); ?>
+	
+</div>
+
+<?php elseif ( $width && $padding == 'top' && $margin == 'bottom' ): ?>
+<div class="width-800 clear top-padding bottom-margin">
+	
+	<?php include('inc/two-third-one-third-loop.php'); ?>
+	
+</div>
+
+<?php elseif ( $width && $padding == 'bottom' && $margin == 'top' ): ?>
+<div class="width-800 clear bottom-padding top-margin">
+	
+	<?php include('inc/two-third-one-third-loop.php'); ?>
+	
+</div>
+
+<?php elseif ( $width && $padding == 'both' && $margin == 'top' ): ?>
+<div class="width-800 clear top-bottom-padding top-margin">
+	
+	<?php include('inc/two-third-one-third-loop.php'); ?>
+	
+</div>
+
+<?php elseif ( $width && $padding == 'both' && $margin == 'bottom' ): ?>
+<div class="width-800 clear top-bottom-padding bottom-margin">
+	
+	<?php include('inc/two-third-one-third-loop.php'); ?>
+	
+</div>
+
+<?php elseif ( $width && $padding == 'both' && $margin == 'both' ): ?>
+<div class="width-800 clear top-bottom-padding top-bottom-margin">
+	
+	<?php include('inc/two-third-one-third-loop.php'); ?>
+	
+</div>
+
+<?php elseif ( $width && $padding == 'top' && $margin == 'both' ): ?>
+<div class="width-800 clear top-padding top-bottom-margin">
+	
+	<?php include('inc/two-third-one-third-loop.php'); ?>
+	
+</div>
+
+<?php elseif ( $width && $padding == 'bottom' && $margin == 'both' ): ?>
+<div class="width-800 clear bottom-padding top-bottom-margin">
+	
+	<?php include('inc/two-third-one-third-loop.php'); ?>
+	
+</div>
+
+<?php elseif ( $width && $padding == 'top'): ?>
+<div class="width-800 clear top-padding">
+	
+	<?php include('inc/two-third-one-third-loop.php'); ?>
+	
+</div>
+
+<?php elseif ( $width && $padding == 'bottom'): ?>
+<div class="width-800 clear bottom-padding">
+	
+	<?php include('inc/two-third-one-third-loop.php'); ?>
+	
+</div>
+
+<?php elseif ( $width && $padding == 'both'): ?>
+<div class="width-800 clear top-bottom-padding">
+	
+	<?php include('inc/two-third-one-third-loop.php'); ?>
+	
+</div>
+
+<?php elseif ( $width && $margin == 'top'): ?>
+<div class="width-800 clear top-margin">
+	
+	<?php include('inc/two-third-one-third-loop.php'); ?>
+	
+</div>
+
+<?php elseif ( $width && $margin == 'bottom'): ?>
+<div class="width-800 clear bottom-margin">
+	
+	<?php include('inc/two-third-one-third-loop.php'); ?>
+	
+</div>
+
+<?php elseif ( $width && $margin == 'both'): ?>
+<div class="width-800 clear top-bottom-margin">
 	
 	<?php include('inc/two-third-one-third-loop.php'); ?>
 	
