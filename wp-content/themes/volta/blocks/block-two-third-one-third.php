@@ -5,7 +5,7 @@ $blockanchor = get_field('block_id');
 $width = get_field('two_third_one_third_content_width');
 $flex = get_field('two_third_one_third_vertical_alignment');
 
-if ( $flex = 'bottom' ):
+if ( $flex == 'bottom' ):
 
 	if ( $blockanchor && $padding == 'top' && $margin == 'top' ): ?>
 	<div id="<?php the_field('block_id'); ?>" class="clear display-flex vertical-align-bottom top-padding top-margin">
@@ -330,7 +330,7 @@ if ( $flex = 'bottom' ):
 	</div>
 	<?php endif;
 	
-elseif ( $flex = 'center' ):
+elseif ( $flex == 'center' ):
 	
 	if ( $blockanchor && $padding == 'top' && $margin == 'top' ): ?>
 	<div id="<?php the_field('block_id'); ?>" class="clear display-flex vertical-align-center top-padding top-margin">
