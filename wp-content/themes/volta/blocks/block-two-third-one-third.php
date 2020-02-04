@@ -3,326 +3,981 @@ $padding = get_field('section_padding');
 $margin = get_field('section_margin');
 $blockanchor = get_field('block_id');
 $width = get_field('two_third_one_third_content_width');
+$flex = get_field('two_third_one_third_vertical_alignment');
 
-if ( $blockanchor && $padding == 'top' && $margin == 'top' ): ?>
-<div id="<?php the_field('block_id'); ?>" class="clear top-padding top-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
+if ( $flex = 'bottom' ):
 
-<?php elseif ( $width && $padding == 'top' && $margin == 'top' ): ?>
-<div class="width-800 clear top-padding top-margin">
+	if ( $blockanchor && $padding == 'top' && $margin == 'top' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex vertical-align-bottom top-padding top-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
 	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
+	<?php elseif ( $width && $padding == 'top' && $margin == 'top' ): ?>
+	<div class="width-800 clear top-padding top-margin display-flex vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
 	
-</div>
+	<?php elseif ( $width && $padding == 'bottom' && $margin == 'bottom' ): ?>
+	<div class="width-800 clear bottom-padding bottom-margin display-flex vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'top' && $margin == 'bottom' ): ?>
+	<div class="width-800 clear top-padding bottom-margin display-flex vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'bottom' && $margin == 'top' ): ?>
+	<div class="width-800 clear display-flex bottom-padding top-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'both' && $margin == 'top' ): ?>
+	<div class="width-800 clear top-bottom-padding top-margin display-flex vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'both' && $margin == 'bottom' ): ?>
+	<div class="width-800 clear top-bottom-padding bottom-margin display-flex vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'both' && $margin == 'both' ): ?>
+	<div class="width-800 clear display-flex top-bottom-padding top-bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'top' && $margin == 'both' ): ?>
+	<div class="width-800 clear display-flex top-padding top-bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'bottom' && $margin == 'both' ): ?>
+	<div class="width-800 clear display-flex bottom-padding top-bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'top'): ?>
+	<div class="width-800 clear display-flex top-padding vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'bottom'): ?>
+	<div class="width-800 clear display-flex bottom-padding vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'both'): ?>
+	<div class="width-800 clear display-flex top-bottom-padding vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $margin == 'top'): ?>
+	<div class="width-800 clear display-flex top-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $margin == 'bottom'): ?>
+	<div class="width-800 clear display-flex bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $margin == 'both'): ?>
+	<div class="width-800 clear display-flex top-bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'top' && $margin == 'top' ): ?>
+	<div class="clear display-flex top-padding top-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'bottom' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'bottom' && $margin == 'bottom' ): ?>
+	<div class="clear display-flex bottom-padding bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'both' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding top-bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'both' && $margin == 'both' ): ?>
+	<div class="clear display-flex top-bottom-padding top-bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'top' && $margin == 'bottom' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'top' && $margin == 'bottom' ): ?>
+	<div class="clear display-flex top-padding bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'top' && $margin == 'both' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding top-bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'top' && $margin == 'both' ): ?>
+	<div class="clear display-flex top-padding top-bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'top' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding top-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'bottom' && $margin == 'top' ): ?>
+	<div class="clear display-flex bottom-padding top-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'both' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding top-bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'bottom' && $margin == 'both' ): ?>
+	<div class="clear display-flex bottom-padding top-bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'top' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding top-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'both' && $margin == 'top' ): ?>
+	<div class="clear display-flex top-bottom-padding top-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'bottom' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'both' && $margin == 'bottom' ): ?>
+	<div class="clear display-flex top-bottom-padding bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'bottom' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'bottom' ): ?>
+	<div class="clear display-flex bottom-padding vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'top' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'top' ): ?>
+	<div class="clear display-flex top-padding vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'both' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'both' ): ?>
+	<div class="clear display-flex top-bottom-padding vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $margin == 'bottom' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $margin == 'bottom' ): ?>
+	<div class="clear display-flex bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $margin == 'top' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $margin == 'top' ): ?>
+	<div class="clear display-flex top-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $margin == 'both' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $margin == 'both' ): ?>
+	<div class="clear display-flex top-bottom-margin vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php else : ?>
+	<div class="clear display-flex vertical-align-bottom">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $flex = 'center' ):
+	
+	if ( $blockanchor && $padding == 'top' && $margin == 'top' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex vertical-align-center top-padding top-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'top' && $margin == 'top' ): ?>
+	<div class="width-800 clear top-padding top-margin display-flex vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'bottom' && $margin == 'bottom' ): ?>
+	<div class="width-800 clear bottom-padding bottom-margin display-flex vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'top' && $margin == 'bottom' ): ?>
+	<div class="width-800 clear top-padding bottom-margin display-flex vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'bottom' && $margin == 'top' ): ?>
+	<div class="width-800 clear display-flex bottom-padding top-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'both' && $margin == 'top' ): ?>
+	<div class="width-800 clear top-bottom-padding top-margin display-flex vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'both' && $margin == 'bottom' ): ?>
+	<div class="width-800 clear top-bottom-padding bottom-margin display-flex vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'both' && $margin == 'both' ): ?>
+	<div class="width-800 clear display-flex top-bottom-padding top-bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'top' && $margin == 'both' ): ?>
+	<div class="width-800 clear display-flex top-padding top-bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'bottom' && $margin == 'both' ): ?>
+	<div class="width-800 clear display-flex bottom-padding top-bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'top'): ?>
+	<div class="width-800 clear display-flex top-padding vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'bottom'): ?>
+	<div class="width-800 clear display-flex bottom-padding vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'both'): ?>
+	<div class="width-800 clear display-flex top-bottom-padding vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $margin == 'top'): ?>
+	<div class="width-800 clear display-flex top-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $margin == 'bottom'): ?>
+	<div class="width-800 clear display-flex bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $margin == 'both'): ?>
+	<div class="width-800 clear display-flex top-bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'top' && $margin == 'top' ): ?>
+	<div class="clear display-flex top-padding top-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'bottom' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'bottom' && $margin == 'bottom' ): ?>
+	<div class="clear display-flex bottom-padding bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'both' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding top-bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'both' && $margin == 'both' ): ?>
+	<div class="clear display-flex top-bottom-padding top-bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'top' && $margin == 'bottom' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'top' && $margin == 'bottom' ): ?>
+	<div class="clear display-flex top-padding bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'top' && $margin == 'both' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding top-bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'top' && $margin == 'both' ): ?>
+	<div class="clear display-flex top-padding top-bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'top' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding top-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'bottom' && $margin == 'top' ): ?>
+	<div class="clear display-flex bottom-padding top-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'both' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding top-bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'bottom' && $margin == 'both' ): ?>
+	<div class="clear display-flex bottom-padding top-bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'top' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding top-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'both' && $margin == 'top' ): ?>
+	<div class="clear display-flex top-bottom-padding top-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'bottom' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'both' && $margin == 'bottom' ): ?>
+	<div class="clear display-flex top-bottom-padding bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'bottom' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'bottom' ): ?>
+	<div class="clear display-flex bottom-padding vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'top' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'top' ): ?>
+	<div class="clear display-flex top-padding vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'both' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'both' ): ?>
+	<div class="clear display-flex top-bottom-padding vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $margin == 'bottom' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $margin == 'bottom' ): ?>
+	<div class="clear display-flex bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $margin == 'top' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $margin == 'top' ): ?>
+	<div class="clear display-flex top-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $margin == 'both' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $margin == 'both' ): ?>
+	<div class="clear display-flex top-bottom-margin vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php else : ?>
+	<div class="clear display-flex vertical-align-center">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+else :
+	
+	if ( $blockanchor && $padding == 'top' && $margin == 'top' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding top-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'top' && $margin == 'top' ): ?>
+	<div class="width-800 clear top-padding top-margin display-flex">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'bottom' && $margin == 'bottom' ): ?>
+	<div class="width-800 clear bottom-padding bottom-margin display-flex">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'top' && $margin == 'bottom' ): ?>
+	<div class="width-800 clear top-padding bottom-margin display-flex">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'bottom' && $margin == 'top' ): ?>
+	<div class="width-800 clear display-flex bottom-padding top-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'both' && $margin == 'top' ): ?>
+	<div class="width-800 clear top-bottom-padding top-margin display-flex">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'both' && $margin == 'bottom' ): ?>
+	<div class="width-800 clear top-bottom-padding bottom-margin display-flex">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'both' && $margin == 'both' ): ?>
+	<div class="width-800 clear display-flex top-bottom-padding top-bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'top' && $margin == 'both' ): ?>
+	<div class="width-800 clear display-flex top-padding top-bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'bottom' && $margin == 'both' ): ?>
+	<div class="width-800 clear display-flex bottom-padding top-bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'top'): ?>
+	<div class="width-800 clear display-flex top-padding">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'bottom'): ?>
+	<div class="width-800 clear display-flex bottom-padding">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $padding == 'both'): ?>
+	<div class="width-800 clear display-flex top-bottom-padding">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $margin == 'top'): ?>
+	<div class="width-800 clear display-flex top-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $margin == 'bottom'): ?>
+	<div class="width-800 clear display-flex bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $width && $margin == 'both'): ?>
+	<div class="width-800 clear display-flex top-bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'top' && $margin == 'top' ): ?>
+	<div class="clear display-flex top-padding top-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'bottom' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'bottom' && $margin == 'bottom' ): ?>
+	<div class="clear display-flex bottom-padding bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'both' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding top-bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'both' && $margin == 'both' ): ?>
+	<div class="clear display-flex top-bottom-padding top-bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'top' && $margin == 'bottom' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'top' && $margin == 'bottom' ): ?>
+	<div class="clear display-flex top-padding bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'top' && $margin == 'both' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding top-bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'top' && $margin == 'both' ): ?>
+	<div class="clear display-flex top-padding top-bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'top' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding top-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'bottom' && $margin == 'top' ): ?>
+	<div class="clear display-flex bottom-padding top-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'both' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding top-bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'bottom' && $margin == 'both' ): ?>
+	<div class="clear display-flex bottom-padding top-bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'top' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding top-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'both' && $margin == 'top' ): ?>
+	<div class="clear display-flex top-bottom-padding top-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'bottom' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'both' && $margin == 'bottom' ): ?>
+	<div class="clear display-flex top-bottom-padding bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'bottom' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'bottom' ): ?>
+	<div class="clear display-flex bottom-padding">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'top' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'top' ): ?>
+	<div class="clear display-flex top-padding">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $padding == 'both' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $padding == 'both' ): ?>
+	<div class="clear display-flex top-bottom-padding">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $margin == 'bottom' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $margin == 'bottom' ): ?>
+	<div class="clear display-flex bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $margin == 'top' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $margin == 'top' ): ?>
+	<div class="clear display-flex top-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $blockanchor && $margin == 'both' ): ?>
+	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php elseif ( $margin == 'both' ): ?>
+	<div class="clear display-flex top-bottom-margin">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	
+	<?php else : ?>
+	<div class="clear display-flex">
+		
+		<?php include('inc/two-third-one-third-loop.php'); ?>
+		
+	</div>
+	<?php endif;
 
-<?php elseif ( $width && $padding == 'bottom' && $margin == 'bottom' ): ?>
-<div class="width-800 clear bottom-padding bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $width && $padding == 'top' && $margin == 'bottom' ): ?>
-<div class="width-800 clear top-padding bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $width && $padding == 'bottom' && $margin == 'top' ): ?>
-<div class="width-800 clear bottom-padding top-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $width && $padding == 'both' && $margin == 'top' ): ?>
-<div class="width-800 clear top-bottom-padding top-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $width && $padding == 'both' && $margin == 'bottom' ): ?>
-<div class="width-800 clear top-bottom-padding bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $width && $padding == 'both' && $margin == 'both' ): ?>
-<div class="width-800 clear top-bottom-padding top-bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $width && $padding == 'top' && $margin == 'both' ): ?>
-<div class="width-800 clear top-padding top-bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $width && $padding == 'bottom' && $margin == 'both' ): ?>
-<div class="width-800 clear bottom-padding top-bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $width && $padding == 'top'): ?>
-<div class="width-800 clear top-padding">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $width && $padding == 'bottom'): ?>
-<div class="width-800 clear bottom-padding">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $width && $padding == 'both'): ?>
-<div class="width-800 clear top-bottom-padding">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $width && $margin == 'top'): ?>
-<div class="width-800 clear top-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $width && $margin == 'bottom'): ?>
-<div class="width-800 clear bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $width && $margin == 'both'): ?>
-<div class="width-800 clear top-bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $padding == 'top' && $margin == 'top' ): ?>
-<div class="clear top-padding top-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'bottom' ): ?>
-<div id="<?php the_field('block_id'); ?>" class="clear bottom-padding bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $padding == 'bottom' && $margin == 'bottom' ): ?>
-<div class="clear bottom-padding bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'both' ): ?>
-<div id="<?php the_field('block_id'); ?>" class="clear top-bottom-padding top-bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $padding == 'both' && $margin == 'both' ): ?>
-<div class="clear top-bottom-padding top-bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $blockanchor && $padding == 'top' && $margin == 'bottom' ): ?>
-<div id="<?php the_field('block_id'); ?>" class="clear top-padding bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $padding == 'top' && $margin == 'bottom' ): ?>
-<div class="clear top-padding bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $blockanchor && $padding == 'top' && $margin == 'both' ): ?>
-<div id="<?php the_field('block_id'); ?>" class="clear top-padding top-bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $padding == 'top' && $margin == 'both' ): ?>
-<div class="clear top-padding top-bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'top' ): ?>
-<div id="<?php the_field('block_id'); ?>" class="clear bottom-padding top-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $padding == 'bottom' && $margin == 'top' ): ?>
-<div class="clear bottom-padding top-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'both' ): ?>
-<div id="<?php the_field('block_id'); ?>" class="clear bottom-padding top-bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $padding == 'bottom' && $margin == 'both' ): ?>
-<div class="clear bottom-padding top-bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'top' ): ?>
-<div id="<?php the_field('block_id'); ?>" class="clear top-bottom-padding top-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $padding == 'both' && $margin == 'top' ): ?>
-<div class="clear top-bottom-padding top-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'bottom' ): ?>
-<div id="<?php the_field('block_id'); ?>" class="clear top-bottom-padding bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $padding == 'both' && $margin == 'bottom' ): ?>
-<div class="clear top-bottom-padding bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $blockanchor && $padding == 'bottom' ): ?>
-<div id="<?php the_field('block_id'); ?>" class="clear bottom-padding">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $padding == 'bottom' ): ?>
-<div class="clear bottom-padding">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $blockanchor && $padding == 'top' ): ?>
-<div id="<?php the_field('block_id'); ?>" class="clear top-padding">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $padding == 'top' ): ?>
-<div class="clear top-padding">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $blockanchor && $padding == 'both' ): ?>
-<div id="<?php the_field('block_id'); ?>" class="clear top-bottom-padding">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $padding == 'both' ): ?>
-<div class="clear top-bottom-padding">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $blockanchor && $margin == 'bottom' ): ?>
-<div id="<?php the_field('block_id'); ?>" class="clear bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $margin == 'bottom' ): ?>
-<div class="clear bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $blockanchor && $margin == 'top' ): ?>
-<div id="<?php the_field('block_id'); ?>" class="clear top-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $margin == 'top' ): ?>
-<div class="clear top-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $blockanchor && $margin == 'both' ): ?>
-<div id="<?php the_field('block_id'); ?>" class="clear top-bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php elseif ( $margin == 'both' ): ?>
-<div class="clear top-bottom-margin">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-
-<?php else : ?>
-<div class="clear">
-	
-	<?php include('inc/two-third-one-third-loop.php'); ?>
-	
-</div>
-<?php endif; ?>
+endif;

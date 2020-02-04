@@ -4473,6 +4473,10 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	font-weight: bold;
 	text-shadow: 0 0 2px #888;
 }
+.one_third_col.boxed {
+	padding: 1.5em 2em;
+	border: 1px solid #000;
+}
 @media (max-width: 850px) and (orientation:landscape) {
 	.features .row.inline-icons {
 		margin-top: 0!important;
