@@ -15,12 +15,12 @@ if ( get_field('heading') ): ?>
 <?php while( have_rows('one_third_column') ): the_row(); ?>
 
 	<?php if ( get_sub_field('content_type') == 'text' ): ?>
-	<div class="one_third_col">
+	<div class="one_third_col boxed">
 		<?php the_sub_field('text_editor'); ?>
 	</div>
 	
 	<?php elseif ( get_sub_field('content_type') == 'image' ): ?>
-	<div class="one_third_col boxed">
+	<div class="one_third_col">
 		<?php 
 		$image = get_sub_field('image_upload');
 		$size = 'large';
