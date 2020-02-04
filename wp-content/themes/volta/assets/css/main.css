@@ -5214,7 +5214,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		padding: 20px;
 	}
 	.two_column {
-		flex-basis: 50%;
+		flex-basis: 48%;
 		margin-right: 4%;
 	}
 	.three_column {
