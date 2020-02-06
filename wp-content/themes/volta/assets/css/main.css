@@ -3399,6 +3399,9 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 }
+.display-flex > h2 {
+	flex: 0 0 100%;
+}
 .flexbox-container {
 	margin-left: -10px;
 	margin-right: -10px;
