@@ -2618,7 +2618,7 @@ aside {
 	margin-top: 0;
 }
 .flexbox-2 {
-	flex: 0 1 50%;
+	flex: 0 1 auto;
 	width: 50%;
 }
 .flexbox-3 {
