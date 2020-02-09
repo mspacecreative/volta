@@ -154,7 +154,7 @@
 		
 	});
 	
-	function calcNegativeMargins() {
+	/*function calcNegativeMargins() {
 		if (window.matchMedia("(min-width: 1600px)").matches) {
 			
 			var windowWidth = $(window).width() - 1600;
@@ -170,7 +170,7 @@
 				'margin-left' : 'auto',
 			});
 		}
-	}
+	}*/
 	
 	function splashHeight() {
 		$('#header').height($(window).height());
@@ -178,7 +178,7 @@
 	
 	$(document).ready(function () {
 		splashHeight();
-		calcNegativeMargins();
+		//calcNegativeMargins();
 		socialMediaBarPositioning();
 		//positionTitle();
 		
@@ -277,7 +277,7 @@
 	
 	$(window).resize(function () {
 		splashHeight();
-		calcNegativeMargins();
+		//calcNegativeMargins();
 		socialMediaBarPositioning();
 		//positionTitle();
 	});

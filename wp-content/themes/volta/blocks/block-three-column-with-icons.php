@@ -1,7 +1,7 @@
 <article class="icon-buckets">
 	
 	<div class="shadow white-bg top-bottom-padding">
-		<div class="row max-width-1600">
+		<div class="row display-flex">
 		
 			<?php 
 			$aligncenter = get_field('align_center');

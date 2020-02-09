@@ -10,6 +10,8 @@
 	<?php if ( get_sub_field('background_image_overlay') == 'dark' ): ?>
 	<section class="features shadow special white-bg dark-overlay" style="background-image: url(<?php the_sub_field('background_image'); ?>);">
 		
+		<article class="row content-bottom">
+		
 		<?php 
 		$image = get_sub_field('sponsor_branding');
 		$size = 'large';
@@ -19,36 +21,26 @@
 		</div>
 		<?php endif; ?>
 		
-		<article class="row content-bottom">
-		
 		<?php if( have_rows('text') ): ?>
 		<?php while( have_rows('text') ): the_row(); ?>
 		
 			<?php if ( get_sub_field('alignment') == 'left' ): ?>
 			<div class="left">
-				<div class="left-side">
-					
-					<div class="full-span-content light">
-						<header>
-							<h1><?php the_sub_field('heading'); ?></h1>
-						</header>
-						<?php the_sub_field('copy'); ?>
-					</div>
-					
+				<div class="full-span-content light">
+					<header>
+						<h1><?php the_sub_field('heading'); ?></h1>
+					</header>
+					<?php the_sub_field('copy'); ?>
 				</div>
 			</div>
 		
 			<?php elseif ( get_sub_field('alignment') == 'right' ): ?>
 			<div class="right">
-				<div class="right-side clear">
-				
-					<div class="full-span-content light">
-						<header>
-							<h1><?php the_sub_field('heading'); ?></h1>
-						</header>
-						<?php the_sub_field('copy'); ?>
-					</div>
-				
+				<div class="full-span-content light">
+					<header>
+						<h1><?php the_sub_field('heading'); ?></h1>
+					</header>
+					<?php the_sub_field('copy'); ?>
 				</div>
 			</div>
 			<?php endif; ?>
@@ -63,6 +55,8 @@
 	<?php elseif ( get_sub_field('background_image_overlay') == 'light' ): ?>
 	<section class="features shadow special white-bg light-overlay" style="background-image: url(<?php the_sub_field('background_image'); ?>);">
 		
+		<article class="row content-bottom">
+		
 		<?php 
 		$image = get_sub_field('sponsor_branding');
 		$size = 'large';
@@ -72,36 +66,26 @@
 		</div>
 		<?php endif; ?>
 		
-		<article class="row content-bottom">
-		
 		<?php if( have_rows('text') ): ?>
 		<?php while( have_rows('text') ): the_row(); ?>
 		
 			<?php if ( get_sub_field('alignment') == 'left' ): ?>
 			<div class="left">
-				<div class="left-side">
-					
-					<div class="full-span-content light">
-						<header>
-							<h1><?php the_sub_field('heading'); ?></h1>
-						</header>
-						<?php the_sub_field('copy'); ?>
-					</div>
-					
+				<div class="full-span-content light">
+					<header>
+						<h1><?php the_sub_field('heading'); ?></h1>
+					</header>
+					<?php the_sub_field('copy'); ?>
 				</div>
 			</div>
 		
 			<?php elseif ( get_sub_field('alignment') == 'right' ): ?>
 			<div class="right">
-				<div class="right-side clear">
-				
-					<div class="full-span-content light">
-						<header>
-							<h1><?php the_sub_field('heading'); ?></h1>
-						</header>
-						<?php the_sub_field('copy'); ?>
-					</div>
-				
+				<div class="full-span-content light">
+					<header>
+						<h1><?php the_sub_field('heading'); ?></h1>
+					</header>
+					<?php the_sub_field('copy'); ?>
 				</div>
 			</div>
 			<?php endif; ?>
@@ -116,6 +100,8 @@
 	<?php else : ?>
 	<section class="features shadow special white-bg" style="background-image: url(<?php the_sub_field('background_image'); ?>);">
 		
+		<article class="row content-bottom">
+		
 		<?php 
 		$image = get_sub_field('sponsor_branding');
 		$size = 'large';
@@ -125,36 +111,26 @@
 		</div>
 		<?php endif; ?>
 		
-		<article class="row content-bottom">
-		
 		<?php if( have_rows('text') ): ?>
 		<?php while( have_rows('text') ): the_row(); ?>
 		
 			<?php if ( get_sub_field('alignment') == 'left' ): ?>
 			<div class="left">
-				<div class="left-side">
-					
-					<div class="full-span-content light">
-						<header>
-							<h1><?php the_sub_field('heading'); ?></h1>
-						</header>
-						<?php the_sub_field('copy'); ?>
-					</div>
-					
+				<div class="full-span-content light">
+					<header>
+						<h1><?php the_sub_field('heading'); ?></h1>
+					</header>
+					<?php the_sub_field('copy'); ?>
 				</div>
 			</div>
 		
 			<?php elseif ( get_sub_field('alignment') == 'right' ): ?>
 			<div class="right">
-				<div class="right-side clear">
-				
-					<div class="full-span-content light">
-						<header>
-							<h1><?php the_sub_field('heading'); ?></h1>
-						</header>
-						<?php the_sub_field('copy'); ?>
-					</div>
-				
+				<div class="full-span-content light">
+					<header>
+						<h1><?php the_sub_field('heading'); ?></h1>
+					</header>
+					<?php the_sub_field('copy'); ?>
 				</div>
 			</div>
 			<?php endif; ?>

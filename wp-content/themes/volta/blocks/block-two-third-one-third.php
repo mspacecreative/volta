@@ -8,322 +8,322 @@ $flex = get_field('two_third_one_third_vertical_alignment');
 if ( $flex == 'bottom' ):
 
 	if ( $blockanchor && $padding == 'top' && $margin == 'top' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex vertical-align-bottom top-padding top-margin">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex vertical-align-bottom top-padding top-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'top' && $margin == 'top' ): ?>
-	<div class="width-800 clear top-padding top-margin display-flex vertical-align-bottom">
+	<div class="row width-800 clear top-padding top-margin display-flex vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'bottom' && $margin == 'bottom' ): ?>
-	<div class="width-800 clear bottom-padding bottom-margin display-flex vertical-align-bottom">
+	<div class="row width-800 clear bottom-padding bottom-margin display-flex vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'top' && $margin == 'bottom' ): ?>
-	<div class="width-800 clear top-padding bottom-margin display-flex vertical-align-bottom">
+	<div class="row width-800 clear top-padding bottom-margin display-flex vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'bottom' && $margin == 'top' ): ?>
-	<div class="width-800 clear display-flex bottom-padding top-margin vertical-align-bottom">
+	<div class="row width-800 clear display-flex bottom-padding top-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'both' && $margin == 'top' ): ?>
-	<div class="width-800 clear top-bottom-padding top-margin display-flex vertical-align-bottom">
+	<div class="row width-800 clear top-bottom-padding top-margin display-flex vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'both' && $margin == 'bottom' ): ?>
-	<div class="width-800 clear top-bottom-padding bottom-margin display-flex vertical-align-bottom">
+	<div class="row width-800 clear top-bottom-padding bottom-margin display-flex vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'both' && $margin == 'both' ): ?>
-	<div class="width-800 clear display-flex top-bottom-padding top-bottom-margin vertical-align-bottom">
+	<div class="row width-800 clear display-flex top-bottom-padding top-bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'top' && $margin == 'both' ): ?>
-	<div class="width-800 clear display-flex top-padding top-bottom-margin vertical-align-bottom">
+	<div class="row width-800 clear display-flex top-padding top-bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'bottom' && $margin == 'both' ): ?>
-	<div class="width-800 clear display-flex bottom-padding top-bottom-margin vertical-align-bottom">
+	<div class="row width-800 clear display-flex bottom-padding top-bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'top'): ?>
-	<div class="width-800 clear display-flex top-padding vertical-align-bottom">
+	<div class="row width-800 clear display-flex top-padding vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'bottom'): ?>
-	<div class="width-800 clear display-flex bottom-padding vertical-align-bottom">
+	<div class="row width-800 clear display-flex bottom-padding vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'both'): ?>
-	<div class="width-800 clear display-flex top-bottom-padding vertical-align-bottom">
+	<div class="row width-800 clear display-flex top-bottom-padding vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $margin == 'top'): ?>
-	<div class="width-800 clear display-flex top-margin vertical-align-bottom">
+	<div class="row width-800 clear display-flex top-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $margin == 'bottom'): ?>
-	<div class="width-800 clear display-flex bottom-margin vertical-align-bottom">
+	<div class="row width-800 clear display-flex bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $margin == 'both'): ?>
-	<div class="width-800 clear display-flex top-bottom-margin vertical-align-bottom">
+	<div class="row width-800 clear display-flex top-bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'top' && $margin == 'top' ): ?>
-	<div class="clear display-flex top-padding top-margin vertical-align-bottom">
+	<div class="row clear display-flex top-padding top-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'bottom' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding bottom-margin vertical-align-bottom">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex bottom-padding bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'bottom' && $margin == 'bottom' ): ?>
-	<div class="clear display-flex bottom-padding bottom-margin vertical-align-bottom">
+	<div class="row clear display-flex bottom-padding bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'both' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding top-bottom-margin vertical-align-bottom">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-bottom-padding top-bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'both' && $margin == 'both' ): ?>
-	<div class="clear display-flex top-bottom-padding top-bottom-margin vertical-align-bottom">
+	<div class="row clear display-flex top-bottom-padding top-bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'top' && $margin == 'bottom' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding bottom-margin vertical-align-bottom">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-padding bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'top' && $margin == 'bottom' ): ?>
-	<div class="clear display-flex top-padding bottom-margin vertical-align-bottom">
+	<div class="row clear display-flex top-padding bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'top' && $margin == 'both' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding top-bottom-margin vertical-align-bottom">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-padding top-bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'top' && $margin == 'both' ): ?>
-	<div class="clear display-flex top-padding top-bottom-margin vertical-align-bottom">
+	<div class="row clear display-flex top-padding top-bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'top' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding top-margin vertical-align-bottom">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex bottom-padding top-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'bottom' && $margin == 'top' ): ?>
-	<div class="clear display-flex bottom-padding top-margin vertical-align-bottom">
+	<div class="row clear display-flex bottom-padding top-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'both' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding top-bottom-margin vertical-align-bottom">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex bottom-padding top-bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'bottom' && $margin == 'both' ): ?>
-	<div class="clear display-flex bottom-padding top-bottom-margin vertical-align-bottom">
+	<div class="row clear display-flex bottom-padding top-bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'top' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding top-margin vertical-align-bottom">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-bottom-padding top-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'both' && $margin == 'top' ): ?>
-	<div class="clear display-flex top-bottom-padding top-margin vertical-align-bottom">
+	<div class="row clear display-flex top-bottom-padding top-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'bottom' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding bottom-margin vertical-align-bottom">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-bottom-padding bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'both' && $margin == 'bottom' ): ?>
-	<div class="clear display-flex top-bottom-padding bottom-margin vertical-align-bottom">
+	<div class="row clear display-flex top-bottom-padding bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'bottom' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding vertical-align-bottom">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex bottom-padding vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'bottom' ): ?>
-	<div class="clear display-flex bottom-padding vertical-align-bottom">
+	<div class="row clear display-flex bottom-padding vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'top' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding vertical-align-bottom">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-padding vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'top' ): ?>
-	<div class="clear display-flex top-padding vertical-align-bottom">
+	<div class="row clear display-flex top-padding vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'both' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding vertical-align-bottom">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-bottom-padding vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'both' ): ?>
-	<div class="clear display-flex top-bottom-padding vertical-align-bottom">
+	<div class="row clear display-flex top-bottom-padding vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $margin == 'bottom' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-margin vertical-align-bottom">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $margin == 'bottom' ): ?>
-	<div class="clear display-flex bottom-margin vertical-align-bottom">
+	<div class="row clear display-flex bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $margin == 'top' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-margin vertical-align-bottom">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $margin == 'top' ): ?>
-	<div class="clear display-flex top-margin vertical-align-bottom">
+	<div class="row clear display-flex top-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $margin == 'both' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-margin vertical-align-bottom">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $margin == 'both' ): ?>
-	<div class="clear display-flex top-bottom-margin vertical-align-bottom">
+	<div class="row clear display-flex top-bottom-margin vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php else : ?>
-	<div class="clear display-flex vertical-align-bottom">
+	<div class="row clear display-flex vertical-align-bottom">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
@@ -333,322 +333,322 @@ if ( $flex == 'bottom' ):
 elseif ( $flex == 'center' ):
 	
 	if ( $blockanchor && $padding == 'top' && $margin == 'top' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex vertical-align-center top-padding top-margin">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex vertical-align-center top-padding top-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'top' && $margin == 'top' ): ?>
-	<div class="width-800 clear top-padding top-margin display-flex vertical-align-center">
+	<div class="row width-800 clear top-padding top-margin display-flex vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'bottom' && $margin == 'bottom' ): ?>
-	<div class="width-800 clear bottom-padding bottom-margin display-flex vertical-align-center">
+	<div class="row width-800 clear bottom-padding bottom-margin display-flex vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'top' && $margin == 'bottom' ): ?>
-	<div class="width-800 clear top-padding bottom-margin display-flex vertical-align-center">
+	<div class="row width-800 clear top-padding bottom-margin display-flex vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'bottom' && $margin == 'top' ): ?>
-	<div class="width-800 clear display-flex bottom-padding top-margin vertical-align-center">
+	<div class="row width-800 clear display-flex bottom-padding top-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'both' && $margin == 'top' ): ?>
-	<div class="width-800 clear top-bottom-padding top-margin display-flex vertical-align-center">
+	<div class="row width-800 clear top-bottom-padding top-margin display-flex vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'both' && $margin == 'bottom' ): ?>
-	<div class="width-800 clear top-bottom-padding bottom-margin display-flex vertical-align-center">
+	<div class="row width-800 clear top-bottom-padding bottom-margin display-flex vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'both' && $margin == 'both' ): ?>
-	<div class="width-800 clear display-flex top-bottom-padding top-bottom-margin vertical-align-center">
+	<div class="row width-800 clear display-flex top-bottom-padding top-bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'top' && $margin == 'both' ): ?>
-	<div class="width-800 clear display-flex top-padding top-bottom-margin vertical-align-center">
+	<div class="row width-800 clear display-flex top-padding top-bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'bottom' && $margin == 'both' ): ?>
-	<div class="width-800 clear display-flex bottom-padding top-bottom-margin vertical-align-center">
+	<div class="row width-800 clear display-flex bottom-padding top-bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'top'): ?>
-	<div class="width-800 clear display-flex top-padding vertical-align-center">
+	<div class="row width-800 clear display-flex top-padding vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'bottom'): ?>
-	<div class="width-800 clear display-flex bottom-padding vertical-align-center">
+	<div class="row width-800 clear display-flex bottom-padding vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'both'): ?>
-	<div class="width-800 clear display-flex top-bottom-padding vertical-align-center">
+	<div class="row width-800 clear display-flex top-bottom-padding vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $margin == 'top'): ?>
-	<div class="width-800 clear display-flex top-margin vertical-align-center">
+	<div class="row width-800 clear display-flex top-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $margin == 'bottom'): ?>
-	<div class="width-800 clear display-flex bottom-margin vertical-align-center">
+	<div class="row width-800 clear display-flex bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $margin == 'both'): ?>
-	<div class="width-800 clear display-flex top-bottom-margin vertical-align-center">
+	<div class="row width-800 clear display-flex top-bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'top' && $margin == 'top' ): ?>
-	<div class="clear display-flex top-padding top-margin vertical-align-center">
+	<div class="row clear display-flex top-padding top-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'bottom' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding bottom-margin vertical-align-center">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex bottom-padding bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'bottom' && $margin == 'bottom' ): ?>
-	<div class="clear display-flex bottom-padding bottom-margin vertical-align-center">
+	<div class="row clear display-flex bottom-padding bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'both' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding top-bottom-margin vertical-align-center">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-bottom-padding top-bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'both' && $margin == 'both' ): ?>
-	<div class="clear display-flex top-bottom-padding top-bottom-margin vertical-align-center">
+	<div class="row clear display-flex top-bottom-padding top-bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'top' && $margin == 'bottom' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding bottom-margin vertical-align-center">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-padding bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'top' && $margin == 'bottom' ): ?>
-	<div class="clear display-flex top-padding bottom-margin vertical-align-center">
+	<div class="row clear display-flex top-padding bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'top' && $margin == 'both' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding top-bottom-margin vertical-align-center">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-padding top-bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'top' && $margin == 'both' ): ?>
-	<div class="clear display-flex top-padding top-bottom-margin vertical-align-center">
+	<div class="row clear display-flex top-padding top-bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'top' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding top-margin vertical-align-center">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex bottom-padding top-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'bottom' && $margin == 'top' ): ?>
-	<div class="clear display-flex bottom-padding top-margin vertical-align-center">
+	<div class="row clear display-flex bottom-padding top-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'both' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding top-bottom-margin vertical-align-center">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex bottom-padding top-bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'bottom' && $margin == 'both' ): ?>
-	<div class="clear display-flex bottom-padding top-bottom-margin vertical-align-center">
+	<div class="row clear display-flex bottom-padding top-bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'top' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding top-margin vertical-align-center">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-bottom-padding top-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'both' && $margin == 'top' ): ?>
-	<div class="clear display-flex top-bottom-padding top-margin vertical-align-center">
+	<div class="row clear display-flex top-bottom-padding top-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'bottom' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding bottom-margin vertical-align-center">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-bottom-padding bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'both' && $margin == 'bottom' ): ?>
-	<div class="clear display-flex top-bottom-padding bottom-margin vertical-align-center">
+	<div class="row clear display-flex top-bottom-padding bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'bottom' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding vertical-align-center">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex bottom-padding vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'bottom' ): ?>
-	<div class="clear display-flex bottom-padding vertical-align-center">
+	<div class="row clear display-flex bottom-padding vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'top' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding vertical-align-center">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-padding vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'top' ): ?>
-	<div class="clear display-flex top-padding vertical-align-center">
+	<div class="row clear display-flex top-padding vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'both' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding vertical-align-center">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-bottom-padding vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'both' ): ?>
-	<div class="clear display-flex top-bottom-padding vertical-align-center">
+	<div class="row clear display-flex top-bottom-padding vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $margin == 'bottom' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-margin vertical-align-center">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $margin == 'bottom' ): ?>
-	<div class="clear display-flex bottom-margin vertical-align-center">
+	<div class="row clear display-flex bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $margin == 'top' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-margin vertical-align-center">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $margin == 'top' ): ?>
-	<div class="clear display-flex top-margin vertical-align-center">
+	<div class="row clear display-flex top-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $margin == 'both' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-margin vertical-align-center">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $margin == 'both' ): ?>
-	<div class="clear display-flex top-bottom-margin vertical-align-center">
+	<div class="row clear display-flex top-bottom-margin vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php else : ?>
-	<div class="clear display-flex vertical-align-center">
+	<div class="row clear display-flex vertical-align-center">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
@@ -658,322 +658,322 @@ elseif ( $flex == 'center' ):
 else :
 	
 	if ( $blockanchor && $padding == 'top' && $margin == 'top' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding top-margin">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-padding top-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'top' && $margin == 'top' ): ?>
-	<div class="width-800 clear top-padding top-margin display-flex">
+	<div class="row width-800 clear top-padding top-margin display-flex">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'bottom' && $margin == 'bottom' ): ?>
-	<div class="width-800 clear bottom-padding bottom-margin display-flex">
+	<div class="row width-800 clear bottom-padding bottom-margin display-flex">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'top' && $margin == 'bottom' ): ?>
-	<div class="width-800 clear top-padding bottom-margin display-flex">
+	<div class="row width-800 clear top-padding bottom-margin display-flex">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'bottom' && $margin == 'top' ): ?>
-	<div class="width-800 clear display-flex bottom-padding top-margin">
+	<div class="row width-800 clear display-flex bottom-padding top-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'both' && $margin == 'top' ): ?>
-	<div class="width-800 clear top-bottom-padding top-margin display-flex">
+	<div class="row width-800 clear top-bottom-padding top-margin display-flex">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'both' && $margin == 'bottom' ): ?>
-	<div class="width-800 clear top-bottom-padding bottom-margin display-flex">
+	<div class="row width-800 clear top-bottom-padding bottom-margin display-flex">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'both' && $margin == 'both' ): ?>
-	<div class="width-800 clear display-flex top-bottom-padding top-bottom-margin">
+	<div class="row width-800 clear display-flex top-bottom-padding top-bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'top' && $margin == 'both' ): ?>
-	<div class="width-800 clear display-flex top-padding top-bottom-margin">
+	<div class="row width-800 clear display-flex top-padding top-bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'bottom' && $margin == 'both' ): ?>
-	<div class="width-800 clear display-flex bottom-padding top-bottom-margin">
+	<div class="row width-800 clear display-flex bottom-padding top-bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'top'): ?>
-	<div class="width-800 clear display-flex top-padding">
+	<div class="row width-800 clear display-flex top-padding">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'bottom'): ?>
-	<div class="width-800 clear display-flex bottom-padding">
+	<div class="row width-800 clear display-flex bottom-padding">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $padding == 'both'): ?>
-	<div class="width-800 clear display-flex top-bottom-padding">
+	<div class="row width-800 clear display-flex top-bottom-padding">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $margin == 'top'): ?>
-	<div class="width-800 clear display-flex top-margin">
+	<div class="row width-800 clear display-flex top-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $margin == 'bottom'): ?>
-	<div class="width-800 clear display-flex bottom-margin">
+	<div class="row width-800 clear display-flex bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $width && $margin == 'both'): ?>
-	<div class="width-800 clear display-flex top-bottom-margin">
+	<div class="row width-800 clear display-flex top-bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'top' && $margin == 'top' ): ?>
-	<div class="clear display-flex top-padding top-margin">
+	<div class="row clear display-flex top-padding top-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'bottom' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding bottom-margin">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex bottom-padding bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'bottom' && $margin == 'bottom' ): ?>
-	<div class="clear display-flex bottom-padding bottom-margin">
+	<div class="row clear display-flex bottom-padding bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'both' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding top-bottom-margin">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-bottom-padding top-bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'both' && $margin == 'both' ): ?>
-	<div class="clear display-flex top-bottom-padding top-bottom-margin">
+	<div class="row clear display-flex top-bottom-padding top-bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'top' && $margin == 'bottom' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding bottom-margin">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-padding bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'top' && $margin == 'bottom' ): ?>
-	<div class="clear display-flex top-padding bottom-margin">
+	<div class="row clear display-flex top-padding bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'top' && $margin == 'both' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding top-bottom-margin">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-padding top-bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'top' && $margin == 'both' ): ?>
-	<div class="clear display-flex top-padding top-bottom-margin">
+	<div class="row clear display-flex top-padding top-bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'top' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding top-margin">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex bottom-padding top-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'bottom' && $margin == 'top' ): ?>
-	<div class="clear display-flex bottom-padding top-margin">
+	<div class="row clear display-flex bottom-padding top-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'bottom' && $margin == 'both' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding top-bottom-margin">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex bottom-padding top-bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'bottom' && $margin == 'both' ): ?>
-	<div class="clear display-flex bottom-padding top-bottom-margin">
+	<div class="row clear display-flex bottom-padding top-bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'top' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding top-margin">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-bottom-padding top-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'both' && $margin == 'top' ): ?>
-	<div class="clear display-flex top-bottom-padding top-margin">
+	<div class="row clear display-flex top-bottom-padding top-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'both' && $margin == 'bottom' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding bottom-margin">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-bottom-padding bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'both' && $margin == 'bottom' ): ?>
-	<div class="clear display-flex top-bottom-padding bottom-margin">
+	<div class="row clear display-flex top-bottom-padding bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'bottom' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-padding">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex bottom-padding">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'bottom' ): ?>
-	<div class="clear display-flex bottom-padding">
+	<div class="row clear display-flex bottom-padding">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'top' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-padding">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-padding">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'top' ): ?>
-	<div class="clear display-flex top-padding">
+	<div class="row clear display-flex top-padding">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $padding == 'both' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-padding">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-bottom-padding">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $padding == 'both' ): ?>
-	<div class="clear display-flex top-bottom-padding">
+	<div class="row clear display-flex top-bottom-padding">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $margin == 'bottom' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex bottom-margin">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $margin == 'bottom' ): ?>
-	<div class="clear display-flex bottom-margin">
+	<div class="row clear display-flex bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $margin == 'top' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-margin">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $margin == 'top' ): ?>
-	<div class="clear display-flex top-margin">
+	<div class="row clear display-flex top-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $blockanchor && $margin == 'both' ): ?>
-	<div id="<?php the_field('block_id'); ?>" class="clear display-flex top-bottom-margin">
+	<div id="<?php the_field('block_id'); ?>" class="row clear display-flex top-bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php elseif ( $margin == 'both' ): ?>
-	<div class="clear display-flex top-bottom-margin">
+	<div class="row clear display-flex top-bottom-margin">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		
 	</div>
 	
 	<?php else : ?>
-	<div class="clear display-flex">
+	<div class="row clear display-flex">
 		
 		<?php include('inc/two-third-one-third-loop.php'); ?>
 		

@@ -218,7 +218,7 @@ button {
 
 .mobile-filter {
    display: none;
-   padding: 25px 0 50px;
+   padding: 35px 0 50px;
    text-align: center;
 }
 
@@ -282,4 +282,12 @@ button {
 	top: 21px;
 	width: 10px;
 	height: 10px;
+}
+
+@media (max-width: 736px) {
+
+	.filters-button-group button {
+		margin-right: 0;
+		margin-left: 0;
+	}
 }

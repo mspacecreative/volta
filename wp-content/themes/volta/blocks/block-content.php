@@ -2,24 +2,23 @@
 	
 	$blockanchor = get_field('block_id');
 	$bgimgoverlay = get_field('background_image_overlay');
-	$spanbrowser = get_field('span_browser');
 	
-	if ( $blockanchor && $bgimgoverlay == 'dark' && $spanbrowser ): ?>
+	if ( $blockanchor && $bgimgoverlay == 'dark' ): ?>
 	<div id="<?php the_field('block_id'); ?>" class="span-browser bg-img-cover dark-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
 	
-	<?php elseif ( $blockanchor && $bgimgoverlay == 'light' && $spanbrowser ): ?>
+	<?php elseif ( $blockanchor && $bgimgoverlay == 'light' ): ?>
 	<div id="<?php the_field('block_id'); ?>" class="span-browser bg-img-cover light-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
 	
-	<?php elseif ( $blockanchor && $spanbrowser ): ?>
+	<?php elseif ( $blockanchor ): ?>
 	<div id="<?php the_field('block_id'); ?>" class="span-browser bg-img-cover dark-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
 	
-	<?php elseif ( $blockanchor && $spanbrowser ): ?>
+	<?php elseif ( $blockanchor ): ?>
 	<div id="<?php the_field('block_id'); ?>" class="span-browser bg-img-cover light-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
@@ -34,12 +33,12 @@
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
 	
-	<?php elseif ( $bgimgoverlay == 'dark' && $spanbrowser ): ?>
+	<?php elseif ( $bgimgoverlay == 'dark' ): ?>
 	<div id="<?php the_field('block_id'); ?>" class="span-browser bg-img-cover dark-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
 	
-	<?php elseif ( $bgimgoverlay == 'light' && $spanbrowser ): ?>
+	<?php elseif ( $bgimgoverlay == 'light' ): ?>
 	<div id="<?php the_field('block_id'); ?>" class="span-browser bg-img-cover light-overlay content-section" style="background-image: url(<?php the_field('background_image_background_image'); ?>);">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
@@ -63,20 +62,14 @@
 <?php elseif ( get_field('background_color_background_color') ):
 	
 	$blockanchor = get_field('block_id');
-	$spanbrowser = get_field('span_browser');
 	
-	if ( $blockanchor && $spanbrowser ) : ?>
+	if ( $blockanchor ) : ?>
 	<div id="<?php the_field('block_id'); ?>" class="span-browser white-bg content-section" style="background-color: <?php the_field('background_color_background_color'); ?>;">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
 	
 	<?php elseif ( $blockanchor ) : ?>
 	<div id="<?php the_field('block_id'); ?>" class="white-bg content-section" style="background-color: <?php the_field('background_color_background_color'); ?>;">
-		<?php include('inc/section-content-loop.php'); ?>
-	</div>
-	
-	<?php elseif ( $spanbrowser ) : ?>
-	<div id="<?php the_field('block_id'); ?>" class="span-browser white-bg content-section" style="background-color: <?php the_field('background_color_background_color'); ?>;">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
 	
