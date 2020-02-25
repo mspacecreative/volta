@@ -11,8 +11,8 @@
 		<source src="https://cdn.mspacecreative.com/videos/volta-video-reel.mp4">
 	</video>
 </div>-->
-<div class="background" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/splash/volta-splash-design-2.jpg);">
-	<video class="background-video" preload="none" loop muted playsinline autoplay>
+<div class="background" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/splash/video-reel-poster-2.jpg);">
+	<video poster="<?php echo get_template_directory_uri(); ?>/img/splash/video-reel-poster-2.jpg" class="background-video" preload="none" loop muted playsinline autoplay>
 		<source src="https://cdn.mspacecreative.com/videos/volta-video-reel.mp4">
 	</video>
 	<div class="gradient-overlay"></div>
