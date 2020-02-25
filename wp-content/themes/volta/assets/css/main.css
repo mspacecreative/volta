@@ -1089,6 +1089,16 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 				margin: 0 0 2em 0;
 			}
 
+/* Video */
+	.background-video {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		position: absolute;
+		min-height: 100%;
+		min-width: 100%;
+	}
+
 /* Wrapper */
 
 	.wrapper {
@@ -2618,14 +2628,14 @@ aside {
 	margin-top: 0;
 }
 .flexbox-2 {
-	flex: 0 1 auto;
+	flex: 0 1 50%;
 	width: 50%;
 }
 .flexbox-3 {
 	flex: 1 1 33.33%;
 }
 .flexbox-4 {
-	flex-basis: 25%;
+	flex: 0 1 25%;
 	width: 25%;
 }
 .flex-box {
