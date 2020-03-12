@@ -12,7 +12,7 @@ if ( $boxed ): ?>
 
 	<?php if ( get_sub_field('content_type') == 'text' ): ?>
 	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 column-container">
-		<div class="boxed">
+		<div class="boxed-content">
 			<?php the_sub_field('text_editor'); ?>
 		</div>
 	</div>
