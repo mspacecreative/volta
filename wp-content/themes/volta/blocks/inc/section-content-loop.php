@@ -10,11 +10,8 @@ if ( $width && $innerpadding && $margin == 'both' && $textcolour == 'light' ):
 	if ( get_field('content_editor') ): ?>
 	<div class="width-800 extra-top-bottom-padding top-bottom-margin light clear">
 		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -24,11 +21,8 @@ elseif ( $innerpadding && $margin == 'both' && $textcolour == 'light' ):
 	if ( get_field('content_editor') ): ?>
 	<div class="extra-top-bottom-padding top-bottom-margin light clear">
 		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -38,11 +32,8 @@ elseif ( $width && $innerpadding && $padding == 'both' && $margin == 'bottom' &&
 	if ( get_field('content_editor') ): ?>
 	<div class="width-800 extra-top-bottom-padding bottom-margin light clear">
 		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -52,11 +43,8 @@ elseif ( $width && $innerpadding && $margin == 'bottom' && $textcolour == 'light
 	if ( get_field('content_editor') ): ?>
 	<div class="width-800 extra-top-bottom-padding bottom-margin light clear">
 		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -66,11 +54,8 @@ elseif ( $width && $innerpadding && $padding == 'both' && $margin == 'bottom' ):
 	if ( get_field('content_editor') ): ?>
 	<div class="width-800 extra-top-bottom-padding bottom-margin clear">
 		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -80,11 +65,8 @@ elseif ( $width && $innerpadding && $margin == 'bottom' ):
 	if ( get_field('content_editor') ): ?>
 	<div class="width-800 extra-top-bottom-padding bottom-margin clear">
 		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -94,11 +76,8 @@ elseif ( $innerpadding && $margin == 'top' && $textcolour == 'light' ):
 	if ( get_field('content_editor') ): ?>
 	<div class="extra-top-bottom-padding top-margin light clear">
 		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -108,11 +87,8 @@ elseif ( $width && $innerpadding && $padding == 'both' && $margin == 'bottom' &&
 	if ( get_field('content_editor') ): ?>
 	<div class="width-800 extra-top-bottom-padding bottom-margin light clear">
 		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -122,11 +98,8 @@ elseif ( $width && $padding == 'both' && $margin == 'bottom' && $textcolour == '
 	if ( get_field('content_editor') ): ?>
 	<div class="width-800 top-bottom-padding bottom-margin light clear">
 		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
 	<?php endif;
@@ -135,529 +108,41 @@ elseif ( $width && $padding == 'both' && $margin == 'bottom' ):
 	
 	if ( get_field('content_editor') ): ?>
 	<div class="width-800 top-bottom-padding bottom-margin clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
-		
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'both' && $innerpadding && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 extra-top-bottom-padding light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'both' && $innerpadding && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 extra-top-bottom-padding light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'top' && $margin == 'top' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-padding top-margin light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'top' && $margin == 'top' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-padding top-margin clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'both' && $innerpadding ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 extra-top-bottom-padding clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $innerpadding && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 extra-top-bottom-padding light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'both' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'both' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $innerpadding ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 extra-top-bottom-padding clear">
-		
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-		
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $innerpadding && $margin == 'both'):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 extra-top-bottom-padding top-bottom-margin clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $innerpadding && $margin == 'both'):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="extra-top-bottom-padding top-bottom-margin clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-
-elseif ( $width && $padding == 'both' && $margin == 'both' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding top-bottom-margin light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'both' && $margin == 'top' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding top-margin light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'both' && $margin == 'bottom' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding top-margin light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'both' && $margin == 'bottom' && $innerpadding || $width && $margin == 'bottom' && $innerpadding ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 extra-top-bottom-padding bottom-margin clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'both' && $margin == 'bottom' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding bottom-margin clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'bottom' && $margin == 'top' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 bottom-padding top-margin light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'top' && $margin == 'top' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-padding top-margin light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'bottom' && $margin == 'bottom' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-padding top-margin light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'bottom' && $margin == 'both' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-padding top-margin light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'top' && $margin == 'both' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-padding top-margin light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'both' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'top' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-padding light clear">
-		
-		<div class="row-width-1280">	
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'bottom' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 bottom-padding light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'both' && $margin == 'both' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding top-bottom-margin clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-
-elseif ( $width && $padding == 'both' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $padding == 'both' && $margin == 'top' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="top-bottom-padding top-margin light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-
-elseif ( $padding == 'top' && $margin == 'top' ):
-
-	if ( get_field('content_editor') ): ?>
-	<div class="top-padding top-margin clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'top' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-padding clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'both' && $margin == 'top' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding top-margin clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'top' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-padding light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'bottom' && $margin == 'top' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 bottom-padding top-margin clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'bottom' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 bottom-padding clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'bottom' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 bottom-padding light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $margin == 'both' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 default-padding top-bottom-margin clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $margin == 'both' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 default-padding top-bottom-margin light clear">
-		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-light.php'); ?>
-		</div>
-		
-	</div>
-	<?php endif;
-	
-elseif ( $width && $padding == 'both' && $textcolour == 'light' ):
-	
-	if ( get_field('content_editor') ): ?>
-	<div class="width-800 top-bottom-padding light clear">
 		
 		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'both' && $innerpadding && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 extra-top-bottom-padding light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'both' && $innerpadding && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 extra-top-bottom-padding light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'top' && $margin == 'top' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-padding top-margin light clear">
+		
+		<?php the_field('content_editor'); ?>
 		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
@@ -669,7 +154,381 @@ elseif ( $width && $padding == 'top' && $margin == 'top' ):
 	<div class="width-800 top-padding top-margin clear">
 		
 		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?>
 		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'both' && $innerpadding ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 extra-top-bottom-padding clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $innerpadding && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 extra-top-bottom-padding light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'both' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-bottom-padding light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'both' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-bottom-padding clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $innerpadding ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 extra-top-bottom-padding clear">
+		
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $innerpadding && $margin == 'both'):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 extra-top-bottom-padding top-bottom-margin clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $innerpadding && $margin == 'both'):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="extra-top-bottom-padding top-bottom-margin clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?>
+		
+	</div>
+	<?php endif;
+
+elseif ( $width && $padding == 'both' && $margin == 'both' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-bottom-padding top-bottom-margin light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'both' && $margin == 'top' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-bottom-padding top-margin light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'both' && $margin == 'bottom' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-bottom-padding top-margin light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'both' && $margin == 'bottom' && $innerpadding || $width && $margin == 'bottom' && $innerpadding ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 extra-top-bottom-padding bottom-margin clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'both' && $margin == 'bottom' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-bottom-padding bottom-margin clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'bottom' && $margin == 'top' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 bottom-padding top-margin light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'top' && $margin == 'top' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-padding top-margin light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?> 
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'bottom' && $margin == 'bottom' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-padding top-margin light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?> 
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'bottom' && $margin == 'both' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-padding top-margin light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?> 
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'top' && $margin == 'both' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-padding top-margin light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?> 
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'both' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-bottom-padding light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?> 
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'top' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-padding light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'bottom' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 bottom-padding light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?> 
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'both' && $margin == 'both' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-bottom-padding top-bottom-margin clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?> 
+		
+	</div>
+	<?php endif;
+
+elseif ( $width && $padding == 'both' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-bottom-padding light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?> 
+		
+	</div>
+	<?php endif;
+	
+elseif ( $padding == 'both' && $margin == 'top' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="top-bottom-padding top-margin light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?> 
+		
+	</div>
+	<?php endif;
+
+elseif ( $padding == 'top' && $margin == 'top' ):
+
+	if ( get_field('content_editor') ): ?>
+	<div class="top-padding top-margin clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'top' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-padding clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'both' && $margin == 'top' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-bottom-padding top-margin clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?> 
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'top' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-padding light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?> 
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'bottom' && $margin == 'top' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 bottom-padding top-margin clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?> 
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'bottom' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 bottom-padding clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?> 
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'bottom' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 bottom-padding light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?> 
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $margin == 'both' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 default-padding top-bottom-margin clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?> 
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $margin == 'both' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 default-padding top-bottom-margin light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?> 
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'both' && $textcolour == 'light' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-bottom-padding light clear">
+		
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-light.php'); ?>
+		
+	</div>
+	<?php endif;
+	
+elseif ( $width && $padding == 'top' && $margin == 'top' ):
+	
+	if ( get_field('content_editor') ): ?>
+	<div class="width-800 top-padding top-margin clear">
+		
+		<?php the_field('content_editor'); ?>
 		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
@@ -681,7 +540,6 @@ elseif ( $padding == 'both' && $margin == 'top' ):
 	<div class="top-bottom-padding top-margin clear">
 		
 		<?php the_field('content_editor'); ?>
-		
 		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
@@ -693,7 +551,6 @@ elseif ( $padding == 'both' && $margin == 'top' && $textcolour == 'light' ):
 	<div class="top-bottom-padding top-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
-		
 		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
@@ -705,7 +562,6 @@ elseif ( $padding == 'top' && $margin == 'top' && $textcolour == 'light' ):
 	<div class="top-padding top-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
-		
 		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
@@ -717,7 +573,6 @@ elseif ( $padding == 'top' && $margin == 'top' && $textcolour == 'light' ):
 	<div class="top-padding top-margin light clear">
 		
 		<?php the_field('content_editor'); ?>
-		
 		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
@@ -729,7 +584,6 @@ elseif ( $width && $padding == 'both' ):
 	<div class="width-800 top-bottom-padding clear">
 		
 		<?php the_field('content_editor'); ?>
-		
 		<?php include('content-cta-button-dark.php'); ?>
 		
 	</div>
@@ -741,7 +595,6 @@ elseif ( $innerpadding && $padding == 'both' ):
 	<div class="extra-top-bottom-padding clear">
 		
 		<?php the_field('content_editor'); ?>
-		
 		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
@@ -753,7 +606,6 @@ elseif ( $innerpadding ):
 	<div class="extra-top-bottom-padding clear">
 		
 		<?php the_field('content_editor'); ?>
-		
 		<?php include('content-cta-button-light.php'); ?>
 		
 	</div>
@@ -1040,11 +892,8 @@ elseif ( $padding == 'top' ):
 	if ( get_field('content_editor') ): ?>
 	<div class="top-padding clear">
 		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?> 
 		
 	</div>
 	<?php endif;
@@ -1222,11 +1071,8 @@ elseif ( $width && $padding == 'top' ):
 	if ( get_field('content_editor') ): ?>
 	<div class="width-800 top-padding clear">
 		
-		<div class="row-width-1280">
-			<?php the_field('content_editor'); ?>
-			
-			<?php include('content-cta-button-dark.php'); ?>
-		</div>
+		<?php the_field('content_editor'); ?>
+		<?php include('content-cta-button-dark.php'); ?> 
 		
 	</div>
 	<?php endif;

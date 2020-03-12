@@ -316,10 +316,6 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 		border-bottom: 5px solid #fff;
 	}
 	
-	.intro article:first-child {
-		border-right: 5px solid #fff;
-	}
-	
 	.full-img-row.content-bottom {
 		padding-bottom: 0;
 		padding-top: 10em;
@@ -366,17 +362,13 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 		padding: 4em 0;
 	}
 	
-	.tiles article {
+	.tiles article .major {
 		margin-bottom: 0;
 		padding: 4em;
 	}
 	
 	.tiles header > p {
 		margin-bottom: 0;
-	}
-	
-	.major {
-		max-width: 600px;
 	}
 
 		section > :last-child, section:last-child, article > :last-child, article:last-child {
@@ -1672,7 +1664,6 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 				-webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;
 				-ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
 				transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
-				padding: 4em;
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
@@ -1743,7 +1734,7 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 	
 			@media screen and (max-width: 1280px) {
 	
-				.tiles article {
+				.tiles article .major {
 					padding: 4em;
 				}
 	
@@ -1751,7 +1742,7 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 	
 			@media screen and (max-width: 736px) {
 	
-				.tiles article {
+				.tiles article .major {
 					padding: 3em;
 					max-height: none;
 					min-height: 0;
@@ -1787,11 +1778,6 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 	padding-bottom: 4em;
 }
 
-.icon-buckets
-.home.page .features {
-	margin-left: auto!important;
-	margin-right: auto!important;
-}
 .no-padding-top-margin-bottom {
 	padding: 0;
 	margin: 0 0 4em;
@@ -2626,12 +2612,6 @@ header {
 .column-container img {
 	display: block;
 }
-.page .features {
-	margin: 0 -6em;
-}
-.home.page .features {
-	margin: 0 -4em;
-}
 .post-title-outer {
 	max-width: 1280px;
 	margin: 0 auto 2em;
@@ -3053,15 +3033,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.post-title-outer {
 		padding: 0 1em;
 	}
-	.content-bottom .left {
-	    width: 100%;
-	}
-	.page .features {
-		margin: 0 -3em;
-	}
-	.home.page .features {
-		margin: 0;
-	}
 	.featured-image-mobile {
 		display: block;
 	}
@@ -3131,12 +3102,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	.content-bottom .right:before {
 		background-image: linear-gradient(-135deg, rgba(0,0,0,0), rgba(0,0,0,.75));
-	}
-	.full-span-content {
-		padding: 2em;
-	}
-	.content-bottom .left, .content-bottom .right {
-		width: 100%;
 	}
 	.right-side {
 		left: auto;
@@ -3211,16 +3176,9 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 }
 @media (max-width: 768px) {
-	.tiles article, .tiles .width-70, .tiles .width-30, .tiles > .width-50, .tiles > .width-50:nth-child(4n - 1), .tiles .width-50:nth-child(4n - 2) {
-		flex: 1 1 100%;
-		width: 100%;
-	}
 	.blog .post-content-container > .container, .single .post-content-container > .container {
 	    padding-right: 0;
 	    padding-left: 0;
-	}
-	.content-bottom .left {
-	    width: 100%;
 	}
 	.full-padding {
 	    padding: 3em;
@@ -3576,10 +3534,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.page .inner.boxed {
 		padding: 2em 2em 0;
 	}
-	.page .features {
-		margin-left: -1em!important;
-		margin-right: -1em!important;
-	}
 	.container, .left-side, .right-side {
 	    padding-right: 2em;
 	    padding-left: 2em;
@@ -3590,12 +3544,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	.post-title-outer {
 	    padding: 0 1em;
-	}
-	.page .features {
-		margin: 0 -3em;
-	}
-	.home.page .features {
-	    margin: 0;
 	}
 	.search-window .search-submit {
 		width: 70%;
@@ -3688,7 +3636,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		padding-top: 4em;
 		padding-bottom: 4em;
 	}
-	.tiles article {
+	.tiles article .major {
 	    padding: 2em;
 	}
 	.icon-buckets .inner {
@@ -3711,7 +3659,7 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		flex-flow: column-reverse;
 	}
 	.full-span-content {
-		padding: 2em 1em;
+		padding: 2em 0;
 	}
 	.single article > .post-container {
 		padding: 0;

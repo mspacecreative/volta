@@ -31,6 +31,12 @@
 	padding-left: 0;
 }
 
+/* MAX WIDTH */
+
+.max-width-600 {
+	max-width: 600px;
+}
+
 .clear:after {
 	display: table;
 	clear: both;
@@ -43,12 +49,22 @@
 		flex-basis: 20%;
 		max-width: 20%;
 	}
+	.tiles article:first-of-type:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: -2.5px;
+		height: 100%;
+		width: 5px;
+		background-color: #fff;
+		z-index: 10;
+	}
 	
 }
 
 @media (max-width: 980px) {
 	
-	.col-lg-1_5, .col-md-1_5 {
+	.col-lg-1_5, .col-md-1_5, .flex-box {
 		flex-basis: 50%;
 		max-width: 50%;
 	}
@@ -60,7 +76,7 @@
 }
 
 @media (max-width: 480px) {
-	.col-lg-1_5, .col-md-1_5 {
+	.col-lg-1_5, .col-md-1_5, .flex-box {
 		flex-basis: 100%;
 		max-width: 100%;
 	}

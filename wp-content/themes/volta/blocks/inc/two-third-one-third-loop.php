@@ -1,11 +1,7 @@
 <?php
 $boxed = get_field('boxed_column');
 
-if ( $boxed ):
-
-if ( get_field('heading') ): ?>
-<h2 class="max-width-60"><?php the_field('heading'); ?></h2>
-<?php endif; ?>
+if ( $boxed ): ?>
 
 <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 column-container">
 	<?php the_field('two_third_column'); ?>
@@ -42,11 +38,7 @@ if ( get_field('heading') ): ?>
 <?php endwhile; ?>
 <?php endif;
 
-else :
-
-if ( get_field('heading') ): ?>
-<h2 class="max-width-60"><?php the_field('heading'); ?></h2>
-<?php endif; ?>
+else : ?>
 
 <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 column-container">
 	<?php the_field('two_third_column'); ?>

@@ -13,14 +13,18 @@
 		
 		<article style="display: none; background-image: url(<?php the_sub_field('background_image_left'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 green">
 			<header class="major">
-				<?php the_sub_field('content_left'); ?>
+				<div class="max-width-600">
+					<?php the_sub_field('content_left'); ?>
+				</div>
 			</header>
 		</article>
 		
 		<?php else : ?>
 		<article style="background-image: url(<?php the_sub_field('background_image_left'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 green">
 			<header class="major">
-				<?php the_sub_field('content_left'); ?>
+				<div class="max-width-600">
+					<?php the_sub_field('content_left'); ?>
+				</div>
 			</header>
 		</article>
 		
@@ -32,14 +36,18 @@
 		
 		<article style="display: none; background-image: url(<?php the_sub_field('background_image_left'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 black">
 			<header class="major">
-				<?php the_sub_field('content_left'); ?>
+				<div class="max-width-600">
+					<?php the_sub_field('content_left'); ?>
+				</div>
 			</header>
 		</article>
 		
 		<?php else : ?>
 		<article style="background-image: url(<?php the_sub_field('background_image_left'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 black">
 			<header class="major">
-				<?php the_sub_field('content_left'); ?>
+				<div class="max-width-600">
+					<?php the_sub_field('content_left'); ?>
+				</div>
 			</header>
 		</article>
 		
@@ -51,14 +59,18 @@
 		
 		<article style="display: none; background-image: url(<?php the_sub_field('background_image_left'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 black white">
 			<header class="major">
-				<?php the_sub_field('content_left'); ?>
+				<div class="max-width-600">
+					<?php the_sub_field('content_left'); ?>
+				</div>
 			</header>
 		</article>
 		
 		<?php else : ?>
 		<article style="background-image: url(<?php the_sub_field('background_image_left'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 black white">
 			<header class="major">
-				<?php the_sub_field('content_left'); ?>
+				<div class="max-width-600">
+					<?php the_sub_field('content_left'); ?>
+				</div>
 			</header>
 		</article>
 		
@@ -78,14 +90,18 @@
 		
 		<article style="display: none; background-image: url(<?php the_sub_field('background_image_right'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 green">
 			<header class="major">
-				<?php the_sub_field('content_right'); ?>
+				<div class="max-width-600">
+					<?php the_sub_field('content_right'); ?>
+				</div>
 			</header>
 		</article>
 		
 		<?php else : ?>
 		<article style="background-image: url(<?php the_sub_field('background_image_right'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 green">
 			<header class="major">
-				<?php the_sub_field('content_right'); ?>
+				<div class="max-width-600">
+					<?php the_sub_field('content_right'); ?>
+				</div>
 			</header>
 		</article>
 		
@@ -97,14 +113,18 @@
 		
 		<article style="display: none; background-image: url(<?php the_sub_field('background_image_right'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 black">
 			<header class="major">
-				<?php the_sub_field('content_right'); ?>
+				<div class="max-width-600">
+					<?php the_sub_field('content_right'); ?>
+				</div>
 			</header>
 		</article>
 		
 		<?php else : ?>
 		<article style="background-image: url(<?php the_sub_field('background_image_right'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 black">
 			<header class="major">
-				<?php the_sub_field('content_right'); ?>
+				<div class="max-width-600">
+					<?php the_sub_field('content_right'); ?>
+				</div>
 			</header>
 		</article>
 		
@@ -116,14 +136,18 @@
 		
 		<article style="display: none; background-image: url(<?php the_sub_field('background_image_right'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 white">
 			<header class="major">
-				<?php the_sub_field('content_right'); ?>
+				<div class="max-width-600">
+					<?php the_sub_field('content_right'); ?>
+				</div>
 			</header>
 		</article>
 		
 		<?php else : ?>
 		<article style="background-image: url(<?php the_sub_field('background_image_right'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 white">
 			<header class="major">
-				<?php the_sub_field('content_right'); ?>
+				<div class="max-width-600">
+					<?php the_sub_field('content_right'); ?>
+				</div>
 			</header>
 		</article>
 		
