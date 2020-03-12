@@ -2,7 +2,6 @@
 $loop = new WP_Query( array( 
 	'post_type' => 'team',
 	'posts_per_page' => -1,
-	'order' => 'ASC',
 	)
 );
 if ( $loop->have_posts() ) : ?>
