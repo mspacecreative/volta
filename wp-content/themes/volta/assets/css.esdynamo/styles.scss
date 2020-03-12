@@ -78,8 +78,42 @@ input[type="button"], input[type="submit"], input[type="reset"], button, .button
 	width: 80%;
 }
 
-.pagination {
+.classic-block-wrap, .pagination {
 	padding-bottom: 4em;
+}
+
+.post-header:before {
+	background: linear-gradient(180deg, rgba(0,0,0,.5), rgba(255,255,255,0));
+	top: 0;
+	left: 0;
+	content: "";
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+	width: 100%;
+}
+
+.gform_wrapper {
+	background-color: #f5f5f5;
+	padding: 0 2em 2em;
+	margin-top: 30px!important;
+}
+
+.gform_fields {
+	padding-top: 10px!important;
+}
+
+body .gform_wrapper ul.gform_fields li.gfield {
+	padding-right: 0;
+}
+
+.gform_button, .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit] {
+	background-color: #000;
+    color: #fff;
+    padding: 15px 25px;
 }
 	
 @media (min-width: 981px) {
@@ -97,6 +131,18 @@ input[type="button"], input[type="submit"], input[type="reset"], button, .button
 		width: 5px;
 		background-color: #fff;
 		z-index: 10;
+	}
+	.gform_wrapper ul.gform_fields li.gfield {
+		display: inline-block;
+		width: 48%;
+		margin-right: 4%;
+		vertical-align: top;
+	}
+	.gform_wrapper ul.gform_fields li.gfield.full_width_field {
+		width: 100%;
+	}
+	.gform_wrapper ul.gform_fields li.gfield:nth-child(2n) {
+		margin-right: 0;
 	}
 	.width-800.gutter_space_1 > .column-container:first-of-type {
 		padding-left: 0;
@@ -120,6 +166,10 @@ input[type="button"], input[type="submit"], input[type="reset"], button, .button
 	.column-container img {
 		margin-top: 10px;
 		margin-bottom: 10px;
+	}
+	.classic-block-wrap {
+		padding-top: 2em;
+		padding-bottom: 4em;
 	}
 	
 }
@@ -150,6 +200,17 @@ input[type="button"], input[type="submit"], input[type="reset"], button, .button
 	.gutter_space_1 > .column-container {
 		padding-left: 2rem;
 	    padding-right: 2rem;
+	}
+	.classic-block-wrap {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+	.page .inner.boxed {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.classic-block-wrap {
+		padding-top: 1em;
 	}
 	
 }
@@ -184,5 +245,9 @@ input[type="button"], input[type="submit"], input[type="reset"], button, .button
 	}
 	.post-title-outer {
 		padding: 0 1em;
+	}
+	.page .inner.boxed {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }

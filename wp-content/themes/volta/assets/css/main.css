@@ -2632,9 +2632,6 @@ header {
 .right-side {
 	padding-right: 4em;
 }
-.page .inner.boxed {
-	padding: 0 6em;
-}
 .no-featured-image-in-header .post-container {
 	padding: 4em 0;
 }
@@ -2883,9 +2880,6 @@ body #mc_embed_signup form {
 	font-weight: lighter;
 	max-width: 500px;
 }
-.classic-block-wrap {
-	padding: 2em 0 4em;
-}
 .classic-block-wrap.no-bottom-padding {
 	padding-bottom: 0;
 }
@@ -3012,9 +3006,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	.alignright, .alignleft {
 		max-width: 40%!important;
-	}
-	.page .inner.boxed {
-		padding: 2em 2em 0;
 	}
 	.bottom-padding {
 	    padding-bottom: 4em;
@@ -3524,9 +3515,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.single .post-container > .container {
 	    padding-right: 0;
 	    padding-left: 0;
-	}
-	.page .inner.boxed {
-		padding: 2em 2em 0;
 	}
 	.container, .left-side, .right-side {
 	    padding-right: 2em;

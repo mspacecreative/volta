@@ -870,7 +870,7 @@ if( function_exists('acf_add_options_page') ) {
 function wrap_classic_block( $block_content, $block ) {
 	if ( is_singular('page') ) {
 		if ( null === $block['blockName'] && ! empty( $block_content ) && ! ctype_space( $block_content ) ) {
-			$block_content = '<div class="classic-block-wrap">' . $block_content . '</div>';
+			$block_content = '<div class="classic-block-wrap row-width-1280">' . $block_content . '</div>';
 		}
 		return $block_content;
 	} else {
@@ -940,3 +940,6 @@ function short_title($after = '', $length) {
 function centeredLineRulesTitle($atts, $content = null) {
     return '<div class="centered-title-with-line-rules"><h2><span class="before-title"></span>' . do_shortcode($content) . '<span class="after-title"></span></h2></div>';
 }
+
+// GRAVITY FORMS SCROLL TO TOP FIX
+add_filter( 'gform_confirmation_anchor', '__return_true' );
