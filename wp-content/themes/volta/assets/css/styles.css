@@ -1,0 +1,67 @@
+@import url(normalize.css);
+@import url(flexboxgrid.min.css);
+@import url(fontawesome-all.min.css);
+@import url(isotope.css);
+@import url(noscript.css);
+@import url(slick-theme.css);
+@import url(team.css);
+@import url(main.css);
+/* FIVE COLUMN GRID */
+
+.col-lg-1_5, .col-md-1_5 {
+	flex-basis: 100%;
+	max-width: 100%;
+}
+
+/* BOXED COLUMN */
+
+.boxed {
+	padding: .5em 2em 1.5em 2em;
+	border: 1px solid #000;
+}
+
+/* ADD TOP AND BOTTOM PADDING TO FLEX BOX ITEMS */
+
+.col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-offset-0, .col-sm-offset-1, .col-sm-offset-10, .col-sm-offset-11, .col-sm-offset-12, .col-sm-offset-2, .col-sm-offset-3, .col-sm-offset-4, .col-sm-offset-5, .col-sm-offset-6, .col-sm-offset-7, .col-sm-offset-8, .col-sm-offset-9 {
+	padding-bottom: .5em;
+	padding-top: .5em;
+}
+
+/* REMOVE SIDE PADDING WHEN ROW IS 800PX WIDE */
+
+.width-800 > .row-width-1280 {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.clear:after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+@media (min-width: 981px) {
+	.col-lg-1_5, .col-md-1_5 {
+		flex-basis: 20%;
+		max-width: 20%;
+	}
+}
+
+@media (max-width: 980px) {
+	.col-lg-1_5, .col-md-1_5 {
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+	
+	.row.gutter_space_1 {
+		margin-left: -.5rem;
+		margin-right: -.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.col-lg-1_5, .col-md-1_5 {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+}

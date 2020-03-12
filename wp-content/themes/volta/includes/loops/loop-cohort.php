@@ -1,4 +1,4 @@
-<div class="residents-container display-flex flex-wrap flexbox-container">
+<div class="residents-container row clear">
 	<?php 
 	$args = array(
 	    'post_type' => 'companies',
@@ -16,7 +16,7 @@
 	$loop = get_posts($args);
     if ( $loop ) :
         foreach ( $loop as $post ) : setup_postdata( $post ); ?>
-		<div class="resident-container three_column">
+		<div class="resident-container col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			<?php if ( get_field('alumni_company', $post->ID) ): ?>
 			<div class="grid-inner" style="padding-bottom: 8em;">
 				<div class="logo-image-wrap">

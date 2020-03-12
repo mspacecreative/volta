@@ -16,7 +16,7 @@
 	$loop = get_posts($args);
     if ( $loop ) :
         foreach ( $loop as $post ) : setup_postdata( $post ); ?>
-		<div class="resident-container three_column">
+		<div class="resident-container col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			<div class="grid-inner">
 				<div class="logo-image-wrap">
 					<?php

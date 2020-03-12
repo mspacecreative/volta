@@ -3,135 +3,137 @@
 <!-- Intro section -->
 <section class="intro tiles shadow">
 	
-	<?php if( have_rows('left_column') ): ?>
-	<?php while( have_rows('left_column') ): the_row(); ?>
-	
-	<?php if ( get_sub_field('colour_overlay') == 'green' ): ?>
-	
-	<?php if ( $hideblock ) : ?>
-	
-	<article style="display: none; background-image: url(<?php the_sub_field('background_image_left'); ?>);" class="light width-50 green">
-		<header class="major">
-			<?php the_sub_field('content_left'); ?>
-		</header>
-	</article>
-	
-	<?php else : ?>
-	<article style="background-image: url(<?php the_sub_field('background_image_left'); ?>);" class="light width-50 green">
-		<header class="major">
-			<?php the_sub_field('content_left'); ?>
-		</header>
-	</article>
-	
-	<?php endif; ?>
-	
-	<?php elseif ( get_sub_field('colour_overlay') == 'black' ): ?>
-	
-	<?php if ( $hideblock ) : ?>
-	
-	<article style="display: none; background-image: url(<?php the_sub_field('background_image_left'); ?>);" class="light width-50 black">
-		<header class="major">
-			<?php the_sub_field('content_left'); ?>
-		</header>
-	</article>
-	
-	<?php else : ?>
-	<article style="background-image: url(<?php the_sub_field('background_image_left'); ?>);" class="light width-50 black">
-		<header class="major">
-			<?php the_sub_field('content_left'); ?>
-		</header>
-	</article>
-	
-	<?php endif; ?>
-	
-	<?php elseif ( get_sub_field('colour_overlay') == 'white' ): ?>
-	
-	<?php if ( $hideblock ) : ?>
-	
-	<article style="display: none; background-image: url(<?php the_sub_field('background_image_left'); ?>);" class="light width-50 black white">
-		<header class="major">
-			<?php the_sub_field('content_left'); ?>
-		</header>
-	</article>
-	
-	<?php else : ?>
-	<article style="background-image: url(<?php the_sub_field('background_image_left'); ?>);" class="light width-50 black white">
-		<header class="major">
-			<?php the_sub_field('content_left'); ?>
-		</header>
-	</article>
-	
-	<?php endif; ?>
-	
-	<?php endif; ?>
-	
-	<?php endwhile;
-	endif; ?>
-	
-	<?php if( have_rows('right_column') ): ?>
-	<?php while( have_rows('right_column') ): the_row(); ?>
-	
-	<?php if ( get_sub_field('colour_overlay') == 'green' ): ?>
-	
-	<?php if ( $hideblock ) : ?>
-	
-	<article style="display: none; background-image: url(<?php the_sub_field('background_image_right'); ?>);" class="light width-50 green">
-		<header class="major">
-			<?php the_sub_field('content_right'); ?>
-		</header>
-	</article>
-	
-	<?php else : ?>
-	<article style="background-image: url(<?php the_sub_field('background_image_right'); ?>);" class="light width-50 green">
-		<header class="major">
-			<?php the_sub_field('content_right'); ?>
-		</header>
-	</article>
-	
-	<?php endif; ?>
-	
-	<?php elseif ( get_sub_field('colour_overlay') == 'black' ): ?>
-	
-	<?php if ( $hideblock ) : ?>
-	
-	<article style="display: none; background-image: url(<?php the_sub_field('background_image_right'); ?>);" class="light width-50 black">
-		<header class="major">
-			<?php the_sub_field('content_right'); ?>
-		</header>
-	</article>
-	
-	<?php else : ?>
-	<article style="background-image: url(<?php the_sub_field('background_image_right'); ?>);" class="light width-50 black">
-		<header class="major">
-			<?php the_sub_field('content_right'); ?>
-		</header>
-	</article>
-	
-	<?php endif; ?>
-	
-	<?php elseif ( get_sub_field('colour_overlay') == 'white' ): ?>
-	
-	<?php if ( $hideblock ) : ?>
-	
-	<article style="display: none; background-image: url(<?php the_sub_field('background_image_right'); ?>);" class="light width-50 white">
-		<header class="major">
-			<?php the_sub_field('content_right'); ?>
-		</header>
-	</article>
-	
-	<?php else : ?>
-	<article style="background-image: url(<?php the_sub_field('background_image_right'); ?>);" class="light width-50 white">
-		<header class="major">
-			<?php the_sub_field('content_right'); ?>
-		</header>
-	</article>
-	
-	<?php endif; ?>
-	
-	<?php endif; ?>
-	
-	<?php endwhile;
-	endif; ?>
+	<div class="row clear">
+		<?php if( have_rows('left_column') ): ?>
+		<?php while( have_rows('left_column') ): the_row(); ?>
+		
+		<?php if ( get_sub_field('colour_overlay') == 'green' ): ?>
+		
+		<?php if ( $hideblock ) : ?>
+		
+		<article style="display: none; background-image: url(<?php the_sub_field('background_image_left'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 green">
+			<header class="major">
+				<?php the_sub_field('content_left'); ?>
+			</header>
+		</article>
+		
+		<?php else : ?>
+		<article style="background-image: url(<?php the_sub_field('background_image_left'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 green">
+			<header class="major">
+				<?php the_sub_field('content_left'); ?>
+			</header>
+		</article>
+		
+		<?php endif; ?>
+		
+		<?php elseif ( get_sub_field('colour_overlay') == 'black' ): ?>
+		
+		<?php if ( $hideblock ) : ?>
+		
+		<article style="display: none; background-image: url(<?php the_sub_field('background_image_left'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 black">
+			<header class="major">
+				<?php the_sub_field('content_left'); ?>
+			</header>
+		</article>
+		
+		<?php else : ?>
+		<article style="background-image: url(<?php the_sub_field('background_image_left'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 black">
+			<header class="major">
+				<?php the_sub_field('content_left'); ?>
+			</header>
+		</article>
+		
+		<?php endif; ?>
+		
+		<?php elseif ( get_sub_field('colour_overlay') == 'white' ): ?>
+		
+		<?php if ( $hideblock ) : ?>
+		
+		<article style="display: none; background-image: url(<?php the_sub_field('background_image_left'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 black white">
+			<header class="major">
+				<?php the_sub_field('content_left'); ?>
+			</header>
+		</article>
+		
+		<?php else : ?>
+		<article style="background-image: url(<?php the_sub_field('background_image_left'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 black white">
+			<header class="major">
+				<?php the_sub_field('content_left'); ?>
+			</header>
+		</article>
+		
+		<?php endif; ?>
+		
+		<?php endif; ?>
+		
+		<?php endwhile;
+		endif; ?>
+		
+		<?php if( have_rows('right_column') ): ?>
+		<?php while( have_rows('right_column') ): the_row(); ?>
+		
+		<?php if ( get_sub_field('colour_overlay') == 'green' ): ?>
+		
+		<?php if ( $hideblock ) : ?>
+		
+		<article style="display: none; background-image: url(<?php the_sub_field('background_image_right'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 green">
+			<header class="major">
+				<?php the_sub_field('content_right'); ?>
+			</header>
+		</article>
+		
+		<?php else : ?>
+		<article style="background-image: url(<?php the_sub_field('background_image_right'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 green">
+			<header class="major">
+				<?php the_sub_field('content_right'); ?>
+			</header>
+		</article>
+		
+		<?php endif; ?>
+		
+		<?php elseif ( get_sub_field('colour_overlay') == 'black' ): ?>
+		
+		<?php if ( $hideblock ) : ?>
+		
+		<article style="display: none; background-image: url(<?php the_sub_field('background_image_right'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 black">
+			<header class="major">
+				<?php the_sub_field('content_right'); ?>
+			</header>
+		</article>
+		
+		<?php else : ?>
+		<article style="background-image: url(<?php the_sub_field('background_image_right'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 black">
+			<header class="major">
+				<?php the_sub_field('content_right'); ?>
+			</header>
+		</article>
+		
+		<?php endif; ?>
+		
+		<?php elseif ( get_sub_field('colour_overlay') == 'white' ): ?>
+		
+		<?php if ( $hideblock ) : ?>
+		
+		<article style="display: none; background-image: url(<?php the_sub_field('background_image_right'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 white">
+			<header class="major">
+				<?php the_sub_field('content_right'); ?>
+			</header>
+		</article>
+		
+		<?php else : ?>
+		<article style="background-image: url(<?php the_sub_field('background_image_right'); ?>);" class="light column-container col-lg-6 col-md-6 col-sm-12 col-xs-12 white">
+			<header class="major">
+				<?php the_sub_field('content_right'); ?>
+			</header>
+		</article>
+		
+		<?php endif; ?>
+		
+		<?php endif; ?>
+		
+		<?php endwhile;
+		endif; ?>
+	</div>
 	
 </section>
 <!-- /Intro section -->

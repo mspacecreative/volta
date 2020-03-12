@@ -7,7 +7,7 @@ $backgroundcolour = get_field('background_color');
 if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 <section class="banner dark-overlay" style="background-image: url(<?php the_field('background_image'); ?>);">
 
-	<div class="row">
+	<div class="inner-row">
 		<?php if ( get_field('text_color') == 'dark' ): ?>
 		<header class="max-width-800">
 			
@@ -39,7 +39,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 <?php elseif ( $imageoverlay == 'light' && $backgroundimage ): ?>
 <section class="banner light-overlay" style="background-image: url(<?php the_field('background_image'); ?>);">
 
-	<div class="row">
+	<div class="inner-row">
 		<?php if ( get_field('text_color') == 'dark' ): ?>
 		<header class="max-width-800">
 			
@@ -71,7 +71,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 <?php elseif ( $backgroundimage ): ?>
 <section class="banner" style="background-image: url(<?php the_field('background_image'); ?>);">
 
-	<div class="row">
+	<div class="inner-row">
 		<?php if ( get_field('text_color') == 'dark' ): ?>
 		<header class="max-width-800">
 			
@@ -103,7 +103,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 <?php elseif ( $backgroundcolour ): ?>
 <section class="banner" style="background-color: <?php the_field('background_color'); ?>;">
 
-	<div class="row">
+	<div class="inner-row">
 		<?php if ( get_field('text_color') == 'dark' ): ?>
 		<header class="max-width-800">
 			
@@ -135,7 +135,7 @@ if ( $imageoverlay == 'dark' && $backgroundimage ): ?>
 <?php else : ?>
 <section class="banner">
 	
-	<div class="row">
+	<div class="inner-row">
 		<?php if ( get_field('text_color') == 'dark' ): ?>
 		<header class="max-width-800">
 			

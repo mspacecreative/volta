@@ -87,6 +87,7 @@
 	}
 	.membership-type h2 {
 		background-color: #000;
+		margin-top: 0;
 		color: #fff;
 		padding: 15px 30px;
 		margin-bottom: 0;

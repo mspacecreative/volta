@@ -7,7 +7,7 @@ if ( get_field('heading') ): ?>
 <h2 class="max-width-60"><?php the_field('heading'); ?></h2>
 <?php endif; ?>
 
-<div class="two_third_col">
+<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 column-container">
 	<?php the_field('two_third_column'); ?>
 </div>
 
@@ -15,16 +15,18 @@ if ( get_field('heading') ): ?>
 <?php while( have_rows('one_third_column') ): the_row(); ?>
 
 	<?php if ( get_sub_field('content_type') == 'text' ): ?>
-	<div class="one_third_col boxed">
-		<?php the_sub_field('text_editor'); ?>
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 column-container">
+		<div class="boxed">
+			<?php the_sub_field('text_editor'); ?>
+		</div>
 	</div>
 	
 	<?php elseif ( get_sub_field('content_type') == 'image' ): ?>
-	<div class="one_third_col">
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 column-container">
 		<?php 
 		$image = get_sub_field('image_upload');
 		$size = 'large';
-		
+			
 		if( $image ) {
 			echo wp_get_attachment_image( $image, $size );
 		}
@@ -32,7 +34,7 @@ if ( get_field('heading') ): ?>
 	</div>
 	
 	<?php elseif ( get_sub_field('content_type') == 'video' ): ?>
-	<div class="one_third_col">
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 column-container">
 		<?php the_sub_field('video_upload'); ?>
 	</div>
 	<?php endif; ?>
@@ -46,7 +48,7 @@ if ( get_field('heading') ): ?>
 <h2 class="max-width-60"><?php the_field('heading'); ?></h2>
 <?php endif; ?>
 
-<div class="two_third_col">
+<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 column-container">
 	<?php the_field('two_third_column'); ?>
 </div>
 
@@ -54,16 +56,16 @@ if ( get_field('heading') ): ?>
 <?php while( have_rows('one_third_column') ): the_row(); ?>
 
 	<?php if ( get_sub_field('content_type') == 'text' ): ?>
-	<div class="one_third_col">
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 column-container">
 		<?php the_sub_field('text_editor'); ?>
 	</div>
 	
 	<?php elseif ( get_sub_field('content_type') == 'image' ): ?>
-	<div class="one_third_col">
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 column-container">
 		<?php 
 		$image = get_sub_field('image_upload');
 		$size = 'large';
-		
+			
 		if( $image ) {
 			echo wp_get_attachment_image( $image, $size );
 		}
@@ -71,7 +73,7 @@ if ( get_field('heading') ): ?>
 	</div>
 	
 	<?php elseif ( get_sub_field('content_type') == 'video' ): ?>
-	<div class="one_third_col">
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 column-container">
 		<?php the_sub_field('video_upload'); ?>
 	</div>
 	<?php endif; ?>

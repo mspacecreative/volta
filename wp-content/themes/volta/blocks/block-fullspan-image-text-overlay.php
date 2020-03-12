@@ -10,7 +10,7 @@
 	<?php if ( get_sub_field('background_image_overlay') == 'dark' ): ?>
 	<section class="features shadow special white-bg dark-overlay" style="background-image: url(<?php the_sub_field('background_image'); ?>);">
 		
-		<article class="row content-bottom">
+		<article class="full-img-row row-width-1280 content-bottom">
 		
 		<?php 
 		$image = get_sub_field('sponsor_branding');
@@ -55,7 +55,7 @@
 	<?php elseif ( get_sub_field('background_image_overlay') == 'light' ): ?>
 	<section class="features shadow special white-bg light-overlay" style="background-image: url(<?php the_sub_field('background_image'); ?>);">
 		
-		<article class="row content-bottom">
+		<article class="full-img-row row-width-1280  content-bottom">
 		
 		<?php 
 		$image = get_sub_field('sponsor_branding');
@@ -100,7 +100,7 @@
 	<?php else : ?>
 	<section class="features shadow special white-bg" style="background-image: url(<?php the_sub_field('background_image'); ?>);">
 		
-		<article class="row content-bottom">
+		<article class="full-img-row row-width-1280  content-bottom">
 		
 		<?php 
 		$image = get_sub_field('sponsor_branding');
