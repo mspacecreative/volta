@@ -15,7 +15,7 @@
 
 /* BOXED COLUMN */
 
-.boxed {
+.boxed-content {
 	padding: .5em 2em 1.5em 2em;
 	border: 1px solid #000;
 }
@@ -34,16 +34,55 @@
 	padding-left: 0;
 }
 
+.alignright {
+	float: right;
+	margin: 10px 0 20px 20px;
+}
+
+.alignleft {
+	float: left;
+	margin: 10px 20px 20px 0;
+}
+
 /* MAX WIDTH */
 
 .max-width-600 {
 	max-width: 600px;
 }
 
+.voltage-magazine .image-container img {
+	max-height: none;
+	max-width: none;
+}
+
+.voltage-magazine .post-content-container ul.image-grid-container {
+	filter: unset;
+}
+
+.column-container h3:first-of-type {
+	margin-top: 0;
+}
+
 .clear:after {
 	display: table;
 	clear: both;
 	content: "";
+}
+
+input[type="button"], input[type="submit"], input[type="reset"], button, .button {
+	border-radius: 4px;
+}
+
+.mobile-filter button:hover {
+	background: #000;
+}
+
+.mobile-filter, .filters-button-group {
+	width: 80%;
+}
+
+.pagination {
+	padding-bottom: 4em;
 }
 
 @media (min-width: 981px) {
@@ -62,6 +101,34 @@
 		background-color: #fff;
 		z-index: 10;
 	}
+	
+	.width-800.gutter_space_1 > .column-container:first-of-type {
+		padding-left: 0;
+	}
+	
+	.width-800.gutter_space_1 > .column-container:last-of-type {
+		padding-right: 0;
+	}
+	
+	.width-800.gutter_space_1 {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.row.gutter_space_1 {
+		margin-left: -2rem;
+		margin-right: -2rem;
+	}
+	
+	.gutter_space_1 > .column-container {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	
+	.column-container img {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
 }
 
 @media (max-width: 980px) {
@@ -70,9 +137,43 @@
 		max-width: 50%;
 	}
 	
+	.row-width-1280 {
+		padding-left: 3em;
+		padding-right: 3em;
+	}
+	
+	.post-title-outer {
+		padding: 0 2em;
+	}
+	
 	.row.gutter_space_1 {
-		margin-left: -.5rem;
-		margin-right: -.5rem;
+		margin-left: -2rem;
+		margin-right: -2rem;
+	}
+	
+	.gutter_space_1 > .column-container {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+
+@media (max-width: 1024px) {
+	.width-800.gutter_space_1 > .column-container:first-of-type {
+		padding-right: 2em;
+	}
+	
+	.width-800.gutter_space_1 > .column-container:last-of-type {
+		padding-left: 2em;
+	}
+	
+	#footer .row.gutter_space_1 {
+		margin-left: -2rem;
+		margin-right: -2rem;
+	}
+	
+	#footer .gutter_space_1 > .column-container {
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 }
 
@@ -80,5 +181,14 @@
 	.col-lg-1_5, .col-md-1_5, .flex-box {
 		flex-basis: 100%;
 		max-width: 100%;
+	}
+	
+	.row-width-1280 {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+	
+	.post-title-outer {
+		padding: 0 1em;
 	}
 }

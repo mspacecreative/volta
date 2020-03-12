@@ -2315,6 +2315,7 @@ aside {
 } 
 #footer h3 {
 	margin: 0 0 15px;
+	font-weight: normal;
 }
 #page-wrapper {
 	position: relative;
@@ -3208,10 +3209,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	.home #nav {
 		display: none;
 	}
-	.row-width-1280 {
-		padding-left: 2em;
-		padding-right: 2em;
-	}
 	.row > .col-3 {
 		width: 100%;
 		margin-right: 0;
@@ -3435,9 +3432,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 	.top-padding {
 	    padding-top: 2em;
-	}
-	.post-title-outer {
-	    padding: 0 1em;
 	}
 	.post-container {
 		padding: 0;
@@ -3676,15 +3670,6 @@ body #privy-container #privy-inner-container .privy-caret-down {
 @media (min-width: 981px) {
 	main, aside, .two_third_col, .one_third_col {
 		float: left;
-	}
-	.row.gutter_space_1 {
-		margin-left: -2rem;
-	    margin-right: -2rem;
-	}
-
-	.gutter_space_1 > .column-container {
-		padding-left: 2rem;
-	    padding-right: 2rem;
 	}
 	.row-width-1280 {
 		padding-left: 4em;

@@ -220,6 +220,7 @@ button {
    display: none;
    padding: 35px 0 50px;
    text-align: center;
+   margin: auto;
 }
 
 .mobile-filter button {
