@@ -45,6 +45,11 @@ a:focus {
 	margin: 10px 20px 20px 0;
 }
 
+.aligncenter {
+	margin: auto;
+	display: block;
+}
+
 /* MAX WIDTH */
 
 .max-width-600 {
@@ -99,6 +104,11 @@ input[type="button"], input[type="submit"], input[type="reset"], button, .button
 
 .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
 	width: 100%;
+}
+
+.gform_other_input {
+	width: auto;
+    display: inline-block;
 }
 
 .gform_wrapper {
@@ -181,6 +191,11 @@ body .gform_wrapper ul.gform_fields li.gfield {
 	.classic-block-wrap {
 		padding-top: 2em;
 		padding-bottom: 4em;
+	}
+	.float_right_field {
+		margin-right: 0;
+		float: right;
+		margin-top: 0;
 	}
 	
 }
