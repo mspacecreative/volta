@@ -205,9 +205,10 @@ body .gform_wrapper ul.gform_fields li.gfield {
 		padding-bottom: 4em;
 	}
 	
-	.float_right_field {
+	.gform_wrapper ul.gform_fields li.gfield.float_right_field {
 		margin-right: 0;
 		float: right;
+		margin-top: 0;
 	}
 }
 
