@@ -1,7 +1,7 @@
 <?php $hideblock = get_field('hide_block_50_hide_block'); ?>
 
 <!-- Intro section -->
-<section class="intro tiles shadow">
+<section class="intro shadow">
 	
 	<div class="row clear">
 		<?php if( have_rows('left_column') ): ?>

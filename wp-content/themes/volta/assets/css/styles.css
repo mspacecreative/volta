@@ -20,6 +20,10 @@
 	border: 1px solid #000;
 }
 
+a:focus {
+	border: none !important;
+}
+
 /* ADD TOP AND BOTTOM PADDING TO FLEX BOX ITEMS */
 
 .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-offset-0, .col-sm-offset-1, .col-sm-offset-10, .col-sm-offset-11, .col-sm-offset-12, .col-sm-offset-2, .col-sm-offset-3, .col-sm-offset-4, .col-sm-offset-5, .col-sm-offset-6, .col-sm-offset-7, .col-sm-offset-8, .col-sm-offset-9 {
@@ -48,6 +52,7 @@
 
 .max-width-600 {
 	max-width: 600px;
+	margin: auto;
 }
 
 .voltage-magazine .image-container img {
@@ -111,6 +116,12 @@ input[type="button"], input[type="submit"], input[type="reset"], button, .button
 
 body .gform_wrapper ul.gform_fields li.gfield {
 	padding-right: 0;
+}
+
+.blog_card_excerpt {
+	font-size: 16px;
+	line-height: 1.75em;
+	display: block;
 }
 
 .gform_button, .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit] {
@@ -185,6 +196,13 @@ body .gform_wrapper ul.gform_fields li.gfield {
 	}
 }
 
+@media (max-width: 850px) and (orientation: landscape) {
+	body .col-xs-12.col-land-mobile {
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+}
+
 @media (max-width: 980px) {
 	.col-lg-1_5, .col-md-1_5, .flex-box {
 		flex-basis: 50%;
@@ -194,6 +212,10 @@ body .gform_wrapper ul.gform_fields li.gfield {
 	.row-width-1280 {
 		padding-left: 3em;
 		padding-right: 3em;
+	}
+	
+	#custom_html-2 {
+		display: none;
 	}
 	
 	.post-title-outer {

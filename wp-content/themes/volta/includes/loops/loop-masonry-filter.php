@@ -37,7 +37,7 @@
 				
 				<?php else : ?>
 					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-						<?php the_post_thumbnail('large'); // Declare pixel size you need inside the array ?>
+						<?php the_post_thumbnail('medium'); // Declare pixel size you need inside the array ?>
 					</a>
 				<?php endif; ?>
 				<!-- /post thumbnail -->
@@ -55,7 +55,7 @@
 					<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
 					<!-- /post details -->
 					
-					<?php html5wp_excerpt('html5wp_index'); ?>
+					<span class="blog_card_excerpt"><?php html5wp_excerpt('html5wp_index'); ?></span>
 					
 				</div>
 				

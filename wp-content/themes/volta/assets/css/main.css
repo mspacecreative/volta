@@ -395,10 +395,6 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 	.bucket-content h3 {
 		position: relative;
 	}
-	
-	.bucket-content h4 {
-		margin: 0 0 10px;
-	}
 
 	header {
 		margin: 0 0 1em 0;
@@ -1990,9 +1986,8 @@ img {
 #insights header {
 	margin-bottom: .5em;
 }
-.tiles p.event-date {
-	font-size: 14px;
-	margin-top: 5px;
+.event-date {
+	font-size: 13px;
 }
 .section-heading-right,.section-heading-left {
 	position: absolute;
@@ -2017,6 +2012,9 @@ img {
 .tiles {
 	position: relative;
 	overflow: hidden;
+}
+.event-thumb {
+	margin-top: 5px;
 }
 .event-thumb img {
 	display: block;
@@ -2154,8 +2152,8 @@ body .slick-dotted.slick-slider {
 	text-align: center;
 }
 
-.event-container {
-	margin: 0 0 2em;
+#sidebar .event-container {
+	margin-bottom: 2em;
 }
 
 .event-container:last-of-type {
@@ -2460,9 +2458,6 @@ form input.search-submit[type=submit]:hover {
 	color: #fff;
 	border-radius: 0;
 	-webkit-appearance: none;
-}
-.post-content-container ul {
-	margin: 1em 0;
 }
 .post-content-container ul.actions {
 	margin: 30px 0 0;
@@ -2787,10 +2782,6 @@ body #mc_embed_signup form {
 }
 .related-posts h4 {
 	font-size: 15px;
-}
-.related-posts {
-	display: flex;
-	flex-wrap: wrap;
 }
 .addthis-container {
 	display: table;
