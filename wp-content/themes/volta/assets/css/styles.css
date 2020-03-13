@@ -254,8 +254,8 @@ body .gform_wrapper ul.gform_fields li.gfield {
 		margin-bottom: 25px;
 	}
 	
-	.icon-buckets .column-container:first-child {
-		margin-top: 2em;
+	.underlined-heading {
+		margin-bottom: 2em;
 	}
 	
 	.icon-buckets .top-bottom-padding {
