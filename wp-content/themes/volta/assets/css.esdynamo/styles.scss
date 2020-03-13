@@ -191,6 +191,13 @@ body .gform_wrapper ul.gform_fields li.gfield {
 	.gform_wrapper ul.gform_fields li.gfield.full_width_field {
 		width: 100%;
 	}
+	.gform_wrapper .top_label li.gform_inline_radio_buttons ul.gfield_radio {
+		width: 100%;
+	}
+	.gform_wrapper .top_label li.gform_inline_radio_buttons li {
+		display: inline-block;
+		margin-right: 25px;
+	}
 	.gform_wrapper ul.gform_fields li.gfield:nth-child(2n) {
 		margin-right: 0;
 	}
