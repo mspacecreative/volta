@@ -136,7 +136,7 @@ body .gform_wrapper ul.gform_fields li.gfield {
 		max-width: 20%;
 	}
 	
-	.tiles article:first-of-type:after {
+	.intro article:first-of-type:after {
 		content: "";
 		position: absolute;
 		top: 0;
