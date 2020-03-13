@@ -850,7 +850,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 
 <?php elseif ( $sectionmargin == 'top' ): ?>
 <div class="section">
-	<div class="row-width-1280 default-padding top-margin">
+	<div class="row-width-1280 top-margin">
 		<?php if ( get_field('section_heading') ): ?>
 		<h2><?php the_field('section_heading'); ?></h2>
 		<?php endif; ?>
@@ -1510,7 +1510,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 
 <?php elseif ( $sectionmargin == 'top' ): ?>
 <div class="section">
-	<div class="row-width-1280 default-padding top-margin">
+	<div class="row-width-1280 top-margin">
 		<?php if ( get_field('section_heading') ): ?>
 		<h2><?php the_field('section_heading'); ?></h2>
 		<?php endif; ?>
@@ -1620,7 +1620,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 
 <?php elseif ( $sectionmargin == 'bottom' ): ?>
 <div class="section">
-	<div class="row between-lg between-md between-sm default-padding bottom-margin">
+	<div class="row between-lg between-md between-sm bottom-margin">
 		<?php if ( get_field('section_heading') ): ?>
 		<h2><?php the_field('section_heading'); ?></h2>
 		<?php endif; ?>
@@ -1730,7 +1730,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 
 <?php elseif ( $sectionmargin == 'both' ): ?>
 <div class="section">
-	<div class="row between-lg between-md between-sm default-padding top-bottom-margin">
+	<div class="row between-lg between-md between-sm top-bottom-margin">
 		<?php if ( get_field('section_heading') ): ?>
 		<h2><?php the_field('section_heading'); ?></h2>
 		<?php endif; ?>
@@ -1956,7 +1956,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 		<?php endif; ?>
 		<?php if ( get_field('column_count') == 'two' ): ?>
 		<?php if( have_rows('flexbox') ): ?>
-		<div class="row clear default-padding">
+		<div class="row clear">
 			<?php while( have_rows('flexbox') ): the_row(); ?>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 flex-box">
 				<div>
@@ -1982,7 +1982,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 		
 		<?php elseif ( get_field('column_count') == 'three' ): ?>
 		<?php if( have_rows('flexbox') ): ?>
-		<div class="row clear default-padding">
+		<div class="row clear">
 			<?php while( have_rows('flexbox') ): the_row(); ?>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 flex-box">
 				<div>
@@ -2008,7 +2008,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 		
 		<?php elseif ( get_field('column_count') == 'four' ): ?>
 		<?php if( have_rows('flexbox') ): ?>
-		<div class="row clear default-padding">
+		<div class="row clear">
 			<?php while( have_rows('flexbox') ): the_row(); ?>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 flex-box">
 				<div>
@@ -2034,7 +2034,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 		
 		<?php elseif ( get_field('column_count') == 'five' ): ?>
 		<?php if( have_rows('flexbox') ): ?>
-		<div class="row clear default-padding">
+		<div class="row clear">
 			<?php while( have_rows('flexbox') ): the_row(); ?>
 			<div class="col-lg-1_5 col-md-1_5 col-sm-6 col-xs-12 flex-box">
 				<div>
