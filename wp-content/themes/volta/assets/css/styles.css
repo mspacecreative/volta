@@ -140,6 +140,26 @@ body .gform_wrapper ul.gform_fields li.gfield {
 	padding: 15px 25px;
 }
 
+.width-800.gutter_space_1 > .column-container {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.row.gutter_space_1 {
+	margin-left: -2rem;
+	margin-right: -2rem;
+}
+
+.width-800.row.gutter_space_1 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gutter_space_1 > .column-container {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
 @media (min-width: 981px) {
 	.col-lg-1_5, .col-md-1_5 {
 		flex-basis: 20%;
@@ -207,6 +227,16 @@ body .gform_wrapper ul.gform_fields li.gfield {
 		flex-basis: 50%;
 		max-width: 50%;
 	}
+	
+	.width-800.row.gutter_space_1 {
+		margin-left: -2rem;
+		margin-right: -2rem;
+	}
+	
+	.gutter_space_1 > .column-container {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
 }
 
 @media (max-width: 980px) {
@@ -253,21 +283,6 @@ body .gform_wrapper ul.gform_fields li.gfield {
 	}
 }
 
-.width-800.gutter_space_1 > .column-container {
-	padding-left: 2rem;
-	padding-right: 2rem;
-}
-
-.row.gutter_space_1 {
-	margin-left: -2rem;
-	margin-right: -2rem;
-}
-
-.gutter_space_1 > .column-container {
-	padding-left: 2rem;
-	padding-right: 2rem;
-}
-
 @media (max-width: 1440px) {
 	.width-800.gutter_space_1 > .column-container:first-of-type {
 		padding-right: 2em;
@@ -289,7 +304,7 @@ body .gform_wrapper ul.gform_fields li.gfield {
 }
 
 @media (max-width: 1023px) {
-	.row.gutter_space_1 {
+	.row.gutter_space_1, .width-800.row.gutter_space_1 {
 		margin-left: -2rem;
 		margin-right: -2rem;
 	}
@@ -318,5 +333,15 @@ body .gform_wrapper ul.gform_fields li.gfield {
 	.page .inner.boxed {
 		padding-left: 0;
 		padding-right: 0;
+	}
+	
+	.row.gutter_space_1, .width-800.row.gutter_space_1 {
+		margin-left: -2rem;
+		margin-right: -2rem;
+	}
+	
+	.gutter_space_1 > .column-container {
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 }

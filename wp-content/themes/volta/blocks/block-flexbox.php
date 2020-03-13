@@ -1950,7 +1950,7 @@ if ( $sectionpadding == 'top' && $sectionmargin == 'top' ): ?>
 
 <?php else : ?>
 <div class="section">
-	<div class="row">
+	<div class="row-width-1280">
 		<?php if ( get_field('section_heading') ): ?>
 		<h2><?php the_field('section_heading'); ?></h2>
 		<?php endif; ?>
