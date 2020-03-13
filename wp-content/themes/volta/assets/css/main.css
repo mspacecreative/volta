@@ -1743,7 +1743,7 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 	padding: 4em 0 0;
 	margin: 0 0 4em;
 }
-.top-bottom-padding {
+.top-bottom-padding, .default-padding {
 	padding-top: 2em;
 	padding-bottom: 2em;
 }
@@ -2374,7 +2374,8 @@ aside {
 	padding: 0 6em;
 }
 .home .full-padding {
-	padding: 4em;
+	padding-top: 4em;
+	padding-bottom: 4em;
 }
 .video-container {
 	height: 0;
@@ -3021,7 +3022,8 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		padding: 0 1em;
 	}
 	.full-padding {
-	    padding: 1em;
+	    padding-top: 1em;
+		padding-bottom: 1em;
 	}
 	.no-padding {
 	    padding: 0 1em;
@@ -3037,7 +3039,8 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		padding-bottom: 2em;
 	}
 	.home .full-padding {
-	    padding: 2em;
+	    padding-top: 2em;
+		padding-bottom: 2em;
 	}
 	.inner-padding {
 		padding: 1em;
@@ -3144,7 +3147,8 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	    padding-left: 0;
 	}
 	.full-padding {
-	    padding: 3em;
+	    padding-top: 3em;
+		padding-bottom: 3em;
 	}
 	.no-padding {
 	    padding: 0 3em;
@@ -3523,7 +3527,8 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		padding: 0 1em 2em;
 	}
 	.full-padding {
-	    padding: 1em;
+	    padding-top: 1em;
+		padding-bottom: 1em;
 	}
 	.no-padding {
 	    padding: 0 1em;
@@ -3536,7 +3541,8 @@ body #privy-container #privy-inner-container .privy-caret-down {
 		padding-bottom: 4em;
 	}
 	.home .full-padding {
-	    padding: 2em;
+	    padding-top: 2em;
+		padding-bottom: 2em;
 	}
 	.inner-padding {
 		padding: 1em;

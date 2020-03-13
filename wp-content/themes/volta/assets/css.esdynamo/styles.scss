@@ -153,6 +153,10 @@ body .gform_wrapper ul.gform_fields li.gfield {
 		background-color: #fff;
 		z-index: 10;
 	}
+	.full-padding {
+		padding-top: 4em;
+		padding-bottom: 4em;
+	}
 	.gform_wrapper ul.gform_fields li.gfield {
 		display: inline-block;
 		width: 48%;
@@ -170,19 +174,6 @@ body .gform_wrapper ul.gform_fields li.gfield {
 	}
 	.width-800.gutter_space_1 > .column-container:last-of-type {
 		padding-right: 0;
-	}
-	.width-800.gutter_space_1 {
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.row.gutter_space_1 {
-		margin-left: -2rem;
-	    margin-right: -2rem;
-	}
-
-	.gutter_space_1 > .column-container {
-		padding-left: 2rem;
-	    padding-right: 2rem;
 	}
 	.column-container img {
 		margin-top: 10px;
@@ -214,6 +205,10 @@ body .gform_wrapper ul.gform_fields li.gfield {
 		flex-basis: 50%;
 		max-width: 50%;
 	}
+	.full-padding {
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
 	.row-width-1280 {
 		padding-left: 3em;
 		padding-right: 3em;
@@ -223,15 +218,6 @@ body .gform_wrapper ul.gform_fields li.gfield {
 	}
 	.post-title-outer {
 		padding: 0 2em;
-	}
-	.row.gutter_space_1 {
-		margin-left: -2rem;
-	    margin-right: -2rem;
-	}
-
-	.gutter_space_1 > .column-container {
-		padding-left: 2rem;
-	    padding-right: 2rem;
 	}
 	.classic-block-wrap {
 		padding-left: 2em;
@@ -244,10 +230,29 @@ body .gform_wrapper ul.gform_fields li.gfield {
 	.classic-block-wrap {
 		padding-top: 1em;
 	}
+	.width-800, .span-browser > div.width-800 {
+		margin-right: 0;
+		margin-left: 0;
+	}
 	
 }
 
-@media (max-width: 1024px) {
+.width-800.gutter_space_1 > .column-container {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.row.gutter_space_1 {
+	margin-left: -2rem;
+	margin-right: -2rem;
+}
+
+.gutter_space_1 > .column-container {
+	padding-left: 2rem;
+	   padding-right: 2rem;
+}
+
+@media (max-width: 1440px) {
 	
 	.width-800.gutter_space_1 > .column-container:first-of-type {
 		padding-right: 2em;
@@ -261,6 +266,19 @@ body .gform_wrapper ul.gform_fields li.gfield {
 	}
 
 	#footer .gutter_space_1 > .column-container {
+		padding-left: 2rem;
+	    padding-right: 2rem;
+	}
+}
+
+@media (max-width: 1023px) {
+	
+	.row.gutter_space_1 {
+		margin-left: -2rem;
+	    margin-right: -2rem;
+	}
+
+	.gutter_space_1 > .column-container {
 		padding-left: 2rem;
 	    padding-right: 2rem;
 	}
