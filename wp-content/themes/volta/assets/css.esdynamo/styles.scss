@@ -88,6 +88,11 @@ input[type="button"], input[type="submit"], input[type="reset"], button, .button
 	width: 80%;
 }
 
+body .button {
+	padding: 10px 15px;
+	font-size: 15px;
+}
+
 .classic-block-wrap, .pagination {
 	padding-bottom: 4em;
 }
