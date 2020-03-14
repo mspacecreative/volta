@@ -29,35 +29,34 @@
 		<div class="horizontal-dropshadow"></div>
 		<!-- / drop shadow -->
 		
-		<div class="container">
+		<!-- post title -->
+		<div class="post-title-outer">
+			<div class="post-title-container">
+						
+				<!-- shadow cover left -->
+				<div class="shadow-cover-left"></div>
+				<!-- / shadow cover left -->
+							
+				<!-- shadow cover right -->
+				<div class="shadow-cover-right"></div>
+				<!-- / shadow cover right -->
+							
+				<!-- shadow cover bottom -->
+				<div class="shadow-cover-bottom"></div>
+				<!-- / shadow cover bottom -->
+						
+				<h1><?php _e( 'Categorized under ', 'html5blank' ); single_cat_title(); ?></h1>
+			</div>
+		</div>
+		<!-- /post title -->
+		
+		<div class="clear">
 			<main role="main">
 				<!-- section -->
 				<section>
-					
-					<!-- post title -->
-					<div class="post-title-container">
 						
-						<!-- shadow cover left -->
-						<div class="shadow-cover-left"></div>
-						<!-- / shadow cover left -->
-							
-						<!-- shadow cover right -->
-						<div class="shadow-cover-right"></div>
-						<!-- / shadow cover right -->
-							
-						<!-- shadow cover bottom -->
-						<div class="shadow-cover-bottom"></div>
-						<!-- / shadow cover bottom -->
-						
-						<h1><?php _e( 'Categorized under ', 'html5blank' ); single_cat_title(); ?></h1>
-					</div>
-					<!-- /post title -->
-		
-					<div class="inner">
-						<?php get_template_part('includes/loops/loop-masonry-filter'); ?>
-						
-						<?php get_template_part('pagination'); ?>
-					</div>
+					<?php get_template_part('includes/loops/loop-masonry-filter'); ?>
+					<?php get_template_part('pagination'); ?>
 		
 				</section>
 				<!-- /section -->

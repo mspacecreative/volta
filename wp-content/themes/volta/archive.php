@@ -25,46 +25,45 @@
 	
 	<div class="post-content-container white-bg clear">
 			
-			<!-- drop shadow -->
-			<div class="horizontal-dropshadow"></div>
-			<!-- / drop shadow -->
+		<!-- drop shadow -->
+		<div class="horizontal-dropshadow"></div>
+		<!-- / drop shadow -->
 	
-			<div class="clear container">
-				<main role="main">
+		<!-- post title -->
+		<div class="post-title-outer">
+			<div class="post-title-container">
+							
+				<!-- shadow cover left -->
+				<div class="shadow-cover-left"></div>
+				<!-- / shadow cover left -->
+							
+				<!-- shadow cover right -->
+				<div class="shadow-cover-right"></div>
+				<!-- / shadow cover right -->
+							
+				<!-- shadow cover bottom -->
+				<div class="shadow-cover-bottom"></div>
+				<!-- / shadow cover bottom -->
+							
+				<h1><?php echo esc_html_e('Latest Posts'); ?></h1>
+			</div>
+		</div>
+		<!-- /post title -->
+			
+		<div class="clear">
+			<main role="main">
 				<!-- section -->
 				<section>
-		
-					<!-- post title -->
-					<div class="post-title-container">
-						
-						<!-- shadow cover left -->
-						<div class="shadow-cover-left"></div>
-						<!-- / shadow cover left -->
-						
-						<!-- shadow cover right -->
-						<div class="shadow-cover-right"></div>
-						<!-- / shadow cover right -->
-						
-						<!-- shadow cover bottom -->
-						<div class="shadow-cover-bottom"></div>
-						<!-- / shadow cover bottom -->
-						
-						<h1><?php echo esc_html_e('Latest Posts'); ?></h1>
-					</div>
-					<!-- /post title -->
-		
-					<div class="inner">
-						<?php get_template_part('includes/loops/loop-masonry-filter'); ?>
-	
-						<?php get_template_part('pagination'); ?>
-					</div>
-		
+			
+					<?php get_template_part('includes/loops/loop-masonry-filter'); ?>
+					<?php get_template_part('pagination'); ?></div>
+			
 				</section>
 				<!-- /section -->
 			</main>
-			</div>
-	
 		</div>
+	
+	</div>
 	
 </div>
 
