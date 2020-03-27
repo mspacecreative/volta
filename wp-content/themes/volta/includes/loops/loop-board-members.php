@@ -36,11 +36,12 @@ if ( $loop->have_posts() ) : ?>
 		$positiontitle = get_field('position__title', $post->ID);
 		$altpositiontitle = get_field('alternate_position__title', $post->ID);
 		
-		if ( $altpositiontitle ): ?>
-		<p><?php echo $altpositiontitle ?></p>
-		<?php else : ?>
-		<p><?php echo $positiontitle ?></p>
-		<?php endif; ?>
+		if ( $altpositiontitle ) {
+			echo '<p>' . $altpositiontitle . '</p>';
+		}
+		elseif ( $positiontitle ) {
+			echo '<p>' . $positiontitle . '</p>';
+		} ?>
 								
 	</div>
 	 
