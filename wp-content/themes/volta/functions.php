@@ -759,6 +759,14 @@ function gearResidents() {
 }
 add_shortcode( 'gear_loop', 'gearResidents' );
 
+// VOLTA GEAR RESIDENTS POSTS LOOP
+function boardMembers() {
+	ob_start();
+		get_template_part('includes/loops/loop-board-members');
+	return ob_get_clean();
+}
+add_shortcode( 'board_members_loop', 'boardMembers' );
+
 // CORPORATE INNOVATION OUTPOSTS LOOP
 function corporateInnovationResidents() {
 	ob_start();

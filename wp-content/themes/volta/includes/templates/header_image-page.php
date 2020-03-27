@@ -7,7 +7,7 @@ if ( get_field('featured_image_alignment') == 'top' ) :
 	} elseif ( $url ) {
 		echo '<div class="post-header" style="background-image: url('. $url.'); background-position: top center;"></div>';
 	} else {
-		echo '<div class="post-header" style="background-image: url(' . get_template_directory_uri() . '/img/header.jpg); background-position: center;"></div>';
+		echo '<div class="post-header" style="background-image: url(' . get_template_directory_uri() . '/img/header.jpg); background-position: top center;"></div>';
 	}
 elseif ( get_field('featured_image_alignment') == 'bottom' ) :
 	if ( $url && $supertitle ) {
@@ -15,7 +15,7 @@ elseif ( get_field('featured_image_alignment') == 'bottom' ) :
 	} elseif ( $url ) {
 		echo '<div class="post-header" style="background-image: url('. $url.'); background-position: bottom center;"></div>';
 	} else {
-		echo '<div class="post-header" style="background-image: url(' . get_template_directory_uri() . '/img/header.jpg); background-position: center;"></div>';
+		echo '<div class="post-header" style="background-image: url(' . get_template_directory_uri() . '/img/header.jpg); background-position: bottom center;"></div>';
 	}
 elseif ( get_field('featured_image_alignment') == 'center' ) :
 	if ( $url && $supertitle ) {

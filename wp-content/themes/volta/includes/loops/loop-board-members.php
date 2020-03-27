@@ -6,7 +6,7 @@ $args = array(
         array(
             'taxonomy' => 'member_type',
             'field' => 'slug',
-            'terms' => 'staff-member',
+            'terms' => 'board-director',
         )
     )
 );
@@ -32,8 +32,14 @@ if ( $loop->have_posts() ) : ?>
 								
 		<h4><?php the_title(); ?></h4>
 		
-		<?php if ( get_field('position__title', $post->ID) ): ?>
-		<p><?php the_field('position__title', $post->ID); ?></p>
+		<?php
+		$positiontitle = get_field('position__title', $post->ID);
+		$altpositiontitle = get_field('alternate_position__title', $post->ID);
+		
+		if ( $altpositiontitle ): ?>
+		<p><?php echo $altpositiontitle ?></p>
+		<?php else : ?>
+		<p><?php echo $positiontitle ?></p>
 		<?php endif; ?>
 								
 	</div>
