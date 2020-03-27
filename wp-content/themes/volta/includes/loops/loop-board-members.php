@@ -33,7 +33,7 @@ if ( $loop->have_posts() ) : ?>
 		<h4><?php the_title(); ?></h4>
 		
 		<?php
-		$positiontitle = get_field('position__title', $post->ID);
+		$positiontitle = get_field('position__title_position__title', $post->ID);
 		$altpositiontitle = get_field('alternate_position__title', $post->ID);
 		
 		if ( $altpositiontitle ) {
