@@ -34,7 +34,7 @@ if ( $loop->have_posts() ) : ?>
 		
 		<?php
 		if ( get_field('alternate_position__title', $post->ID) ): ?>
-		<p><?php the_field('$alternate_position__title', $post->ID);
+		<p><?php the_field('alternate_position__title', $post->ID);
 		
 		elseif ( get_field('position__title', $post->ID) ): ?>
 		<p><?php the_field('position__title', $post->ID); ?></p>
