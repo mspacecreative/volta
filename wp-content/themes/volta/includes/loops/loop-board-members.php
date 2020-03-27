@@ -33,15 +33,12 @@ if ( $loop->have_posts() ) : ?>
 		<h4><?php the_title(); ?></h4>
 		
 		<?php
-		$positiontitle = get_field('position__title_position__title', $post->ID);
-		$altpositiontitle = get_field('alternate_position__title', $post->ID);
+		if ( get_field('alternate_position__title', $post->ID) ): ?>
+		<p><?php the_field('$alternate_position__title', $post->ID);
 		
-		if ( $altpositiontitle ) {
-			echo '<p>' . $altpositiontitle . '</p>';
-		}
-		elseif ( $positiontitle ) {
-			echo '<p>' . $positiontitle . '</p>';
-		} ?>
+		elseif ( get_field('position__title', $post->ID) ): ?>
+		<p><?php the_field('position__title', $post->ID); ?></p>
+		<?php endif; ?>
 								
 	</div>
 	 
