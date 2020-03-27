@@ -9,7 +9,7 @@
 	        array(
 	            'taxonomy' => 'company_type',
 	            'field' => 'slug',
-	            'terms' => 'cohort',
+	            'terms' => 'volta-gear',
 	        )
 	    )
 	);

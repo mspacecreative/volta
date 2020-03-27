@@ -751,6 +751,14 @@ function cohortResidents() {
 }
 add_shortcode( 'cohort_loop', 'cohortResidents' );
 
+// VOLTA GEAR RESIDENTS POSTS LOOP
+function gearResidents() {
+	ob_start();
+		get_template_part('includes/loops/loop-gear');
+	return ob_get_clean();
+}
+add_shortcode( 'gear_loop', 'gearResidents' );
+
 // CORPORATE INNOVATION OUTPOSTS LOOP
 function corporateInnovationResidents() {
 	ob_start();
