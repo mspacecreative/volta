@@ -134,6 +134,7 @@
 
 <table cellpadding="0" cellspacing="0" border="0" class="corporate_pricing_table">
 	<tr class="header-row">
+		<td>Benefits</td>
 		<td>Supporter</td>
 		<td>Creator</td>
 		<td>Builder</td>
