@@ -2789,7 +2789,7 @@
 			
 				<?php
 				if( have_rows('benefit_categories', 'options') ):
-				while( have_rows('tbenefit_categories', 'options') ): the_row(); ?>
+				while( have_rows('benefit_categories', 'options') ): the_row(); ?>
 				
 				<?php
 				$field = get_sub_field_object('people');
