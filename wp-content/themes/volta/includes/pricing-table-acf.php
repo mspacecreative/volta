@@ -2571,7 +2571,10 @@
 	<div class="membership-type">
 		<?php while( have_rows('supporter', 'options') ): the_row(); ?>
 		<div class="membership-type-inner">
-			<h2>Supporter</h2>
+			<h2>
+				Supporter<br />
+				<span style="font-size: 14px; font-weight: normal;"><?php esc_html_e('$'); the_sub_field('supporter_cost'); esc_html_e('/year'); ?></span>
+			</h2>
 			<div class="table-list-content">	
 				
 				<?php
@@ -2642,7 +2645,10 @@
 		<?php while( have_rows('creator', 'options') ): the_row(); ?>
 		<div class="membership-type-inner">
 		
-			<h2>Creator</h2>
+			<h2>
+				Creator<br />
+				<span style="font-size: 14px; font-weight: normal;"><?php esc_html_e('$'); the_sub_field('towner_cost'); esc_html_e('/year'); ?></span>
+			</h2>
 			
 			<div class="table-list-content">	
 			
@@ -2713,7 +2719,10 @@
 		<?php while( have_rows('builder', 'options') ): the_row(); ?>
 		
 		<div class="membership-type-inner">
-			<h2>Builder</h2>
+			<h2>
+				Builder<br />
+				<span style="font-size: 14px; font-weight: normal;"><?php esc_html_e('$'); the_sub_field('builder_cost'); esc_html_e('/year'); ?></span>
+			</h2>
 			<div class="table-list-content">	
 				
 				<?php
@@ -2783,7 +2792,10 @@
 		<?php while( have_rows('innovator', 'options') ): the_row(); ?>
 		
 		<div class="membership-type-inner">
-			<h2>Innovator</h2>
+			<h2>
+				Innovator<br />
+				<span style="font-size: 14px; font-weight: normal;"><?php esc_html_e('$'); the_sub_field('cost'); esc_html_e('/year'); ?></span>
+			</h2>
 			
 			<div class="table-list-content">	
 			
