@@ -138,7 +138,7 @@
 		<td>Innovator</td>
 		<td>Builder</td>
 		<td>Supporter</td>
-		<td>Out-of-towner</td>
+		<td>Creator</td>
 	</tr>
 	<tr class="align-center grey-row-bg first">
 		<td>People</td>
@@ -244,11 +244,11 @@
 			
 		<?php endif;
 		
-		if( have_rows('out-of-towner', 'options') ): ?>
+		if( have_rows('creator', 'options') ): ?>
 		
 		<td>
 				
-		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		<?php while( have_rows('creator', 'options') ): the_row();
 		
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -378,11 +378,11 @@
 			
 		<?php endif;
 		
-		if( have_rows('out-of-towner', 'options') ): ?>
+		if( have_rows('creator', 'options') ): ?>
 		
 		<td>
 				
-		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		<?php while( have_rows('creator', 'options') ): the_row();
 		
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -510,11 +510,11 @@
 			
 		<?php endif; 
 		
-		if( have_rows('out-of-towner', 'options') ): ?>
+		if( have_rows('creator', 'options') ): ?>
 		
 		<td>
 				
-		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		<?php while( have_rows('creator', 'options') ): the_row();
 		
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -642,11 +642,11 @@
 			
 		<?php endif; 
 		
-		if( have_rows('out-of-towner', 'options') ): ?>
+		if( have_rows('creator', 'options') ): ?>
 		
 		<td>
 				
-		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		<?php while( have_rows('creator', 'options') ): the_row();
 		
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -774,11 +774,11 @@
 			
 		<?php endif; 
 		
-		if( have_rows('out-of-towner', 'options') ): ?>
+		if( have_rows('creator', 'options') ): ?>
 		
 		<td>
 				
-		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		<?php while( have_rows('creator', 'options') ): the_row();
 		
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -906,11 +906,11 @@
 			
 		<?php endif; 
 		
-		if( have_rows('out-of-towner', 'options') ): ?>
+		if( have_rows('creator', 'options') ): ?>
 		
 		<td>
 				
-		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		<?php while( have_rows('creator', 'options') ): the_row();
 		
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -1038,11 +1038,11 @@
 			
 		<?php endif; 
 		
-		if( have_rows('out-of-towner', 'options') ): ?>
+		if( have_rows('creator', 'options') ): ?>
 		
 		<td>
 				
-		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		<?php while( have_rows('creator', 'options') ): the_row();
 		
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -1175,11 +1175,11 @@
 			
 		<?php endif; 
 		
-		if( have_rows('out-of-towner', 'options') ): ?>
+		if( have_rows('creator', 'options') ): ?>
 		
 		<td>
 				
-		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		<?php while( have_rows('creator', 'options') ): the_row();
 		
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -1307,11 +1307,11 @@
 			
 		<?php endif; 
 		
-		if( have_rows('out-of-towner', 'options') ): ?>
+		if( have_rows('creator', 'options') ): ?>
 		
 		<td>
 				
-		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		<?php while( have_rows('creator', 'options') ): the_row();
 		
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -1439,11 +1439,11 @@
 			
 		<?php endif; 
 		
-		if( have_rows('out-of-towner', 'options') ): ?>
+		if( have_rows('creator', 'options') ): ?>
 		
 		<td>
 				
-		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		<?php while( have_rows('creator', 'options') ): the_row();
 		
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -1571,11 +1571,11 @@
 			
 		<?php endif; 
 		
-		if( have_rows('out-of-towner', 'options') ): ?>
+		if( have_rows('creator', 'options') ): ?>
 		
 		<td>
 				
-		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		<?php while( have_rows('creator', 'options') ): the_row();
 		
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -1708,11 +1708,11 @@
 			
 		<?php endif; 
 		
-		if( have_rows('out-of-towner', 'options') ): ?>
+		if( have_rows('creator', 'options') ): ?>
 		
 		<td>
 				
-		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		<?php while( have_rows('creator', 'options') ): the_row();
 		
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -1840,11 +1840,11 @@
 			
 		<?php endif; 
 		
-		if( have_rows('out-of-towner', 'options') ): ?>
+		if( have_rows('creator', 'options') ): ?>
 		
 		<td>
 				
-		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		<?php while( have_rows('creator', 'options') ): the_row();
 		
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -1972,11 +1972,11 @@
 			
 		<?php endif; 
 		
-		if( have_rows('out-of-towner', 'options') ): ?>
+		if( have_rows('creator', 'options') ): ?>
 		
 		<td>
 				
-		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		<?php while( have_rows('creator', 'options') ): the_row();
 		
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -2104,11 +2104,11 @@
 			
 		<?php endif; 
 		
-		if( have_rows('out-of-towner', 'options') ): ?>
+		if( have_rows('creator', 'options') ): ?>
 		
 		<td>
 				
-		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		<?php while( have_rows('creator', 'options') ): the_row();
 		
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -2241,11 +2241,11 @@
 			
 		<?php endif; 
 		
-		if( have_rows('out-of-towner', 'options') ): ?>
+		if( have_rows('creator', 'options') ): ?>
 		
 		<td>
 				
-		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		<?php while( have_rows('creator', 'options') ): the_row();
 		
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -2373,11 +2373,11 @@
 			
 		<?php endif; 
 		
-		if( have_rows('out-of-towner', 'options') ): ?>
+		if( have_rows('creator', 'options') ): ?>
 		
 		<td>
 				
-		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		<?php while( have_rows('creator', 'options') ): the_row();
 		
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -2505,11 +2505,11 @@
 			
 		<?php endif; 
 		
-		if( have_rows('out-of-towner', 'options') ): ?>
+		if( have_rows('creator', 'options') ): ?>
 		
 		<td>
 				
-		<?php while( have_rows('out-of-towner', 'options') ): the_row();
+		<?php while( have_rows('creator', 'options') ): the_row();
 		
 			if( have_rows('towner_benefit_categories', 'options') ):
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
@@ -2558,8 +2558,8 @@
 		<td><?php esc_html_e('$'); the_sub_field('supporter_cost'); esc_html_e('/year'); ?></td>
 		<?php endwhile; 
 		endif;
-		if ( have_rows('out-of-towner', 'options') ):
-		while( have_rows('out-of-towner', 'options') ): the_row(); ?>
+		if ( have_rows('creator', 'options') ):
+		while( have_rows('creator', 'options') ): the_row(); ?>
 		<td><?php esc_html_e('$'); the_sub_field('towner_cost'); esc_html_e('/year'); ?></td>
 		<?php endwhile; 
 		endif; ?>
@@ -2778,12 +2778,12 @@
 	</div>
 	<?php endif; ?>
 	
-	<?php if ( have_rows('out-of-towner', 'options') ): ?>
+	<?php if ( have_rows('creator', 'options') ): ?>
 	<div class="membership-type">
-		<?php while( have_rows('out-of-towner', 'options') ): the_row(); ?>
+		<?php while( have_rows('creator', 'options') ): the_row(); ?>
 		
 		<div class="membership-type-inner">
-			<h2>Out-of-towner</h2>
+			<h2>Creator</h2>
 			
 			<div class="table-list-content">	
 			
