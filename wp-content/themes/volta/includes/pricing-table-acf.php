@@ -2573,7 +2573,7 @@
 		<div class="membership-type-inner">
 			<h2>
 				Supporter<br />
-				<span style="font-size: 14px; font-weight: normal;"><?php esc_html_e('$'); the_sub_field('supporter_cost'); esc_html_e('/year'); ?></span>
+				<span style="font-size: 20px; font-weight: normal;"><?php esc_html_e('$'); the_sub_field('supporter_cost'); esc_html_e('/year'); ?></span>
 			</h2>
 			<div class="table-list-content">	
 				
@@ -2647,7 +2647,7 @@
 		
 			<h2>
 				Creator<br />
-				<span style="font-size: 14px; font-weight: normal;"><?php esc_html_e('$'); the_sub_field('towner_cost'); esc_html_e('/year'); ?></span>
+				<span style="font-size: 20px; font-weight: normal;"><?php esc_html_e('$'); the_sub_field('towner_cost'); esc_html_e('/year'); ?></span>
 			</h2>
 			
 			<div class="table-list-content">	
@@ -2721,7 +2721,7 @@
 		<div class="membership-type-inner">
 			<h2>
 				Builder<br />
-				<span style="font-size: 14px; font-weight: normal;"><?php esc_html_e('$'); the_sub_field('builder_cost'); esc_html_e('/year'); ?></span>
+				<span style="font-size: 20px; font-weight: normal;"><?php esc_html_e('$'); the_sub_field('builder_cost'); esc_html_e('/year'); ?></span>
 			</h2>
 			<div class="table-list-content">	
 				
@@ -2794,7 +2794,7 @@
 		<div class="membership-type-inner">
 			<h2>
 				Innovator<br />
-				<span style="font-size: 14px; font-weight: normal;"><?php esc_html_e('$'); the_sub_field('cost'); esc_html_e('/year'); ?></span>
+				<span style="font-size: 20px; font-weight: normal;"><?php esc_html_e('$'); the_sub_field('cost'); esc_html_e('/year'); ?></span>
 			</h2>
 			
 			<div class="table-list-content">	
