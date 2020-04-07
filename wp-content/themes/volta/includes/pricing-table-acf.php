@@ -945,7 +945,7 @@
 	</tr>
 	
 	<tr class="body-row">
-		<td>Access to an Ecosystem Advisor</td>
+		<td>Sponsor a Volta Event</td>
 		
 		<?php if( have_rows('supporter', 'options') ): ?>
 		
@@ -1077,7 +1077,7 @@
 		
 	</tr>
 	<tr class="body-row">
-		<td>Present at a Volta Lunch &amp; Learn Session</td>
+		<td>Present at a Volta Lunch + Learn Session</td>
 		
 		<?php if( have_rows('supporter', 'options') ): ?>
 		
@@ -1478,7 +1478,7 @@
 	</tr>
 	
 	<tr class="body-row">
-		<td>Promoted Office Hours</td>
+		<td>Access to Post + Beam Semi-Private Office Space</td>
 		
 		<?php if( have_rows('supporter', 'options') ): ?>
 		
@@ -2011,7 +2011,7 @@
 	</tr>
 	
 	<tr class="body-row">
-		<td>Logo Displayed on Volta’s Lobby Level</td>
+		<td>Logo Displayed in the Volta Lobby</td>
 		
 		<?php if( have_rows('supporter', 'options') ): ?>
 		
@@ -2143,7 +2143,7 @@
 		
 	</tr>
 	<tr class="body-row">
-		<td>Brand Exposure on Website and in Volta’s Magazine</td>
+		<td>Brand Exposure on Website and in Voltage Magazine</td>
 		
 		<?php if( have_rows('supporter', 'options') ): ?>
 		
