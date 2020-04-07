@@ -1490,7 +1490,7 @@
 			while( have_rows('supporter_benefit_categories', 'options') ): the_row();
 			
 			$space = get_sub_field('space');
-			if ( $space && in_array( 'office-hours', $space ) ): ?>
+			if ( $space && in_array( 'access-private-office', $space ) ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1522,7 +1522,7 @@
 			while( have_rows('towner_benefit_categories', 'options') ): the_row();
 			
 			$space = get_sub_field('space');
-			if ( $space && in_array( 'office-hours', $space ) ): ?>
+			if ( $space && in_array( 'access-private-office', $space ) ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1554,7 +1554,7 @@
 			while( have_rows('builder_benefit_categories', 'options') ): the_row();
 			
 			$space = get_sub_field('space');
-			if ( $space && in_array( 'office-hours', $space ) ): ?>
+			if ( $space && in_array( 'access-private-office', $space ) ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
@@ -1586,7 +1586,7 @@
 			while( have_rows('benefit_categories', 'options') ): the_row();
 			
 			$space = get_sub_field('space');
-			if ( $space && in_array( 'office-hours', $space ) ): ?>
+			if ( $space && in_array( 'access-private-office', $space ) ): ?>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30">
 				<g>
 					<path fill="#231F20" d="M15,1.598c7.39,0,13.401,6.012,13.401,13.401S22.39,28.401,15,28.401S1.598,22.389,1.598,15
