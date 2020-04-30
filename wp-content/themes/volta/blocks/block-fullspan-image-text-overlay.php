@@ -1,5 +1,4 @@
-<!-- Intro buckets -->
-<div class="fullspan-buckets">
+
 	
 	<?php if( have_rows('section') ): ?>
 	<?php while( have_rows('section') ): the_row(); ?>
@@ -61,5 +60,3 @@
 	<?php endwhile;
 	endif; ?>
 	
-</div>
-<!-- /Intro buckets -->
