@@ -8,348 +8,176 @@
 				$aligncenter = get_field('align_center');
 				$iconposition = get_field('icon_position');
 				
-				if ( $iconposition == 'inline' ): ?>
+				if( have_rows('left_column') ): ?>
+				<?php while( have_rows('left_column') ): the_row();
 				
-					<?php if( have_rows('left_column') ): ?>
-					<?php while( have_rows('left_column') ): the_row(); ?>
-					
-					<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special inline-icons">
+				if ( $aligncenter && $iconposition == 'top' ): ?>
+				<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special align-center">
+				
+				<?php elseif ( $iconposition == 'top' ): ?>
+				<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special">
+				
+				<?php elseif ( $iconposition == 'inline' ): ?>
+				<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special inline-icons">
+				
+				<?php else : ?>
+				<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special inline-icons">
+				<?php endif; ?>
+				
+					<div class="nested-row">
+				
+						<?php
+						$iconleft = get_sub_field('icon_left');
+						$iconleftsize = get_sub_field('icon_size_left');
 						
-						<?php if ( get_sub_field('icon_left') ): ?>
+						if ( $iconleft ): ?>
+							
+						<?php if ( $iconleftsize == 'small' ): ?>
+						<span class="icon solid col-lg-2 col-md-2 col-sm-2 col-xs-2"><i class="fa-fw <?php echo $iconleft ?>" style="font-size: 30px;"></i></span>
+							
+						<?php elseif ( $iconleftsize == 'medium' ): ?>
+						<span class="icon solid col-lg-2 col-md-2 col-sm-2 col-xs-2"><i class="fa-fw <?php echo $iconleft ?>" style="font-size: 60px;"></i></span>
+							
+						<?php elseif ( $iconleftsize == 'large' ): ?>
+						<span class="icon solid col-lg-2 col-md-2 col-sm-2 col-xs-2"><i class="fa-fw <?php echo $iconleft ?>" style="font-size: 90px;"></i></span>
 						
-						<?php if ( get_sub_field('icon_size_left') == 'small' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_left'); ?>" style="font-size: 30px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_left') == 'medium' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_left'); ?>" style="font-size: 60px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_left') == 'large' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_left'); ?>" style="font-size: 90px;"></i></span>
+						<?php else : ?>
+						<span class="icon solid col-lg-2 col-md-2 col-sm-2 col-xs-2"><i class="fa-fw <?php echo $iconleft ?>" style="font-size: 30px;"></i></span>
 						<?php endif; ?>
-						
+							
 						<?php endif; ?>
-						
-						<div class="bucket-content">
+							
+						<div class="col-lg-10 col-md-10 col-xs-10 col-xs-10">
 							<?php the_sub_field('content_left'); ?>
 						</div>
 						
 					</div>
+						
+				</div>
 					
-					<?php endwhile; ?>
-					<?php endif; ?>
+				<?php endwhile; ?>
+				<?php endif;
+				
+				if( have_rows('center_column') ): ?>
+				<?php while( have_rows('center_column') ): the_row();
+				
+				if ( $aligncenter && $iconposition == 'top' ): ?>
+				<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special align-center">
+				
+				<?php elseif ( $iconposition == 'top' ): ?>
+				<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special">
+				
+				<?php elseif ( $iconposition == 'inline' ): ?>
+				<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special inline-icons">
+				
+				<?php else : ?>
+				<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special inline-icons">
+				<?php endif; ?>
+				
+					<div class="nested-row">
 					
-					<?php if( have_rows('center_column') ): ?>
-					<?php while( have_rows('center_column') ): the_row(); ?>
-					<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special inline-icons">
+						<?php 
+						$iconcenter = get_sub_field('icon_center');
+						$iconcentersize = get_sub_field('icon_size_center');
+						
+						if ( $iconcenter ): ?>
 							
-						<?php if ( get_sub_field('icon_center') ): ?>
+						<?php if ( $iconcentersize == 'small' ): ?>
+						<span class="icon solid col-lg-2 col-md-2 col-sm-2 col-xs-2"><i class="fa-fw <?php echo $iconcenter ?>" style="font-size: 30px;"></i></span>
+							
+						<?php elseif ( $iconcentersize == 'medium' ): ?>
+						<span class="icon solid col-lg-2 col-md-2 col-sm-2 col-xs-2"><i class="fa-fw <?php echo $iconcenter ?>" style="font-size: 60px;"></i></span>
+							
+						<?php elseif ( $iconcentersize == 'large' ): ?>
+						<span class="icon solid col-lg-2 col-md-2 col-sm-2 col-xs-2"><i class="fa-fw <?php echo $iconcenter ?>" style="font-size: 90px;"></i></span>
 						
-						<?php if ( get_sub_field('icon_size_center') == 'small' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_center'); ?>" style="font-size: 30px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_center') == 'medium' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_center'); ?>" style="font-size: 60px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_center') == 'large' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_center'); ?>" style="font-size: 90px;"></i></span>
-						<?php endif; ?>
-						
+						<?php else : ?>
+						<span class="icon solid col-lg-2 col-md-2 col-sm-2 col-xs-2"><i class="fa-fw <?php echo $iconcenter ?>" style="font-size: 30px;"></i></span>
 						<?php endif; ?>
 							
-						<div class="bucket-content">
+						<?php endif; ?>
+							
+						<div class="col-lg-10 col-md-10 col-xs-10 col-xs-10">
 							<?php the_sub_field('content_center'); ?>
 						</div>
-							
-					</div>
-					<?php endwhile; ?>
-					<?php endif; ?>
 					
-					<?php if( have_rows('right_column') ): ?>
-					<?php while( have_rows('right_column') ): the_row(); ?>
-					<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special inline-icons">
+					</div>
+						
+				</div>
+					
+				<?php endwhile; ?>
+				<?php endif;
+				
+				if( have_rows('right_column') ): ?>
+				<?php while( have_rows('right_column') ): the_row();
+				
+				if ( $aligncenter && $iconposition == 'top' ): ?>
+				<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special align-center">
+				
+				<?php elseif ( $iconposition == 'top' ): ?>
+				<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special">
+				
+				<?php elseif ( $iconposition == 'inline' ): ?>
+				<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special inline-icons">
+				
+				<?php else : ?>
+				<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special inline-icons">
+				<?php endif; ?>
+				
+					<div class="nested-row">
+					
+						<?php 
+						$iconright = get_sub_field('icon_right');
+						$iconrightsize = get_sub_field('icon_size_right');
+						
+						if ( $iconright ): ?>
 							
-						<?php if ( get_sub_field('icon_right') ): ?>
+						<?php if ( $iconrightsize == 'small' ): ?>
+						<span class="icon solid col-lg-2 col-md-2 col-sm-2 col-xs-2"><i class="fa-fw <?php echo $iconright ?>" style="font-size: 30px;"></i></span>
+							
+						<?php elseif ( $iconrightsize == 'medium' ): ?>
+						<span class="icon solid col-lg-2 col-md-2 col-sm-2 col-xs-2"><i class="fa-fw <?php echo $iconright ?>" style="font-size: 60px;"></i></span>
+							
+						<?php elseif ( $iconrightsize == 'large' ): ?>
+						<span class="icon solid col-lg-2 col-md-2 col-sm-2 col-xs-2"><i class="fa-fw <?php echo $iconright ?>" style="font-size: 90px;"></i></span>
 						
-						<?php if ( get_sub_field('icon_size_right') == 'small' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_right'); ?>" style="font-size: 30px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_right') == 'medium' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_right'); ?>" style="font-size: 60px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_right') == 'large' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_right'); ?>" style="font-size: 90px;"></i></span>
-						<?php endif; ?>
-						
+						<?php else : ?>
+						<span class="icon solid col-lg-2 col-md-2 col-sm-2 col-xs-2"><i class="fa-fw <?php echo $iconright ?>" style="font-size: 30px;"></i></span>
 						<?php endif; ?>
 							
-						<div class="bucket-content">
+						<?php endif; ?>
+							
+						<div class="col-lg-10 col-md-10 col-xs-10 col-xs-10">
 							<?php the_sub_field('content_right'); ?>
 						</div>
-							
-					</div>
-					<?php endwhile; ?>
-					<?php endif;
 					
-				elseif ( $aligncenter && $iconposition == 'top' ):
-				
-					if( have_rows('left_column') ):
-					while( have_rows('left_column') ): the_row(); ?>
-					<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special align-center">
-						
-						<?php if ( get_sub_field('icon_left') ): ?>
-						
-						<?php if ( get_sub_field('icon_size_left') == 'small' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_left'); ?>" style="font-size: 30px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_left') == 'medium' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_left'); ?>" style="font-size: 60px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_left') == 'large' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_left'); ?>" style="font-size: 90px;"></i></span>
-						<?php endif; ?>
-						
-						<?php endif; ?>
-						
-						<div class="bucket-content">
-							<?php the_sub_field('content_left'); ?>
-						</div>
-						
 					</div>
-					<?php endwhile; ?>
-					<?php endif; ?>
+						
+				</div>
 					
-					<?php if( have_rows('center_column') ): ?>
-					<?php while( have_rows('center_column') ): the_row(); ?>
-					<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special align-center">
-							
-						<?php if ( get_sub_field('icon_center') ): ?>
-						
-						<?php if ( get_sub_field('icon_size_center') == 'small' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_center'); ?>" style="font-size: 30px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_center') == 'medium' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_center'); ?>" style="font-size: 60px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_center') == 'large' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_center'); ?>" style="font-size: 90px;"></i></span>
-						<?php endif; ?>
-						
-						<?php endif; ?>
-							
-						<div class="bucket-content">
-							<?php the_sub_field('content_center'); ?>
-						</div>
-							
-					</div>
-					<?php endwhile; ?>
-					<?php endif; ?>
-					
-					<?php if( have_rows('right_column') ): ?>
-					<?php while( have_rows('right_column') ): the_row(); ?>
-					<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special align-center">
-							
-						<?php if ( get_sub_field('icon_right') ): ?>
-						
-						<?php if ( get_sub_field('icon_size_right') == 'small' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_right'); ?>" style="font-size: 30px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_right') == 'medium' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_right'); ?>" style="font-size: 60px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_right') == 'large' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_right'); ?>" style="font-size: 90px;"></i></span>
-						<?php endif; ?>
-						
-						<?php endif; ?>
-							
-						<div class="bucket-content">
-							<?php the_sub_field('content_right'); ?>
-						</div>
-							
-					</div>
-					<?php endwhile; ?>
-					<?php endif;
-				
-				elseif ( $iconposition == 'top' ):
-				
-					if( have_rows('left_column') ):
-					while( have_rows('left_column') ): the_row(); ?>
-					<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special">
-						
-						<?php if ( get_sub_field('icon_left') ): ?>
-						
-						<?php if ( get_sub_field('icon_size_left') == 'small' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_left'); ?>" style="font-size: 30px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_left') == 'medium' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_left'); ?>" style="font-size: 60px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_left') == 'large' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_left'); ?>" style="font-size: 90px;"></i></span>
-						<?php endif; ?>
-						
-						<?php endif; ?>
-						
-						<div class="bucket-content">
-							<?php the_sub_field('content_left'); ?>
-						</div>
-						
-					</div>
-					<?php endwhile; ?>
-					<?php endif; ?>
-					
-					<?php if( have_rows('center_column') ): ?>
-					<?php while( have_rows('center_column') ): the_row(); ?>
-					<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special">
-							
-						<?php if ( get_sub_field('icon_center') ): ?>
-						
-						<?php if ( get_sub_field('icon_size_center') == 'small' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_center'); ?>" style="font-size: 30px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_center') == 'medium' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_center'); ?>" style="font-size: 60px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_center') == 'large' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_center'); ?>" style="font-size: 90px;"></i></span>
-						<?php endif; ?>
-						
-						<?php endif; ?>
-							
-						<div class="bucket-content">
-							<?php the_sub_field('content_center'); ?>
-						</div>
-							
-					</div>
-					<?php endwhile; ?>
-					<?php endif; ?>
-					
-					<?php if( have_rows('right_column') ): ?>
-					<?php while( have_rows('right_column') ): the_row(); ?>
-					<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special">
-							
-						<?php if ( get_sub_field('icon_right') ): ?>
-						
-						<?php if ( get_sub_field('icon_size_right') == 'small' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_right'); ?>" style="font-size: 30px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_right') == 'medium' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_right'); ?>" style="font-size: 60px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_right') == 'large' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_right'); ?>" style="font-size: 90px;"></i></span>
-						<?php endif; ?>
-						
-						<?php endif; ?>
-							
-						<div class="bucket-content">
-							<?php the_sub_field('content_right'); ?>
-						</div>
-							
-					</div>
-					<?php endwhile; ?>
-					<?php endif;
-					
-				else :
-				
-					if( have_rows('left_column') ): ?>
-					<?php while( have_rows('left_column') ): the_row(); ?>
-					
-					<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special inline-icons">
-						
-						<?php if ( get_sub_field('icon_left') ): ?>
-						
-						<?php if ( get_sub_field('icon_size_left') == 'small' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_left'); ?>" style="font-size: 30px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_left') == 'medium' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_left'); ?>" style="font-size: 60px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_left') == 'large' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_left'); ?>" style="font-size: 90px;"></i></span>
-						<?php endif; ?>
-						
-						<?php endif; ?>
-						
-						<div class="bucket-content">
-							<?php the_sub_field('content_left'); ?>
-						</div>
-						
-					</div>
-					
-					<?php endwhile; ?>
-					<?php endif; ?>
-					
-					<?php if( have_rows('center_column') ): ?>
-					<?php while( have_rows('center_column') ): the_row(); ?>
-					<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special inline-icons">
-							
-						<?php if ( get_sub_field('icon_center') ): ?>
-						
-						<?php if ( get_sub_field('icon_size_center') == 'small' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_center'); ?>" style="font-size: 30px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_center') == 'medium' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_center'); ?>" style="font-size: 60px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_center') == 'large' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_center'); ?>" style="font-size: 90px;"></i></span>
-						<?php endif; ?>
-						
-						<?php endif; ?>
-							
-						<div class="bucket-content">
-							<?php the_sub_field('content_center'); ?>
-						</div>
-							
-					</div>
-					<?php endwhile; ?>
-					<?php endif; ?>
-					
-					<?php if( have_rows('right_column') ): ?>
-					<?php while( have_rows('right_column') ): the_row(); ?>
-					<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12 special inline-icons">
-							
-						<?php if ( get_sub_field('icon_right') ): ?>
-						
-						<?php if ( get_sub_field('icon_size_right') == 'small' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_right'); ?>" style="font-size: 30px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_right') == 'medium' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_right'); ?>" style="font-size: 60px;"></i></span>
-						
-						<?php elseif ( get_sub_field('icon_size_right') == 'large' ): ?>
-						<span class="icon solid"><i class="fa-fw <?php the_sub_field('icon_right'); ?>" style="font-size: 90px;"></i></span>
-						<?php endif; ?>
-						
-						<?php endif; ?>
-							
-						<div class="bucket-content">
-							<?php the_sub_field('content_right'); ?>
-						</div>
-							
-					</div>
-					<?php endwhile; ?>
-					<?php endif; ?>
-				
+				<?php endwhile; ?>
 				<?php endif; ?>
 				
 			</div>
 		</div>
 		
-		<?php if( have_rows('cta_button') ):
-		 	while( have_rows('cta_button') ): the_row();
-			if ( get_sub_field('button_link') ): ?>
-			<footer class="no-padding-bottom-margin-top align-center">
-				<ul class="actions">
-					<li>
-						<a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
-					</li>
-				</ul>
-			</footer>
-			<?php endif;
-			endwhile; ?>
-		<?php endif; ?>
+		<?php 
+		if( have_rows('cta_button') ):
+		while( have_rows('cta_button') ): the_row();
+		
+		if ( get_sub_field('button_link') ): ?>
+		<footer class="no-padding-bottom-margin-top align-center">
+			<ul class="actions">
+				<li>
+					<a href="<?php the_sub_field('button_link'); ?>" class="dark button"><?php the_sub_field('button_label'); ?></a>
+				</li>
+			</ul>
+		</footer>
+		<?php endif;
+		
+		endwhile;
+		endif; ?>
+		
 	</div>
 	
 </article>

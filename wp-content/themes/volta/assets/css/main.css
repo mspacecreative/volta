@@ -1789,7 +1789,7 @@ body .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, body .gform_wra
 .dark.button {
 	background-color: #000;
 	color: #fff;
-	padding: 15px 25px;
+	padding: 10px 20px;
 }
 .light.button {
 	color: #000;
@@ -1943,15 +1943,10 @@ img {
 	margin-right: 2.5%;
 }
 .icon-buckets .inline-icons > .icon {
-	flex-basis: 10%;
-	margin-right: 3%;
-	text-align: center;
+	text-align: right;
 }
 .inline-icons .bucket-content {
 	flex-basis: 87%;
-}
-.inline-icons {
-	display: flex;
 }
 .two-third {
 	width: 82.5%;
@@ -2358,6 +2353,11 @@ aside {
 	height: 100%;
 	border: 1px solid #000;
 	border-top: 5px solid #000;
+	display: flex;
+    flex-direction: column;
+}
+.flex-box > div .link-button {
+	margin-top: auto;
 }
 .light flex-box > div {
 	border: 1px solid #fff;

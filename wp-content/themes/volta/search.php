@@ -53,12 +53,12 @@
 		<div class="clear">
 			<main role="main">
 				<!-- section -->
-				<section>
+				<div class="row-width-1280">
 						
-					<?php get_template_part('includes/loops/loop-masonry-filter'); ?>
+					<?php get_template_part('includes/loops/loop-blog'); ?>
 					<?php get_template_part('pagination'); ?>
 		
-				</section>
+				</div>
 				<!-- /section -->
 			</main>
 		</div>

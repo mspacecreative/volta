@@ -13,11 +13,42 @@
 	max-width: 100%;
 }
 
+.inline-icons.row {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.inline-icons .nested-row {
+	display: flex;
+}
+
+.icon-buckets .inline-icons .icon {
+	text-align: right;
+}
+
+.icon-buckets .align-center .icon {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.align-center .col-lg-10, .align-center .col-md-10, .align-center .col-sm-10, .align-center .col-xs-10 {
+	max-width: 100%;
+	flex-basis: 100%;
+}
+
 /* BOXED COLUMN */
 
 .boxed-content {
 	padding: .5em 2em 1.5em 2em;
 	border: 1px solid #000;
+}
+
+body .icon {
+	padding-top: 0;
+}
+
+.gform_confirmation_message {
+	padding-top: 75px !important;
 }
 
 a:focus {
@@ -92,7 +123,7 @@ input[type="button"], input[type="submit"], input[type="reset"], button, .button
 }
 
 body .button {
-	padding: 10px 15px;
+	padding: 10px 20px;
 	font-size: 15px;
 }
 
