@@ -17,8 +17,10 @@
 	}*/
 	
 	var pagesTitle = $('.search .row-width-1280 > h2:first-child');
-	if ( pagesTitle.children().length == 0 ) {
-		pagesTitle.remove();
+	if ( pagesTitle.children().length ) {
+		pagesTitle.show();
+	} else {
+		pagesTitle.hide();
 	}
 	
 	// POSITIONING CTA BUTTON AT BOTTOM OF FLEXBOX
