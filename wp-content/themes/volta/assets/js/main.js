@@ -17,7 +17,7 @@
 	}*/
 	
 	var pagesTitle = $('.search .row-width-1280 > h2:first-child');
-	if ( pagesTitle.children().length ) {
+	if ( pagesTitle.children().length > 0 ) {
 		pagesTitle.show();
 	} else {
 		pagesTitle.hide();
