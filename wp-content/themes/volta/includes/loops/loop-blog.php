@@ -51,9 +51,13 @@
 	</article>
 	<!-- /article -->
 	
-	<?php } ?>
+	<?php }
 	
-<?php endwhile; rewind_posts(); ?>
+	else {
+		echo '<p>There is no page content that matches your search.</p>';
+	}
+	
+endwhile; rewind_posts(); ?>
 
 <h2 style="margin-bottom: 50px;">Blog Posts</h2>
 
