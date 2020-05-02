@@ -1,6 +1,8 @@
 <h2 style="margin-bottom: 50px;">Pages</h2>
 
-<?php while ( have_posts() ): the_post(); ?>
+<?php 
+if ( have_posts() ):
+while ( have_posts() ): the_post(); ?>
 
 	<?php if ( $post->post_type == 'page' ) { ?>
 
@@ -53,11 +55,13 @@
 	
 	<?php }
 	
-	else {
-		echo '<p>There is no page content that matches your search.</p>';
-	}
-	
-endwhile; rewind_posts(); ?>
+endwhile; 
+
+else : echo '<p>There is no page content that matches your search.<p>';
+
+endif;
+
+rewind_posts(); ?>
 
 <h2 style="margin-bottom: 50px;">Blog Posts</h2>
 
