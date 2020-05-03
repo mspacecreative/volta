@@ -9,7 +9,7 @@
 	$categories = get_categories( array(
 		'orderby' => 'name',
 		'order'   => 'ASC',
-		'include' => '2,72,70,74',
+		'include' => '25,268,255,259',
 	) );
 	
 	foreach($categories as $category) {
