@@ -6,17 +6,15 @@
 	<div class="gradient-overlay"></div>
 </div>
 <?php else : ?>
-<!--<div class="background-video-container">
-	<video class="background-video" preload="none" playsinline>
-		<source src="https://cdn.mspacecreative.com/videos/volta-video-reel.mp4">
-	</video>
-</div>-->
+
 <div class="background" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/splash/video-reel-poster-2.jpg);">
-	<video src="https://cdn.mspacecreative.com/videos/volta-video-reel.mp4" poster="<?php echo get_template_directory_uri(); ?>/img/splash/video-reel-poster-2.jpg" class="background-video" loop muted playsinline autoplay>
-		<source src="https://cdn.mspacecreative.com/videos/volta-video-reel.mp4" type="video/mp4">
-		<source src="https://cdn.mspacecreative.com/videos/volta-video-reel.webm" type="video/webm">
-		<source src="https://cdn.mspacecreative.com/videos/volta-video-reel.ogg" type="video/ogg">
-	</video>
+	<div class="background-video-container">
+		<video src="https://cdn.mspacecreative.com/videos/volta-video-reel.mp4" poster="<?php echo get_template_directory_uri(); ?>/img/splash/video-reel-poster-2.jpg" class="background-video" loop muted playsinline autoplay>
+			<source src="https://cdn.mspacecreative.com/videos/volta-video-reel.mp4" type="video/mp4">
+			<source src="https://cdn.mspacecreative.com/videos/volta-video-reel.webm" type="video/webm">
+			<source src="https://cdn.mspacecreative.com/videos/volta-video-reel.ogg" type="video/ogg">
+		</video>
+	</div>
 	<div class="gradient-overlay"></div>
 </div>
 <?php endif; ?>
