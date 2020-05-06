@@ -788,7 +788,7 @@ elseif ( $layouttype == 'three' && $verticalalignment == 'center' ):
 					<?php if( have_rows('left_column_left_column') ): ?>
 					<?php while( have_rows('left_column_left_column') ): the_row(); ?>
 				
-					<div class="column-container three_column">
+					<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12">
 						<?php
 						$contenttype = get_sub_field('column_left_content_type' ); 
 						
@@ -813,7 +813,7 @@ elseif ( $layouttype == 'three' && $verticalalignment == 'center' ):
 					<?php if( have_rows('center_column') ): ?>
 					<?php while( have_rows('center_column') ): the_row(); ?>
 					
-					<div class="column-container three_column">
+					<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12">
 						<?php
 						$contenttype = get_sub_field('column_center_content_type' ); 
 							
@@ -838,7 +838,7 @@ elseif ( $layouttype == 'three' && $verticalalignment == 'center' ):
 					<?php if( have_rows('right_column_right_column') ): ?>
 					<?php while( have_rows('right_column_right_column') ): the_row(); ?>
 					
-					<div class="column-container three_column">
+					<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12">
 						<?php
 						$contenttype = get_sub_field('column_right_content_type' ); 
 							
@@ -885,7 +885,7 @@ elseif ( $layouttype == 'three' && $verticalalignment == 'bottom' ):
 					<?php if( have_rows('left_column_left_column') ): ?>
 					<?php while( have_rows('left_column_left_column') ): the_row(); ?>
 				
-					<div class="column-container three_column">
+					<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12">
 						<?php
 						$contenttype = get_sub_field('column_left_content_type' ); 
 						
@@ -910,7 +910,7 @@ elseif ( $layouttype == 'three' && $verticalalignment == 'bottom' ):
 					<?php if( have_rows('center_column') ): ?>
 					<?php while( have_rows('center_column') ): the_row(); ?>
 					
-					<div class="column-container three_column">
+					<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12">
 						<?php
 						$contenttype = get_sub_field('column_center_content_type' ); 
 							
@@ -935,7 +935,7 @@ elseif ( $layouttype == 'three' && $verticalalignment == 'bottom' ):
 					<?php if( have_rows('right_column_right_column') ): ?>
 					<?php while( have_rows('right_column_right_column') ): the_row(); ?>
 					
-					<div class="column-container three_column">
+					<div class="column-container col-lg-4 col-md-4 col-sm-6 col-xs-12">
 						<?php
 						$contenttype = get_sub_field('column_right_content_type' ); 
 							
