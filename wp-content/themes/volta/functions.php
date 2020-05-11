@@ -105,13 +105,13 @@ function html5blank_header_scripts()
 // Load HTML5 Blank styles
 function html5blank_styles()
 {
-    wp_register_style('typekit', 'https://use.typekit.net/qpl1mqp.css', array(), '1.0', 'all');
+    wp_register_style('typekit', 'https://use.typekit.net/qpl1mqp.css', array(), null, 'all');
     wp_enqueue_style('typekit');
     
-    wp_register_style('html5blank', get_template_directory_uri() . '/assets/css/styles.css', array(), '1.0', 'all');
+    wp_register_style('html5blank', get_template_directory_uri() . '/assets/css/styles.css', array(), null, 'all');
     wp_enqueue_style('html5blank');
     
-    wp_register_style('slick-css', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1.0', 'all');
+    wp_register_style('slick-css', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), null, 'all');
     wp_enqueue_style('slick-css');
 }
 
