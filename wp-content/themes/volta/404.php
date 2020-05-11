@@ -60,11 +60,11 @@ if ( get_field('featured_image_alignment', 'options') == 'top' ): ?>
 	
 	<div class="post-content-container white-bg clear">
 		
+		<!-- drop shadow -->
+		<div class="horizontal-dropshadow"></div>
+		<!-- / drop shadow -->
+		
 		<div class="post-container container">
-			
-			<!-- drop shadow -->
-			<div class="horizontal-dropshadow"></div>
-			<!-- / drop shadow -->
 			
 			<!-- post title -->
 			<div class="post-title-outer">
@@ -86,8 +86,10 @@ if ( get_field('featured_image_alignment', 'options') == 'top' ): ?>
 			</div>
 			<!-- /post title -->
 			<div class="top-bottom-padding top-bottom-margin">
-				<p><?php esc_html_e('Looks like this page doesn&#8217;t exist. Please refine your search, or use the navigation above.'); ?></p>
-				<p><a href="<?php echo home_url(); ?>"><?php _e( 'Return to home page', 'html5blank' ); ?></a></p>
+				<div class="row-width-1280">
+					<p><?php esc_html_e('Looks like this page doesn&#8217;t exist. Please refine your search, or use the navigation above.'); ?></p>
+					<p><a href="<?php echo home_url(); ?>"><?php _e( 'Return to home page', 'html5blank' ); ?></a></p>
+				</div>
 			</div>
 		</div>
 	</div>
