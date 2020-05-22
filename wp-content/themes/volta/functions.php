@@ -941,3 +941,6 @@ function centeredLineRulesTitle($atts, $content = null) {
 
 // GRAVITY FORMS SCROLL TO TOP FIX
 add_filter( 'gform_confirmation_anchor', '__return_true' );
+
+// RELEVANSSI FIX
+include 'functions/relevanssi-fix.php';
