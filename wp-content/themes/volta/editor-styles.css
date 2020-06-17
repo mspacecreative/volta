@@ -47,3 +47,15 @@
 	top: 100%;
 	content: '';
 }
+.videoIframeContainer {
+	position: relative;
+	height: 0;
+	padding-bottom: 56.25%;
+}
+.videoIframeContainer > .mce-object-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
