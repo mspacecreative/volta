@@ -11915,6 +11915,20 @@ body #privy-container #privy-inner-container .privy-caret-down {
 	}
 }
 
+.videoIframeContainer {
+	position: relative;
+	height: 0;
+	padding-bottom: 56.25%;
+}
+
+.videoIframeContainer > iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
 /* FIVE COLUMN GRID */
 
 .col-lg-1_5, .col-md-1_5 {

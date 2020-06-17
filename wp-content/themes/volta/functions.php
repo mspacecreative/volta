@@ -905,6 +905,12 @@ function my_custom_styles( $init_array ) {
 	       	'block' => 'div',
 	       	'classes' => 'centered-title-with-line-rules',
 	       	'wrapper' => true,
+       ),
+       	array(
+	       	'title' => 'Video iFrame Container',
+	       	'block' => 'div',
+	       	'classes' => 'videoIframeContainer',
+	       	'wrapper' => true,
        )
     );  
     // Insert the array, JSON ENCODED, into 'style_formats'
