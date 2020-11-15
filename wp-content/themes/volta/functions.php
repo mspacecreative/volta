@@ -198,9 +198,8 @@ function add_slug_to_body_class($classes)
     return $classes;
 }
 
-// If Dynamic Sidebar Exists
-if (function_exists('register_sidebar'))
-{
+function volta_register_sidebars() {
+
     // Define Blog Sidebar
     register_sidebar(array(
         'name' => __('Blog Sidebar', 'html5blank'),
@@ -267,6 +266,7 @@ if (function_exists('register_sidebar'))
         'after_title' => '</h3>'
     ));
 }
+add_action( 'widgets_init', 'volta_register_sidebars' );
 
 // Remove wp_head() injected Recent Comment styles
 function my_remove_recent_comments_style()

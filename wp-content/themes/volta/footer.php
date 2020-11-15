@@ -4,24 +4,24 @@
 					<div class="row gutter_space_1 clear">
 									
 					<section class="column-container col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<?php if(!function_exists('register_sidebar') || !dynamic_sidebar('footer-col-1')) ?>
+						<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-col-1')) ?>
 					</section>
 									
 					<!-- Posts -->
 					<section class="column-container col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<?php if(!function_exists('register_sidebar') || !dynamic_sidebar('footer-col-2')) ?>
+						<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-col-2')) ?>
 					</section>
 					<!-- /Posts -->
 									
 					<!-- About -->
 					<section class="column-container col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<?php if(!function_exists('register_sidebar') || !dynamic_sidebar('footer-col-3')) ?>
+						<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-col-3')) ?>
 					</section>
 					<!-- /About -->
 												
 					<!-- Contact -->
 					<section class="column-container col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<?php if(!function_exists('register_sidebar') || !dynamic_sidebar('footer-col-4')) ?>
+						<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-col-4')) ?>
 					</section>
 					<!-- /Contact -->
 									
